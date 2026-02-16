@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
 import TipCard from './components/TipCard';
@@ -55,9 +56,12 @@ function App() {
   };
 
   return (
-    <Layout activeCategory={activeCategory} setActiveCategory={setActiveCategory}>
-      {renderContent()}
-    </Layout>
+    <>
+      <Layout activeCategory={activeCategory} setActiveCategory={setActiveCategory}>
+        {renderContent()}
+      </Layout>
+      <Analytics />
+    </>
   );
 }
 
