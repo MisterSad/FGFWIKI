@@ -12,6 +12,7 @@ import HeroTierList from './components/HeroTierList';
 import TeamDisplay from './components/TeamDisplay';
 import EventGuide from './components/EventGuide';
 import Builder from './components/Builder';
+import GiftCodes from './components/GiftCodes';
 import { tips, shipDecks, groundTeams } from './data/gameData';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     if (activeCategory === 'ground') return <GroundGuide />;
     if (activeCategory === 'events') return <EventGuide />;
     if (activeCategory === 'builder') return <Builder />;
+    if (activeCategory === 'gift_codes') return <GiftCodes />;
 
     // Filtered Tips
     const filteredTips = tips.filter(tip => tip.category === activeCategory);

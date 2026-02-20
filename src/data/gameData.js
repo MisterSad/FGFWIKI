@@ -6,6 +6,7 @@ export const categories = [
   { id: 'ground', label: 'navigation.ground_teams' },
   { id: 'events', label: 'navigation.events' },
   { id: 'builder', label: 'navigation.builder' },
+  { id: 'gift_codes', label: 'navigation.gift_codes' },
 ];
 
 export const tips = [
