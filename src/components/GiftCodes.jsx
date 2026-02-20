@@ -37,8 +37,7 @@ const giftCodes = [
     'bahagamecrazy',
     'ayi0303',
     'FantasyLibrary',
-    'LUNARFOUNDATION',
-    'COSMIC2026'
+    'LUNARFOUNDATION'
 ];
 
 export default function GiftCodes() {
