@@ -1,6 +1,6 @@
 import React from 'react';
 import { categories } from '../data/gameData';
-import { Home, BookOpen, Swords, Rocket, Layers, Users, Calendar, Trophy, Coins, Hammer } from 'lucide-react';
+import { Home, BookOpen, Swords, Rocket, Layers, Users, Calendar, Trophy, Coins, Hammer, Gift } from 'lucide-react';
 
 const CATEGORY_ICONS = {
     all: Home,
@@ -10,7 +10,8 @@ const CATEGORY_ICONS = {
     ground: Users,
     events: Calendar,
     tier_list: Trophy,
-    builder: Hammer
+    builder: Hammer,
+    gift_codes: Gift
 };
 
 import { useTranslation } from 'react-i18next';
