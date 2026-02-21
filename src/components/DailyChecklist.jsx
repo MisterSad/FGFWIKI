@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { CheckSquare, Square, Swords, Shield, Coins, Pickaxe, Ship, ClipboardList } from 'lucide-react';
+import { CheckSquare, Square, Swords, Shield, Coins, Pickaxe, Ship, ClipboardList, Sparkles } from 'lucide-react';
 
 export default function DailyChecklist() {
     const { t } = useTranslation();
@@ -96,6 +96,22 @@ export default function DailyChecklist() {
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                         <CheckboxRow id="tribute_1" label={t('daily_checklist.tribute_1')} />
                         <CheckboxRow id="tribute_2" label={t('daily_checklist.tribute_2')} />
+                    </div>
+                </div>
+
+                {/* Sacred Tribute Vessel */}
+                <div>
+                    <h3 style={{
+                        fontSize: '1.1rem', color: '#ffea00', marginBottom: '1rem',
+                        display: 'flex', alignItems: 'center', gap: '0.5rem'
+                    }}>
+                        <Sparkles size={20} />
+                        {t('daily_checklist.sacred_tribute_vessel')}
+                    </h3>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                        <CheckboxRow id="sacred_tribute_1" label={t('daily_checklist.sacred_tribute_1')} />
+                        <CheckboxRow id="sacred_tribute_2" label={t('daily_checklist.sacred_tribute_2')} />
+                        <CheckboxRow id="sacred_tribute_3" label={t('daily_checklist.sacred_tribute_3')} />
                     </div>
                 </div>
 
