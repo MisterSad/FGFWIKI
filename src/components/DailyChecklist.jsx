@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { CheckSquare, Square, Swords, Shield, Coins, Pickaxe, Ship, ClipboardList, Sparkles } from 'lucide-react';
+import { CheckSquare, Square, Swords, Shield, Coins, Pickaxe, Ship, ClipboardList, Sparkles, Package } from 'lucide-react';
 
 export default function DailyChecklist() {
     const { t } = useTranslation();
@@ -82,7 +82,7 @@ export default function DailyChecklist() {
                 {t('daily_checklist.title')}
             </h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
                 {/* Tribute Vessel */}
                 <div>
@@ -93,25 +93,13 @@ export default function DailyChecklist() {
                         <Coins size={20} />
                         {t('daily_checklist.tribute_vessel')}
                     </h3>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
                         <CheckboxRow id="tribute_1" label={t('daily_checklist.tribute_1')} />
                         <CheckboxRow id="tribute_2" label={t('daily_checklist.tribute_2')} />
-                    </div>
-                </div>
-
-                {/* Sacred Tribute Vessel */}
-                <div>
-                    <h3 style={{
-                        fontSize: '1.1rem', color: '#ffea00', marginBottom: '1rem',
-                        display: 'flex', alignItems: 'center', gap: '0.5rem'
-                    }}>
-                        <Sparkles size={20} />
-                        {t('daily_checklist.sacred_tribute_vessel')}
-                    </h3>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                        <CheckboxRow id="sacred_tribute_1" label={t('daily_checklist.sacred_tribute_1')} />
-                        <CheckboxRow id="sacred_tribute_2" label={t('daily_checklist.sacred_tribute_2')} />
-                        <CheckboxRow id="sacred_tribute_3" label={t('daily_checklist.sacred_tribute_3')} />
+                        <CheckboxRow id="tribute_3" label={t('daily_checklist.tribute_3')} />
+                        <CheckboxRow id="tribute_4" label={t('daily_checklist.tribute_4')} />
+                        <CheckboxRow id="tribute_5" label={t('daily_checklist.tribute_5')} />
+                        <CheckboxRow id="tribute_6" label={t('daily_checklist.tribute_6')} />
                     </div>
                 </div>
 
@@ -124,7 +112,7 @@ export default function DailyChecklist() {
                         <Swords size={20} />
                         {t('daily_checklist.ascendancy_shrine')}
                     </h3>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
                         <CheckboxRow id="shrine_1" label={t('daily_checklist.shrine_1')} />
                         <CheckboxRow id="shrine_2" label={t('daily_checklist.shrine_2')} />
                     </div>
@@ -139,8 +127,9 @@ export default function DailyChecklist() {
                         <Shield size={20} />
                         {t('daily_checklist.valor_arena')}
                     </h3>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
                         <CheckboxRow id="arena_1" label={t('daily_checklist.arena_1')} />
+                        <CheckboxRow id="arena_2" label={t('daily_checklist.arena_2')} />
                     </div>
                 </div>
 
@@ -153,8 +142,9 @@ export default function DailyChecklist() {
                         <Pickaxe size={20} />
                         {t('daily_checklist.ruins_plunder')}
                     </h3>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
                         <CheckboxRow id="ruins_1" label={t('daily_checklist.ruins_1')} />
+                        <CheckboxRow id="ruins_2" label={t('daily_checklist.ruins_2')} />
                     </div>
                 </div>
 
@@ -167,7 +157,7 @@ export default function DailyChecklist() {
                         <Ship size={20} />
                         {t('daily_checklist.trade_shipping')}
                     </h3>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
                         <CheckboxRow id="trade_1" label={t('daily_checklist.trade_1')} />
                         <CheckboxRow id="trade_2" label={t('daily_checklist.trade_2')} />
                         <CheckboxRow id="trade_3" label={t('daily_checklist.trade_3')} />
@@ -183,7 +173,7 @@ export default function DailyChecklist() {
                         <ClipboardList size={20} />
                         {t('daily_checklist.commissions')}
                     </h3>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.75rem' }}>
                         <CheckboxRow id="commissions_1" label={t('daily_checklist.commissions_1')} />
                         <CheckboxRow id="commissions_2" label={t('daily_checklist.commissions_2')} />
                     </div>
