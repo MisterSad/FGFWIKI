@@ -3,6 +3,7 @@ import { tips } from '../data/gameData';
 import TipCard from './TipCard';
 import { BookOpen, Swords, Coins } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import DailyChecklist from './DailyChecklist';
 
 export default function Guides() {
     const { t } = useTranslation();
@@ -12,6 +13,9 @@ export default function Guides() {
 
     return (
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', paddingBottom: '4rem' }}>
+
+            {/* Daily Checklist Section */}
+            <DailyChecklist />
 
             {/* Start Guide Section */}
             <div style={{ marginBottom: '4rem' }}>
