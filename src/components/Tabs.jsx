@@ -1,10 +1,11 @@
 import React from 'react';
 import { categories } from '../data/gameData';
-import { Home, BookOpen, Swords, Rocket, Layers, Users, Calendar, Trophy, Coins, Hammer, Gift } from 'lucide-react';
+import { Home, BookOpen, Swords, Rocket, Layers, Users, Calendar, Trophy, Coins, Hammer, Gift, CheckSquare } from 'lucide-react';
 
 const CATEGORY_ICONS = {
     all: Home,
     guides: BookOpen,
+    daily_tasks: CheckSquare,
     meta_ships: Rocket,
     flagship_decks: Layers,
     ground: Users,

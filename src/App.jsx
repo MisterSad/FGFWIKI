@@ -12,6 +12,7 @@ import HeroTierList from './components/HeroTierList';
 import TeamDisplay from './components/TeamDisplay';
 import EventGuide from './components/EventGuide';
 import Builder from './components/Builder';
+import DailyChecklist from './components/DailyChecklist';
 import GiftCodes from './components/GiftCodes';
 import { tips, shipDecks, groundTeams } from './data/gameData';
 
@@ -29,6 +30,7 @@ function App() {
     }
 
     if (activeCategory === 'guides') return <Guides />;
+    if (activeCategory === 'daily_tasks') return <DailyChecklist />;
     if (activeCategory === 'tier_list') return <HeroTierList />;
     if (activeCategory === 'meta_ships') return <FlagshipGuide />;
     if (activeCategory === 'flagship_decks') return <FlagshipDecks />;

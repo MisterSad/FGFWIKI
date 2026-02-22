@@ -1,5 +1,6 @@
 export const categories = [
   { id: 'guides', label: 'navigation.guides' },
+  { id: 'daily_tasks', label: 'navigation.daily_tasks' },
   { id: 'tier_list', label: 'navigation.champions' },
   { id: 'meta_ships', label: 'navigation.flagships' },
   { id: 'flagship_decks', label: 'navigation.flagship_decks' },
