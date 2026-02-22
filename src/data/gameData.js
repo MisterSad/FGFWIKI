@@ -175,52 +175,154 @@ export const eventsData = [
     ]
   },
   {
+    id: 'arms_race',
+    title: 'events.arms_race_title',
+    cycle: 'events.arms_race_cycle',
+    type: 'events.arms_race_type',
+    description: 'events.arms_race_desc',
+    essentials: 'events.arms_race_essentials',
+    tactics: [
+      { title: 'events.arms_race_morale', content: 'events.arms_race_morale_desc' },
+      { title: 'events.arms_race_stage_a', content: 'events.arms_race_stage_a_location' },
+      { title: 'events.arms_race_stage_b', content: 'events.arms_race_stage_b_flex' }
+    ],
+    infoGrid: {
+      title: 'events.arms_race_morale',
+      items: [
+        { label: 'events.arms_race_morale_l1', value: '-10% Defense (Estimated)' },
+        { label: 'events.arms_race_morale_l2', value: '-20% Defense (Estimated)' },
+        { label: 'events.arms_race_morale_l3', value: '-30% Defense' }
+      ]
+    },
+    dailyActions: [
+      { focus: 'events.arms_race_stage_a', details: 'events.arms_race_stage_a_waves' },
+      { focus: 'events.arms_race_stage_b', details: 'events.arms_race_stage_b_act' }
+    ],
+    proTips: [
+      { title: 'events.arms_race_morale', content: 'events.arms_race_morale_warning' },
+      { title: 'events.arms_race_stage_a_countdown', content: 'events.arms_race_stage_a_end' },
+      { title: 'events.arms_race_stage_b_rewards', content: 'events.arms_race_stage_b_scale' }
+    ]
+  },
+  {
+    id: 'battle_trial',
+    title: 'events.battle_trial_title',
+    cycle: 'events.battle_trial_cycle',
+    type: 'events.battle_trial_type',
+    goldenRule: 'events.battle_trial_golden_rule',
+    description: 'events.battle_trial_desc',
+    infoGrid: {
+      title: 'events.battle_trial_how_to',
+      items: [
+        { label: 'events.battle_trial_event_page', value: 'events.battle_trial_event_page_desc' },
+        { label: 'events.battle_trial_quick_access', value: 'events.battle_trial_quick_access_desc' }
+      ]
+    }
+  },
+  {
     id: 'calamity',
     title: 'events.calamity_title',
     cycle: 'events.calamity_cycle',
     type: 'events.calamity_type',
+    goldenRule: 'events.calamity_golden_rule',
     description: 'events.calamity_desc',
-    essentials: 'events.calamity_essentials',
-    schedule: [
-      { label: 'events.calamity_day1', times: '0:00, 3:00, 6:00, 9:00, 12:00, 15:00, 18:00, 21:00, 24:00' },
-      { label: 'events.calamity_day2', times: '0:00, 3:00, 6:00, 9:00, 12:00, 15:00, 18:00, 21:00, 24:00' }
+    dailyActions: [
+      { focus: 'events.calamity_structure_waves', details: 'events.calamity_structure_waves_desc' },
+      { focus: 'events.calamity_structure_diff', details: 'events.calamity_structure_diff_desc' },
+      { focus: 'events.calamity_structure_obj', details: 'events.calamity_structure_obj_desc' },
+      { focus: 'events.calamity_structure_lead', details: 'events.calamity_structure_lead_desc' }
     ],
-    rewards: [
-      { label: 'events.calamity_daily_goal', value: 'Min 5 Kills' },
-      { label: '3 Kills', value: 'events.calamity_gold_chest' },
-      { label: '5 Kills', value: 'events.calamity_2nd_gold_chest' },
-      { label: 'Key Loot', value: 'events.calamity_key_loot' }
-    ],
-    teams: [
-      {
-        name: 'events.calamity_team1_name',
-        composition: ['Aliya', 'Doug', 'Evan'],
-        note: 'events.calamity_team1_note'
-      },
-      {
-        name: 'events.calamity_team2_name',
-        composition: ['Eva', 'Lani', 'Zora'],
-        note: 'events.calamity_team2_note'
-      },
-      {
-        name: 'events.calamity_team3_name',
-        composition: ['Kama', 'Jodie', 'Lily'],
-        note: 'events.calamity_team3_note'
-      }
+    tactics: [
+      { title: 'events.calamity_opt_fleet_title', content: 'events.calamity_opt_fleet_desc' },
+      { title: 'events.calamity_opt_loc_title', content: 'events.calamity_opt_loc_desc' }
     ],
     proTips: [
       {
-        title: 'events.calamity_protip1_title',
-        content: 'events.calamity_protip1_content'
-      },
-      {
-        title: 'events.calamity_protip2_title',
-        content: 'events.calamity_protip2_content'
-      },
-      {
-        title: 'events.calamity_protip3_title',
-        content: 'events.calamity_protip3_content'
+        title: 'events.calamity_location_title',
+        content: 'events.calamity_location_desc'
       }
+    ]
+  },
+  {
+    id: 'crime_hunt',
+    title: 'events.crime_hunt_title',
+    cycle: 'events.crime_hunt_cycle',
+    type: 'events.crime_hunt_type',
+    description: 'events.crime_hunt_desc',
+    dailyActions: [
+      { focus: 'events.crime_hunt_loop_gather', details: 'events.crime_hunt_loop_gather_desc' },
+      { focus: 'events.crime_hunt_loop_exchange', details: 'events.crime_hunt_loop_exchange_desc' },
+      { focus: 'events.crime_hunt_loop_summon', details: 'events.crime_hunt_loop_summon_desc' }
+    ],
+    infoGrid: {
+      title: 'events.crime_hunt_ark_title',
+      items: [
+        { label: 'events.crime_hunt_ark_location', value: 'events.crime_hunt_ark_location_desc' },
+        { label: 'events.crime_hunt_ark_combat', value: 'events.crime_hunt_ark_combat_desc' },
+        { label: 'events.crime_hunt_ark_diff', value: 'events.crime_hunt_ark_diff_desc' },
+        { label: 'events.crime_hunt_ark_lifespan', value: 'events.crime_hunt_ark_lifespan_desc' },
+        { label: 'events.crime_hunt_ark_bonus', value: 'events.crime_hunt_ark_bonus_desc' }
+      ]
+    },
+    tactics: [
+      { title: 'events.crime_hunt_opt_capacity', content: 'events.crime_hunt_opt_capacity_desc' },
+      { title: 'events.crime_hunt_opt_early', content: 'events.crime_hunt_opt_early_desc' },
+      { title: 'events.crime_hunt_opt_lvl', content: 'events.crime_hunt_opt_lvl_desc' },
+      { title: 'events.crime_hunt_opt_hub', content: 'events.crime_hunt_opt_hub_desc' },
+      { title: 'events.crime_hunt_opt_limit', content: 'events.crime_hunt_opt_limit_desc' }
+    ]
+  },
+  {
+    id: 'starry_recruitment',
+    title: 'events.starry_title',
+    cycle: 'events.starry_cycle',
+    type: 'events.starry_type',
+    description: 'events.starry_desc',
+    dailyActions: [
+      { focus: 'events.starry_mech_elite', details: 'events.starry_mech_elite_desc' },
+      { focus: 'events.starry_mech_acq', details: 'events.starry_mech_acq_desc' },
+      { focus: 'events.starry_mech_freebie', details: 'events.starry_mech_freebie_desc' },
+      { focus: 'events.starry_mech_refresh', details: 'events.starry_mech_refresh_desc' }
+    ],
+    tactics: [
+      { title: 'events.starry_opt_tiers', content: 'events.starry_opt_tiers_desc' },
+      { title: 'events.starry_opt_limit', content: 'events.starry_opt_limit_desc' },
+      { title: 'events.starry_opt_eff', content: 'events.starry_opt_eff_desc' },
+      { title: 'events.starry_opt_gen', content: 'events.starry_opt_gen_desc' },
+      { title: 'events.starry_opt_cap', content: 'events.starry_opt_cap_desc' },
+      { title: 'events.starry_opt_best', content: 'events.starry_opt_best_desc' }
+    ]
+  },
+  {
+    id: 'shadowfront',
+    title: 'events.shadowfront_title',
+    cycle: 'events.shadowfront_cycle',
+    type: 'events.shadowfront_type',
+    goldenRule: 'events.shadowfront_golden_rule',
+    description: 'events.shadowfront_desc',
+    infoGrid: {
+      title: 'events.shadowfront_req_title',
+      items: [
+        { label: 'events.shadowfront_req_commerce', value: 'events.shadowfront_req_commerce_desc' },
+        { label: 'events.shadowfront_req_player', value: 'events.shadowfront_req_player_desc' },
+        { label: 'events.shadowfront_req_cap', value: 'events.shadowfront_req_cap_desc' },
+        { label: 'events.shadowfront_req_combat', value: 'events.shadowfront_req_combat_desc' }
+      ]
+    },
+    stages: [
+      { title: 'events.shadowfront_stage1', description: 'events.shadowfront_stage1_desc' },
+      { title: 'events.shadowfront_stage2', description: 'events.shadowfront_stage2_desc' },
+      { title: 'events.shadowfront_stage3', description: 'events.shadowfront_stage3_desc' },
+      { title: 'events.shadowfront_stage4', description: 'events.shadowfront_stage4_desc' }
+    ],
+    proTips: [
+      { title: 'events.shadowfront_loc_outpost', content: 'events.shadowfront_loc_outpost_desc' },
+      { title: 'events.shadowfront_loc_lesser', content: 'events.shadowfront_loc_lesser_desc' },
+      { title: 'events.shadowfront_loc_central', content: 'events.shadowfront_loc_central_desc' }
+    ],
+    tactics: [
+      { title: 'events.shadowfront_contrib', content: 'events.shadowfront_contrib_desc' },
+      { title: 'events.shadowfront_signals', content: 'events.shadowfront_signals_desc' }
     ]
   },
   {
