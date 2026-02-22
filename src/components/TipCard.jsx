@@ -32,8 +32,9 @@ export default function TipCard({ tip }) {
             boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
             backdropFilter: 'blur(10px)',
             height: '100%',
-            cursor: 'default'
+            cursor: tip.hasDetails ? 'pointer' : 'default'
         }}
+            onClick={tip.onClick}
             onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-5px)';
                 e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 243, 255, 0.15)';
@@ -100,6 +101,23 @@ export default function TipCard({ tip }) {
                     gap: '0.3rem'
                 }}>
                     <Star size={14} fill="#ffd700" /> Top Tip
+                </div>
+            )}
+
+            {tip.hasDetails && (
+                <div style={{
+                    marginTop: 'auto',
+                    paddingTop: '1rem',
+                    color: 'var(--primary-neon)',
+                    fontSize: '0.85rem',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem'
+                }}>
+                    {t('hero.cta')} →
                 </div>
             )}
         </div>

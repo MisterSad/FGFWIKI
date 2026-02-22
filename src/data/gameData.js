@@ -36,6 +36,88 @@ export const tips = [
 
   // Combat
   {
+    id: 9, // New detailed guide
+    category: 'combat',
+    title: 'tips.fleet_power_title',
+    content: 'tips.fleet_power_desc',
+    highlight: true,
+    hasDetails: true,
+    sections: [
+      {
+        text: 'tips.fleet_power_intro'
+      },
+      {
+        header: 'tips.fleet_power_energy_types_hdr',
+        text: 'tips.fleet_power_energy_types_txt'
+      },
+      {
+        image: '/images/1280X1280-2.PNG'
+      },
+      {
+        header: 'tips.fleet_power_beam_hdr',
+        text: 'tips.fleet_power_beam_txt'
+      },
+      {
+        header: 'tips.fleet_power_kinetic_hdr',
+        text: 'tips.fleet_power_kinetic_txt'
+      },
+      {
+        header: 'tips.fleet_power_ionic_hdr',
+        text: 'tips.fleet_power_ionic_txt',
+        note: 'tips.fleet_power_ionic_tip'
+      },
+      {
+        header: 'tips.fleet_power_synergy_hdr',
+        text: 'tips.fleet_power_synergy_txt'
+      },
+      {
+        grid: {
+          headers: ['tips.fleet_power_synergy_tbl_col1', 'tips.fleet_power_synergy_tbl_col2'],
+          rows: [
+            ['tips.fleet_power_synergy_tbl_r1_c1', 'tips.fleet_power_synergy_tbl_r1_c2'],
+            ['tips.fleet_power_synergy_tbl_r2_c1', 'tips.fleet_power_synergy_tbl_r2_c2']
+          ]
+        }
+      },
+      {
+        header: 'tips.fleet_power_stats_hdr',
+        text: 'tips.fleet_power_stats_txt',
+        note: 'tips.fleet_power_stats_tip'
+      },
+      {
+        header: 'tips.fleet_power_flagship_hdr',
+        text: 'tips.fleet_power_flagship_txt'
+      },
+      {
+        header: 'tips.fleet_power_core_hdr',
+        text: 'tips.fleet_power_core_txt'
+      },
+      {
+        image: '/images/3.jpg'
+      },
+      {
+        header: 'tips.fleet_power_components_hdr',
+        text: 'tips.fleet_power_components_txt'
+      },
+      {
+        image: '/images/4.jpg',
+        note: 'tips.fleet_power_components_tip'
+      },
+      {
+        header: 'tips.fleet_power_formation_hdr',
+        text: 'tips.fleet_power_formation_txt'
+      },
+      {
+        image: '/images/5.png',
+        note: 'tips.fleet_power_formation_tip'
+      },
+      {
+        header: 'tips.fleet_power_final_hdr',
+        text: 'tips.fleet_power_final_txt'
+      }
+    ]
+  },
+  {
     id: 4,
     category: 'combat',
     title: 'tips.t4_title',
