@@ -294,6 +294,23 @@ export default function EventGuide() {
                             </div>
                         )}
 
+                        {/* Event Stages */}
+                        {selectedEvent.stages && (
+                            <div style={{ marginBottom: '2rem' }}>
+                                <h4 style={{ margin: '0 0 1rem', color: 'var(--primary-neon)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    <Calendar size={20} /> {t('events_ui.stages')}
+                                </h4>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                                    {selectedEvent.stages.map((stage, idx) => (
+                                        <div key={idx} style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '1.2rem', borderRadius: '8px', borderLeft: '3px solid var(--secondary-neon)' }}>
+                                            <strong style={{ color: 'white', display: 'block', fontSize: '1rem', marginBottom: '0.4rem' }}>{t(stage.title)}</strong>
+                                            <div style={{ color: 'var(--text-dim)', fontSize: '0.95rem', lineHeight: '1.5' }}>{t(stage.description)}</div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
                         {/* Tactical Guide */}
                         {selectedEvent.tactics && (
                             <div style={{ marginBottom: '2rem', background: 'rgba(0, 243, 255, 0.05)', padding: '1.5rem', borderRadius: '8px', borderLeft: '3px solid var(--primary-neon)' }}>
