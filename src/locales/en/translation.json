@@ -2,6 +2,7 @@
     "navigation": {
         "home": "Home",
         "guides": "Guides",
+        "daily_tasks": "Daily Tasks",
         "champions": "Champions",
         "flagships": "Flagships",
         "flagship_decks": "Flagship Decks",
@@ -491,7 +492,7 @@
         "how_it_works_desc": "The game calculates build times using this formula: <br /> <1>(Base - Flat) / (1 + Bonus%)</1> <br /><br /> Flat reductions (Crew Cabins) are applied <4>before</4> percentage multipliers, making them extremely valuable for short builds but less impactful for week-long upgrades."
     },
     "daily_checklist": {
-        "title": "Daily Checklist",
+        "title": "Daily Tasks",
         "tribute_vessel": "Tribute & Sacred Tribute Vessels + Delivery Ark",
         "tribute_1": "Initiate 10 rallies (Initiator + Special Initiator Rewards)",
         "tribute_2": "Participate in 50 rallies (Participant Reward)",
