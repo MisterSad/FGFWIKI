@@ -51,7 +51,7 @@ export const tips = [
         text: 'tips.fleet_power_energy_types_txt'
       },
       {
-        image: '/images/1280X1280-2.PNG'
+        image: '/images/2.png'
       },
       {
         header: 'tips.fleet_power_beam_hdr',
@@ -93,14 +93,14 @@ export const tips = [
         text: 'tips.fleet_power_core_txt'
       },
       {
-        image: '/images/3.jpg'
+        image: '/images/3.png'
       },
       {
         header: 'tips.fleet_power_components_hdr',
         text: 'tips.fleet_power_components_txt'
       },
       {
-        image: '/images/4.jpg',
+        image: '/images/4.png',
         note: 'tips.fleet_power_components_tip'
       },
       {
