@@ -32,6 +32,7 @@ export default function TipCard({ tip }) {
             boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
             backdropFilter: 'blur(10px)',
             height: '100%',
+            boxSizing: 'border-box',
             cursor: tip.hasDetails ? 'pointer' : 'default'
         }}
             onClick={tip.onClick}
