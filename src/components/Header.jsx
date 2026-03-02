@@ -2,26 +2,41 @@ import React from 'react';
 
 export default function Header() {
     return (
-        <header style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            zIndex: 100,
-            padding: '1rem 2rem',
-            display: 'flex',
+        <header className="sticky-nav" style={{
             justifyContent: 'center',
             alignItems: 'center',
-            background: 'rgba(11, 13, 23, 0.8)',
-            backdropFilter: 'blur(10px)',
-            borderBottom: '1px solid rgba(255,255,255,0.05)'
+            padding: '0 40px',
+            borderBottom: '1px solid var(--border)',
+            display: 'flex'
         }}>
-            <div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-                <span className="text-gradient">FGF</span> Wiki 2.0
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                lineHeight: '1.2',
+                alignItems: 'center',
+                textAlign: 'center'
+            }}>
+                <div style={{
+                    fontFamily: 'var(--font-hero)',
+                    fontSize: '2.2rem',
+                    fontWeight: '800',
+                    color: 'var(--gold-bright)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '4px'
+                }}>
+                    FOUNDATION <span style={{ color: 'var(--text-primary)', fontWeight: '400' }}>GALACTIC FRONTIER</span>
+                </div>
+                <div style={{
+                    fontFamily: 'var(--font-label)',
+                    fontSize: '1rem',
+                    color: 'var(--gold-dim)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '8px',
+                    marginTop: '2px'
+                }}>
+                    Encyclopedia Galactica
+                </div>
             </div>
-            <nav style={{ position: 'absolute', right: '2rem' }}>
-                {/* Placeholder for future nav links if needed */}
-            </nav>
         </header>
     );
 }

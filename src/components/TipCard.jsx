@@ -19,34 +19,26 @@ export default function TipCard({ tip }) {
     const IconComponent = CATEGORY_ICONS[tip.category] || Lightbulb;
 
     return (
-        <div style={{
+        <div className="card reveal" style={{
             display: 'flex',
             flexDirection: 'column',
-            background: 'rgba(20, 20, 30, 0.6)',
-            border: '1px solid rgba(255, 255, 255, 0.05)',
-            borderRadius: '16px',
-            overflow: 'hidden',
-            padding: '1.5rem',
-            position: 'relative',
-            transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
-            backdropFilter: 'blur(10px)',
+            padding: '2rem',
             height: '100%',
             boxSizing: 'border-box',
             cursor: tip.hasDetails ? 'pointer' : 'default'
         }}
-            onClick={tip.onClick}
-            onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 243, 255, 0.15)';
-                e.currentTarget.style.borderColor = 'var(--primary-neon)';
-            }}
-            onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.05)';
-            }}
+            onClick={tip.hasDetails ? tip.onClick : undefined}
         >
+            <div className="scan-line"></div>
+
+            {/* Ornaments for important cards */}
+            {tip.highlight && (
+                <>
+                    <div className="corner-tl"></div>
+                    <div className="corner-br"></div>
+                </>
+            )}
+
             {/* Decorative Icon Background */}
             <div style={{
                 position: 'absolute',
@@ -55,30 +47,25 @@ export default function TipCard({ tip }) {
                 opacity: 0.05,
                 transform: 'rotate(15deg)',
                 pointerEvents: 'none',
-                color: 'white'
+                color: 'var(--gold)'
             }}>
-                <IconComponent size={120} />
+                <IconComponent size={140} strokeWidth={1} />
             </div>
 
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 1, position: 'relative', zIndex: 2 }}>
                 <h3 style={{
-                    fontSize: '1.4rem',
-                    color: 'white',
+                    color: 'var(--text-primary)',
                     marginTop: 0,
                     marginBottom: '1rem',
-                    borderBottom: '2px solid var(--primary-neon)',
-                    paddingBottom: '0.5rem',
-                    display: 'inline-block'
+                    borderBottom: '1px solid var(--border)',
+                    paddingBottom: '0.8rem',
+                    display: 'block' // Ensure full width border
                 }}>
                     {t(tip.title)}
                 </h3>
 
                 <p style={{
-                    color: 'var(--text-dim)',
-                    lineHeight: '1.6',
-                    fontSize: '0.95rem',
-                    position: 'relative',
-                    zIndex: 1,
+                    color: 'var(--text-secondary)',
                     margin: 0
                 }}>
                     {t(tip.content)}
@@ -87,38 +74,34 @@ export default function TipCard({ tip }) {
 
             {/* Highlight Badge if applicable */}
             {tip.highlight && (
-                <div style={{
-                    marginTop: '1.5rem',
+                <div className="label-text" style={{
+                    marginTop: '2rem',
                     alignSelf: 'flex-start',
-                    background: 'rgba(255, 215, 0, 0.1)',
-                    color: '#ffd700',
-                    padding: '4px 8px',
-                    borderRadius: '4px',
-                    fontSize: '0.75rem',
-                    fontWeight: 'bold',
-                    border: '1px solid rgba(255, 215, 0, 0.3)',
+                    color: 'var(--gold-bright)',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.3rem'
+                    gap: '0.5rem'
                 }}>
-                    <Star size={14} fill="#ffd700" /> Top Tip
+                    <Star size={14} strokeWidth={1.5} /> {t('core.important', 'CRITICAL')}
                 </div>
             )}
 
             {tip.hasDetails && (
                 <div style={{
                     marginTop: 'auto',
-                    paddingTop: '1rem',
-                    color: 'var(--primary-neon)',
+                    paddingTop: '2rem',
+                    color: 'var(--gold)',
+                    fontFamily: 'var(--font-label)',
                     fontSize: '0.85rem',
-                    fontWeight: 'bold',
                     textTransform: 'uppercase',
-                    letterSpacing: '1px',
+                    letterSpacing: '3px',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.5rem'
+                    gap: '0.8rem',
+                    opacity: 0.8
                 }}>
-                    {t('hero.cta')} →
+                    {t('hero.cta', 'DETAILS')}
+                    <span style={{ fontSize: '1.2em' }}>→</span>
                 </div>
             )}
         </div>

@@ -7,9 +7,9 @@ export default function TeamDisplay({ deck, isGround = false }) {
 
     const getIcon = () => {
         if (!isGround) return <Ship size={24} />;
-        if (deck.id === 'early_game') return <Leaf size={24} color="#4ade80" />;
-        if (deck.id === 'mid_game') return <TrendingUp size={24} color="#60a5fa" />;
-        if (deck.id === 'late_game') return <Crown size={24} color="#fbbf24" />;
+        if (deck.id === 'early_game') return <Leaf size={24} color="var(--accent-teal)" />;
+        if (deck.id === 'mid_game') return <TrendingUp size={24} color="var(--accent-blue)" />;
+        if (deck.id === 'late_game') return <Crown size={24} color="var(--gold)" />;
         return <Users size={24} />;
     };
 
@@ -24,8 +24,8 @@ export default function TeamDisplay({ deck, isGround = false }) {
                     <span style={{
                         padding: '4px 12px',
                         borderRadius: '20px',
-                        background: deck.energyType === 'Kinetic' ? '#FFD700' : deck.energyType === 'Beam' ? '#00F3FF' : '#BF55EC',
-                        color: '#000',
+                        background: deck.energyType === 'Kinetic' ? 'var(--gold)' : deck.energyType === 'Beam' ? 'var(--accent-teal)' : 'var(--accent-blue)',
+                        color: 'var(--bg-void)',
                         fontWeight: 'bold',
                         fontSize: '0.8rem'
                     }}>
@@ -47,7 +47,7 @@ export default function TeamDisplay({ deck, isGround = false }) {
                         flexDirection: 'column',
                         alignItems: 'center',
                         textAlign: 'center',
-                        background: 'rgba(0,0,0,0.3)',
+                        background: 'var(--bg-elevated)',
                         padding: '1rem',
                         borderRadius: '12px',
                         border: '1px solid var(--glass-border)'
@@ -55,22 +55,22 @@ export default function TeamDisplay({ deck, isGround = false }) {
                         <div style={{
                             width: '80px',
                             height: '80px',
-                            background: 'rgba(255,255,255,0.05)',
+                            background: 'var(--bg-void)',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             marginBottom: '0.8rem',
-                            border: '2px dashed var(--primary-neon)',
+                            border: '1px solid var(--gold)',
                             color: 'var(--text-dim)',
                             fontSize: '0.7rem'
                         }}>
                             <Ship size={32} />
                         </div>
-                        <div style={{ color: 'var(--primary-neon)', fontWeight: 'bold', fontSize: '1rem' }}>
+                        <div style={{ color: 'var(--gold-bright)', fontWeight: 'bold', fontSize: '1rem' }}>
                             {deck.energyType === 'Kinetic' ? 'Gram' : deck.energyType === 'Beam' ? 'Opportunity' : 'Demerzel'}
                         </div>
-                        <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)', marginTop: '0.3rem' }}>
+                        <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--text-dim)', marginTop: '0.3rem' }}>
                             {t(`common.${deck.energyType?.toLowerCase()}`)} {t('common.core')}
                         </div>
                     </div>
@@ -79,10 +79,10 @@ export default function TeamDisplay({ deck, isGround = false }) {
                     <div style={{ flex: 1, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
                         {deck.slots.map((slot, idx) => (
                             <div key={idx} style={{
-                                background: 'rgba(0,0,0,0.3)',
+                                background: 'var(--bg-surface)',
                                 padding: '1rem',
-                                borderRadius: '8px',
-                                border: '1px solid rgba(255,255,255,0.05)',
+                                borderRadius: '2px',
+                                border: '1px solid var(--border)',
                                 position: 'relative',
                                 display: 'flex', /* Align content */
                                 flexDirection: 'column',
@@ -91,10 +91,11 @@ export default function TeamDisplay({ deck, isGround = false }) {
                             }}>
                                 <div style={{
                                     position: 'absolute', top: '10px', left: '10px',
-                                    background: 'var(--bg-deep)', border: '1px solid var(--text-dim)',
+                                    background: 'var(--bg-void)', border: '1px solid var(--border)',
                                     borderRadius: '50%', width: '24px', height: '24px',
                                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                    fontSize: '0.8rem', fontWeight: 'bold'
+                                    fontFamily: 'var(--font-mono)', fontSize: '0.8rem', fontWeight: 'bold',
+                                    color: 'var(--text-secondary)'
                                 }}>
                                     {idx + 1}
                                 </div>
@@ -103,22 +104,22 @@ export default function TeamDisplay({ deck, isGround = false }) {
                                 <div style={{
                                     width: '60px',
                                     height: '60px',
-                                    background: 'rgba(0,0,0,0.5)',
+                                    background: 'var(--bg-void)',
                                     borderRadius: '50%',
                                     marginBottom: '0.8rem',
-                                    border: '1px dashed var(--text-dim)',
+                                    border: '1px solid var(--border)',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     fontSize: '0.7rem',
-                                    color: 'var(--text-dim)'
+                                    color: 'var(--text-secondary)'
                                 }}>
                                     <Users size={24} />
                                 </div>
 
-                                <div style={{ marginTop: '0.2rem', fontWeight: 'bold', color: 'var(--primary-neon)' }}>{slot.name}</div>
-                                <div style={{ fontSize: '0.8rem', color: '#fff', opacity: 0.8, marginTop: '0.25rem' }}>{t(slot.role).split(':')[1] || t(slot.role)}</div>
-                                <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                                <div style={{ marginTop: '0.2rem', fontWeight: 'bold', color: 'var(--gold)' }}>{slot.name}</div>
+                                <div className="label-text" style={{ fontSize: '0.8rem', color: 'var(--text-primary)', marginTop: '0.25rem' }}>{t(slot.role).split(':')[1] || t(slot.role)}</div>
+                                <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)', marginTop: '0.5rem', fontStyle: 'italic' }}>
                                     "{t(slot.reason)}"
                                 </div>
                             </div>
@@ -136,30 +137,29 @@ export default function TeamDisplay({ deck, isGround = false }) {
                             flexDirection: 'column',
                             alignItems: 'center',
                             textAlign: 'center',
-                            background: 'rgba(255, 255, 255, 0.05)',
+                            background: 'var(--bg-void)',
                             padding: '1rem',
-                            borderRadius: '12px',
-                            border: '1px solid rgba(255,255,255,0.05)'
+                            borderRadius: '2px',
+                            border: '1px solid var(--border)'
                         }}>
                             {/* Hero SVG Placeholder */}
                             <div style={{
                                 width: '80px',
                                 height: '80px',
-                                background: 'rgba(0,0,0,0.5)',
+                                background: 'var(--bg-surface)',
                                 borderRadius: '50%',
                                 marginBottom: '0.8rem',
-                                border: '2px solid rgba(255,255,255,0.1)',
+                                border: '1px solid var(--gold)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 fontSize: '0.7rem',
-                                color: 'var(--text-dim)',
-                                boxShadow: '0 4px 10px rgba(0,0,0,0.3)'
+                                color: 'var(--text-secondary)',
                             }}>
                                 <Users size={32} />
                             </div>
 
-                            <div style={{ fontWeight: 'bold', color: 'white', fontSize: '1rem' }}>
+                            <div style={{ fontWeight: 'bold', color: 'var(--text-primary)', fontSize: '1rem' }}>
                                 {member}
                             </div>
                         </div>

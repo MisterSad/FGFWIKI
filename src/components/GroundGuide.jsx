@@ -13,17 +13,17 @@ export default function GroundGuide() {
             {/* Header */}
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{
+                    fontFamily: 'var(--font-hero)',
                     fontSize: '2.5rem',
-                    color: 'var(--primary-neon)',
+                    color: 'var(--gold-bright)',
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
-                    textShadow: '0 0 20px rgba(0, 243, 255, 0.3)',
                     marginBottom: '0.5rem',
                     display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem'
                 }}>
                     <Users size={40} /> {t('ground_guide.title')}
                 </h2>
-                <p style={{ color: 'var(--text-dim)', fontSize: '1.1rem' }}>
+                <p className="label-text" style={{ color: 'var(--text-primary)', fontSize: '1.1rem' }}>
                     {t('ground_guide.subtitle')}
                 </p>
             </div>

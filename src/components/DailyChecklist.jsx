@@ -31,14 +31,14 @@ export default function DailyChecklist() {
                 gap: '0.75rem',
                 padding: '0.75rem 1rem',
                 cursor: 'pointer',
-                borderRadius: '8px',
-                background: isChecked(id) ? 'rgba(0, 255, 170, 0.1)' : 'rgba(255,255,255,0.05)',
-                border: `1px solid ${isChecked(id) ? 'var(--primary-neon)' : 'rgba(255,255,255,0.1)'}`,
+                borderRadius: '2px',
+                background: 'var(--bg-void)',
+                border: `1px solid ${isChecked(id) ? 'var(--accent-teal)' : 'var(--border)'}`,
                 transition: 'all 0.2s ease',
                 opacity: isChecked(id) ? 0.7 : 1
             }}
         >
-            <div style={{ color: isChecked(id) ? 'var(--primary-neon)' : 'var(--text-secondary)' }}>
+            <div style={{ color: isChecked(id) ? 'var(--accent-teal)' : 'var(--text-secondary)' }}>
                 {isChecked(id) ? <CheckSquare size={20} /> : <Square size={20} />}
             </div>
             <span style={{
@@ -52,13 +52,12 @@ export default function DailyChecklist() {
     );
 
     return (
-        <div style={{
-            background: 'var(--card-bg)',
-            border: '1px solid var(--primary-neon)',
-            borderRadius: '12px',
+        <div className="card reveal" style={{
+            background: 'var(--bg-void)',
+            border: '1px solid var(--border)',
+            borderTop: '2px solid var(--accent-teal)',
             padding: '1.5rem',
             marginBottom: '3rem',
-            boxShadow: '0 0 20px rgba(0, 255, 170, 0.1)',
             position: 'relative',
             overflow: 'hidden'
         }}>
@@ -66,28 +65,30 @@ export default function DailyChecklist() {
             <div style={{
                 position: 'absolute',
                 top: 0, left: 0, right: 0, height: '4px',
-                background: 'linear-gradient(90deg, transparent, var(--primary-neon), transparent)',
+                background: 'linear-gradient(90deg, transparent, var(--accent-teal), transparent)',
                 opacity: 0.5
             }} />
 
             <h2 style={{
+                fontFamily: 'var(--font-hero)',
                 fontSize: '1.5rem',
-                color: 'var(--text-primary)',
+                color: 'var(--accent-teal)',
                 marginBottom: '1.5rem',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '0.75rem'
+                gap: '0.75rem',
+                textTransform: 'uppercase'
             }}>
-                <CheckSquare style={{ color: 'var(--primary-neon)' }} size={28} />
-                {t('daily_checklist.title')}
+                <CheckSquare style={{ color: 'var(--accent-teal)' }} size={28} />
+                <span className="label-text">{t('daily_checklist.title')}</span>
             </h2>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
                 {/* Tribute Vessel */}
                 <div>
-                    <h3 style={{
-                        fontSize: '1.1rem', color: '#ffb84d', marginBottom: '1rem',
+                    <h3 className="label-text" style={{
+                        fontSize: '1.1rem', color: 'var(--gold)', marginBottom: '1rem',
                         display: 'flex', alignItems: 'center', gap: '0.5rem'
                     }}>
                         <Coins size={20} />
@@ -105,8 +106,8 @@ export default function DailyChecklist() {
 
                 {/* Ascendancy Shrine */}
                 <div>
-                    <h3 style={{
-                        fontSize: '1.1rem', color: '#ff4d4d', marginBottom: '1rem',
+                    <h3 className="label-text" style={{
+                        fontSize: '1.1rem', color: 'var(--accent-red)', marginBottom: '1rem',
                         display: 'flex', alignItems: 'center', gap: '0.5rem'
                     }}>
                         <Swords size={20} />
@@ -120,8 +121,8 @@ export default function DailyChecklist() {
 
                 {/* Valor Arena */}
                 <div>
-                    <h3 style={{
-                        fontSize: '1.1rem', color: '#4da6ff', marginBottom: '1rem',
+                    <h3 className="label-text" style={{
+                        fontSize: '1.1rem', color: 'var(--accent-blue)', marginBottom: '1rem',
                         display: 'flex', alignItems: 'center', gap: '0.5rem'
                     }}>
                         <Shield size={20} />
@@ -135,8 +136,8 @@ export default function DailyChecklist() {
 
                 {/* Ruins Plunder */}
                 <div>
-                    <h3 style={{
-                        fontSize: '1.1rem', color: '#b366ff', marginBottom: '1rem',
+                    <h3 className="label-text" style={{
+                        fontSize: '1.1rem', color: 'var(--accent-blue)', marginBottom: '1rem',
                         display: 'flex', alignItems: 'center', gap: '0.5rem'
                     }}>
                         <Pickaxe size={20} />
@@ -150,8 +151,8 @@ export default function DailyChecklist() {
 
                 {/* Trade Shipping */}
                 <div>
-                    <h3 style={{
-                        fontSize: '1.1rem', color: '#00cc99', marginBottom: '1rem',
+                    <h3 className="label-text" style={{
+                        fontSize: '1.1rem', color: 'var(--accent-teal)', marginBottom: '1rem',
                         display: 'flex', alignItems: 'center', gap: '0.5rem'
                     }}>
                         <Ship size={20} />
@@ -166,8 +167,8 @@ export default function DailyChecklist() {
 
                 {/* Commissions */}
                 <div>
-                    <h3 style={{
-                        fontSize: '1.1rem', color: '#ff99cc', marginBottom: '1rem',
+                    <h3 className="label-text" style={{
+                        fontSize: '1.1rem', color: 'var(--caption-color)', marginBottom: '1rem',
                         display: 'flex', alignItems: 'center', gap: '0.5rem'
                     }}>
                         <ClipboardList size={20} />

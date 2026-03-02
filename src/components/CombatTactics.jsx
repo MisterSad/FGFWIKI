@@ -16,29 +16,28 @@ export default function CombatTactics() {
                 alignItems: 'stretch' // Ensures all cards in a row have the same height
             }}>
                 {combatTips.map(tip => (
-                    <div key={tip.id} style={{
+                    <div className="card reveal" key={tip.id} style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        background: 'rgba(20, 20, 30, 0.6)',
-                        border: '1px solid rgba(255, 255, 255, 0.05)',
-                        borderRadius: '16px',
+                        background: 'var(--bg-void)',
+                        border: '1px solid var(--border)',
+                        borderRadius: '2px',
                         overflow: 'hidden',
                         padding: '1.5rem',
                         position: 'relative',
-                        transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-                        boxShadow: '0 4px 20px rgba(0,0,0,0.2)',
-                        backdropFilter: 'blur(10px)',
+                        transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
+                        boxShadow: 'none',
                         height: '100%' // Stretch to fill grid cell
                     }}
                         onMouseEnter={(e) => {
-                            e.currentTarget.style.transform = 'translateY(-5px)';
-                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 243, 255, 0.15)';
-                            e.currentTarget.style.borderColor = 'var(--primary-neon)';
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+                            e.currentTarget.style.borderColor = 'var(--gold)';
                         }}
                         onMouseLeave={(e) => {
                             e.currentTarget.style.transform = 'translateY(0)';
-                            e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
-                            e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.05)';
+                            e.currentTarget.style.boxShadow = 'none';
+                            e.currentTarget.style.borderColor = 'var(--border)';
                         }}
                     >
                         {/* Decorative Icon Background */}
@@ -55,12 +54,12 @@ export default function CombatTactics() {
                         </div>
 
                         <div style={{ flex: 1 }}>
-                            <h3 style={{
+                            <h3 className="label-text" style={{
                                 fontSize: '1.4rem',
-                                color: 'white',
+                                color: 'var(--text-primary)',
                                 marginTop: 0,
                                 marginBottom: '1rem',
-                                borderBottom: '2px solid var(--primary-neon)',
+                                borderBottom: '1px solid var(--gold)',
                                 paddingBottom: '0.5rem',
                                 display: 'inline-block'
                             }}>
@@ -81,21 +80,20 @@ export default function CombatTactics() {
 
                         {/* Highlight Badge if applicable */}
                         {tip.highlight && (
-                            <div style={{
+                            <div className="label-text" style={{
                                 marginTop: '1.5rem',
                                 alignSelf: 'flex-start',
-                                background: 'rgba(255, 215, 0, 0.1)',
-                                color: '#ffd700',
+                                background: 'var(--bg-void)',
+                                color: 'var(--gold)',
                                 padding: '4px 8px',
-                                borderRadius: '4px',
+                                borderRadius: '2px',
                                 fontSize: '0.75rem',
-                                fontWeight: 'bold',
-                                border: '1px solid rgba(255, 215, 0, 0.3)',
+                                border: '1px solid var(--gold)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: '0.3rem'
                             }}>
-                                <Star size={14} fill="#ffd700" /> Key Strategy
+                                <Star size={14} color="var(--gold)" /> Key Strategy
                             </div>
                         )}
                     </div>

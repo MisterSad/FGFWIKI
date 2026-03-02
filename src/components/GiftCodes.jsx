@@ -64,25 +64,30 @@ export default function GiftCodes() {
                 {giftCodes.map((code, index) => (
                     <div
                         key={index}
-                        className="builder-card"
+                        className="gift-card"
                         style={{
+                            position: 'relative',
                             display: 'flex',
                             alignItems: 'center',
                             padding: '1rem 1.5rem',
-                            background: 'rgba(255, 255, 255, 0.03)',
-                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            background: 'var(--bg-elevated)',
+                            border: '1px solid var(--border)',
                             borderRadius: '12px',
-                            gap: '1rem'
+                            gap: '1rem',
+                            cursor: 'default'
                         }}
                     >
+                        <div className="scan-line"></div>
+                        <div className="corner-tl"></div>
+                        <div className="corner-br"></div>
                         <button
                             onClick={() => handleCopy(code, index)}
                             style={{
-                                background: copiedIndex === index ? 'rgba(74, 222, 128, 0.1)' : 'rgba(255, 255, 255, 0.05)',
+                                background: copiedIndex === index ? 'var(--bg-surface)' : 'transparent',
                                 border: '1px solid',
-                                borderColor: copiedIndex === index ? 'rgba(74, 222, 128, 0.5)' : 'rgba(255, 255, 255, 0.1)',
+                                borderColor: copiedIndex === index ? 'var(--accent-teal)' : 'var(--border)',
                                 cursor: 'pointer',
-                                color: copiedIndex === index ? '#4ade80' : 'var(--text-dim)',
+                                color: copiedIndex === index ? 'var(--accent-teal)' : 'var(--text-dim)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -95,7 +100,7 @@ export default function GiftCodes() {
                         >
                             {copiedIndex === index ? <Check size={18} /> : <Copy size={18} />}
                         </button>
-                        <h3 style={{ fontSize: '1.25rem', margin: 0, color: '#fff', fontFamily: 'monospace', letterSpacing: '1px' }}>
+                        <h3 style={{ fontSize: '1.25rem', margin: 0, color: 'var(--text-primary)', fontFamily: 'var(--font-mono)', letterSpacing: '1px' }}>
                             {code}
                         </h3>
                     </div>
@@ -105,13 +110,13 @@ export default function GiftCodes() {
             <div style={{
                 marginTop: '3rem',
                 padding: '1.5rem',
-                backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                border: '1px solid rgba(59, 130, 246, 0.2)',
+                backgroundColor: 'var(--bg-elevated)',
+                border: '1px solid var(--border)',
                 borderRadius: '8px',
                 textAlign: 'center'
             }}>
-                <p style={{ color: '#93c5fd', margin: 0, fontSize: '0.9rem' }}>
-                    <strong>How to redeem:</strong> Click the copy icon next to a code, tap your avatar in the top left corner of the game screen, select "Settings", then tap "Gift Code" and paste your code.
+                <p style={{ color: 'var(--text-dim)', margin: 0, fontSize: '0.9rem' }}>
+                    <strong style={{ color: 'var(--gold)' }}>How to redeem:</strong> Click the copy icon next to a code, tap your avatar in the top left corner of the game screen, select "Settings", then tap "Gift Code" and paste your code.
                 </p>
             </div>
         </div>

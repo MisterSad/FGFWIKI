@@ -83,8 +83,8 @@ export default function Builder() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
 
             {/* Configuration Panel */}
-            <div style={{ background: 'rgba(20, 20, 30, 0.8)', padding: '2rem', borderRadius: '15px', border: '1px solid rgba(0, 243, 255, 0.1)' }}>
-                <h2 style={{ color: 'var(--primary-neon)', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div className="card reveal" style={{ padding: '2rem' }}>
+                <h2 style={{ color: 'var(--gold-bright)', fontFamily: 'var(--font-hero)', textTransform: 'uppercase', marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.8rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Hammer size={24} /> {t('builder_ui.title')}
                 </h2>
 
@@ -94,7 +94,7 @@ export default function Builder() {
                     <select
                         value={selectedBuilding}
                         onChange={(e) => { setSelectedBuilding(e.target.value); setSelectedLevel(Object.keys(buildingData[e.target.value])[0]); }}
-                        style={{ width: '100%', padding: '0.8rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '8px' }}
+                        style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.8rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                     >
                         {Object.keys(buildingData).map(b => <option key={b} value={b}>{b}</option>)}
                     </select>
@@ -105,7 +105,7 @@ export default function Builder() {
                     <select
                         value={selectedLevel}
                         onChange={(e) => setSelectedLevel(Number(e.target.value))}
-                        style={{ width: '100%', padding: '0.8rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '8px' }}
+                        style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.8rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                     >
                         {buildingData[selectedBuilding] && Object.keys(buildingData[selectedBuilding]).map(lvl => (
                             <option key={lvl} value={lvl}>Level {lvl}</option>
@@ -124,7 +124,7 @@ export default function Builder() {
                             type="number" min="0" max="30"
                             value={crewCabin1}
                             onChange={(e) => setCrewCabin1(Number(e.target.value))}
-                            style={{ width: '100%', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '5px' }}
+                            style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.5rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                         />
                     </div>
                     <div>
@@ -133,7 +133,7 @@ export default function Builder() {
                             type="number" min="0" max="30"
                             value={crewCabin2}
                             onChange={(e) => setCrewCabin2(Number(e.target.value))}
-                            style={{ width: '100%', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '5px' }}
+                            style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.5rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                         />
                     </div>
                 </div>
@@ -148,7 +148,7 @@ export default function Builder() {
                         <label style={{ display: 'block', color: 'var(--text-dim)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>{t('builder_ui.home_port')}</label>
                         <select
                             onChange={(e) => handleBonusChange('homePort', e.target.value)}
-                            style={{ width: '100%', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '5px' }}
+                            style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.5rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                         >
                             {bonusesData.homePort.map(b => <option key={b.level} value={b.value}>{t(b.label)}</option>)}
                         </select>
@@ -158,7 +158,7 @@ export default function Builder() {
                         <label style={{ display: 'block', color: 'var(--text-dim)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>{t('builder_ui.modular_structure')}</label>
                         <select
                             onChange={(e) => handleBonusChange('modularStructure', e.target.value)}
-                            style={{ width: '100%', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '5px' }}
+                            style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.5rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                         >
                             {bonusesData.modularStructure.map(b => <option key={b.id} value={b.value}>{t(b.label)}</option>)}
                         </select>
@@ -168,7 +168,7 @@ export default function Builder() {
                         <label style={{ display: 'block', color: 'var(--text-dim)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>{t('builder_ui.guild_construction')}</label>
                         <select
                             onChange={(e) => handleBonusChange('guildConstruction', e.target.value)}
-                            style={{ width: '100%', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '5px' }}
+                            style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.5rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                         >
                             {bonusesData.guildConstruction.map(b => <option key={b.level} value={b.value}>{t(b.label)}</option>)}
                         </select>
@@ -178,13 +178,13 @@ export default function Builder() {
                         <label style={{ display: 'block', color: 'var(--text-dim)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>{t('builder_ui.prince_title')}</label>
                         <select
                             onChange={(e) => handleBonusChange('princeTitle', e.target.value)}
-                            style={{ width: '100%', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '5px' }}
+                            style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.5rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                         >
                             {bonusesData.princeTitles.map(b => <option key={b.id} value={b.value}>{t(b.label)}</option>)}
                         </select>
                     </div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', borderRadius: '5px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem', background: 'var(--bg-void)', borderRadius: '2px', border: '1px solid var(--border)' }}>
                         <input
                             type="checkbox"
                             id="princeAssistance"
@@ -202,7 +202,7 @@ export default function Builder() {
                             type="number" min="0"
                             value={bonuses.other}
                             onChange={(e) => handleBonusChange('other', e.target.value)}
-                            style={{ width: '100%', padding: '0.5rem', background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '5px' }}
+                            style={{ fontFamily: 'var(--font-mono)', width: '100%', padding: '0.5rem', background: 'var(--bg-void)', border: '1px solid var(--border)', color: 'var(--text-primary)', borderRadius: '2px' }}
                         />
                     </div>
                 </div>
@@ -210,34 +210,34 @@ export default function Builder() {
             </div>
 
             {/* Results Panel */}
-            <div style={{ alignSelf: 'start' }}>
-                <div style={{ background: 'linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(0,0,0,0.5))', padding: '2rem', borderRadius: '15px', border: '1px solid var(--primary-neon)', position: 'sticky', top: '100px' }}>
-                    <h2 style={{ color: 'white', marginBottom: '2rem', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+            <div className="reveal" style={{ alignSelf: 'start', transitionDelay: '0.2s' }}>
+                <div className="card" style={{ padding: '2rem', position: 'sticky', top: '100px' }}>
+                    <h2 style={{ color: 'var(--gold-bright)', fontFamily: 'var(--font-hero)', textTransform: 'uppercase', marginBottom: '2rem', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
                         <Clock size={28} /> {t('builder_ui.time_analysis')}
                     </h2>
 
-                    <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>
+                    <div style={{ fontFamily: 'var(--font-mono)', marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
                         <span style={{ color: 'var(--text-dim)' }}>{t('builder_ui.base_time')}</span>
-                        <span style={{ color: 'white', fontWeight: 'bold' }}>{formatTime(results.baseTime)}</span>
+                        <span style={{ color: 'var(--text-primary)', fontWeight: 'bold' }}>{formatTime(results.baseTime)}</span>
                     </div>
 
-                    <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>
+                    <div style={{ fontFamily: 'var(--font-mono)', marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
                         <span style={{ color: 'var(--text-dim)' }}>{t('builder_ui.after_flat')}</span>
-                        <span style={{ color: '#ffd700', fontWeight: 'bold' }}>{formatTime(results.timeAfterFlat)}</span>
+                        <span style={{ color: 'var(--gold)', fontWeight: 'bold' }}>{formatTime(results.timeAfterFlat)}</span>
                     </div>
 
-                    <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem' }}>
+                    <div style={{ fontFamily: 'var(--font-mono)', marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
                         <span style={{ color: 'var(--text-dim)' }}>{t('builder_ui.total_speed_bonus')}</span>
-                        <span style={{ color: '#00ff00', fontWeight: 'bold' }}>+{results.totalSpeedBonus.toFixed(1)}%</span>
+                        <span style={{ color: 'var(--accent-teal)', fontWeight: 'bold' }}>+{results.totalSpeedBonus.toFixed(1)}%</span>
                     </div>
 
                     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-                        <div style={{ color: 'var(--primary-neon)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '0.5rem' }}>{t('builder_ui.final_build_time')}</div>
-                        <div style={{ color: 'white', fontSize: '2.5rem', fontWeight: 'bold', textShadow: '0 0 20px var(--primary-neon)' }}>
+                        <div className="label-text" style={{ marginBottom: '1rem' }}>{t('builder_ui.final_build_time')}</div>
+                        <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--text-primary)', fontSize: '2.5rem', fontWeight: 'bold' }}>
                             {formatTime(results.finalTime)}
                         </div>
                         {results.finalTime > 0 && results.baseTime > 0 && (
-                            <div style={{ color: '#00ff00', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+                            <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--accent-teal)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
                                 {t('builder_ui.saved')} {formatTime(results.baseTime - results.finalTime)} (-{((1 - (results.finalTime / results.baseTime)) * 100).toFixed(1)}%)
                             </div>
                         )}
@@ -245,17 +245,7 @@ export default function Builder() {
 
                 </div>
 
-                <div style={{ marginTop: '2rem', background: 'rgba(255,255,255,0.05)', padding: '1.5rem', borderRadius: '10px' }}>
-                    <h4 style={{ color: 'white', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        <Info size={18} /> {t('builder_ui.how_it_works')}
-                    </h4>
-                    <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                        <Trans i18nKey="builder_ui.how_it_works_desc" components={{ 1: <code style={{ background: 'rgba(0,0,0,0.3)', padding: '2px 5px', borderRadius: '3px', color: '#ffd700' }} />, 3: <b /> }} />
-                    </p>
-                </div>
-
             </div>
-
         </div>
     );
 }

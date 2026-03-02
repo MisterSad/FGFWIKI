@@ -13,17 +13,17 @@ export default function FlagshipDecks() {
             {/* Header */}
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{
+                    fontFamily: 'var(--font-hero)',
                     fontSize: '2.5rem',
-                    color: 'var(--primary-neon)',
+                    color: 'var(--gold-bright)',
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
-                    textShadow: '0 0 20px rgba(0, 243, 255, 0.3)',
                     marginBottom: '0.5rem',
                     display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem'
                 }}>
                     <Layers size={40} /> {t('flagships.decks.title')}
                 </h2>
-                <p style={{ color: 'var(--text-dim)', fontSize: '1.1rem' }}>
+                <p className="label-text" style={{ color: 'var(--text-primary)', fontSize: '1.1rem' }}>
                     {t('flagships.decks.subtitle')}
                 </p>
             </div>

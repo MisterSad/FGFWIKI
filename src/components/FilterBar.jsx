@@ -13,9 +13,10 @@ export default function FilterBar({ activeCategory, setActiveCategory }) {
             <button
                 className="btn-primary"
                 style={{
-                    background: activeCategory === 'all' ? 'var(--primary-neon)' : 'transparent',
-                    color: activeCategory === 'all' ? 'var(--bg-deep)' : 'var(--primary-neon)',
-                    boxShadow: activeCategory === 'all' ? '0 0 15px rgba(0, 243, 255, 0.3)' : 'none'
+                    background: activeCategory === 'all' ? 'var(--gold-bright)' : 'var(--bg-void)',
+                    color: activeCategory === 'all' ? 'var(--bg-void)' : 'var(--text-dim)',
+                    border: '1px solid var(--border)',
+                    boxShadow: 'none'
                 }}
                 onClick={() => setActiveCategory('all')}
             >
@@ -27,9 +28,10 @@ export default function FilterBar({ activeCategory, setActiveCategory }) {
                     key={cat.id}
                     className="btn-primary"
                     style={{
-                        background: activeCategory === cat.id ? 'var(--primary-neon)' : 'transparent',
-                        color: activeCategory === cat.id ? 'var(--bg-deep)' : 'var(--primary-neon)',
-                        boxShadow: activeCategory === cat.id ? '0 0 15px rgba(0, 243, 255, 0.3)' : 'none'
+                        background: activeCategory === cat.id ? 'var(--gold-bright)' : 'var(--bg-void)',
+                        color: activeCategory === cat.id ? 'var(--bg-void)' : 'var(--text-dim)',
+                        border: '1px solid var(--border)',
+                        boxShadow: 'none'
                     }}
                     onClick={() => setActiveCategory(cat.id)}
                 >
