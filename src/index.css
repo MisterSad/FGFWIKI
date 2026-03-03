@@ -439,10 +439,8 @@ p {
   right: 0;
   height: 100px;
   z-index: 90;
-  background: rgba(6, 7, 16, 0.85);
-  /* var(--bg-void) with opacity */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--bg-void);
+  /* Solid background so scrolled content isn't visible underneath */
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -581,7 +579,8 @@ p {
 
 .main-content {
   flex: 1;
-  padding-top: 0rem;
+  padding-top: 50px;
+  /* Offset the height of the sticky tabs which are below the 100px header */
   position: relative;
   z-index: 10;
 }

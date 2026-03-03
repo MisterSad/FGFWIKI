@@ -50,10 +50,8 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
                 position: 'sticky',
                 top: '100px',
                 zIndex: 80,
-                background: 'rgba(6, 7, 16, 0.95)',
-                borderBottom: '1px solid var(--border)',
-                backdropFilter: 'blur(10px)',
-                WebkitBackdropFilter: 'blur(10px)'
+                background: 'var(--bg-void)',
+                borderBottom: '1px solid var(--border)'
             }}>
                 <Tabs activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
             </div>
