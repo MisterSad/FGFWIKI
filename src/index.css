@@ -594,7 +594,6 @@ p {
   padding: 0 40px;
   border-bottom: 1px solid var(--border);
   display: flex;
-  position: relative;
 }
 
 .header-text-wrapper {
