@@ -154,6 +154,82 @@ export const tips = [
     content: 'tips.t8_content',
     highlight: true
   },
+
+  // Guild
+  {
+    id: 10,
+    category: 'guild',
+    title: 'tips.port_occ_title',
+    content: 'tips.port_occ_desc',
+    highlight: true,
+    hasDetails: true,
+    sections: [
+      {
+        text: 'tips.port_occ_intro'
+      },
+      {
+        header: 'tips.port_occ_declaring_hdr',
+        text: 'tips.port_occ_declaring_txt'
+      },
+      {
+        header: 'tips.port_occ_battle_hdr',
+        text: 'tips.port_occ_battle_txt'
+      },
+      {
+        header: 'tips.port_occ_rewards_hdr',
+        text: 'tips.port_occ_rewards_txt'
+      },
+      {
+        header: 'tips.port_occ_home_port_hdr',
+        grid: {
+          headers: ['tips.port_occ_home_port_tbl_c1', 'tips.port_occ_home_port_tbl_c2', 'tips.port_occ_home_port_tbl_c3', 'tips.port_occ_home_port_tbl_c4'],
+          rows: [
+            ['L1', '10', '0.02', 'L1'],
+            ['L2', '16', '0.03', 'L2'],
+            ['L3', '20', '0.03', 'L3'],
+            ['L4', '26', '0.04', 'L4'],
+            ['L5', '30', '0.05', 'L5'],
+            ['L6', '36', '0.05', 'L6'],
+            ['L7', '40', '0.06', 'L7'],
+            ['L8', '40', '0.07', 'L8'],
+            ['L9', '40', '0.08', 'L9']
+          ]
+        },
+        note: 'tips.port_occ_home_port_claim'
+      },
+      {
+        header: 'tips.port_occ_star_port_hdr',
+        text: 'tips.port_occ_star_port_txt',
+        grid: {
+          headers: ['tips.port_occ_star_port_tbl_c1', 'tips.port_occ_star_port_tbl_c2', 'tips.port_occ_star_port_tbl_c3', 'tips.port_occ_star_port_tbl_c4'],
+          rows: [
+            ['L1', '2%', '0%', '0%'],
+            ['L2', '0%', '3%', '0%'],
+            ['L3', '0%', '0%', '4%'],
+            ['L4', '5%', '0%', '0%'],
+            ['L5', '0%', '5%', '0%'],
+            ['L6', '0%', '0%', '7%'],
+            ['L7', '7%', '0%', '7%'],
+            ['L8', '0%', '7%', '7%'],
+            ['L9', '10%', '10%', '0%']
+          ]
+        }
+      },
+      {
+        header: 'tips.port_occ_losing_hdr',
+        text: 'tips.port_occ_losing_txt'
+      },
+      {
+        header: 'tips.port_occ_strategy_hdr',
+        text: 'tips.port_occ_strategy_txt'
+      },
+      {
+        header: 'tips.port_occ_final_hdr',
+        text: 'tips.port_occ_final_txt',
+        note: 'tips.port_occ_credit'
+      }
+    ]
+  }
 ];
 
 // --- NEW DATA SECTIONS ---

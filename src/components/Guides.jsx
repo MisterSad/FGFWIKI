@@ -178,7 +178,7 @@ export default function Guides() {
                     gap: '1.5rem',
                     alignItems: 'stretch'
                 }}>
-                    {tips.filter(tip => tip.id === 9).map(tip => (
+                    {tips.filter(tip => tip.hasDetails).map(tip => (
                         <TipCard
                             key={tip.id}
                             tip={{
