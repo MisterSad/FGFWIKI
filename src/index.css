@@ -427,7 +427,7 @@ p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 120px;
   /* Fixed Navigation Height */
 }
 
@@ -437,7 +437,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 120px;
   z-index: 90;
   background: rgba(6, 7, 16, 0.85);
   /* var(--bg-void) with opacity */
@@ -581,7 +581,7 @@ p {
 
 .main-content {
   flex: 1;
-  padding-top: 2rem;
+  padding-top: 0rem;
   position: relative;
   z-index: 10;
 }
@@ -599,7 +599,7 @@ p {
 .header-text-wrapper {
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
+  line-height: 1.1;
   align-items: center;
   text-align: center;
 }
@@ -614,17 +614,21 @@ p {
 }
 
 .header-title-light {
+  font-family: var(--font-hero);
+  font-size: 1.8rem;
   color: var(--text-primary);
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .header-subtitle {
   font-family: var(--font-label);
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--gold-dim);
   text-transform: uppercase;
   letter-spacing: 8px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .mute-button {
@@ -659,6 +663,11 @@ p {
     letter-spacing: 3px;
   }
 
+  .header-title-light {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
   .mute-button {
     right: 20px;
   }
@@ -670,14 +679,18 @@ p {
   }
 
   .header-title-main {
-    font-size: 1.15rem;
-    /* Reduced to fit mobile without line wrapping heavily and overlapping */
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .header-title-light {
+    font-size: 1rem;
     letter-spacing: 1.5px;
   }
 
   .header-subtitle {
-    font-size: 0.65rem;
-    letter-spacing: 3px;
+    font-size: 0.60rem;
+    letter-spacing: 2px;
   }
 
   .mute-button {

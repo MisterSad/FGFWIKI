@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem('bgmMuted', isMuted);
     if (audioRef.current) {
-      audioRef.current.volume = 0.35; // Reduce volume by 65%
+      audioRef.current.volume = 0.15; // Set volume to 15% max
       if (isMuted) {
         audioRef.current.pause();
       } else {

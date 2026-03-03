@@ -6,7 +6,10 @@ export default function Header({ isMuted, toggleMute }) {
         <header className="sticky-nav header-container">
             <div className="header-text-wrapper">
                 <div className="header-title-main">
-                    FOUNDATION <span className="header-title-light">GALACTIC FRONTIER</span>
+                    FOUNDATION
+                </div>
+                <div className="header-title-light">
+                    GALACTIC FRONTIER
                 </div>
                 <div className="header-subtitle">
                     Encyclopedia Galactica
