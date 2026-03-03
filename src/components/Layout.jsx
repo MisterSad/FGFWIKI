@@ -48,7 +48,7 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
             {/* Sub-Header for Navigation - now sits below the fixed Header */}
             <div style={{
                 position: 'sticky',
-                top: '100px',
+                top: '80px',
                 zIndex: 80,
                 background: 'rgba(6, 7, 16, 0.95)',
                 borderBottom: '1px solid var(--border)',
