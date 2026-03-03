@@ -65,35 +65,12 @@ export default function Hero() {
             </div>
 
             {/* Background Image (Hari Seldon / Vault aesthetic) */}
-            <div style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                zIndex: 0,
-                width: '100%',
-                maxWidth: '1600px', /* Increased by 2x */
-                pointerEvents: 'none',
-                animation: 'fadeUpCenter 2s ease-out forwards 1s',
-                opacity: 0,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center'
-            }}>
+            <div className="hero-image-container">
                 <img
                     src="/assets/hari_seldon.png"
                     alt="Hari Seldon"
                     onError={(e) => e.target.style.display = 'none'} // Hide if missing
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                        maxHeight: '120vh', /* Increased by 2x */
-                        objectFit: 'contain',
-                        maskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 70%, transparent 100%)',
-                        WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 70%, transparent 100%)',
-                        filter: 'sepia(40%) hue-rotate(10deg) opacity(0.3)', // Give it an old holographic recording feel
-                        mixBlendMode: 'screen'
-                    }}
+                    className="hero-image"
                 />
             </div>
         </div>

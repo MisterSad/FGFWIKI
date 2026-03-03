@@ -628,24 +628,66 @@ p {
 
 @media (max-width: 900px) {
   .header-container {
-      padding: 0 20px;
+    padding: 0 20px;
   }
+
   .header-title-main {
-      font-size: 1.5rem;
-      letter-spacing: 3px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
   }
 }
 
 @media (max-width: 600px) {
   .header-container {
-      padding: 0 10px;
+    padding: 0 10px;
   }
+
   .header-title-main {
-      font-size: 1.15rem; /* Reduced to fit mobile without line wrapping heavily and overlapping */
-      letter-spacing: 1.5px;
+    font-size: 1.15rem;
+    /* Reduced to fit mobile without line wrapping heavily and overlapping */
+    letter-spacing: 1.5px;
   }
+
   .header-subtitle {
-      font-size: 0.65rem;
-      letter-spacing: 3px;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+  }
+}
+
+/* --- HERO IMAGE CLASSES --- */
+.hero-image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 100%;
+  max-width: 1600px;
+  /* Increased by 2x */
+  pointer-events: none;
+  animation: fadeUpCenter 2s ease-out forwards 1s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 120vh;
+  /* Increased by 2x */
+  object-fit: contain;
+  mask-image: linear-gradient(to top, transparent 0%, black 30%, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%, black 70%, transparent 100%);
+  filter: sepia(40%) hue-rotate(10deg) opacity(0.3);
+  mix-blend-mode: screen;
+}
+
+@media (max-width: 600px) {
+  .hero-image {
+    width: 250%;
+    /* Scale up significantly on mobile so he appears larger behind the text */
+    max-width: none;
   }
 }
