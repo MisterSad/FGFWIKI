@@ -20,7 +20,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [isMuted, setIsMuted] = useState(() => {
     const saved = localStorage.getItem('bgmMuted');
-    return saved !== null ? saved === 'true' : true; // Default to muted to respect autoplay policies
+    return saved !== null ? saved === 'true' : false; // Default to unmuted to play automatically
   });
   const audioRef = useRef(null);
 
@@ -91,7 +91,7 @@ function App() {
 
   return (
     <>
-      <audio ref={audioRef} src="/assets/Foundation%20Main%20Title.mp3" loop />
+      <audio ref={audioRef} src="/assets/Foundation%20Main%20Title.mp3" loop autoPlay />
       <Layout
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
