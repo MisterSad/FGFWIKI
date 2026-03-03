@@ -1,31 +1,140 @@
-import React from 'react';
-import { Trophy, Star, Shield, Zap, Crosshair, Heart, AlertTriangle, Gem, Info, BarChart2 } from 'lucide-react';
+import React, { useState } from 'react';
+import { Trophy, Star, Shield, Zap, Crosshair, Heart, AlertTriangle, Gem, Info, BarChart2, Users } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 
-// Helper component for cleaner code and consistent layout
-const ChampionEntry = ({ name, role, description, isPremium = false, color = 'var(--text-dim)' }) => (
-    <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+// Helper component for Tier List Layout
+const getTierColor = (tier) => {
+    switch (tier) {
+        case 'S+': return '#ff4d4d'; // Bright Red S+
+        case 'S': return '#ff8c00';  // Orange
+        case 'A+': return '#ffd700'; // Gold
+        case 'A': return '#adff2f';  // Green-Yellow
+        case 'B+': return '#00bfff'; // Light Blue
+        case 'B': return '#1e90ff';  // Dodger Blue
+        default: return 'var(--text-dim)';
+    }
+};
+
+const ChampionTierEntry = ({ champion }) => {
+    const [imageError, setImageError] = useState(false);
+
+    return (
         <div style={{
-            padding: '1rem',
-            marginBottom: '1rem',
-            background: 'var(--bg-void)',
-            borderRadius: '2px',
-            border: `2px solid ${isPremium ? 'var(--gold)' : 'var(--border)'}`,
             display: 'flex',
             alignItems: 'center',
-            gap: '1rem',
-            boxShadow: 'none'
+            background: 'var(--bg-void)',
+            padding: '1.5rem',
+            borderRadius: '4px',
+            border: '1px solid var(--border)',
+            gap: '1.5rem',
+            marginBottom: '1rem'
         }}>
-            <Trophy size={24} color={isPremium ? 'var(--gold)' : 'var(--text-dim)'} />
-            <div>
-                <strong className="label-text" style={{ color: isPremium ? 'var(--gold)' : 'var(--text-primary)', fontSize: '1.1rem' }}>{name} ({role})</strong>
-                <p style={{ margin: '0.3rem 0 0 0', color: 'var(--text-dim)', fontSize: '0.9rem', lineHeight: '1.4' }}>
-                    {description}
-                </p>
+            {/* Left: Image + Tier Badge */}
+            <div style={{ position: 'relative', flexShrink: 0 }}>
+                <div style={{
+                    width: '72px',
+                    height: '72px',
+                    borderRadius: '50%',
+                    background: 'var(--bg-surface)',
+                    border: `2px solid ${getTierColor(champion.tier)}`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    overflow: 'hidden'
+                }}>
+                    {!imageError ? (
+                        <img
+                            src={`/images/${champion.name}.png`}
+                            alt={champion.name}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            onError={() => setImageError(true)}
+                        />
+                    ) : (
+                        <Users size={32} color="var(--text-secondary)" />
+                    )}
+                </div>
+                {/* Tier Badge */}
+                <div style={{
+                    position: 'absolute',
+                    bottom: '-8px',
+                    right: '-8px',
+                    background: getTierColor(champion.tier),
+                    color: '#fff',
+                    fontWeight: '900',
+                    fontSize: '0.85rem',
+                    padding: '2px 8px',
+                    borderRadius: '12px',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.5)',
+                    border: '1px solid rgba(255,255,255,0.2)'
+                }}>
+                    {champion.tier}
+                </div>
+            </div>
+
+            {/* Middle: Name */}
+            <div style={{ flex: '0 0 160px' }}>
+                <h4 style={{ margin: 0, color: 'var(--text-primary)', fontSize: '1.3rem' }}>{champion.name}</h4>
+            </div>
+
+            {/* Right: Description Space */}
+            <div style={{
+                flex: 1,
+                borderLeft: '1px dashed var(--border)',
+                paddingLeft: '1.5rem',
+                minHeight: '60px',
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                <span style={{ color: 'var(--text-dim)', fontStyle: 'italic', fontSize: '1.15rem', lineHeight: '1.5' }}>
+                    {champion.descKey ? <Trans i18nKey={champion.descKey} /> : null}
+                </span>
             </div>
         </div>
-    </div>
-);
+    );
+};
+
+const tierListData = [
+    {
+        id: 'kinetic',
+        titleKey: 'champions.kinetic',
+        icon: Crosshair,
+        color: 'var(--gold)',
+        champions: [
+            { name: 'Zora Dominii', tier: 'S+', descKey: 'champions.desc.zora' },
+            { name: 'Killer Bee', tier: 'S+', descKey: 'champions.desc.killer_bee' },
+            { name: 'Eva von Trier', tier: 'S', descKey: 'champions.desc.eva' },
+            { name: 'Cocoon', tier: 'A', descKey: 'champions.desc.cocoon' },
+            { name: 'Riian Dessos', tier: 'A', descKey: 'champions.desc.riian' },
+            { name: 'Lani Verita', tier: 'B+', descKey: 'champions.desc.lani' }
+        ]
+    },
+    {
+        id: 'beam',
+        titleKey: 'champions.beam',
+        icon: Zap,
+        color: 'var(--accent-teal)',
+        champions: [
+            { name: 'Evan Rogers', tier: 'S+', descKey: 'champions.desc.evan' },
+            { name: 'Aliya', tier: 'A+', descKey: 'champions.desc.aliya' },
+            { name: 'Doug Rockwell', tier: 'A', descKey: 'champions.desc.doug' },
+            { name: 'Klara', tier: 'A', descKey: 'champions.desc.klara' },
+            { name: 'Lucius Pullo', tier: 'B+', descKey: 'champions.desc.lucius' }
+        ]
+    },
+    {
+        id: 'ion',
+        titleKey: 'champions.ion',
+        icon: Star,
+        color: 'var(--accent-blue)',
+        champions: [
+            { name: 'Ajita', tier: 'S+', descKey: 'champions.desc.ajita' },
+            { name: 'Lily', tier: 'S', descKey: 'champions.desc.lily' },
+            { name: 'Jodie Beart', tier: 'A+', descKey: 'champions.desc.jodi' },
+            { name: 'Kama Moai', tier: 'A', descKey: 'champions.desc.kama' },
+            { name: 'Phade', tier: 'B', descKey: 'champions.desc.phade' }
+        ]
+    }
+];
 
 export default function ChampionsGuide() {
     const { t } = useTranslation();
@@ -55,124 +164,20 @@ export default function ChampionsGuide() {
                 </div>
             </div>
 
-            {/* 2. Guide by Damage Type */}
+            {/* 2. Guide by Damage Type (Tier List) */}
+            {tierListData.map((category, idx) => (
+                <div key={category.id} className="reveal" style={{ transitionDelay: `${0.1 + idx * 0.1}s`, marginBottom: '4rem' }}>
+                    <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: category.color, marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <category.icon size={28} /> <span className="label-text">{t(category.titleKey)}</span>
+                    </h3>
 
-            {/* KINETIC */}
-            <div className="reveal" style={{ transitionDelay: '0.1s', marginBottom: '4rem' }}>
-                <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: 'var(--gold)', marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Crosshair size={28} /> <span className="label-text">{t('champions.kinetic')}</span>
-                </h3>
-
-                <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-                    {/* Budget */}
-                    <div style={{ background: 'var(--bg-void)', border: '1px solid var(--border)', padding: '1.5rem', borderRadius: '2px' }}>
-                        <h4 className="label-text" style={{ color: 'var(--text-dim)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>{t('champions.budget')}</h4>
-                        <ChampionEntry
-                            name="Riian" role="Attacker"
-                            description={t('champions.desc.riian')}
-                        />
-                        <ChampionEntry
-                            name="Lani" role="Attacker"
-                            description={t('champions.desc.lani')}
-                        />
-                    </div>
-
-                    {/* Premium */}
-                    <div style={{ background: 'var(--bg-void)', padding: '1.5rem', borderRadius: '2px', border: '1px solid var(--gold)', borderLeft: '4px solid var(--gold)' }}>
-                        <h4 className="label-text" style={{ color: 'var(--gold)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>{t('champions.premium')}</h4>
-                        <ChampionEntry
-                            name="Cocoon" role="Defense" isPremium={true}
-                            description={t('champions.desc.cocoon')}
-                        />
-                        <ChampionEntry
-                            name="Eva" role="Support" isPremium={true}
-                            description={t('champions.desc.eva')}
-                        />
-                        <ChampionEntry
-                            name="Zora" role="Attacker" isPremium={true}
-                            description={t('champions.desc.zora')}
-                        />
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                        {category.champions.map((champ, cIdx) => (
+                            <ChampionTierEntry key={cIdx} champion={champ} />
+                        ))}
                     </div>
                 </div>
-            </div>
-
-            {/* BEAM */}
-            <div className="reveal" style={{ transitionDelay: '0.2s', marginBottom: '4rem' }}>
-                <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: 'var(--accent-teal)', marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Zap size={28} /> <span className="label-text">{t('champions.beam')}</span>
-                </h3>
-
-                <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-                    {/* Budget */}
-                    <div style={{ background: 'var(--bg-void)', border: '1px solid var(--border)', padding: '1.5rem', borderRadius: '2px' }}>
-                        <h4 className="label-text" style={{ color: 'var(--text-dim)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>{t('champions.budget')}</h4>
-                        <ChampionEntry
-                            name="Klara" role="Healer"
-                            description={t('champions.desc.klara')}
-                        />
-                        <ChampionEntry
-                            name="Lucius" role="Attacker"
-                            description={t('champions.desc.lucius')}
-                        />
-                    </div>
-
-                    {/* Premium */}
-                    <div style={{ background: 'var(--bg-void)', padding: '1.5rem', borderRadius: '2px', border: '1px solid var(--accent-teal)', borderLeft: '4px solid var(--accent-teal)' }}>
-                        <h4 className="label-text" style={{ color: 'var(--accent-teal)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>{t('champions.premium')}</h4>
-                        <ChampionEntry
-                            name="Doug" role="Healer" isPremium={true}
-                            description={t('champions.desc.doug')}
-                        />
-                        <ChampionEntry
-                            name="Aliya" role="Attacker" isPremium={true}
-                            description={t('champions.desc.aliya')}
-                        />
-                        <ChampionEntry
-                            name="Evan Rodgers" role="Elite" isPremium={true}
-                            description={t('champions.desc.evan')}
-                        />
-                    </div>
-                </div>
-            </div>
-
-            {/* ION */}
-            <div className="reveal" style={{ transitionDelay: '0.3s', marginBottom: '4rem' }}>
-                <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: 'var(--accent-blue)', marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Star size={28} /> <span className="label-text">{t('champions.ion')}</span>
-                </h3>
-
-                <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-                    {/* Budget */}
-                    <div style={{ background: 'var(--bg-void)', border: '1px solid var(--border)', padding: '1.5rem', borderRadius: '2px' }}>
-                        <h4 className="label-text" style={{ color: 'var(--text-dim)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>{t('champions.budget')}</h4>
-                        <ChampionEntry
-                            name="Kama" role="Attacker"
-                            description={t('champions.desc.kama')}
-                        />
-                        <ChampionEntry
-                            name="Phade" role="Healer"
-                            description={t('champions.desc.phade')}
-                        />
-                    </div>
-
-                    {/* Premium */}
-                    <div style={{ background: 'var(--bg-void)', padding: '1.5rem', borderRadius: '2px', border: '1px solid var(--accent-blue)', borderLeft: '4px solid var(--accent-blue)' }}>
-                        <h4 className="label-text" style={{ color: 'var(--accent-blue)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>{t('champions.premium')}</h4>
-                        <ChampionEntry
-                            name="Jodi" role="Attacker" isPremium={true}
-                            description={t('champions.desc.jodi')}
-                        />
-                        <ChampionEntry
-                            name="Ajita" role="Healer" isPremium={true}
-                            description={t('champions.desc.ajita')}
-                        />
-                        <ChampionEntry
-                            name="Lily" role="Elite" isPremium={true}
-                            description={t('champions.desc.lily')}
-                        />
-                    </div>
-                </div>
-            </div>
+            ))}
 
             {/* 3. Stat Analysis */}
             <div className="reveal" style={{ transitionDelay: '0.4s', marginBottom: '4rem' }}>
@@ -191,11 +196,12 @@ export default function ChampionsGuide() {
                         <tbody>
                             {/* Kinetic */}
                             {[
-                                { name: 'Riian', type: 'Kinetic', stat: 'INT / ATK' },
-                                { name: 'Lani', type: 'Kinetic', stat: 'ATK' },
+                                { name: 'Zora Dominii', type: 'Kinetic', stat: 'INT' },
+                                { name: 'Eva von Trier', type: 'Kinetic', stat: 'INT' },
+                                { name: 'Killer Bee', type: 'Kinetic', stat: 'ATK' },
                                 { name: 'Cocoon', type: 'Kinetic', stat: 'DEF' },
-                                { name: 'Eva', type: 'Kinetic', stat: 'INT' },
-                                { name: 'Zora', type: 'Kinetic', stat: 'INT' }
+                                { name: 'Riian Dessos', type: 'Kinetic', stat: 'INT / ATK' },
+                                { name: 'Lani Verita', type: 'Kinetic', stat: 'ATK' }
                             ].map((row, idx) => (
                                 <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
                                     <td className="label-text" style={{ padding: '1rem', color: 'var(--gold)' }}>{row.type}</td>
@@ -205,11 +211,11 @@ export default function ChampionsGuide() {
                             ))}
                             {/* Beam */}
                             {[
-                                { name: 'Klara', type: 'Beam', stat: 'INT' },
-                                { name: 'Lucius', type: 'Beam', stat: 'ATK' },
-                                { name: 'Doug', type: 'Beam', stat: 'DEF' },
+                                { name: 'Evan Rogers', type: 'Beam', stat: 'ATK' },
                                 { name: 'Aliya', type: 'Beam', stat: 'INT' },
-                                { name: 'Evan', type: 'Beam', stat: 'ATK' }
+                                { name: 'Doug Rockwell', type: 'Beam', stat: 'DEF' },
+                                { name: 'Klara', type: 'Beam', stat: 'INT' },
+                                { name: 'Lucius Pullo', type: 'Beam', stat: 'ATK' }
                             ].map((row, idx) => (
                                 <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
                                     <td className="label-text" style={{ padding: '1rem', color: 'var(--accent-teal)' }}>{row.type}</td>
@@ -219,11 +225,11 @@ export default function ChampionsGuide() {
                             ))}
                             {/* Ion */}
                             {[
-                                { name: 'Kama', type: 'Ion', stat: 'INT' },
-                                { name: 'Phade', type: 'Ion', stat: 'ATK' },
-                                { name: 'Jodi', type: 'Ion', stat: 'ATK' },
                                 { name: 'Ajita', type: 'Ion', stat: 'ATK' },
-                                { name: 'Lily', type: 'Ion', stat: 'ATK' }
+                                { name: 'Lily', type: 'Ion', stat: 'ATK' },
+                                { name: 'Jodie Beart', type: 'Ion', stat: 'ATK' },
+                                { name: 'Kama Moai', type: 'Ion', stat: 'INT' },
+                                { name: 'Phade', type: 'Ion', stat: 'ATK' }
                             ].map((row, idx) => (
                                 <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
                                     <td className="label-text" style={{ padding: '1rem', color: 'var(--accent-blue)' }}>{row.type}</td>

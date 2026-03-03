@@ -214,19 +214,19 @@ export const groundTeams = [
     id: 'early_game',
     title: 'ground_teams.early_game_title',
     description: 'ground_teams.early_game_desc',
-    members: ['Warrior Hero', 'Sage Hero', 'Any DPS']
+    members: ['Cocoon', 'Doug Rockwell', 'Klara']
   },
   {
     id: 'mid_game',
     title: 'ground_teams.mid_game_title',
     description: 'ground_teams.mid_game_desc',
-    members: ['Kama (DPS)', 'Doug (Heal)', 'Aris (Tank)']
+    members: ['Cocoon', 'Doug Rockwell', 'Zora Dominii']
   },
   {
     id: 'late_game',
     title: 'ground_teams.late_game_title',
     description: 'ground_teams.late_game_desc',
-    members: ['Cocoon (Tank)', 'Eva von Trier (Support)', 'Zora Dominii (DPS)']
+    members: ['Zora Dominii', 'Lily', 'Evan Rogers']
   }
 ];
 

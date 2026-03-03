@@ -171,94 +171,24 @@ export default function Guides() {
 
     return (
         <>
-            <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', paddingBottom: '4rem' }}>
-
-                {/* Start Guide Section */}
-                <div style={{ marginBottom: '4rem' }}>
-                    <h2 style={{
-                        fontFamily: 'var(--font-hero)',
-                        fontSize: '2rem',
-                        color: 'var(--gold)',
-                        marginBottom: '1.5rem',
-                        display: 'flex', alignItems: 'center', gap: '1rem',
-                        borderBottom: '1px solid var(--border)',
-                        paddingBottom: '0.5rem',
-                        textTransform: 'uppercase'
-                    }}>
-                        <BookOpen size={32} /> <span className="label-text">{t('guides.start_guide')}</span>
-                    </h2>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                        gap: '1.5rem',
-                        alignItems: 'stretch'
-                    }}>
-                        {beginnerTips.map(tip => (
-                            <TipCard key={tip.id} tip={tip} />
-                        ))}
-                    </div>
+            <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', paddingBottom: '4rem', paddingTop: '2rem' }}>
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                    gap: '1.5rem',
+                    alignItems: 'stretch'
+                }}>
+                    {tips.filter(tip => tip.id === 9).map(tip => (
+                        <TipCard
+                            key={tip.id}
+                            tip={{
+                                ...tip,
+                                onClick: () => tip.hasDetails && setSelectedTip(tip)
+                            }}
+                        />
+                    ))}
                 </div>
-
-                {/* Combat Tactics Section */}
-                <div>
-                    <h2 style={{
-                        fontFamily: 'var(--font-hero)',
-                        fontSize: '2rem',
-                        color: 'var(--accent-teal)',
-                        marginBottom: '1.5rem',
-                        display: 'flex', alignItems: 'center', gap: '1rem',
-                        borderBottom: '1px solid var(--border)',
-                        paddingBottom: '0.5rem',
-                        textTransform: 'uppercase'
-                    }}>
-                        <Swords size={32} /> <span className="label-text">{t('guides.combat_tactics')}</span>
-                    </h2>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                        gap: '1.5rem',
-                        alignItems: 'stretch'
-                    }}>
-                        {combatTips.map(tip => (
-                            <TipCard
-                                key={tip.id}
-                                tip={{
-                                    ...tip,
-                                    onClick: () => tip.hasDetails && setSelectedTip(tip)
-                                }}
-                            />
-                        ))}
-                    </div>
-                </div>
-
-                {/* Economy Section */}
-                <div style={{ marginTop: '4rem' }}>
-                    <h2 style={{
-                        fontFamily: 'var(--font-hero)',
-                        fontSize: '2rem',
-                        color: 'var(--accent-blue)',
-                        marginBottom: '1.5rem',
-                        display: 'flex', alignItems: 'center', gap: '1rem',
-                        borderBottom: '1px solid var(--border)',
-                        paddingBottom: '0.5rem',
-                        textTransform: 'uppercase'
-                    }}>
-                        <Coins size={32} /> <span className="label-text">{t('guides.economy')}</span>
-                    </h2>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                        gap: '1.5rem',
-                        alignItems: 'stretch'
-                    }}>
-                        {economyTips.map(tip => (
-                            <TipCard key={tip.id} tip={tip} />
-                        ))}
-                    </div>
-                </div>
-
             </div>
-
         </>
     );
 }
