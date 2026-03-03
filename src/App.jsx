@@ -90,9 +90,9 @@ function App() {
 
   return (
     <>
-      <audio ref={audioRef} src="/bgm.ogg" loop />
-      <Layout 
-        activeCategory={activeCategory} 
+      <audio ref={audioRef} src="/assets/Foundation%20Main%20Title.mp3" loop />
+      <Layout
+        activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
         isMuted={isMuted}
         toggleMute={toggleMute}
