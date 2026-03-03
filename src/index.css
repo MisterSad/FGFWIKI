@@ -427,7 +427,7 @@ p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 100px;
   /* Fixed Navigation Height */
 }
 
@@ -437,7 +437,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 100px;
   z-index: 90;
   background: rgba(6, 7, 16, 0.85);
   /* var(--bg-void) with opacity */
@@ -599,15 +599,16 @@ p {
 .header-text-wrapper {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.0;
   align-items: center;
   text-align: center;
-  margin-top: 5px;
+  margin-top: -5px;
+  /* Pull text up cleanly */
 }
 
 .header-title-main {
   font-family: var(--font-hero);
-  font-size: 2.2rem;
+  font-size: 2.0rem;
   font-weight: 800;
   color: var(--gold-bright);
   text-transform: uppercase;
@@ -616,20 +617,22 @@ p {
 
 .header-title-light {
   font-family: var(--font-hero);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--text-primary);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
+  margin-top: -3px;
+  /* Tighter gap */
 }
 
 .header-subtitle {
   font-family: var(--font-label);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--gold-dim);
   text-transform: uppercase;
   letter-spacing: 8px;
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 .mute-button {
