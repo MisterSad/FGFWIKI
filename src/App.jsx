@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
@@ -18,6 +18,35 @@ import { tips, shipDecks, groundTeams } from './data/gameData';
 
 function App() {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [isMuted, setIsMuted] = useState(() => {
+    const saved = localStorage.getItem('bgmMuted');
+    return saved !== null ? saved === 'true' : true; // Default to muted to respect autoplay policies
+  });
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    localStorage.setItem('bgmMuted', isMuted);
+    if (audioRef.current) {
+      if (isMuted) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play().catch(e => console.log('Autoplay prevented by browser:', e));
+      }
+    }
+  }, [isMuted]);
+
+  const toggleMute = () => setIsMuted(!isMuted);
+
+  // Attempt to autoplay on first user interaction if not muted
+  useEffect(() => {
+    const handleInteraction = () => {
+      if (!isMuted && audioRef.current && audioRef.current.paused) {
+        audioRef.current.play().catch(e => console.log('Playback prevented:', e));
+      }
+    };
+    document.addEventListener('click', handleInteraction, { once: true });
+    return () => document.removeEventListener('click', handleInteraction);
+  }, [isMuted]);
 
   const renderContent = () => {
     // Overview / Home Content
@@ -61,7 +90,13 @@ function App() {
 
   return (
     <>
-      <Layout activeCategory={activeCategory} setActiveCategory={setActiveCategory}>
+      <audio ref={audioRef} src="/bgm.ogg" loop />
+      <Layout 
+        activeCategory={activeCategory} 
+        setActiveCategory={setActiveCategory}
+        isMuted={isMuted}
+        toggleMute={toggleMute}
+      >
         {renderContent()}
       </Layout>
       <Analytics />
