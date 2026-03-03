@@ -490,6 +490,8 @@ p {
   white-space: nowrap;
   justify-content: center;
   transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  background: var(--bg-void);
+  /* Solidify the actual scrolling tabs area */
 }
 
 @media (max-width: 900px) {

@@ -50,6 +50,7 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
                 position: 'sticky',
                 top: '100px',
                 zIndex: 80,
+                width: '100%',
                 background: 'var(--bg-void)',
                 borderBottom: '1px solid var(--border)'
             }}>
