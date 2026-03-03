@@ -585,3 +585,67 @@ p {
   position: relative;
   z-index: 10;
 }
+
+/* --- HEADER CLASSES --- */
+.header-container {
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+}
+
+.header-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  align-items: center;
+  text-align: center;
+}
+
+.header-title-main {
+  font-family: var(--font-hero);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--gold-bright);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.header-title-light {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.header-subtitle {
+  font-family: var(--font-label);
+  font-size: 1rem;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .header-container {
+      padding: 0 20px;
+  }
+  .header-title-main {
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+      padding: 0 10px;
+  }
+  .header-title-main {
+      font-size: 1.15rem; /* Reduced to fit mobile without line wrapping heavily and overlapping */
+      letter-spacing: 1.5px;
+  }
+  .header-subtitle {
+      font-size: 0.65rem;
+      letter-spacing: 3px;
+  }
+}
