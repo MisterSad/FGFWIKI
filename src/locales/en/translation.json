@@ -8,7 +8,7 @@
         "flagship_decks": "Flagship Decks",
         "ground_teams": "Ground Teams",
         "events": "Events",
-        "builder": "Builder",
+        "builder": "Tools",
         "economy": "Economy",
         "gift_codes": "Gift Codes"
     },
@@ -32,7 +32,7 @@
         "flagship_decks": "Flagship Decks",
         "ground": "Ground Teams",
         "events": "Events",
-        "builder": "Builder",
+        "builder": "Tools",
         "guild": "Guild"
     },
     "tips": {
@@ -533,8 +533,8 @@
         "subtitle": "Optimal team compositions for ground combat."
     },
     "builder_ui": {
-        "title": "Builder",
-        "config_panel": "Builder",
+        "title": "Tools",
+        "config_panel": "Tools",
         "select_building": "Select Building",
         "target_level": "Target Level",
         "flat_reductions": "Flat Reductions",
