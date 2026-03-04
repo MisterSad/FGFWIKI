@@ -27,7 +27,7 @@ export default function Guides() {
                         gap: '0.8rem',
                         background: 'transparent',
                         border: '1px solid var(--gold)',
-                        color: 'var(--gold)',
+                        color: "#FFFFFF",
                         padding: '0.8rem 1.5rem',
                         cursor: 'pointer',
                         fontSize: '1rem',
@@ -123,7 +123,7 @@ export default function Guides() {
                                         <thead>
                                             <tr style={{ background: 'var(--bg-void)' }}>
                                                 {section.grid.headers.map((header, hIdx) => (
-                                                    <th key={hIdx} style={{ padding: '16px', textAlign: 'left', color: 'var(--gold)', borderBottom: '1px solid var(--border)' }}>
+                                                    <th key={hIdx} style={{ padding: '16px', textAlign: 'left', color: "#FFFFFF", borderBottom: '1px solid var(--border)' }}>
                                                         {t(header)}
                                                     </th>
                                                 ))}
@@ -150,7 +150,7 @@ export default function Guides() {
                                     alignItems: 'flex-start',
                                     gap: '1rem',
                                     marginTop: '1.5rem',
-                                    color: 'var(--gold)',
+                                    color: "#FFFFFF",
                                     background: 'var(--bg-void)',
                                     padding: '1.5rem',
                                     borderRadius: '2px',

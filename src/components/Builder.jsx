@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import BuildTimeCalculator from "./tools/BuildTimeCalculator";
 import NexusCalculator from "./tools/NexusCalculator";
 import GvGCalculator from "./tools/GvGCalculator";
+import CombatCraftCalculator from "./tools/CombatCraftCalculator";
 
 export default function Builder() {
     const { t } = useTranslation();
@@ -31,13 +32,13 @@ export default function Builder() {
             padding: 12px 24px;
             background: transparent;
             border: none;
-            color: var(--tx-dim, #5A5848);
+            color: var(--tx-dim, #FFFFFF);
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
         }
         .tool-tab.active {
-            color: var(--gold, #C9A84C);
+            color: #FFFFFF;
         }
         .tool-tab::after {
             content: '';
@@ -54,7 +55,7 @@ export default function Builder() {
             width: 70%;
         }
         .tool-tab:hover {
-            color: var(--gold-br, #E8C96A);
+            color: #FFFFFF;
         }
       `}</style>
 
@@ -71,23 +72,30 @@ export default function Builder() {
                     <button
                         className={`tool-tab ${activeTab === 'build-time' ? 'active' : ''}`}
                         onClick={() => setActiveTab('build-time')}
-                        style={{ color: activeTab === 'build-time' ? '#C9A84C' : '#8A8778' }}
+                        style={{ color: activeTab === 'build-time' ? '#FFFFFF' : '#8A8778' }}
                     >
                         Build Time
                     </button>
                     <button
                         className={`tool-tab ${activeTab === 'nexus' ? 'active' : ''}`}
                         onClick={() => setActiveTab('nexus')}
-                        style={{ color: activeTab === 'nexus' ? '#C9A84C' : '#8A8778' }}
+                        style={{ color: activeTab === 'nexus' ? '#FFFFFF' : '#8A8778' }}
                     >
                         Nexus
                     </button>
                     <button
                         className={`tool-tab ${activeTab === 'gvg' ? 'active' : ''}`}
                         onClick={() => setActiveTab('gvg')}
-                        style={{ color: activeTab === 'gvg' ? '#C9A84C' : '#8A8778' }}
+                        style={{ color: activeTab === 'gvg' ? '#FFFFFF' : '#8A8778' }}
                     >
-                        GvG
+                        Guild vs Guild
+                    </button>
+                    <button
+                        className={`tool-tab ${activeTab === 'combat-craft' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('combat-craft')}
+                        style={{ color: activeTab === 'combat-craft' ? '#FFFFFF' : '#8A8778' }}
+                    >
+                        Combat Craft
                     </button>
                 </div>
 
@@ -99,6 +107,7 @@ export default function Builder() {
                 {activeTab === 'build-time' && <BuildTimeCalculator />}
                 {activeTab === 'nexus' && <NexusCalculator />}
                 {activeTab === 'gvg' && <GvGCalculator />}
+                {activeTab === 'combat-craft' && <CombatCraftCalculator />}
             </main>
         </div>
     );

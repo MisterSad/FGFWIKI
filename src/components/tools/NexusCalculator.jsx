@@ -209,7 +209,7 @@ export default function NexusCalculator() {
                     </div>
 
                     <div style={{ marginBottom: 4, padding: "14px 16px", background: "rgba(201,168,76,0.04)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'Rajdhani', sans-serif", fontSize: 16, color: V.gold, letterSpacing: 0.3, marginBottom: 8 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'Rajdhani', sans-serif", fontSize: 16, color: "#FFFFFF", letterSpacing: 0.3, marginBottom: 8 }}>
                             <span>Progress to S{toStage}</span>
                             <span style={{ fontFamily: "'Share Tech Mono'" }}>{pctProgress}% of max</span>
                         </div>
@@ -286,7 +286,7 @@ export default function NexusCalculator() {
                                                     </React.Fragment>
                                                 ))}
                                             </div>
-                                            <div style={{ marginTop: 12, paddingTop: 10, borderTop: `1px solid ${V.border}`, fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: V.goldDim }}>
+                                            <div style={{ marginTop: 12, paddingTop: 10, borderTop: `1px solid ${V.border}`, fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: "#FFFFFF" }}>
                                                 ⬡ Milestone: {s.milestone}
                                             </div>
                                         </div>

@@ -33,7 +33,7 @@ export default function Tabs({ activeCategory, setActiveCategory }) {
             <div className="mobile-menu-header">
                 <span className="mobile-active-label" style={{
                     fontFamily: 'var(--font-label)',
-                    color: 'var(--gold)',
+                    color: "#FFFFFF",
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
                     fontSize: '0.9rem',

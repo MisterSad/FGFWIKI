@@ -50,7 +50,7 @@ export default function EventGuide() {
                                     opacity: 0.05,
                                     transform: 'rotate(15deg)',
                                     pointerEvents: 'none',
-                                    color: 'var(--gold)'
+                                    color: "#FFFFFF"
                                 }}>
                                     <Calendar size={140} strokeWidth={1} />
                                 </div>
@@ -90,7 +90,7 @@ export default function EventGuide() {
                                 <div style={{
                                     marginTop: 'auto',
                                     paddingTop: '2rem',
-                                    color: 'var(--gold)',
+                                    color: "#FFFFFF",
                                     fontFamily: 'var(--font-label)',
                                     fontSize: '0.85rem',
                                     textTransform: 'uppercase',
@@ -122,7 +122,7 @@ export default function EventGuide() {
                             gap: '0.8rem',
                             background: 'transparent',
                             border: '1px solid var(--gold)',
-                            color: 'var(--gold)',
+                            color: "#FFFFFF",
                             padding: '0.8rem 1.5rem',
                             cursor: 'pointer',
                             fontSize: '1rem',
@@ -196,8 +196,8 @@ export default function EventGuide() {
                                 marginBottom: '2rem',
                                 textAlign: 'center'
                             }}>
-                                <strong className="label-text" style={{ color: 'var(--gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem', textTransform: 'uppercase', fontSize: '1.1rem' }}>
-                                    <Star size={20} color="var(--gold)" /> {t('events_ui.golden_rule')}
+                                <strong className="label-text" style={{ color: "#FFFFFF", display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem', textTransform: 'uppercase', fontSize: '1.1rem' }}>
+                                    <Star size={20} color="#FFFFFF" /> {t('events_ui.golden_rule')}
                                 </strong>
                                 <span style={{ color: 'var(--text-main)', fontStyle: 'italic', fontSize: '1.1rem' }}>"{t(selectedEvent.goldenRule)}"</span>
                             </div>
@@ -207,7 +207,7 @@ export default function EventGuide() {
                         <p style={{ color: 'var(--text-main)', marginBottom: '2rem', lineHeight: '1.7', fontSize: '1.05rem' }}>
                             {t(selectedEvent.description)}
                             {selectedEvent.essentials && (
-                                <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.8rem', color: 'var(--gold)', fontStyle: 'italic', background: 'var(--bg-surface)', padding: '0.5rem', borderRadius: '4px' }}>
+                                <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.8rem', color: "#FFFFFF", fontStyle: 'italic', background: 'var(--bg-surface)', padding: '0.5rem', borderRadius: '4px' }}>
                                     <Lightbulb size={18} /> {t(selectedEvent.essentials)}
                                 </span>
                             )}
@@ -222,8 +222,8 @@ export default function EventGuide() {
                                 <table style={{ fontFamily: 'var(--font-mono)', width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', color: 'var(--text-dim)' }}>
                                     <thead>
                                         <tr style={{ borderBottom: '1px solid var(--border)' }}>
-                                            <th style={{ padding: '10px', textAlign: 'left', color: 'var(--gold)' }}>{t('events_ui.tier')}</th>
-                                            {[1, 2, 3, 4, 5, 6].map(d => <th key={d} style={{ padding: '10px', textAlign: 'right', color: d >= 5 ? 'var(--gold-bright)' : 'var(--text-primary)' }}>{t('events_ui.day')} {d}</th>)}
+                                            <th style={{ padding: '10px', textAlign: 'left', color: "#FFFFFF" }}>{t('events_ui.tier')}</th>
+                                            {[1, 2, 3, 4, 5, 6].map(d => <th key={d} style={{ padding: '10px', textAlign: 'right', color: d >= 5 ? '#FFFFFF' : 'var(--text-primary)' }}>{t('events_ui.day')} {d}</th>)}
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -231,7 +231,7 @@ export default function EventGuide() {
                                             <tr key={idx} style={{ background: idx % 2 === 0 ? 'var(--bg-void)' : 'transparent' }}>
                                                 <td style={{ padding: '10px', fontWeight: 'bold', color: 'var(--text-primary)' }}>{t(row.tier)}</td>
                                                 {row.values.map((val, vIdx) => (
-                                                    <td key={vIdx} style={{ padding: '10px', textAlign: 'right', fontWeight: vIdx >= 4 ? 'bold' : 'normal', color: vIdx >= 4 ? 'var(--gold-bright)' : 'inherit' }}>
+                                                    <td key={vIdx} style={{ padding: '10px', textAlign: 'right', fontWeight: vIdx >= 4 ? 'bold' : 'normal', color: vIdx >= 4 ? '#FFFFFF' : 'inherit' }}>
                                                         {val.toLocaleString()}
                                                     </td>
                                                 ))}
@@ -245,7 +245,7 @@ export default function EventGuide() {
                         {/* Schedule Phases */}
                         {selectedEvent.schedulePhases && (
                             <div style={{ marginBottom: '2rem' }}>
-                                <h4 style={{ margin: '0 0 1rem', color: 'var(--gold)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                <h4 style={{ margin: '0 0 1rem', color: "#FFFFFF", fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                     <Clock size={20} /> <span className="label-text">{t('events_ui.pvp_schedule')}</span>
                                 </h4>
                                 <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
@@ -267,7 +267,7 @@ export default function EventGuide() {
                         {/* Simple Schedule */}
                         {selectedEvent.schedule && !selectedEvent.schedulePhases && (
                             <div style={{ marginBottom: '2rem', background: 'var(--bg-void)', border: '1px solid var(--border)', padding: '1.5rem', borderRadius: '2px' }}>
-                                <h4 style={{ margin: '0 0 1rem', color: 'var(--gold)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                <h4 style={{ margin: '0 0 1rem', color: "#FFFFFF", fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                     <Clock size={20} /> <span className="label-text">{t('events_ui.schedule')}</span>
                                 </h4>
                                 {selectedEvent.schedule.map((day, idx) => (
@@ -282,7 +282,7 @@ export default function EventGuide() {
                         {/* Event Stages */}
                         {selectedEvent.stages && (
                             <div style={{ marginBottom: '2rem' }}>
-                                <h4 style={{ margin: '0 0 1rem', color: 'var(--gold)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                <h4 style={{ margin: '0 0 1rem', color: "#FFFFFF", fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                     <Calendar size={20} /> <span className="label-text">{t('events_ui.stages')}</span>
                                 </h4>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
@@ -321,7 +321,7 @@ export default function EventGuide() {
                                 <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
                                     {selectedEvent.infoGrid.items.map((item, idx) => (
                                         <div key={idx} style={{ background: 'var(--bg-void)', padding: '1rem', borderRadius: '2px', border: '1px solid var(--border)' }}>
-                                            <div className="label-text" style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '0.95rem', marginBottom: '0.4rem' }}>{t(item.label)}</div>
+                                            <div className="label-text" style={{ color: "#FFFFFF", fontWeight: 'bold', fontSize: '0.95rem', marginBottom: '0.4rem' }}>{t(item.label)}</div>
                                             <div style={{ color: 'var(--text-dim)', fontSize: '0.9rem', lineHeight: '1.4' }}>{t(item.value)}</div>
                                             {item.note && (
                                                 <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)', marginTop: '0.5rem', fontStyle: 'italic', borderTop: '1px solid var(--border)', paddingTop: '0.4rem' }}>
@@ -343,7 +343,7 @@ export default function EventGuide() {
                                 <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
                                     {selectedEvent.dailyActions.map((day, idx) => (
                                         <div key={idx} style={{ background: 'var(--bg-void)', padding: '1rem', borderRadius: '2px', border: '1px solid var(--border)' }}>
-                                            <div className="label-text" style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '0.95rem', marginBottom: '0.4rem' }}>{t(day.focus)}</div>
+                                            <div className="label-text" style={{ color: "#FFFFFF", fontWeight: 'bold', fontSize: '0.95rem', marginBottom: '0.4rem' }}>{t(day.focus)}</div>
                                             <div style={{ color: 'var(--text-dim)', fontSize: '0.9rem', lineHeight: '1.4' }}>{t(day.details)}</div>
                                         </div>
                                     ))}
@@ -376,10 +376,10 @@ export default function EventGuide() {
                                     {selectedEvent.teams.map((team, idx) => (
                                         <div key={idx} style={{ background: 'var(--bg-void)', border: '1px solid var(--border)', padding: '1rem', borderRadius: '2px' }}>
                                             <div style={{
-                                                color: team.name.includes('Kinetic') ? 'var(--gold)' :
+                                                color: team.name.includes('Kinetic') ? '#FFFFFF' :
                                                     team.name.includes('Beam') ? 'var(--accent-teal)' :
                                                         team.name.includes('Ion') ? 'var(--accent-blue)' :
-                                                            'var(--gold)',
+                                                            '#FFFFFF',
                                                 fontWeight: 'bold',
                                                 fontSize: '1rem',
                                                 marginBottom: '0.4rem'
@@ -401,7 +401,7 @@ export default function EventGuide() {
                         {/* Pro Tips Section */}
                         {selectedEvent.proTips && (
                             <div style={{ background: 'var(--bg-void)', border: '1px solid var(--border)', padding: '1.5rem', borderRadius: '2px', borderLeft: '4px solid var(--gold)', marginBottom: '1rem' }}>
-                                <h4 style={{ margin: '0 0 1rem', color: 'var(--gold)', fontSize: '1.2rem' }}>{t('events_ui.pro_tips')}</h4>
+                                <h4 style={{ margin: '0 0 1rem', color: "#FFFFFF", fontSize: '1.2rem' }}>{t('events_ui.pro_tips')}</h4>
                                 {selectedEvent.proTips.map((tip, idx) => (
                                     <div key={idx} style={{ marginBottom: '0.8rem' }}>
                                         {tip.title && <strong style={{ color: 'var(--text-primary)', fontSize: '1rem' }}>{t(tip.title)}: </strong>}

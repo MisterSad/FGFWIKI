@@ -137,6 +137,7 @@ const TIER_LABELS = {
 const fmt = (n) => n.toLocaleString("en-US");
 
 function TreeCard({ tree, currentLevel, onChange }) {
+  const [open, setOpen] = useState(false);
   const maxLvl = tree.levels.length;
 
   const remaining = tree.levels.slice(currentLevel).reduce(
@@ -166,6 +167,8 @@ function TreeCard({ tree, currentLevel, onChange }) {
         position: "relative",
         overflow: "hidden",
         minWidth: 0,
+        minHeight: 180,
+        gridColumn: open ? "1 / -1" : "auto",
       }}
     >
       {/* Glow */}
@@ -186,21 +189,21 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-        <div>
+        <div style={{ minHeight: 48, display: "flex", flexDirection: "column" }}>
           <div
             style={{
               fontFamily: "'Rajdhani', sans-serif",
               fontSize: 16,
               fontWeight: 700,
-              color: tree.isGate ? "#ffbe3c" : V.txPri,
+              color: "#FFFFFF",
               letterSpacing: 0.5,
-              lineHeight: 1.3,
+              lineHeight: 1.2,
               textTransform: "uppercase"
             }}
           >
             {tree.name}
           </div>
-          <div style={{ fontSize: 11, color: V.txDim, marginTop: 2, lineHeight: 1.3, fontFamily: "'Rajdhani', sans-serif" }}>
+          <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "'Rajdhani', sans-serif" }}>
             {tree.bonus}
           </div>
         </div>
@@ -243,8 +246,8 @@ function TreeCard({ tree, currentLevel, onChange }) {
       </div>
 
       {/* Level selector */}
-      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <label style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 12, color: V.txDim, flexShrink: 0, textTransform: "uppercase" }}>Level</label>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 4 }}>
+        <label style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>Level</label>
         <input
           type="range"
           min={0}
@@ -255,21 +258,25 @@ function TreeCard({ tree, currentLevel, onChange }) {
             flex: 1,
             accentColor: tree.isGate ? "#ffbe3c" : V.gold,
             height: 3,
+            maxWidth: "calc(100% - 50px)"
           }}
         />
       </div>
 
       {/* Stats */}
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
-        <Stat label="Galactic Coins" value={fmt(remaining.gc)} color="#f0c040" dimmed={done} />
-        <Stat label="Computational Component" value={fmt(remaining.cc)} color="#6fa3ef" dimmed={done} />
+        <Stat label="Galactic Coins" value={fmt(remaining.gc)} color="#C9A84C" dimmed={done} />
+        <Stat label="Computational Component" value={fmt(remaining.cc)} color="#a78bfa" dimmed={done} />
         {!tree.isGate && (
           <Stat label="Bonus" value={`+${currentBonus}%`} color="#2ecc71" dimmed={false} />
         )}
       </div>
 
       {/* Level detail (collapsible) */}
-      <LevelDetails tree={tree} currentLevel={currentLevel} />
+      <div style={{ flex: 1 }} />
+      <div style={{ alignSelf: "flex-end", width: "100%", marginTop: "auto" }}>
+        <LevelDetails tree={tree} currentLevel={currentLevel} open={open} setOpen={setOpen} />
+      </div>
     </div>
   );
 }
@@ -277,7 +284,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
 function Stat({ label, value, color, dimmed }) {
   return (
     <div style={{ minWidth: 60 }}>
-      <div style={{ fontFamily: "'Orbitron'", fontSize: 9, color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>
+      <div style={{ fontFamily: "'Orbitron'", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>
         {label}
       </div>
       <div
@@ -285,7 +292,7 @@ function Stat({ label, value, color, dimmed }) {
           fontFamily: "'Share Tech Mono', monospace",
           fontSize: 14,
           fontWeight: 600,
-          color: dimmed ? V.txDim : color,
+          color: dimmed ? "#FFFFFF" : color,
           marginTop: 2,
         }}
       >
@@ -295,10 +302,9 @@ function Stat({ label, value, color, dimmed }) {
   );
 }
 
-function LevelDetails({ tree, currentLevel }) {
-  const [open, setOpen] = useState(false);
+function LevelDetails({ tree, currentLevel, open, setOpen }) {
   return (
-    <div style={{ marginTop: "auto" }}>
+    <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
       <button
         onClick={() => setOpen(!open)}
         style={{
@@ -314,7 +320,7 @@ function LevelDetails({ tree, currentLevel }) {
           fontFamily: "'Rajdhani', sans-serif",
           width: "100%",
           textAlign: "center",
-          marginTop: 4,
+          marginTop: 12,
           transition: "all 0.2s"
         }}
       >
@@ -339,22 +345,22 @@ function LevelDetails({ tree, currentLevel }) {
                     : done
                       ? "rgba(0,0,0,0.2)"
                       : "transparent",
-                  color: done ? V.txDim : V.txPri,
+                  color: done ? "#FFFFFF" : V.txPri,
                   textDecoration: done ? "line-through" : "none",
                   alignItems: "center",
                   fontFamily: "'Share Tech Mono', monospace",
                 }}
               >
-                <span style={{ width: 20, flexShrink: 0, fontWeight: next ? 700 : 400, color: next ? V.gold : "inherit" }}>
+                <span style={{ width: 20, flexShrink: 0, fontWeight: next ? 700 : 400, color: next ? "#FFFFFF" : "inherit" }}>
                   {next ? "▶" : ""} {i + 1}
                 </span>
-                <span style={{ width: 70, flexShrink: 0, textAlign: "right", color: done ? V.txDim : "#f0c040" }}>
+                <span style={{ flex: 1.5, textAlign: "right", color: done ? "#FFFFFF" : "#C9A84C" }}>
                   {fmt(l.gc)}
                 </span>
-                <span style={{ width: 50, flexShrink: 0, textAlign: "right", color: done ? V.txDim : (l.cc === 0 ? V.txDim : "#6fa3ef") }}>
+                <span style={{ flex: 1, textAlign: "right", color: done ? "#FFFFFF" : (l.cc === 0 ? "#FFFFFF" : "#a78bfa") }}>
                   {l.cc === 0 ? "—" : fmt(l.cc)}
                 </span>
-                <span style={{ color: done ? V.txDim : "#2ecc71", flexShrink: 0, marginLeft: "auto" }}>
+                <span style={{ color: done ? "#FFFFFF" : "#2ecc71", flexShrink: 0, marginLeft: "auto", minWidth: 35, textAlign: "right" }}>
                   {l.bonus > 0 ? `+${l.bonus}%` : ""}
                 </span>
               </div>
@@ -441,10 +447,10 @@ export default function GvGCalculator() {
                 }}
                 style={{
                   background: "rgba(0,0,0,0.4)",
-                  border: `1px solid rgba(240,192,64,0.3)`,
+                  border: `1px solid rgba(201,168,76,0.3)`,
                   borderRadius: 2,
                   padding: "6px 12px",
-                  color: "#f0c040",
+                  color: "#C9A84C",
                   fontFamily: "'Share Tech Mono', monospace",
                   fontSize: 16,
                   fontWeight: 600,
@@ -465,10 +471,10 @@ export default function GvGCalculator() {
                 }}
                 style={{
                   background: "rgba(0,0,0,0.4)",
-                  border: `1px solid rgba(111,163,239,0.3)`,
+                  border: `1px solid rgba(167,139,250,0.3)`,
                   borderRadius: 2,
                   padding: "6px 12px",
-                  color: "#6fa3ef",
+                  color: "#a78bfa",
                   fontFamily: "'Share Tech Mono', monospace",
                   fontSize: 16,
                   fontWeight: 600,
@@ -496,13 +502,13 @@ export default function GvGCalculator() {
         >
           <div>
             <Label>Galactic Coins Needed</Label>
-            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color: "#f0c040" }}>
+            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color: "#C9A84C" }}>
               {fmt(totals.remainGC)}
             </div>
           </div>
           <div>
             <Label>Computational Component Needed</Label>
-            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color: "#6fa3ef" }}>
+            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color: "#a78bfa" }}>
               {fmt(totals.remainCC)}
             </div>
           </div>
@@ -558,7 +564,7 @@ export default function GvGCalculator() {
                 border: `1px solid ${V.border}`,
                 borderRadius: 2,
                 padding: "8px 14px",
-                color: V.txDim,
+                color: "#FFFFFF",
                 fontSize: 12,
                 cursor: "pointer",
                 fontFamily: "'Rajdhani', sans-serif",
@@ -584,7 +590,7 @@ export default function GvGCalculator() {
                 fontFamily: "'Orbitron', sans-serif",
                 fontSize: 12,
                 fontWeight: 700,
-                color: V.txDim,
+                color: "#FFFFFF",
                 letterSpacing: 3,
                 textTransform: "uppercase",
                 marginBottom: 16,
@@ -602,6 +608,7 @@ export default function GvGCalculator() {
                 display: "grid",
                 gridTemplateColumns: `repeat(${treesInTier.length}, 1fr)`,
                 gap: 16,
+                alignItems: "start",
               }}
             >
               {treesInTier.map((tree) => (

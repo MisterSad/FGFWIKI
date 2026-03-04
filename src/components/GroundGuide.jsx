@@ -15,7 +15,7 @@ export default function GroundGuide() {
                 <h2 style={{
                     fontFamily: 'var(--font-hero)',
                     fontSize: '2.5rem',
-                    color: 'var(--gold-bright)',
+                    color: "#FFFFFF",
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
                     marginBottom: '0.5rem',

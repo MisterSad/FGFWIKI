@@ -15,7 +15,7 @@ export default function FlagshipGuide() {
                 <h2 style={{
                     fontFamily: 'var(--font-hero)',
                     fontSize: '2.5rem',
-                    color: 'var(--gold-bright)',
+                    color: "#FFFFFF",
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
                     marginBottom: '0.5rem',
@@ -36,7 +36,7 @@ export default function FlagshipGuide() {
 
                 <div style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
                     <div>
-                        <h4 style={{ color: 'var(--gold)', marginBottom: '0.5rem' }}>{t('flagships.vessels_vs_energy')}</h4>
+                        <h4 style={{ color: "#FFFFFF", marginBottom: '0.5rem' }}>{t('flagships.vessels_vs_energy')}</h4>
                         <p style={{ lineHeight: '1.6', color: 'var(--text-dim)' }}>
                             <Trans i18nKey="flagships.vessels_vs_energy_desc" components={{ 1: <strong />, 3: <strong /> }} />
                         </p>
@@ -44,7 +44,7 @@ export default function FlagshipGuide() {
                 </div>
 
                 <div style={{ marginTop: '2rem' }}>
-                    <h4 className="label-text" style={{ color: 'var(--gold)', marginBottom: '1rem' }}>{t('flagships.promotion_costs')}</h4>
+                    <h4 className="label-text" style={{ color: "#FFFFFF", marginBottom: '1rem' }}>{t('flagships.promotion_costs')}</h4>
                     <div style={{ overflowX: 'auto' }}>
                         <table style={{ fontFamily: 'var(--font-mono)', width: '100%', borderCollapse: 'collapse', color: 'var(--text-dim)' }}>
                             <thead>
@@ -83,7 +83,7 @@ export default function FlagshipGuide() {
                 {/* GRAM */}
                 <div className="card reveal" style={{ transitionDelay: '0.2s', background: 'var(--bg-void)', borderRadius: '2px', overflow: 'hidden', border: '1px solid var(--gold)', borderLeft: '4px solid var(--gold)' }}>
                     <div style={{ padding: '1.5rem', background: 'var(--bg-surface)', borderBottom: '1px solid var(--border)' }}>
-                        <h4 className="label-text" style={{ margin: 0, fontSize: '1.5rem', color: 'var(--gold)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <h4 className="label-text" style={{ margin: 0, fontSize: '1.5rem', color: "#FFFFFF", display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                             {t('flagships.gram.title')}
                         </h4>
                         <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{t('flagships.gram.subtitle')}</span>
@@ -100,8 +100,8 @@ export default function FlagshipGuide() {
                         </ul>
                         <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.gram.abilities_title')}</h5>
                         <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem' }}>
-                            <li><Trans i18nKey="flagships.gram.ability1" components={{ 0: <strong style={{ color: 'var(--gold)' }} /> }} /></li>
-                            <li><Trans i18nKey="flagships.gram.ability2" components={{ 0: <strong style={{ color: 'var(--gold)' }} /> }} /></li>
+                            <li><Trans i18nKey="flagships.gram.ability1" components={{ 0: <strong style={{ color: "#FFFFFF" }} /> }} /></li>
+                            <li><Trans i18nKey="flagships.gram.ability2" components={{ 0: <strong style={{ color: "#FFFFFF" }} /> }} /></li>
                         </ul>
                     </div>
                 </div>
@@ -158,7 +158,7 @@ export default function FlagshipGuide() {
 
             {/* 5. Expert Tips */}
             <div className="card reveal" style={{ transitionDelay: '0.5s', padding: '2rem', borderTop: '2px solid var(--gold)', border: '1px solid var(--border)', marginBottom: '4rem' }}>
-                <h3 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', color: 'var(--gold)', marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', color: "#FFFFFF", marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Brain size={24} /> <span className="label-text">{t('flagships.expert_tips')}</span>
                 </h3>
                 <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>

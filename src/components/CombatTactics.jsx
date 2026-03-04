@@ -84,7 +84,7 @@ export default function CombatTactics() {
                                 marginTop: '1.5rem',
                                 alignSelf: 'flex-start',
                                 background: 'var(--bg-void)',
-                                color: 'var(--gold)',
+                                color: "#FFFFFF",
                                 padding: '4px 8px',
                                 borderRadius: '2px',
                                 fontSize: '0.75rem',
@@ -93,7 +93,7 @@ export default function CombatTactics() {
                                 alignItems: 'center',
                                 gap: '0.3rem'
                             }}>
-                                <Star size={14} color="var(--gold)" /> Key Strategy
+                                <Star size={14} color="#FFFFFF" /> Key Strategy
                             </div>
                         )}
                     </div>

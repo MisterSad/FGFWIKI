@@ -117,7 +117,7 @@ export default function GiftCodes() {
                 textAlign: 'center'
             }}>
                 <p style={{ color: 'var(--text-dim)', margin: 0, fontSize: '0.9rem' }}>
-                    <strong style={{ color: 'var(--gold)' }}>How to redeem:</strong> Click the copy icon next to a code, tap your avatar in the top left corner of the game screen, select "Settings", then tap "Gift Code" and paste your code.
+                    <strong style={{ color: "#FFFFFF" }}>How to redeem:</strong> Click the copy icon next to a code, tap your avatar in the top left corner of the game screen, select "Settings", then tap "Gift Code" and paste your code.
                 </p>
             </div>
         </div>

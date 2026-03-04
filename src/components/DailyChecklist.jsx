@@ -88,7 +88,7 @@ export default function DailyChecklist() {
                 {/* Tribute Vessel */}
                 <div>
                     <h3 className="label-text" style={{
-                        fontSize: '1.1rem', color: 'var(--gold)', marginBottom: '1rem',
+                        fontSize: '1.1rem', color: "#FFFFFF", marginBottom: '1rem',
                         display: 'flex', alignItems: 'center', gap: '0.5rem'
                     }}>
                         <Coins size={20} />

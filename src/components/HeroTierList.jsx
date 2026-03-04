@@ -98,7 +98,7 @@ const tierListData = [
         id: 'kinetic',
         titleKey: 'champions.kinetic',
         icon: Crosshair,
-        color: 'var(--gold)',
+        color: "#FFFFFF",
         champions: [
             { name: 'Zora Dominii', tier: 'S+', descKey: 'champions.desc.zora' },
             { name: 'Killer Bee', tier: 'S+', descKey: 'champions.desc.killer_bee' },
@@ -155,11 +155,11 @@ export default function ChampionsGuide() {
                     textAlign: 'center',
                     boxShadow: 'none'
                 }}>
-                    <h4 style={{ color: 'var(--gold)', marginBottom: '1rem', fontSize: '1.4rem', textTransform: 'uppercase', letterSpacing: '2px' }}>
+                    <h4 style={{ color: "#FFFFFF", marginBottom: '1rem', fontSize: '1.4rem', textTransform: 'uppercase', letterSpacing: '2px' }}>
                         {t('champions.synergy_title')}
                     </h4>
                     <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: 'var(--text-primary)', margin: 0, maxWidth: '800px', marginInline: 'auto' }}>
-                        <Trans i18nKey="champions.synergy_desc" components={{ 1: <strong style={{ color: 'var(--gold-bright)', borderBottom: '1px solid var(--gold)' }} /> }} />
+                        <Trans i18nKey="champions.synergy_desc" components={{ 1: <strong style={{ color: "#FFFFFF", borderBottom: '1px solid var(--gold)' }} /> }} />
                     </p>
                 </div>
             </div>
@@ -190,7 +190,7 @@ export default function ChampionsGuide() {
                             <tr style={{ background: 'var(--bg-void)', borderBottom: '1px solid var(--border)' }}>
                                 <th style={{ padding: '1rem', textAlign: 'left', color: 'var(--text-primary)' }}>Type</th>
                                 <th style={{ padding: '1rem', textAlign: 'left', color: 'var(--text-primary)' }}>Champion</th>
-                                <th style={{ padding: '1rem', textAlign: 'left', color: 'var(--gold)' }}>Key Stat</th>
+                                <th style={{ padding: '1rem', textAlign: 'left', color: "#FFFFFF" }}>Key Stat</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -204,7 +204,7 @@ export default function ChampionsGuide() {
                                 { name: 'Lani Verita', type: 'Kinetic', stat: 'ATK' }
                             ].map((row, idx) => (
                                 <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
-                                    <td className="label-text" style={{ padding: '1rem', color: 'var(--gold)' }}>{row.type}</td>
+                                    <td className="label-text" style={{ padding: '1rem', color: "#FFFFFF" }}>{row.type}</td>
                                     <td style={{ padding: '1rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>{row.name}</td>
                                     <td style={{ padding: '1rem' }}>{row.stat}</td>
                                 </tr>
@@ -244,7 +244,7 @@ export default function ChampionsGuide() {
 
             {/* 4. Pro Tips */}
             <div className="card reveal" style={{ transitionDelay: '0.5s', padding: '2rem', border: '1px solid var(--border)', borderTop: '2px solid var(--gold)' }}>
-                <h3 style={{ fontFamily: 'var(--font-hero)', color: 'var(--gold)', marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textTransform: 'uppercase' }}>
+                <h3 style={{ fontFamily: 'var(--font-hero)', color: "#FFFFFF", marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textTransform: 'uppercase' }}>
                     <Zap size={24} /> {t('champions.pro_tips_title')}
                 </h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '1rem' }}>

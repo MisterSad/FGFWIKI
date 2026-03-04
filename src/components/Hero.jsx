@@ -20,7 +20,7 @@ export default function Hero() {
                 {/* Small top label */}
                 <div style={{
                     fontFamily: 'var(--font-label)',
-                    color: 'var(--gold-dim)',
+                    color: "#FFFFFF",
                     letterSpacing: '6px',
                     fontSize: '0.9rem',
                     textTransform: 'uppercase',
@@ -37,7 +37,7 @@ export default function Hero() {
                     animation: 'titleReveal 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards'
                 }}>
                     <span style={{ color: 'var(--text-primary)' }}>{t('hero.title_prefix', 'THE')}</span><br />
-                    <span style={{ color: 'var(--gold-bright)' }}>{t('hero.title_main', 'FOUNDATION')}</span>
+                    <span style={{ color: "#FFFFFF" }}>{t('hero.title_main', 'FOUNDATION')}</span>
                 </h1>
 
                 {/* Decorative Line */}

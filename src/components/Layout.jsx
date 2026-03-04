@@ -86,7 +86,7 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
                     <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--gold-dim)' }}></div>
                 </div>
 
-                <p style={{ opacity: 0.5 }}>&copy; {new Date().getFullYear()} FGF Wiki. Developer <span style={{ color: 'var(--gold-dim)' }}>HawkTuah</span> #1061.</p>
+                <p style={{ opacity: 0.5 }}>&copy; {new Date().getFullYear()} FGF Wiki. Developer <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
             </footer>
         </div>
     );

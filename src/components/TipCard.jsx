@@ -47,7 +47,7 @@ export default function TipCard({ tip }) {
                 opacity: 0.05,
                 transform: 'rotate(15deg)',
                 pointerEvents: 'none',
-                color: 'var(--gold)'
+                color: "#FFFFFF"
             }}>
                 <IconComponent size={140} strokeWidth={1} />
             </div>
@@ -77,7 +77,7 @@ export default function TipCard({ tip }) {
                 <div className="label-text" style={{
                     marginTop: '2rem',
                     alignSelf: 'flex-start',
-                    color: 'var(--gold-bright)',
+                    color: "#FFFFFF",
                     display: 'flex',
                     alignItems: 'center',
                     gap: '0.5rem'
@@ -90,7 +90,7 @@ export default function TipCard({ tip }) {
                 <div style={{
                     marginTop: 'auto',
                     paddingTop: '2rem',
-                    color: 'var(--gold)',
+                    color: "#FFFFFF",
                     fontFamily: 'var(--font-label)',
                     fontSize: '0.85rem',
                     textTransform: 'uppercase',

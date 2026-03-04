@@ -23,7 +23,7 @@
   /* Texte principal -- blanc imperial chaud */
   --text-secondary: #8A8778;
   /* Texte secondaire -- gris dore */
-  --text-dim: #5A5848;
+  --text-dim: #FFFFFF;
   /* Texte tertiaire -- tres discret */
 
   /* Accents fonctionnels */
@@ -115,13 +115,20 @@ body::after {
 
 /* --- TYPOGRAPHY --- */
 h1,
-h2,
+h2 {
+  margin-top: 0;
+  color: var(--gold-bright);
+  font-family: var(--font-hero);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 h3,
 h4,
 h5,
 h6 {
   margin-top: 0;
-  color: var(--gold-bright);
+  color: var(--text-primary);
   font-family: var(--font-hero);
   text-transform: uppercase;
   font-weight: 700;
@@ -154,7 +161,7 @@ p {
   letter-spacing: 3px;
   font-weight: 500;
   font-size: 0.85rem;
-  color: var(--gold-dim);
+  color: var(--text-primary);
 }
 
 .data-text {
@@ -219,7 +226,7 @@ p {
   font-family: var(--font-label);
   background: transparent;
   border: 1px solid var(--gold);
-  color: var(--gold);
+  color: var(--text-primary);
   padding: 0.8em 1.5em;
   font-size: 0.9em;
   font-weight: 600;
@@ -232,7 +239,7 @@ p {
 
 .btn-primary:hover {
   background: rgba(201, 168, 76, 0.1);
-  color: var(--gold-bright);
+  color: #FFFFFF;
   border-color: var(--gold-bright);
   box-shadow: 0 4px 12px rgba(201, 168, 76, 0.15);
 }

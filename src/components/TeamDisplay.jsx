@@ -71,7 +71,7 @@ const CyclingHeroSlot = ({ slot, idx, t }) => {
                 )}
             </div>
 
-            <div style={{ marginTop: '0.2rem', fontWeight: 'bold', color: 'var(--gold)' }}>
+            <div style={{ marginTop: '0.2rem', fontWeight: 'bold', color: "#FFFFFF" }}>
                 {names.length > 1 ? slot.name : currentName}
             </div>
 
@@ -104,7 +104,7 @@ export default function TeamDisplay({ deck, isGround = false }) {
         if (!isGround) return <Ship size={24} />;
         if (deck.id === 'early_game') return <Leaf size={24} color="var(--accent-teal)" />;
         if (deck.id === 'mid_game') return <TrendingUp size={24} color="var(--accent-blue)" />;
-        if (deck.id === 'late_game') return <Crown size={24} color="var(--gold)" />;
+        if (deck.id === 'late_game') return <Crown size={24} color="#FFFFFF" />;
         return <Users size={24} />;
     };
 
@@ -162,7 +162,7 @@ export default function TeamDisplay({ deck, isGround = false }) {
                         }}>
                             <Ship size={32} />
                         </div>
-                        <div style={{ color: 'var(--gold-bright)', fontWeight: 'bold', fontSize: '1rem' }}>
+                        <div style={{ color: "#FFFFFF", fontWeight: 'bold', fontSize: '1rem' }}>
                             {deck.energyType === 'Kinetic' ? 'Gram' : deck.energyType === 'Beam' ? 'Opportunity' : 'Demerzel'}
                         </div>
                         <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--text-dim)', marginTop: '0.3rem' }}>
