@@ -308,6 +308,46 @@ export const groundTeams = [
 
 export const eventsData = [
   {
+    id: 'operation_blackout',
+    title: 'events.operation_blackout_title',
+    cycle: 'events.operation_blackout_cycle',
+    type: 'events.operation_blackout_type',
+    goldenRule: 'events.operation_blackout_golden_rule',
+    description: 'events.operation_blackout_desc',
+    stages: [
+      { title: 'events.operation_blackout_stage_1_title', description: 'events.operation_blackout_stage_1_desc' },
+      { title: 'events.operation_blackout_stage_2_title', description: 'events.operation_blackout_stage_2_desc' },
+      { title: 'events.operation_blackout_stage_3_title', description: 'events.operation_blackout_stage_3_desc' },
+      { title: 'events.operation_blackout_stage_4_title', description: 'events.operation_blackout_stage_4_desc' }
+    ],
+    infoGrid: {
+      title: 'events.operation_blackout_region_progression_title',
+      items: [
+        { label: 'events.operation_blackout_region_early_label', value: 'events.operation_blackout_region_early_val' },
+        { label: 'events.operation_blackout_region_mid_label', value: 'events.operation_blackout_region_mid_val' },
+        { label: 'events.operation_blackout_region_late_label', value: 'events.operation_blackout_region_late_val' }
+      ]
+    },
+    rewards: [
+      { label: 'events.operation_blackout_reward_kill_label', value: 'events.operation_blackout_reward_kill_value' },
+      { label: 'events.operation_blackout_reward_bonus_label', value: 'events.operation_blackout_reward_bonus_value' },
+      { label: 'events.operation_blackout_reward_discoverer_label', value: 'events.operation_blackout_reward_discoverer_value' }
+    ],
+    dailyActions: [
+      { focus: 'events.operation_blackout_daily_bonus_focus', details: 'events.operation_blackout_daily_bonus_desc' },
+      { focus: 'events.operation_blackout_daily_discoverer_focus', details: 'events.operation_blackout_daily_discoverer_desc' }
+    ],
+    tactics: [
+      { title: 'events.operation_blackout_tips_solo', content: 'events.operation_blackout_tips_solo_desc' },
+      { title: 'events.operation_blackout_tips_comp', content: 'events.operation_blackout_tips_comp_desc' },
+      { title: 'events.operation_blackout_tips_guild', content: 'events.operation_blackout_tips_guild_desc' }
+    ],
+    proTips: [
+      { title: 'events.operation_blackout_protip1_title', content: 'events.operation_blackout_protip1_content' },
+      { title: 'events.operation_blackout_protip2_title', content: 'events.operation_blackout_protip2_content' }
+    ]
+  },
+  {
     id: 'kaboom',
     title: 'events.kaboom_title',
     cycle: 'events.kaboom_cycle',
