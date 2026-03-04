@@ -8,6 +8,7 @@ export const categories = [
   { id: 'events', label: 'navigation.events' },
   { id: 'builder', label: 'navigation.builder' },
   { id: 'gift_codes', label: 'navigation.gift_codes' },
+  { id: 'support', label: 'navigation.support' },
 ];
 
 export const tips = [

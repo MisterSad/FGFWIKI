@@ -14,6 +14,7 @@ import EventGuide from './components/EventGuide';
 import Builder from './components/Builder';
 import DailyChecklist from './components/DailyChecklist';
 import GiftCodes from './components/GiftCodes';
+import Support from './components/Support';
 import { tips, shipDecks, groundTeams } from './data/gameData';
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
     if (activeCategory === 'events') return <EventGuide />;
     if (activeCategory === 'builder') return <Builder />;
     if (activeCategory === 'gift_codes') return <GiftCodes />;
+    if (activeCategory === 'support') return <Support />;
 
     // Filtered Tips
     const filteredTips = tips.filter(tip => tip.category === activeCategory);

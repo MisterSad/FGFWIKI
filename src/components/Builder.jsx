@@ -4,6 +4,7 @@ import BuildTimeCalculator from "./tools/BuildTimeCalculator";
 import NexusCalculator from "./tools/NexusCalculator";
 import GvGCalculator from "./tools/GvGCalculator";
 import CombatCraftCalculator from "./tools/CombatCraftCalculator";
+import ChampionUpgradeCalculator from "./tools/ChampionUpgradeCalculator";
 
 export default function Builder() {
     const { t } = useTranslation();
@@ -77,6 +78,13 @@ export default function Builder() {
                         Build Time
                     </button>
                     <button
+                        className={`tool-tab ${activeTab === 'champion-upgrade' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('champion-upgrade')}
+                        style={{ color: activeTab === 'champion-upgrade' ? '#FFFFFF' : '#8A8778' }}
+                    >
+                        Champion Upgrade
+                    </button>
+                    <button
                         className={`tool-tab ${activeTab === 'nexus' ? 'active' : ''}`}
                         onClick={() => setActiveTab('nexus')}
                         style={{ color: activeTab === 'nexus' ? '#FFFFFF' : '#8A8778' }}
@@ -108,6 +116,7 @@ export default function Builder() {
                 {activeTab === 'nexus' && <NexusCalculator />}
                 {activeTab === 'gvg' && <GvGCalculator />}
                 {activeTab === 'combat-craft' && <CombatCraftCalculator />}
+                {activeTab === 'champion-upgrade' && <ChampionUpgradeCalculator />}
             </main>
         </div>
     );
