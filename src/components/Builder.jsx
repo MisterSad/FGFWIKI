@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import BuildTimeCalculator from "./tools/BuildTimeCalculator";
 import NexusCalculator from "./tools/NexusCalculator";
+import GvGCalculator from "./tools/GvGCalculator";
 
 export default function Builder() {
     const { t } = useTranslation();
@@ -81,6 +82,13 @@ export default function Builder() {
                     >
                         Nexus
                     </button>
+                    <button
+                        className={`tool-tab ${activeTab === 'gvg' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('gvg')}
+                        style={{ color: activeTab === 'gvg' ? '#C9A84C' : '#8A8778' }}
+                    >
+                        GvG
+                    </button>
                 </div>
 
                 <div style={{ height: 1, background: `linear-gradient(90deg,transparent,#C9A84C,transparent)`, margin: "0 auto", maxWidth: 400, marginTop: 12 }} />
@@ -90,6 +98,7 @@ export default function Builder() {
             <main style={{ position: "relative", zIndex: 1, maxWidth: 680, margin: "0 auto", padding: "0 20px 60px" }}>
                 {activeTab === 'build-time' && <BuildTimeCalculator />}
                 {activeTab === 'nexus' && <NexusCalculator />}
+                {activeTab === 'gvg' && <GvGCalculator />}
             </main>
         </div>
     );
