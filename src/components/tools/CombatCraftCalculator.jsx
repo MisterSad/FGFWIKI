@@ -362,12 +362,9 @@ export default function CombatCraftCalculator() {
         const missing = Math.max(0, -surp);
         return (
             <div style={{ minWidth: 140 }}>
-                <Label>{label} Total Cost</Label>
-                <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color }}>{fmt(remain)}</div>
-
-                <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, color: "#FFFFFF", display: "block", marginBottom: 6, marginTop: 12, textTransform: "uppercase" }}>{label} Missing</div>
+                <Label>{label} Missing</Label>
                 <div style={{
-                    fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700,
+                    fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 700,
                     color: missing > 0 ? "#e74c3c" : "#2ecc71"
                 }}>
                     {fmt(missing)}

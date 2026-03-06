@@ -535,25 +535,11 @@ export default function GvGCalculator() {
           }}
         >
           <div>
-            <Label>Galactic Coins Total Cost</Label>
-            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color: "#C9A84C" }}>
-              {fmt(totals.remainGC)}
-            </div>
-          </div>
-          <div>
-            <Label>Computational Component Total Cost</Label>
-            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color: "#a78bfa" }}>
-              {fmt(totals.remainCC)}
-            </div>
-          </div>
-          <div>
-            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, color: "#FFFFFF", display: "block", marginBottom: 6, marginTop: 12, textTransform: "uppercase" }}>
-              Galactic Coins Missing
-            </div>
+            <Label>Galactic Coins Missing</Label>
             <div
               style={{
                 fontFamily: "'Share Tech Mono', monospace",
-                fontSize: 20,
+                fontSize: 24,
                 fontWeight: 700,
                 color: surplusGC < 0 ? "#e74c3c" : "#2ecc71",
               }}
@@ -562,13 +548,11 @@ export default function GvGCalculator() {
             </div>
           </div>
           <div>
-            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, color: "#FFFFFF", display: "block", marginBottom: 6, marginTop: 12, textTransform: "uppercase" }}>
-              Computational Component Missing
-            </div>
+            <Label>Computational Comp. Missing</Label>
             <div
               style={{
                 fontFamily: "'Share Tech Mono', monospace",
-                fontSize: 20,
+                fontSize: 24,
                 fontWeight: 700,
                 color: surplusCC < 0 ? "#e74c3c" : "#2ecc71",
               }}
