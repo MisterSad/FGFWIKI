@@ -444,11 +444,6 @@ export default function GvGCalculator() {
 
   const tiers = [1, 1.5, 2, 3, 4, 5, 5.5, 6];
 
-  const setAllMax = () => {
-    const n = {};
-    TREES.forEach((t) => (n[t.id] = t.levels.length));
-    setLevels(n);
-  };
   const resetAll = () => {
     const n = {};
     TREES.forEach((t) => (n[t.id] = 0));
@@ -582,24 +577,6 @@ export default function GvGCalculator() {
             </div>
           </div>
           <div style={{ display: "flex", gap: 10, flexDirection: "column" }}>
-            <button
-              onClick={setAllMax}
-              style={{
-                background: "rgba(46,204,113,0.1)",
-                border: "1px solid rgba(46,204,113,0.3)",
-                borderRadius: 2,
-                padding: "8px 14px",
-                color: "#2ecc71",
-                fontSize: 12,
-                cursor: "pointer",
-                fontFamily: "'Rajdhani', sans-serif",
-                textTransform: "uppercase",
-                letterSpacing: 1,
-                fontWeight: 600
-              }}
-            >
-              Max All
-            </button>
             <button
               onClick={resetAll}
               style={{
