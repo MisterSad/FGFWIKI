@@ -105,8 +105,9 @@ export default function Builder() {
                     >
                         Combat Craft Modifications
                     </button>
+                </div>
 
-                    <div style={{ height: 1, background: `linear-gradient(90deg,transparent,#C9A84C,transparent)`, margin: "0 auto", maxWidth: 400, marginTop: 12 }} />
+                <div style={{ height: 1, background: `linear-gradient(90deg,transparent,#C9A84C,transparent)`, margin: "0 auto", maxWidth: 400, marginTop: 12 }} />
             </header>
 
             {/* Content */}
