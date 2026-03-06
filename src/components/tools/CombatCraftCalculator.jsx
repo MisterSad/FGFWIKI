@@ -276,6 +276,34 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
     );
 }
 
+const InvInput = ({ rKey, label, inventory, setInventory }) => (
+    <div style={{ display: "flex", alignItems: "center", gap: 10, flex: "1 1 calc(50% - 12px)" }}>
+        <span style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{label}</span>
+        <input type="text" value={inventory[rKey].toLocaleString("en-US")}
+            onChange={(e) => { const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999); setInventory(p => ({ ...p, [rKey]: v })); }}
+            style={{
+                flex: 1, background: "rgba(0,0,0,0.4)", border: `1px solid ${RES_COLORS[rKey]}50`, borderRadius: 2,
+                padding: "6px 12px", color: RES_COLORS[rKey], fontFamily: "'Share Tech Mono', monospace", fontSize: 16,
+                fontWeight: 600, width: "100%", textAlign: "right", outline: "none"
+            }} />
+    </div>
+);
+
+const SummaryItem = ({ label, surp }) => {
+    const missing = Math.max(0, -surp);
+    return (
+        <div style={{ minWidth: 140 }}>
+            <Label>{label} Missing</Label>
+            <div style={{
+                fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 700,
+                color: missing > 0 ? "#e74c3c" : "#2ecc71"
+            }}>
+                {fmt(missing)}
+            </div>
+        </div>
+    );
+};
+
 export default function CombatCraftCalculator() {
     const { currentUser } = useAuth();
     const [levels, setLevels] = useState(() => {
@@ -345,34 +373,6 @@ export default function CombatCraftCalculator() {
 
     const resetAll = () => { const n = {}; TREES.forEach(t => n[t.id] = 0); setLevels(n); };
 
-    const InvInput = ({ rKey, label }) => (
-        <div style={{ display: "flex", alignItems: "center", gap: 10, flex: "1 1 calc(50% - 12px)" }}>
-            <span style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{label}</span>
-            <input type="text" value={inventory[rKey].toLocaleString("en-US")}
-                onChange={(e) => { const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999); setInventory(p => ({ ...p, [rKey]: v })); }}
-                style={{
-                    flex: 1, background: "rgba(0,0,0,0.4)", border: `1px solid ${RES_COLORS[rKey]}50`, borderRadius: 2,
-                    padding: "6px 12px", color: RES_COLORS[rKey], fontFamily: "'Share Tech Mono', monospace", fontSize: 16,
-                    fontWeight: 600, width: "100%", textAlign: "right", outline: "none"
-                }} />
-        </div>
-    );
-
-    const SummaryItem = ({ label, remain, surp, color }) => {
-        const missing = Math.max(0, -surp);
-        return (
-            <div style={{ minWidth: 140 }}>
-                <Label>{label} Missing</Label>
-                <div style={{
-                    fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 700,
-                    color: missing > 0 ? "#e74c3c" : "#2ecc71"
-                }}>
-                    {fmt(missing)}
-                </div>
-            </div>
-        );
-    };
-
     return (
         <div style={{ animation: "fadeUp 0.8s ease-out" }}>
             <Card>
@@ -385,10 +385,10 @@ export default function CombatCraftCalculator() {
                 }}>
                     <Label>Current Inventory</Label>
                     <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
-                        <InvInput rKey="m" label="Metal" />
-                        <InvInput rKey="w" label="Water" />
-                        <InvInput rKey="gc" label="Galactic Coins" />
-                        <InvInput rKey="cc" label="Cosmic Comp." />
+                        <InvInput rKey="m" label="Metal" inventory={inventory} setInventory={setInventory} />
+                        <InvInput rKey="w" label="Water" inventory={inventory} setInventory={setInventory} />
+                        <InvInput rKey="gc" label="Galactic Coins" inventory={inventory} setInventory={setInventory} />
+                        <InvInput rKey="cc" label="Cosmic Comp." inventory={inventory} setInventory={setInventory} />
                     </div>
                 </div>
 
@@ -399,10 +399,10 @@ export default function CombatCraftCalculator() {
                     gap: 20, alignItems: "end"
                 }}>
 
-                    <SummaryItem label="Metal" remain={totals.remainM} surp={surplus.m} color={RES_COLORS.m} />
-                    <SummaryItem label="Water" remain={totals.remainW} surp={surplus.w} color={RES_COLORS.w} />
-                    <SummaryItem label="Galactic Coins" remain={totals.remainGC} surp={surplus.gc} color={RES_COLORS.gc} />
-                    <SummaryItem label="Cosmic Comp." remain={totals.remainCC} surp={surplus.cc} color={RES_COLORS.cc} />
+                    <SummaryItem label="Metal" surp={surplus.m} />
+                    <SummaryItem label="Water" surp={surplus.w} />
+                    <SummaryItem label="Galactic Coins" surp={surplus.gc} />
+                    <SummaryItem label="Cosmic Comp." surp={surplus.cc} />
 
                     <div style={{ display: "flex", gap: 10, flexDirection: "column", justifySelf: "flex-end" }}>
                         <button onClick={resetAll} style={{
