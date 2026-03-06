@@ -165,7 +165,7 @@ export default function ChampionUpgradeCalculator() {
                     <div style={{ minWidth: 160 }}>
                         <Label>Shards Available</Label>
                         <input type="text" value={inventory.toLocaleString("en-US")}
-                            onChange={(e) => setInventory(parseInt(e.target.value.replace(/\D/g, "")) || 0)}
+                            onChange={(e) => setInventory(Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999))}
                             style={{
                                 width: "100%", padding: "10px 14px",
                                 background: "rgba(0,0,0,.4)", border: `1px solid rgba(167,139,250,0.3)`,

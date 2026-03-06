@@ -476,7 +476,7 @@ export default function GvGCalculator() {
                 type="text"
                 value={inventory.gc.toLocaleString("en-US")}
                 onChange={(e) => {
-                  const v = parseInt(e.target.value.replace(/\D/g, "")) || 0;
+                  const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999);
                   setInventory((p) => ({ ...p, gc: v }));
                 }}
                 style={{
@@ -500,7 +500,7 @@ export default function GvGCalculator() {
                 type="text"
                 value={inventory.cc.toLocaleString("en-US")}
                 onChange={(e) => {
-                  const v = parseInt(e.target.value.replace(/\D/g, "")) || 0;
+                  const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999);
                   setInventory((p) => ({ ...p, cc: v }));
                 }}
                 style={{

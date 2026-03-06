@@ -349,7 +349,7 @@ export default function CombatCraftCalculator() {
         <div style={{ display: "flex", alignItems: "center", gap: 10, flex: "1 1 calc(50% - 12px)" }}>
             <span style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{label}</span>
             <input type="text" value={inventory[rKey].toLocaleString("en-US")}
-                onChange={(e) => { const v = parseInt(e.target.value.replace(/\D/g, "")) || 0; setInventory(p => ({ ...p, [rKey]: v })); }}
+                onChange={(e) => { const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999); setInventory(p => ({ ...p, [rKey]: v })); }}
                 style={{
                     flex: 1, background: "rgba(0,0,0,0.4)", border: `1px solid ${RES_COLORS[rKey]}50`, borderRadius: 2,
                     padding: "6px 12px", color: RES_COLORS[rKey], fontFamily: "'Share Tech Mono', monospace", fontSize: 16,
