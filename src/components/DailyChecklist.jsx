@@ -1,23 +1,59 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { CheckSquare, Square, Swords, Shield, Coins, Pickaxe, Ship, ClipboardList, Sparkles, Package } from 'lucide-react';
+import { CheckSquare, Square, Swords, Shield, Coins, Pickaxe, Ship, ClipboardList, RefreshCw } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
+import { saveUserToolData, loadUserToolData } from '../firebaseUtils';
 
 export default function DailyChecklist() {
     const { t } = useTranslation();
+    const { currentUser } = useAuth();
+    const [isLoadingData, setIsLoadingData] = useState(false);
+
+    // Initial load from local storage
     const [checkedItems, setCheckedItems] = useState(() => {
         const saved = localStorage.getItem('dailyChecklist');
         return saved ? JSON.parse(saved) : {};
     });
 
+    // Load from profile when user changes
     useEffect(() => {
+        const loadData = async () => {
+            if (currentUser) {
+                setIsLoadingData(true);
+                const data = await loadUserToolData(currentUser.uid, 'dailyTasks');
+                if (data) {
+                    setCheckedItems(data);
+                }
+                setIsLoadingData(false);
+            }
+        };
+        loadData();
+    }, [currentUser]);
+
+    // Save to local storage and profile when checkedItems changes
+    useEffect(() => {
+        // Prevent saving initial empty state if we're still loading from Firestore
+        if (isLoadingData) return;
+
         localStorage.setItem('dailyChecklist', JSON.stringify(checkedItems));
-    }, [checkedItems]);
+
+        if (currentUser) {
+            // Debounce or just save directly (it's a small object)
+            saveUserToolData(currentUser.uid, 'dailyTasks', checkedItems);
+        }
+    }, [checkedItems, currentUser, isLoadingData]);
 
     const toggleCheck = (id) => {
         setCheckedItems(prev => ({
             ...prev,
             [id]: !prev[id]
         }));
+    };
+
+    const handleReset = () => {
+        if (window.confirm(t('daily_checklist.reset_confirm', 'Are you sure you want to reset all daily tasks?'))) {
+            setCheckedItems({});
+        }
     };
 
     const isChecked = (id) => !!checkedItems[id];
@@ -69,19 +105,53 @@ export default function DailyChecklist() {
                 opacity: 0.5
             }} />
 
-            <h2 style={{
-                fontFamily: 'var(--font-hero)',
-                fontSize: '1.5rem',
-                color: 'var(--accent-teal)',
-                marginBottom: '1.5rem',
+            <div style={{
                 display: 'flex',
+                justifyContent: 'space-between',
                 alignItems: 'center',
-                gap: '0.75rem',
-                textTransform: 'uppercase'
+                marginBottom: '1.5rem'
             }}>
-                <CheckSquare style={{ color: 'var(--accent-teal)' }} size={28} />
-                <span className="label-text">{t('daily_checklist.title')}</span>
-            </h2>
+                <h2 style={{
+                    fontFamily: 'var(--font-hero)',
+                    fontSize: '1.5rem',
+                    color: 'var(--accent-teal)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    textTransform: 'uppercase',
+                    margin: 0
+                }}>
+                    <CheckSquare style={{ color: 'var(--accent-teal)' }} size={28} />
+                    <span className="label-text">{t('daily_checklist.title')}</span>
+                </h2>
+
+                <button
+                    onClick={handleReset}
+                    className="button"
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        padding: '0.5rem 1rem',
+                        background: 'transparent',
+                        border: '1px solid var(--border)',
+                        color: 'var(--text-secondary)',
+                        fontSize: '0.9rem',
+                        transition: 'all 0.2s ease',
+                    }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.color = 'var(--text-primary)';
+                        e.currentTarget.style.borderColor = 'var(--text-secondary)';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.color = 'var(--text-secondary)';
+                        e.currentTarget.style.borderColor = 'var(--border)';
+                    }}
+                >
+                    <RefreshCw size={16} />
+                    {t('daily_checklist.reset', 'Reset')}
+                </button>
+            </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 

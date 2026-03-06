@@ -619,6 +619,8 @@
     },
     "daily_checklist": {
         "title": "Daily Tasks",
+        "reset": "Reset",
+        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
         "tribute_vessel": "Tribute & Sacred Tribute Vessels + Delivery Ark",
         "tribute_1": "Initiate 10 rallies",
         "tribute_2": "Participate in 50 rallies",
