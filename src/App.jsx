@@ -65,28 +65,27 @@ function App() {
     if (activeCategory === 'gift_codes') return <GiftCodes />;
     if (activeCategory === 'support') return <Support />;
 
+    if (activeCategory === 'all') {
+      return <Hero />;
+    }
+
     // Filtered Tips
-    const filteredTips = activeCategory === 'all'
-      ? tips.filter(tip => tip.category === 'beginner' || tip.category === 'combat')
-      : tips.filter(tip => tip.category === activeCategory);
+    const filteredTips = tips.filter(tip => tip.category === activeCategory);
 
     return (
-      <>
-        {activeCategory === 'all' && <Hero />}
-        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '1.5rem',
-            paddingBottom: '4rem',
-            alignItems: 'stretch'
-          }}>
-            {filteredTips.map(tip => (
-              <TipCard key={tip.id} tip={tip} />
-            ))}
-          </div>
+      <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gap: '1.5rem',
+          paddingBottom: '4rem',
+          alignItems: 'stretch'
+        }}>
+          {filteredTips.map(tip => (
+            <TipCard key={tip.id} tip={tip} />
+          ))}
         </div>
-      </>
+      </div>
     );
   };
 

@@ -12,29 +12,6 @@ export const categories = [
 ];
 
 export const tips = [
-  // Beginner
-  {
-    id: 1,
-    category: 'beginner',
-    title: 'tips.t1_title',
-    content: 'tips.t1_content',
-    highlight: true
-  },
-  {
-    id: 2,
-    category: 'beginner',
-    title: 'tips.t2_title',
-    content: 'tips.t2_content',
-    highlight: false
-  },
-  {
-    id: 3,
-    category: 'beginner',
-    title: 'tips.t3_title',
-    content: 'tips.t3_content',
-    highlight: true
-  },
-
   // Combat
   {
     id: 9, // New detailed guide
@@ -117,27 +94,6 @@ export const tips = [
         text: 'tips.fleet_power_final_txt'
       }
     ]
-  },
-  {
-    id: 4,
-    category: 'combat',
-    title: 'tips.t4_title',
-    content: 'tips.t4_content',
-    highlight: true
-  },
-  {
-    id: 5,
-    category: 'combat',
-    title: 'tips.t5_title',
-    content: 'tips.t5_content',
-    highlight: false
-  },
-  {
-    id: 6,
-    category: 'combat',
-    title: 'tips.t6_title',
-    content: 'tips.t6_content',
-    highlight: false
   },
 
   // Economy
