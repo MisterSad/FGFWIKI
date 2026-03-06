@@ -1,7 +1,9 @@
-import React, { useState, useCallback, useMemo } from "react";
+import React, { useState, useCallback, useMemo, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import { BUILDING_CATEGORIES, BUILD_SPEED_MODIFIERS, BUILD_TIME_DATA, ESTIMATED_FLAGS } from '../../data/builderData';
 import { V, Card, SectionTitle, Label } from './ToolUI';
+import { useAuth } from '../../context/AuthContext';
+import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
 
 // ── Helpers ──
 function fmtTime(s) { if (!s || s <= 0) return "0s"; s = Math.round(s); const d = Math.floor(s / 86400); s %= 86400; const h = Math.floor(s / 3600); s %= 3600; const m = Math.floor(s / 60); s %= 60; let p = []; if (d) p.push(`${d}d`); if (h || d) p.push(`${h}h`); p.push(`${String(m).padStart(2, "0")}m`); p.push(`${String(s).padStart(2, "0")}s`); return p.join(" ") }
@@ -43,6 +45,7 @@ function ResBlock({ label, time, sub, highlight }) {
 
 export default function BuildTimeCalculator() {
     const { t } = useTranslation();
+    const { currentUser } = useAuth();
     const [building, setBuilding] = useState("Energy Core");
     const [levelFrom, setLevelFrom] = useState(28);
     const [manualTime, setManualTime] = useState("");
@@ -50,7 +53,55 @@ export default function BuildTimeCalculator() {
     const [cabin2, setCabin2] = useState(0);
     const [crewBonus, setCrewBonus] = useState(0);
     const [bMods, setBMods] = useState(() => { const o = {}; BUILD_SPEED_MODIFIERS.forEach(m => { o[m.id] = m.type === "level" ? 0 : m.type === "toggle" ? 0 : (m.def || 0) }); return o });
+    const [isLoaded, setIsLoaded] = useState(false);
+
     const updateB = useCallback((id, v) => setBMods(p => ({ ...p, [id]: v })), []);
+
+    // Load data from Firebase
+    useEffect(() => {
+        const loadData = async () => {
+            if (currentUser) {
+                const data = await loadUserToolData(currentUser.uid, 'buildTime');
+                if (data) {
+                    if (data.building) setBuilding(data.building);
+                    if (data.levelFrom !== undefined) setLevelFrom(data.levelFrom);
+                    if (data.cabin1 !== undefined) setCabin1(data.cabin1);
+                    if (data.cabin2 !== undefined) setCabin2(data.cabin2);
+                    if (data.crewBonus !== undefined) setCrewBonus(data.crewBonus);
+                    if (data.bMods) setBMods(prev => ({ ...prev, ...data.bMods }));
+                }
+            } else {
+                // Reset to default on logout
+                setBuilding("Energy Core");
+                setLevelFrom(28);
+                setCabin1(0);
+                setCabin2(0);
+                setCrewBonus(0);
+                const o = {}; BUILD_SPEED_MODIFIERS.forEach(m => { o[m.id] = m.type === "level" ? 0 : m.type === "toggle" ? 0 : (m.def || 0) });
+                setBMods(o);
+            }
+            setIsLoaded(true);
+        };
+        loadData();
+    }, [currentUser]);
+
+    // Save data to Firebase (debounced)
+    useEffect(() => {
+        if (!isLoaded || !currentUser) return;
+
+        const timeoutId = setTimeout(() => {
+            saveUserToolData(currentUser.uid, 'buildTime', {
+                building,
+                levelFrom,
+                cabin1,
+                cabin2,
+                crewBonus,
+                bMods
+            });
+        }, 1000);
+
+        return () => clearTimeout(timeoutId);
+    }, [building, levelFrom, cabin1, cabin2, crewBonus, bMods, currentUser, isLoaded]);
 
     const baseTime = useMemo(() => manualTime.trim() ? parseTimeStr(manualTime) : BUILD_TIME_DATA[building]?.[levelFrom] || 0, [building, levelFrom, manualTime]);
     const isEstimated = useMemo(() => manualTime.trim() ? false : !!ESTIMATED_FLAGS[building]?.[levelFrom], [building, levelFrom, manualTime]);

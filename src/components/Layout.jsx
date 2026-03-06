@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Header from './Header';
 import Tabs from './Tabs';
 
-export default function Layout({ children, activeCategory, setActiveCategory, isMuted, toggleMute }) {
+export default function Layout({ children, activeCategory, setActiveCategory, isMuted, toggleMute, onLoginClick }) {
 
     // Setup Scroll Reveal Observer
     useEffect(() => {
@@ -43,7 +43,7 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
 
     return (
         <div className="app-layout">
-            <Header isMuted={isMuted} toggleMute={toggleMute} />
+            <Header isMuted={isMuted} toggleMute={toggleMute} onLoginClick={onLoginClick} />
 
             {/* Sub-Header for Navigation - now sits below the fixed Header */}
             <div style={{

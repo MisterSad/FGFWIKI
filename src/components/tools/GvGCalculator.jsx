@@ -1,5 +1,7 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { V, Card, SectionTitle, Label } from './ToolUI';
+import { useAuth } from '../../context/AuthContext';
+import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
 
 const TIER1_LEVELS = [
   { gc: 80000, cc: 50, bonus: 10 }, { gc: 110000, cc: 50, bonus: 10 }, { gc: 150000, cc: 100, bonus: 10 },
@@ -373,6 +375,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
 }
 
 export default function GvGCalculator() {
+  const { currentUser } = useAuth();
   const [levels, setLevels] = useState(() => {
     const init = {};
     TREES.forEach((t) => (init[t.id] = 0));
@@ -380,6 +383,42 @@ export default function GvGCalculator() {
   });
 
   const [inventory, setInventory] = useState({ gc: 0, cc: 0 });
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  // Load data from Firebase
+  useEffect(() => {
+    const loadData = async () => {
+      if (currentUser) {
+        const data = await loadUserToolData(currentUser.uid, 'gvg');
+        if (data) {
+          if (data.levels) setLevels(data.levels);
+          if (data.inventory) setInventory(data.inventory);
+        }
+      } else {
+        // Reset to default on logout
+        const init = {};
+        TREES.forEach((t) => (init[t.id] = 0));
+        setLevels(init);
+        setInventory({ gc: 0, cc: 0 });
+      }
+      setIsLoaded(true);
+    };
+    loadData();
+  }, [currentUser]);
+
+  // Save data to Firebase (debounced)
+  useEffect(() => {
+    if (!isLoaded || !currentUser) return;
+
+    const timeoutId = setTimeout(() => {
+      saveUserToolData(currentUser.uid, 'gvg', {
+        levels,
+        inventory
+      });
+    }, 1000);
+
+    return () => clearTimeout(timeoutId);
+  }, [levels, inventory, currentUser, isLoaded]);
 
   const setLevel = (id, val) => setLevels((prev) => ({ ...prev, [id]: val }));
 

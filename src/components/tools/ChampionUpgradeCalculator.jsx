@@ -1,5 +1,7 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, useCallback } from "react";
 import { V, Card, SectionTitle, Label } from './ToolUI';
+import { useAuth } from '../../context/AuthContext';
+import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
 
 // Cost per level ranges
 const COST_TABLE = [
@@ -47,9 +49,47 @@ const MILESTONES = [20, 40, 60, 80, 100, 120, 140, 160, 180, 200];
 const fmt = (n) => n.toLocaleString("en-US");
 
 export default function ChampionUpgradeCalculator() {
+    const { currentUser } = useAuth();
     const [currentLevel, setCurrentLevel] = useState(1);
     const [targetLevel, setTargetLevel] = useState(200);
     const [inventory, setInventory] = useState(0);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    // Load data from Firebase
+    useEffect(() => {
+        const loadData = async () => {
+            if (currentUser) {
+                const data = await loadUserToolData(currentUser.uid, 'championUpgrade');
+                if (data) {
+                    if (data.currentLevel !== undefined) setCurrentLevel(data.currentLevel);
+                    if (data.targetLevel !== undefined) setTargetLevel(data.targetLevel);
+                    if (data.inventory !== undefined) setInventory(data.inventory);
+                }
+            } else {
+                // Reset to default when logged out
+                setCurrentLevel(1);
+                setTargetLevel(200);
+                setInventory(0);
+            }
+            setIsLoaded(true);
+        };
+        loadData();
+    }, [currentUser]);
+
+    // Save data to Firebase with debounce
+    useEffect(() => {
+        if (!isLoaded || !currentUser) return;
+
+        const timeoutId = setTimeout(() => {
+            saveUserToolData(currentUser.uid, 'championUpgrade', {
+                currentLevel,
+                targetLevel,
+                inventory
+            });
+        }, 1000);
+
+        return () => clearTimeout(timeoutId);
+    }, [currentLevel, targetLevel, inventory, currentUser, isLoaded]);
 
     const totalCost = useMemo(() => getTotalCost(currentLevel, targetLevel), [currentLevel, targetLevel]);
     const surplus = inventory - totalCost;

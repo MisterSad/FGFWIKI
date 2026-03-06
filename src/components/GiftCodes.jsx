@@ -57,6 +57,37 @@ export default function GiftCodes() {
                 <p className="guide-subtitle">Redeem these codes in-game for free rewards.</p>
             </div>
 
+            <div style={{
+                marginBottom: '2rem',
+                padding: '1.5rem 2rem',
+                background: 'linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.02))',
+                border: '1px solid var(--gold)',
+                borderRadius: '8px',
+                textAlign: 'center',
+                boxShadow: '0 4px 15px rgba(201,168,76,0.1)'
+            }}>
+                <h3 style={{
+                    color: 'var(--gold-bright)',
+                    fontFamily: 'var(--font-hero)',
+                    letterSpacing: '3px',
+                    margin: '0 0 1rem 0',
+                    fontSize: '1.2rem'
+                }}>
+                    HOW TO REDEEM
+                </h3>
+                <p style={{
+                    color: 'var(--text-primary)',
+                    margin: 0,
+                    fontSize: '0.95rem',
+                    lineHeight: '1.6',
+                    fontFamily: 'var(--font-body)'
+                }}>
+                    Click the copy icon next to a code below.
+                    In-game, tap your <strong>avatar</strong> (top left), select <strong>"Settings"</strong>,
+                    then tap <strong>"Gift Code"</strong> and paste.
+                </p>
+            </div>
+
             <div className="grid" style={{
                 display: 'grid',
                 gap: '1rem',
@@ -106,19 +137,6 @@ export default function GiftCodes() {
                         </h3>
                     </div>
                 ))}
-            </div>
-
-            <div style={{
-                marginTop: '3rem',
-                padding: '1.5rem',
-                backgroundColor: 'var(--bg-elevated)',
-                border: '1px solid var(--border)',
-                borderRadius: '8px',
-                textAlign: 'center'
-            }}>
-                <p style={{ color: 'var(--text-dim)', margin: 0, fontSize: '0.9rem' }}>
-                    <strong style={{ color: "#FFFFFF" }}>How to redeem:</strong> Click the copy icon next to a code, tap your avatar in the top left corner of the game screen, select "Settings", then tap "Gift Code" and paste your code.
-                </p>
             </div>
         </div>
     );

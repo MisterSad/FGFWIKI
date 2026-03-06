@@ -645,7 +645,7 @@ p {
 .mute-button {
   position: absolute;
   top: 50%;
-  right: 40px;
+  left: 40px;
   transform: translateY(-50%);
   background: transparent;
   border: none;
@@ -664,6 +664,17 @@ p {
   transform: translateY(-50%) scale(1.1);
 }
 
+.header-auth-container {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 100;
+}
+
 @media (max-width: 900px) {
   .header-container {
     padding: 0 20px;
@@ -680,6 +691,10 @@ p {
   }
 
   .mute-button {
+    left: 20px;
+  }
+
+  .header-auth-container {
     right: 20px;
   }
 }
@@ -705,9 +720,14 @@ p {
   }
 
   .mute-button {
-    right: 10px;
+    left: 10px;
     padding: 4px;
     transform: translateY(-50%) scale(0.9);
+  }
+
+  .header-auth-container {
+    right: 10px;
+    gap: 10px;
   }
 }
 

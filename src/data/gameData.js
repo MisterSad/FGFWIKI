@@ -230,6 +230,50 @@ export const tips = [
         note: 'tips.port_occ_credit'
       }
     ]
+  },
+  {
+    id: 11,
+    category: 'guild',
+    title: 'tips.home_port_title',
+    content: 'tips.home_port_desc',
+    highlight: true,
+    hasDetails: true,
+    sections: [
+      {
+        text: 'tips.home_port_intro'
+      },
+      {
+        header: 'tips.home_port_purpose_hdr',
+        text: 'tips.home_port_purpose_txt'
+      },
+      {
+        header: 'tips.home_port_settlement_hdr',
+        text: 'tips.home_port_settlement_txt',
+        note: 'tips.home_port_settlement_note'
+      },
+      {
+        header: 'tips.home_port_neutral_hdr',
+        text: 'tips.home_port_neutral_txt'
+      },
+      {
+        header: 'tips.home_port_nonneutral_hdr',
+        text: 'tips.home_port_nonneutral_txt',
+        note: 'tips.home_port_nonneutral_tip'
+      },
+      {
+        header: 'tips.home_port_starport_hdr',
+        text: 'tips.home_port_starport_txt'
+      },
+      {
+        header: 'tips.home_port_buffs_hdr',
+        text: 'tips.home_port_buffs_txt'
+      },
+      {
+        header: 'tips.home_port_final_hdr',
+        text: 'tips.home_port_final_txt',
+        note: 'tips.home_port_credit'
+      }
+    ]
   }
 ];
 

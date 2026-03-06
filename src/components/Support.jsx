@@ -29,8 +29,6 @@ export default function Support() {
                     {[
                         { icon: '🆓', label: '100% Free' },
                         { icon: '🚫', label: 'No Ads' },
-                        { icon: '🔒', label: 'No Data Collected' },
-                        { icon: '👤', label: 'No Login Required' },
                     ].map(({ icon, label }) => (
                         <span key={label} style={{
                             display: 'inline-flex', alignItems: 'center', gap: '0.4rem',

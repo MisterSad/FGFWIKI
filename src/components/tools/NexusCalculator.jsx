@@ -1,6 +1,8 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { NEXUS_DATA } from "../../data/nexusData";
 import { V, Card, SectionTitle, Label } from './ToolUI';
+import { useAuth } from '../../context/AuthContext';
+import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
 
 const fmt = (n) => n.toLocaleString("en-US");
 
@@ -34,10 +36,48 @@ const WeaponIcon = ({ type, size = 20 }) => {
 };
 
 export default function NexusCalculator() {
+    const { currentUser } = useAuth();
     const [weaponType, setWeaponType] = useState("kinetic");
     const [fromStage, setFromStage] = useState(1);
     const [toStage, setToStage] = useState(4);
     const [expandedStage, setExpandedStage] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    // Load data from Firebase
+    useEffect(() => {
+        const loadData = async () => {
+            if (currentUser) {
+                const data = await loadUserToolData(currentUser.uid, 'nexus');
+                if (data) {
+                    if (data.weaponType) setWeaponType(data.weaponType);
+                    if (data.fromStage !== undefined) setFromStage(data.fromStage);
+                    if (data.toStage !== undefined) setToStage(data.toStage);
+                }
+            } else {
+                // Reset to default
+                setWeaponType("kinetic");
+                setFromStage(1);
+                setToStage(4);
+            }
+            setIsLoaded(true);
+        };
+        loadData();
+    }, [currentUser]);
+
+    // Save data to Firebase (debounced)
+    useEffect(() => {
+        if (!isLoaded || !currentUser) return;
+
+        const timeoutId = setTimeout(() => {
+            saveUserToolData(currentUser.uid, 'nexus', {
+                weaponType,
+                fromStage,
+                toStage
+            });
+        }, 1000);
+
+        return () => clearTimeout(timeoutId);
+    }, [weaponType, fromStage, toStage, currentUser, isLoaded]);
 
     const weapon = NEXUS_DATA[weaponType];
     const stages = weapon.stages;

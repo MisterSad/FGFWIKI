@@ -1,5 +1,7 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { V, Card, SectionTitle, Label } from './ToolUI';
+import { useAuth } from '../../context/AuthContext';
+import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
 
 const WEAPON_MOD = [
     { m: 180000, w: 180000, gc: 140000, cc: 100, b: 54 }, { m: 400000, w: 400000, gc: 320000, cc: 190, b: 54 },
@@ -275,12 +277,49 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
 }
 
 export default function CombatCraftCalculator() {
+    const { currentUser } = useAuth();
     const [levels, setLevels] = useState(() => {
         const init = {};
         TREES.forEach((t) => (init[t.id] = 0));
         return init;
     });
     const [inventory, setInventory] = useState({ m: 0, w: 0, gc: 0, cc: 0 });
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    // Load data from Firebase
+    useEffect(() => {
+        const loadData = async () => {
+            if (currentUser) {
+                const data = await loadUserToolData(currentUser.uid, 'combatCraft');
+                if (data) {
+                    if (data.levels) setLevels(data.levels);
+                    if (data.inventory) setInventory(data.inventory);
+                }
+            } else {
+                // Reset to default on logout
+                const init = {};
+                TREES.forEach((t) => (init[t.id] = 0));
+                setLevels(init);
+                setInventory({ m: 0, w: 0, gc: 0, cc: 0 });
+            }
+            setIsLoaded(true);
+        };
+        loadData();
+    }, [currentUser]);
+
+    // Save data to Firebase (debounced)
+    useEffect(() => {
+        if (!isLoaded || !currentUser) return;
+
+        const timeoutId = setTimeout(() => {
+            saveUserToolData(currentUser.uid, 'combatCraft', {
+                levels,
+                inventory
+            });
+        }, 1000);
+
+        return () => clearTimeout(timeoutId);
+    }, [levels, inventory, currentUser, isLoaded]);
 
     const setLevel = (id, val) => setLevels((p) => ({ ...p, [id]: val }));
 
