@@ -103,11 +103,10 @@ export default function Builder() {
                         onClick={() => setActiveTab('combat-craft')}
                         style={{ color: activeTab === 'combat-craft' ? '#FFFFFF' : '#8A8778' }}
                     >
-                        Combat Craft
+                        Combat Craft Modifications
                     </button>
-                </div>
 
-                <div style={{ height: 1, background: `linear-gradient(90deg,transparent,#C9A84C,transparent)`, margin: "0 auto", maxWidth: 400, marginTop: 12 }} />
+                    <div style={{ height: 1, background: `linear-gradient(90deg,transparent,#C9A84C,transparent)`, margin: "0 auto", maxWidth: 400, marginTop: 12 }} />
             </header>
 
             {/* Content */}

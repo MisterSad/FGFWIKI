@@ -359,20 +359,23 @@ export default function CombatCraftCalculator() {
         </div>
     );
 
-    const SummaryItem = ({ label, remain, surp, color }) => (
-        <div style={{ minWidth: 140 }}>
-            <Label>{label} Needed</Label>
-            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color }}>{fmt(remain)}</div>
+    const SummaryItem = ({ label, remain, surp, color }) => {
+        const missing = Math.max(0, -surp);
+        return (
+            <div style={{ minWidth: 140 }}>
+                <Label>{label} Total Cost</Label>
+                <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700, color }}>{fmt(remain)}</div>
 
-            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, color: "#FFFFFF", display: "block", marginBottom: 6, marginTop: 12, textTransform: "uppercase" }}>{label} Diff</div>
-            <div style={{
-                fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700,
-                color: surp >= 0 ? "#2ecc71" : "#e74c3c"
-            }}>
-                {surp >= 0 ? "+" : ""}{fmt(surp)}
+                <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, color: "#FFFFFF", display: "block", marginBottom: 6, marginTop: 12, textTransform: "uppercase" }}>{label} Missing</div>
+                <div style={{
+                    fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 700,
+                    color: missing > 0 ? "#e74c3c" : "#2ecc71"
+                }}>
+                    {fmt(missing)}
+                </div>
             </div>
-        </div>
-    );
+        );
+    };
 
     return (
         <div style={{ animation: "fadeUp 0.8s ease-out" }}>
