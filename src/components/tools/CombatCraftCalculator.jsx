@@ -411,6 +411,7 @@ export default function CombatCraftCalculator() {
                             fontFamily: "'Rajdhani', sans-serif", textTransform: "uppercase", letterSpacing: 1, fontWeight: 600
                         }}>Reset</button>
                     </div>
+                </div>
             </Card>
 
             {/* Trees */}
