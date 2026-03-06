@@ -67,7 +67,7 @@ function App() {
 
     // Filtered Tips
     const filteredTips = activeCategory === 'all'
-      ? tips
+      ? tips.filter(tip => tip.category === 'beginner' || tip.category === 'combat')
       : tips.filter(tip => tip.category === activeCategory);
 
     return (
