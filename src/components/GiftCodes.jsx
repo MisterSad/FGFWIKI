@@ -2,45 +2,48 @@ import React, { useState } from 'react';
 import { Copy, Check } from 'lucide-react';
 
 const giftCodes = [
-    'HERPOWER',
-    'Bdwayne',
-    'LUNARFOUNDATION',
-    'FantasyLibrary',
-    'ayi0303',
-    'bahagamecrazy',
-    'HKICE',
-    'JAPHK',
-    'mrbay888',
-    '888nicemonster',
-    'yuyu31555',
-    'yuniko',
-    'drumstick',
-    'alansmart123',
-    'SCPLAY',
-    'CMED',
-    'tesscube',
-    'CHING',
-    '520pupupipi',
-    'oddcomet',
-    'badstory',
-    'FLEET777',
-    'TRADERS100K',
-    'TANKFISH',
-    'gametheory',
-    'ACTMAN',
-    'catzilla',
-    'MrSneakyy',
-    'Nooch2Gud',
-    'Sinkiller',
-    'Bitt3rSteel',
-    'WANKIL',
-    'WIZARDS',
-    'VETERANSGIFT',
-    'HERORIZON',
-    'CHAMPIONSPIRIT',
-    'FURTHERFUTURE',
-    'FOUNDATION'
+    { code: 'HERPOWER', expiresAt: new Date('2026-04-08T11:59:00Z') },
+    { code: 'Bdwayne' },
+    { code: 'LUNARFOUNDATION' },
+    { code: 'FantasyLibrary' },
+    { code: 'ayi0303' },
+    { code: 'bahagamecrazy' },
+    { code: 'HKICE' },
+    { code: 'JAPHK' },
+    { code: 'mrbay888' },
+    { code: '888nicemonster' },
+    { code: 'yuyu31555' },
+    { code: 'yuniko' },
+    { code: 'drumstick' },
+    { code: 'alansmart123' },
+    { code: 'SCPLAY' },
+    { code: 'CMED' },
+    { code: 'tesscube' },
+    { code: 'CHING' },
+    { code: '520pupupipi' },
+    { code: 'oddcomet' },
+    { code: 'badstory' },
+    { code: 'FLEET777' },
+    { code: 'TRADERS100K' },
+    { code: 'TANKFISH' },
+    { code: 'gametheory' },
+    { code: 'ACTMAN' },
+    { code: 'catzilla' },
+    { code: 'MrSneakyy' },
+    { code: 'Nooch2Gud' },
+    { code: 'Sinkiller' },
+    { code: 'Bitt3rSteel' },
+    { code: 'WANKIL' },
+    { code: 'WIZARDS' },
+    { code: 'VETERANSGIFT' },
+    { code: 'HERORIZON' },
+    { code: 'CHAMPIONSPIRIT' },
+    { code: 'FURTHERFUTURE' },
+    { code: 'FOUNDATION' },
 ];
+
+const now = new Date();
+const visibleCodes = giftCodes.filter(({ expiresAt }) => !expiresAt || now < expiresAt);
 
 export default function GiftCodes() {
     const [copiedIndex, setCopiedIndex] = useState(null);
@@ -94,7 +97,7 @@ export default function GiftCodes() {
                 gap: '1rem',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))'
             }}>
-                {giftCodes.map((code, index) => (
+                {visibleCodes.map(({ code }, index) => (
                     <div
                         key={index}
                         className="gift-card"
