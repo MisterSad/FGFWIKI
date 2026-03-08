@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Copy, Check } from 'lucide-react';
 
 const giftCodes = [
+    'HERPOWER',
     'Bdwayne',
     'LUNARFOUNDATION',
     'FantasyLibrary',
