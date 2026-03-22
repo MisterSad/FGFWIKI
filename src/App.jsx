@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AuthProvider } from './context/AuthContext';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
@@ -102,6 +103,7 @@ function App() {
         {renderContent()}
       </Layout>
       <Analytics />
+      <SpeedInsights />
 
       <LoginModal
         isOpen={isLoginModalOpen}
