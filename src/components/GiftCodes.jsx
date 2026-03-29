@@ -40,6 +40,8 @@ const giftCodes = [
     { code: 'CHAMPIONSPIRIT' },
     { code: 'FURTHERFUTURE' },
     { code: 'FOUNDATION' },
+    { code: 'NEWFRONTIER', expiresAt: new Date('2026-06-26T23:59:00Z') },
+    { code: 'GALAXYTHANKS' },
 ];
 
 const now = new Date();
