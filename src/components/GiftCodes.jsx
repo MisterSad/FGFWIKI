@@ -45,7 +45,7 @@ const giftCodes = [
 ];
 
 const now = new Date();
-const visibleCodes = giftCodes.filter(({ expiresAt }) => !expiresAt || now < expiresAt);
+const visibleCodes = giftCodes.filter(({ expiresAt }) => !expiresAt || now < expiresAt).reverse();
 
 export default function GiftCodes() {
     const [copiedIndex, setCopiedIndex] = useState(null);
