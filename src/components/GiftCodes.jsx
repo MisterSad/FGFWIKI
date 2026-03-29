@@ -42,6 +42,16 @@ const giftCodes = [
     { code: 'FOUNDATION' },
     { code: 'NEWFRONTIER', expiresAt: new Date('2026-06-26T23:59:00Z') },
     { code: 'GALAXYTHANKS' },
+    { code: 'GAMEMA27' },
+    { code: 'YUNSEO0327' },
+    { code: 'AKTUBE0327' },
+    { code: 'LEVELMAP0327' },
+    { code: 'KOOGNUJ0' },
+    { code: 'NARI0327' },
+    { code: 'SSAMDOL0327' },
+    { code: 'yuyu' },
+    { code: 'JiForceV' },
+    { code: 'NATV0327' },
 ];
 
 const now = new Date();
