@@ -154,6 +154,66 @@ export default function GiftCodes() {
                     </div>
                 ))}
             </div>
+
+            {/* Contributors Section */}
+            <div style={{
+                marginTop: '4rem',
+                textAlign: 'center',
+                padding: '2rem',
+                background: 'linear-gradient(135deg, rgba(201,168,76,0.05), rgba(0,0,0,0.2))',
+                border: '1px solid var(--border)',
+                borderRadius: '12px',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
+            }}>
+                <h3 style={{
+                    color: 'var(--gold-bright)',
+                    fontFamily: 'var(--font-hero)',
+                    letterSpacing: '2px',
+                    margin: '0 0 1rem 0',
+                    fontSize: '1.2rem'
+                }}>
+                    Special Thanks
+                </h3>
+                <p style={{
+                    color: 'var(--text-dim)',
+                    margin: 0,
+                    fontSize: '0.95rem',
+                    lineHeight: '1.6',
+                    fontFamily: 'var(--font-body)'
+                }}>
+                    A big thank you to the amazing community members who help keep this list updated.
+                </p>
+                <div style={{
+                    marginTop: '1.5rem',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    gap: '1rem',
+                    flexWrap: 'wrap'
+                }}>
+                    <div style={{
+                        padding: '0.5rem 1.2rem',
+                        background: 'var(--bg-elevated)',
+                        border: '1px solid var(--border)',
+                        borderRadius: '20px',
+                        color: 'var(--text-primary)',
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.95rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem'
+                    }}>
+                        <span style={{ 
+                            display: 'inline-block', 
+                            width: '8px', 
+                            height: '8px', 
+                            borderRadius: '50%', 
+                            background: 'var(--gold-bright)',
+                            boxShadow: '0 0 5px var(--gold-bright)' 
+                        }}></span>
+                        Xarren #1090
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
