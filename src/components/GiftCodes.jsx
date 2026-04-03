@@ -4,7 +4,6 @@ import { Copy, Check } from 'lucide-react';
 const giftCodes = [
     { code: 'HERPOWER', expiresAt: new Date('2026-04-08T11:59:00Z') },
     { code: 'Bdwayne' },
-    { code: 'LUNARFOUNDATION' },
     { code: 'FantasyLibrary' },
     { code: 'ayi0303' },
     { code: 'bahagamecrazy' },
@@ -24,7 +23,6 @@ const giftCodes = [
     { code: 'oddcomet' },
     { code: 'badstory' },
     { code: 'FLEET777' },
-    { code: 'TRADERS100K' },
     { code: 'TANKFISH' },
     { code: 'gametheory' },
     { code: 'ACTMAN' },
@@ -36,7 +34,6 @@ const giftCodes = [
     { code: 'WANKIL' },
     { code: 'WIZARDS' },
     { code: 'VETERANSGIFT' },
-    { code: 'HERORIZON' },
     { code: 'CHAMPIONSPIRIT' },
     { code: 'FURTHERFUTURE' },
     { code: 'FOUNDATION' },
@@ -52,6 +49,12 @@ const giftCodes = [
     { code: 'yuyu' },
     { code: 'JiForceV' },
     { code: 'NATV0327' },
+    { code: 'fujinattugift' },
+    { code: 'yamamidoriirogift' },
+    { code: 'TONBOKIRI' },
+    { code: 'ranchannelgift' },
+    { code: 'ugeple007' },
+    { code: 'ggya0327' },
 ];
 
 const now = new Date();
