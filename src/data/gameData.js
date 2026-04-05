@@ -673,5 +673,44 @@ export const eventsData = [
         content: 'events.dominance_protip3_content'
       }
     ]
+  },
+  {
+    id: 'dominion_war_zone',
+    title: 'events.dominion_war_zone_title',
+    cycle: 'events.dominion_war_zone_cycle',
+    type: 'events.dominion_war_zone_type',
+    warning: 'events.dominion_war_zone_warning',
+    description: 'events.dominion_war_zone_desc',
+    dailyActions: [
+      { focus: 'events.dominion_war_zone_day1_focus', details: 'events.dominion_war_zone_day1_details' },
+      { focus: 'events.dominion_war_zone_day2_focus', details: 'events.dominion_war_zone_day2_details' },
+      { focus: 'events.dominion_war_zone_day3_focus', details: 'events.dominion_war_zone_day3_details' },
+      { focus: 'events.dominion_war_zone_day4_focus', details: 'events.dominion_war_zone_day4_details' },
+      { focus: 'events.dominion_war_zone_day5_focus', details: 'events.dominion_war_zone_day5_details' }
+    ],
+    schedulePhases: [
+      {
+        title: 'events.dominion_war_zone_phase2_title',
+        events: [
+          { time: 'Day 6', action: 'events.dominion_war_zone_phase2_action' }
+        ]
+      }
+    ],
+    tactics: [
+      { title: 'events.dominion_war_zone_tactic_garrison', content: 'events.dominion_war_zone_tactic_garrison_desc' },
+      { title: 'events.dominion_war_zone_tactic_jump', content: 'events.dominion_war_zone_tactic_jump_desc' }
+    ],
+    infoGrid: {
+      title: 'events.dominion_war_zone_rewards_title',
+      items: [
+        { label: 'events.dominion_war_zone_reward_chest', value: 'events.dominion_war_zone_reward_chest_desc' },
+        { label: 'events.dominion_war_zone_reward_pvp', value: 'events.dominion_war_zone_reward_pvp_desc' },
+        { label: 'events.dominion_war_zone_reward_top', value: 'events.dominion_war_zone_reward_top_desc' }
+      ]
+    },
+    proTips: [
+      { title: 'events.dominion_war_zone_protip_garrison', content: 'events.dominion_war_zone_protip_garrison_desc' },
+      { title: 'events.dominion_war_zone_protip_conqueror', content: 'events.dominion_war_zone_protip_conqueror_desc' }
+    ]
   }
 ];
