@@ -681,7 +681,7 @@ export const eventsData = [
     type: 'events.dominion_war_zone_type',
     warning: 'events.dominion_war_zone_warning',
     description: 'events.dominion_war_zone_desc',
-    image: '/images/universe-war-begins.png',
+    image: '/images/DominionWarzone1.png',
     schedule: [
       { label: 'events.dominion_war_zone_schedule_d15', times: 'events.dominion_war_zone_schedule_d15_action' },
       { label: 'events.dominion_war_zone_schedule_d6', times: 'events.dominion_war_zone_schedule_d6_action' },
@@ -689,13 +689,13 @@ export const eventsData = [
     ],
     stages: [
       { title: 'events.dominion_war_zone_phase1_title', description: 'events.dominion_war_zone_phase1_desc' },
-      { title: 'events.dominion_war_zone_phase2_title', description: 'events.dominion_war_zone_phase2_desc', image: '/images/enter-battlefield.png' },
+      { title: 'events.dominion_war_zone_phase2_title', description: 'events.dominion_war_zone_phase2_desc', image: '/images/DominionWarzone2.png' },
       { title: 'events.dominion_war_zone_phase3_title', description: 'events.dominion_war_zone_phase3_desc' }
     ],
     tactics: [
-      { title: 'events.dominion_war_zone_garrison_overview_title', content: 'events.dominion_war_zone_garrison_overview_desc', image: '/images/garrison-strongholds-overview.png' },
-      { title: 'events.dominion_war_zone_garrison_types_title', content: 'events.dominion_war_zone_garrison_types_desc', image: '/images/fortify-the-fortress.png' },
-      { title: 'events.dominion_war_zone_garrison_rules_title', content: 'events.dominion_war_zone_garrison_rules_desc', image: '/images/stronghold-ownership-change.png' },
+      { title: 'events.dominion_war_zone_garrison_overview_title', content: 'events.dominion_war_zone_garrison_overview_desc', image: '/images/DominionWarzone3.png' },
+      { title: 'events.dominion_war_zone_garrison_types_title', content: 'events.dominion_war_zone_garrison_types_desc', image: '/images/DominionWarzone4.png' },
+      { title: 'events.dominion_war_zone_garrison_rules_title', content: 'events.dominion_war_zone_garrison_rules_desc', image: '/images/DominionWarzone5.png' },
       { title: 'events.dominion_war_zone_anti_lag_title', content: 'events.dominion_war_zone_anti_lag_desc' },
       { title: 'events.dominion_war_zone_loss_comp_title', content: 'events.dominion_war_zone_loss_comp_desc' }
     ],
