@@ -712,5 +712,39 @@ export const eventsData = [
       { title: 'events.dominion_war_zone_protip_garrison', content: 'events.dominion_war_zone_protip_garrison_desc' },
       { title: 'events.dominion_war_zone_protip_conqueror', content: 'events.dominion_war_zone_protip_conqueror_desc' }
     ]
+  },
+  {
+    id: 'united_frontline',
+    title: 'events.united_frontline_title',
+    cycle: 'events.united_frontline_cycle',
+    type: 'events.united_frontline_type',
+    description: 'events.united_frontline_desc',
+    image: '/images/EventPortal.png',
+    infoGrid: {
+      title: 'events.united_frontline_schedule_title',
+      items: [
+        { label: 'events.united_frontline_schedule_occurrence', value: 'events.united_frontline_schedule_occurrence_desc' },
+        { label: 'events.united_frontline_schedule_cadence', value: 'events.united_frontline_schedule_cadence_desc' },
+        { label: 'events.united_frontline_schedule_req', value: 'events.united_frontline_schedule_req_desc' }
+      ]
+    },
+    rewards: [
+      { label: 'events.united_frontline_reward_f2p_label', value: 'events.united_frontline_reward_f2p_value' },
+      { label: 'events.united_frontline_reward_monthly_label', value: 'events.united_frontline_reward_monthly_value' },
+      { label: 'events.united_frontline_reward_assist_label', value: 'events.united_frontline_reward_assist_value' }
+    ],
+    stagesImage: '/images/ImmortalAscendencyShrineModel.png',
+    stages: [
+      { title: 'events.united_frontline_phase1', description: 'events.united_frontline_phase1_desc' },
+      { title: 'events.united_frontline_phase2', description: 'events.united_frontline_phase2_desc', image: '/images/PilgrimGuards.png' },
+      { title: 'events.united_frontline_phase3', description: 'events.united_frontline_phase3_desc', image: '/images/FaithBarrier.png' }
+    ],
+    tactics: [
+      { title: 'events.united_frontline_tactic_respawn', content: 'events.united_frontline_tactic_respawn_desc' },
+      { title: 'events.united_frontline_tactic_rating', content: 'events.united_frontline_tactic_rating_desc' }
+    ],
+    proTips: [
+      { title: 'events.united_frontline_protip_strategy', content: 'events.united_frontline_protip_strategy_desc' }
+    ]
   }
 ];

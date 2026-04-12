@@ -204,14 +204,21 @@ export default function EventGuide() {
                         )}
 
                         {/* Description */}
-                        <p style={{ color: 'var(--text-main)', marginBottom: '2rem', lineHeight: '1.7', fontSize: '1.05rem' }}>
-                            {t(selectedEvent.description)}
-                            {selectedEvent.essentials && (
-                                <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.8rem', color: "#FFFFFF", fontStyle: 'italic', background: 'var(--bg-surface)', padding: '0.5rem', borderRadius: '4px' }}>
-                                    <Lightbulb size={18} /> {t(selectedEvent.essentials)}
-                                </span>
+                        <div style={{ marginBottom: '2rem' }}>
+                            <p style={{ color: 'var(--text-main)', margin: 0, lineHeight: '1.7', fontSize: '1.05rem' }}>
+                                {t(selectedEvent.description)}
+                                {selectedEvent.essentials && (
+                                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.8rem', color: "#FFFFFF", fontStyle: 'italic', background: 'var(--bg-surface)', padding: '0.5rem', borderRadius: '4px' }}>
+                                        <Lightbulb size={18} /> {t(selectedEvent.essentials)}
+                                    </span>
+                                )}
+                            </p>
+                            {selectedEvent.image && (
+                                <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+                                    <img src={selectedEvent.image} alt={t(selectedEvent.title)} style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                </div>
                             )}
-                        </p>
+                        </div>
 
                         {/* Score Grid */}
                         {selectedEvent.scoreGrid && (
@@ -285,11 +292,21 @@ export default function EventGuide() {
                                 <h4 style={{ margin: '0 0 1rem', color: "#FFFFFF", fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                     <Calendar size={20} /> <span className="label-text">{t('events_ui.stages')}</span>
                                 </h4>
+                                {selectedEvent.stagesImage && (
+                                    <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
+                                        <img src={selectedEvent.stagesImage} alt="Stages Info" style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                    </div>
+                                )}
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                                     {selectedEvent.stages.map((stage, idx) => (
                                         <div key={idx} style={{ background: 'var(--bg-void)', padding: '1.2rem', border: '1px solid var(--border)', borderRadius: '2px', borderLeft: '3px solid var(--gold)' }}>
                                             <strong style={{ color: 'var(--text-primary)', display: 'block', fontSize: '1rem', marginBottom: '0.4rem' }}>{t(stage.title)}</strong>
                                             <div style={{ color: 'var(--text-dim)', fontSize: '0.95rem', lineHeight: '1.5' }}>{t(stage.description)}</div>
+                                            {stage.image && (
+                                                <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                                                    <img src={stage.image} alt={t(stage.title)} style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                                </div>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
