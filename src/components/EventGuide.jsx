@@ -320,9 +320,14 @@ export default function EventGuide() {
                                     <Swords size={20} /> <span className="label-text">{t('events_ui.tactical_guide')}</span>
                                 </h4>
                                 {selectedEvent.tactics.map((tactic, idx) => (
-                                    <div key={idx} style={{ marginBottom: '1rem' }}>
-                                        <strong style={{ color: 'var(--text-primary)', display: 'block', fontSize: '1rem', marginBottom: '0.3rem' }}>{t(tactic.title)}</strong>
+                                    <div key={idx} style={{ marginBottom: '1.5rem' }}>
+                                        <strong style={{ color: 'var(--text-primary)', display: 'block', fontSize: '1.1rem', marginBottom: '0.4rem' }}>{t(tactic.title)}</strong>
                                         <div style={{ color: 'var(--text-dim)', fontSize: '0.95rem', lineHeight: '1.5' }}>{t(tactic.content)}</div>
+                                        {tactic.image && (
+                                            <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                                                <img src={tactic.image} alt={t(tactic.title)} style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                            </div>
+                                        )}
                                     </div>
                                 ))}
                             </div>

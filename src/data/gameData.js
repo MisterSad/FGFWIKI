@@ -681,37 +681,43 @@ export const eventsData = [
     type: 'events.dominion_war_zone_type',
     warning: 'events.dominion_war_zone_warning',
     description: 'events.dominion_war_zone_desc',
-    dailyActions: [
-      { focus: 'events.dominion_war_zone_day1_focus', details: 'events.dominion_war_zone_day1_details' },
-      { focus: 'events.dominion_war_zone_day2_focus', details: 'events.dominion_war_zone_day2_details' },
-      { focus: 'events.dominion_war_zone_day3_focus', details: 'events.dominion_war_zone_day3_details' },
-      { focus: 'events.dominion_war_zone_day4_focus', details: 'events.dominion_war_zone_day4_details' },
-      { focus: 'events.dominion_war_zone_day5_focus', details: 'events.dominion_war_zone_day5_details' }
+    image: '/images/universe-war-begins.png',
+    schedule: [
+      { label: 'events.dominion_war_zone_schedule_d15', times: 'events.dominion_war_zone_schedule_d15_action' },
+      { label: 'events.dominion_war_zone_schedule_d6', times: 'events.dominion_war_zone_schedule_d6_action' },
+      { label: 'events.dominion_war_zone_schedule_d7', times: 'events.dominion_war_zone_schedule_d7_action' }
     ],
-    schedulePhases: [
-      {
-        title: 'events.dominion_war_zone_phase2_title',
-        events: [
-          { time: 'Day 6', action: 'events.dominion_war_zone_phase2_action' }
-        ]
-      }
+    stages: [
+      { title: 'events.dominion_war_zone_phase1_title', description: 'events.dominion_war_zone_phase1_desc' },
+      { title: 'events.dominion_war_zone_phase2_title', description: 'events.dominion_war_zone_phase2_desc', image: '/images/enter-battlefield.png' },
+      { title: 'events.dominion_war_zone_phase3_title', description: 'events.dominion_war_zone_phase3_desc' }
     ],
     tactics: [
-      { title: 'events.dominion_war_zone_tactic_garrison', content: 'events.dominion_war_zone_tactic_garrison_desc' },
-      { title: 'events.dominion_war_zone_tactic_jump', content: 'events.dominion_war_zone_tactic_jump_desc' }
+      { title: 'events.dominion_war_zone_garrison_overview_title', content: 'events.dominion_war_zone_garrison_overview_desc', image: '/images/garrison-strongholds-overview.png' },
+      { title: 'events.dominion_war_zone_garrison_types_title', content: 'events.dominion_war_zone_garrison_types_desc', image: '/images/fortify-the-fortress.png' },
+      { title: 'events.dominion_war_zone_garrison_rules_title', content: 'events.dominion_war_zone_garrison_rules_desc', image: '/images/stronghold-ownership-change.png' },
+      { title: 'events.dominion_war_zone_anti_lag_title', content: 'events.dominion_war_zone_anti_lag_desc' },
+      { title: 'events.dominion_war_zone_loss_comp_title', content: 'events.dominion_war_zone_loss_comp_desc' }
+    ],
+    proTips: [
+      { title: 'events.dominion_war_zone_strategy_prep_title', content: 'events.dominion_war_zone_strategy_prep_desc' },
+      { title: 'events.dominion_war_zone_strategy_battle_title', content: 'events.dominion_war_zone_strategy_battle_desc' }
     ],
     infoGrid: {
-      title: 'events.dominion_war_zone_rewards_title',
+      title: 'events.dominion_war_zone_qr_title',
       items: [
-        { label: 'events.dominion_war_zone_reward_chest', value: 'events.dominion_war_zone_reward_chest_desc' },
-        { label: 'events.dominion_war_zone_reward_pvp', value: 'events.dominion_war_zone_reward_pvp_desc' },
-        { label: 'events.dominion_war_zone_reward_top', value: 'events.dominion_war_zone_reward_top_desc' }
+        { label: 'events.dominion_war_zone_qr_duration', value: 'events.dominion_war_zone_qr_duration_val' },
+        { label: 'events.dominion_war_zone_qr_cap', value: 'events.dominion_war_zone_qr_cap_val' },
+        { label: 'events.dominion_war_zone_qr_prep', value: 'events.dominion_war_zone_qr_prep_val' },
+        { label: 'events.dominion_war_zone_qr_battle', value: 'events.dominion_war_zone_qr_battle_val' },
+        { label: 'events.dominion_war_zone_qr_contest', value: 'events.dominion_war_zone_qr_contest_val' },
+        { label: 'events.dominion_war_zone_qr_jump_cd', value: 'events.dominion_war_zone_qr_jump_cd_val' },
+        { label: 'events.dominion_war_zone_qr_jump_req', value: 'events.dominion_war_zone_qr_jump_req_val' },
+        { label: 'events.dominion_war_zone_qr_win', value: 'events.dominion_war_zone_qr_win_val' },
+        { label: 'events.dominion_war_zone_qr_loss', value: 'events.dominion_war_zone_qr_loss_val' },
+        { label: 'events.dominion_war_zone_qr_leaders', value: 'events.dominion_war_zone_qr_leaders_val' }
       ]
-    },
-    proTips: [
-      { title: 'events.dominion_war_zone_protip_garrison', content: 'events.dominion_war_zone_protip_garrison_desc' },
-      { title: 'events.dominion_war_zone_protip_conqueror', content: 'events.dominion_war_zone_protip_conqueror_desc' }
-    ]
+    }
   },
   {
     id: 'united_frontline',
