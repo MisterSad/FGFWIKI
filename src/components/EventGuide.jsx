@@ -22,7 +22,7 @@ export default function EventGuide() {
                         paddingBottom: '4rem',
                         alignItems: 'stretch'
                     }}>
-                        {eventsData.map(event => (
+                        {eventsData.filter(e => !e.publishDate || new Date() >= new Date(e.publishDate)).map(event => (
                             <div
                                 className="card reveal"
                                 key={event.id}
