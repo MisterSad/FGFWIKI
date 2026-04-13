@@ -22,7 +22,10 @@ export default function EventGuide() {
                         paddingBottom: '4rem',
                         alignItems: 'stretch'
                     }}>
-                        {eventsData.filter(e => !e.publishDate || new Date() >= new Date(e.publishDate)).map(event => (
+                        {[...eventsData]
+                            .filter(e => !e.publishDate || new Date() >= new Date(e.publishDate))
+                            .sort((a, b) => (a.isNew === b.isNew ? 0 : a.isNew ? -1 : 1))
+                            .map(event => (
                             <div
                                 className="card reveal"
                                 key={event.id}
@@ -34,13 +37,35 @@ export default function EventGuide() {
                                     height: '100%',
                                     boxSizing: 'border-box',
                                     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                                    cursor: 'pointer'
+                                    cursor: 'pointer',
+                                    overflow: 'hidden'
                                 }}
                                 onClick={() => setSelectedEvent(event)}
                             >
                                 <div className="scan-line"></div>
                                 <div className="corner-tl"></div>
                                 <div className="corner-br"></div>
+
+                                {event.isNew && (
+                                    <div style={{
+                                        position: 'absolute',
+                                        top: '15px',
+                                        right: '-35px',
+                                        background: 'var(--gold)',
+                                        color: 'var(--bg-void)',
+                                        padding: '5px 40px',
+                                        transform: 'rotate(45deg)',
+                                        fontSize: '0.75rem',
+                                        fontWeight: 'bold',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '1px',
+                                        zIndex: 10,
+                                        boxShadow: '0 2px 10px rgba(0,0,0,0.5)',
+                                        textAlign: 'center'
+                                    }}>
+                                        {t('events.new_event', 'New Event')}
+                                    </div>
+                                )}
 
                                 {/* Decorative Icon Background */}
                                 <div style={{

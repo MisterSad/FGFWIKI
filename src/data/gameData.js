@@ -677,6 +677,7 @@ export const eventsData = [
   {
     id: 'dominion_war_zone',
     title: 'events.dominion_war_zone_title',
+    isNew: true,
     cycle: 'events.dominion_war_zone_cycle',
     type: 'events.dominion_war_zone_type',
     warning: 'events.dominion_war_zone_warning',
@@ -722,6 +723,7 @@ export const eventsData = [
   {
     id: 'united_frontline',
     title: 'events.united_frontline_title',
+    isNew: true,
     cycle: 'events.united_frontline_cycle',
     type: 'events.united_frontline_type',
     description: 'events.united_frontline_desc',
