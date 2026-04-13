@@ -24,7 +24,20 @@ export default function EventGuide() {
                     }}>
                         {[...eventsData]
                             .filter(e => !e.publishDate || new Date() >= new Date(e.publishDate))
-                            .sort((a, b) => (a.isNew === b.isNew ? 0 : a.isNew ? -1 : 1))
+                            .sort((a, b) => {
+                                // 1. isNew flag overrides everything
+                                if (a.isNew !== b.isNew) return a.isNew ? -1 : 1;
+                                
+                                // 2. Sort by publishDate descending (newest first)
+                                const dateA = a.publishDate ? new Date(a.publishDate).getTime() : 0;
+                                const dateB = b.publishDate ? new Date(b.publishDate).getTime() : 0;
+                                if (dateA !== dateB) return dateB - dateA;
+                                
+                                // 3. Fallback: newer elements (higher index in gameData.js) go first
+                                const indexA = eventsData.indexOf(a);
+                                const indexB = eventsData.indexOf(b);
+                                return indexB - indexA;
+                            })
                             .map(event => (
                             <div
                                 className="card reveal"
