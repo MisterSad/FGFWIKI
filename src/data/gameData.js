@@ -725,7 +725,7 @@ export const eventsData = [
     cycle: 'events.united_frontline_cycle',
     type: 'events.united_frontline_type',
     description: 'events.united_frontline_desc',
-    publishDate: '2026-04-17T00:01:00+02:00',
+    publishDate: '2026-04-13T00:01:00+02:00',
     image: '/images/EventPortal.png',
     infoGrid: {
       title: 'events.united_frontline_schedule_title',
