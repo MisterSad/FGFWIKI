@@ -1,8 +1,8 @@
 import React from 'react';
-import { Volume2, VolumeX, User, LogOut } from 'lucide-react';
+import { User, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
-export default function Header({ isMuted, toggleMute, onLoginClick }) {
+export default function Header({ onLoginClick }) {
     const { currentUser, logout } = useAuth();
     return (
         <header className="sticky-nav header-container">
@@ -52,15 +52,6 @@ export default function Header({ isMuted, toggleMute, onLoginClick }) {
                     </button>
                 )}
             </div>
-
-            <button
-                onClick={toggleMute}
-                className="mute-button"
-                aria-label={isMuted ? "Unmute background music" : "Mute background music"}
-                title={isMuted ? "Unmute background music" : "Mute background music"}
-            >
-                {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
-            </button>
         </header>
     );
 }

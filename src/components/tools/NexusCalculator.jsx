@@ -143,7 +143,7 @@ export default function NexusCalculator() {
                                     borderRadius: 2,
                                     color: active ? w.color : V.txDim,
                                     cursor: "pointer",
-                                    fontFamily: "'Rajdhani', sans-serif",
+                                    fontFamily: "var(--font-body)",
                                     fontSize: 16,
                                     fontWeight: active ? 600 : 500,
                                     letterSpacing: 1,
@@ -172,7 +172,7 @@ export default function NexusCalculator() {
                                 width: "100%", padding: "10px 14px",
                                 background: "rgba(0,0,0,.4)", border: `1px solid ${V.border}`,
                                 borderRadius: 2, color: V.txPri,
-                                fontFamily: "'Rajdhani', sans-serif", fontSize: 16, fontWeight: 600,
+                                fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 600,
                                 cursor: "pointer", outline: "none"
                             }}
                         >
@@ -186,7 +186,7 @@ export default function NexusCalculator() {
 
                     <div style={{
                         fontSize: 24, color: weapon.color, paddingBottom: 6,
-                        fontWeight: 300, fontFamily: "'Orbitron'", display: "flex", alignItems: "center"
+                        fontWeight: 300, fontFamily: "var(--font-label)", display: "flex", alignItems: "center"
                     }}>
                         →
                     </div>
@@ -200,7 +200,7 @@ export default function NexusCalculator() {
                                 width: "100%", padding: "10px 14px",
                                 background: "rgba(0,0,0,.4)", border: `1px solid ${V.border}`,
                                 borderRadius: 2, color: V.txPri,
-                                fontFamily: "'Rajdhani', sans-serif", fontSize: 16, fontWeight: 600,
+                                fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 600,
                                 cursor: "pointer", outline: "none"
                             }}
                         >
@@ -223,35 +223,35 @@ export default function NexusCalculator() {
                         textAlign: "center", marginBottom: 24,
                     }}>
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${weapon.color}30` }}>
-                            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
                                 Comp Mods
                             </div>
-                            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 700, color: weapon.color, textShadow: `0 0 20px ${weapon.glow}` }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: weapon.color, textShadow: `0 0 20px ${weapon.glow}` }}>
                                 {fmt(calculation.totalMods)}
                             </div>
                         </div>
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
                                 Echoes
                             </div>
-                            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 700, color: V.txPri }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: V.txPri }}>
                                 {fmt(calculation.totalEchoes)}
                             </div>
                         </div>
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
                                 Total Levels
                             </div>
-                            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 700, color: V.txSec }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: V.txSec }}>
                                 {fmt(calculation.totalLevels)}
                             </div>
                         </div>
                     </div>
 
                     <div style={{ marginBottom: 4, padding: "14px 16px", background: "rgba(201,168,76,0.04)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'Rajdhani', sans-serif", fontSize: 16, color: "#FFFFFF", letterSpacing: 0.3, marginBottom: 8 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "var(--font-body)", fontSize: 16, color: "#FFFFFF", letterSpacing: 0.3, marginBottom: 8 }}>
                             <span>Progress to S{toStage}</span>
-                            <span style={{ fontFamily: "'Share Tech Mono'" }}>{pctProgress}% of max</span>
+                            <span style={{ fontFamily: "var(--font-mono)" }}>{pctProgress}% of max</span>
                         </div>
                         <div style={{ height: 2, background: "rgba(201,168,76,0.1)", borderRadius: 1, overflow: "hidden" }}>
                             <div style={{ height: "100%", width: `${pctProgress}%`, background: `linear-gradient(90deg, ${weapon.color}80, ${weapon.color})`, borderRadius: 1, transition: "width 0.4s ease" }} />
@@ -262,7 +262,7 @@ export default function NexusCalculator() {
 
             {fromStage >= toStage ? (
                 <Card>
-                    <div style={{ textAlign: "center", color: V.txDim, padding: "20px 0", fontSize: 16, fontFamily: "'Rajdhani', sans-serif" }}>
+                    <div style={{ textAlign: "center", color: V.txDim, padding: "20px 0", fontSize: 16, fontFamily: "var(--font-body)" }}>
                         Select a target stage higher than your current stage to see the cost.
                     </div>
                 </Card>
@@ -280,19 +280,19 @@ export default function NexusCalculator() {
                                             width: "100%", display: "grid", gridTemplateColumns: "36px 1fr 120px 100px", alignItems: "center", gap: 12,
                                             padding: "14px 16px", background: isExpanded ? "rgba(0,0,0,.4)" : "transparent",
                                             border: `1px solid ${isExpanded ? weapon.color + "50" : V.border}`, borderRadius: 2,
-                                            cursor: "pointer", fontFamily: "'Rajdhani', sans-serif", color: V.txPri, textAlign: "left", transition: "all 0.15s ease"
+                                            cursor: "pointer", fontFamily: "var(--font-body)", color: V.txPri, textAlign: "left", transition: "all 0.15s ease"
                                         }}
                                     >
-                                        <span style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 14, fontWeight: 700, color: weapon.color }}>
+                                        <span style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 700, color: weapon.color }}>
                                             S{s.stage}
                                         </span>
                                         <span style={{ fontSize: 14, color: V.txSec, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                                             {s.milestone}
                                         </span>
-                                        <span style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 14, fontWeight: 600, textAlign: "right", color: weapon.color }}>
+                                        <span style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600, textAlign: "right", color: weapon.color }}>
                                             {fmt(s.totalCompMods)}
                                         </span>
-                                        <span style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 13, textAlign: "right", color: V.txDim }}>
+                                        <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, textAlign: "right", color: V.txDim }}>
                                             {fmt(s.totalEchoes)} ech.
                                         </span>
                                     </button>
@@ -302,14 +302,14 @@ export default function NexusCalculator() {
                                             background: "rgba(0,0,0,.2)", border: `1px solid ${weapon.color}30`, borderTop: "none",
                                             borderRadius: "0 0 2px 2px", padding: "12px 16px"
                                         }}>
-                                            <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "8px", fontFamily: "'Share Tech Mono', monospace", fontSize: 11, borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 8 }}>
+                                            <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "8px", fontFamily: "var(--font-mono)", fontSize: 11, borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 8 }}>
                                                 <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>Node</div>
                                                 <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>Stat</div>
                                                 <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>Lvl × Cost</div>
                                                 <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>Mods</div>
                                                 <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>Ech.</div>
                                             </div>
-                                            <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "6px 8px", fontFamily: "'Share Tech Mono', monospace", fontSize: 12 }}>
+                                            <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "6px 8px", fontFamily: "var(--font-mono)", fontSize: 12 }}>
                                                 {s.nodes.map((n, i) => (
                                                     <React.Fragment key={i}>
                                                         <div style={{ color: V.txSec, padding: "2px 0" }}>{n.id}</div>
@@ -326,7 +326,7 @@ export default function NexusCalculator() {
                                                     </React.Fragment>
                                                 ))}
                                             </div>
-                                            <div style={{ marginTop: 12, paddingTop: 10, borderTop: `1px solid ${V.border}`, fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: "#FFFFFF" }}>
+                                            <div style={{ marginTop: 12, paddingTop: 10, borderTop: `1px solid ${V.border}`, fontFamily: "var(--font-body)", fontSize: 14, color: "#FFFFFF" }}>
                                                 ⬡ Milestone: {s.milestone}
                                             </div>
                                         </div>
@@ -338,7 +338,7 @@ export default function NexusCalculator() {
                 </Card>
             )}
 
-            <div style={{ marginTop: 20, padding: "16px 20px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, display: "flex", justifyContent: "space-between", fontFamily: "'Orbitron'", fontSize: 10, color: V.txSec, letterSpacing: 2, textTransform: "uppercase" }}>
+            <div style={{ marginTop: 20, padding: "16px 20px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, display: "flex", justifyContent: "space-between", fontFamily: "var(--font-label)", fontSize: 10, color: V.txSec, letterSpacing: 2, textTransform: "uppercase" }}>
                 <span>TOTAL S1→S10 : {fmt(cumulativeTotal.mods)} mods · {fmt(cumulativeTotal.echoes)} echoes</span>
                 <span style={{ color: weapon.color }}>{weapon.label}</span>
             </div>

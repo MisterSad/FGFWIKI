@@ -1,17 +1,16 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Tabs from './Tabs';
 
-export default function Layout({ children, activeCategory, setActiveCategory, isMuted, toggleMute, onLoginClick }) {
+export default function Layout({ children, onLoginClick }) {
+    const location = useLocation();
 
-    // Setup Scroll Reveal Observer
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    // Optional: stop observing once revealed
-                    // observer.unobserve(entry.target); 
                 }
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
@@ -23,9 +22,6 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
 
         observeElements();
 
-        // Set up mutation observer to catch newly added .reveal elements
-        // This fixes the issue where returning from a full-page detail view
-        // left the re-rendered tiles invisible because they weren't observed.
         const mutationObserver = new MutationObserver(() => {
             observeElements();
         });
@@ -39,22 +35,19 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
             observer.disconnect();
             mutationObserver.disconnect();
         };
-    }, [activeCategory]); // Re-run when category changes
+    }, [location.pathname]);
+
+    // Scroll to top on route change
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }, [location.pathname]);
 
     return (
         <div className="app-layout">
-            <Header isMuted={isMuted} toggleMute={toggleMute} onLoginClick={onLoginClick} />
+            <Header onLoginClick={onLoginClick} />
 
-            {/* Sub-Header for Navigation - now sits below the fixed Header */}
-            <div style={{
-                position: 'sticky',
-                top: '100px',
-                zIndex: 80,
-                width: '100%',
-                background: 'var(--bg-void)',
-                borderBottom: '1px solid var(--border)'
-            }}>
-                <Tabs activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
+            <div className="sticky-tabs-wrapper">
+                <Tabs />
             </div>
 
             <main className="main-content container fade-in">
@@ -68,10 +61,9 @@ export default function Layout({ children, activeCategory, setActiveCategory, is
                 marginTop: '4rem',
                 fontFamily: 'var(--font-label)',
                 textTransform: 'uppercase',
-                letterSpacing: '3px',
+                letterSpacing: '2px',
                 fontSize: '0.8rem'
             }}>
-                {/* Psychohistory Bar */}
                 <div style={{
                     display: 'flex',
                     justifyContent: 'center',
