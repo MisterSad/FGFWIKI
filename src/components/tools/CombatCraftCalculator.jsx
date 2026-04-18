@@ -176,17 +176,17 @@ function TreeCard({ tree, currentLevel, onChange }) {
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
                 <div style={{ minHeight: 48, display: "flex", flexDirection: "column" }}>
                     <div style={{
-                        fontFamily: "'Rajdhani', sans-serif", fontSize: 16, fontWeight: 700,
+                        fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 700,
                         color: "#FFFFFF", letterSpacing: 0.5, lineHeight: 1.2, textTransform: "uppercase"
                     }}>
                         {tree.name}
                     </div>
-                    <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "'Rajdhani', sans-serif" }}>
+                    <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "var(--font-body)" }}>
                         {tree.bonus}
                     </div>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2 }}>
-                    <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 12, color: done ? "#28b463" : V.txSec, whiteSpace: "nowrap" }}>
+                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: done ? "#28b463" : V.txSec, whiteSpace: "nowrap" }}>
                         {currentLevel}/{maxLvl}
                     </div>
                 </div>
@@ -200,7 +200,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 4 }}>
-                <label style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>Level</label>
+                <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>Level</label>
                 <input type="range" min={0} max={maxLvl} value={currentLevel}
                     onChange={(e) => onChange(tree.id, parseInt(e.target.value))}
                     style={{ flex: 1, accentColor: tree.isGate ? "#ffbe3c" : V.gold, height: 3, maxWidth: "calc(100% - 50px)" }} />
@@ -209,9 +209,9 @@ function TreeCard({ tree, currentLevel, onChange }) {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px 12px", marginTop: 8 }}>
                 {[["m", "Metal"], ["w", "Water"], ["gc", "Galactic Coins"], ["cc", "Cosmic Comp."]].map(([k, label]) => (
                     <div key={k}>
-                        <div style={{ fontFamily: "'Orbitron'", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>{label}</div>
+                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>{label}</div>
                         <div style={{
-                            fontFamily: "'Share Tech Mono', monospace", fontSize: 14, fontWeight: 600,
+                            fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600,
                             color: done ? "#FFFFFF" : RES_COLORS[k], marginTop: 2
                         }}>
                             {fmt(remaining[k])}
@@ -220,8 +220,8 @@ function TreeCard({ tree, currentLevel, onChange }) {
                 ))}
                 {!tree.isGate && (
                     <div>
-                        <div style={{ fontFamily: "'Orbitron'", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>Bonus</div>
-                        <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 14, fontWeight: 600, color: "#2ecc71", marginTop: 2 }}>
+                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>Bonus</div>
+                        <div style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600, color: "#2ecc71", marginTop: 2 }}>
                             +{Number.isInteger(currentBonus) ? currentBonus : currentBonus.toFixed(1)}{tree.bUnit}
                         </div>
                     </div>
@@ -242,7 +242,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
             <button onClick={() => setOpen(!open)} style={{
                 background: "rgba(0,0,0,0.2)", border: `1px solid ${V.border}`, borderRadius: 2,
                 color: V.txSec, fontSize: 10, cursor: "pointer", padding: "4px 8px",
-                textTransform: "uppercase", letterSpacing: 1, fontFamily: "'Rajdhani', sans-serif",
+                textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-body)",
                 width: "100%", textAlign: "center", marginTop: 12, transition: "all 0.2s"
             }}>
                 {open ? "HAIL" : "DETAILS"}
@@ -258,7 +258,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
                                 background: next ? "rgba(201,168,76,0.1)" : isDone ? "rgba(0,0,0,0.2)" : "transparent",
                                 color: isDone ? "#FFFFFF" : V.txPri,
                                 textDecoration: isDone ? "line-through" : "none",
-                                fontFamily: "'Share Tech Mono', monospace"
+                                fontFamily: "var(--font-mono)"
                             }}>
                                 <span style={{ width: 20, flexShrink: 0, fontWeight: next ? 700 : 400, color: next ? "#FFFFFF" : "inherit" }}>
                                     {next ? "▶" : ""} {i + 1}
@@ -278,12 +278,12 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
 
 const InvInput = ({ rKey, label, inventory, setInventory }) => (
     <div style={{ display: "flex", alignItems: "center", gap: 10, flex: "1 1 calc(50% - 12px)" }}>
-        <span style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{label}</span>
+        <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{label}</span>
         <input type="text" value={inventory[rKey].toLocaleString("en-US")}
             onChange={(e) => { const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999); setInventory(p => ({ ...p, [rKey]: v })); }}
             style={{
                 flex: 1, background: "rgba(0,0,0,0.4)", border: `1px solid ${RES_COLORS[rKey]}50`, borderRadius: 2,
-                padding: "6px 12px", color: RES_COLORS[rKey], fontFamily: "'Share Tech Mono', monospace", fontSize: 16,
+                padding: "6px 12px", color: RES_COLORS[rKey], fontFamily: "var(--font-mono)", fontSize: 16,
                 fontWeight: 600, width: "100%", textAlign: "right", outline: "none"
             }} />
     </div>
@@ -295,7 +295,7 @@ const SummaryItem = ({ label, surp }) => {
         <div style={{ minWidth: 140 }}>
             <Label>{label} Missing</Label>
             <div style={{
-                fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 700,
+                fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700,
                 color: missing > 0 ? "#e74c3c" : "#2ecc71"
             }}>
                 {fmt(missing)}
@@ -408,7 +408,7 @@ export default function CombatCraftCalculator() {
                         <button onClick={resetAll} style={{
                             background: "rgba(0,0,0,0.3)", border: `1px solid ${V.border}`, borderRadius: 2,
                             padding: "8px 14px", color: "#FFFFFF", fontSize: 12, cursor: "pointer",
-                            fontFamily: "'Rajdhani', sans-serif", textTransform: "uppercase", letterSpacing: 1, fontWeight: 600
+                            fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: 1, fontWeight: 600
                         }}>Reset</button>
                     </div>
                 </div>
@@ -422,7 +422,7 @@ export default function CombatCraftCalculator() {
                 return (
                     <div key={tier} style={{ marginBottom: 32 }}>
                         <div style={{
-                            fontFamily: "'Orbitron', sans-serif", fontSize: 12, fontWeight: 700, color: "#FFFFFF",
+                            fontFamily: "var(--font-label)", fontSize: 12, fontWeight: 700, color: "#FFFFFF",
                             letterSpacing: 3, textTransform: "uppercase", marginBottom: 16, paddingLeft: 4, display: "flex", alignItems: "center", gap: 12
                         }}>
                             {TIER_LABELS[tier] || `Tier ${tier}`}

@@ -13,7 +13,6 @@ export default function Builder() {
     return (
         <div style={{ position: "relative" }}>
             <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap');
         *{box-sizing:border-box}
         ::selection{background:rgba(201,168,76,0.3);color:#E8E4D9}
         input[type="range"]{-webkit-appearance:none;appearance:none;height:3px;background:rgba(201,168,76,0.15);border-radius:1px;outline:none;cursor:pointer}
@@ -25,10 +24,10 @@ export default function Builder() {
         @keyframes expandLine{from{width:0;opacity:0}to{width:120px;opacity:1}}
         
         .tool-tab {
-            font-family: 'Rajdhani', sans-serif;
+            font-family: var(--font-body);
             font-size: 16px;
             font-weight: 600;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
             padding: 12px 24px;
             background: transparent;
@@ -37,6 +36,19 @@ export default function Builder() {
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        @media (max-width: 600px) {
+            .tool-tab {
+                font-size: 13px;
+                padding: 10px 12px;
+                letter-spacing: 0.5px;
+            }
+            .tool-tabs-scroll {
+                justify-content: flex-start !important;
+                gap: 8px !important;
+            }
         }
         .tool-tab.active {
             color: #FFFFFF;
@@ -64,12 +76,12 @@ export default function Builder() {
             <header style={{ position: "relative", zIndex: 1, padding: "48px 20px 24px", textAlign: "center" }}>
                 <div style={{ position: "relative", display: "inline-block" }}>
                     <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 500, height: 500, background: "radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%)", pointerEvents: "none" }} />
-                    <h1 className="guide-title text-gradient" style={{ fontFamily: "'Cinzel',serif", fontSize: "clamp(18px,4vw,28px)", fontWeight: 800, letterSpacing: 6, margin: 0, textTransform: "uppercase", position: "relative", animation: "titleReveal 1.2s ease-out" }}>
+                    <h1 className="guide-title text-gradient" style={{ fontFamily: "var(--font-hero)", fontSize: "clamp(18px,4vw,28px)", fontWeight: 800, letterSpacing: 6, margin: 0, textTransform: "uppercase", position: "relative", animation: "titleReveal 1.2s ease-out" }}>
                         {t('builder_ui.title') || 'Tools'}
                     </h1>
                 </div>
 
-                <div style={{ display: "flex", justifyContent: "center", gap: 16, marginTop: 32, animation: "fadeUp 0.6s ease-out" }}>
+                <div className="tool-tabs-scroll" style={{ display: "flex", justifyContent: "flex-start", gap: 16, marginTop: 32, animation: "fadeUp 0.6s ease-out", overflowX: "auto", padding: "0 20px", WebkitOverflowScrolling: "touch" }}>
                     <button
                         className={`tool-tab ${activeTab === 'build-time' ? 'active' : ''}`}
                         onClick={() => setActiveTab('build-time')}

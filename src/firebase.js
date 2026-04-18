@@ -12,6 +12,19 @@ const firebaseConfig = {
     measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+let auth = null;
+let db = null;
+
+if (firebaseConfig.apiKey) {
+    try {
+        const app = initializeApp(firebaseConfig);
+        auth = getAuth(app);
+        db = getFirestore(app);
+    } catch (err) {
+        console.warn('Firebase initialization failed:', err.message);
+    }
+} else {
+    console.warn('Firebase config missing — auth/db disabled. Set VITE_FIREBASE_* env vars.');
+}
+
+export { auth, db };

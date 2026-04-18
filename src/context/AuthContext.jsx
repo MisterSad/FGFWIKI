@@ -50,6 +50,11 @@ export function AuthProvider({ children }) {
     }
 
     useEffect(() => {
+        if (!auth) {
+            setLoading(false);
+            return;
+        }
+
         // Handle incoming magic link
         if (isSignInWithEmailLink(auth, window.location.href)) {
             let email = window.localStorage.getItem('emailForSignIn');

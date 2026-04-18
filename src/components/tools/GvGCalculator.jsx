@@ -194,7 +194,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
         <div style={{ minHeight: 48, display: "flex", flexDirection: "column" }}>
           <div
             style={{
-              fontFamily: "'Rajdhani', sans-serif",
+              fontFamily: "var(--font-body)",
               fontSize: 16,
               fontWeight: 700,
               color: "#FFFFFF",
@@ -205,14 +205,14 @@ function TreeCard({ tree, currentLevel, onChange }) {
           >
             {tree.name}
           </div>
-          <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "'Rajdhani', sans-serif" }}>
+          <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "var(--font-body)" }}>
             {tree.bonus}
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2 }}>
           <div
             style={{
-              fontFamily: "'Share Tech Mono', monospace",
+              fontFamily: "var(--font-mono)",
               fontSize: 12,
               color: done ? "#28b463" : V.txSec,
               whiteSpace: "nowrap",
@@ -249,7 +249,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
       {/* Level selector */}
       <div style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 4 }}>
-        <label style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>Level</label>
+        <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>Level</label>
         <input
           type="range"
           min={0}
@@ -286,12 +286,12 @@ function TreeCard({ tree, currentLevel, onChange }) {
 function Stat({ label, value, color, dimmed }) {
   return (
     <div style={{ minWidth: 60 }}>
-      <div style={{ fontFamily: "'Orbitron'", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>
+      <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>
         {label}
       </div>
       <div
         style={{
-          fontFamily: "'Share Tech Mono', monospace",
+          fontFamily: "var(--font-mono)",
           fontSize: 14,
           fontWeight: 600,
           color: dimmed ? "#FFFFFF" : color,
@@ -319,7 +319,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
           padding: "4px 8px",
           textTransform: "uppercase",
           letterSpacing: 1,
-          fontFamily: "'Rajdhani', sans-serif",
+          fontFamily: "var(--font-body)",
           width: "100%",
           textAlign: "center",
           marginTop: 12,
@@ -350,7 +350,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
                   color: done ? "#FFFFFF" : V.txPri,
                   textDecoration: done ? "line-through" : "none",
                   alignItems: "center",
-                  fontFamily: "'Share Tech Mono', monospace",
+                  fontFamily: "var(--font-mono)",
                 }}
               >
                 <span style={{ width: 20, flexShrink: 0, fontWeight: next ? 700 : 400, color: next ? "#FFFFFF" : "inherit" }}>
@@ -471,7 +471,7 @@ export default function GvGCalculator() {
           <Label>Current Inventory</Label>
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>Galactic Coins</span>
+              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>Galactic Coins</span>
               <input
                 type="text"
                 value={inventory.gc.toLocaleString("en-US")}
@@ -485,7 +485,7 @@ export default function GvGCalculator() {
                   borderRadius: 2,
                   padding: "6px 12px",
                   color: "#C9A84C",
-                  fontFamily: "'Share Tech Mono', monospace",
+                  fontFamily: "var(--font-mono)",
                   fontSize: 16,
                   fontWeight: 600,
                   width: 140,
@@ -495,7 +495,7 @@ export default function GvGCalculator() {
               />
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>Computational Component</span>
+              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>Computational Component</span>
               <input
                 type="text"
                 value={inventory.cc.toLocaleString("en-US")}
@@ -509,7 +509,7 @@ export default function GvGCalculator() {
                   borderRadius: 2,
                   padding: "6px 12px",
                   color: "#a78bfa",
-                  fontFamily: "'Share Tech Mono', monospace",
+                  fontFamily: "var(--font-mono)",
                   fontSize: 16,
                   fontWeight: 600,
                   width: 100,
@@ -538,7 +538,7 @@ export default function GvGCalculator() {
             <Label>Galactic Coins Missing</Label>
             <div
               style={{
-                fontFamily: "'Share Tech Mono', monospace",
+                fontFamily: "var(--font-mono)",
                 fontSize: 24,
                 fontWeight: 700,
                 color: surplusGC < 0 ? "#e74c3c" : "#2ecc71",
@@ -551,7 +551,7 @@ export default function GvGCalculator() {
             <Label>Computational Comp. Missing</Label>
             <div
               style={{
-                fontFamily: "'Share Tech Mono', monospace",
+                fontFamily: "var(--font-mono)",
                 fontSize: 24,
                 fontWeight: 700,
                 color: surplusCC < 0 ? "#e74c3c" : "#2ecc71",
@@ -571,7 +571,7 @@ export default function GvGCalculator() {
                 color: "#FFFFFF",
                 fontSize: 12,
                 cursor: "pointer",
-                fontFamily: "'Rajdhani', sans-serif",
+                fontFamily: "var(--font-body)",
                 textTransform: "uppercase",
                 letterSpacing: 1,
                 fontWeight: 600
@@ -591,7 +591,7 @@ export default function GvGCalculator() {
           <div key={tier} style={{ marginBottom: 32 }}>
             <div
               style={{
-                fontFamily: "'Orbitron', sans-serif",
+                fontFamily: "var(--font-label)",
                 fontSize: 12,
                 fontWeight: 700,
                 color: "#FFFFFF",

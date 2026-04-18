@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import { AuthProvider } from './context/AuthContext';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
-import TipCard from './components/TipCard';
 import LoginModal from './components/LoginModal';
 
 import Guides from './components/Guides';
@@ -11,102 +11,41 @@ import FlagshipGuide from './components/FlagshipGuide';
 import FlagshipDecks from './components/FlagshipDecks';
 import GroundGuide from './components/GroundGuide';
 import HeroTierList from './components/HeroTierList';
-import TeamDisplay from './components/TeamDisplay';
 import EventGuide from './components/EventGuide';
 import Builder from './components/Builder';
 import DailyChecklist from './components/DailyChecklist';
 import GiftCodes from './components/GiftCodes';
 import Support from './components/Support';
-import { tips, shipDecks, groundTeams } from './data/gameData';
 
 function App() {
-  const [activeCategory, setActiveCategory] = useState('all');
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
-  const [isMuted, setIsMuted] = useState(() => {
-    const saved = localStorage.getItem('bgmMuted');
-    return saved !== null ? saved === 'true' : false; // Default to unmuted to play automatically
-  });
-  const audioRef = useRef(null);
-
-  useEffect(() => {
-    localStorage.setItem('bgmMuted', isMuted);
-    if (audioRef.current) {
-      audioRef.current.volume = 0.15; // Set volume to 15% max
-      if (isMuted) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play().catch(e => console.log('Autoplay prevented by browser:', e));
-      }
-    }
-  }, [isMuted]);
-
-  const toggleMute = () => setIsMuted(!isMuted);
-
-  // Attempt to autoplay on first user interaction if not muted
-  useEffect(() => {
-    const handleInteraction = () => {
-      if (!isMuted && audioRef.current && audioRef.current.paused) {
-        audioRef.current.play().catch(e => console.log('Playback prevented:', e));
-      }
-    };
-    document.addEventListener('click', handleInteraction, { once: true });
-    return () => document.removeEventListener('click', handleInteraction);
-  }, [isMuted]);
-
-  const renderContent = () => {
-    if (activeCategory === 'guides') return <Guides />;
-    if (activeCategory === 'daily_tasks') return <DailyChecklist />;
-    if (activeCategory === 'tier_list') return <HeroTierList />;
-    if (activeCategory === 'meta_ships') return <FlagshipGuide />;
-    if (activeCategory === 'flagship_decks') return <FlagshipDecks />;
-    if (activeCategory === 'ground') return <GroundGuide />;
-    if (activeCategory === 'events') return <EventGuide />;
-    if (activeCategory === 'builder') return <Builder />;
-    if (activeCategory === 'gift_codes') return <GiftCodes />;
-    if (activeCategory === 'support') return <Support />;
-
-    if (activeCategory === 'all') {
-      return <Hero />;
-    }
-
-    // Filtered Tips
-    const filteredTips = tips.filter(tip => tip.category === activeCategory);
-
-    return (
-      <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '1.5rem',
-          paddingBottom: '4rem',
-          alignItems: 'stretch'
-        }}>
-          {filteredTips.map(tip => (
-            <TipCard key={tip.id} tip={tip} />
-          ))}
-        </div>
-      </div>
-    );
-  };
 
   return (
     <AuthProvider>
-      <audio ref={audioRef} src="/assets/Foundation%20Main%20Title.mp3" loop autoPlay />
-      <Layout
-        activeCategory={activeCategory}
-        setActiveCategory={setActiveCategory}
-        isMuted={isMuted}
-        toggleMute={toggleMute}
-        onLoginClick={() => setIsLoginModalOpen(true)}
-      >
-        {renderContent()}
-      </Layout>
-      <Analytics />
-
-      <LoginModal
-        isOpen={isLoginModalOpen}
-        onClose={() => setIsLoginModalOpen(false)}
-      />
+      <BrowserRouter>
+        <Layout onLoginClick={() => setIsLoginModalOpen(true)}>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<Hero />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/daily-tasks" element={<DailyChecklist />} />
+            <Route path="/champions" element={<HeroTierList />} />
+            <Route path="/flagships" element={<FlagshipGuide />} />
+            <Route path="/flagship-decks" element={<FlagshipDecks />} />
+            <Route path="/ground-teams" element={<GroundGuide />} />
+            <Route path="/events" element={<EventGuide />} />
+            <Route path="/tools" element={<Builder />} />
+            <Route path="/gift-codes" element={<GiftCodes />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="*" element={<Navigate to="/home" replace />} />
+          </Routes>
+        </Layout>
+        <Analytics />
+        <LoginModal
+          isOpen={isLoginModalOpen}
+          onClose={() => setIsLoginModalOpen(false)}
+        />
+      </BrowserRouter>
     </AuthProvider>
   );
 }

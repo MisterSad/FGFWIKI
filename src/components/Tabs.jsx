@@ -1,49 +1,37 @@
 import React, { useState } from 'react';
-import { categories } from '../data/gameData';
-import { Home, BookOpen, Swords, Rocket, Layers, Users, Calendar, Trophy, Coins, Hammer, Gift, CheckSquare, Menu, X, Heart } from 'lucide-react';
-
-const CATEGORY_ICONS = {
-    all: Home,
-    guides: BookOpen,
-    daily_tasks: CheckSquare,
-    meta_ships: Rocket,
-    flagship_decks: Layers,
-    ground: Users,
-    events: Calendar,
-    tier_list: Trophy,
-    builder: Hammer,
-    gift_codes: Gift,
-    support: Heart
-};
-
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Home, BookOpen, Rocket, Layers, Users, Calendar, Trophy, Hammer, Gift, CheckSquare, Menu, X, Heart } from 'lucide-react';
 
-export default function Tabs({ activeCategory, setActiveCategory }) {
+// Map route paths to icons and translation labels
+const NAV_ITEMS = [
+    { path: '/home', labelKey: 'navigation.home', icon: Home },
+    { path: '/guides', labelKey: 'navigation.guides', icon: BookOpen },
+    { path: '/daily-tasks', labelKey: 'navigation.daily_tasks', icon: CheckSquare },
+    { path: '/champions', labelKey: 'navigation.champions', icon: Trophy },
+    { path: '/flagships', labelKey: 'navigation.flagships', icon: Rocket },
+    { path: '/flagship-decks', labelKey: 'navigation.flagship_decks', icon: Layers },
+    { path: '/ground-teams', labelKey: 'navigation.ground_teams', icon: Users },
+    { path: '/events', labelKey: 'navigation.events', icon: Calendar },
+    { path: '/tools', labelKey: 'navigation.builder', icon: Hammer },
+    { path: '/gift-codes', labelKey: 'navigation.gift_codes', icon: Gift },
+    { path: '/support', labelKey: 'navigation.support', icon: Heart },
+];
+
+export default function Tabs() {
     const { t } = useTranslation();
+    const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // Combine "Home" with categories from data
-    const tabs = [
-        { id: 'all', label: t('navigation.home') },
-        ...categories.map(c => ({ ...c, label: t(c.label) }))
-    ];
+    const activeItem = NAV_ITEMS.find(item => item.path === location.pathname) || NAV_ITEMS[0];
+    const ActiveIcon = activeItem.icon;
 
     return (
         <div className="tabs-container">
-            {/* Mobile Hamburger Button */}
             <div className="mobile-menu-header">
-                <span className="mobile-active-label" style={{
-                    fontFamily: 'var(--font-label)',
-                    color: "#FFFFFF",
-                    textTransform: 'uppercase',
-                    letterSpacing: '2px',
-                    fontSize: '0.9rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.5rem'
-                }}>
-                    {CATEGORY_ICONS[activeCategory] && React.createElement(CATEGORY_ICONS[activeCategory], { size: 16 })}
-                    {tabs.find(t => t.id === activeCategory)?.label}
+                <span className="mobile-active-label">
+                    <ActiveIcon size={16} />
+                    {t(activeItem.labelKey)}
                 </span>
                 <button
                     className="hamburger-btn"
@@ -54,29 +42,29 @@ export default function Tabs({ activeCategory, setActiveCategory }) {
                 </button>
             </div>
 
-            {/* Desktop Tabs & Mobile Dropdown */}
             <div className={`tabs-scroll-area ${isMenuOpen ? 'mobile-open' : ''}`}>
-                {tabs.map(tab => {
-                    const IconComponent = CATEGORY_ICONS[tab.id] || Home; // Fallback to Home if icon missing
+                {NAV_ITEMS.map(item => {
+                    const IconComponent = item.icon;
                     return (
-                        <button
-                            key={tab.id}
-                            className={`tab-item ${activeCategory === tab.id ? 'active' : ''}`}
-                            onClick={() => {
-                                setActiveCategory(tab.id);
-                                setIsMenuOpen(false); // Close menu on selection in mobile
-                            }}
+                        <NavLink
+                            key={item.path}
+                            to={item.path}
+                            className={({ isActive }) => `tab-item ${isActive ? 'active' : ''}`}
+                            onClick={() => setIsMenuOpen(false)}
                         >
-                            <span className="tab-icon">
-                                <IconComponent size={14} />
-                            </span>
-                            <span className="tab-label">{tab.label}</span>
-                            {activeCategory === tab.id && <div className="tab-indicator" />}
-                        </button>
+                            {({ isActive }) => (
+                                <>
+                                    <span className="tab-icon">
+                                        <IconComponent size={14} />
+                                    </span>
+                                    <span className="tab-label">{t(item.labelKey)}</span>
+                                    {isActive && <div className="tab-indicator" />}
+                                </>
+                            )}
+                        </NavLink>
                     );
                 })}
             </div>
         </div>
     );
 }
-

@@ -131,7 +131,7 @@ export default function ChampionUpgradeCalculator() {
                     <div style={{ flex: 1, minWidth: 200 }}>
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
                             <Label>Current Level</Label>
-                            <span style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 24, fontWeight: 700, color: V.teal }}>
+                            <span style={{ fontFamily: "var(--font-label)", fontSize: 24, fontWeight: 700, color: V.teal }}>
                                 {currentLevel}
                             </span>
                         </div>
@@ -148,7 +148,7 @@ export default function ChampionUpgradeCalculator() {
                     <div style={{ flex: 1, minWidth: 200 }}>
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
                             <Label>Target Level</Label>
-                            <span style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 24, fontWeight: 700, color: "#2ecc71" }}>
+                            <span style={{ fontFamily: "var(--font-label)", fontSize: 24, fontWeight: 700, color: "#2ecc71" }}>
                                 {targetLevel}
                             </span>
                         </div>
@@ -170,7 +170,7 @@ export default function ChampionUpgradeCalculator() {
                                 width: "100%", padding: "10px 14px",
                                 background: "rgba(0,0,0,.4)", border: `1px solid rgba(167,139,250,0.3)`,
                                 borderRadius: 2, color: "#a78bfa",
-                                fontFamily: "'Share Tech Mono', monospace", fontSize: 20, fontWeight: 600,
+                                fontFamily: "var(--font-mono)", fontSize: 20, fontWeight: 600,
                                 textAlign: "right", outline: "none", transition: "border-color 0.3s ease"
                             }}
                             onFocus={(e) => e.target.style.borderColor = "#a78bfa"}
@@ -192,36 +192,36 @@ export default function ChampionUpgradeCalculator() {
                     }}>
                         {/* Total Cost */}
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid #f0c04030` }}>
-                            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
                                 Total Cost
                             </div>
-                            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 28, fontWeight: 700, color: "#f0c040", textShadow: `0 0 20px rgba(240, 192, 64, 0.4)` }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color: "#f0c040", textShadow: `0 0 20px rgba(240, 192, 64, 0.4)` }}>
                                 {fmt(totalCost)}
                             </div>
-                            <div style={{ fontSize: 10, color: V.txSec, marginTop: 6, fontFamily: "'Rajdhani', sans-serif" }}>
+                            <div style={{ fontSize: 10, color: V.txSec, marginTop: 6, fontFamily: "var(--font-body)" }}>
                                 For {targetLevel - currentLevel} levels
                             </div>
                         </div>
 
                         {/* Surplus/Deficit */}
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${surplus >= 0 ? '#2ecc7130' : '#e74c3c30'}` }}>
-                            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
                                 Surplus / Deficit
                             </div>
-                            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 28, fontWeight: 700, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", opacity: surplus >= 0 ? 1 : 0.9 }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", opacity: surplus >= 0 ? 1 : 0.9 }}>
                                 {surplus >= 0 ? "+" : ""}{fmt(surplus)}
                             </div>
-                            <div style={{ fontSize: 10, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", marginTop: 6, opacity: 0.7, fontFamily: "'Rajdhani', sans-serif", textTransform: "uppercase", letterSpacing: 1 }}>
+                            <div style={{ fontSize: 10, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", marginTop: 6, opacity: 0.7, fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: 1 }}>
                                 {surplus >= 0 ? "Enough shards" : "Need more shards"}
                             </div>
                         </div>
 
                         {/* Avg Cost / Level */}
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                            <div style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
                                 Avg Cost / Level
                             </div>
-                            <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 24, fontWeight: 600, color: V.txPri }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 600, color: V.txPri }}>
                                 {(totalCost / (targetLevel - currentLevel)).toFixed(1)}
                             </div>
                         </div>
@@ -237,10 +237,10 @@ export default function ChampionUpgradeCalculator() {
                     <SectionTitle>Cost Breakdown</SectionTitle>
 
                     {breakdown.length === 0 ? (
-                        <div style={{ fontSize: 14, color: V.txSec, padding: "20px 0", textAlign: "center", fontFamily: "'Rajdhani', sans-serif" }}>Select a level range to view breakdown</div>
+                        <div style={{ fontSize: 14, color: V.txSec, padding: "20px 0", textAlign: "center", fontFamily: "var(--font-body)" }}>Select a level range to view breakdown</div>
                     ) : (
                         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                            <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "'Share Tech Mono', monospace", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
+                            <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-mono)", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
                                 <span style={{ width: 70 }}>Levels</span>
                                 <span style={{ width: 60, textAlign: "right" }}>Per Lvl</span>
                                 <span style={{ width: 45, textAlign: "right" }}>Count</span>
@@ -255,12 +255,12 @@ export default function ChampionUpgradeCalculator() {
                                     onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(167,139,250,0.05)"; e.currentTarget.style.borderColor = "rgba(167,139,250,0.2)"; }}
                                     onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(0,0,0,.2)"; e.currentTarget.style.borderColor = "transparent"; }}
                                 >
-                                    <span style={{ fontFamily: "'Share Tech Mono', monospace", width: 70, color: V.txSec }}>
+                                    <span style={{ fontFamily: "var(--font-mono)", width: 70, color: V.txSec }}>
                                         {r.from}–{r.to}
                                     </span>
-                                    <span style={{ fontFamily: "'Share Tech Mono', monospace", width: 60, textAlign: "right", color: "#a78bfa" }}>{r.cost / r.levels}</span>
-                                    <span style={{ fontFamily: "'Share Tech Mono', monospace", width: 45, textAlign: "right", color: V.txSec }}>×{r.levels}</span>
-                                    <span style={{ flex: 1, textAlign: "right", fontFamily: "'Share Tech Mono', monospace", fontWeight: 700, color: "#f0c040" }}>
+                                    <span style={{ fontFamily: "var(--font-mono)", width: 60, textAlign: "right", color: "#a78bfa" }}>{r.cost / r.levels}</span>
+                                    <span style={{ fontFamily: "var(--font-mono)", width: 45, textAlign: "right", color: V.txSec }}>×{r.levels}</span>
+                                    <span style={{ flex: 1, textAlign: "right", fontFamily: "var(--font-mono)", fontWeight: 700, color: "#f0c040" }}>
                                         {fmt(r.cost)}
                                     </span>
                                 </div>
@@ -274,7 +274,7 @@ export default function ChampionUpgradeCalculator() {
                     <SectionTitle>Milestones</SectionTitle>
 
                     <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                        <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "'Share Tech Mono', monospace", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
+                        <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-mono)", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
                             <span style={{ width: 50 }}>Level</span>
                             <span style={{ flex: 1, textAlign: "right" }}>Total (0→X)</span>
                             <span style={{ flex: 1, textAlign: "right" }}>From Current</span>
@@ -286,20 +286,20 @@ export default function ChampionUpgradeCalculator() {
                                 alignItems: "center", border: `1px solid ${m.inRange ? 'rgba(240,192,64,0.2)' : 'transparent'}`, transition: "all 0.2s ease"
                             }}>
                                 <span style={{
-                                    fontFamily: "'Share Tech Mono', monospace", width: 50, fontWeight: 700,
+                                    fontFamily: "var(--font-mono)", width: 50, fontWeight: 700,
                                     color: m.reached ? "#28b463" : m.inRange ? "#f0c040" : V.txSec
                                 }}>
                                     {m.level}
                                 </span>
                                 <span style={{
-                                    flex: 1, textAlign: "right", fontFamily: "'Share Tech Mono', monospace",
+                                    flex: 1, textAlign: "right", fontFamily: "var(--font-mono)",
                                     color: m.reached ? V.txSec : V.txPri, opacity: m.reached ? 0.5 : 1,
                                     textDecoration: m.reached ? "line-through" : "none"
                                 }}>
                                     {fmt(m.totalFromZero)}
                                 </span>
                                 <span style={{
-                                    flex: 1, textAlign: "right", fontFamily: "'Share Tech Mono', monospace", fontWeight: 700,
+                                    flex: 1, textAlign: "right", fontFamily: "var(--font-mono)", fontWeight: 700,
                                     color: m.reached ? V.txSec : m.inRange ? "#f0c040" : V.txSec, opacity: m.reached ? 0.3 : 1
                                 }}>
                                     {m.reached ? "—" : m.inRange ? fmt(m.totalFromCurrent) : "—"}

@@ -34,9 +34,9 @@ export function Card({ children, accent, style }) {
 }
 
 export function SectionTitle({ children }) {
-    return <h2 style={{ fontFamily: "'Cinzel',serif", fontSize: 13, fontWeight: 700, letterSpacing: 4, color: V.txSec, margin: "0 0 22px", textTransform: "uppercase" }}>{children}</h2>;
+    return <h2 style={{ fontFamily: "var(--font-hero)", fontSize: 13, fontWeight: 700, letterSpacing: 4, color: V.txSec, margin: "0 0 22px", textTransform: "uppercase" }}>{children}</h2>;
 }
 
 export function Label({ children }) {
-    return <label style={{ fontFamily: "'Orbitron'", fontSize: 9, letterSpacing: 3, color: V.txDim, display: "block", marginBottom: 6, textTransform: "uppercase" }}>{children}</label>;
+    return <label style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, color: V.txDim, display: "block", marginBottom: 6, textTransform: "uppercase" }}>{children}</label>;
 }
