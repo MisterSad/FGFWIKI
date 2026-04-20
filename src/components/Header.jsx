@@ -1,9 +1,13 @@
 import React from 'react';
 import { User, LogOut } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header({ onLoginClick }) {
     const { currentUser, logout } = useAuth();
+    const { t } = useTranslation();
+
     return (
         <header className="sticky-nav header-container">
             <div className="header-text-wrapper">
@@ -14,10 +18,11 @@ export default function Header({ onLoginClick }) {
                     GALACTIC FRONTIER
                 </div>
                 <div className="header-subtitle">
-                    Encyclopedia Galactica
+                    {t('header_ui.subtitle')}
                 </div>
             </div>
-            <div className="header-auth-container">
+            <div className="header-auth-container" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <LanguageSwitcher />
                 {currentUser ? (
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                         <span style={{
@@ -33,7 +38,7 @@ export default function Header({ onLoginClick }) {
                                 color: 'var(--text-dim)', padding: '5px 10px',
                                 borderRadius: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center'
                             }}
-                            title="Disconnect Link"
+                            title={t('header_ui.disconnect')}
                         >
                             <LogOut size={16} />
                         </button>
@@ -48,7 +53,7 @@ export default function Header({ onLoginClick }) {
                             borderRadius: '2px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px'
                         }}
                     >
-                        <User size={16} /> LOGIN
+                        <User size={16} /> {t('header_ui.login')}
                     </button>
                 )}
             </div>

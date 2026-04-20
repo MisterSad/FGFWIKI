@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Copy, Check, ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const UID = '1917131';
 
 export default function Support() {
     const [copied, setCopied] = useState(false);
+    const { t } = useTranslation();
 
     const handleCopy = () => {
         navigator.clipboard.writeText(UID);
@@ -15,10 +17,10 @@ export default function Support() {
     return (
         <div className="container" style={{ maxWidth: '720px', margin: '0 auto', padding: '2rem 1rem 4rem' }}>
             <div className="guide-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                <h1 className="guide-title text-gradient">Support the Site</h1>
+                <h1 className="guide-title text-gradient">{t('support_page.title')}</h1>
                 <p className="guide-subtitle">
-                    This site is free, independent, and built with passion.<br />
-                    If it has helped you in the Galactic Frontier, consider supporting its growth!
+                    {t('support_page.subtitle_line1')}<br />
+                    {t('support_page.subtitle_line2')}
                 </p>
 
                 {/* Feature badges */}
@@ -27,8 +29,8 @@ export default function Support() {
                     gap: '0.75rem', marginTop: '1.25rem'
                 }}>
                     {[
-                        { icon: '🆓', label: '100% Free' },
-                        { icon: '🚫', label: 'No Ads' },
+                        { icon: '🆓', label: t('support_page.badge_free') },
+                        { icon: '🚫', label: t('support_page.badge_no_ads') },
                     ].map(({ icon, label }) => (
                         <span key={label} style={{
                             display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
@@ -74,7 +76,7 @@ export default function Support() {
                         </div>
                         <div>
                             <h2 style={{ margin: 0, fontSize: '1.2rem', color: 'var(--text-primary)', fontFamily: 'var(--font-label)', letterSpacing: 1 }}>
-                                Foundation Store
+                                {t('support_page.store_title')}
                             </h2>
                             <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-dim)', fontFamily: 'var(--font-mono)' }}>
                                 store.funplus.com/foundation
@@ -83,7 +85,7 @@ export default function Support() {
                     </div>
 
                     <p style={{ color: 'var(--text-secondary)', margin: '0 0 1.5rem', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                        One great way to support me is to gift me Platinum Credits via the official Foundation store. Simply use my UID at checkout, it's the easiest way to show your support directly in-game!
+                        {t('support_page.store_desc')}
                     </p>
 
                     {/* UID Row */}
@@ -94,7 +96,7 @@ export default function Support() {
                         borderRadius: 8, padding: '0.75rem 1rem', marginBottom: '1.25rem'
                     }}>
                         <span style={{ color: 'var(--text-dim)', fontSize: '0.8rem', fontFamily: 'var(--font-label)', letterSpacing: 1, textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
-                            My UID
+                            {t('support_page.my_uid')}
                         </span>
                         <span style={{
                             flex: 1, fontFamily: 'var(--font-mono)', fontSize: '1.4rem', fontWeight: 700,
@@ -104,7 +106,7 @@ export default function Support() {
                         </span>
                         <button
                             onClick={handleCopy}
-                            title="Copy UID"
+                            title={t('support_page.copy_uid')}
                             style={{
                                 background: copied ? 'var(--bg-surface)' : 'transparent',
                                 border: '1px solid',
@@ -118,7 +120,7 @@ export default function Support() {
                             }}
                         >
                             {copied ? <Check size={16} /> : <Copy size={16} />}
-                            {copied ? 'Copied!' : 'Copy'}
+                            {copied ? t('support_page.copied') : t('support_page.copy')}
                         </button>
                     </div>
 
@@ -145,7 +147,7 @@ export default function Support() {
                         onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05))'; e.currentTarget.style.borderColor = 'rgba(201,168,76,0.4)'; }}
                     >
                         <ExternalLink size={16} />
-                        Open Store
+                        {t('support_page.open_store')}
                     </a>
                 </div>
 
@@ -183,7 +185,7 @@ export default function Support() {
                     </div>
 
                     <p style={{ color: 'var(--text-secondary)', margin: '0 0 1.5rem', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                        Prefer PayPal? Send any amount directly. Quick, secure, and available worldwide.
+                        {t('support_page.paypal_desc')}
                     </p>
 
                     <a
@@ -209,7 +211,7 @@ export default function Support() {
                         onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(0,112,186,0.15), rgba(0,112,186,0.05))'; e.currentTarget.style.borderColor = 'rgba(0,112,186,0.4)'; }}
                     >
                         <img src="/assets/paypal.svg" alt="" style={{ width: 18, height: 18, filter: 'brightness(0) invert(1)', opacity: 0.9 }} />
-                        Donate via PayPal
+                        {t('support_page.donate_paypal')}
                     </a>
                 </div>
 
@@ -247,7 +249,7 @@ export default function Support() {
                     </div>
 
                     <p style={{ color: 'var(--text-secondary)', margin: '0 0 1.5rem', lineHeight: 1.7, fontSize: '0.95rem' }}>
-                        Your donation helps cover the costs of running this site (hosting, domain name, and everything in between). Every bit counts and is deeply appreciated. 🙏
+                        {t('support_page.revolut_desc')}
                     </p>
 
                     <a
@@ -273,7 +275,7 @@ export default function Support() {
                         onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(78,205,196,0.15), rgba(78,205,196,0.05))'; e.currentTarget.style.borderColor = 'rgba(78,205,196,0.4)'; }}
                     >
                         <img src="/assets/revolut.svg" alt="" style={{ width: 16, height: 16, filter: 'brightness(0) saturate(100%) invert(74%) sepia(60%) saturate(400%) hue-rotate(130deg)' }} />
-                        Donate via Revolut
+                        {t('support_page.donate_revolut')}
                     </a>
                 </div>
 
@@ -285,8 +287,8 @@ export default function Support() {
                 color: 'var(--text-dim)', fontSize: '0.85rem',
                 fontFamily: 'var(--font-label)', letterSpacing: 0.5
             }}>
-                Every bit of support keeps the Galactic Frontier Encyclopedia alive.<br />
-                Thank you, Commanders.
+                {t('support_page.footer_line1')}<br />
+                {t('support_page.footer_line2')}
             </p>
         </div>
     );

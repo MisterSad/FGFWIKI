@@ -4,16 +4,27 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Import translation files
 import en from './locales/en/translation.json';
+import fr from './locales/fr/translation.json';
+
+const savedLang = typeof window !== 'undefined' ? localStorage.getItem('fgfwiki_lang') : null;
 
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         resources: {
-            en: { translation: en }
+            en: { translation: en },
+            fr: { translation: fr }
         },
-        lng: 'en', // Force English
+        lng: savedLang || undefined, // let detector pick if nothing saved
         fallbackLng: 'en',
+        supportedLngs: ['en', 'fr'],
+        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr'
+        detection: {
+            order: ['localStorage', 'navigator', 'htmlTag'],
+            lookupLocalStorage: 'fgfwiki_lang',
+            caches: ['localStorage']
+        },
         interpolation: {
             escapeValue: false, // React already safes from xss
         }

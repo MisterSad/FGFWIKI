@@ -25,7 +25,7 @@ export default function LoginModal({ isOpen, onClose }) {
         try {
             if (useMagicLink) {
                 await sendMagicLink(email);
-                setMessage('Lien magique envoyé. Consultez votre boîte de réception.');
+                setMessage(t('login_modal.magic_link_sent'));
             } else if (isLogin) {
                 await login(email, password);
                 onClose();
@@ -36,13 +36,13 @@ export default function LoginModal({ isOpen, onClose }) {
         } catch (err) {
             console.error(err);
             if (err.code === 'auth/email-already-in-use') {
-                setError('Email already in use.');
+                setError(t('login_modal.error_email_in_use'));
             } else if (err.code === 'auth/invalid-credential') {
-                setError('Invalid email or password.');
+                setError(t('login_modal.error_invalid_credential'));
             } else if (err.code === 'auth/weak-password') {
-                setError('Password should be at least 6 characters.');
+                setError(t('login_modal.error_weak_password'));
             } else {
-                setError('Failed to authenticate. Please try again.');
+                setError(t('login_modal.error_auth_failed'));
             }
         }
 
@@ -57,7 +57,7 @@ export default function LoginModal({ isOpen, onClose }) {
             onClose();
         } catch (err) {
             console.error(err);
-            setError('Failed to log in with Google.');
+            setError(t('login_modal.error_google_failed'));
         }
         setLoading(false);
     }
@@ -94,7 +94,7 @@ export default function LoginModal({ isOpen, onClose }) {
                     fontFamily: 'var(--font-hero)', color: 'var(--gold)',
                     textAlign: 'center', margin: '0 0 1.5rem', letterSpacing: '2px'
                 }}>
-                    {isLogin ? 'LOGIN' : 'REGISTER'}
+                    {isLogin ? t('login_modal.login') : t('login_modal.register')}
                 </h2>
 
                 {error && (
@@ -134,19 +134,19 @@ export default function LoginModal({ isOpen, onClose }) {
                         <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
                         <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
                     </svg>
-                    Continue with Google
+                    {t('login_modal.continue_google')}
                 </button>
 
                 <div style={{ display: 'flex', alignItems: 'center', margin: '1rem 0', color: 'var(--text-secondary)' }}>
                     <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
-                    <span style={{ margin: '0 10px', fontSize: '12px', fontFamily: 'var(--font-mono)' }}>OR</span>
+                    <span style={{ margin: '0 10px', fontSize: '12px', fontFamily: 'var(--font-mono)' }}>{t('login_modal.or')}</span>
                     <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
                 </div>
 
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <div>
                         <label style={{ color: 'var(--text-dim)', fontSize: '0.85rem', display: 'block', marginBottom: '5px' }}>
-                            EMAIL
+                            {t('login_modal.email')}
                         </label>
                         <input
                             type="email"
@@ -164,7 +164,7 @@ export default function LoginModal({ isOpen, onClose }) {
                     {!useMagicLink && (
                         <div>
                             <label style={{ color: 'var(--text-dim)', fontSize: '0.85rem', display: 'block', marginBottom: '5px' }}>
-                                PASSWORD
+                                {t('login_modal.password')}
                             </label>
                             <input
                                 type="password"
@@ -191,7 +191,7 @@ export default function LoginModal({ isOpen, onClose }) {
                             opacity: loading ? 0.7 : 1
                         }}
                     >
-                        {useMagicLink ? 'SEND MAGIC LINK' : (isLogin ? 'LOGIN' : 'REGISTER')}
+                        {useMagicLink ? t('login_modal.send_magic_link') : (isLogin ? t('login_modal.login') : t('login_modal.register'))}
                     </button>
 
                     <div style={{ textAlign: 'center', marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -204,7 +204,7 @@ export default function LoginModal({ isOpen, onClose }) {
                                 textDecoration: 'underline', fontSize: '0.9rem'
                             }}
                         >
-                            {useMagicLink ? 'Use Password instead' : 'Login with Magic Link'}
+                            {useMagicLink ? t('login_modal.use_password') : t('login_modal.use_magic_link')}
                         </button>
 
                         {!useMagicLink && (
@@ -217,7 +217,7 @@ export default function LoginModal({ isOpen, onClose }) {
                                     textDecoration: 'underline', fontSize: '0.9rem'
                                 }}
                             >
-                                {isLogin ? 'Need to register a new account?' : 'Already have an active link?'}
+                                {isLogin ? t('login_modal.need_register') : t('login_modal.already_active_link')}
                             </button>
                         )}
                     </div>

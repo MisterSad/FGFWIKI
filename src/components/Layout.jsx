@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Header from './Header';
 import Tabs from './Tabs';
 
 export default function Layout({ children, onLoginClick }) {
     const location = useLocation();
+    const { t } = useTranslation();
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -78,7 +80,7 @@ export default function Layout({ children, onLoginClick }) {
                     <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--gold-dim)' }}></div>
                 </div>
 
-                <p style={{ opacity: 0.5 }}>&copy; {new Date().getFullYear()} FGF Wiki. Developer <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
+                <p style={{ opacity: 0.5 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
             </footer>
         </div>
     );

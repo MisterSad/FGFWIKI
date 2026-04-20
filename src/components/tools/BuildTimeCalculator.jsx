@@ -121,16 +121,16 @@ export default function BuildTimeCalculator() {
     return (
         <div style={{ animation: "fadeUp 0.8s ease-out" }}>
             <Card>
-                <SectionTitle>Building Selection</SectionTitle>
+                <SectionTitle>{t('tools_ui.building_selection')}</SectionTitle>
                 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                     <div style={{ flex: "1 1 220px" }}>
-                        <Label>Building</Label>
+                        <Label>{t('tools_ui.building')}</Label>
                         <select value={building} onChange={e => { setBuilding(e.target.value); setManualTime(""); const firstLevel = Object.keys(BUILD_TIME_DATA[e.target.value]).map(Number).sort((a, b) => a - b)[0]; setLevelFrom(firstLevel || 1); }} style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 600, padding: "10px 14px", background: "rgba(0,0,0,.4)", border: `1px solid ${V.border}`, borderRadius: 2, color: V.txPri, outline: "none", width: "100%", cursor: "pointer" }}>
                             {BUILDING_CATEGORIES.map(c => <optgroup key={c.label} label={c.label}>{c.buildings.map(b => <option key={b} value={b}>{b}</option>)}</optgroup>)}
                         </select>
                     </div>
                     <div style={{ flex: "0 0 130px" }}>
-                        <Label>Level</Label>
+                        <Label>{t('tools_ui.level')}</Label>
                         <select value={levelFrom} onChange={e => setLevelFrom(+e.target.value)} style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 600, padding: "10px 14px", background: "rgba(0,0,0,.4)", border: `1px solid ${V.border}`, borderRadius: 2, color: V.txPri, outline: "none", width: "100%", cursor: "pointer" }}>
                             {availLevels.map(l => <option key={l} value={l}>{l} → {l + 1}</option>)}
                         </select>
@@ -140,26 +140,26 @@ export default function BuildTimeCalculator() {
                 <div style={{ marginTop: 18, padding: "16px 20px", background: "rgba(0,0,0,.3)", borderRadius: 2, border: `1px solid ${isEstimated ? "rgba(232,201,106,0.25)" : V.border}` }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                         <span style={{ fontFamily: "var(--font-mono)", fontSize: 24, color: V.txPri, letterSpacing: 2 }}>{buildRes ? fmtDDHHMMSS(buildRes.presented) : "\u2014"}</span>
-                        {isEstimated && <span style={{ fontFamily: "var(--font-label)", fontSize: 8, letterSpacing: 3, color: "#FFFFFF", background: "rgba(201,168,76,0.08)", padding: "4px 10px", borderRadius: 2, textTransform: "uppercase" }}>Estimated</span>}
-                        {baseTime > 0 && !isEstimated && <span style={{ fontFamily: "var(--font-label)", fontSize: 8, letterSpacing: 3, color: V.teal, background: "rgba(78,205,196,0.08)", padding: "4px 10px", borderRadius: 2, textTransform: "uppercase" }}>Verified</span>}
+                        {isEstimated && <span style={{ fontFamily: "var(--font-label)", fontSize: 8, letterSpacing: 3, color: "#FFFFFF", background: "rgba(201,168,76,0.08)", padding: "4px 10px", borderRadius: 2, textTransform: "uppercase" }}>{t('tools_ui.estimated')}</span>}
+                        {baseTime > 0 && !isEstimated && <span style={{ fontFamily: "var(--font-label)", fontSize: 8, letterSpacing: 3, color: V.teal, background: "rgba(78,205,196,0.08)", padding: "4px 10px", borderRadius: 2, textTransform: "uppercase" }}>{t('tools_ui.verified')}</span>}
                     </div>
-                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: V.txDim, marginTop: 6 }}>{buildRes ? fmtTime(buildRes.presented) : "No data available"}</div>
+                    <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: V.txDim, marginTop: 6 }}>{buildRes ? fmtTime(buildRes.presented) : t('tools_ui.no_data')}</div>
                 </div>
 
                 <div style={{ marginTop: 16 }}>
-                    <Label>Manual Override (dd:hh:mm:ss)</Label>
-                    <input type="text" value={manualTime} onChange={e => setManualTime(e.target.value)} placeholder="Leave empty to use database" style={{ fontFamily: "var(--font-mono)", fontSize: 16, padding: "10px 14px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, color: "#FFFFFF", outline: "none", width: "100%", letterSpacing: 2 }} />
+                    <Label>{t('tools_ui.manual_override')}</Label>
+                    <input type="text" value={manualTime} onChange={e => setManualTime(e.target.value)} placeholder={t('tools_ui.manual_override_placeholder')} style={{ fontFamily: "var(--font-mono)", fontSize: 16, padding: "10px 14px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, color: "#FFFFFF", outline: "none", width: "100%", letterSpacing: 2 }} />
                     {(isEstimated || baseTime === 0) && (
                         <p style={{ fontFamily: "var(--font-body)", fontSize: 13, color: V.txDim, marginTop: 8, marginBottom: 0, letterSpacing: 0.3 }}>
-                            💡 Tip: The database time is not verified for this level. We recommend entering the exact game time manually for accurate results.
+                            {t('tools_ui.manual_tip')}
                         </p>
                     )}
                 </div>
             </Card>
 
             <Card>
-                <SectionTitle>Flat Reductions — Crew Cabins</SectionTitle>
-                {[["Crew Cabin 1", cabin1, setCabin1, 147], ["Crew Cabin 2", cabin2, setCabin2, 126]].map(([n, v, set, p]) => (
+                <SectionTitle>{t('tools_ui.flat_reductions_crew')}</SectionTitle>
+                {[[t('tools_ui.crew_cabin_1'), cabin1, setCabin1, 147], [t('tools_ui.crew_cabin_2'), cabin2, setCabin2, 126]].map(([n, v, set, p]) => (
                     <div key={n} style={{ padding: "10px 0", borderBottom: "1px solid rgba(201,168,76,0.06)" }}>
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
                             <span style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 500, color: V.txPri, letterSpacing: 0.3 }}>{n}</span>
@@ -174,37 +174,37 @@ export default function BuildTimeCalculator() {
             </Card>
 
             <Card>
-                <SectionTitle>Construction Speed</SectionTitle>
+                <SectionTitle>{t('tools_ui.construction_speed')}</SectionTitle>
                 {BUILD_SPEED_MODIFIERS.map(m => <ModRow key={m.id} mod={m} value={bMods[m.id]} onChange={v => updateB(m.id, v)} />)}
                 {buildRes && <div style={{ marginTop: 14, padding: "10px 14px", background: "rgba(201,168,76,0.04)", borderRadius: 2, borderLeft: `2px solid ${V.gold}`, fontFamily: "var(--font-mono)", fontSize: 12, color: V.txSec, letterSpacing: 1 }}>
-                    Total: <span style={{ color: "#FFFFFF" }}>+{buildRes.totalPct.toFixed(1)}%</span>
+                    {t('tools_ui.total')}: <span style={{ color: "#FFFFFF" }}>+{buildRes.totalPct.toFixed(1)}%</span>
                 </div>}
             </Card>
 
             <Card>
-                <SectionTitle>Crew Bonus — Post Initialization</SectionTitle>
+                <SectionTitle>{t('tools_ui.crew_post_init')}</SectionTitle>
                 <div style={{ padding: "10px 0" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
-                        <span style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 500, color: V.txPri, letterSpacing: 0.3 }}>Crew Bonus (Build Slot)</span>
+                        <span style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 500, color: V.txPri, letterSpacing: 0.3 }}>{t('tools_ui.crew_bonus_slot')}</span>
                         <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#FFFFFF", letterSpacing: 1 }}>{crewBonus}%</span>
                     </div>
                     <input type="number" min={0} max={50} step={0.25} value={crewBonus} onChange={e => setCrewBonus(+e.target.value || 0)} style={{ fontFamily: "var(--font-mono)", fontSize: 13, padding: "6px 10px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, color: "#FFFFFF", outline: "none", width: 80 }} />
                 </div>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: V.txDim, marginTop: 8, lineHeight: 1.7, letterSpacing: 0.3 }}>
-                    The game recalculates total speed including crew bonus after initialization.
+                    {t('tools_ui.crew_post_init_desc')}
                 </p>
             </Card>
 
             {buildRes && <Card accent>
-                <SectionTitle>Computation Results</SectionTitle>
+                <SectionTitle>{t('tools_ui.computation_results')}</SectionTitle>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 12, marginBottom: 22 }}>
-                    <ResBlock label="Base Time" time={buildRes.baseTime} sub="No reductions" />
-                    <ResBlock label="Displayed Time" time={buildRes.presented} sub={`${buildRes.totalPct.toFixed(1)}% speed + cabins`} />
-                    <ResBlock label="Actual Time (Post-Init)" time={buildRes.afterInit} sub={`Total: ${(buildRes.totalPct + crewBonus).toFixed(1)}%`} highlight />
+                    <ResBlock label={t('tools_ui.base_time')} time={buildRes.baseTime} sub={t('tools_ui.no_reductions')} />
+                    <ResBlock label={t('tools_ui.displayed_time')} time={buildRes.presented} sub={`${buildRes.totalPct.toFixed(1)}% speed + cabins`} />
+                    <ResBlock label={t('tools_ui.actual_time')} time={buildRes.afterInit} sub={`${t('tools_ui.total')}: ${(buildRes.totalPct + crewBonus).toFixed(1)}%`} highlight />
                 </div>
                 <div style={{ padding: "14px 16px", background: "rgba(201,168,76,0.04)", borderRadius: 2, border: `1px solid ${V.border}` }}>
                     <div style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#FFFFFF", letterSpacing: 0.3, marginBottom: 8 }}>
-                        Saved: <strong style={{ fontFamily: "var(--font-mono)", letterSpacing: 1 }}>{fmtTime(buildRes.baseTime - buildRes.afterInit)}</strong>
+                        {t('tools_ui.saved')}: <strong style={{ fontFamily: "var(--font-mono)", letterSpacing: 1 }}>{fmtTime(buildRes.baseTime - buildRes.afterInit)}</strong>
                         <span style={{ marginLeft: 8, fontSize: 12, color: V.txDim }}>({savPct}%)</span>
                     </div>
                     <div style={{ height: 2, background: "rgba(201,168,76,0.1)", borderRadius: 1, overflow: "hidden" }}>
@@ -212,7 +212,7 @@ export default function BuildTimeCalculator() {
                     </div>
                 </div>
                 {buildRes.indiv.length > 0 && <details style={{ marginTop: 18 }}>
-                    <summary style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, color: V.txDim, cursor: "pointer", padding: "8px 0", textTransform: "uppercase" }}>Reduction Breakdown</summary>
+                    <summary style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, color: V.txDim, cursor: "pointer", padding: "8px 0", textTransform: "uppercase" }}>{t('tools_ui.reduction_breakdown')}</summary>
                     <div style={{ marginTop: 10 }}>{buildRes.indiv.map((r, i) => (
                         <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "5px 0", borderBottom: "1px solid rgba(201,168,76,0.05)", fontFamily: "var(--font-body)", fontSize: 16, color: V.txSec, letterSpacing: 0.3 }}>
                             <span>{r.label}</span>
@@ -223,8 +223,8 @@ export default function BuildTimeCalculator() {
             </Card>}
             <div style={{ padding: "0 20px 20px", textAlign: "center", lineHeight: 1.5 }}>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: 20, color: V.txDim, letterSpacing: 0.5, margin: 0 }}>
-                    Data collection powered by the incredible efforts of<br />
-                    <strong style={{ color: "#FFFFFF" }}>PapaBeebs, Knappe, Lou</strong> and their contributors.
+                    {t('tools_ui.data_credit')}<br />
+                    <strong style={{ color: "#FFFFFF" }}>{t('tools_ui.data_credit_names')}</strong> {t('tools_ui.data_credit_end')}
                 </p>
             </div>
         </div>

@@ -36,7 +36,7 @@ export default function Tabs() {
                 <button
                     className="hamburger-btn"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    aria-label="Toggle Navigation Menu"
+                    aria-label={t('tools_ui.toggle_menu')}
                 >
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>

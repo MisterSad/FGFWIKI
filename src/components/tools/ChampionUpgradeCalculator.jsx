@@ -1,4 +1,5 @@
-import React, { useState, useMemo, useEffect, useCallback } from "react";
+import React, { useState, useMemo, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
 import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
@@ -49,6 +50,7 @@ const MILESTONES = [20, 40, 60, 80, 100, 120, 140, 160, 180, 200];
 const fmt = (n) => n.toLocaleString("en-US");
 
 export default function ChampionUpgradeCalculator() {
+    const { t } = useTranslation();
     const { currentUser } = useAuth();
     const [currentLevel, setCurrentLevel] = useState(1);
     const [targetLevel, setTargetLevel] = useState(200);
@@ -124,13 +126,13 @@ export default function ChampionUpgradeCalculator() {
         <div style={{ animation: "fadeUp 0.8s ease-out" }}>
             {/* Level selectors */}
             <Card>
-                <SectionTitle>Champion Levels</SectionTitle>
+                <SectionTitle>{t('tools_ui.champion_levels')}</SectionTitle>
 
                 <div style={{ display: "flex", gap: 32, flexWrap: "wrap", alignItems: "flex-start", marginTop: 8 }}>
                     {/* Current Level */}
                     <div style={{ flex: 1, minWidth: 200 }}>
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
-                            <Label>Current Level</Label>
+                            <Label>{t('tools_ui.current_level')}</Label>
                             <span style={{ fontFamily: "var(--font-label)", fontSize: 24, fontWeight: 700, color: V.teal }}>
                                 {currentLevel}
                             </span>
@@ -147,7 +149,7 @@ export default function ChampionUpgradeCalculator() {
                     {/* Target Level */}
                     <div style={{ flex: 1, minWidth: 200 }}>
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
-                            <Label>Target Level</Label>
+                            <Label>{t('tools_ui.target_level')}</Label>
                             <span style={{ fontFamily: "var(--font-label)", fontSize: 24, fontWeight: 700, color: "#2ecc71" }}>
                                 {targetLevel}
                             </span>
@@ -163,7 +165,7 @@ export default function ChampionUpgradeCalculator() {
 
                     {/* Inventory */}
                     <div style={{ minWidth: 160 }}>
-                        <Label>Shards Available</Label>
+                        <Label>{t('tools_ui.shards_available')}</Label>
                         <input type="text" value={inventory.toLocaleString("en-US")}
                             onChange={(e) => setInventory(Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999))}
                             style={{
@@ -184,7 +186,7 @@ export default function ChampionUpgradeCalculator() {
             {currentLevel < targetLevel && (
                 <Card accent>
                     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, transparent, #f0c040, transparent)` }} />
-                    <SectionTitle>Estimated Cost</SectionTitle>
+                    <SectionTitle>{t('tools_ui.estimated_cost')}</SectionTitle>
 
                     <div style={{
                         display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 20,
@@ -193,33 +195,33 @@ export default function ChampionUpgradeCalculator() {
                         {/* Total Cost */}
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid #f0c04030` }}>
                             <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
-                                Total Cost
+                                {t('tools_ui.total_cost')}
                             </div>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color: "#f0c040", textShadow: `0 0 20px rgba(240, 192, 64, 0.4)` }}>
                                 {fmt(totalCost)}
                             </div>
                             <div style={{ fontSize: 10, color: V.txSec, marginTop: 6, fontFamily: "var(--font-body)" }}>
-                                For {targetLevel - currentLevel} levels
+                                {t('tools_ui.for_n_levels', { count: targetLevel - currentLevel })}
                             </div>
                         </div>
 
                         {/* Surplus/Deficit */}
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${surplus >= 0 ? '#2ecc7130' : '#e74c3c30'}` }}>
                             <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
-                                Surplus / Deficit
+                                {t('tools_ui.surplus_deficit')}
                             </div>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", opacity: surplus >= 0 ? 1 : 0.9 }}>
                                 {surplus >= 0 ? "+" : ""}{fmt(surplus)}
                             </div>
                             <div style={{ fontSize: 10, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", marginTop: 6, opacity: 0.7, fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: 1 }}>
-                                {surplus >= 0 ? "Enough shards" : "Need more shards"}
+                                {surplus >= 0 ? t('tools_ui.enough_shards') : t('tools_ui.need_more_shards')}
                             </div>
                         </div>
 
                         {/* Avg Cost / Level */}
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
                             <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
-                                Avg Cost / Level
+                                {t('tools_ui.avg_cost_level')}
                             </div>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 600, color: V.txPri }}>
                                 {(totalCost / (targetLevel - currentLevel)).toFixed(1)}
@@ -234,17 +236,17 @@ export default function ChampionUpgradeCalculator() {
 
                 {/* Cost Breakdown */}
                 <Card style={{ marginBottom: 0 }}>
-                    <SectionTitle>Cost Breakdown</SectionTitle>
+                    <SectionTitle>{t('tools_ui.cost_breakdown')}</SectionTitle>
 
                     {breakdown.length === 0 ? (
-                        <div style={{ fontSize: 14, color: V.txSec, padding: "20px 0", textAlign: "center", fontFamily: "var(--font-body)" }}>Select a level range to view breakdown</div>
+                        <div style={{ fontSize: 14, color: V.txSec, padding: "20px 0", textAlign: "center", fontFamily: "var(--font-body)" }}>{t('tools_ui.select_range')}</div>
                     ) : (
                         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                             <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-mono)", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
-                                <span style={{ width: 70 }}>Levels</span>
-                                <span style={{ width: 60, textAlign: "right" }}>Per Lvl</span>
-                                <span style={{ width: 45, textAlign: "right" }}>Count</span>
-                                <span style={{ flex: 1, textAlign: "right" }}>Subtotal</span>
+                                <span style={{ width: 70 }}>{t('tools_ui.col_levels')}</span>
+                                <span style={{ width: 60, textAlign: "right" }}>{t('tools_ui.col_per_lvl')}</span>
+                                <span style={{ width: 45, textAlign: "right" }}>{t('tools_ui.col_count')}</span>
+                                <span style={{ flex: 1, textAlign: "right" }}>{t('tools_ui.col_subtotal')}</span>
                             </div>
                             {breakdown.map((r, i) => (
                                 <div key={i} style={{
@@ -271,13 +273,13 @@ export default function ChampionUpgradeCalculator() {
 
                 {/* Milestones */}
                 <Card style={{ marginBottom: 0 }}>
-                    <SectionTitle>Milestones</SectionTitle>
+                    <SectionTitle>{t('tools_ui.milestones')}</SectionTitle>
 
                     <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                         <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-mono)", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
-                            <span style={{ width: 50 }}>Level</span>
-                            <span style={{ flex: 1, textAlign: "right" }}>Total (0→X)</span>
-                            <span style={{ flex: 1, textAlign: "right" }}>From Current</span>
+                            <span style={{ width: 50 }}>{t('tools_ui.level')}</span>
+                            <span style={{ flex: 1, textAlign: "right" }}>{t('tools_ui.col_total_zero')}</span>
+                            <span style={{ flex: 1, textAlign: "right" }}>{t('tools_ui.col_from_current')}</span>
                         </div>
                         {milestoneData.map((m, i) => (
                             <div key={i} style={{

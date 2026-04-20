@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { categories } from '../data/gameData';
 
 export default function FilterBar({ activeCategory, setActiveCategory }) {
+    const { t } = useTranslation();
     return (
         <div style={{
             display: 'flex',
@@ -20,7 +22,7 @@ export default function FilterBar({ activeCategory, setActiveCategory }) {
                 }}
                 onClick={() => setActiveCategory('all')}
             >
-                All Systems
+                {t('tools_ui.all_systems')}
             </button>
 
             {categories.map(cat => (
