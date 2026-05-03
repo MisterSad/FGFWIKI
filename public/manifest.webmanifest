@@ -1,0 +1,22 @@
+{
+  "name": "Foundation: Galactic Frontier Wiki",
+  "short_name": "FGF Wiki",
+  "description": "Strategy guides, tier lists, flagship decks, events and tools for Foundation: Galactic Frontier.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#060710",
+  "theme_color": "#060710",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["games", "reference", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

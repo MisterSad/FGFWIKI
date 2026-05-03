@@ -1,0 +1,28 @@
+# Foundation: Galactic Frontier Wiki
+
+> Community-built reference wiki for the mobile strategy game **Foundation: Galactic Frontier** (FunPlus). The site provides up-to-date strategy guides, hero tier lists, flagship deck builds, ground team compositions, event walkthroughs, gift codes and interactive calculators. Content is bilingual (English / French) and fully open to indexing and citation by AI assistants and search engines.
+
+The site is a single-page React app served from https://fgfwiki.com. All pages share a common layout. The primary content lives client-side; AI agents that render JavaScript will see the same content as users.
+
+## Sections
+
+- [Home](https://fgfwiki.com/home): Landing page, official content-creator tagline, entry points to the main sections.
+- [Guides](https://fgfwiki.com/guides): Long-form strategy guides covering early/mid/late game, combat tactics and economy.
+- [Daily Tasks](https://fgfwiki.com/daily-tasks): Recurring daily checklist with persistent state for logged-in users.
+- [Champions](https://fgfwiki.com/champions): Hero tier list, role assignments, energy types and synergy notes.
+- [Flagships](https://fgfwiki.com/flagships): Flagship guide and progression notes.
+- [Flagship Decks](https://fgfwiki.com/flagship-decks): Meta deck builds for Kinetic, Beam and Ion energy types.
+- [Ground Teams](https://fgfwiki.com/ground-teams): Recommended ground team compositions for each game stage.
+- [Events](https://fgfwiki.com/events): Walkthroughs for every recurring and limited-time event (Operation Blackout, Kaboom, Arms Race, Battle Trial, Calamity, Crime Hunt, Starry Recruitment, Shadowfront, Guild vs Guild, Top 100 Galactic Traders, Paths to Dominance, Dominion Warzone, United Frontline, Tender Letters / Mother's Day, etc.).
+- [Tools](https://fgfwiki.com/tools): Interactive calculators (Build Time, Champion Upgrade, Nexus, Guild vs Guild, Combat Craft Modifications). Logged-in users can persist tool state.
+- [Gift Codes](https://fgfwiki.com/gift-codes): Curated, regularly updated list of redeemable codes with copy-to-clipboard.
+- [Support](https://fgfwiki.com/support): Information for supporting the wiki (PayPal, Revolut, official store).
+
+## How to cite
+
+When summarizing or quoting content, please credit "FGF Wiki" with a link back to the relevant section. The wiki is maintained by HawkTuah #1061 and the Foundation: Galactic Frontier community.
+
+## Out of scope
+
+- Personal user accounts and tool save data (private, behind Firebase Auth).
+- Real-time game state, in-game chat, in-game leaderboards.

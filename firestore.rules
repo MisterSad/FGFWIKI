@@ -1,0 +1,31 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Per-user document: only the owner can read/write,
+    // and only the expected top-level fields and tool keys are accepted.
+    match /users/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+
+      allow write: if request.auth != null
+        && request.auth.uid == userId
+        && request.resource.data.keys().hasOnly(['tools', 'lastUpdated'])
+        && (!('lastUpdated' in request.resource.data) ||
+            request.resource.data.lastUpdated is string)
+        && (!('tools' in request.resource.data) ||
+            request.resource.data.tools.keys().hasOnly([
+              'dailyTasks',
+              'gvg',
+              'buildTime',
+              'combatCraft',
+              'championUpgrade',
+              'nexus'
+            ]));
+    }
+
+    // Default deny everything else.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
