@@ -6,6 +6,9 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import en from './locales/en/translation.json';
 import fr from './locales/fr/translation.json';
 import ko from './locales/ko/translation.json';
+import de from './locales/de/translation.json';
+import ja from './locales/ja/translation.json';
+import zh from './locales/zh/translation.json';
 
 const savedLang = typeof window !== 'undefined' ? localStorage.getItem('fgfwiki_lang') : null;
 
@@ -16,12 +19,15 @@ i18n
         resources: {
             en: { translation: en },
             fr: { translation: fr },
-            ko: { translation: ko }
+            ko: { translation: ko },
+            de: { translation: de },
+            ja: { translation: ja },
+            zh: { translation: zh }
         },
         lng: savedLang || undefined, // let detector pick if nothing saved
         fallbackLng: 'en',
-        supportedLngs: ['en', 'fr', 'ko'],
-        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'ko-KR' -> 'ko'
+        supportedLngs: ['en', 'fr', 'ko', 'de', 'ja', 'zh'],
+        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'zh-CN' -> 'zh', 'zh-Hans' -> 'zh'
         detection: {
             order: ['localStorage', 'navigator', 'htmlTag'],
             lookupLocalStorage: 'fgfwiki_lang',

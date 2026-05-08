@@ -1,6 +1,6 @@
 # Foundation: Galactic Frontier Wiki
 
-> Community-built reference wiki for the mobile strategy game **Foundation: Galactic Frontier** (FunPlus). The site provides up-to-date strategy guides, hero tier lists, flagship deck builds, ground team compositions, event walkthroughs, gift codes and interactive calculators. Content is trilingual (English / French / Korean) and fully open to indexing and citation by AI assistants and search engines.
+> Community-built reference wiki for the mobile strategy game **Foundation: Galactic Frontier** (FunPlus). The site provides up-to-date strategy guides, hero tier lists, flagship deck builds, ground team compositions, event walkthroughs, gift codes and interactive calculators. Content is available in six languages (English / French / German / Japanese / Korean / Simplified Chinese) and fully open to indexing and citation by AI assistants and search engines.
 
 The site is a single-page React app served from https://fgfwiki.com. All pages share a common layout. The primary content lives client-side; AI agents that render JavaScript will see the same content as users.
 

@@ -5,7 +5,10 @@ import { Globe } from 'lucide-react';
 const LANGS = [
     { code: 'en', label: 'EN' },
     { code: 'fr', label: 'FR' },
-    { code: 'ko', label: 'KO' }
+    { code: 'de', label: 'DE' },
+    { code: 'ja', label: 'JA' },
+    { code: 'ko', label: 'KO' },
+    { code: 'zh', label: 'ZH' }
 ];
 
 export default function LanguageSwitcher() {

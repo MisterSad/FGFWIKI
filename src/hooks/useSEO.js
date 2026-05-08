@@ -21,11 +21,23 @@ const ROUTE_KEYS = {
 };
 
 // Supported languages — keep in sync with src/i18n.js and the language switcher.
-const SUPPORTED_LANGS = ['en', 'fr', 'ko'];
+const SUPPORTED_LANGS = ['en', 'fr', 'de', 'ja', 'ko', 'zh'];
 const OG_LOCALES = {
     en: 'en_US',
     fr: 'fr_FR',
+    de: 'de_DE',
+    ja: 'ja_JP',
     ko: 'ko_KR',
+    zh: 'zh_CN',
+};
+// hreflang code per language — Google recommends script subtags for Chinese.
+const HREFLANG = {
+    en: 'en',
+    fr: 'fr',
+    de: 'de',
+    ja: 'ja',
+    ko: 'ko',
+    zh: 'zh-Hans',
 };
 
 function setMetaByName(name, content) {
@@ -63,14 +75,21 @@ function syncHreflangs(url) {
     document.head
         .querySelectorAll('link[rel="alternate"][data-managed-hreflang]')
         .forEach((el) => el.remove());
-    [...SUPPORTED_LANGS, 'x-default'].forEach((code) => {
+    SUPPORTED_LANGS.forEach((code) => {
         const el = document.createElement('link');
         el.setAttribute('rel', 'alternate');
-        el.setAttribute('hreflang', code);
+        el.setAttribute('hreflang', HREFLANG[code] || code);
         el.setAttribute('href', url);
         el.setAttribute('data-managed-hreflang', 'true');
         document.head.appendChild(el);
     });
+    // x-default for unmatched locales
+    const xd = document.createElement('link');
+    xd.setAttribute('rel', 'alternate');
+    xd.setAttribute('hreflang', 'x-default');
+    xd.setAttribute('href', url);
+    xd.setAttribute('data-managed-hreflang', 'true');
+    document.head.appendChild(xd);
 }
 
 function syncOgAlternateLocales(currentLang) {
