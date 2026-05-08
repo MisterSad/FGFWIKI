@@ -3,11 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { Globe, Check, ChevronDown } from 'lucide-react';
 
 // Language list — autonyms (each language displayed in its own script).
-// Order: English first (default), then Latin-script alphabetical, then CJK.
+// Order: English first (default), then Latin-script alphabetical, then Cyrillic, then CJK.
 const LANGS = [
     { code: 'en', label: 'English' },
-    { code: 'fr', label: 'Français' },
     { code: 'de', label: 'Deutsch' },
+    { code: 'fr', label: 'Français' },
+    { code: 'it', label: 'Italiano' },
+    { code: 'pl', label: 'Polski' },
+    { code: 'uk', label: 'Українська' },
     { code: 'ja', label: '日本語' },
     { code: 'ko', label: '한국어' },
     { code: 'zh', label: '简体中文' }

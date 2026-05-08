@@ -21,11 +21,14 @@ const ROUTE_KEYS = {
 };
 
 // Supported languages — keep in sync with src/i18n.js and the language switcher.
-const SUPPORTED_LANGS = ['en', 'fr', 'de', 'ja', 'ko', 'zh'];
+const SUPPORTED_LANGS = ['en', 'fr', 'de', 'it', 'pl', 'uk', 'ja', 'ko', 'zh'];
 const OG_LOCALES = {
     en: 'en_US',
     fr: 'fr_FR',
     de: 'de_DE',
+    it: 'it_IT',
+    pl: 'pl_PL',
+    uk: 'uk_UA',
     ja: 'ja_JP',
     ko: 'ko_KR',
     zh: 'zh_CN',
@@ -35,6 +38,9 @@ const HREFLANG = {
     en: 'en',
     fr: 'fr',
     de: 'de',
+    it: 'it',
+    pl: 'pl',
+    uk: 'uk',
     ja: 'ja',
     ko: 'ko',
     zh: 'zh-Hans',
