@@ -63,7 +63,8 @@
         "kinetic": "Kinetic",
         "beam": "Beam",
         "ion": "Ion",
-        "core": "Core"
+        "core": "Core",
+        "back": "BACK"
     },
     "hero": {
         "title_prefix": "Master the",

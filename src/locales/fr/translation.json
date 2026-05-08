@@ -81,10 +81,7 @@
         "ground": "Équipes au sol",
         "events": "Événements",
         "builder": "Outils",
-        "guild": "Guilde",
-        "beginner": "Débutant",
-        "combat": "Combat",
-        "economy": "Économie"
+        "guild": "Guilde"
     },
     "tips": {
         "t1_title": "Concentrez-vous sur les missions d'histoire",
@@ -909,16 +906,23 @@
         "french": "Français"
     },
     "login_modal": {
-        "title": "Connexion",
-        "email": "Email",
-        "password": "Mot de passe",
-        "login_button": "Se connecter",
-        "signup_button": "S'inscrire",
-        "forgot_password": "Mot de passe oublié ?",
-        "no_account": "Pas de compte ?",
-        "has_account": "Vous avez un compte ?",
-        "close": "Fermer",
-        "error_generic": "Une erreur s'est produite. Veuillez réessayer."
+        "login": "CONNEXION",
+        "register": "INSCRIPTION",
+        "continue_google": "Continuer avec Google",
+        "or": "OU",
+        "email": "EMAIL",
+        "password": "MOT DE PASSE",
+        "send_magic_link": "ENVOYER LE LIEN MAGIQUE",
+        "use_password": "Utiliser un mot de passe à la place",
+        "use_magic_link": "Se connecter avec un lien magique",
+        "need_register": "Besoin de créer un nouveau compte ?",
+        "already_active_link": "Vous avez déjà un lien actif ?",
+        "magic_link_sent": "Lien magique envoyé. Vérifiez votre boîte de réception.",
+        "error_email_in_use": "Cet email est déjà utilisé.",
+        "error_invalid_credential": "Email ou mot de passe invalide.",
+        "error_weak_password": "Le mot de passe doit contenir au moins 6 caractères.",
+        "error_auth_failed": "Échec de l'authentification. Veuillez réessayer.",
+        "error_google_failed": "Échec de la connexion avec Google."
     },
     "gift_codes": {
         "title": "Codes cadeaux",
