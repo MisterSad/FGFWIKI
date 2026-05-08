@@ -24,7 +24,10 @@ i18n
             ja: { translation: ja },
             zh: { translation: zh }
         },
-        lng: savedLang || undefined, // let detector pick if nothing saved
+        // Default to English on first visit. Auto-detection from the browser
+        // is intentionally bypassed: the user picks their language explicitly
+        // via the language switcher (preference persisted in localStorage).
+        lng: savedLang || 'en',
         fallbackLng: 'en',
         supportedLngs: ['en', 'fr', 'ko', 'de', 'ja', 'zh'],
         nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'zh-CN' -> 'zh', 'zh-Hans' -> 'zh'
