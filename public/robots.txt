@@ -15,6 +15,18 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
+User-agent: YandexBot
+Allow: /
+
+User-agent: Naverbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daum
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 

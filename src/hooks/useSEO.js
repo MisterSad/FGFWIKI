@@ -20,6 +20,14 @@ const ROUTE_KEYS = {
     '/support': 'support',
 };
 
+// Supported languages — keep in sync with src/i18n.js and the language switcher.
+const SUPPORTED_LANGS = ['en', 'fr', 'ko'];
+const OG_LOCALES = {
+    en: 'en_US',
+    fr: 'fr_FR',
+    ko: 'ko_KR',
+};
+
 function setMetaByName(name, content) {
     let el = document.head.querySelector(`meta[name="${name}"]`);
     if (!el) {
@@ -41,13 +49,40 @@ function setMetaByProperty(property, content) {
 }
 
 function setLinkByRel(rel, href) {
-    let el = document.head.querySelector(`link[rel="${rel}"]`);
+    // Match only the unique non-hreflang link of this rel (canonical, etc.).
+    let el = document.head.querySelector(`link[rel="${rel}"]:not([hreflang])`);
     if (!el) {
         el = document.createElement('link');
         el.setAttribute('rel', rel);
         document.head.appendChild(el);
     }
     el.setAttribute('href', href);
+}
+
+function syncHreflangs(url) {
+    document.head
+        .querySelectorAll('link[rel="alternate"][data-managed-hreflang]')
+        .forEach((el) => el.remove());
+    [...SUPPORTED_LANGS, 'x-default'].forEach((code) => {
+        const el = document.createElement('link');
+        el.setAttribute('rel', 'alternate');
+        el.setAttribute('hreflang', code);
+        el.setAttribute('href', url);
+        el.setAttribute('data-managed-hreflang', 'true');
+        document.head.appendChild(el);
+    });
+}
+
+function syncOgAlternateLocales(currentLang) {
+    document.head
+        .querySelectorAll('meta[property="og:locale:alternate"]')
+        .forEach((el) => el.remove());
+    SUPPORTED_LANGS.filter((l) => l !== currentLang).forEach((code) => {
+        const el = document.createElement('meta');
+        el.setAttribute('property', 'og:locale:alternate');
+        el.setAttribute('content', OG_LOCALES[code] || 'en_US');
+        document.head.appendChild(el);
+    });
 }
 
 export default function useSEO() {
@@ -66,8 +101,7 @@ export default function useSEO() {
         const fullTitle = key === 'home'
             ? `${SITE_NAME} — ${pageTitle}`
             : `${pageTitle} — ${SITE_NAME}`;
-        const ogLocale = lang === 'fr' ? 'fr_FR' : 'en_US';
-        const ogLocaleAlt = lang === 'fr' ? 'en_US' : 'fr_FR';
+        const ogLocale = OG_LOCALES[lang] || OG_LOCALES.en;
 
         document.title = fullTitle;
         document.documentElement.lang = lang;
@@ -77,9 +111,10 @@ export default function useSEO() {
         setMetaByProperty('og:description', description);
         setMetaByProperty('og:url', url);
         setMetaByProperty('og:locale', ogLocale);
-        setMetaByProperty('og:locale:alternate', ogLocaleAlt);
+        syncOgAlternateLocales(lang);
         setMetaByName('twitter:title', fullTitle);
         setMetaByName('twitter:description', description);
         setLinkByRel('canonical', url);
+        syncHreflangs(url);
     }, [t, lang, location.pathname, key]);
 }

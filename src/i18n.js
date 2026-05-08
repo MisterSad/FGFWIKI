@@ -5,6 +5,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // Import translation files
 import en from './locales/en/translation.json';
 import fr from './locales/fr/translation.json';
+import ko from './locales/ko/translation.json';
 
 const savedLang = typeof window !== 'undefined' ? localStorage.getItem('fgfwiki_lang') : null;
 
@@ -14,12 +15,13 @@ i18n
     .init({
         resources: {
             en: { translation: en },
-            fr: { translation: fr }
+            fr: { translation: fr },
+            ko: { translation: ko }
         },
         lng: savedLang || undefined, // let detector pick if nothing saved
         fallbackLng: 'en',
-        supportedLngs: ['en', 'fr'],
-        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr'
+        supportedLngs: ['en', 'fr', 'ko'],
+        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'ko-KR' -> 'ko'
         detection: {
             order: ['localStorage', 'navigator', 'htmlTag'],
             lookupLocalStorage: 'fgfwiki_lang',
