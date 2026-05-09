@@ -703,7 +703,8 @@
             "ajita": "离子轮换的必备。巨大的治疗和团队智力加成。",
             "lily": "免费玩家友好但 S 级力量。出色的 AOE 和能力减速。",
             "killer_bee": "精英动能攻击者。专注于高物理伤害。"
-        }
+        },
+        "key_strategy": "关键策略"
     },
     "flagships": {
         "title": "旗舰战术",
@@ -916,7 +917,12 @@
         "col_total_zero": "总计(0→X)",
         "col_from_current": "从当前",
         "all_systems": "所有系统",
-        "toggle_menu": "切换导航菜单"
+        "toggle_menu": "切换导航菜单",
+        "tab_build_time": "建造时间",
+        "tab_champion_upgrade": "英雄升级",
+        "tab_nexus": "关联",
+        "tab_gvg": "公会对公会",
+        "tab_combat_craft": "战机改装"
     },
     "categories_extra": {
         "beginner": "初学者",
@@ -931,6 +937,12 @@
         "expires": "到期",
         "rewards": "奖励",
         "how_to_redeem": "如何兑换",
-        "no_codes": "目前没有活跃的代码。请很快回来查看!"
+        "no_codes": "目前没有活跃的代码。请很快回来查看!",
+        "tagline": "在游戏中使用这些代码获得免费奖励。",
+        "redeem_intro": "点击下方代码旁边的复制图标。",
+        "redeem_steps": "在游戏中,点击您的<1>头像</1>(左上角),选择<3>\"设置\"</3>,然后点击<5>\"礼包码\"</5>并粘贴。",
+        "copy_to_clipboard": "复制到剪贴板",
+        "special_thanks": "特别鸣谢",
+        "community_thanks": "非常感谢帮助维护此列表的优秀社区成员。"
     }
 }

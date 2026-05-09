@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 import { Copy, Check } from 'lucide-react';
 
 const giftCodes = [
@@ -61,6 +62,7 @@ const now = new Date();
 const visibleCodes = giftCodes.filter(({ expiresAt }) => !expiresAt || now < expiresAt).reverse();
 
 export default function GiftCodes() {
+    const { t } = useTranslation();
     const [copiedIndex, setCopiedIndex] = useState(null);
 
     const handleCopy = (code, index) => {
@@ -72,8 +74,8 @@ export default function GiftCodes() {
     return (
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem 1rem' }}>
             <div className="guide-header" style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                <h1 className="guide-title text-gradient">Gift Codes</h1>
-                <p className="guide-subtitle">Redeem these codes in-game for free rewards.</p>
+                <h1 className="guide-title text-gradient">{t('gift_codes.title')}</h1>
+                <p className="guide-subtitle">{t('gift_codes.tagline')}</p>
             </div>
 
             <div style={{
@@ -90,9 +92,10 @@ export default function GiftCodes() {
                     fontFamily: 'var(--font-hero)',
                     letterSpacing: '3px',
                     margin: '0 0 1rem 0',
-                    fontSize: '1.2rem'
+                    fontSize: '1.2rem',
+                    textTransform: 'uppercase'
                 }}>
-                    HOW TO REDEEM
+                    {t('gift_codes.how_to_redeem')}
                 </h3>
                 <p style={{
                     color: 'var(--text-primary)',
@@ -101,9 +104,11 @@ export default function GiftCodes() {
                     lineHeight: '1.6',
                     fontFamily: 'var(--font-body)'
                 }}>
-                    Click the copy icon next to a code below.
-                    In-game, tap your <strong>avatar</strong> (top left), select <strong>"Settings"</strong>,
-                    then tap <strong>"Gift Code"</strong> and paste.
+                    {t('gift_codes.redeem_intro')}{' '}
+                    <Trans
+                        i18nKey="gift_codes.redeem_steps"
+                        components={{ 1: <strong />, 3: <strong />, 5: <strong /> }}
+                    />
                 </p>
             </div>
 
@@ -147,7 +152,7 @@ export default function GiftCodes() {
                                 transition: 'all 0.2s ease',
                                 outline: 'none'
                             }}
-                            title="Copy to clipboard"
+                            title={t('gift_codes.copy_to_clipboard')}
                         >
                             {copiedIndex === index ? <Check size={18} /> : <Copy size={18} />}
                         </button>
@@ -175,7 +180,7 @@ export default function GiftCodes() {
                     margin: '0 0 1rem 0',
                     fontSize: '1.2rem'
                 }}>
-                    Special Thanks
+                    {t('gift_codes.special_thanks')}
                 </h3>
                 <p style={{
                     color: 'var(--text-dim)',
@@ -184,7 +189,7 @@ export default function GiftCodes() {
                     lineHeight: '1.6',
                     fontFamily: 'var(--font-body)'
                 }}>
-                    A big thank you to the amazing community members who help keep this list updated.
+                    {t('gift_codes.community_thanks')}
                 </p>
                 <div style={{
                     marginTop: '1.5rem',

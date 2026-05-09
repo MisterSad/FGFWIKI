@@ -703,7 +703,8 @@
             "ajita": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",
             "lily": "Przyjazna F2P, ale moc S-Tier. Świetne AOE i spowolnienia umiejętności.",
             "killer_bee": "Elitarny atakujący Kinetyczny. Skupia się na wysokich obrażeniach fizycznych."
-        }
+        },
+        "key_strategy": "Kluczowa strategia"
     },
     "flagships": {
         "title": "Taktyki okrętu flagowego",
@@ -916,7 +917,12 @@
         "col_total_zero": "Razem (0→X)",
         "col_from_current": "Z aktualnego",
         "all_systems": "Wszystkie systemy",
-        "toggle_menu": "Przełącz menu nawigacji"
+        "toggle_menu": "Przełącz menu nawigacji",
+        "tab_build_time": "Czas budowy",
+        "tab_champion_upgrade": "Ulepszanie mistrza",
+        "tab_nexus": "Nexus",
+        "tab_gvg": "Gildia kontra Gildia",
+        "tab_combat_craft": "Modyfikacje statków bojowych"
     },
     "categories_extra": {
         "beginner": "Początkujący",
@@ -931,6 +937,12 @@
         "expires": "Wygasa",
         "rewards": "Nagrody",
         "how_to_redeem": "Jak wykorzystać",
-        "no_codes": "Brak aktywnych kodów w tej chwili. Wróć wkrótce!"
+        "no_codes": "Brak aktywnych kodów w tej chwili. Wróć wkrótce!",
+        "tagline": "Wykorzystaj te kody w grze, aby uzyskać darmowe nagrody.",
+        "redeem_intro": "Kliknij ikonę kopiowania obok kodu poniżej.",
+        "redeem_steps": "W grze stuknij swój <1>awatar</1> (w lewym górnym rogu), wybierz <3>„Ustawienia\"</3>, a następnie stuknij <5>„Kod podarunkowy\"</5> i wklej.",
+        "copy_to_clipboard": "Kopiuj do schowka",
+        "special_thanks": "Specjalne podziękowania",
+        "community_thanks": "Wielkie podziękowania dla wspaniałych członków społeczności, którzy pomagają w aktualizacji tej listy."
     }
 }

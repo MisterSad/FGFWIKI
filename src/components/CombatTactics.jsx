@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { tips } from '../data/gameData';
 import { Swords, Star } from 'lucide-react';
 
 export default function CombatTactics() {
+    const { t } = useTranslation();
     const combatTips = tips.filter(tip => tip.category === 'combat');
 
     return (
@@ -93,7 +95,7 @@ export default function CombatTactics() {
                                 alignItems: 'center',
                                 gap: '0.3rem'
                             }}>
-                                <Star size={14} color="#FFFFFF" /> Key Strategy
+                                <Star size={14} color="#FFFFFF" /> {t('champions.key_strategy')}
                             </div>
                         )}
                     </div>

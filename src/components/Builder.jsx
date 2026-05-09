@@ -87,35 +87,35 @@ export default function Builder() {
                         onClick={() => setActiveTab('build-time')}
                         style={{ color: activeTab === 'build-time' ? '#FFFFFF' : '#8A8778' }}
                     >
-                        Build Time
+                        {t('tools_ui.tab_build_time')}
                     </button>
                     <button
                         className={`tool-tab ${activeTab === 'champion-upgrade' ? 'active' : ''}`}
                         onClick={() => setActiveTab('champion-upgrade')}
                         style={{ color: activeTab === 'champion-upgrade' ? '#FFFFFF' : '#8A8778' }}
                     >
-                        Champion Upgrade
+                        {t('tools_ui.tab_champion_upgrade')}
                     </button>
                     <button
                         className={`tool-tab ${activeTab === 'nexus' ? 'active' : ''}`}
                         onClick={() => setActiveTab('nexus')}
                         style={{ color: activeTab === 'nexus' ? '#FFFFFF' : '#8A8778' }}
                     >
-                        Nexus
+                        {t('tools_ui.tab_nexus')}
                     </button>
                     <button
                         className={`tool-tab ${activeTab === 'gvg' ? 'active' : ''}`}
                         onClick={() => setActiveTab('gvg')}
                         style={{ color: activeTab === 'gvg' ? '#FFFFFF' : '#8A8778' }}
                     >
-                        Guild vs Guild
+                        {t('tools_ui.tab_gvg')}
                     </button>
                     <button
                         className={`tool-tab ${activeTab === 'combat-craft' ? 'active' : ''}`}
                         onClick={() => setActiveTab('combat-craft')}
                         style={{ color: activeTab === 'combat-craft' ? '#FFFFFF' : '#8A8778' }}
                     >
-                        Combat Craft Modifications
+                        {t('tools_ui.tab_combat_craft')}
                     </button>
                 </div>
 

@@ -587,7 +587,6 @@
         "united_frontline_tactic_rating_desc": "Votre performance est suivie via une Évaluation de Bataille basée sur votre DPS. Le marchand qui se classe premier gagne le titre 'Plus Fort Chasseur' pour la ronde suivante.",
         "united_frontline_protip_strategy": "Résumé de Stratégie",
         "united_frontline_protip_strategy_desc": "1. Commencez stable : conservez les cooldowns en Phase 1.\\n2. Tuez les Gardes : l'Énergie Concentrée est votre multiplicateur de dégâts.\\n3. Brisez la Barrière : ne gaspillez pas le DPS sur le Sanctuaire protégé.\\n4. Burst pendant Affaibli : c'est quand le Sanctuaire fond.\\n5. Répétez : le Sanctuaire réapparaît en 60 secondes.",
-
         "mothers_day_title": "Tendres Lettres : Fête des mères",
         "mothers_day_cycle": "Du 6 au 14 mai 2026",
         "mothers_day_type": "Événement saisonnier ponctuel",
@@ -704,7 +703,8 @@
             "ajita": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",
             "lily": "F2P mais de puissance S-Tier. Excellent AOE et ralentissement de capacités.",
             "killer_bee": "Attaquant Cinétique d'Élite. Se concentre sur les hauts dégâts physiques."
-        }
+        },
+        "key_strategy": "Stratégie clé"
     },
     "flagships": {
         "title": "Tactiques d'amiraux",
@@ -890,7 +890,12 @@
         "col_total_zero": "Total (0→X)",
         "col_from_current": "Depuis actuel",
         "all_systems": "Tous les systèmes",
-        "toggle_menu": "Basculer le menu de navigation"
+        "toggle_menu": "Basculer le menu de navigation",
+        "tab_build_time": "Temps de construction",
+        "tab_champion_upgrade": "Amélioration champion",
+        "tab_nexus": "Nexus",
+        "tab_gvg": "Guilde contre Guilde",
+        "tab_combat_craft": "Modifications combat"
     },
     "categories_extra": {
         "beginner": "Débutant",
@@ -932,6 +937,12 @@
         "expires": "Expire",
         "rewards": "Récompenses",
         "how_to_redeem": "Comment utiliser",
-        "no_codes": "Aucun code actif pour le moment. Revenez bientôt !"
+        "no_codes": "Aucun code actif pour le moment. Revenez bientôt !",
+        "tagline": "Utilisez ces codes en jeu pour des récompenses gratuites.",
+        "redeem_intro": "Cliquez sur l'icône de copie à côté d'un code ci-dessous.",
+        "redeem_steps": "Dans le jeu, touchez votre <1>avatar</1> (en haut à gauche), sélectionnez <3>« Paramètres »</3>, puis touchez <5>« Code Cadeau »</5> et collez.",
+        "copy_to_clipboard": "Copier dans le presse-papiers",
+        "special_thanks": "Remerciements particuliers",
+        "community_thanks": "Un grand merci aux membres formidables de la communauté qui aident à maintenir cette liste à jour."
     }
 }

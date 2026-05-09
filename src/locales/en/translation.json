@@ -587,7 +587,6 @@
         "united_frontline_tactic_rating_desc": "Your performance is tracked via a Battle Rating based on your DPS. The trader who ranks first earns the 'Strongest Hunter' title for the next round.",
         "united_frontline_protip_strategy": "Strategy Summary",
         "united_frontline_protip_strategy_desc": "1. Start steady: conserve cooldowns in Phase 1.\\n2. Kill the Guards: Concentrated Energy is your damage multiplier.\\n3. Break the Barrier: don't waste DPS on the shielded Shrine.\\n4. Burst during Weakened: this is when the Shrine melts.\\n5. Repeat: the Shrine respawns in 60 seconds.",
-
         "mothers_day_title": "Tender Letters: Mother's Day",
         "mothers_day_cycle": "May 6 to May 14, 2026",
         "mothers_day_type": "Limited-Time Seasonal Event",
@@ -704,7 +703,8 @@
             "ajita": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",
             "lily": "F2P friendly but S-Tier power. Great AOE and ability slowdowns.",
             "killer_bee": "Elite Kinetic Attacker. Focuses on high physical damage."
-        }
+        },
+        "key_strategy": "Key Strategy"
     },
     "flagships": {
         "title": "Flagship Tactics",
@@ -816,105 +816,6 @@
         "commissions_1": "Complete commissions at each refresh",
         "commissions_2": "Reach the threshold for Home Port Dividends"
     },
-    "guides": {
-        "start_guide": "Start Guide",
-        "combat_tactics": "Combat Tactics",
-        "economy": "Economy"
-    },
-    "champions": {
-        "fundamentals": "Fundamentals",
-        "synergy_title": "Synergy is Key",
-        "synergy_desc": "It is <1>CRUCIAL</1> to match champions with the ship's Energy Type.",
-        "kinetic": "Kinetic Champions",
-        "beam": "Beam Champions",
-        "ion": "Ion Champions",
-        "budget": "Budget / Epic",
-        "premium": "Premium / Legendary",
-        "stats_title": "Stat Priorities",
-        "pro_tips_title": "Final Pro Tips",
-        "golden_rule": "Golden Rule",
-        "golden_rule_desc": "NEVER mix champion types. 3 Beams in a Beam ship is mandatory. A Kinetic champion in a Beam ship is useless.",
-        "shard_management": "Shard Management",
-        "shard_management_desc": "Save generic shards for <1>Lucius</1> or <1>Phade</1>. Absolutely avoid wasting them on Kama or Klara.",
-        "update_note": "Update Note",
-        "update_note_desc": "Damage is now more static and less reliant on RNG, but stat priorities remain the same.",
-        "desc": {
-            "riian": "Solid early game Kinetic attacker. Good single target damage.",
-            "lani": "Reliable Kinetic damage dealer. Easy to upgrade.",
-            "cocoon": "Incredible shields (20% Max HP) and durability. Top tier tank.",
-            "eva": "Core for Kinetic teams. Lowers enemy DEF by 20% to set up finishers.",
-            "zora": "Best Kinetic finisher. Deals massive burst damage (200% ATK).",
-            "klara": "Basic Beam healer. Good early sustain but falls off later.",
-            "lucius": "Strong Beam attacker. Prioritize if you lack Evan.",
-            "doug": "Consistent HOT (Heal Over Time) for Beam sustain.",
-            "aliya": "Beam Sync skill boosts ATK by 15%. Great opener for Beam teams.",
-            "evan": "Beam powerhouse. Piercing damage that scales to 150% ATK.",
-            "kama": "Decent Ion attacker can stun enemies.",
-            "phade": "Basic Ion healer. Useful for early Ion teams.",
-            "jodi": "Ramps team damage by 10% per skill use. Strong anchor for long fights.",
-            "ajita": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",
-            "lily": "F2P friendly but S-Tier power. Great AOE and ability slowdowns.",
-            "killer_bee": "Elite Kinetic Attacker. Focuses on high physical damage."
-        }
-    },
-    "flagships": {
-        "title": "Flagship Tactics",
-        "subtitle": "Master your fleet with these advanced strategies.",
-        "fundamentals": "Fundamentals",
-        "vessels_vs_energy": "Vessels vs Energy",
-        "vessels_vs_energy_desc": "Do <1>not</1> confuse the 3 Flagship types with the 3 Damage types (Beam/Ion/Kinetic). Any Damage type can be assigned to any Ship via the <3>Core Component</3>.",
-        "promotion_costs": "Promotion Costs (Blueprints)",
-        "rank": "Rank",
-        "blueprints_required": "Blueprints Required",
-        "ship_analysis": "Ship Analysis",
-        "expert_tips": "Expert Tips: Optimization",
-        "starting_energy": "Starting Energy",
-        "starting_energy_desc": "Energy gains from Promotion ranks 5 and 6 <1>stack</1>.",
-        "type_choice": "Type Choice",
-        "type_choice_desc": "Although flexible, each ship ends up best complementing the default energy type of its Legendary champions in the late game.",
-        "acquisition": "Acquisition",
-        "acquisition_desc": "Prioritize <1>Top 100</1> events for Gram Blueprints and <3>PVP/GvG</3> for Opportunity.",
-        "decks": {
-            "title": "Meta Ship Decks",
-            "subtitle": "Optimized fleet compositions for maximum efficiency."
-        },
-        "gram": {
-            "title": "Gram",
-            "subtitle": "The Indestructible Fortress",
-            "strengths": "Extreme Durability, Fleet Support",
-            "strategy_title": "Core Strategy",
-            "strategy_early": "Use as a main tank to soak damage while your fleet scales.",
-            "strategy_late": "Transitions to a specialized buffer for Kinetic fleets.",
-            "strategy_use": "Best used with <0>Kinetic</0> fleets due to its synergy with physical damage reduction.",
-            "abilities_title": "Key Abilities",
-            "ability1": "<0>Titan Plating</0>: Reduces incoming damage by a flat amount + percentage.",
-            "ability2": "<0>Fleet Command</0>: Passively boosts the HP of all allied ships."
-        },
-        "opportunity": {
-            "title": "Opportunity",
-            "subtitle": "The Tactical Assassin",
-            "strengths": "Versatility, Evasion, Critical Hits",
-            "strategic_note": "Its <0>Evasion</0> stat allows it to completely dodge attacks, making it deceptively tanky if built correctly.",
-            "abilities_title": "Key Abilities",
-            "ability1_op": "<0>Phantom Drive</0>: Increases evasion by 25% for short durations.",
-            "ability2_op": "<0>Precision Strike</0>: Guarantees a critical hit on the lowest HP enemy."
-        },
-        "demerzal": {
-            "title": "Demerzal",
-            "subtitle": "The Ultimate Weapon",
-            "strengths": "Raw Firepower, Area of Effect, Shield Breaking",
-            "strategy_title": "Core Strategy",
-            "strategy_synergy": "Synergizes perfectly with <0>Beam</0> and <2>Ion</2> teams to strip shields or stun.",
-            "strategy_unlock": "Unlock via the <0>Top 100</0> event only.",
-            "abilities_title": "Key Abilities",
-            "ability1_dem": "<0>Doomsday Laser</0>: Massive AOE damage that ignores 50% of shields.",
-            "ability2_dem": "<0>Energy Siphon</0>: Drains enemy energy to recharge its own main weapon."
-        }
-    },
-    "ground_guide": {
-        "title": "Ground Teams",
-        "subtitle": "Optimal team compositions for ground combat."
-    },
     "support_page": {
         "title": "Support the Site",
         "subtitle_line1": "This site is free, independent, and built with passion.",
@@ -1016,7 +917,12 @@
         "col_total_zero": "Total (0→X)",
         "col_from_current": "From Current",
         "all_systems": "All Systems",
-        "toggle_menu": "Toggle Navigation Menu"
+        "toggle_menu": "Toggle Navigation Menu",
+        "tab_build_time": "Build Time",
+        "tab_champion_upgrade": "Champion Upgrade",
+        "tab_nexus": "Nexus",
+        "tab_gvg": "Guild vs Guild",
+        "tab_combat_craft": "Combat Craft Modifications"
     },
     "categories_extra": {
         "beginner": "Beginner",
@@ -1031,6 +937,12 @@
         "expires": "Expires",
         "rewards": "Rewards",
         "how_to_redeem": "How to Redeem",
-        "no_codes": "No active codes at the moment. Check back soon!"
+        "no_codes": "No active codes at the moment. Check back soon!",
+        "tagline": "Redeem these codes in-game for free rewards.",
+        "redeem_intro": "Click the copy icon next to a code below.",
+        "redeem_steps": "In-game, tap your <1>avatar</1> (top left), select <3>\"Settings\"</3>, then tap <5>\"Gift Code\"</5> and paste.",
+        "copy_to_clipboard": "Copy to clipboard",
+        "special_thanks": "Special Thanks",
+        "community_thanks": "A big thank you to the amazing community members who help keep this list updated."
     }
 }

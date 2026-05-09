@@ -703,7 +703,8 @@
             "ajita": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",
             "lily": "F2P-freundlich, aber S-Tier-Kraft. Großartiges AOE und Fähigkeitsverlangsamungen.",
             "killer_bee": "Elite-Kinetik-Angreifer. Konzentriert sich auf hohen physischen Schaden."
-        }
+        },
+        "key_strategy": "Schlüsselstrategie"
     },
     "flagships": {
         "title": "Flaggschiff-Taktiken",
@@ -916,7 +917,12 @@
         "col_total_zero": "Gesamt (0→X)",
         "col_from_current": "Vom Aktuellen",
         "all_systems": "Alle Systeme",
-        "toggle_menu": "Navigationsmenü umschalten"
+        "toggle_menu": "Navigationsmenü umschalten",
+        "tab_build_time": "Bauzeit",
+        "tab_champion_upgrade": "Champion-Upgrade",
+        "tab_nexus": "Nexus",
+        "tab_gvg": "Gilde gegen Gilde",
+        "tab_combat_craft": "Kampfschiff-Modifikationen"
     },
     "categories_extra": {
         "beginner": "Anfänger",
@@ -931,6 +937,12 @@
         "expires": "Läuft ab",
         "rewards": "Belohnungen",
         "how_to_redeem": "So einlösen",
-        "no_codes": "Im Moment keine aktiven Codes. Schau bald wieder vorbei!"
+        "no_codes": "Im Moment keine aktiven Codes. Schau bald wieder vorbei!",
+        "tagline": "Lösen Sie diese Codes im Spiel für kostenlose Belohnungen ein.",
+        "redeem_intro": "Klicken Sie auf das Kopier-Symbol neben einem Code unten.",
+        "redeem_steps": "Tippen Sie im Spiel auf Ihren <1>Avatar</1> (oben links), wählen Sie <3>„Einstellungen\"</3>, tippen Sie dann auf <5>„Geschenkcode\"</5> und fügen Sie ein.",
+        "copy_to_clipboard": "In Zwischenablage kopieren",
+        "special_thanks": "Besonderer Dank",
+        "community_thanks": "Ein großes Dankeschön an die fantastischen Community-Mitglieder, die diese Liste aktuell halten."
     }
 }

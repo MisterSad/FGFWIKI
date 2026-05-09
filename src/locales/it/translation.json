@@ -703,7 +703,8 @@
             "ajita": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",
             "lily": "Adatto F2P ma potenza S-Tier. Ottimo AOE e rallentamenti delle abilità.",
             "killer_bee": "Attaccante Cinetico Élite. Si concentra su alti danni fisici."
-        }
+        },
+        "key_strategy": "Strategia chiave"
     },
     "flagships": {
         "title": "Tattiche dell'ammiraglia",
@@ -916,7 +917,12 @@
         "col_total_zero": "Totale (0→X)",
         "col_from_current": "Dall'attuale",
         "all_systems": "Tutti i sistemi",
-        "toggle_menu": "Attiva/disattiva menu di navigazione"
+        "toggle_menu": "Attiva/disattiva menu di navigazione",
+        "tab_build_time": "Tempo di costruzione",
+        "tab_champion_upgrade": "Potenziamento campione",
+        "tab_nexus": "Nexus",
+        "tab_gvg": "Gilda contro Gilda",
+        "tab_combat_craft": "Modifiche navi da combattimento"
     },
     "categories_extra": {
         "beginner": "Principiante",
@@ -931,6 +937,12 @@
         "expires": "Scade",
         "rewards": "Ricompense",
         "how_to_redeem": "Come riscattare",
-        "no_codes": "Nessun codice attivo al momento. Torna presto!"
+        "no_codes": "Nessun codice attivo al momento. Torna presto!",
+        "tagline": "Riscatta questi codici in-game per ricompense gratuite.",
+        "redeem_intro": "Fai clic sull'icona di copia accanto a un codice qui sotto.",
+        "redeem_steps": "In-game, tocca il tuo <1>avatar</1> (in alto a sinistra), seleziona <3>\"Impostazioni\"</3>, poi tocca <5>\"Codice regalo\"</5> e incolla.",
+        "copy_to_clipboard": "Copia negli appunti",
+        "special_thanks": "Ringraziamenti speciali",
+        "community_thanks": "Un grande grazie ai meravigliosi membri della community che aiutano a mantenere aggiornata questa lista."
     }
 }

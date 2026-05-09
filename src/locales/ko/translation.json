@@ -703,7 +703,8 @@
             "ajita": "이온 회전에 필수. 거대한 치유와 팀 전체 지능 버프.",
             "lily": "F2P 친화적이지만 S-Tier 파워. 훌륭한 광역 공격과 능력 둔화.",
             "killer_bee": "엘리트 키네틱 공격수. 높은 물리 데미지에 집중."
-        }
+        },
+        "key_strategy": "핵심 전략"
     },
     "flagships": {
         "title": "기함 전술",
@@ -916,7 +917,12 @@
         "col_total_zero": "총(0→X)",
         "col_from_current": "현재로부터",
         "all_systems": "모든 시스템",
-        "toggle_menu": "탐색 메뉴 토글"
+        "toggle_menu": "탐색 메뉴 토글",
+        "tab_build_time": "건설 시간",
+        "tab_champion_upgrade": "챔피언 업그레이드",
+        "tab_nexus": "넥서스",
+        "tab_gvg": "길드 vs 길드",
+        "tab_combat_craft": "전투기 개조"
     },
     "categories_extra": {
         "beginner": "초보자",
@@ -931,6 +937,12 @@
         "expires": "만료",
         "rewards": "보상",
         "how_to_redeem": "사용 방법",
-        "no_codes": "현재 활성 코드가 없습니다. 곧 다시 확인하세요!"
+        "no_codes": "현재 활성 코드가 없습니다. 곧 다시 확인하세요!",
+        "tagline": "이 코드를 게임 내에서 사용하여 무료 보상을 받으세요.",
+        "redeem_intro": "아래 코드 옆의 복사 아이콘을 클릭하세요.",
+        "redeem_steps": "게임 내에서 <1>아바타</1>(왼쪽 상단)를 탭하고 <3>\"설정\"</3>을 선택한 다음 <5>\"기프트 코드\"</5>를 탭하여 붙여넣으세요.",
+        "copy_to_clipboard": "클립보드에 복사",
+        "special_thanks": "특별한 감사",
+        "community_thanks": "이 목록을 최신 상태로 유지하는 데 도움을 주시는 멋진 커뮤니티 구성원들에게 큰 감사를 드립니다."
     }
 }
