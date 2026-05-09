@@ -7,9 +7,11 @@ import { Globe, Check, ChevronDown } from 'lucide-react';
 const LANGS = [
     { code: 'en', label: 'English' },
     { code: 'de', label: 'Deutsch' },
+    { code: 'es', label: 'Español' },
     { code: 'fr', label: 'Français' },
     { code: 'it', label: 'Italiano' },
     { code: 'pl', label: 'Polski' },
+    { code: 'pt', label: 'Português' },
     { code: 'uk', label: 'Українська' },
     { code: 'ja', label: '日本語' },
     { code: 'ko', label: '한국어' },

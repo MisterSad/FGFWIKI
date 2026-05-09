@@ -12,6 +12,8 @@ import zh from './locales/zh/translation.json';
 import pl from './locales/pl/translation.json';
 import it from './locales/it/translation.json';
 import uk from './locales/uk/translation.json';
+import es from './locales/es/translation.json';
+import pt from './locales/pt/translation.json';
 
 const savedLang = typeof window !== 'undefined' ? localStorage.getItem('fgfwiki_lang') : null;
 
@@ -28,15 +30,17 @@ i18n
             zh: { translation: zh },
             pl: { translation: pl },
             it: { translation: it },
-            uk: { translation: uk }
+            uk: { translation: uk },
+            es: { translation: es },
+            pt: { translation: pt }
         },
         // Default to English on first visit. Auto-detection from the browser
         // is intentionally bypassed: the user picks their language explicitly
         // via the language switcher (preference persisted in localStorage).
         lng: savedLang || 'en',
         fallbackLng: 'en',
-        supportedLngs: ['en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk'],
-        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'zh-CN' -> 'zh', 'zh-Hans' -> 'zh', 'pl-PL' -> 'pl', 'uk-UA' -> 'uk'
+        supportedLngs: ['en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt'],
+        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'zh-CN' -> 'zh', 'pt-BR' -> 'pt', 'es-ES' -> 'es', etc.
         detection: {
             order: ['localStorage', 'navigator', 'htmlTag'],
             lookupLocalStorage: 'fgfwiki_lang',
