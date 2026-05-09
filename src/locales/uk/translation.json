@@ -71,7 +71,8 @@
         "title_main": "Кордон",
         "subtitle_1": "Найкращий польовий гайд для Foundation: Galactic Frontier.",
         "subtitle_2": "Стратегії, поради та дані для завоювання галактики.",
-        "cta": "Почати гайд"
+        "cta": "Почати гайд",
+        "creator_badge": "<1>Творець контенту</1> при підтримці <3>FunPlus</3>"
     },
     "categories": {
         "guides": "Гайди",

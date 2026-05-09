@@ -71,7 +71,8 @@
         "title_main": "Frontier",
         "subtitle_1": "Najlepszy przewodnik terenowy do Foundation: Galactic Frontier.",
         "subtitle_2": "Strategie, wskazówki i dane do podboju galaktyki.",
-        "cta": "Rozpocznij poradnik"
+        "cta": "Rozpocznij poradnik",
+        "creator_badge": "<1>Twórca treści</1> sponsorowany przez <3>FunPlus</3>"
     },
     "categories": {
         "guides": "Poradniki",
