@@ -944,5 +944,53 @@
         "copy_to_clipboard": "Копіювати в буфер",
         "special_thanks": "Особлива подяка",
         "community_thanks": "Велика подяка чудовим членам спільноти, які допомагають підтримувати цей список актуальним."
+    },
+    "buildings": {
+        "cat_shipyards": "Верфі",
+        "cat_resources": "Ресурси",
+        "cat_crew": "Екіпаж",
+        "cat_combat": "Бій",
+        "cat_infrastructure": "Інфраструктура",
+        "cat_commerce": "Торгівля",
+        "kinetic_shipyard": "Кінетична верф",
+        "beam_shipyard": "Променева верф",
+        "ion_shipyard": "Іонна верф",
+        "water_circulation": "Система циркуляції води",
+        "smelting_room": "Плавильня",
+        "food_processing": "Зала обробки їжі",
+        "crew_cabin_1_2": "Каюти екіпажу 1 & 2",
+        "recruitment_hall": "Зала рекрутингу",
+        "repair_cabin": "Кабіна ремонту",
+        "grays_quarters": "Квартири Грея",
+        "main_cannon": "Головна гармата",
+        "self_defense_artillery": "Артилерія самооборони",
+        "hangar": "Ангар",
+        "energy_core": "Енергоядро",
+        "engine": "Двигун",
+        "research_center": "Дослідницький центр",
+        "cargo_hold": "Вантажний відсік",
+        "guild_liason_office": "Офіс зв'язку гільдії",
+        "traders_network": "Торгова мережа"
+    },
+    "modifiers": {
+        "home_port": "Домашній порт",
+        "mod_structure_i": "Модульна структура I",
+        "mod_structure_ii": "Модульна структура II",
+        "mod_structure_iii": "Модульна структура III",
+        "mod_structure_iv": "Модульна структура IV",
+        "guild_hectic_i": "(Гільдія) Гарячкова констр. I",
+        "guild_hectic_ii": "(Гільдія) Гарячкова констр. II",
+        "prince_privilege": "Привілей Принца",
+        "avatar_frame": "Рамка аватара",
+        "xarnas_buff": "Бафф сервера Xarnas",
+        "other": "Інше"
+    },
+    "builder_options": {
+        "none": "Немає",
+        "default": "За замовч.",
+        "off": "Вимкнено",
+        "prince_constr_counselor": "Радник з будівництва",
+        "avatar_active_5": "Активний (+5%)",
+        "xarnas_on_10": "Увімкнено (+10%)"
     }
 }

@@ -944,5 +944,53 @@
         "copy_to_clipboard": "Copia negli appunti",
         "special_thanks": "Ringraziamenti speciali",
         "community_thanks": "Un grande grazie ai meravigliosi membri della community che aiutano a mantenere aggiornata questa lista."
+    },
+    "buildings": {
+        "cat_shipyards": "Cantieri",
+        "cat_resources": "Risorse",
+        "cat_crew": "Equipaggio",
+        "cat_combat": "Combattimento",
+        "cat_infrastructure": "Infrastruttura",
+        "cat_commerce": "Commercio",
+        "kinetic_shipyard": "Cantiere cinetico",
+        "beam_shipyard": "Cantiere raggio",
+        "ion_shipyard": "Cantiere ionico",
+        "water_circulation": "Sistema di circolazione idrica",
+        "smelting_room": "Stanza di fusione",
+        "food_processing": "Sala lavorazione alimenti",
+        "crew_cabin_1_2": "Cabine equipaggio 1 & 2",
+        "recruitment_hall": "Sala reclutamento",
+        "repair_cabin": "Cabina riparazioni",
+        "grays_quarters": "Quartieri di Gray",
+        "main_cannon": "Cannone principale",
+        "self_defense_artillery": "Artiglieria di autodifesa",
+        "hangar": "Hangar",
+        "energy_core": "Nucleo energetico",
+        "engine": "Motore",
+        "research_center": "Centro di ricerca",
+        "cargo_hold": "Stiva",
+        "guild_liason_office": "Ufficio di collegamento gilda",
+        "traders_network": "Rete del mercante"
+    },
+    "modifiers": {
+        "home_port": "Porto madre",
+        "mod_structure_i": "Struttura modulare I",
+        "mod_structure_ii": "Struttura modulare II",
+        "mod_structure_iii": "Struttura modulare III",
+        "mod_structure_iv": "Struttura modulare IV",
+        "guild_hectic_i": "(Gilda) Costr. frenetica I",
+        "guild_hectic_ii": "(Gilda) Costr. frenetica II",
+        "prince_privilege": "Privilegio del Principe",
+        "avatar_frame": "Cornice avatar",
+        "xarnas_buff": "Buff server Xarnas",
+        "other": "Altro"
+    },
+    "builder_options": {
+        "none": "Nessuno",
+        "default": "Predefinito",
+        "off": "Spento",
+        "prince_constr_counselor": "Consigliere costruzione",
+        "avatar_active_5": "Attivo (+5%)",
+        "xarnas_on_10": "Acceso (+10%)"
     }
 }

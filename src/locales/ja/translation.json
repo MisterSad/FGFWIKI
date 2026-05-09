@@ -944,5 +944,53 @@
         "copy_to_clipboard": "クリップボードにコピー",
         "special_thanks": "スペシャルサンクス",
         "community_thanks": "このリストを最新の状態に保つのに協力してくれる素晴らしいコミュニティメンバーに大きな感謝を。"
+    },
+    "buildings": {
+        "cat_shipyards": "造船所",
+        "cat_resources": "資源",
+        "cat_crew": "クルー",
+        "cat_combat": "戦闘",
+        "cat_infrastructure": "インフラ",
+        "cat_commerce": "商業",
+        "kinetic_shipyard": "キネティック造船所",
+        "beam_shipyard": "ビーム造船所",
+        "ion_shipyard": "イオン造船所",
+        "water_circulation": "水循環システム",
+        "smelting_room": "製錬室",
+        "food_processing": "食品加工室",
+        "crew_cabin_1_2": "クルーキャビン1 & 2",
+        "recruitment_hall": "採用ホール",
+        "repair_cabin": "修理キャビン",
+        "grays_quarters": "グレイの部屋",
+        "main_cannon": "メインキャノン",
+        "self_defense_artillery": "自衛砲",
+        "hangar": "ハンガー",
+        "energy_core": "エネルギーコア",
+        "engine": "エンジン",
+        "research_center": "研究センター",
+        "cargo_hold": "カーゴホールド",
+        "guild_liason_office": "ギルド連絡事務所",
+        "traders_network": "貿易商ネットワーク"
+    },
+    "modifiers": {
+        "home_port": "ホーム港",
+        "mod_structure_i": "モジュラー構造 I",
+        "mod_structure_ii": "モジュラー構造 II",
+        "mod_structure_iii": "モジュラー構造 III",
+        "mod_structure_iv": "モジュラー構造 IV",
+        "guild_hectic_i": "(ギルド)忙しい建設 I",
+        "guild_hectic_ii": "(ギルド)忙しい建設 II",
+        "prince_privilege": "プリンスの特権",
+        "avatar_frame": "アバターフレーム",
+        "xarnas_buff": "Xarnasサーババフ",
+        "other": "その他"
+    },
+    "builder_options": {
+        "none": "なし",
+        "default": "デフォルト",
+        "off": "オフ",
+        "prince_constr_counselor": "建設顧問",
+        "avatar_active_5": "アクティブ (+5%)",
+        "xarnas_on_10": "オン (+10%)"
     }
 }

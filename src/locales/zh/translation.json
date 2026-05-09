@@ -944,5 +944,53 @@
         "copy_to_clipboard": "复制到剪贴板",
         "special_thanks": "特别鸣谢",
         "community_thanks": "非常感谢帮助维护此列表的优秀社区成员。"
+    },
+    "buildings": {
+        "cat_shipyards": "造船厂",
+        "cat_resources": "资源",
+        "cat_crew": "船员",
+        "cat_combat": "战斗",
+        "cat_infrastructure": "基础设施",
+        "cat_commerce": "商业",
+        "kinetic_shipyard": "动能造船厂",
+        "beam_shipyard": "光束造船厂",
+        "ion_shipyard": "离子造船厂",
+        "water_circulation": "水循环系统",
+        "smelting_room": "冶炼室",
+        "food_processing": "食品加工室",
+        "crew_cabin_1_2": "船员舱 1 & 2",
+        "recruitment_hall": "招募大厅",
+        "repair_cabin": "维修舱",
+        "grays_quarters": "格雷的居所",
+        "main_cannon": "主炮",
+        "self_defense_artillery": "自卫炮",
+        "hangar": "机库",
+        "energy_core": "能量核心",
+        "engine": "引擎",
+        "research_center": "研究中心",
+        "cargo_hold": "货舱",
+        "guild_liason_office": "公会联络办公室",
+        "traders_network": "贸易商网络"
+    },
+    "modifiers": {
+        "home_port": "母港",
+        "mod_structure_i": "模块化结构 I",
+        "mod_structure_ii": "模块化结构 II",
+        "mod_structure_iii": "模块化结构 III",
+        "mod_structure_iv": "模块化结构 IV",
+        "guild_hectic_i": "(公会) 忙碌建造 I",
+        "guild_hectic_ii": "(公会) 忙碌建造 II",
+        "prince_privilege": "王子特权",
+        "avatar_frame": "头像框",
+        "xarnas_buff": "Xarnas 服务器加成",
+        "other": "其他"
+    },
+    "builder_options": {
+        "none": "无",
+        "default": "默认",
+        "off": "关闭",
+        "prince_constr_counselor": "建造顾问",
+        "avatar_active_5": "激活 (+5%)",
+        "xarnas_on_10": "开启 (+10%)"
     }
 }

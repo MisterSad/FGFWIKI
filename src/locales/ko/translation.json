@@ -944,5 +944,53 @@
         "copy_to_clipboard": "클립보드에 복사",
         "special_thanks": "특별한 감사",
         "community_thanks": "이 목록을 최신 상태로 유지하는 데 도움을 주시는 멋진 커뮤니티 구성원들에게 큰 감사를 드립니다."
+    },
+    "buildings": {
+        "cat_shipyards": "조선소",
+        "cat_resources": "자원",
+        "cat_crew": "승무원",
+        "cat_combat": "전투",
+        "cat_infrastructure": "인프라",
+        "cat_commerce": "상업",
+        "kinetic_shipyard": "키네틱 조선소",
+        "beam_shipyard": "빔 조선소",
+        "ion_shipyard": "이온 조선소",
+        "water_circulation": "물 순환 시스템",
+        "smelting_room": "제련실",
+        "food_processing": "식품 가공실",
+        "crew_cabin_1_2": "승무원 캐빈 1 & 2",
+        "recruitment_hall": "모집 홀",
+        "repair_cabin": "수리 캐빈",
+        "grays_quarters": "그레이의 거처",
+        "main_cannon": "메인 캐논",
+        "self_defense_artillery": "자기 방어 포병",
+        "hangar": "격납고",
+        "energy_core": "에너지 코어",
+        "engine": "엔진",
+        "research_center": "연구 센터",
+        "cargo_hold": "화물칸",
+        "guild_liason_office": "길드 연락 사무소",
+        "traders_network": "상인 네트워크"
+    },
+    "modifiers": {
+        "home_port": "홈 항구",
+        "mod_structure_i": "모듈식 구조 I",
+        "mod_structure_ii": "모듈식 구조 II",
+        "mod_structure_iii": "모듈식 구조 III",
+        "mod_structure_iv": "모듈식 구조 IV",
+        "guild_hectic_i": "(길드) 분주한 건설 I",
+        "guild_hectic_ii": "(길드) 분주한 건설 II",
+        "prince_privilege": "왕자 특권",
+        "avatar_frame": "아바타 프레임",
+        "xarnas_buff": "Xarnas 서버 버프",
+        "other": "기타"
+    },
+    "builder_options": {
+        "none": "없음",
+        "default": "기본값",
+        "off": "꺼짐",
+        "prince_constr_counselor": "건설 자문관",
+        "avatar_active_5": "활성 (+5%)",
+        "xarnas_on_10": "켜짐 (+10%)"
     }
 }

@@ -944,5 +944,53 @@
         "copy_to_clipboard": "Kopiuj do schowka",
         "special_thanks": "Specjalne podziękowania",
         "community_thanks": "Wielkie podziękowania dla wspaniałych członków społeczności, którzy pomagają w aktualizacji tej listy."
+    },
+    "buildings": {
+        "cat_shipyards": "Stocznie",
+        "cat_resources": "Zasoby",
+        "cat_crew": "Załoga",
+        "cat_combat": "Walka",
+        "cat_infrastructure": "Infrastruktura",
+        "cat_commerce": "Handel",
+        "kinetic_shipyard": "Stocznia kinetyczna",
+        "beam_shipyard": "Stocznia wiązki",
+        "ion_shipyard": "Stocznia jonowa",
+        "water_circulation": "System obiegu wody",
+        "smelting_room": "Hutnia",
+        "food_processing": "Sala przetwarzania żywności",
+        "crew_cabin_1_2": "Kabiny załogi 1 & 2",
+        "recruitment_hall": "Sala rekrutacji",
+        "repair_cabin": "Kabina napraw",
+        "grays_quarters": "Kwatery Graya",
+        "main_cannon": "Główne działo",
+        "self_defense_artillery": "Artyleria samoobrony",
+        "hangar": "Hangar",
+        "energy_core": "Rdzeń energetyczny",
+        "engine": "Silnik",
+        "research_center": "Centrum badań",
+        "cargo_hold": "Ładownia",
+        "guild_liason_office": "Biuro łącznikowe gildii",
+        "traders_network": "Sieć handlowa"
+    },
+    "modifiers": {
+        "home_port": "Port macierzysty",
+        "mod_structure_i": "Struktura modułowa I",
+        "mod_structure_ii": "Struktura modułowa II",
+        "mod_structure_iii": "Struktura modułowa III",
+        "mod_structure_iv": "Struktura modułowa IV",
+        "guild_hectic_i": "(Gildia) Gorączkowa konstr. I",
+        "guild_hectic_ii": "(Gildia) Gorączkowa konstr. II",
+        "prince_privilege": "Przywilej Księcia",
+        "avatar_frame": "Ramka awatara",
+        "xarnas_buff": "Buff serwera Xarnas",
+        "other": "Inne"
+    },
+    "builder_options": {
+        "none": "Brak",
+        "default": "Domyślnie",
+        "off": "Wyłączony",
+        "prince_constr_counselor": "Doradca konstrukcji",
+        "avatar_active_5": "Aktywny (+5%)",
+        "xarnas_on_10": "Włączony (+10%)"
     }
 }

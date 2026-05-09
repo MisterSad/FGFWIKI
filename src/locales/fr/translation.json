@@ -944,5 +944,53 @@
         "copy_to_clipboard": "Copier dans le presse-papiers",
         "special_thanks": "Remerciements particuliers",
         "community_thanks": "Un grand merci aux membres formidables de la communauté qui aident à maintenir cette liste à jour."
+    },
+    "buildings": {
+        "cat_shipyards": "Chantiers navals",
+        "cat_resources": "Ressources",
+        "cat_crew": "Équipage",
+        "cat_combat": "Combat",
+        "cat_infrastructure": "Infrastructure",
+        "cat_commerce": "Commerce",
+        "kinetic_shipyard": "Chantier cinétique",
+        "beam_shipyard": "Chantier faisceau",
+        "ion_shipyard": "Chantier ionique",
+        "water_circulation": "Système de circulation d'eau",
+        "smelting_room": "Salle de fonderie",
+        "food_processing": "Salle de traitement alimentaire",
+        "crew_cabin_1_2": "Cabines d'équipage 1 & 2",
+        "recruitment_hall": "Hall de recrutement",
+        "repair_cabin": "Cabine de réparation",
+        "grays_quarters": "Quartiers de Gray",
+        "main_cannon": "Canon principal",
+        "self_defense_artillery": "Artillerie défensive",
+        "hangar": "Hangar",
+        "energy_core": "Noyau énergétique",
+        "engine": "Moteur",
+        "research_center": "Centre de recherche",
+        "cargo_hold": "Cale de cargaison",
+        "guild_liason_office": "Bureau de liaison de guilde",
+        "traders_network": "Réseau du marchand"
+    },
+    "modifiers": {
+        "home_port": "Port d'attache",
+        "mod_structure_i": "Structure modulaire I",
+        "mod_structure_ii": "Structure modulaire II",
+        "mod_structure_iii": "Structure modulaire III",
+        "mod_structure_iv": "Structure modulaire IV",
+        "guild_hectic_i": "(Guilde) Constr. accélérée I",
+        "guild_hectic_ii": "(Guilde) Constr. accélérée II",
+        "prince_privilege": "Privilège du Prince",
+        "avatar_frame": "Cadre d'avatar",
+        "xarnas_buff": "Buff serveur Xarnas",
+        "other": "Autre"
+    },
+    "builder_options": {
+        "none": "Aucun",
+        "default": "Par défaut",
+        "off": "Désactivé",
+        "prince_constr_counselor": "Conseiller construction",
+        "avatar_active_5": "Actif (+5%)",
+        "xarnas_on_10": "Activé (+10%)"
     }
 }

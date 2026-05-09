@@ -1,24 +1,50 @@
+// Building IDs are kept in English (used as data lookup keys in BUILD_TIME_DATA / ESTIMATED_FLAGS).
+// Display labels go through i18n via BUILDING_LABEL_KEYS / `labelKey` fields and are resolved with t() in components.
+
 export const BUILDING_CATEGORIES = [
-  { label: "Shipyards", buildings: ["Kinetic Shipyard", "Beam Shipyard", "Ion Shipyard"] },
-  { label: "Resources", buildings: ["Water Circulation System", "Smelting Room", "Food Processing Room"] },
-  { label: "Crew", buildings: ["Crew Cabin 1 & 2", "Recruitment Hall", "Repair Cabin", "Gray's Quarters"] },
-  { label: "Combat", buildings: ["Main Cannon", "Self-Defense Artillery", "Hangar"] },
-  { label: "Infrastructure", buildings: ["Energy Core", "Engine", "Research Center", "Cargo Hold"] },
-  { label: "Commerce", buildings: ["Guild Liason Office", "Trader's Network"] },
+  { categoryKey: "buildings.cat_shipyards", buildings: ["Kinetic Shipyard", "Beam Shipyard", "Ion Shipyard"] },
+  { categoryKey: "buildings.cat_resources", buildings: ["Water Circulation System", "Smelting Room", "Food Processing Room"] },
+  { categoryKey: "buildings.cat_crew", buildings: ["Crew Cabin 1 & 2", "Recruitment Hall", "Repair Cabin", "Gray's Quarters"] },
+  { categoryKey: "buildings.cat_combat", buildings: ["Main Cannon", "Self-Defense Artillery", "Hangar"] },
+  { categoryKey: "buildings.cat_infrastructure", buildings: ["Energy Core", "Engine", "Research Center", "Cargo Hold"] },
+  { categoryKey: "buildings.cat_commerce", buildings: ["Guild Liason Office", "Trader's Network"] },
 ];
 
+// Maps the internal English ID to its i18n key. Components call t(BUILDING_LABEL_KEYS[id]) to render.
+export const BUILDING_LABEL_KEYS = {
+  "Kinetic Shipyard": "buildings.kinetic_shipyard",
+  "Beam Shipyard": "buildings.beam_shipyard",
+  "Ion Shipyard": "buildings.ion_shipyard",
+  "Water Circulation System": "buildings.water_circulation",
+  "Smelting Room": "buildings.smelting_room",
+  "Food Processing Room": "buildings.food_processing",
+  "Crew Cabin 1 & 2": "buildings.crew_cabin_1_2",
+  "Recruitment Hall": "buildings.recruitment_hall",
+  "Repair Cabin": "buildings.repair_cabin",
+  "Gray's Quarters": "buildings.grays_quarters",
+  "Main Cannon": "buildings.main_cannon",
+  "Self-Defense Artillery": "buildings.self_defense_artillery",
+  "Hangar": "buildings.hangar",
+  "Energy Core": "buildings.energy_core",
+  "Engine": "buildings.engine",
+  "Research Center": "buildings.research_center",
+  "Cargo Hold": "buildings.cargo_hold",
+  "Guild Liason Office": "buildings.guild_liason_office",
+  "Trader's Network": "buildings.traders_network",
+};
+
 export const BUILD_SPEED_MODIFIERS = [
-  { id: "homePort", label: "Home Port", type: "level", max: 9, values: [0, 0.89, 1.78, 2.67, 3.56, 4.44, 5.33, 6.22, 7.11, 8.00] },
-  { id: "modI", label: "Modular Structure I", type: "level", max: 3, values: [0, 0.5, 1, 1.5] },
-  { id: "modII", label: "Modular Structure II", type: "level", max: 3, values: [0, 1, 2, 3] },
-  { id: "modIII", label: "Modular Structure III", type: "level", max: 4, values: [0, 1.5, 3, 4.5, 6] },
-  { id: "modIV", label: "Modular Structure IV", type: "level", max: 5, values: [0, 1.9, 3.8, 5.7, 7.6, 9.5] },
-  { id: "gh1", label: "(Guild) Hectic Constr. I", type: "level", max: 5, values: [0, 1, 2, 3, 4, 5] },
-  { id: "gh2", label: "(Guild) Hectic Constr. II", type: "level", max: 5, values: [0, 1, 2, 3, 4, 5] },
-  { id: "prince", label: "Prince Privilege", type: "toggle", opts: [{ l: "None", v: 0 }, { l: "Constr. Counselor", v: 20 }] },
-  { id: "avatar", label: "Avatar Frame", type: "toggle", opts: [{ l: "Default", v: 0 }, { l: "Active (+5%)", v: 5 }] },
-  { id: "xarnas", label: "Xarnas Server Buff", type: "toggle", opts: [{ l: "Off", v: 0 }, { l: "On (+10%)", v: 10 }] },
-  { id: "other", label: "Other", type: "custom", def: 0 },
+  { id: "homePort", labelKey: "modifiers.home_port", type: "level", max: 9, values: [0, 0.89, 1.78, 2.67, 3.56, 4.44, 5.33, 6.22, 7.11, 8.00] },
+  { id: "modI", labelKey: "modifiers.mod_structure_i", type: "level", max: 3, values: [0, 0.5, 1, 1.5] },
+  { id: "modII", labelKey: "modifiers.mod_structure_ii", type: "level", max: 3, values: [0, 1, 2, 3] },
+  { id: "modIII", labelKey: "modifiers.mod_structure_iii", type: "level", max: 4, values: [0, 1.5, 3, 4.5, 6] },
+  { id: "modIV", labelKey: "modifiers.mod_structure_iv", type: "level", max: 5, values: [0, 1.9, 3.8, 5.7, 7.6, 9.5] },
+  { id: "gh1", labelKey: "modifiers.guild_hectic_i", type: "level", max: 5, values: [0, 1, 2, 3, 4, 5] },
+  { id: "gh2", labelKey: "modifiers.guild_hectic_ii", type: "level", max: 5, values: [0, 1, 2, 3, 4, 5] },
+  { id: "prince", labelKey: "modifiers.prince_privilege", type: "toggle", opts: [{ lKey: "builder_options.none", v: 0 }, { lKey: "builder_options.prince_constr_counselor", v: 20 }] },
+  { id: "avatar", labelKey: "modifiers.avatar_frame", type: "toggle", opts: [{ lKey: "builder_options.default", v: 0 }, { lKey: "builder_options.avatar_active_5", v: 5 }] },
+  { id: "xarnas", labelKey: "modifiers.xarnas_buff", type: "toggle", opts: [{ lKey: "builder_options.off", v: 0 }, { lKey: "builder_options.xarnas_on_10", v: 10 }] },
+  { id: "other", labelKey: "modifiers.other", type: "custom", def: 0 },
 ];
 
 const SHIPYARD_TIMES = { 1: 3, 2: 5, 3: 20, 4: 60, 5: 170, 6: 650, 7: 1950, 8: 3500, 9: 5250, 10: 7240, 11: 9107, 12: 11491, 13: 14479, 14: 18817, 15: 25770, 16: 35307, 17: 48510, 18: 66490, 19: 93780, 20: 118200, 21: 148990, 22: 187810, 23: 236730, 24: 307860, 25: 354200, 26: 407500, 27: 468830, 28: 539390, 29: 642140 };

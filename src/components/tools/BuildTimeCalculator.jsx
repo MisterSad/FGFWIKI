@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
-import { BUILDING_CATEGORIES, BUILD_SPEED_MODIFIERS, BUILD_TIME_DATA, ESTIMATED_FLAGS } from '../../data/builderData';
+import { BUILDING_CATEGORIES, BUILDING_LABEL_KEYS, BUILD_SPEED_MODIFIERS, BUILD_TIME_DATA, ESTIMATED_FLAGS } from '../../data/builderData';
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
 import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
@@ -12,11 +12,12 @@ function parseTimeStr(str) { if (!str?.trim()) return 0; const p = str.trim().sp
 function getModPct(mod, val) { if (mod.type === "level") return mod.values[val] || 0; if (mod.type === "toggle") return mod.opts[val].v; return val || 0 }
 
 function ModRow({ mod, value, onChange }) {
+    const { t } = useTranslation();
     const pct = getModPct(mod, value);
     return (
         <div style={{ padding: "10px 0", borderBottom: "1px solid rgba(201,168,76,0.06)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
-                <span style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 500, color: V.txPri, letterSpacing: 0.3 }}>{mod.label}</span>
+                <span style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 500, color: V.txPri, letterSpacing: 0.3 }}>{t(mod.labelKey)}</span>
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#FFFFFF", letterSpacing: 1 }}>{mod.type === "custom" ? `${value}%` : `${pct.toFixed(1)}%`}</span>
             </div>
             {mod.type === "level" && <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
@@ -24,7 +25,7 @@ function ModRow({ mod, value, onChange }) {
                 <span style={{ fontFamily: "var(--font-label)", fontSize: 9, fontWeight: 500, color: V.txSec, letterSpacing: 2, background: "rgba(201,168,76,0.08)", padding: "3px 10px", borderRadius: 2, minWidth: 48, textAlign: "center" }}>LV.{value}</span>
             </div>}
             {mod.type === "toggle" && <div style={{ display: "flex", gap: 4 }}>
-                {mod.opts.map((o, i) => <button key={i} onClick={() => onChange(i)} style={{ fontFamily: "var(--font-body)", fontSize: 14, fontWeight: 500, padding: "5px 14px", border: `1px solid ${value === i ? V.borderHov : V.border}`, borderRadius: 2, background: value === i ? "rgba(201,168,76,0.12)" : "transparent", color: value === i ? "#FFFFFF" : V.txDim, cursor: "pointer", transition: "all 0.3s ease-out" }}>{o.l}</button>)}
+                {mod.opts.map((o, i) => <button key={i} onClick={() => onChange(i)} style={{ fontFamily: "var(--font-body)", fontSize: 14, fontWeight: 500, padding: "5px 14px", border: `1px solid ${value === i ? V.borderHov : V.border}`, borderRadius: 2, background: value === i ? "rgba(201,168,76,0.12)" : "transparent", color: value === i ? "#FFFFFF" : V.txDim, cursor: "pointer", transition: "all 0.3s ease-out" }}>{t(o.lKey)}</button>)}
             </div>}
             {mod.type === "custom" && <input type="number" min={0} max={100} step={0.5} value={value} onChange={e => onChange(+e.target.value || 0)} style={{ fontFamily: "var(--font-mono)", fontSize: 13, padding: "6px 10px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, color: "#FFFFFF", outline: "none", width: 80 }} />}
         </div>
@@ -110,7 +111,7 @@ export default function BuildTimeCalculator() {
     const buildRes = useMemo(() => {
         if (!baseTime) return null;
         const flatR = cabin1 * 147 + cabin2 * 126; let totalPct = 0; const bk = [];
-        BUILD_SPEED_MODIFIERS.forEach(m => { const p = getModPct(m, bMods[m.id]); totalPct += p; if (p > 0) bk.push({ label: m.label, pct: p }) });
+        BUILD_SPEED_MODIFIERS.forEach(m => { const p = getModPct(m, bMods[m.id]); totalPct += p; if (p > 0) bk.push({ labelKey: m.labelKey, pct: p }) });
         const sf = totalPct / 100; const presented = baseTime / (1 + sf) - flatR; const afterInit = baseTime / (1 + sf + crewBonus / 100) - flatR;
         const indiv = bk.map(b => ({ ...b, red: baseTime * (b.pct / 100) / (1 + sf) }));
         return { baseTime, flatR, totalPct, presented: Math.max(0, presented), afterInit: Math.max(0, afterInit), indiv };
@@ -126,7 +127,7 @@ export default function BuildTimeCalculator() {
                     <div style={{ flex: "1 1 220px" }}>
                         <Label>{t('tools_ui.building')}</Label>
                         <select value={building} onChange={e => { setBuilding(e.target.value); setManualTime(""); const firstLevel = Object.keys(BUILD_TIME_DATA[e.target.value]).map(Number).sort((a, b) => a - b)[0]; setLevelFrom(firstLevel || 1); }} style={{ fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 600, padding: "10px 14px", background: "rgba(0,0,0,.4)", border: `1px solid ${V.border}`, borderRadius: 2, color: V.txPri, outline: "none", width: "100%", cursor: "pointer" }}>
-                            {BUILDING_CATEGORIES.map(c => <optgroup key={c.label} label={c.label}>{c.buildings.map(b => <option key={b} value={b}>{b}</option>)}</optgroup>)}
+                            {BUILDING_CATEGORIES.map(c => <optgroup key={c.categoryKey} label={t(c.categoryKey)}>{c.buildings.map(b => <option key={b} value={b}>{t(BUILDING_LABEL_KEYS[b] || b)}</option>)}</optgroup>)}
                         </select>
                     </div>
                     <div style={{ flex: "0 0 130px" }}>
@@ -215,7 +216,7 @@ export default function BuildTimeCalculator() {
                     <summary style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, color: V.txDim, cursor: "pointer", padding: "8px 0", textTransform: "uppercase" }}>{t('tools_ui.reduction_breakdown')}</summary>
                     <div style={{ marginTop: 10 }}>{buildRes.indiv.map((r, i) => (
                         <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "5px 0", borderBottom: "1px solid rgba(201,168,76,0.05)", fontFamily: "var(--font-body)", fontSize: 16, color: V.txSec, letterSpacing: 0.3 }}>
-                            <span>{r.label}</span>
+                            <span>{t(r.labelKey)}</span>
                             <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#FFFFFF", letterSpacing: 1 }}>{r.pct.toFixed(1)}% → -{fmtTime(r.red)}</span>
                         </div>
                     ))}</div>

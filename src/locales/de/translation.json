@@ -944,5 +944,53 @@
         "copy_to_clipboard": "In Zwischenablage kopieren",
         "special_thanks": "Besonderer Dank",
         "community_thanks": "Ein großes Dankeschön an die fantastischen Community-Mitglieder, die diese Liste aktuell halten."
+    },
+    "buildings": {
+        "cat_shipyards": "Werften",
+        "cat_resources": "Ressourcen",
+        "cat_crew": "Crew",
+        "cat_combat": "Kampf",
+        "cat_infrastructure": "Infrastruktur",
+        "cat_commerce": "Handel",
+        "kinetic_shipyard": "Kinetik-Werft",
+        "beam_shipyard": "Strahl-Werft",
+        "ion_shipyard": "Ionen-Werft",
+        "water_circulation": "Wasserzirkulationssystem",
+        "smelting_room": "Schmelzraum",
+        "food_processing": "Nahrungsverarbeitungsraum",
+        "crew_cabin_1_2": "Crew-Kabine 1 & 2",
+        "recruitment_hall": "Rekrutierungshalle",
+        "repair_cabin": "Reparaturkabine",
+        "grays_quarters": "Grays Quartier",
+        "main_cannon": "Hauptkanone",
+        "self_defense_artillery": "Selbstverteidigungsartillerie",
+        "hangar": "Hangar",
+        "energy_core": "Energiekern",
+        "engine": "Antrieb",
+        "research_center": "Forschungszentrum",
+        "cargo_hold": "Frachtraum",
+        "guild_liason_office": "Gildenverbindungsbüro",
+        "traders_network": "Händlernetzwerk"
+    },
+    "modifiers": {
+        "home_port": "Heimathafen",
+        "mod_structure_i": "Modulare Struktur I",
+        "mod_structure_ii": "Modulare Struktur II",
+        "mod_structure_iii": "Modulare Struktur III",
+        "mod_structure_iv": "Modulare Struktur IV",
+        "guild_hectic_i": "(Gilde) Hektische Konstr. I",
+        "guild_hectic_ii": "(Gilde) Hektische Konstr. II",
+        "prince_privilege": "Prinzen-Privileg",
+        "avatar_frame": "Avatar-Rahmen",
+        "xarnas_buff": "Xarnas-Server-Buff",
+        "other": "Sonstiges"
+    },
+    "builder_options": {
+        "none": "Keine",
+        "default": "Standard",
+        "off": "Aus",
+        "prince_constr_counselor": "Konstruktionsberater",
+        "avatar_active_5": "Aktiv (+5%)",
+        "xarnas_on_10": "An (+10%)"
     }
 }

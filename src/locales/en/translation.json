@@ -944,5 +944,53 @@
         "copy_to_clipboard": "Copy to clipboard",
         "special_thanks": "Special Thanks",
         "community_thanks": "A big thank you to the amazing community members who help keep this list updated."
+    },
+    "buildings": {
+        "cat_shipyards": "Shipyards",
+        "cat_resources": "Resources",
+        "cat_crew": "Crew",
+        "cat_combat": "Combat",
+        "cat_infrastructure": "Infrastructure",
+        "cat_commerce": "Commerce",
+        "kinetic_shipyard": "Kinetic Shipyard",
+        "beam_shipyard": "Beam Shipyard",
+        "ion_shipyard": "Ion Shipyard",
+        "water_circulation": "Water Circulation System",
+        "smelting_room": "Smelting Room",
+        "food_processing": "Food Processing Room",
+        "crew_cabin_1_2": "Crew Cabin 1 & 2",
+        "recruitment_hall": "Recruitment Hall",
+        "repair_cabin": "Repair Cabin",
+        "grays_quarters": "Gray's Quarters",
+        "main_cannon": "Main Cannon",
+        "self_defense_artillery": "Self-Defense Artillery",
+        "hangar": "Hangar",
+        "energy_core": "Energy Core",
+        "engine": "Engine",
+        "research_center": "Research Center",
+        "cargo_hold": "Cargo Hold",
+        "guild_liason_office": "Guild Liason Office",
+        "traders_network": "Trader's Network"
+    },
+    "modifiers": {
+        "home_port": "Home Port",
+        "mod_structure_i": "Modular Structure I",
+        "mod_structure_ii": "Modular Structure II",
+        "mod_structure_iii": "Modular Structure III",
+        "mod_structure_iv": "Modular Structure IV",
+        "guild_hectic_i": "(Guild) Hectic Constr. I",
+        "guild_hectic_ii": "(Guild) Hectic Constr. II",
+        "prince_privilege": "Prince Privilege",
+        "avatar_frame": "Avatar Frame",
+        "xarnas_buff": "Xarnas Server Buff",
+        "other": "Other"
+    },
+    "builder_options": {
+        "none": "None",
+        "default": "Default",
+        "off": "Off",
+        "prince_constr_counselor": "Constr. Counselor",
+        "avatar_active_5": "Active (+5%)",
+        "xarnas_on_10": "On (+10%)"
     }
 }
