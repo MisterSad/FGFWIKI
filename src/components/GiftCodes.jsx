@@ -165,9 +165,9 @@ export default function GiftCodes() {
 
             {/* Contributors Section */}
             <div style={{
-                marginTop: '4rem',
+                marginTop: 'clamp(2rem, 6vw, 4rem)',
                 textAlign: 'center',
-                padding: '2rem',
+                padding: 'clamp(1rem, 4vw, 2rem)',
                 background: 'linear-gradient(135deg, rgba(201,168,76,0.05), rgba(0,0,0,0.2))',
                 border: '1px solid var(--border)',
                 borderRadius: '12px',

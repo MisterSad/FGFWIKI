@@ -22,7 +22,7 @@ export default function TipCard({ tip }) {
         <div className="card reveal" style={{
             display: 'flex',
             flexDirection: 'column',
-            padding: '2rem',
+            padding: 'clamp(1rem, 4vw, 2rem)',
             height: '100%',
             boxSizing: 'border-box',
             cursor: tip.hasDetails ? 'pointer' : 'default'

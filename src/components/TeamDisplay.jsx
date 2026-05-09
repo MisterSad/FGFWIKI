@@ -109,9 +109,9 @@ export default function TeamDisplay({ deck, isGround = false }) {
     };
 
     return (
-        <div className="glass-panel" style={{ padding: '2rem', marginBottom: '2rem' }}>
+        <div className="glass-panel" style={{ padding: 'clamp(1rem, 4vw, 2rem)', marginBottom: '2rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
-                <h3 style={{ margin: 0, fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <h3 style={{ margin: 0, fontSize: 'clamp(1.1rem, 3vw, 1.5rem)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     {getIcon()}
                     {t(deck.title)}
                 </h3>
@@ -133,7 +133,7 @@ export default function TeamDisplay({ deck, isGround = false }) {
 
             {/* Ship Slots Layout (Flagship Left + 1 -> 2 -> 3) */}
             {!isGround && (
-                <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: 'clamp(1rem, 3vw, 2rem)', alignItems: 'flex-start', flexWrap: 'wrap', justifyContent: 'center' }}>
 
                     {/* Flagship SVG Placeholder */}
                     <div style={{
@@ -171,7 +171,7 @@ export default function TeamDisplay({ deck, isGround = false }) {
                     </div>
 
                     {/* Heroes Grid */}
-                    <div style={{ flex: 1, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+                    <div style={{ flex: '1 1 280px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(160px, 100%), 1fr))', gap: '1rem' }}>
                         {deck.slots.map((slot, idx) => (
                             <CyclingHeroSlot key={idx} slot={slot} idx={idx} t={t} />
                         ))}
@@ -181,7 +181,7 @@ export default function TeamDisplay({ deck, isGround = false }) {
 
             {/* Ground Team Layout (Card Style with Images or SVG Fallback) */}
             {isGround && (
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1.5rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(120px, 100%), 1fr))', gap: 'clamp(0.75rem, 2.5vw, 1.5rem)' }}>
                     {deck.members.map((member, idx) => {
                         const [imageError, setImageError] = React.useState(false);
                         return (

@@ -92,8 +92,8 @@ export default function DailyChecklist() {
             background: 'var(--bg-void)',
             border: '1px solid var(--border)',
             borderTop: '2px solid var(--accent-teal)',
-            padding: '1.5rem',
-            marginBottom: '3rem',
+            padding: 'clamp(1rem, 3vw, 1.5rem)',
+            marginBottom: 'clamp(1.5rem, 5vw, 3rem)',
             position: 'relative',
             overflow: 'hidden'
         }}>
@@ -109,11 +109,13 @@ export default function DailyChecklist() {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                marginBottom: '1.5rem'
+                marginBottom: '1.5rem',
+                flexWrap: 'wrap',
+                gap: '0.75rem'
             }}>
                 <h2 style={{
                     fontFamily: 'var(--font-hero)',
-                    fontSize: '1.5rem',
+                    fontSize: 'clamp(1.1rem, 3vw, 1.5rem)',
                     color: 'var(--accent-teal)',
                     display: 'flex',
                     alignItems: 'center',

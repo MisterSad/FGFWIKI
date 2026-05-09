@@ -67,10 +67,11 @@ export default function LoginModal({ isOpen, onClose }) {
         }}>
             <div className="glass-panel" style={{
                 position: 'relative', width: '100%', maxWidth: '400px',
-                padding: '2rem', border: '1px solid var(--gold)',
+                padding: 'clamp(1.25rem, 5vw, 2rem)', border: '1px solid var(--gold)',
                 boxShadow: '0 0 50px rgba(0, 0, 0, 0.5)',
-                maxHeight: 'calc(100vh - 2rem)',
+                maxHeight: 'calc(100dvh - 2rem)',
                 overflowY: 'auto',
+                overscrollBehavior: 'contain',
                 boxSizing: 'border-box'
             }}>
                 <button

@@ -73,7 +73,7 @@ export default function Builder() {
       `}</style>
 
             {/* Header */}
-            <header style={{ position: "relative", zIndex: 1, padding: "48px 20px 24px", textAlign: "center" }}>
+            <header style={{ position: "relative", zIndex: 1, padding: "clamp(20px, 5vw, 48px) clamp(12px, 4vw, 20px) clamp(16px, 3vw, 24px)", textAlign: "center" }}>
                 <div style={{ position: "relative", display: "inline-block" }}>
                     <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 500, height: 500, background: "radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%)", pointerEvents: "none" }} />
                     <h1 className="guide-title text-gradient" style={{ fontFamily: "var(--font-hero)", fontSize: "clamp(18px,4vw,28px)", fontWeight: 800, letterSpacing: 6, margin: 0, textTransform: "uppercase", position: "relative", animation: "titleReveal 1.2s ease-out" }}>

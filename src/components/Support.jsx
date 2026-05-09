@@ -57,7 +57,7 @@ export default function Support() {
                     background: 'var(--bg-elevated)',
                     border: '1px solid var(--border)',
                     borderRadius: '12px',
-                    padding: '2rem',
+                    padding: 'clamp(1rem, 4vw, 2rem)',
                     overflow: 'hidden'
                 }}>
                     <div className="scan-line" />
@@ -157,7 +157,7 @@ export default function Support() {
                     background: 'var(--bg-elevated)',
                     border: '1px solid var(--border)',
                     borderRadius: '12px',
-                    padding: '2rem',
+                    padding: 'clamp(1rem, 4vw, 2rem)',
                     overflow: 'hidden'
                 }}>
                     <div className="scan-line" />
@@ -221,7 +221,7 @@ export default function Support() {
                     background: 'var(--bg-elevated)',
                     border: '1px solid var(--border)',
                     borderRadius: '12px',
-                    padding: '2rem',
+                    padding: 'clamp(1rem, 4vw, 2rem)',
                     overflow: 'hidden'
                 }}>
                     <div className="scan-line" />

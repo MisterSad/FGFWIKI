@@ -60,29 +60,24 @@ export default function Layout({ children, onLoginClick }) {
 
             <footer style={{
                 textAlign: 'center',
-                padding: '4rem 2rem 2rem',
+                padding: 'clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem) clamp(1.5rem, 4vw, 2rem)',
                 color: 'var(--text-dim)',
-                marginTop: '4rem',
+                marginTop: 'clamp(2rem, 6vw, 4rem)',
                 fontFamily: 'var(--font-label)',
                 textTransform: 'uppercase',
-                letterSpacing: '2px',
-                fontSize: '0.8rem'
+                letterSpacing: 'clamp(1px, 0.4vw, 2px)',
+                fontSize: 'clamp(0.65rem, 1.6vw, 0.8rem)'
             }}>
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    gap: '4px',
-                    marginBottom: '2rem'
-                }}>
-                    <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--gold-dim)' }}></div>
-                    <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--gold)' }}></div>
-                    <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--gold-bright)' }}></div>
-                    <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--gold)' }}></div>
-                    <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--bronze)' }}></div>
-                    <div style={{ width: '40px', height: '3px', borderRadius: '1px', background: 'var(--gold-dim)' }}></div>
+                <div className="footer-divider-row">
+                    <div style={{ background: 'var(--gold-dim)' }}></div>
+                    <div style={{ background: 'var(--gold)' }}></div>
+                    <div style={{ background: 'var(--gold-bright)' }}></div>
+                    <div style={{ background: 'var(--gold)' }}></div>
+                    <div style={{ background: 'var(--bronze)' }}></div>
+                    <div style={{ background: 'var(--gold-dim)' }}></div>
                 </div>
 
-                <p style={{ opacity: 0.5 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
+                <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
             </footer>
         </div>
     );

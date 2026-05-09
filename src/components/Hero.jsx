@@ -7,13 +7,13 @@ export default function Hero() {
     return (
         <div className="hero-halo" style={{
             position: 'relative',
-            minHeight: 'calc(100vh - 64px)', /* Full viewport height minus header */
+            minHeight: 'calc(100dvh - var(--header-h) - 60px)', /* dvh = dynamic viewport */
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            paddingTop: '2rem',
-            paddingBottom: '4rem'
+            paddingTop: 'clamp(1rem, 4vw, 2rem)',
+            paddingBottom: 'clamp(2rem, 8vw, 4rem)'
         }}>
 
             <div style={{ textAlign: 'center', zIndex: 1, position: 'relative' }}>

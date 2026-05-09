@@ -19,21 +19,12 @@ const ChampionTierEntry = ({ champion }) => {
     const [imageError, setImageError] = useState(false);
 
     return (
-        <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            background: 'var(--bg-void)',
-            padding: '1.5rem',
-            borderRadius: '4px',
-            border: '1px solid var(--border)',
-            gap: '1.5rem',
-            marginBottom: '1rem'
-        }}>
+        <div className="champion-tier-entry">
             {/* Left: Image + Tier Badge */}
-            <div style={{ position: 'relative', flexShrink: 0 }}>
+            <div className="champion-tier-entry__avatar">
                 <div style={{
-                    width: '72px',
-                    height: '72px',
+                    width: '100%',
+                    height: '100%',
                     borderRadius: '50%',
                     background: 'var(--bg-surface)',
                     border: `2px solid ${getTierColor(champion.tier)}`,
@@ -56,14 +47,14 @@ const ChampionTierEntry = ({ champion }) => {
                 {/* Tier Badge */}
                 <div style={{
                     position: 'absolute',
-                    bottom: '-8px',
-                    right: '-8px',
+                    bottom: '-6px',
+                    right: '-6px',
                     background: getTierColor(champion.tier),
                     color: '#fff',
                     fontWeight: '900',
-                    fontSize: '0.85rem',
-                    padding: '2px 8px',
-                    borderRadius: '12px',
+                    fontSize: '0.8rem',
+                    padding: '2px 7px',
+                    borderRadius: '10px',
                     boxShadow: '0 2px 4px rgba(0,0,0,0.5)',
                     border: '1px solid rgba(255,255,255,0.2)'
                 }}>
@@ -71,21 +62,14 @@ const ChampionTierEntry = ({ champion }) => {
                 </div>
             </div>
 
-            {/* Middle: Name */}
-            <div style={{ flex: '0 0 160px' }}>
-                <h4 style={{ margin: 0, color: 'var(--text-primary)', fontSize: '1.3rem' }}>{champion.name}</h4>
+            <div className="champion-tier-entry__name">
+                <h4 style={{ margin: 0, color: 'var(--text-primary)', fontSize: 'clamp(1rem, 3vw, 1.3rem)' }}>
+                    {champion.name}
+                </h4>
             </div>
 
-            {/* Right: Description Space */}
-            <div style={{
-                flex: 1,
-                borderLeft: '1px dashed var(--border)',
-                paddingLeft: '1.5rem',
-                minHeight: '60px',
-                display: 'flex',
-                alignItems: 'center'
-            }}>
-                <span style={{ color: 'var(--text-dim)', fontStyle: 'italic', fontSize: '1.15rem', lineHeight: '1.5' }}>
+            <div className="champion-tier-entry__desc">
+                <span style={{ color: 'var(--text-dim)', fontStyle: 'italic', fontSize: 'clamp(0.9rem, 2.4vw, 1.15rem)', lineHeight: '1.5' }}>
                     {champion.descKey ? <Trans i18nKey={champion.descKey} /> : null}
                 </span>
             </div>
@@ -143,15 +127,15 @@ export default function ChampionsGuide() {
         <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', color: 'var(--text-main)' }}>
 
             {/* 1. Introduction & Fundamentals */}
-            <div className="card reveal" style={{ padding: '1.5rem', marginBottom: '2rem', borderLeft: '4px solid var(--gold)' }}>
-                <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', fontSize: '1.5rem', color: 'var(--gold-bright)', marginBottom: '1rem', marginTop: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div className="card reveal" style={{ padding: 'clamp(1rem, 3vw, 1.5rem)', marginBottom: '2rem', borderLeft: '4px solid var(--gold)' }}>
+                <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', fontSize: 'clamp(1.1rem, 3vw, 1.5rem)', color: 'var(--gold-bright)', marginBottom: '1rem', marginTop: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Shield size={24} /> {t('champions.fundamentals')}
                 </h2>
                 <div style={{
                     background: 'var(--bg-void)',
                     border: '1px solid var(--border)',
                     borderRadius: '2px',
-                    padding: '2rem',
+                    padding: 'clamp(1rem, 4vw, 2rem)',
                     textAlign: 'center',
                     boxShadow: 'none'
                 }}>
@@ -243,7 +227,7 @@ export default function ChampionsGuide() {
             </div>
 
             {/* 4. Pro Tips */}
-            <div className="card reveal" style={{ transitionDelay: '0.5s', padding: '2rem', border: '1px solid var(--border)', borderTop: '2px solid var(--gold)' }}>
+            <div className="card reveal" style={{ transitionDelay: '0.5s', padding: 'clamp(1rem, 4vw, 2rem)', border: '1px solid var(--border)', borderTop: '2px solid var(--gold)' }}>
                 <h3 style={{ fontFamily: 'var(--font-hero)', color: "#FFFFFF", marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textTransform: 'uppercase' }}>
                     <Zap size={24} /> {t('champions.pro_tips_title')}
                 </h3>

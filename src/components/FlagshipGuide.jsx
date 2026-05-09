@@ -11,25 +11,25 @@ export default function FlagshipGuide() {
         <div className="container" style={{ maxWidth: '1100px', margin: '0 auto', color: 'var(--text-main)' }}>
 
             {/* Header */}
-            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 3rem)' }}>
                 <h2 style={{
                     fontFamily: 'var(--font-hero)',
-                    fontSize: '2.5rem',
+                    fontSize: 'clamp(1.5rem, 5vw, 2.5rem)',
                     color: "#FFFFFF",
                     textTransform: 'uppercase',
-                    letterSpacing: '2px',
+                    letterSpacing: 'clamp(1px, 0.4vw, 2px)',
                     marginBottom: '0.5rem',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem'
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap'
                 }}>
                     <Rocket size={40} /> {t('flagships.title')}
                 </h2>
-                <p style={{ color: 'var(--text-dim)', fontSize: '1.1rem' }}>
+                <p style={{ color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)' }}>
                     {t('flagships.subtitle')}
                 </p>
             </div>
 
             {/* 1. Fundamentals */}
-            <section className="card reveal" style={{ padding: '2rem', marginBottom: '3rem', borderLeft: '4px solid var(--gold)' }}>
+            <section className="card reveal" style={{ padding: 'clamp(1rem, 4vw, 2rem)', marginBottom: 'clamp(2rem, 5vw, 3rem)', borderLeft: '4px solid var(--gold)' }}>
                 <h3 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', fontSize: '1.8rem', color: 'var(--text-primary)', marginBottom: '1.5rem', marginTop: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Shield size={28} /> <span className="label-text">{t('flagships.fundamentals')}</span>
                 </h3>
@@ -157,7 +157,7 @@ export default function FlagshipGuide() {
             </div>
 
             {/* 5. Expert Tips */}
-            <div className="card reveal" style={{ transitionDelay: '0.5s', padding: '2rem', borderTop: '2px solid var(--gold)', border: '1px solid var(--border)', marginBottom: '4rem' }}>
+            <div className="card reveal" style={{ transitionDelay: '0.5s', padding: 'clamp(1rem, 4vw, 2rem)', borderTop: '2px solid var(--gold)', border: '1px solid var(--border)', marginBottom: 'clamp(2rem, 6vw, 4rem)' }}>
                 <h3 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', color: "#FFFFFF", marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Brain size={24} /> <span className="label-text">{t('flagships.expert_tips')}</span>
                 </h3>

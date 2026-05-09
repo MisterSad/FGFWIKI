@@ -10,50 +10,43 @@ export default function Header({ onLoginClick }) {
 
     return (
         <header className="sticky-nav header-container">
+            <div className="header-spacer" aria-hidden="true" />
+
             <div className="header-text-wrapper">
-                <div className="header-title-main">
-                    FOUNDATION
+                <div className="header-title-main" aria-label="FGF Wiki">
+                    <span className="header-title-accent">FGF</span>
+                    <span className="header-title-sep" aria-hidden="true">·</span>
+                    <span className="header-title-base">WIKI</span>
                 </div>
-                <div className="header-title-light">
-                    GALACTIC FRONTIER
-                </div>
-                <div className="header-subtitle">
-                    {t('header_ui.subtitle')}
-                </div>
+                <div className="header-subtitle">{t('header_ui.subtitle')}</div>
             </div>
-            <div className="header-auth-container" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+
+            <div className="header-auth-container">
                 <LanguageSwitcher />
                 {currentUser ? (
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <span style={{
-                            fontSize: '0.8rem', color: 'var(--gold)',
-                            fontFamily: 'var(--font-mono)'
-                        }}>
+                    <>
+                        <span className="header-user-email">
                             {currentUser.email.split('@')[0]}
                         </span>
                         <button
+                            type="button"
                             onClick={logout}
-                            style={{
-                                background: 'transparent', border: '1px solid var(--border)',
-                                color: 'var(--text-dim)', padding: '5px 10px',
-                                borderRadius: '4px', cursor: 'pointer', display: 'flex', alignItems: 'center'
-                            }}
+                            className="header-btn-icon"
                             title={t('header_ui.disconnect')}
+                            aria-label={t('header_ui.disconnect')}
                         >
                             <LogOut size={16} />
                         </button>
-                    </div>
+                    </>
                 ) : (
                     <button
+                        type="button"
                         onClick={onLoginClick}
-                        style={{
-                            background: 'var(--gold)', border: 'none',
-                            color: '#000', padding: '6px 14px',
-                            fontWeight: 'bold', fontFamily: 'var(--font-label)',
-                            borderRadius: '2px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px'
-                        }}
+                        className="header-btn-login"
+                        aria-label={t('header_ui.login')}
                     >
-                        <User size={16} /> {t('header_ui.login')}
+                        <User size={16} />
+                        <span className="header-btn-label">{t('header_ui.login')}</span>
                     </button>
                 )}
             </div>

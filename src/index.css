@@ -65,6 +65,32 @@
   -moz-osx-font-smoothing: grayscale;
   --funplus-orange: #FF4500;
   --funplus-orange-dim: rgba(255, 69, 0, 0.1);
+
+  /* ===== RESPONSIVE TOKENS ===== */
+  /* Fluid spacing (small → large screens) */
+  --space-xs: clamp(4px, 1vw, 8px);
+  --space-sm: clamp(8px, 2vw, 14px);
+  --space-md: clamp(12px, 3vw, 24px);
+  --space-lg: clamp(18px, 4vw, 32px);
+  --space-xl: clamp(24px, 6vw, 48px);
+  --space-2xl: clamp(32px, 8vw, 64px);
+
+  /* Fluid font sizes */
+  --fs-xs: clamp(0.7rem, 1.5vw, 0.8rem);
+  --fs-sm: clamp(0.8rem, 2vw, 0.95rem);
+  --fs-md: clamp(0.95rem, 2.5vw, 1.1rem);
+  --fs-lg: clamp(1.1rem, 3vw, 1.4rem);
+  --fs-xl: clamp(1.3rem, 4vw, 1.8rem);
+  --fs-2xl: clamp(1.6rem, 5vw, 2.5rem);
+
+  /* Header height (fluid) */
+  --header-h: clamp(64px, 11vw, 100px);
+
+  /* Safe areas (iPhone notch / home indicator) */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
 }
 
 ::selection {
@@ -446,43 +472,26 @@ p {
 
 .app-layout {
   min-height: 100vh;
+  min-height: 100dvh;
+  /* dvh = dynamic viewport height (better on mobile) */
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  /* Fixed Navigation Height */
+  padding-top: calc(var(--header-h) + var(--safe-top));
 }
 
-@media (max-width: 600px) {
-  .app-layout {
-    padding-top: 80px;
-  }
-}
-
-/* Fixed Nav / Tabs */
+/* Fixed Nav */
 .sticky-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: calc(var(--header-h) + var(--safe-top));
+  padding-top: var(--safe-top);
   z-index: 90;
   background: var(--bg-void);
-  /* Solid background so scrolled content isn't visible underneath */
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-}
-
-@media (max-width: 600px) {
-  .sticky-nav {
-    height: 80px;
-  }
-}
-
-@media (max-width: 600px) {
-  .sticky-tabs-wrapper {
-    top: 80px !important;
-  }
 }
 
 /* Tabs inside sticky nav */
@@ -613,17 +622,11 @@ p {
 
 .sticky-tabs-wrapper {
   position: sticky;
-  top: 100px;
+  top: calc(var(--header-h) + var(--safe-top));
   z-index: 80;
   width: 100%;
   background: var(--bg-void);
   border-bottom: 1px solid var(--border);
-}
-
-@media (max-width: 600px) {
-  .sticky-tabs-wrapper {
-    top: 80px;
-  }
 }
 
 .mobile-active-label {
@@ -657,124 +660,203 @@ p {
   z-index: 10;
 }
 
-/* --- HEADER CLASSES --- */
+/* ============================================== */
+/* HEADER -- Grid 3-zone architecture             */
+/* ============================================== */
 .header-container {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  /* spacer | brand | actions */
   align-items: center;
-  padding: 0 40px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
+  width: 100%;
+  padding-left: max(var(--space-md), var(--safe-left));
+  padding-right: max(var(--space-md), var(--safe-right));
+  gap: var(--space-sm);
+  box-sizing: border-box;
+  /* height + border-bottom inherited from .sticky-nav (same element) */
 }
 
+/* On desktop, mirror the spacer on the right for true center balance */
+@media (min-width: 768px) {
+  .header-container {
+    grid-template-columns: 1fr auto 1fr;
+  }
+}
+
+/* Left spacer balances the right actions so center stays centered on desktop */
+.header-spacer {
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .header-spacer {
+    display: none;
+  }
+}
+
+/* Center: brand text */
 .header-text-wrapper {
   display: flex;
   flex-direction: column;
-  line-height: 1.0;
+  line-height: 1.15;
   align-items: center;
   text-align: center;
-  margin-top: -5px;
-  /* Pull text up cleanly */
+  min-width: 0;
+  /* No overflow: hidden here, descenders (g, y, p) need room.
+     Children handle text-overflow individually. */
 }
 
+@media (max-width: 767px) {
+  .header-text-wrapper {
+    align-items: flex-start;
+    text-align: left;
+    justify-self: start;
+    /* take leftover horizontal space on mobile so it doesn't squish actions */
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+/* Brand title: "FGF · WIKI"
+   - FGF: gold-bright, 800 weight (the accent / primary)
+   - · :  gold-dim middle dot separator (Foundation imperial flair)
+   - WIKI: text-primary, 300 weight (the base / secondary)
+*/
 .header-title-main {
   font-family: var(--font-hero);
-  font-size: 2.0rem;
-  font-weight: 800;
-  color: var(--gold-bright);
+  font-size: clamp(1.15rem, 4.2vw, 2.2rem);
   text-transform: uppercase;
-  letter-spacing: 4px;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-.header-title-light {
-  font-family: var(--font-hero);
-  font-size: 1.6rem;
-  color: var(--text-primary);
+.header-title-accent,
+.header-title-base,
+.header-title-sep {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.header-title-accent {
+  color: var(--gold-bright);
+  font-weight: 800;
+  letter-spacing: clamp(2px, 0.7vw, 6px);
+}
+
+.header-title-sep {
+  color: var(--gold-dim);
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-top: -3px;
-  /* Tighter gap */
+  font-size: 0.65em;
+  margin: 0 clamp(0.25em, 0.7vw, 0.4em);
+  transform: translateY(-0.1em);
+}
+
+.header-title-base {
+  color: var(--text-primary);
+  font-weight: 300;
+  letter-spacing: clamp(2px, 0.7vw, 6px);
+  /* Compensate the trailing letter-spacing on the last char so the
+     visual block looks balanced when centered in the header. */
+  margin-right: calc(-1 * clamp(2px, 0.7vw, 6px));
 }
 
 .header-subtitle {
   font-family: var(--font-label);
-  font-size: 0.8rem;
+  font-size: clamp(0.55rem, 1.5vw, 0.8rem);
   color: var(--gold-dim);
   text-transform: uppercase;
-  letter-spacing: 8px;
-  margin-top: 1px;
+  letter-spacing: clamp(1.5px, 1vw, 8px);
+  margin-top: 2px;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.header-auth-container {
-  position: absolute;
-  top: 50%;
-  right: 40px;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  z-index: 100;
-}
-
-@media (max-width: 900px) {
-  .header-container {
-    padding: 0 20px;
-  }
-
-  .header-title-main {
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-  }
-
-  .header-title-light {
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-  }
-
-  .header-auth-container {
-    right: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-container {
-    padding: 0 10px;
-  }
-
-  .header-text-wrapper {
-    max-width: calc(100vw - 130px);
-    overflow: hidden;
-  }
-
-  .header-title-main {
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
-
-  .header-title-light {
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-  }
-
-  .header-subtitle {
-    font-size: 0.55rem;
-    letter-spacing: 1.5px;
-  }
-
-  .header-auth-container {
-    right: 10px;
-    gap: 10px;
-  }
-
-  .header-auth-container button {
-    padding: 5px 10px !important;
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 380px) {
+@media (max-width: 767px) {
   .header-subtitle {
     display: none;
+    /* Hide on tablet and below */
+  }
+}
+
+/* Right: auth + lang */
+.header-auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.header-user-email {
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+
+@media (max-width: 767px) {
+  .header-user-email {
+    display: none;
+  }
+}
+
+.header-btn-icon,
+.header-btn-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 4px;
+  font-family: var(--font-label);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.header-btn-icon {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0 10px;
+}
+
+.header-btn-icon:hover {
+  border-color: var(--gold);
+  color: var(--gold-bright);
+}
+
+.header-btn-login {
+  background: var(--gold);
+  border: none;
+  color: #000;
+  padding: 0 14px;
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  border-radius: 2px;
+}
+
+.header-btn-login:hover {
+  background: var(--gold-bright);
+}
+
+@media (max-width: 479px) {
+
+  /* Show only icon on very small screens */
+  .header-btn-login .header-btn-label {
+    display: none;
+  }
+
+  .header-btn-login {
+    padding: 0 10px;
+    min-width: 44px;
   }
 }
 
@@ -1006,7 +1088,7 @@ table {
     padding: 3px 8px;
     margin-left: 10px;
   }
-  
+
   .official-text {
     font-size: 0.55rem;
   }
@@ -1014,5 +1096,245 @@ table {
   .hero-official-tag {
     padding: 4px 12px;
     font-size: 0.65rem;
+  }
+}
+
+/* ============================================== */
+/* LANGUAGE SWITCHER -- Compact on mobile         */
+/* ============================================== */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 4px;
+  font-family: var(--font-label);
+  flex-shrink: 0;
+}
+
+.lang-switcher__icon {
+  color: var(--text-dim);
+  margin: 0 4px 0 2px;
+  flex-shrink: 0;
+}
+
+.lang-switcher__btn {
+  background: transparent;
+  color: var(--text-dim);
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  font-family: var(--font-label);
+  min-height: 32px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.lang-switcher__btn[aria-pressed="true"] {
+  background: var(--gold);
+  color: #000;
+  font-weight: 700;
+  cursor: default;
+}
+
+@media (max-width: 479px) {
+  .lang-switcher {
+    padding: 2px 3px;
+  }
+
+  .lang-switcher__icon {
+    display: none;
+  }
+
+  .lang-switcher__btn {
+    padding: 6px 7px;
+    font-size: 0.7rem;
+  }
+}
+
+/* ============================================== */
+/* GLOBAL FLUID UTILITIES                         */
+/* ============================================== */
+
+/* Apply fluid padding to all .card / .glass-panel by default
+   Inline styles in components still win, but the per-component
+   migrations below switch to clamp() to honor breakpoints. */
+.card,
+.glass-panel {
+  /* don't override if inline style sets padding -- this is the floor */
+  padding: clamp(1rem, 3.5vw, 2rem);
+}
+
+/* Modal overlay: respect safe area + use dvh */
+.modal-overlay {
+  padding: clamp(0.5rem, 3vw, 1rem);
+  padding-top: max(clamp(0.5rem, 3vw, 1rem), var(--safe-top));
+  padding-bottom: max(clamp(0.5rem, 3vw, 1rem), var(--safe-bottom));
+  box-sizing: border-box;
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
+}
+
+/* Footer separators: wrap on small screens */
+.footer-divider-row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-divider-row > div {
+  width: clamp(20px, 5vw, 40px);
+  height: 3px;
+  border-radius: 1px;
+}
+
+/* ============================================== */
+/* TOUCH / FOCUS POLISH (modern mobile)           */
+/* ============================================== */
+
+/* Remove ugly tap highlight + 300ms tap delay */
+button,
+a,
+[role="button"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Use focus-visible so keyboard users get a ring, but tap doesn't */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Min 44x44 touch target for all buttons on mobile */
+@media (max-width: 767px) {
+  button,
+  a.tab-item,
+  .tab-item {
+    min-height: 44px;
+  }
+
+  /* Wrap any flex row of buttons on mobile so they stack instead of overflow */
+  button {
+    touch-action: manipulation;
+  }
+}
+
+/* Honor safe area in main scrollable content */
+.main-content {
+  padding-left: max(var(--space-md), var(--safe-left));
+  padding-right: max(var(--space-md), var(--safe-right));
+}
+
+/* Footer respects safe area at bottom (iPhone home indicator) */
+footer {
+  padding-bottom: max(2rem, var(--safe-bottom)) !important;
+}
+
+/* Prevent flex containers from causing horizontal scroll */
+.fgf-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.fgf-row-stack-mobile {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 599px) {
+  .fgf-row-stack-mobile {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ============================================== */
+/* CHAMPION TIER ENTRY -- responsive grid          */
+/* ============================================== */
+.champion-tier-entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "avatar name"
+    "avatar desc";
+  align-items: center;
+  background: var(--bg-void);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  column-gap: clamp(1rem, 3vw, 1.5rem);
+  row-gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.champion-tier-entry__avatar {
+  grid-area: avatar;
+  position: relative;
+  flex-shrink: 0;
+  width: clamp(56px, 13vw, 72px);
+  height: clamp(56px, 13vw, 72px);
+  align-self: center;
+}
+
+.champion-tier-entry__name {
+  grid-area: name;
+  align-self: end;
+}
+
+.champion-tier-entry__desc {
+  grid-area: desc;
+  border-left: 1px dashed var(--border);
+  padding-left: clamp(0.75rem, 2vw, 1.5rem);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  align-self: start;
+}
+
+/* On larger screens, switch to single-row layout */
+@media (min-width: 768px) {
+  .champion-tier-entry {
+    grid-template-columns: auto minmax(140px, 200px) 1fr;
+    grid-template-areas: "avatar name desc";
+    row-gap: 0;
+  }
+
+  .champion-tier-entry__name,
+  .champion-tier-entry__desc {
+    align-self: center;
+  }
+}
+
+/* On very small screens, drop the dashed border (less visual clutter) */
+@media (max-width: 479px) {
+  .champion-tier-entry__desc {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 0.25rem;
   }
 }

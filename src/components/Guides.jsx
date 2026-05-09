@@ -51,14 +51,14 @@ export default function Guides() {
                 <div
                     className="glass-panel"
                     style={{
-                        padding: '3rem',
+                        padding: 'clamp(1rem, 5vw, 3rem)',
                         border: '1px solid var(--gold)',
                         boxShadow: '0 0 50px rgba(0, 0, 0, 0.3)'
                     }}
                 >
                     {/* Header */}
                     <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '1.5rem', marginBottom: '2rem' }}>
-                        <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', margin: '0 0 0.5rem', fontSize: '2.5rem', color: 'var(--gold-bright)' }}>{t(selectedTip.title)}</h2>
+                        <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', margin: '0 0 0.5rem', fontSize: 'clamp(1.4rem, 5vw, 2.5rem)', color: 'var(--gold-bright)' }}>{t(selectedTip.title)}</h2>
                         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                             <span className="label-text" style={{
                                 background: 'var(--bg-void)',
