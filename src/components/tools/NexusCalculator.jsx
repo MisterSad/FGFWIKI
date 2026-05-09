@@ -1,10 +1,14 @@
 import React, { useState, useMemo, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import { NEXUS_DATA } from "../../data/nexusData";
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
 import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
 
 const fmt = (n) => n.toLocaleString("en-US");
+
+// Map weaponType key to common.* translation key (Kinetic/Beam/Ion are shared)
+const WEAPON_LABEL_KEYS = { kinetic: 'common.kinetic', beam: 'common.beam', ion: 'common.ion' };
 
 const WeaponIcon = ({ type, size = 20 }) => {
     const icons = {
@@ -36,6 +40,7 @@ const WeaponIcon = ({ type, size = 20 }) => {
 };
 
 export default function NexusCalculator() {
+    const { t } = useTranslation();
     const { currentUser } = useAuth();
     const [weaponType, setWeaponType] = useState("kinetic");
     const [fromStage, setFromStage] = useState(1);
@@ -125,7 +130,7 @@ export default function NexusCalculator() {
     return (
         <div style={{ animation: "fadeUp 0.8s ease-out" }}>
             <Card>
-                <SectionTitle>Nexus Specialization</SectionTitle>
+                <SectionTitle>{t('nexus.title')}</SectionTitle>
                 <div style={{
                     display: "flex", gap: 12, justifyContent: "center", marginBottom: 32, flexWrap: "wrap"
                 }}>
@@ -153,7 +158,7 @@ export default function NexusCalculator() {
                                 }}
                             >
                                 <WeaponIcon type={key} size={18} />
-                                {w.label}
+                                {t(WEAPON_LABEL_KEYS[key] || key)}
                             </button>
                         );
                     })}
@@ -164,7 +169,7 @@ export default function NexusCalculator() {
                     alignItems: "end", marginBottom: 16,
                 }}>
                     <div>
-                        <Label>Current Stage</Label>
+                        <Label>{t('nexus.current_stage')}</Label>
                         <select
                             value={fromStage}
                             onChange={(e) => setFromStage(Number(e.target.value))}
@@ -178,7 +183,7 @@ export default function NexusCalculator() {
                         >
                             {stages.map((s) => (
                                 <option key={s.stage} value={s.stage}>
-                                    Stage {s.stage}
+                                    {t('nexus.stage_n', { n: s.stage })}
                                 </option>
                             ))}
                         </select>
@@ -192,7 +197,7 @@ export default function NexusCalculator() {
                     </div>
 
                     <div>
-                        <Label>Target Stage</Label>
+                        <Label>{t('nexus.target_stage')}</Label>
                         <select
                             value={toStage}
                             onChange={(e) => setToStage(Number(e.target.value))}
@@ -206,7 +211,7 @@ export default function NexusCalculator() {
                         >
                             {stages.map((s) => (
                                 <option key={s.stage} value={s.stage}>
-                                    Stage {s.stage}
+                                    {t('nexus.stage_n', { n: s.stage })}
                                 </option>
                             ))}
                         </select>
@@ -217,14 +222,14 @@ export default function NexusCalculator() {
             {fromStage < toStage && (
                 <Card accent style={{ borderColor: `${weapon.color}50` }}>
                     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, transparent, ${weapon.color}, transparent)` }} />
-                    <SectionTitle>Estimated Cost</SectionTitle>
+                    <SectionTitle>{t('nexus.estimated_cost')}</SectionTitle>
                     <div style={{
                         display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 20,
                         textAlign: "center", marginBottom: 24,
                     }}>
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${weapon.color}30` }}>
                             <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
-                                Comp Mods
+                                {t('nexus.comp_mods')}
                             </div>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: weapon.color, textShadow: `0 0 20px ${weapon.glow}` }}>
                                 {fmt(calculation.totalMods)}
@@ -232,7 +237,7 @@ export default function NexusCalculator() {
                         </div>
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
                             <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
-                                Echoes
+                                {t('nexus.echoes')}
                             </div>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: V.txPri }}>
                                 {fmt(calculation.totalEchoes)}
@@ -240,7 +245,7 @@ export default function NexusCalculator() {
                         </div>
                         <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
                             <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
-                                Total Levels
+                                {t('nexus.total_levels_label')}
                             </div>
                             <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: V.txSec }}>
                                 {fmt(calculation.totalLevels)}
@@ -250,8 +255,8 @@ export default function NexusCalculator() {
 
                     <div style={{ marginBottom: 4, padding: "14px 16px", background: "rgba(201,168,76,0.04)", borderRadius: 2, border: `1px solid ${V.border}` }}>
                         <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "var(--font-body)", fontSize: 16, color: "#FFFFFF", letterSpacing: 0.3, marginBottom: 8 }}>
-                            <span>Progress to S{toStage}</span>
-                            <span style={{ fontFamily: "var(--font-mono)" }}>{pctProgress}% of max</span>
+                            <span>{t('nexus.progress_to', { stage: toStage })}</span>
+                            <span style={{ fontFamily: "var(--font-mono)" }}>{t('nexus.percent_of_max', { pct: pctProgress })}</span>
                         </div>
                         <div style={{ height: 2, background: "rgba(201,168,76,0.1)", borderRadius: 1, overflow: "hidden" }}>
                             <div style={{ height: "100%", width: `${pctProgress}%`, background: `linear-gradient(90deg, ${weapon.color}80, ${weapon.color})`, borderRadius: 1, transition: "width 0.4s ease" }} />
@@ -263,12 +268,12 @@ export default function NexusCalculator() {
             {fromStage >= toStage ? (
                 <Card>
                     <div style={{ textAlign: "center", color: V.txDim, padding: "20px 0", fontSize: 16, fontFamily: "var(--font-body)" }}>
-                        Select a target stage higher than your current stage to see the cost.
+                        {t('nexus.select_higher_target')}
                     </div>
                 </Card>
             ) : (
                 <Card>
-                    <SectionTitle>Stage Breakdown</SectionTitle>
+                    <SectionTitle>{t('nexus.stage_breakdown')}</SectionTitle>
                     <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                         {calculation.stageBreakdown.map((s) => {
                             const isExpanded = expandedStage === s.stage;
@@ -293,7 +298,7 @@ export default function NexusCalculator() {
                                             {fmt(s.totalCompMods)}
                                         </span>
                                         <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, textAlign: "right", color: V.txDim }}>
-                                            {fmt(s.totalEchoes)} ech.
+                                            {fmt(s.totalEchoes)} {t('nexus.echoes_short')}
                                         </span>
                                     </button>
 
@@ -303,11 +308,11 @@ export default function NexusCalculator() {
                                             borderRadius: "0 0 2px 2px", padding: "12px 16px"
                                         }}>
                                             <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "8px", fontFamily: "var(--font-mono)", fontSize: 11, borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 8 }}>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>Node</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>Stat</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>Lvl × Cost</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>Mods</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>Ech.</div>
+                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>{t('nexus.col_node')}</div>
+                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>{t('nexus.col_stat')}</div>
+                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>{t('nexus.col_lvl_cost')}</div>
+                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>{t('nexus.col_mods')}</div>
+                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>{t('nexus.col_ech')}</div>
                                             </div>
                                             <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "6px 8px", fontFamily: "var(--font-mono)", fontSize: 12 }}>
                                                 {s.nodes.map((n, i) => (
@@ -327,7 +332,7 @@ export default function NexusCalculator() {
                                                 ))}
                                             </div>
                                             <div style={{ marginTop: 12, paddingTop: 10, borderTop: `1px solid ${V.border}`, fontFamily: "var(--font-body)", fontSize: 14, color: "#FFFFFF" }}>
-                                                ⬡ Milestone: {s.milestone}
+                                                ⬡ {t('nexus.milestone_label')}: {s.milestone}
                                             </div>
                                         </div>
                                     )}
@@ -339,8 +344,8 @@ export default function NexusCalculator() {
             )}
 
             <div style={{ marginTop: 20, padding: "16px 20px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, display: "flex", justifyContent: "space-between", fontFamily: "var(--font-label)", fontSize: 10, color: V.txSec, letterSpacing: 2, textTransform: "uppercase" }}>
-                <span>TOTAL S1→S10 : {fmt(cumulativeTotal.mods)} mods · {fmt(cumulativeTotal.echoes)} echoes</span>
-                <span style={{ color: weapon.color }}>{weapon.label}</span>
+                <span>{t('nexus.total_summary', { mods: fmt(cumulativeTotal.mods), echoes: fmt(cumulativeTotal.echoes) })}</span>
+                <span style={{ color: weapon.color }}>{t(WEAPON_LABEL_KEYS[weaponType] || weaponType)}</span>
             </div>
         </div>
     );

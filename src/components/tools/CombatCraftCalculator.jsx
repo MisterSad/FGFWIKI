@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
 import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
@@ -61,16 +62,16 @@ const ASSEMBLY_LINE = [
 ];
 
 const TREES = [
-    { id: "kw", name: "Kinetic Weapon Mod", bonus: "Base ATK Kinetic", tier: 1, levels: WEAPON_MOD, bUnit: "" },
-    { id: "bw", name: "Beam Weapon Mod", bonus: "Base ATK Beam", tier: 1, levels: WEAPON_MOD, bUnit: "" },
-    { id: "iw", name: "Ion Weapon Mod", bonus: "Base ATK Ion", tier: 1, levels: WEAPON_MOD, bUnit: "" },
+    { id: "kw", nameKey: "cc.kw_name", bonusKey: "cc.kw_bonus", tier: 1, levels: WEAPON_MOD, bUnit: "" },
+    { id: "bw", nameKey: "cc.bw_name", bonusKey: "cc.bw_bonus", tier: 1, levels: WEAPON_MOD, bUnit: "" },
+    { id: "iw", nameKey: "cc.iw_name", bonusKey: "cc.iw_bonus", tier: 1, levels: WEAPON_MOD, bUnit: "" },
 
-    { id: "ki", name: "Kinetic INT Mod", bonus: "Base INT Kinetic", tier: 2, levels: INT_MOD, bUnit: "" },
-    { id: "bi", name: "Beam INT Mod", bonus: "Base INT Beam", tier: 2, levels: INT_MOD, bUnit: "" },
-    { id: "ii", name: "Ion INT Mod", bonus: "Base INT Ion", tier: 2, levels: INT_MOD, bUnit: "" },
+    { id: "ki", nameKey: "cc.ki_name", bonusKey: "cc.ki_bonus", tier: 2, levels: INT_MOD, bUnit: "" },
+    { id: "bi", nameKey: "cc.bi_name", bonusKey: "cc.bi_bonus", tier: 2, levels: INT_MOD, bUnit: "" },
+    { id: "ii", nameKey: "cc.ii_name", bonusKey: "cc.ii_bonus", tier: 2, levels: INT_MOD, bUnit: "" },
 
     {
-        id: "aerial", name: "Aerial Combat Optimization", bonus: "Increase Damage of all fleets", tier: 3, levels: [
+        id: "aerial", nameKey: "cc.aerial_name", bonusKey: "cc.aerial_bonus", tier: 3, levels: [
             { m: 470000, w: 470000, gc: 380000, cc: 350, b: 0.5 }, { m: 920000, w: 920000, gc: 740000, cc: 510, b: 0.5 },
             { m: 1700000, w: 1700000, gc: 1400000, cc: 690, b: 0.5 }, { m: 2800000, w: 2800000, gc: 2200000, cc: 900, b: 0.5 },
             { m: 4500000, w: 4500000, gc: 3600000, cc: 1130, b: 0.5 }, { m: 7000000, w: 7000000, gc: 5600000, cc: 1390, b: 0.5 },
@@ -79,16 +80,16 @@ const TREES = [
         ], bUnit: "%"
     },
 
-    { id: "ka", name: "Kinetic Armor Mod", bonus: "Base DEF Kinetic", tier: 4, levels: ARMOR_MOD, bUnit: "" },
-    { id: "ba", name: "Beam Armor Mod", bonus: "Base DEF Beam", tier: 4, levels: ARMOR_MOD, bUnit: "" },
-    { id: "ia", name: "Ion Armor Mod", bonus: "Base DEF Ion", tier: 4, levels: ARMOR_MOD, bUnit: "" },
+    { id: "ka", nameKey: "cc.ka_name", bonusKey: "cc.ka_bonus", tier: 4, levels: ARMOR_MOD, bUnit: "" },
+    { id: "ba", nameKey: "cc.ba_name", bonusKey: "cc.ba_bonus", tier: 4, levels: ARMOR_MOD, bUnit: "" },
+    { id: "ia", nameKey: "cc.ia_name", bonusKey: "cc.ia_bonus", tier: 4, levels: ARMOR_MOD, bUnit: "" },
 
-    { id: "kh", name: "Kinetic Hull Mod", bonus: "Base Health Kinetic", tier: 5, levels: HULL_MOD, bUnit: "" },
-    { id: "bh", name: "Beam Hull Mod", bonus: "Base Health Beam", tier: 5, levels: HULL_MOD, bUnit: "" },
-    { id: "ih", name: "Ion Hull Mod", bonus: "Base Health Ion", tier: 5, levels: HULL_MOD, bUnit: "" },
+    { id: "kh", nameKey: "cc.kh_name", bonusKey: "cc.kh_bonus", tier: 5, levels: HULL_MOD, bUnit: "" },
+    { id: "bh", nameKey: "cc.bh_name", bonusKey: "cc.bh_bonus", tier: 5, levels: HULL_MOD, bUnit: "" },
+    { id: "ih", nameKey: "cc.ih_name", bonusKey: "cc.ih_bonus", tier: 5, levels: HULL_MOD, bUnit: "" },
 
     {
-        id: "density", name: "Armor Density Upgrade", bonus: "All Fleet DMG Reduction", tier: 6, levels: [
+        id: "density", nameKey: "cc.density_name", bonusKey: "cc.density_bonus", tier: 6, levels: [
             { m: 610000, w: 610000, gc: 490000, cc: 550, b: 0.5 }, { m: 1100000, w: 1100000, gc: 900000, cc: 740, b: 0.5 },
             { m: 2000000, w: 2000000, gc: 1600000, cc: 960, b: 0.5 }, { m: 3400000, w: 3400000, gc: 2700000, cc: 1200, b: 0.5 },
             { m: 5400000, w: 5400000, gc: 4300000, cc: 1470, b: 0.5 }, { m: 8100000, w: 8100000, gc: 6500000, cc: 1760, b: 0.5 },
@@ -97,14 +98,14 @@ const TREES = [
         ], bUnit: "%"
     },
 
-    { id: "ccw", name: "CC Weapon Mod", bonus: "Base ATK all CC", tier: 7, levels: CC_WEAPON_ARMOR, bUnit: "" },
-    { id: "cca", name: "CC Armor Mod", bonus: "Base DEF all CC", tier: 7, levels: CC_WEAPON_ARMOR, bUnit: "" },
+    { id: "ccw", nameKey: "cc.ccw_name", bonusKey: "cc.ccw_bonus", tier: 7, levels: CC_WEAPON_ARMOR, bUnit: "" },
+    { id: "cca", nameKey: "cc.cca_name", bonusKey: "cc.cca_bonus", tier: 7, levels: CC_WEAPON_ARMOR, bUnit: "" },
 
-    { id: "cci", name: "CC INT Mod", bonus: "Base INT all CC", tier: 8, levels: CC_INT_MOD, bUnit: "" },
-    { id: "cch", name: "CC Hull Mod", bonus: "Base Health all CC", tier: 8, levels: CC_HULL_MOD, bUnit: "" },
+    { id: "cci", nameKey: "cc.cci_name", bonusKey: "cc.cci_bonus", tier: 8, levels: CC_INT_MOD, bUnit: "" },
+    { id: "cch", nameKey: "cc.cch_name", bonusKey: "cc.cch_bonus", tier: 8, levels: CC_HULL_MOD, bUnit: "" },
 
     {
-        id: "decision", name: "Decision Networks", bonus: "Command Points", tier: 9, levels: [
+        id: "decision", nameKey: "cc.decision_name", bonusKey: "cc.decision_bonus", tier: 9, levels: [
             { m: 760000, w: 760000, gc: 610000, cc: 750, b: 1 }, { m: 1400000, w: 1400000, gc: 1100000, cc: 970, b: 1 },
             { m: 2400000, w: 2400000, gc: 1900000, cc: 1210, b: 1 }, { m: 3900000, w: 3900000, gc: 3100000, cc: 1480, b: 1 },
             { m: 6100000, w: 6100000, gc: 4900000, cc: 1770, b: 1 }, { m: 9200000, w: 9200000, gc: 7400000, cc: 2090, b: 1 },
@@ -113,40 +114,42 @@ const TREES = [
         ], bUnit: ""
     },
 
-    { id: "alk", name: "Assembly Line — Kinetic", bonus: "Manufacturing Speed", tier: 10, levels: ASSEMBLY_LINE, bUnit: "%" },
-    { id: "alb", name: "Assembly Line — Beam", bonus: "Manufacturing Speed", tier: 10, levels: ASSEMBLY_LINE, bUnit: "%" },
-    { id: "ali", name: "Assembly Line — Ion", bonus: "Manufacturing Speed", tier: 10, levels: ASSEMBLY_LINE, bUnit: "%" },
+    { id: "alk", nameKey: "cc.alk_name", bonusKey: "cc.alk_bonus", tier: 10, levels: ASSEMBLY_LINE, bUnit: "%" },
+    { id: "alb", nameKey: "cc.alb_name", bonusKey: "cc.alb_bonus", tier: 10, levels: ASSEMBLY_LINE, bUnit: "%" },
+    { id: "ali", nameKey: "cc.ali_name", bonusKey: "cc.ali_bonus", tier: 10, levels: ASSEMBLY_LINE, bUnit: "%" },
 
     {
-        id: "warframe", name: "Warframe", bonus: "Unlock T7 Kinetic", tier: 11, isGate: true, levels: [
+        id: "warframe", nameKey: "cc.warframe_name", bonusKey: "cc.warframe_bonus", tier: 11, isGate: true, levels: [
             { m: 43000000, w: 43000000, gc: 34000000, cc: 10000, b: 0 }
         ], bUnit: ""
     },
     {
-        id: "justicar", name: "Justicar", bonus: "Unlock T7 Beam", tier: 11, isGate: true, levels: [
+        id: "justicar", nameKey: "cc.justicar_name", bonusKey: "cc.justicar_bonus", tier: 11, isGate: true, levels: [
             { m: 43000000, w: 43000000, gc: 34000000, cc: 10000, b: 0 }
         ], bUnit: ""
     },
     {
-        id: "hermit", name: "Hermit", bonus: "Unlock T7 Ion", tier: 11, isGate: true, levels: [
+        id: "hermit", nameKey: "cc.hermit_name", bonusKey: "cc.hermit_bonus", tier: 11, isGate: true, levels: [
             { m: 43000000, w: 43000000, gc: 34000000, cc: 10000, b: 0 }
         ], bUnit: ""
     },
 ];
 
-const TIER_LABELS = {
-    1: "Tier 1: Weapon ATK", 2: "Tier 2: Weapon INT", 3: "Tier 3: Fleet Damage",
-    4: "Tier 4: Armor DEF", 5: "Tier 5: Hull Health",
-    6: "Tier 6: Fleet Reduction", 7: "Tier 7: All CC ATK/DEF", 8: "Tier 8: All CC INT/Health",
-    9: "Tier 9: Command", 10: "Tier 10: Assembly Lines", 11: "Tier 11: T7 Unlock",
+const TIER_LABEL_KEYS = {
+    1: "cc.tier_1", 2: "cc.tier_2", 3: "cc.tier_3",
+    4: "cc.tier_4", 5: "cc.tier_5",
+    6: "cc.tier_6", 7: "cc.tier_7", 8: "cc.tier_8",
+    9: "cc.tier_9", 10: "cc.tier_10", 11: "cc.tier_11",
 };
 
 const fmt = (n) => n.toLocaleString("en-US");
 
 const RES_COLORS = { m: "#b0b8c8", w: "#5b9bd5", gc: "#C9A84C", cc: "#a78bfa" };
-const RES_LABELS = { m: "Metal", w: "Water", gc: "Galactic Coins", cc: "Cosmic Coins" };
+// Tree-card resource labels: short form for cc ("Cosmic Comp.") to fit the compact grid.
+const RES_LABEL_KEYS_SHORT = { m: "resources.metal", w: "resources.water", gc: "resources.galactic_coins", cc: "resources.cosmic_comp" };
 
 function TreeCard({ tree, currentLevel, onChange }) {
+    const { t } = useTranslation();
     const [open, setOpen] = useState(false);
     const maxLvl = tree.levels.length;
     const remaining = tree.levels.slice(currentLevel).reduce(
@@ -179,10 +182,10 @@ function TreeCard({ tree, currentLevel, onChange }) {
                         fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 700,
                         color: "#FFFFFF", letterSpacing: 0.5, lineHeight: 1.2, textTransform: "uppercase"
                     }}>
-                        {tree.name}
+                        {t(tree.nameKey)}
                     </div>
                     <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "var(--font-body)" }}>
-                        {tree.bonus}
+                        {t(tree.bonusKey)}
                     </div>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2 }}>
@@ -200,16 +203,16 @@ function TreeCard({ tree, currentLevel, onChange }) {
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 4 }}>
-                <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>Level</label>
+                <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>{t('tools_ui.level')}</label>
                 <input type="range" min={0} max={maxLvl} value={currentLevel}
                     onChange={(e) => onChange(tree.id, parseInt(e.target.value))}
                     style={{ flex: 1, accentColor: tree.isGate ? "#ffbe3c" : V.gold, height: 3, maxWidth: "calc(100% - 50px)" }} />
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px 12px", marginTop: 8 }}>
-                {[["m", "Metal"], ["w", "Water"], ["gc", "Galactic Coins"], ["cc", "Cosmic Comp."]].map(([k, label]) => (
+                {["m", "w", "gc", "cc"].map((k) => (
                     <div key={k}>
-                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>{label}</div>
+                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>{t(RES_LABEL_KEYS_SHORT[k])}</div>
                         <div style={{
                             fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600,
                             color: done ? "#FFFFFF" : RES_COLORS[k], marginTop: 2
@@ -220,7 +223,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
                 ))}
                 {!tree.isGate && (
                     <div>
-                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>Bonus</div>
+                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>{t('tools_ui.bonus')}</div>
                         <div style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600, color: "#2ecc71", marginTop: 2 }}>
                             +{Number.isInteger(currentBonus) ? currentBonus : currentBonus.toFixed(1)}{tree.bUnit}
                         </div>
@@ -237,6 +240,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
 }
 
 function LevelDetails({ tree, currentLevel, open, setOpen }) {
+    const { t } = useTranslation();
     return (
         <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
             <button onClick={() => setOpen(!open)} style={{
@@ -245,7 +249,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
                 textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-body)",
                 width: "100%", textAlign: "center", marginTop: 12, transition: "all 0.2s"
             }}>
-                {open ? "HAIL" : "DETAILS"}
+                {open ? t('tools_ui.hide') : t('tools_ui.details')}
             </button>
             {open && (
                 <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 2 }}>
@@ -276,9 +280,11 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
     );
 }
 
-const InvInput = ({ rKey, label, inventory, setInventory }) => (
+const InvInput = ({ rKey, labelKey, inventory, setInventory }) => {
+    const { t } = useTranslation();
+    return (
     <div style={{ display: "flex", alignItems: "center", gap: 10, flex: "1 1 calc(50% - 12px)" }}>
-        <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{label}</span>
+        <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{t(labelKey)}</span>
         <input type="text" value={inventory[rKey].toLocaleString("en-US")}
             onChange={(e) => { const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999); setInventory(p => ({ ...p, [rKey]: v })); }}
             style={{
@@ -287,13 +293,15 @@ const InvInput = ({ rKey, label, inventory, setInventory }) => (
                 fontWeight: 600, width: "100%", textAlign: "right", outline: "none"
             }} />
     </div>
-);
+    );
+};
 
-const SummaryItem = ({ label, surp }) => {
+const SummaryItem = ({ labelKey, surp }) => {
+    const { t } = useTranslation();
     const missing = Math.max(0, -surp);
     return (
         <div style={{ minWidth: 140 }}>
-            <Label>{label} Missing</Label>
+            <Label>{t('tools_ui.missing_suffix', { label: t(labelKey) })}</Label>
             <div style={{
                 fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700,
                 color: missing > 0 ? "#e74c3c" : "#2ecc71"
@@ -305,6 +313,7 @@ const SummaryItem = ({ label, surp }) => {
 };
 
 export default function CombatCraftCalculator() {
+    const { t } = useTranslation();
     const { currentUser } = useAuth();
     const [levels, setLevels] = useState(() => {
         const init = {};
@@ -376,19 +385,19 @@ export default function CombatCraftCalculator() {
     return (
         <div style={{ animation: "fadeUp 0.8s ease-out" }}>
             <Card>
-                <SectionTitle>Combat Craft Tech Progress</SectionTitle>
+                <SectionTitle>{t('cc.tech_progress')}</SectionTitle>
 
                 {/* Inventory */}
                 <div style={{
                     background: "rgba(0,0,0,0.2)", border: `1px solid ${V.border}`,
                     borderRadius: 2, padding: "16px 20px", marginBottom: 24
                 }}>
-                    <Label>Current Inventory</Label>
+                    <Label>{t('tools_ui.current_inventory')}</Label>
                     <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
-                        <InvInput rKey="m" label="Metal" inventory={inventory} setInventory={setInventory} />
-                        <InvInput rKey="w" label="Water" inventory={inventory} setInventory={setInventory} />
-                        <InvInput rKey="gc" label="Galactic Coins" inventory={inventory} setInventory={setInventory} />
-                        <InvInput rKey="cc" label="Cosmic Comp." inventory={inventory} setInventory={setInventory} />
+                        <InvInput rKey="m" labelKey="resources.metal" inventory={inventory} setInventory={setInventory} />
+                        <InvInput rKey="w" labelKey="resources.water" inventory={inventory} setInventory={setInventory} />
+                        <InvInput rKey="gc" labelKey="resources.galactic_coins" inventory={inventory} setInventory={setInventory} />
+                        <InvInput rKey="cc" labelKey="resources.cosmic_comp" inventory={inventory} setInventory={setInventory} />
                     </div>
                 </div>
 
@@ -399,17 +408,17 @@ export default function CombatCraftCalculator() {
                     gap: 20, alignItems: "end"
                 }}>
 
-                    <SummaryItem label="Metal" surp={surplus.m} />
-                    <SummaryItem label="Water" surp={surplus.w} />
-                    <SummaryItem label="Galactic Coins" surp={surplus.gc} />
-                    <SummaryItem label="Cosmic Comp." surp={surplus.cc} />
+                    <SummaryItem labelKey="resources.metal" surp={surplus.m} />
+                    <SummaryItem labelKey="resources.water" surp={surplus.w} />
+                    <SummaryItem labelKey="resources.galactic_coins" surp={surplus.gc} />
+                    <SummaryItem labelKey="resources.cosmic_comp" surp={surplus.cc} />
 
                     <div style={{ display: "flex", gap: 10, flexDirection: "column", justifySelf: "flex-end" }}>
                         <button onClick={resetAll} style={{
                             background: "rgba(0,0,0,0.3)", border: `1px solid ${V.border}`, borderRadius: 2,
                             padding: "8px 14px", color: "#FFFFFF", fontSize: 12, cursor: "pointer",
                             fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: 1, fontWeight: 600
-                        }}>Reset</button>
+                        }}>{t('tools_ui.reset')}</button>
                     </div>
                 </div>
             </Card>
@@ -425,7 +434,7 @@ export default function CombatCraftCalculator() {
                             fontFamily: "var(--font-label)", fontSize: 12, fontWeight: 700, color: "#FFFFFF",
                             letterSpacing: 3, textTransform: "uppercase", marginBottom: 16, paddingLeft: 4, display: "flex", alignItems: "center", gap: 12
                         }}>
-                            {TIER_LABELS[tier] || `Tier ${tier}`}
+                            {TIER_LABEL_KEYS[tier] ? t(TIER_LABEL_KEYS[tier]) : t('gvg.tier_n', { n: tier })}
                             <div style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${V.border}, transparent)` }} />
                         </div>
                         <div style={{ display: "grid", gridTemplateColumns: cols, gap: 16, alignItems: "start" }}>

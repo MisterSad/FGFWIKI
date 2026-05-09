@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
 import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
@@ -20,25 +21,25 @@ const TIER6_LEVELS = [
 const TREES = [
   // --- Tier 1 ---
   {
-    id: "speedup", name: "Speed-Up Boost", bonus: "Increases points for speedups", tier: 1, position: "left",
+    id: "speedup", nameKey: "gvg.speedup_name", bonusKey: "gvg.speedup_bonus", tier: 1, position: "left",
     levels: TIER1_LEVELS,
   },
   {
-    id: "virtuous", name: "Virtuous Trader", bonus: "Increase points for Commissions", tier: 1, position: "center",
+    id: "virtuous", nameKey: "gvg.virtuous_name", bonusKey: "gvg.virtuous_bonus", tier: 1, position: "center",
     levels: TIER1_LEVELS,
   },
   {
-    id: "evil", name: "Evil's Bane", bonus: "Increases points for PvE Day", tier: 1, position: "right",
+    id: "evil", nameKey: "gvg.evil_name", bonusKey: "gvg.evil_bonus", tier: 1, position: "right",
     levels: TIER1_LEVELS,
   },
   // --- Glory Ascension I ---
   {
-    id: "glory1", name: "Glory Ascension I", bonus: "Unlocks chests 4–6", tier: 1.5, position: "center",
+    id: "glory1", nameKey: "gvg.glory1_name", bonusKey: "gvg.glory1_bonus", tier: 1.5, position: "center",
     levels: [{ gc: 1200000, cc: 500, bonus: 0 }], isGate: true,
   },
   // --- Tier 2 ---
   {
-    id: "elite", name: "Elite Training", bonus: "Increases points for Power Crystals", tier: 2, position: "left",
+    id: "elite", nameKey: "gvg.elite_name", bonusKey: "gvg.elite_bonus", tier: 2, position: "left",
     levels: [
       { gc: 200000, cc: 50, bonus: 10 }, { gc: 260000, cc: 50, bonus: 10 }, { gc: 330000, cc: 100, bonus: 10 },
       { gc: 410000, cc: 100, bonus: 10 }, { gc: 500000, cc: 200, bonus: 10 }, { gc: 610000, cc: 200, bonus: 10 },
@@ -47,7 +48,7 @@ const TREES = [
     ],
   },
   {
-    id: "flagship", name: "Star Flagship", bonus: "Increase points by FS BPs", tier: 2, position: "right",
+    id: "flagship", nameKey: "gvg.flagship_name", bonusKey: "gvg.flagship_bonus", tier: 2, position: "right",
     levels: [
       { gc: 80000, cc: 50, bonus: 10 }, { gc: 260000, cc: 50, bonus: 10 }, { gc: 330000, cc: 100, bonus: 10 },
       { gc: 410000, cc: 100, bonus: 10 }, { gc: 500000, cc: 200, bonus: 10 }, { gc: 610000, cc: 200, bonus: 10 },
@@ -56,7 +57,7 @@ const TREES = [
     ],
   },
   {
-    id: "welldev", name: "Well Developed", bonus: "Increase Champion Power", tier: 3, position: "left",
+    id: "welldev", nameKey: "gvg.welldev_name", bonusKey: "gvg.welldev_bonus", tier: 3, position: "left",
     levels: [
       { gc: 80000, cc: 50, bonus: 10 }, { gc: 260000, cc: 50, bonus: 10 }, { gc: 330000, cc: 100, bonus: 10 },
       { gc: 410000, cc: 100, bonus: 10 }, { gc: 500000, cc: 200, bonus: 10 }, { gc: 610000, cc: 200, bonus: 10 },
@@ -65,7 +66,7 @@ const TREES = [
     ],
   },
   {
-    id: "warready", name: "War Readiness", bonus: "Increase FS & Component Pwr", tier: 3, position: "right",
+    id: "warready", nameKey: "gvg.warready_name", bonusKey: "gvg.warready_bonus", tier: 3, position: "right",
     levels: [
       { gc: 80000, cc: 50, bonus: 10 }, { gc: 260000, cc: 50, bonus: 10 }, { gc: 330000, cc: 100, bonus: 10 },
       { gc: 410000, cc: 100, bonus: 10 }, { gc: 500000, cc: 200, bonus: 10 }, { gc: 610000, cc: 200, bonus: 10 },
@@ -75,7 +76,7 @@ const TREES = [
   },
   // --- Mobilization Expert ---
   {
-    id: "mobil", name: "Mobilization Expert", bonus: "Increase all points", tier: 4, position: "center",
+    id: "mobil", nameKey: "gvg.mobil_name", bonusKey: "gvg.mobil_bonus", tier: 4, position: "center",
     levels: [
       { gc: 320000, cc: 50, bonus: 5 }, { gc: 400000, cc: 50, bonus: 5 }, { gc: 490000, cc: 100, bonus: 5 },
       { gc: 600000, cc: 100, bonus: 5 }, { gc: 730000, cc: 200, bonus: 5 }, { gc: 870000, cc: 200, bonus: 5 },
@@ -88,7 +89,7 @@ const TREES = [
   },
   // --- Tier 5 ---
   {
-    id: "honor", name: "Tremendous Honor", bonus: "Obtain Glory", tier: 5, position: "left",
+    id: "honor", nameKey: "gvg.honor_name", bonusKey: "gvg.honor_bonus", tier: 5, position: "left",
     levels: [
       { gc: 320000, cc: 50, bonus: 10 }, { gc: 400000, cc: 50, bonus: 10 }, { gc: 490000, cc: 100, bonus: 10 },
       { gc: 600000, cc: 100, bonus: 10 }, { gc: 730000, cc: 200, bonus: 10 }, { gc: 870000, cc: 200, bonus: 10 },
@@ -97,7 +98,7 @@ const TREES = [
     ],
   },
   {
-    id: "combat", name: "Combat Craft Hunter", bonus: "Destroy Combat Crafts", tier: 5, position: "right",
+    id: "combat", nameKey: "gvg.combat_name", bonusKey: "gvg.combat_bonus", tier: 5, position: "right",
     levels: [
       { gc: 320000, cc: 50, bonus: 10 }, { gc: 400000, cc: 50, bonus: 10 }, { gc: 490000, cc: 100, bonus: 10 },
       { gc: 600000, cc: 100, bonus: 10 }, { gc: 730000, cc: 200, bonus: 10 }, { gc: 870000, cc: 200, bonus: 10 },
@@ -107,38 +108,39 @@ const TREES = [
   },
   // --- Glory Ascension II ---
   {
-    id: "glory2", name: "Glory Ascension II", bonus: "Unlocks chests 7–9", tier: 5.5, position: "center",
+    id: "glory2", nameKey: "gvg.glory2_name", bonusKey: "gvg.glory2_bonus", tier: 5.5, position: "center",
     levels: [{ gc: 4000000, cc: 2000, bonus: 0 }], isGate: true,
   },
   // --- Tier 6 (Combat) ---
   {
-    id: "lockon", name: "Lock-On Missiles", bonus: "Increase Major Damage", tier: 6, position: "left",
+    id: "lockon", nameKey: "gvg.lockon_name", bonusKey: "gvg.lockon_bonus", tier: 6, position: "left",
     levels: TIER6_LEVELS,
   },
   {
-    id: "caliber", name: "5M Caliber", bonus: "Increase Damage", tier: 6, position: "center",
+    id: "caliber", nameKey: "gvg.caliber_name", bonusKey: "gvg.caliber_bonus", tier: 6, position: "center",
     levels: TIER6_LEVELS,
   },
   {
-    id: "intercept", name: "Auto Interceptor", bonus: "Reduce Major Damage", tier: 6, position: "right",
+    id: "intercept", nameKey: "gvg.intercept_name", bonusKey: "gvg.intercept_bonus", tier: 6, position: "right",
     levels: TIER6_LEVELS,
   },
 ];
 
-const TIER_LABELS = {
-  1: "Tier 1 — Scoring",
-  1.5: "Gate",
-  2: "Tier 2 — Scoring",
-  3: "Tier 3 — Power",
-  4: "Mobilization",
-  5: "Tier 5 — PvP",
-  5.5: "Gate",
-  6: "Tier 6 — Combat",
+const TIER_LABEL_KEYS = {
+  1: "gvg.tier_1",
+  1.5: "gvg.tier_gate",
+  2: "gvg.tier_2",
+  3: "gvg.tier_3",
+  4: "gvg.tier_4",
+  5: "gvg.tier_5",
+  5.5: "gvg.tier_gate",
+  6: "gvg.tier_6",
 };
 
 const fmt = (n) => n.toLocaleString("en-US");
 
 function TreeCard({ tree, currentLevel, onChange }) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const maxLvl = tree.levels.length;
 
@@ -203,10 +205,10 @@ function TreeCard({ tree, currentLevel, onChange }) {
               textTransform: "uppercase"
             }}
           >
-            {tree.name}
+            {t(tree.nameKey)}
           </div>
           <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "var(--font-body)" }}>
-            {tree.bonus}
+            {t(tree.bonusKey)}
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2 }}>
@@ -249,7 +251,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
       {/* Level selector */}
       <div style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 4 }}>
-        <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>Level</label>
+        <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>{t('tools_ui.level')}</label>
         <input
           type="range"
           min={0}
@@ -267,10 +269,10 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
       {/* Stats */}
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
-        <Stat label="Galactic Coins" value={fmt(remaining.gc)} color="#C9A84C" dimmed={done} />
-        <Stat label="Computational Component" value={fmt(remaining.cc)} color="#a78bfa" dimmed={done} />
+        <Stat label={t('resources.galactic_coins')} value={fmt(remaining.gc)} color="#C9A84C" dimmed={done} />
+        <Stat label={t('resources.computational_component')} value={fmt(remaining.cc)} color="#a78bfa" dimmed={done} />
         {!tree.isGate && (
-          <Stat label="Bonus" value={`+${currentBonus}%`} color="#2ecc71" dimmed={false} />
+          <Stat label={t('tools_ui.bonus')} value={`+${currentBonus}%`} color="#2ecc71" dimmed={false} />
         )}
       </div>
 
@@ -305,6 +307,7 @@ function Stat({ label, value, color, dimmed }) {
 }
 
 function LevelDetails({ tree, currentLevel, open, setOpen }) {
+  const { t } = useTranslation();
   return (
     <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
       <button
@@ -326,7 +329,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
           transition: "all 0.2s"
         }}
       >
-        {open ? "HAIL" : "DETAILS"}
+        {open ? t('tools_ui.hide') : t('tools_ui.details')}
       </button>
       {open && (
         <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 2 }}>
@@ -375,6 +378,7 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
 }
 
 export default function GvGCalculator() {
+  const { t } = useTranslation();
   const { currentUser } = useAuth();
   const [levels, setLevels] = useState(() => {
     const init = {};
@@ -456,7 +460,7 @@ export default function GvGCalculator() {
   return (
     <div style={{ animation: "fadeUp 0.8s ease-out" }}>
       <Card>
-        <SectionTitle>GvG Tech Progress</SectionTitle>
+        <SectionTitle>{t('gvg.tech_progress')}</SectionTitle>
 
         {/* Inventory */}
         <div
@@ -468,10 +472,10 @@ export default function GvGCalculator() {
             marginBottom: 24,
           }}
         >
-          <Label>Current Inventory</Label>
+          <Label>{t('tools_ui.current_inventory')}</Label>
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>Galactic Coins</span>
+              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>{t('resources.galactic_coins')}</span>
               <input
                 type="text"
                 value={inventory.gc.toLocaleString("en-US")}
@@ -495,7 +499,7 @@ export default function GvGCalculator() {
               />
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>Computational Component</span>
+              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>{t('resources.computational_component')}</span>
               <input
                 type="text"
                 value={inventory.cc.toLocaleString("en-US")}
@@ -535,7 +539,7 @@ export default function GvGCalculator() {
           }}
         >
           <div>
-            <Label>Galactic Coins Missing</Label>
+            <Label>{t('tools_ui.missing_suffix', { label: t('resources.galactic_coins') })}</Label>
             <div
               style={{
                 fontFamily: "var(--font-mono)",
@@ -548,7 +552,7 @@ export default function GvGCalculator() {
             </div>
           </div>
           <div>
-            <Label>Computational Comp. Missing</Label>
+            <Label>{t('tools_ui.missing_suffix', { label: t('resources.computational_component') })}</Label>
             <div
               style={{
                 fontFamily: "var(--font-mono)",
@@ -577,7 +581,7 @@ export default function GvGCalculator() {
                 fontWeight: 600
               }}
             >
-              Reset
+              {t('tools_ui.reset')}
             </button>
           </div>
         </div>
@@ -604,7 +608,7 @@ export default function GvGCalculator() {
                 gap: 12
               }}
             >
-              {TIER_LABELS[tier] || `Tier ${tier}`}
+              {TIER_LABEL_KEYS[tier] ? t(TIER_LABEL_KEYS[tier]) : t('gvg.tier_n', { n: tier })}
               <div style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${V.border}, transparent)` }} />
             </div>
             <div
