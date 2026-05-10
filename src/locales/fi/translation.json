@@ -790,31 +790,31 @@
         "how_it_works_desc": "Peli laskee rakennusajat tällä kaavalla: <br /> <1>(Perus - Kiinteä) / (1 + Bonus%)</1> <br /><br /> Kiinteät vähennykset (Crew Cabinit) sovelletaan <4>ennen</4> prosenttikertoimia, mikä tekee niistä erittäin arvokkaita lyhyille rakennuksille mutta vähemmän vaikuttavia viikon mittaisille päivityksille."
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "Päivittäiset tehtävät",
+        "subtitle": "Seuraa päivittäisiä tavoitteitasi. Kaikki nollautuu klo 00:00 UTC.",
+        "progress_label": "Edistyminen",
+        "reset_in": "Nollaus {{time}} kuluttua",
+        "reset_all": "Nollaa kaikki",
+        "reset_confirm": "Haluatko varmasti nollata kaikki päivittäiset tehtäväsi?",
+        "completed": "Kaikki tehtävät suoritettu!",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
-            "arena": "Arena"
+            "combat": "Taistelu",
+            "economy": "Kauppa ja resurssit",
+            "fleet": "Laivasto",
+            "arena": "Areena"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "Hyökkää Pyhäkköön 170",
+            "shrine_120": "Hyökkää Pyhäkköön 120",
+            "tribute_vessels": "Hyökkää 10 Veroalukseen",
+            "sacred_tribute_vessels": "Hyökkää 10 Pyhään Veroalukseen",
+            "ark_of_deliverance": "Hyökkää Pelastuksen Arkkiin",
+            "send_legendary_cargo": "Lähetä legendaarista rahtia",
+            "mine_legendary": "Louhi legendaarista laatua",
+            "plunder_legendary_mines": "Ryöstä legendaarisia kaivoksia",
+            "hack_legendary_cargo": "Hakkeroi legendaarista rahtia",
+            "auto_join_fleets": "Aseta laivastot automaattiliittymistilaan",
+            "arena": "Hyökkää areenalla"
         }
     },
     "support_page": {
