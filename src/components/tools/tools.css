@@ -831,6 +831,236 @@
 }
 
 /* ──────────────────────────────────────────────────────────
+   20. Tile grid (Tools landing page)
+   Mobile : 1 col, Tablet : 2 cols, Desktop : 3 cols.
+   ────────────────────────────────────────────────────────── */
+.tools-tile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+@media (min-width: 600px) {
+    .tools-tile-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+@media (min-width: 900px) {
+    .tools-tile-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+.tools-tile {
+    position: relative;
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "icon title cta"
+        "icon desc  desc";
+    column-gap: 14px;
+    row-gap: 4px;
+    padding: 18px 18px;
+    background: var(--bg-surface, #0D0E14);
+    border: 1px solid var(--border, rgba(201, 168, 76, 0.15));
+    border-radius: 2px;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    font-family: var(--font-body);
+    overflow: hidden;
+    min-height: 110px;
+}
+
+.tools-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold, #C9A84C), transparent);
+    opacity: 0.6;
+    transition: opacity 0.25s ease;
+}
+
+.tools-tile::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-bottom: 1px solid var(--gold, #C9A84C);
+    border-right: 1px solid var(--gold, #C9A84C);
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.tools-tile:hover,
+.tools-tile:focus-visible {
+    border-color: var(--border-hover, rgba(201, 168, 76, 0.45));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 32px rgba(201, 168, 76, 0.06);
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.04), transparent 60%), var(--bg-surface, #0D0E14);
+    outline: none;
+}
+
+.tools-tile:hover::before,
+.tools-tile:focus-visible::before {
+    opacity: 1;
+}
+
+.tools-tile:hover .tools-tile-cta,
+.tools-tile:focus-visible .tools-tile-cta {
+    transform: translateX(4px);
+    color: var(--gold-bright, #E8C96A);
+}
+
+.tools-tile-icon {
+    grid-area: icon;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold, #C9A84C);
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    border-radius: 2px;
+    background: rgba(201, 168, 76, 0.04);
+    align-self: center;
+}
+
+.tools-tile-icon svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.tools-tile-title {
+    grid-area: title;
+    font-family: var(--font-hero);
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    align-self: end;
+}
+
+.tools-tile-desc {
+    grid-area: desc;
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--text-secondary, #8A8778);
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+.tools-tile-cta {
+    grid-area: cta;
+    align-self: start;
+    font-family: var(--font-mono);
+    font-size: 18px;
+    color: var(--gold-dim, #8A6F2F);
+    transition: transform 0.25s ease, color 0.25s ease;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+@media (min-width: 600px) {
+    .tools-tile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "icon"
+            "title"
+            "desc"
+            "cta";
+        padding: 22px 20px;
+        gap: 12px;
+        text-align: left;
+        min-height: 180px;
+    }
+
+    .tools-tile-icon {
+        width: 56px;
+        height: 56px;
+        align-self: flex-start;
+    }
+
+    .tools-tile-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .tools-tile-title {
+        font-size: 15px;
+        align-self: flex-start;
+    }
+
+    .tools-tile-desc {
+        font-size: 13px;
+    }
+
+    .tools-tile-cta {
+        align-self: flex-end;
+        text-align: right;
+        font-size: 20px;
+    }
+}
+
+/* ──────────────────────────────────────────────────────────
+   21. Back-to-tools button
+   ────────────────────────────────────────────────────────── */
+.tools-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border, rgba(201, 168, 76, 0.15));
+    border-radius: 2px;
+    color: var(--text-primary, #E8E4D9);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.tools-back-btn:hover,
+.tools-back-btn:focus-visible {
+    border-color: var(--border-hover, rgba(201, 168, 76, 0.45));
+    color: var(--gold-bright, #E8C96A);
+    background: rgba(201, 168, 76, 0.06);
+    outline: none;
+}
+
+.tools-back-btn > span:first-child {
+    font-size: 16px;
+    line-height: 1;
+}
+
+@media (min-width: 600px) {
+    .tools-back-btn {
+        font-size: 13px;
+        padding: 9px 16px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ──────────────────────────────────────────────────────────
    19. Range slider — meilleur tap target sur mobile
    ────────────────────────────────────────────────────────── */
 .tool-range {

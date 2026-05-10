@@ -6,129 +6,123 @@ import GvGCalculator from "./tools/GvGCalculator";
 import CombatCraftCalculator from "./tools/CombatCraftCalculator";
 import ChampionUpgradeCalculator from "./tools/ChampionUpgradeCalculator";
 
+// ── Tile icons (inline SVG, gold stroke, line-art) ──
+const ICONS = {
+    'build-time': (
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <rect x="10" y="20" width="44" height="36" rx="1" />
+            <path d="M10 28h44" />
+            <path d="M22 20v-6h20v6" />
+            <circle cx="32" cy="42" r="7" />
+            <path d="M32 38v4l3 2" />
+        </svg>
+    ),
+    'champion-upgrade': (
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M32 8l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z" />
+            <path d="M22 50h20" />
+            <path d="M24 56h16" />
+        </svg>
+    ),
+    'nexus': (
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="32" cy="32" r="22" />
+            <circle cx="32" cy="32" r="6" />
+            <path d="M32 10v8M32 46v8M10 32h8M46 32h8" />
+            <path d="M16.5 16.5l5.5 5.5M42 42l5.5 5.5M16.5 47.5l5.5-5.5M42 22l5.5-5.5" />
+        </svg>
+    ),
+    'gvg': (
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M32 6l16 6v14c0 12-8 22-16 28-8-6-16-16-16-28V12z" />
+            <path d="M24 28l6 6 12-12" />
+        </svg>
+    ),
+    'combat-craft': (
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M16 12l8 8M48 12l-8 8M16 52l8-8M48 52l-8-8" />
+            <circle cx="32" cy="32" r="10" />
+            <path d="M22 32h-8M50 32h-8M32 22v-8M32 50v-8" />
+        </svg>
+    ),
+};
+
+const TOOLS = [
+    { id: 'build-time', titleKey: 'tools_ui.tab_build_time', descKey: 'tools_ui.tile_build_time_desc' },
+    { id: 'champion-upgrade', titleKey: 'tools_ui.tab_champion_upgrade', descKey: 'tools_ui.tile_champion_upgrade_desc' },
+    { id: 'nexus', titleKey: 'tools_ui.tab_nexus', descKey: 'tools_ui.tile_nexus_desc' },
+    { id: 'gvg', titleKey: 'tools_ui.tab_gvg', descKey: 'tools_ui.tile_gvg_desc' },
+    { id: 'combat-craft', titleKey: 'tools_ui.tab_combat_craft', descKey: 'tools_ui.tile_combat_craft_desc' },
+];
+
+const CALCULATORS = {
+    'build-time': BuildTimeCalculator,
+    'champion-upgrade': ChampionUpgradeCalculator,
+    'nexus': NexusCalculator,
+    'gvg': GvGCalculator,
+    'combat-craft': CombatCraftCalculator,
+};
+
 export default function Builder() {
     const { t } = useTranslation();
-    const [activeTab, setActiveTab] = useState("build-time");
+    const [activeTool, setActiveTool] = useState(null);
+
+    const ActiveCalculator = activeTool ? CALCULATORS[activeTool] : null;
+    const activeMeta = activeTool ? TOOLS.find(tool => tool.id === activeTool) : null;
 
     return (
         <div style={{ position: "relative" }}>
-            <style>{`
-        *{box-sizing:border-box}
-        ::selection{background:rgba(201,168,76,0.3);color:#E8E4D9}
-        input[type="range"]{-webkit-appearance:none;appearance:none;height:3px;background:rgba(201,168,76,0.15);border-radius:1px;outline:none;cursor:pointer}
-        input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:1px;background:#C9A84C;cursor:pointer;border:none}
-        input[type="range"]::-moz-range-thumb{width:12px;height:12px;border-radius:1px;background:#C9A84C;cursor:pointer;border:none}
-        select{-webkit-appearance:none;appearance:none}
-        @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-        @keyframes titleReveal{from{opacity:0;letter-spacing:12px}to{opacity:1;letter-spacing:6px}}
-        @keyframes expandLine{from{width:0;opacity:0}to{width:120px;opacity:1}}
-        
-        .tool-tab {
-            font-family: var(--font-body);
-            font-size: 16px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 12px 24px;
-            background: transparent;
-            border: none;
-            color: var(--tx-dim, #FFFFFF);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-        @media (max-width: 600px) {
-            .tool-tab {
-                font-size: 13px;
-                padding: 10px 12px;
-                letter-spacing: 0.5px;
-            }
-            .tool-tabs-scroll {
-                justify-content: flex-start !important;
-                gap: 8px !important;
-            }
-        }
-        .tool-tab.active {
-            color: #FFFFFF;
-        }
-        .tool-tab::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background: var(--gold, #C9A84C);
-            transition: width 0.3s ease;
-        }
-        .tool-tab.active::after {
-            width: 70%;
-        }
-        .tool-tab:hover {
-            color: #FFFFFF;
-        }
-      `}</style>
-
             {/* Header */}
             <header style={{ position: "relative", zIndex: 1, padding: "clamp(20px, 5vw, 48px) clamp(12px, 4vw, 20px) clamp(16px, 3vw, 24px)", textAlign: "center" }}>
                 <div style={{ position: "relative", display: "inline-block" }}>
                     <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 500, height: 500, background: "radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%)", pointerEvents: "none" }} />
                     <h1 className="guide-title text-gradient" style={{ fontFamily: "var(--font-hero)", fontSize: "clamp(18px,4vw,28px)", fontWeight: 800, letterSpacing: 6, margin: 0, textTransform: "uppercase", position: "relative", animation: "titleReveal 1.2s ease-out" }}>
-                        {t('builder_ui.title') || 'Tools'}
+                        {activeMeta ? t(activeMeta.titleKey) : (t('builder_ui.title') || 'Tools')}
                     </h1>
                 </div>
 
-                <div className="tool-tabs-scroll" style={{ display: "flex", justifyContent: "flex-start", gap: 16, marginTop: 32, animation: "fadeUp 0.6s ease-out", overflowX: "auto", padding: "0 20px", WebkitOverflowScrolling: "touch" }}>
-                    <button
-                        className={`tool-tab ${activeTab === 'build-time' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('build-time')}
-                        style={{ color: activeTab === 'build-time' ? '#FFFFFF' : '#8A8778' }}
-                    >
-                        {t('tools_ui.tab_build_time')}
-                    </button>
-                    <button
-                        className={`tool-tab ${activeTab === 'champion-upgrade' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('champion-upgrade')}
-                        style={{ color: activeTab === 'champion-upgrade' ? '#FFFFFF' : '#8A8778' }}
-                    >
-                        {t('tools_ui.tab_champion_upgrade')}
-                    </button>
-                    <button
-                        className={`tool-tab ${activeTab === 'nexus' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('nexus')}
-                        style={{ color: activeTab === 'nexus' ? '#FFFFFF' : '#8A8778' }}
-                    >
-                        {t('tools_ui.tab_nexus')}
-                    </button>
-                    <button
-                        className={`tool-tab ${activeTab === 'gvg' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('gvg')}
-                        style={{ color: activeTab === 'gvg' ? '#FFFFFF' : '#8A8778' }}
-                    >
-                        {t('tools_ui.tab_gvg')}
-                    </button>
-                    <button
-                        className={`tool-tab ${activeTab === 'combat-craft' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('combat-craft')}
-                        style={{ color: activeTab === 'combat-craft' ? '#FFFFFF' : '#8A8778' }}
-                    >
-                        {t('tools_ui.tab_combat_craft')}
-                    </button>
-                </div>
+                {!activeTool && (
+                    <p style={{ fontFamily: "var(--font-body)", fontSize: "clamp(13px, 2.5vw, 15px)", color: "var(--text-secondary, #8A8778)", margin: "16px auto 0", maxWidth: 520, lineHeight: 1.5, padding: "0 12px" }}>
+                        {t('tools_ui.tile_intro')}
+                    </p>
+                )}
 
-                <div style={{ height: 1, background: `linear-gradient(90deg,transparent,#C9A84C,transparent)`, margin: "0 auto", maxWidth: 400, marginTop: 12 }} />
+                <div style={{ height: 1, background: "linear-gradient(90deg,transparent,#C9A84C,transparent)", margin: "20px auto 0", maxWidth: 400 }} />
             </header>
 
             {/* Content */}
             <main style={{ position: "relative", zIndex: 1, maxWidth: 1100, margin: "0 auto", padding: "0 clamp(8px, 3vw, 24px) clamp(40px, 8vw, 60px)" }}>
-                {activeTab === 'build-time' && <BuildTimeCalculator />}
-                {activeTab === 'nexus' && <NexusCalculator />}
-                {activeTab === 'gvg' && <GvGCalculator />}
-                {activeTab === 'combat-craft' && <CombatCraftCalculator />}
-                {activeTab === 'champion-upgrade' && <ChampionUpgradeCalculator />}
+                {!activeTool && (
+                    <div className="tools-tile-grid" style={{ animation: "fadeUp 0.6s ease-out" }}>
+                        {TOOLS.map(tool => (
+                            <button
+                                key={tool.id}
+                                className="tools-tile"
+                                onClick={() => setActiveTool(tool.id)}
+                                aria-label={t(tool.titleKey)}
+                            >
+                                <span className="tools-tile-icon">{ICONS[tool.id]}</span>
+                                <span className="tools-tile-title">{t(tool.titleKey)}</span>
+                                <span className="tools-tile-desc">{t(tool.descKey)}</span>
+                                <span className="tools-tile-cta" aria-hidden="true">→</span>
+                            </button>
+                        ))}
+                    </div>
+                )}
+
+                {activeTool && ActiveCalculator && (
+                    <div style={{ animation: "fadeUp 0.4s ease-out" }}>
+                        <button
+                            className="tools-back-btn"
+                            onClick={() => setActiveTool(null)}
+                            aria-label={t('tools_ui.back_to_tools')}
+                        >
+                            <span aria-hidden="true">←</span>
+                            <span>{t('tools_ui.back_to_tools')}</span>
+                        </button>
+                        <ActiveCalculator />
+                    </div>
+                )}
             </main>
         </div>
     );
