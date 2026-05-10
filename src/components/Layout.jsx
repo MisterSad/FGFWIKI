@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from './Header';
 import Tabs from './Tabs';
+import SeldonBeacon from './SeldonBeacon';
 import useSEO from '../hooks/useSEO';
 
 export default function Layout({ children, onLoginClick }) {
@@ -79,6 +80,8 @@ export default function Layout({ children, onLoginClick }) {
 
                 <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
             </footer>
+
+            <SeldonBeacon />
         </div>
     );
 }

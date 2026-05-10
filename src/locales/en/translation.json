@@ -845,6 +845,20 @@
     "footer_ui": {
         "copyright": "FGF Wiki. Developer"
     },
+    "seldon_beacon": {
+        "aria_label": "Anomalous signal detected",
+        "tooltip": "Anomalous signal...",
+        "transmission_tag": "INCOMING TRANSMISSION",
+        "title": "A SELDON VAULT BEACON",
+        "lead": "You intercepted a faint psychohistorical echo hidden in the Encyclopedia. Hari Seldon left a reward for the curious.",
+        "prize_label": "REWARD",
+        "prize": "500 PLATINUM CREDITS",
+        "code_label": "CLAIM PHRASE",
+        "instructions": "Send this phrase to HawkTuah #1061 (in-game mail or Discord) along with your alliance tag to claim your reward.",
+        "footnote": "The signal will fade on May 20, 2026. Keep it secret — only the first finder is rewarded.",
+        "acknowledge": "ACKNOWLEDGE",
+        "close": "Close"
+    },
     "language_switcher": {
         "label": "Language",
         "english": "English",
