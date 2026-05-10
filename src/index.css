@@ -892,9 +892,13 @@ p {
 
 @media (max-width: 600px) {
   .hero-image-container {
-    /* Image becomes much taller than the hero on mobile because of width:250%.
-       Shift it down so Seldon's head doesn't get clipped above the viewport. */
-    transform: translate(-50%, -38%);
+    /* On mobile the image is scaled to width:250% and capped at 120vh, so
+       it ends up taller than .hero-halo (≈ viewport - header - tabs bar)
+       and overflows above. Without enough downshift, the top of the image
+       lands behind the sticky burger-menu bar (z-index 80) and the head
+       gets visually clipped. -25% pushes the image's top edge clearly
+       below the burger menu while keeping the body centered behind text. */
+    transform: translate(-50%, -25%);
   }
   .hero-image {
     width: 250%;
