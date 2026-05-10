@@ -16,6 +16,7 @@ import es from './locales/es/translation.json';
 import pt from './locales/pt/translation.json';
 import fi from './locales/fi/translation.json';
 import sv from './locales/sv/translation.json';
+import nb from './locales/nb/translation.json';
 
 const savedLang = typeof window !== 'undefined' ? localStorage.getItem('fgfwiki_lang') : null;
 
@@ -36,14 +37,15 @@ i18n
             es: { translation: es },
             pt: { translation: pt },
             fi: { translation: fi },
-            sv: { translation: sv }
+            sv: { translation: sv },
+            nb: { translation: nb }
         },
         // Default to English on first visit. Auto-detection from the browser
         // is intentionally bypassed: the user picks their language explicitly
         // via the language switcher (preference persisted in localStorage).
         lng: savedLang || 'en',
         fallbackLng: 'en',
-        supportedLngs: ['en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt', 'fi', 'sv'],
+        supportedLngs: ['en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt', 'fi', 'sv', 'nb'],
         nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'zh-CN' -> 'zh', 'pt-BR' -> 'pt', 'es-ES' -> 'es', etc.
         detection: {
             order: ['localStorage', 'navigator', 'htmlTag'],
