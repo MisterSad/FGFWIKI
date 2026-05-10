@@ -158,20 +158,12 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
   return (
     <div
+      className="tree-card"
       style={{
         background: done
           ? "linear-gradient(135deg, rgba(40,180,99,0.12), rgba(30,60,40,0.25))"
           : V.bgElev,
         border: `1px solid ${done ? "rgba(40,180,99,0.4)" : tree.isGate ? "rgba(255,190,60,0.5)" : "rgba(201,168,76,0.25)"}`,
-        borderRadius: 2,
-        padding: "18px 20px",
-        display: "flex",
-        flexDirection: "column",
-        gap: 10,
-        position: "relative",
-        overflow: "hidden",
-        minWidth: 0,
-        minHeight: 180,
         gridColumn: open ? "1 / -1" : "auto",
       }}
     >
@@ -193,25 +185,15 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-        <div style={{ minHeight: 48, display: "flex", flexDirection: "column" }}>
-          <div
-            style={{
-              fontFamily: "var(--font-body)",
-              fontSize: 16,
-              fontWeight: 700,
-              color: "#FFFFFF",
-              letterSpacing: 0.5,
-              lineHeight: 1.2,
-              textTransform: "uppercase"
-            }}
-          >
+        <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0 }}>
+          <div className="tree-card-name">
             {t(tree.nameKey)}
           </div>
-          <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "var(--font-body)" }}>
+          <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: 4, lineHeight: 1.3, fontFamily: "var(--font-body)" }}>
             {t(tree.bonusKey)}
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2 }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2, flexShrink: 0 }}>
           <div
             style={{
               fontFamily: "var(--font-mono)",
@@ -250,25 +232,23 @@ function TreeCard({ tree, currentLevel, onChange }) {
       </div>
 
       {/* Level selector */}
-      <div style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 4 }}>
-        <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>{t('tools_ui.level')}</label>
+      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <label style={{ fontFamily: "var(--font-body)", fontSize: 11, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", letterSpacing: 1 }}>{t('tools_ui.level')}</label>
         <input
           type="range"
+          className="tool-range"
           min={0}
           max={maxLvl}
           value={currentLevel}
           onChange={(e) => onChange(tree.id, parseInt(e.target.value))}
           style={{
-            flex: 1,
             accentColor: tree.isGate ? "#ffbe3c" : V.gold,
-            height: 3,
-            maxWidth: "calc(100% - 50px)"
           }}
         />
       </div>
 
       {/* Stats */}
-      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
+      <div className={tree.isGate ? "tree-stats-grid-2" : "tree-stats-grid-3"}>
         <Stat label={t('resources.galactic_coins')} value={fmt(remaining.gc)} color="#C9A84C" dimmed={done} />
         <Stat label={t('resources.computational_component')} value={fmt(remaining.cc)} color="#a78bfa" dimmed={done} />
         {!tree.isGate && (
@@ -278,7 +258,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
       {/* Level detail (collapsible) */}
       <div style={{ flex: 1 }} />
-      <div style={{ alignSelf: "flex-end", width: "100%", marginTop: "auto" }}>
+      <div style={{ width: "100%", marginTop: "auto" }}>
         <LevelDetails tree={tree} currentLevel={currentLevel} open={open} setOpen={setOpen} />
       </div>
     </div>
@@ -287,17 +267,18 @@ function TreeCard({ tree, currentLevel, onChange }) {
 
 function Stat({ label, value, color, dimmed }) {
   return (
-    <div style={{ minWidth: 60 }}>
-      <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>
+    <div style={{ minWidth: 0 }}>
+      <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1, lineHeight: 1.2 }}>
         {label}
       </div>
       <div
         style={{
           fontFamily: "var(--font-mono)",
-          fontSize: 14,
+          fontSize: 13,
           fontWeight: 600,
           color: dimmed ? "#FFFFFF" : color,
           marginTop: 2,
+          wordBreak: "break-word"
         }}
       >
         {value}
@@ -319,13 +300,13 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
           color: V.txSec,
           fontSize: 10,
           cursor: "pointer",
-          padding: "4px 8px",
+          padding: "6px 8px",
           textTransform: "uppercase",
           letterSpacing: 1,
           fontFamily: "var(--font-body)",
           width: "100%",
           textAlign: "center",
-          marginTop: 12,
+          marginTop: 10,
           transition: "all 0.2s"
         }}
       >
@@ -339,12 +320,8 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
             return (
               <div
                 key={i}
+                className="tool-leveldetail-row"
                 style={{
-                  display: "flex",
-                  gap: 8,
-                  fontSize: 11,
-                  padding: "4px 6px",
-                  borderRadius: 2,
                   background: next
                     ? "rgba(201,168,76,0.1)"
                     : done
@@ -352,20 +329,18 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
                       : "transparent",
                   color: done ? "#FFFFFF" : V.txPri,
                   textDecoration: done ? "line-through" : "none",
-                  alignItems: "center",
-                  fontFamily: "var(--font-mono)",
                 }}
               >
-                <span style={{ width: 20, flexShrink: 0, fontWeight: next ? 700 : 400, color: next ? "#FFFFFF" : "inherit" }}>
+                <span className="ld-idx" style={{ fontWeight: next ? 700 : 400, color: next ? "#FFFFFF" : "inherit" }}>
                   {next ? "▶" : ""} {i + 1}
                 </span>
-                <span style={{ flex: 1.5, textAlign: "right", color: done ? "#FFFFFF" : "#C9A84C" }}>
+                <span className="ld-gc" style={{ color: done ? "#FFFFFF" : "#C9A84C" }}>
                   {fmt(l.gc)}
                 </span>
-                <span style={{ flex: 1, textAlign: "right", color: done ? "#FFFFFF" : (l.cc === 0 ? "#FFFFFF" : "#a78bfa") }}>
+                <span className="ld-cc" style={{ color: done ? "#FFFFFF" : (l.cc === 0 ? "#FFFFFF" : "#a78bfa") }}>
                   {l.cc === 0 ? "—" : fmt(l.cc)}
                 </span>
-                <span style={{ color: done ? "#FFFFFF" : "#2ecc71", flexShrink: 0, marginLeft: "auto", minWidth: 35, textAlign: "right" }}>
+                <span className="ld-bonus" style={{ color: done ? "#FFFFFF" : "#2ecc71" }}>
                   {l.bonus > 0 ? `+${l.bonus}%` : ""}
                 </span>
               </div>
@@ -468,14 +443,14 @@ export default function GvGCalculator() {
             background: "rgba(0,0,0,0.2)",
             border: `1px solid ${V.border}`,
             borderRadius: 2,
-            padding: "16px 20px",
-            marginBottom: 24,
+            padding: "14px 16px",
+            marginBottom: 18,
           }}
         >
           <Label>{t('tools_ui.current_inventory')}</Label>
-          <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>{t('resources.galactic_coins')}</span>
+          <div className="tool-inv-row">
+            <div className="tool-inv-input">
+              <span className="inv-label">{t('resources.galactic_coins')}</span>
               <input
                 type="text"
                 value={inventory.gc.toLocaleString("en-US")}
@@ -484,22 +459,13 @@ export default function GvGCalculator() {
                   setInventory((p) => ({ ...p, gc: v }));
                 }}
                 style={{
-                  background: "rgba(0,0,0,0.4)",
                   border: `1px solid rgba(201,168,76,0.3)`,
-                  borderRadius: 2,
-                  padding: "6px 12px",
                   color: "#C9A84C",
-                  fontFamily: "var(--font-mono)",
-                  fontSize: 16,
-                  fontWeight: 600,
-                  width: 140,
-                  textAlign: "right",
-                  outline: "none"
                 }}
               />
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase" }}>{t('resources.computational_component')}</span>
+            <div className="tool-inv-input">
+              <span className="inv-label">{t('resources.computational_component')}</span>
               <input
                 type="text"
                 value={inventory.cc.toLocaleString("en-US")}
@@ -508,17 +474,8 @@ export default function GvGCalculator() {
                   setInventory((p) => ({ ...p, cc: v }));
                 }}
                 style={{
-                  background: "rgba(0,0,0,0.4)",
                   border: `1px solid rgba(167,139,250,0.3)`,
-                  borderRadius: 2,
-                  padding: "6px 12px",
                   color: "#a78bfa",
-                  fontFamily: "var(--font-mono)",
-                  fontSize: 16,
-                  fontWeight: 600,
-                  width: 100,
-                  textAlign: "right",
-                  outline: "none"
                 }}
               />
             </div>
@@ -531,21 +488,20 @@ export default function GvGCalculator() {
             background: "rgba(0,0,0,0.2)",
             border: `1px solid ${V.border}`,
             borderRadius: 2,
-            padding: "20px",
+            padding: "16px",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
-            gap: 20,
+            gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+            gap: 16,
             alignItems: "end",
           }}
         >
           <div>
             <Label>{t('tools_ui.missing_suffix', { label: t('resources.galactic_coins') })}</Label>
             <div
+              className="tool-big-num"
               style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: 24,
-                fontWeight: 700,
                 color: surplusGC < 0 ? "#e74c3c" : "#2ecc71",
+                wordBreak: "break-word"
               }}
             >
               {fmt(Math.max(0, -surplusGC))}
@@ -554,31 +510,31 @@ export default function GvGCalculator() {
           <div>
             <Label>{t('tools_ui.missing_suffix', { label: t('resources.computational_component') })}</Label>
             <div
+              className="tool-big-num"
               style={{
-                fontFamily: "var(--font-mono)",
-                fontSize: 24,
-                fontWeight: 700,
                 color: surplusCC < 0 ? "#e74c3c" : "#2ecc71",
+                wordBreak: "break-word"
               }}
             >
               {fmt(Math.max(0, -surplusCC))}
             </div>
           </div>
-          <div style={{ display: "flex", gap: 10, flexDirection: "column" }}>
+          <div style={{ display: "flex", alignItems: "flex-end" }}>
             <button
               onClick={resetAll}
               style={{
                 background: "rgba(0,0,0,0.3)",
                 border: `1px solid ${V.border}`,
                 borderRadius: 2,
-                padding: "8px 14px",
+                padding: "10px 14px",
                 color: "#FFFFFF",
                 fontSize: 12,
                 cursor: "pointer",
                 fontFamily: "var(--font-body)",
                 textTransform: "uppercase",
                 letterSpacing: 1,
-                fontWeight: 600
+                fontWeight: 600,
+                width: "100%"
               }}
             >
               {t('tools_ui.reset')}
@@ -591,34 +547,14 @@ export default function GvGCalculator() {
       {tiers.map((tier) => {
         const treesInTier = TREES.filter((t) => t.tier === tier);
         if (treesInTier.length === 0) return null;
+        const gridClass = treesInTier.length === 1 ? 'tool-grid-trees-1' : treesInTier.length === 2 ? 'tool-grid-trees-2' : 'tool-grid-trees-3';
         return (
-          <div key={tier} style={{ marginBottom: 32 }}>
-            <div
-              style={{
-                fontFamily: "var(--font-label)",
-                fontSize: 12,
-                fontWeight: 700,
-                color: "#FFFFFF",
-                letterSpacing: 3,
-                textTransform: "uppercase",
-                marginBottom: 16,
-                paddingLeft: 4,
-                display: "flex",
-                alignItems: "center",
-                gap: 12
-              }}
-            >
+          <div key={tier} style={{ marginBottom: 24 }}>
+            <div className="tool-tier-header">
               {TIER_LABEL_KEYS[tier] ? t(TIER_LABEL_KEYS[tier]) : t('gvg.tier_n', { n: tier })}
               <div style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${V.border}, transparent)` }} />
             </div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: `repeat(${treesInTier.length}, 1fr)`,
-                gap: 16,
-                alignItems: "start",
-              }}
-            >
+            <div className={gridClass} style={{ alignItems: "start" }}>
               {treesInTier.map((tree) => (
                 <TreeCard key={tree.id} tree={tree} currentLevel={levels[tree.id]} onChange={setLevel} />
               ))}

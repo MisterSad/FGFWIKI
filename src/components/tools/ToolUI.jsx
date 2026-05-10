@@ -1,4 +1,5 @@
 import React from 'react';
+import './tools.css';
 
 // ── Foundation Design System Tokens ──
 export const V = {
@@ -24,19 +25,19 @@ export function GoldLine({ style: sx }) {
     return <div style={{ height: 1, background: `linear-gradient(90deg,transparent,${V.gold},transparent)`, ...sx }} />;
 }
 
-export function Card({ children, accent, style }) {
+export function Card({ children, accent, style, className }) {
     return (
-        <div style={{ position: "relative", background: V.bgSurface, border: `1px solid ${accent ? V.borderHov : V.border}`, borderRadius: 2, padding: "28px 24px", marginBottom: 28, transition: "border-color 0.3s ease-out", ...style }}>
-            <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg,transparent,${V.gold},transparent)` }} />
+        <div className={`tool-card${accent ? ' accent' : ''}${className ? ' ' + className : ''}`} style={style}>
+            <div className="tool-card-top-line" />
             <Corners />{children}
         </div>
     );
 }
 
 export function SectionTitle({ children }) {
-    return <h2 style={{ fontFamily: "var(--font-hero)", fontSize: 13, fontWeight: 700, letterSpacing: 4, color: V.txSec, margin: "0 0 22px", textTransform: "uppercase" }}>{children}</h2>;
+    return <h2 className="tool-section-title">{children}</h2>;
 }
 
 export function Label({ children }) {
-    return <label style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, color: V.txDim, display: "block", marginBottom: 6, textTransform: "uppercase" }}>{children}</label>;
+    return <label className="tool-label">{children}</label>;
 }

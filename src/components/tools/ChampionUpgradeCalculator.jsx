@@ -128,43 +128,43 @@ export default function ChampionUpgradeCalculator() {
             <Card>
                 <SectionTitle>{t('tools_ui.champion_levels')}</SectionTitle>
 
-                <div style={{ display: "flex", gap: 32, flexWrap: "wrap", alignItems: "flex-start", marginTop: 8 }}>
+                <div className="tool-champion-controls" style={{ marginTop: 8 }}>
                     {/* Current Level */}
-                    <div style={{ flex: 1, minWidth: 200 }}>
+                    <div style={{ flex: 1, minWidth: 0, width: "100%" }}>
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
                             <Label>{t('tools_ui.current_level')}</Label>
-                            <span style={{ fontFamily: "var(--font-label)", fontSize: 24, fontWeight: 700, color: V.teal }}>
+                            <span style={{ fontFamily: "var(--font-label)", fontSize: 22, fontWeight: 700, color: V.teal }}>
                                 {currentLevel}
                             </span>
                         </div>
-                        <input type="range" min={0} max={MAX_LEVEL} value={currentLevel}
+                        <input type="range" className="tool-range" min={0} max={MAX_LEVEL} value={currentLevel}
                             onChange={(e) => {
                                 const v = parseInt(e.target.value);
                                 setCurrentLevel(v);
                                 if (v > targetLevel) setTargetLevel(v);
                             }}
-                            style={{ width: "100%" }} />
+                            style={{ accentColor: V.teal }} />
                     </div>
 
                     {/* Target Level */}
-                    <div style={{ flex: 1, minWidth: 200 }}>
+                    <div style={{ flex: 1, minWidth: 0, width: "100%" }}>
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
                             <Label>{t('tools_ui.target_level')}</Label>
-                            <span style={{ fontFamily: "var(--font-label)", fontSize: 24, fontWeight: 700, color: "#2ecc71" }}>
+                            <span style={{ fontFamily: "var(--font-label)", fontSize: 22, fontWeight: 700, color: "#2ecc71" }}>
                                 {targetLevel}
                             </span>
                         </div>
-                        <input type="range" min={0} max={MAX_LEVEL} value={targetLevel}
+                        <input type="range" className="tool-range" min={0} max={MAX_LEVEL} value={targetLevel}
                             onChange={(e) => {
                                 const v = parseInt(e.target.value);
                                 setTargetLevel(v);
                                 if (v < currentLevel) setCurrentLevel(v);
                             }}
-                            style={{ width: "100%", accentColor: "#2ecc71" }} />
+                            style={{ accentColor: "#2ecc71" }} />
                     </div>
 
                     {/* Inventory */}
-                    <div style={{ minWidth: 160 }}>
+                    <div style={{ width: "100%", flex: "1 1 100%" }}>
                         <Label>{t('tools_ui.shards_available')}</Label>
                         <input type="text" value={inventory.toLocaleString("en-US")}
                             onChange={(e) => setInventory(Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999))}
@@ -172,7 +172,7 @@ export default function ChampionUpgradeCalculator() {
                                 width: "100%", padding: "10px 14px",
                                 background: "rgba(0,0,0,.4)", border: `1px solid rgba(167,139,250,0.3)`,
                                 borderRadius: 2, color: "#a78bfa",
-                                fontFamily: "var(--font-mono)", fontSize: 20, fontWeight: 600,
+                                fontFamily: "var(--font-mono)", fontSize: 18, fontWeight: 600,
                                 textAlign: "right", outline: "none", transition: "border-color 0.3s ease"
                             }}
                             onFocus={(e) => e.target.style.borderColor = "#a78bfa"}
@@ -188,29 +188,26 @@ export default function ChampionUpgradeCalculator() {
                     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, transparent, #f0c040, transparent)` }} />
                     <SectionTitle>{t('tools_ui.estimated_cost')}</SectionTitle>
 
-                    <div style={{
-                        display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 20,
-                        textAlign: "center", marginBottom: 16,
-                    }}>
+                    <div className="tool-grid-auto" style={{ textAlign: "center", marginBottom: 12 }}>
                         {/* Total Cost */}
-                        <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid #f0c04030` }}>
-                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                        <div style={{ padding: "14px 12px", background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid #f0c04030` }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: V.txDim, marginBottom: 6 }}>
                                 {t('tools_ui.total_cost')}
                             </div>
-                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color: "#f0c040", textShadow: `0 0 20px rgba(240, 192, 64, 0.4)` }}>
+                            <div className="tool-big-num" style={{ color: "#f0c040", textShadow: `0 0 20px rgba(240, 192, 64, 0.4)`, wordBreak: "break-word" }}>
                                 {fmt(totalCost)}
                             </div>
-                            <div style={{ fontSize: 10, color: V.txSec, marginTop: 6, fontFamily: "var(--font-body)" }}>
+                            <div style={{ fontSize: 11, color: V.txSec, marginTop: 6, fontFamily: "var(--font-body)" }}>
                                 {t('tools_ui.for_n_levels', { count: targetLevel - currentLevel })}
                             </div>
                         </div>
 
                         {/* Surplus/Deficit */}
-                        <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${surplus >= 0 ? '#2ecc7130' : '#e74c3c30'}` }}>
-                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                        <div style={{ padding: "14px 12px", background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${surplus >= 0 ? '#2ecc7130' : '#e74c3c30'}` }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: V.txDim, marginBottom: 6 }}>
                                 {t('tools_ui.surplus_deficit')}
                             </div>
-                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", opacity: surplus >= 0 ? 1 : 0.9 }}>
+                            <div className="tool-big-num" style={{ color: surplus >= 0 ? "#2ecc71" : "#e74c3c", opacity: surplus >= 0 ? 1 : 0.9, wordBreak: "break-word" }}>
                                 {surplus >= 0 ? "+" : ""}{fmt(surplus)}
                             </div>
                             <div style={{ fontSize: 10, color: surplus >= 0 ? "#2ecc71" : "#e74c3c", marginTop: 6, opacity: 0.7, fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: 1 }}>
@@ -219,11 +216,11 @@ export default function ChampionUpgradeCalculator() {
                         </div>
 
                         {/* Avg Cost / Level */}
-                        <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                        <div style={{ padding: "14px 12px", background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: V.txDim, marginBottom: 6 }}>
                                 {t('tools_ui.avg_cost_level')}
                             </div>
-                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 600, color: V.txPri }}>
+                            <div style={{ fontFamily: "var(--font-mono)", fontSize: "clamp(18px, 5vw, 24px)", fontWeight: 600, color: V.txPri, wordBreak: "break-word" }}>
                                 {(totalCost / (targetLevel - currentLevel)).toFixed(1)}
                             </div>
                         </div>
@@ -232,7 +229,7 @@ export default function ChampionUpgradeCalculator() {
             )}
 
             {/* Cost breakdown & Milestones */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 24 }}>
+            <div className="tool-champion-detail-grid">
 
                 {/* Cost Breakdown */}
                 <Card style={{ marginBottom: 0 }}>
@@ -241,28 +238,24 @@ export default function ChampionUpgradeCalculator() {
                     {breakdown.length === 0 ? (
                         <div style={{ fontSize: 14, color: V.txSec, padding: "20px 0", textAlign: "center", fontFamily: "var(--font-body)" }}>{t('tools_ui.select_range')}</div>
                     ) : (
-                        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                            <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-mono)", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
-                                <span style={{ width: 70 }}>{t('tools_ui.col_levels')}</span>
-                                <span style={{ width: 60, textAlign: "right" }}>{t('tools_ui.col_per_lvl')}</span>
-                                <span style={{ width: 45, textAlign: "right" }}>{t('tools_ui.col_count')}</span>
-                                <span style={{ flex: 1, textAlign: "right" }}>{t('tools_ui.col_subtotal')}</span>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                            <div className="tool-table-row header">
+                                <span>{t('tools_ui.col_levels')}</span>
+                                <span className="col-r">{t('tools_ui.col_per_lvl')}</span>
+                                <span className="col-r">{t('tools_ui.col_count')}</span>
+                                <span className="col-r">{t('tools_ui.col_subtotal')}</span>
                             </div>
                             {breakdown.map((r, i) => (
-                                <div key={i} style={{
-                                    display: "flex", gap: 8, fontSize: 14, padding: "6px 8px", borderRadius: 2,
-                                    background: "rgba(0,0,0,.2)", alignItems: "center", border: `1px solid transparent`,
-                                    transition: "all 0.2s ease"
-                                }}
+                                <div key={i} className="tool-table-row"
                                     onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(167,139,250,0.05)"; e.currentTarget.style.borderColor = "rgba(167,139,250,0.2)"; }}
                                     onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(0,0,0,.2)"; e.currentTarget.style.borderColor = "transparent"; }}
                                 >
-                                    <span style={{ fontFamily: "var(--font-mono)", width: 70, color: V.txSec }}>
+                                    <span style={{ color: V.txSec }}>
                                         {r.from}–{r.to}
                                     </span>
-                                    <span style={{ fontFamily: "var(--font-mono)", width: 60, textAlign: "right", color: "#a78bfa" }}>{r.cost / r.levels}</span>
-                                    <span style={{ fontFamily: "var(--font-mono)", width: 45, textAlign: "right", color: V.txSec }}>×{r.levels}</span>
-                                    <span style={{ flex: 1, textAlign: "right", fontFamily: "var(--font-mono)", fontWeight: 700, color: "#f0c040" }}>
+                                    <span className="col-r" style={{ color: "#a78bfa" }}>{r.cost / r.levels}</span>
+                                    <span className="col-r" style={{ color: V.txSec }}>×{r.levels}</span>
+                                    <span className="col-r" style={{ fontWeight: 700, color: "#f0c040" }}>
                                         {fmt(r.cost)}
                                     </span>
                                 </div>
@@ -275,33 +268,32 @@ export default function ChampionUpgradeCalculator() {
                 <Card style={{ marginBottom: 0 }}>
                     <SectionTitle>{t('tools_ui.milestones')}</SectionTitle>
 
-                    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                        <div style={{ display: "flex", gap: 8, fontSize: 11, color: V.txDim, padding: "0 4px", textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-mono)", borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 4 }}>
-                            <span style={{ width: 50 }}>{t('tools_ui.level')}</span>
-                            <span style={{ flex: 1, textAlign: "right" }}>{t('tools_ui.col_total_zero')}</span>
-                            <span style={{ flex: 1, textAlign: "right" }}>{t('tools_ui.col_from_current')}</span>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                        <div className="tool-milestone-row header">
+                            <span>{t('tools_ui.level')}</span>
+                            <span className="col-r" style={{ textAlign: "right" }}>{t('tools_ui.col_total_zero')}</span>
+                            <span className="col-r" style={{ textAlign: "right" }}>{t('tools_ui.col_from_current')}</span>
                         </div>
                         {milestoneData.map((m, i) => (
-                            <div key={i} style={{
-                                display: "flex", gap: 8, fontSize: 14, padding: "6px 8px", borderRadius: 2,
+                            <div key={i} className="tool-milestone-row" style={{
                                 background: m.reached ? "rgba(40,180,99,0.06)" : m.inRange ? "rgba(240,192,64,0.08)" : "rgba(0,0,0,.2)",
-                                alignItems: "center", border: `1px solid ${m.inRange ? 'rgba(240,192,64,0.2)' : 'transparent'}`, transition: "all 0.2s ease"
+                                borderColor: m.inRange ? 'rgba(240,192,64,0.2)' : 'transparent'
                             }}>
                                 <span style={{
-                                    fontFamily: "var(--font-mono)", width: 50, fontWeight: 700,
+                                    fontWeight: 700,
                                     color: m.reached ? "#28b463" : m.inRange ? "#f0c040" : V.txSec
                                 }}>
                                     {m.level}
                                 </span>
                                 <span style={{
-                                    flex: 1, textAlign: "right", fontFamily: "var(--font-mono)",
+                                    textAlign: "right",
                                     color: m.reached ? V.txSec : V.txPri, opacity: m.reached ? 0.5 : 1,
                                     textDecoration: m.reached ? "line-through" : "none"
                                 }}>
                                     {fmt(m.totalFromZero)}
                                 </span>
                                 <span style={{
-                                    flex: 1, textAlign: "right", fontFamily: "var(--font-mono)", fontWeight: 700,
+                                    textAlign: "right", fontWeight: 700,
                                     color: m.reached ? V.txSec : m.inRange ? "#f0c040" : V.txSec, opacity: m.reached ? 0.3 : 1
                                 }}>
                                     {m.reached ? "—" : m.inRange ? fmt(m.totalFromCurrent) : "—"}

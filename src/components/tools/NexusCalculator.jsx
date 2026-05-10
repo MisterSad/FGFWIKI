@@ -131,55 +131,36 @@ export default function NexusCalculator() {
         <div style={{ animation: "fadeUp 0.8s ease-out" }}>
             <Card>
                 <SectionTitle>{t('nexus.title')}</SectionTitle>
-                <div style={{
-                    display: "flex", gap: 12, justifyContent: "center", marginBottom: 32, flexWrap: "wrap"
-                }}>
+                <div className="nexus-weapon-row">
                     {Object.entries(NEXUS_DATA).map(([key, w]) => {
                         const active = key === weaponType;
                         return (
                             <button
                                 key={key}
+                                className="nexus-weapon-btn"
                                 onClick={() => setWeaponType(key)}
                                 style={{
-                                    display: "flex", alignItems: "center", gap: 8,
-                                    padding: "10px 20px",
                                     background: active ? `${w.color}15` : "rgba(0,0,0,.3)",
                                     border: `1px solid ${active ? w.color : V.border}`,
-                                    borderRadius: 2,
                                     color: active ? w.color : V.txDim,
-                                    cursor: "pointer",
-                                    fontFamily: "var(--font-body)",
-                                    fontSize: 16,
                                     fontWeight: active ? 600 : 500,
-                                    letterSpacing: 1,
-                                    textTransform: "uppercase",
-                                    transition: "all 0.3s ease-out",
                                     boxShadow: active ? `0 0 20px ${w.glow}` : "none",
                                 }}
                             >
-                                <WeaponIcon type={key} size={18} />
+                                <WeaponIcon type={key} size={16} />
                                 {t(WEAPON_LABEL_KEYS[key] || key)}
                             </button>
                         );
                     })}
                 </div>
 
-                <div style={{
-                    display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 16,
-                    alignItems: "end", marginBottom: 16,
-                }}>
+                <div className="tool-stage-row">
                     <div>
                         <Label>{t('nexus.current_stage')}</Label>
                         <select
+                            className="tool-select"
                             value={fromStage}
                             onChange={(e) => setFromStage(Number(e.target.value))}
-                            style={{
-                                width: "100%", padding: "10px 14px",
-                                background: "rgba(0,0,0,.4)", border: `1px solid ${V.border}`,
-                                borderRadius: 2, color: V.txPri,
-                                fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 600,
-                                cursor: "pointer", outline: "none"
-                            }}
                         >
                             {stages.map((s) => (
                                 <option key={s.stage} value={s.stage}>
@@ -190,7 +171,7 @@ export default function NexusCalculator() {
                     </div>
 
                     <div style={{
-                        fontSize: 24, color: weapon.color, paddingBottom: 6,
+                        fontSize: 20, color: weapon.color, paddingBottom: 6,
                         fontWeight: 300, fontFamily: "var(--font-label)", display: "flex", alignItems: "center"
                     }}>
                         →
@@ -199,15 +180,9 @@ export default function NexusCalculator() {
                     <div>
                         <Label>{t('nexus.target_stage')}</Label>
                         <select
+                            className="tool-select"
                             value={toStage}
                             onChange={(e) => setToStage(Number(e.target.value))}
-                            style={{
-                                width: "100%", padding: "10px 14px",
-                                background: "rgba(0,0,0,.4)", border: `1px solid ${V.border}`,
-                                borderRadius: 2, color: V.txPri,
-                                fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 600,
-                                cursor: "pointer", outline: "none"
-                            }}
                         >
                             {stages.map((s) => (
                                 <option key={s.stage} value={s.stage}>
@@ -223,40 +198,37 @@ export default function NexusCalculator() {
                 <Card accent style={{ borderColor: `${weapon.color}50` }}>
                     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, transparent, ${weapon.color}, transparent)` }} />
                     <SectionTitle>{t('nexus.estimated_cost')}</SectionTitle>
-                    <div style={{
-                        display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 20,
-                        textAlign: "center", marginBottom: 24,
-                    }}>
-                        <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${weapon.color}30` }}>
-                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                    <div className="tool-grid-auto" style={{ textAlign: "center", marginBottom: 16 }}>
+                        <div style={{ padding: "14px 12px", background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${weapon.color}30` }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: V.txDim, marginBottom: 6 }}>
                                 {t('nexus.comp_mods')}
                             </div>
-                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: weapon.color, textShadow: `0 0 20px ${weapon.glow}` }}>
+                            <div className="tool-big-num" style={{ color: weapon.color, textShadow: `0 0 20px ${weapon.glow}`, wordBreak: "break-word" }}>
                                 {fmt(calculation.totalMods)}
                             </div>
                         </div>
-                        <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                        <div style={{ padding: "14px 12px", background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: V.txDim, marginBottom: 6 }}>
                                 {t('nexus.echoes')}
                             </div>
-                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: V.txPri }}>
+                            <div className="tool-big-num" style={{ color: V.txPri, wordBreak: "break-word" }}>
                                 {fmt(calculation.totalEchoes)}
                             </div>
                         </div>
-                        <div style={{ padding: 18, background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", color: V.txDim, marginBottom: 8 }}>
+                        <div style={{ padding: "14px 12px", background: "rgba(0,0,0,.25)", borderRadius: 2, border: `1px solid ${V.border}` }}>
+                            <div style={{ fontFamily: "var(--font-label)", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: V.txDim, marginBottom: 6 }}>
                                 {t('nexus.total_levels_label')}
                             </div>
-                            <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color: V.txSec }}>
+                            <div className="tool-big-num" style={{ color: V.txSec, wordBreak: "break-word" }}>
                                 {fmt(calculation.totalLevels)}
                             </div>
                         </div>
                     </div>
 
-                    <div style={{ marginBottom: 4, padding: "14px 16px", background: "rgba(201,168,76,0.04)", borderRadius: 2, border: `1px solid ${V.border}` }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "var(--font-body)", fontSize: 16, color: "#FFFFFF", letterSpacing: 0.3, marginBottom: 8 }}>
-                            <span>{t('nexus.progress_to', { stage: toStage })}</span>
-                            <span style={{ fontFamily: "var(--font-mono)" }}>{t('nexus.percent_of_max', { pct: pctProgress })}</span>
+                    <div style={{ marginBottom: 4, padding: "12px 14px", background: "rgba(201,168,76,0.04)", borderRadius: 2, border: `1px solid ${V.border}` }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "var(--font-body)", fontSize: 13, color: "#FFFFFF", letterSpacing: 0.3, marginBottom: 8, gap: 8, flexWrap: "wrap" }}>
+                            <span style={{ flex: "1 1 auto" }}>{t('nexus.progress_to', { stage: toStage })}</span>
+                            <span style={{ fontFamily: "var(--font-mono)", flexShrink: 0 }}>{t('nexus.percent_of_max', { pct: pctProgress })}</span>
                         </div>
                         <div style={{ height: 2, background: "rgba(201,168,76,0.1)", borderRadius: 1, overflow: "hidden" }}>
                             <div style={{ height: "100%", width: `${pctProgress}%`, background: `linear-gradient(90deg, ${weapon.color}80, ${weapon.color})`, borderRadius: 1, transition: "width 0.4s ease" }} />
@@ -267,7 +239,7 @@ export default function NexusCalculator() {
 
             {fromStage >= toStage ? (
                 <Card>
-                    <div style={{ textAlign: "center", color: V.txDim, padding: "20px 0", fontSize: 16, fontFamily: "var(--font-body)" }}>
+                    <div style={{ textAlign: "center", color: V.txDim, padding: "20px 0", fontSize: 14, fontFamily: "var(--font-body)" }}>
                         {t('nexus.select_higher_target')}
                     </div>
                 </Card>
@@ -280,58 +252,60 @@ export default function NexusCalculator() {
                             return (
                                 <div key={s.stage}>
                                     <button
+                                        className="nexus-stage-btn"
                                         onClick={() => setExpandedStage(isExpanded ? null : s.stage)}
                                         style={{
-                                            width: "100%", display: "grid", gridTemplateColumns: "36px 1fr 120px 100px", alignItems: "center", gap: 12,
-                                            padding: "14px 16px", background: isExpanded ? "rgba(0,0,0,.4)" : "transparent",
-                                            border: `1px solid ${isExpanded ? weapon.color + "50" : V.border}`, borderRadius: 2,
-                                            cursor: "pointer", fontFamily: "var(--font-body)", color: V.txPri, textAlign: "left", transition: "all 0.15s ease"
+                                            background: isExpanded ? "rgba(0,0,0,.4)" : "transparent",
+                                            borderColor: isExpanded ? weapon.color + "50" : V.border,
                                         }}
                                     >
-                                        <span style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 700, color: weapon.color }}>
+                                        <span className="stage-tag" style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 700, color: weapon.color }}>
                                             S{s.stage}
                                         </span>
-                                        <span style={{ fontSize: 14, color: V.txSec, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                                        <span className="stage-milestone" style={{ fontSize: 13, color: V.txSec }}>
                                             {s.milestone}
                                         </span>
-                                        <span style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600, textAlign: "right", color: weapon.color }}>
-                                            {fmt(s.totalCompMods)}
+                                        <span className="stage-mods" style={{ fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 600, color: weapon.color }}>
+                                            {fmt(s.totalCompMods)} <span className="mobile-only" style={{ fontSize: 10, color: V.txDim, fontWeight: 400 }}>{t('nexus.comp_mods')}</span>
                                         </span>
-                                        <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, textAlign: "right", color: V.txDim }}>
+                                        <span className="stage-echoes" style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: V.txDim }}>
                                             {fmt(s.totalEchoes)} {t('nexus.echoes_short')}
                                         </span>
                                     </button>
 
                                     {isExpanded && (
-                                        <div style={{
-                                            background: "rgba(0,0,0,.2)", border: `1px solid ${weapon.color}30`, borderTop: "none",
-                                            borderRadius: "0 0 2px 2px", padding: "12px 16px"
+                                        <div className="nexus-node-table" style={{
+                                            border: `1px solid ${weapon.color}30`,
+                                            borderTop: "none",
                                         }}>
-                                            <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "8px", fontFamily: "var(--font-mono)", fontSize: 11, borderBottom: `1px solid ${V.border}`, paddingBottom: 8, marginBottom: 8 }}>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>{t('nexus.col_node')}</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>{t('nexus.col_stat')}</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1 }}>{t('nexus.col_lvl_cost')}</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>{t('nexus.col_mods')}</div>
-                                                <div style={{ color: V.txDim, textTransform: "uppercase", letterSpacing: 1, textAlign: "right" }}>{t('nexus.col_ech')}</div>
+                                            <div className="nexus-node-table-header">
+                                                <div>{t('nexus.col_node')}</div>
+                                                <div>{t('nexus.col_stat')}</div>
+                                                <div>{t('nexus.col_lvl_cost')}</div>
+                                                <div style={{ textAlign: "right" }}>{t('nexus.col_mods')}</div>
+                                                <div style={{ textAlign: "right" }}>{t('nexus.col_ech')}</div>
                                             </div>
-                                            <div style={{ display: "grid", gridTemplateColumns: "60px 80px 1fr 80px 60px", gap: "6px 8px", fontFamily: "var(--font-mono)", fontSize: 12 }}>
-                                                {s.nodes.map((n, i) => (
-                                                    <React.Fragment key={i}>
-                                                        <div style={{ color: V.txSec, padding: "2px 0" }}>{n.id}</div>
-                                                        <div style={{ color: V.teal, padding: "2px 0" }}>{n.stat}</div>
-                                                        <div style={{ color: V.txSec, padding: "2px 0" }}>
-                                                            {n.levelsPerNode} × {fmt(n.compModsPerLevel)}
-                                                        </div>
-                                                        <div style={{ color: weapon.color, padding: "2px 0", textAlign: "right", fontWeight: 500 }}>
-                                                            {fmt(n.totalCompMods)}
-                                                        </div>
-                                                        <div style={{ color: V.txSec, padding: "2px 0", textAlign: "right" }}>
-                                                            {n.echoes}
-                                                        </div>
-                                                    </React.Fragment>
-                                                ))}
-                                            </div>
-                                            <div style={{ marginTop: 12, paddingTop: 10, borderTop: `1px solid ${V.border}`, fontFamily: "var(--font-body)", fontSize: 14, color: "#FFFFFF" }}>
+                                            {s.nodes.map((n, i) => (
+                                                <div key={i} className="nexus-node-row">
+                                                    <div className="node-id" style={{ color: V.txSec }}>
+                                                        <span className="nx-mobile-label">{t('nexus.col_node')}</span>{n.id}
+                                                    </div>
+                                                    <div className="node-stat" style={{ color: V.teal }}>
+                                                        <span className="nx-mobile-label">{t('nexus.col_stat')}</span>{n.stat}
+                                                    </div>
+                                                    <div className="node-cost" style={{ color: V.txSec }}>
+                                                        <span className="nx-mobile-label">{t('nexus.col_lvl_cost')}</span>
+                                                        {n.levelsPerNode} × {fmt(n.compModsPerLevel)}
+                                                    </div>
+                                                    <div className="node-mods" style={{ color: weapon.color }}>
+                                                        <span className="nx-mobile-label">{t('nexus.col_mods')}</span>{fmt(n.totalCompMods)}
+                                                    </div>
+                                                    <div className="node-ech" style={{ color: V.txSec }}>
+                                                        <span className="nx-mobile-label">{t('nexus.col_ech')}</span>{n.echoes}
+                                                    </div>
+                                                </div>
+                                            ))}
+                                            <div style={{ marginTop: 12, paddingTop: 10, borderTop: `1px solid ${V.border}`, fontFamily: "var(--font-body)", fontSize: 13, color: "#FFFFFF", lineHeight: 1.4 }}>
                                                 ⬡ {t('nexus.milestone_label')}: {s.milestone}
                                             </div>
                                         </div>
@@ -343,7 +317,7 @@ export default function NexusCalculator() {
                 </Card>
             )}
 
-            <div style={{ marginTop: 20, padding: "16px 20px", background: "rgba(0,0,0,.3)", border: `1px solid ${V.border}`, borderRadius: 2, display: "flex", justifyContent: "space-between", fontFamily: "var(--font-label)", fontSize: 10, color: V.txSec, letterSpacing: 2, textTransform: "uppercase" }}>
+            <div className="nexus-footer">
                 <span>{t('nexus.total_summary', { mods: fmt(cumulativeTotal.mods), echoes: fmt(cumulativeTotal.echoes) })}</span>
                 <span style={{ color: weapon.color }}>{t(WEAPON_LABEL_KEYS[weaponType] || weaponType)}</span>
             </div>

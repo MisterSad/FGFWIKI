@@ -929,7 +929,14 @@
         "reset": "Reset",
         "details": "DETAILS",
         "hide": "HIDE",
-        "missing_suffix": "{{label}} Missing"
+        "missing_suffix": "{{label}} Missing",
+        "tile_intro": "Select a calculator to plan your progression.",
+        "tile_build_time_desc": "Calculate building upgrade times with cabin reductions and crew bonuses.",
+        "tile_champion_upgrade_desc": "Plan champion shard costs from current to target level.",
+        "tile_nexus_desc": "Estimate Comp. Mods, Echoes and levels for your weapon Nexus.",
+        "tile_gvg_desc": "Track Galactic Coins and Computational Components needs across all GvG trees.",
+        "tile_combat_craft_desc": "Total resource costs across the full Combat Craft tech tree.",
+        "back_to_tools": "Back to Tools"
     },
     "categories_extra": {
         "beginner": "Beginner",
