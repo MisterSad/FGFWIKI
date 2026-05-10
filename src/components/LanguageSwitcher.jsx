@@ -10,6 +10,7 @@ const LANGS = [
     { code: 'es', label: 'Español' },
     { code: 'fr', label: 'Français' },
     { code: 'it', label: 'Italiano' },
+    { code: 'nb', label: 'Norsk' },
     { code: 'pl', label: 'Polski' },
     { code: 'pt', label: 'Português' },
     { code: 'fi', label: 'Suomi' },
