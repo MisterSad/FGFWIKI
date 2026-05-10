@@ -161,13 +161,11 @@ function TreeCard({ tree, currentLevel, onChange }) {
     const done = currentLevel === maxLvl;
 
     return (
-        <div style={{
+        <div className="tree-card" style={{
             background: done
                 ? "linear-gradient(135deg, rgba(40,180,99,0.12), rgba(30,60,40,0.25))"
                 : V.bgElev,
             border: `1px solid ${done ? "rgba(40,180,99,0.4)" : tree.isGate ? "rgba(255,190,60,0.5)" : "rgba(201,168,76,0.25)"}`,
-            borderRadius: 2, padding: "18px 20px", display: "flex", flexDirection: "column", gap: 10,
-            position: "relative", overflow: "hidden", minWidth: 0, minHeight: 180,
             gridColumn: open ? "1 / -1" : "auto",
         }}>
             <div style={{
@@ -177,18 +175,15 @@ function TreeCard({ tree, currentLevel, onChange }) {
             }} />
 
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-                <div style={{ minHeight: 48, display: "flex", flexDirection: "column" }}>
-                    <div style={{
-                        fontFamily: "var(--font-body)", fontSize: 16, fontWeight: 700,
-                        color: "#FFFFFF", letterSpacing: 0.5, lineHeight: 1.2, textTransform: "uppercase"
-                    }}>
+                <div style={{ display: "flex", flexDirection: "column", flex: 1, minWidth: 0 }}>
+                    <div className="tree-card-name">
                         {t(tree.nameKey)}
                     </div>
-                    <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: "auto", lineHeight: 1.2, fontFamily: "var(--font-body)" }}>
+                    <div style={{ fontSize: 11, color: "#FFFFFF", marginTop: 4, lineHeight: 1.3, fontFamily: "var(--font-body)" }}>
                         {t(tree.bonusKey)}
                     </div>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2 }}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 2, flexShrink: 0 }}>
                     <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: done ? "#28b463" : V.txSec, whiteSpace: "nowrap" }}>
                         {currentLevel}/{maxLvl}
                     </div>
@@ -202,29 +197,29 @@ function TreeCard({ tree, currentLevel, onChange }) {
                 }} />
             </div>
 
-            <div style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 4 }}>
-                <label style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", width: 45 }}>{t('tools_ui.level')}</label>
-                <input type="range" min={0} max={maxLvl} value={currentLevel}
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <label style={{ fontFamily: "var(--font-body)", fontSize: 11, color: "#FFFFFF", flexShrink: 0, textTransform: "uppercase", letterSpacing: 1 }}>{t('tools_ui.level')}</label>
+                <input type="range" className="tool-range" min={0} max={maxLvl} value={currentLevel}
                     onChange={(e) => onChange(tree.id, parseInt(e.target.value))}
-                    style={{ flex: 1, accentColor: tree.isGate ? "#ffbe3c" : V.gold, height: 3, maxWidth: "calc(100% - 50px)" }} />
+                    style={{ accentColor: tree.isGate ? "#ffbe3c" : V.gold }} />
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px 12px", marginTop: 8 }}>
+            <div className="tree-stats-grid-2">
                 {["m", "w", "gc", "cc"].map((k) => (
-                    <div key={k}>
-                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>{t(RES_LABEL_KEYS_SHORT[k])}</div>
+                    <div key={k} style={{ minWidth: 0 }}>
+                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1, lineHeight: 1.2 }}>{t(RES_LABEL_KEYS_SHORT[k])}</div>
                         <div style={{
-                            fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600,
-                            color: done ? "#FFFFFF" : RES_COLORS[k], marginTop: 2
+                            fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 600,
+                            color: done ? "#FFFFFF" : RES_COLORS[k], marginTop: 2, wordBreak: "break-word"
                         }}>
                             {fmt(remaining[k])}
                         </div>
                     </div>
                 ))}
                 {!tree.isGate && (
-                    <div>
-                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1 }}>{t('tools_ui.bonus')}</div>
-                        <div style={{ fontFamily: "var(--font-mono)", fontSize: 14, fontWeight: 600, color: "#2ecc71", marginTop: 2 }}>
+                    <div style={{ minWidth: 0 }}>
+                        <div style={{ fontFamily: "var(--font-label)", fontSize: 9, color: "#FFFFFF", textTransform: "uppercase", letterSpacing: 1, lineHeight: 1.2 }}>{t('tools_ui.bonus')}</div>
+                        <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 600, color: "#2ecc71", marginTop: 2, wordBreak: "break-word" }}>
                             +{Number.isInteger(currentBonus) ? currentBonus : currentBonus.toFixed(1)}{tree.bUnit}
                         </div>
                     </div>
@@ -232,7 +227,7 @@ function TreeCard({ tree, currentLevel, onChange }) {
             </div>
 
             <div style={{ flex: 1 }} />
-            <div style={{ alignSelf: "flex-end", width: "100%", marginTop: "auto" }}>
+            <div style={{ width: "100%", marginTop: "auto" }}>
                 <LevelDetails tree={tree} currentLevel={currentLevel} open={open} setOpen={setOpen} />
             </div>
         </div>
@@ -245,32 +240,38 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
         <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
             <button onClick={() => setOpen(!open)} style={{
                 background: "rgba(0,0,0,0.2)", border: `1px solid ${V.border}`, borderRadius: 2,
-                color: V.txSec, fontSize: 10, cursor: "pointer", padding: "4px 8px",
+                color: V.txSec, fontSize: 10, cursor: "pointer", padding: "6px 8px",
                 textTransform: "uppercase", letterSpacing: 1, fontFamily: "var(--font-body)",
-                width: "100%", textAlign: "center", marginTop: 12, transition: "all 0.2s"
+                width: "100%", textAlign: "center", marginTop: 10, transition: "all 0.2s"
             }}>
                 {open ? t('tools_ui.hide') : t('tools_ui.details')}
             </button>
             {open && (
-                <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 2 }}>
+                <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 4 }}>
                     {tree.levels.map((l, i) => {
                         const isDone = i < currentLevel;
                         const next = i === currentLevel;
                         return (
-                            <div key={i} style={{
-                                display: "flex", gap: 6, fontSize: 11, padding: "4px 6px", borderRadius: 2, alignItems: "center",
-                                background: next ? "rgba(201,168,76,0.1)" : isDone ? "rgba(0,0,0,0.2)" : "transparent",
+                            <div key={i} className="cc-leveldetail-row" style={{
+                                background: next ? "rgba(201,168,76,0.1)" : isDone ? "rgba(0,0,0,0.2)" : "rgba(0,0,0,0.1)",
                                 color: isDone ? "#FFFFFF" : V.txPri,
                                 textDecoration: isDone ? "line-through" : "none",
-                                fontFamily: "var(--font-mono)"
                             }}>
-                                <span style={{ width: 20, flexShrink: 0, fontWeight: next ? 700 : 400, color: next ? "#FFFFFF" : "inherit" }}>
+                                <span className="cc-idx" style={{ color: next ? "#FFFFFF" : "inherit" }}>
                                     {next ? "▶" : ""} {i + 1}
                                 </span>
-                                <span style={{ flex: 1, textAlign: "right", color: isDone ? "#FFFFFF" : RES_COLORS.m }}>{fmt(l.m)}</span>
-                                <span style={{ flex: 1, textAlign: "right", color: isDone ? "#FFFFFF" : RES_COLORS.w }}>{fmt(l.w)}</span>
-                                <span style={{ flex: 1.2, textAlign: "right", color: isDone ? "#FFFFFF" : RES_COLORS.gc }}>{fmt(l.gc)}</span>
-                                <span style={{ flex: 0.8, textAlign: "right", color: isDone ? "#FFFFFF" : (l.cc === 0 ? "#FFFFFF" : RES_COLORS.cc) }}>{l.cc === 0 ? "—" : fmt(l.cc)}</span>
+                                <span className="cc-m" style={{ color: isDone ? "#FFFFFF" : RES_COLORS.m }}>
+                                    <span className="cc-mobile-label">{t('resources.metal')}</span>{fmt(l.m)}
+                                </span>
+                                <span className="cc-w" style={{ color: isDone ? "#FFFFFF" : RES_COLORS.w }}>
+                                    <span className="cc-mobile-label">{t('resources.water')}</span>{fmt(l.w)}
+                                </span>
+                                <span className="cc-gc" style={{ color: isDone ? "#FFFFFF" : RES_COLORS.gc }}>
+                                    <span className="cc-mobile-label">{t('resources.galactic_coins')}</span>{fmt(l.gc)}
+                                </span>
+                                <span className="cc-cc" style={{ color: isDone ? "#FFFFFF" : (l.cc === 0 ? "#FFFFFF" : RES_COLORS.cc) }}>
+                                    <span className="cc-mobile-label">{t('resources.cosmic_comp')}</span>{l.cc === 0 ? "—" : fmt(l.cc)}
+                                </span>
                             </div>
                         );
                     })}
@@ -283,14 +284,13 @@ function LevelDetails({ tree, currentLevel, open, setOpen }) {
 const InvInput = ({ rKey, labelKey, inventory, setInventory }) => {
     const { t } = useTranslation();
     return (
-    <div style={{ display: "flex", alignItems: "center", gap: 10, flex: "1 1 calc(50% - 12px)" }}>
-        <span style={{ fontFamily: "var(--font-body)", fontSize: 14, color: V.txSec, textTransform: "uppercase", width: 140 }}>{t(labelKey)}</span>
+    <div className="tool-inv-input">
+        <span className="inv-label">{t(labelKey)}</span>
         <input type="text" value={inventory[rKey].toLocaleString("en-US")}
             onChange={(e) => { const v = Math.min(parseInt(e.target.value.replace(/\D/g, "")) || 0, 999999999); setInventory(p => ({ ...p, [rKey]: v })); }}
             style={{
-                flex: 1, background: "rgba(0,0,0,0.4)", border: `1px solid ${RES_COLORS[rKey]}50`, borderRadius: 2,
-                padding: "6px 12px", color: RES_COLORS[rKey], fontFamily: "var(--font-mono)", fontSize: 16,
-                fontWeight: 600, width: "100%", textAlign: "right", outline: "none"
+                border: `1px solid ${RES_COLORS[rKey]}50`,
+                color: RES_COLORS[rKey],
             }} />
     </div>
     );
@@ -300,11 +300,11 @@ const SummaryItem = ({ labelKey, surp }) => {
     const { t } = useTranslation();
     const missing = Math.max(0, -surp);
     return (
-        <div style={{ minWidth: 140 }}>
+        <div style={{ minWidth: 0 }}>
             <Label>{t('tools_ui.missing_suffix', { label: t(labelKey) })}</Label>
-            <div style={{
-                fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700,
-                color: missing > 0 ? "#e74c3c" : "#2ecc71"
+            <div className="tool-big-num" style={{
+                color: missing > 0 ? "#e74c3c" : "#2ecc71",
+                wordBreak: "break-word"
             }}>
                 {fmt(missing)}
             </div>
@@ -390,10 +390,10 @@ export default function CombatCraftCalculator() {
                 {/* Inventory */}
                 <div style={{
                     background: "rgba(0,0,0,0.2)", border: `1px solid ${V.border}`,
-                    borderRadius: 2, padding: "16px 20px", marginBottom: 24
+                    borderRadius: 2, padding: "14px 16px", marginBottom: 18
                 }}>
                     <Label>{t('tools_ui.current_inventory')}</Label>
-                    <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "center" }}>
+                    <div className="tool-inv-row">
                         <InvInput rKey="m" labelKey="resources.metal" inventory={inventory} setInventory={setInventory} />
                         <InvInput rKey="w" labelKey="resources.water" inventory={inventory} setInventory={setInventory} />
                         <InvInput rKey="gc" labelKey="resources.galactic_coins" inventory={inventory} setInventory={setInventory} />
@@ -404,8 +404,8 @@ export default function CombatCraftCalculator() {
                 {/* Summary */}
                 <div style={{
                     background: "rgba(0,0,0,0.2)", border: `1px solid ${V.border}`,
-                    borderRadius: 2, padding: "20px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
-                    gap: 20, alignItems: "end"
+                    borderRadius: 2, padding: "16px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+                    gap: 16, alignItems: "end"
                 }}>
 
                     <SummaryItem labelKey="resources.metal" surp={surplus.m} />
@@ -413,11 +413,12 @@ export default function CombatCraftCalculator() {
                     <SummaryItem labelKey="resources.galactic_coins" surp={surplus.gc} />
                     <SummaryItem labelKey="resources.cosmic_comp" surp={surplus.cc} />
 
-                    <div style={{ display: "flex", gap: 10, flexDirection: "column", justifySelf: "flex-end" }}>
+                    <div style={{ display: "flex", alignItems: "flex-end", gridColumn: "1 / -1" }}>
                         <button onClick={resetAll} style={{
                             background: "rgba(0,0,0,0.3)", border: `1px solid ${V.border}`, borderRadius: 2,
-                            padding: "8px 14px", color: "#FFFFFF", fontSize: 12, cursor: "pointer",
-                            fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: 1, fontWeight: 600
+                            padding: "10px 14px", color: "#FFFFFF", fontSize: 12, cursor: "pointer",
+                            fontFamily: "var(--font-body)", textTransform: "uppercase", letterSpacing: 1, fontWeight: 600,
+                            width: "100%"
                         }}>{t('tools_ui.reset')}</button>
                     </div>
                 </div>
@@ -427,17 +428,14 @@ export default function CombatCraftCalculator() {
             {tiers.map((tier) => {
                 const treesInTier = TREES.filter((t) => t.tier === tier);
                 if (!treesInTier.length) return null;
-                const cols = treesInTier.length === 1 ? "1fr" : treesInTier.length === 2 ? "1fr 1fr" : "1fr 1fr 1fr";
+                const gridClass = treesInTier.length === 1 ? 'tool-grid-trees-1' : treesInTier.length === 2 ? 'tool-grid-trees-2' : 'tool-grid-trees-3';
                 return (
-                    <div key={tier} style={{ marginBottom: 32 }}>
-                        <div style={{
-                            fontFamily: "var(--font-label)", fontSize: 12, fontWeight: 700, color: "#FFFFFF",
-                            letterSpacing: 3, textTransform: "uppercase", marginBottom: 16, paddingLeft: 4, display: "flex", alignItems: "center", gap: 12
-                        }}>
+                    <div key={tier} style={{ marginBottom: 24 }}>
+                        <div className="tool-tier-header">
                             {TIER_LABEL_KEYS[tier] ? t(TIER_LABEL_KEYS[tier]) : t('gvg.tier_n', { n: tier })}
                             <div style={{ flex: 1, height: 1, background: `linear-gradient(90deg, ${V.border}, transparent)` }} />
                         </div>
-                        <div style={{ display: "grid", gridTemplateColumns: cols, gap: 16, alignItems: "start" }}>
+                        <div className={gridClass} style={{ alignItems: "start" }}>
                             {treesInTier.map((tree) => (
                                 <TreeCard key={tree.id} tree={tree} currentLevel={levels[tree.id]} onChange={setLevel} />
                             ))}

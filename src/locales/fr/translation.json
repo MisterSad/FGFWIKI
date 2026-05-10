@@ -902,7 +902,14 @@
         "reset": "Réinitialiser",
         "details": "DÉTAILS",
         "hide": "MASQUER",
-        "missing_suffix": "{{label}} manquant"
+        "missing_suffix": "{{label}} manquant",
+        "tile_intro": "Sélectionnez un calculateur pour planifier votre progression.",
+        "tile_build_time_desc": "Calculez les temps d'amélioration des bâtiments avec réductions de cabines et bonus d'équipage.",
+        "tile_champion_upgrade_desc": "Planifiez le coût en éclats pour passer du niveau actuel au niveau cible.",
+        "tile_nexus_desc": "Estimez les Mods Comp., Échos et niveaux pour le Nexus de votre arme.",
+        "tile_gvg_desc": "Suivez vos besoins en Pièces Galactiques et Composants à travers tous les arbres GvG.",
+        "tile_combat_craft_desc": "Coûts en ressources sur l'ensemble de l'arbre Modifications Combat.",
+        "back_to_tools": "Retour aux outils"
     },
     "categories_extra": {
         "beginner": "Débutant",
