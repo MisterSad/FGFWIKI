@@ -790,31 +790,31 @@
         "how_it_works_desc": "Гра обчислює час будівництва за цією формулою: <br /> <1>(Базовий - Фіксований) / (1 + Бонус%)</1> <br /><br /> Фіксовані зменшення (Каюти екіпажу) застосовуються <4>перед</4> процентними множниками, що робить їх надзвичайно цінними для коротких будівель, але менш впливовими для тижневих покращень."
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "Щоденні завдання",
+        "subtitle": "Відстежуйте щоденні цілі. Усе скидається о 00:00 UTC.",
+        "progress_label": "Прогрес",
+        "reset_in": "Скидання через {{time}}",
+        "reset_all": "Скинути все",
+        "reset_confirm": "Ви впевнені, що хочете скинути всі щоденні завдання?",
+        "completed": "Усі завдання виконано!",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
-            "arena": "Arena"
+            "combat": "Бій",
+            "economy": "Торгівля та ресурси",
+            "fleet": "Флот",
+            "arena": "Арена"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "Атакувати Святилище 170",
+            "shrine_120": "Атакувати Святилище 120",
+            "tribute_vessels": "Атакувати 10 Кораблів Данини",
+            "sacred_tribute_vessels": "Атакувати 10 Священних Кораблів Данини",
+            "ark_of_deliverance": "Атакувати Ковчег Визволення",
+            "send_legendary_cargo": "Надіслати легендарний вантаж",
+            "mine_legendary": "Видобувати легендарну якість",
+            "plunder_legendary_mines": "Грабувати легендарні шахти",
+            "hack_legendary_cargo": "Зламати легендарний вантаж",
+            "auto_join_fleets": "Перевести флоти в режим автоприєднання",
+            "arena": "Атакувати на арені"
         }
     },
     "support_page": {

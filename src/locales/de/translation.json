@@ -790,31 +790,31 @@
         "how_it_works_desc": "Das Spiel berechnet Bauzeiten mit dieser Formel: <br /> <1>(Grund - Pauschal) / (1 + Bonus%)</1> <br /><br /> Pauschale Reduktionen (Crew-Kabinen) werden <4>vor</4> prozentualen Multiplikatoren angewendet, was sie für kurze Builds extrem wertvoll macht, aber für wochenlange Upgrades weniger wirkungsvoll."
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "Tägliche Aufgaben",
+        "subtitle": "Verfolge deine täglichen Ziele. Alles wird um 00:00 UTC zurückgesetzt.",
+        "progress_label": "Fortschritt",
+        "reset_in": "Reset in {{time}}",
+        "reset_all": "Alle zurücksetzen",
+        "reset_confirm": "Bist du sicher, dass du alle deine täglichen Aufgaben zurücksetzen möchtest?",
+        "completed": "Alle Aufgaben abgeschlossen!",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
+            "combat": "Kampf",
+            "economy": "Handel & Ressourcen",
+            "fleet": "Flotte",
             "arena": "Arena"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "Schrein 170 angreifen",
+            "shrine_120": "Schrein 120 angreifen",
+            "tribute_vessels": "10 Tributschiffe angreifen",
+            "sacred_tribute_vessels": "10 Heilige Tributschiffe angreifen",
+            "ark_of_deliverance": "Die Arche der Erlösung angreifen",
+            "send_legendary_cargo": "Legendäre Fracht versenden",
+            "mine_legendary": "Legendäre Qualität abbauen",
+            "plunder_legendary_mines": "Legendäre Minen plündern",
+            "hack_legendary_cargo": "Legendäre Fracht hacken",
+            "auto_join_fleets": "Flotten in Auto-Beitritt-Modus stellen",
+            "arena": "In der Arena angreifen"
         }
     },
     "support_page": {

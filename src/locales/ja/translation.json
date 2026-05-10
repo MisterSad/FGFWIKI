@@ -790,31 +790,31 @@
         "how_it_works_desc": "ゲームはこの式で建設時間を計算します:<br /> <1>(基本 - 定額) / (1 + ボーナス%)</1> <br /><br />定額減少(クルーキャビン)はパーセンテージ乗数<4>の前</4>に適用され、短い建設には非常に価値がありますが、週単位のアップグレードには影響が小さくなります。"
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "デイリータスク",
+        "subtitle": "毎日の目標を管理。すべての進捗は UTC 00:00 にリセット。",
+        "progress_label": "進行度",
+        "reset_in": "{{time}} 後にリセット",
+        "reset_all": "すべてリセット",
+        "reset_confirm": "すべてのデイリータスクをリセットしてもよろしいですか？",
+        "completed": "すべてのタスク完了！",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
-            "arena": "Arena"
+            "combat": "戦闘",
+            "economy": "交易・資源",
+            "fleet": "艦隊",
+            "arena": "アリーナ"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "祭壇170を攻撃",
+            "shrine_120": "祭壇120を攻撃",
+            "tribute_vessels": "貢物船を10隻攻撃",
+            "sacred_tribute_vessels": "聖なる貢物船を10隻攻撃",
+            "ark_of_deliverance": "解放の方舟を攻撃",
+            "send_legendary_cargo": "レジェンダリー品質の貨物を送る",
+            "mine_legendary": "レジェンダリー品質を採掘",
+            "plunder_legendary_mines": "レジェンダリー鉱山を略奪",
+            "hack_legendary_cargo": "レジェンダリー貨物をハック",
+            "auto_join_fleets": "艦隊を自動参加モードに設定",
+            "arena": "アリーナで攻撃"
         }
     },
     "support_page": {
