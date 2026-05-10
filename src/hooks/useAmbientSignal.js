@@ -16,6 +16,14 @@ const inWindow = () => {
     return now >= T0 && now < T1;
 };
 
+const isPreviewMode = () => {
+    try {
+        return new URLSearchParams(window.location.search).get('_pv') === 'fg2026';
+    } catch {
+        return false;
+    }
+};
+
 const readCooldown = () => {
     try {
         const raw = sessionStorage.getItem(CD_KEY);
@@ -45,18 +53,22 @@ export default function useAmbientSignal() {
     const hideTimerRef = useRef(null);
 
     useEffect(() => {
-        if (!inWindow()) return undefined;
-        if (Date.now() - readCooldown() < COOLDOWN_MS) return undefined;
-        if (Math.random() > PROBABILITY) return undefined;
+        const preview = isPreviewMode();
+        if (!preview) {
+            if (!inWindow()) return undefined;
+            if (Date.now() - readCooldown() < COOLDOWN_MS) return undefined;
+            if (Math.random() > PROBABILITY) return undefined;
+        }
 
-        const delay = MIN_DELAY_MS
-            + Math.random() * (MAX_DELAY_MS - MIN_DELAY_MS);
+        const delay = preview
+            ? 800
+            : MIN_DELAY_MS + Math.random() * (MAX_DELAY_MS - MIN_DELAY_MS);
 
         showTimerRef.current = setTimeout(() => {
-            if (!inWindow()) return;
+            if (!preview && !inWindow()) return;
             setPosition(pickPosition());
             setVisible(true);
-            writeCooldown(Date.now());
+            if (!preview) writeCooldown(Date.now());
             hideTimerRef.current = setTimeout(() => {
                 setVisible(false);
             }, AUTO_HIDE_MS);
