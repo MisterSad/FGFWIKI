@@ -891,6 +891,11 @@ p {
 }
 
 @media (max-width: 600px) {
+  .hero-image-container {
+    /* Image becomes much taller than the hero on mobile because of width:250%.
+       Shift it down so Seldon's head doesn't get clipped above the viewport. */
+    transform: translate(-50%, -38%);
+  }
   .hero-image {
     width: 250%;
     /* Scale up significantly on mobile so he appears larger behind the text */
