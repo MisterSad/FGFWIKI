@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 
-const T0 = Date.UTC(2026, 4, 12, 0, 0, 0);
-const T1 = Date.UTC(2026, 4, 20, 0, 0, 0);
+// PREVIEW MODE — DO NOT COMMIT. Forces the dot to always appear.
+const T0 = 0;
+const T1 = Number.MAX_SAFE_INTEGER;
 
-const PROBABILITY = 0.07;
-const MIN_DELAY_MS = 4000;
-const MAX_DELAY_MS = 12000;
-const AUTO_HIDE_MS = 45000;
-const COOLDOWN_MS = 90000;
+const PROBABILITY = 1;
+const MIN_DELAY_MS = 800;
+const MAX_DELAY_MS = 1500;
+const AUTO_HIDE_MS = 600000;
+const COOLDOWN_MS = 0;
 
 const CD_KEY = 'fgfwiki_amb_cd';
 
