@@ -56,6 +56,7 @@ const giftCodes = [
     { code: 'ranchannelgift' },
     { code: 'ugeple007' },
     { code: 'ggya0327' },
+    { code: 'MOTHERDAY26' },
 ];
 
 const now = new Date();
