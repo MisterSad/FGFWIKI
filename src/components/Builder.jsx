@@ -123,7 +123,7 @@ export default function Builder() {
             </header>
 
             {/* Content */}
-            <main style={{ position: "relative", zIndex: 1, maxWidth: 680, margin: "0 auto", padding: "0 20px 60px" }}>
+            <main style={{ position: "relative", zIndex: 1, maxWidth: 1100, margin: "0 auto", padding: "0 clamp(8px, 3vw, 24px) clamp(40px, 8vw, 60px)" }}>
                 {activeTab === 'build-time' && <BuildTimeCalculator />}
                 {activeTab === 'nexus' && <NexusCalculator />}
                 {activeTab === 'gvg' && <GvGCalculator />}
