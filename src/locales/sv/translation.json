@@ -790,31 +790,31 @@
         "how_it_works_desc": "Spelet beräknar byggtider med denna formel: <br /> <1>(Bas - Fast) / (1 + Bonus%)</1> <br /><br /> Fasta minskningar (Crew Cabins) tillämpas <4>före</4> procentmultiplikatorer, vilket gör dem extremt värdefulla för korta byggen men mindre påverkande för veckolånga uppgraderingar."
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "Dagliga uppdrag",
+        "subtitle": "Följ dina dagliga mål. Allt återställs vid 00:00 UTC.",
+        "progress_label": "Framsteg",
+        "reset_in": "Återställs om {{time}}",
+        "reset_all": "Återställ allt",
+        "reset_confirm": "Är du säker på att du vill återställa alla dina dagliga uppdrag?",
+        "completed": "Alla uppdrag slutförda!",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
+            "combat": "Strid",
+            "economy": "Handel och resurser",
+            "fleet": "Flotta",
             "arena": "Arena"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "Attackera Helgedomen 170",
+            "shrine_120": "Attackera Helgedomen 120",
+            "tribute_vessels": "Attackera 10 Tributskepp",
+            "sacred_tribute_vessels": "Attackera 10 Heliga Tributskepp",
+            "ark_of_deliverance": "Attackera Befrielsens Ark",
+            "send_legendary_cargo": "Skicka legendarisk last",
+            "mine_legendary": "Bryt legendarisk kvalitet",
+            "plunder_legendary_mines": "Plundra legendariska gruvor",
+            "hack_legendary_cargo": "Hacka legendarisk last",
+            "auto_join_fleets": "Sätt flottor i auto-anslutningsläge",
+            "arena": "Attackera i arenan"
         }
     },
     "support_page": {

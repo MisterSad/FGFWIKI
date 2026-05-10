@@ -790,31 +790,31 @@
         "how_it_works_desc": "Spillet beregner byggetider med denne formelen: <br /> <1>(Base - Fast) / (1 + Bonus%)</1> <br /><br /> Faste reduksjoner (Crew Cabins) anvendes <4>før</4> prosentmultiplikatorer, noe som gjør dem ekstremt verdifulle for korte bygg men mindre effektive for ukelange oppgraderinger."
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "Daglige oppgaver",
+        "subtitle": "Følg dine daglige mål. Alt tilbakestilles kl. 00:00 UTC.",
+        "progress_label": "Fremgang",
+        "reset_in": "Tilbakestilles om {{time}}",
+        "reset_all": "Tilbakestill alt",
+        "reset_confirm": "Er du sikker på at du vil tilbakestille alle dine daglige oppgaver?",
+        "completed": "Alle oppgaver fullført!",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
+            "combat": "Kamp",
+            "economy": "Handel og ressurser",
+            "fleet": "Flåte",
             "arena": "Arena"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "Angrip Helligdommen 170",
+            "shrine_120": "Angrip Helligdommen 120",
+            "tribute_vessels": "Angrip 10 Tributtskip",
+            "sacred_tribute_vessels": "Angrip 10 Hellige Tributtskip",
+            "ark_of_deliverance": "Angrip Frelsesarken",
+            "send_legendary_cargo": "Send legendarisk last",
+            "mine_legendary": "Utvinn legendarisk kvalitet",
+            "plunder_legendary_mines": "Plyndre legendariske gruver",
+            "hack_legendary_cargo": "Hack legendarisk last",
+            "auto_join_fleets": "Sett flåter i auto-bli-med-modus",
+            "arena": "Angrip i arenaen"
         }
     },
     "support_page": {

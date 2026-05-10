@@ -790,31 +790,31 @@
         "how_it_works_desc": "游戏使用此公式计算建造时间:<br /> <1>(基础 - 固定) / (1 + 奖励%)</1> <br /><br />固定减少(船员舱)在百分比乘数<4>之前</4>应用,使其对短期建造极有价值,但对持续一周的升级影响较小。"
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "每日任务",
+        "subtitle": "追踪您的每日目标。所有进度在 UTC 00:00 重置。",
+        "progress_label": "进度",
+        "reset_in": "{{time}} 后重置",
+        "reset_all": "全部重置",
+        "reset_confirm": "确定要重置所有每日任务吗？",
+        "completed": "全部任务完成！",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
-            "arena": "Arena"
+            "combat": "战斗",
+            "economy": "贸易与资源",
+            "fleet": "舰队",
+            "arena": "竞技场"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "攻击神殿 170",
+            "shrine_120": "攻击神殿 120",
+            "tribute_vessels": "攻击 10 艘贡品船",
+            "sacred_tribute_vessels": "攻击 10 艘神圣贡品船",
+            "ark_of_deliverance": "攻击解放方舟",
+            "send_legendary_cargo": "发送传说品质货物",
+            "mine_legendary": "开采传说品质",
+            "plunder_legendary_mines": "掠夺传说矿场",
+            "hack_legendary_cargo": "黑入传说货物",
+            "auto_join_fleets": "将舰队设为自动加入模式",
+            "arena": "在竞技场中攻击"
         }
     },
     "support_page": {

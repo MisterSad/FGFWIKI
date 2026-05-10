@@ -790,31 +790,31 @@
         "how_it_works_desc": "게임은 다음 공식을 사용하여 건설 시간을 계산합니다: <br /> <1>(기본 - 고정) / (1 + 보너스%)</1> <br /><br /> 고정 감소(승무원 캐빈)는 백분율 승수 <4>전</4>에 적용되어 짧은 빌드에는 매우 가치 있지만 일주일 길이의 업그레이드에는 영향이 적습니다."
     },
     "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
+        "title": "일일 임무",
+        "subtitle": "일일 목표를 추적하세요. 모든 진행도는 UTC 00:00에 초기화됩니다.",
+        "progress_label": "진행도",
+        "reset_in": "{{time}} 후 초기화",
+        "reset_all": "모두 초기화",
+        "reset_confirm": "정말로 모든 일일 임무를 초기화하시겠습니까?",
+        "completed": "모든 임무 완료!",
         "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
-            "arena": "Arena"
+            "combat": "전투",
+            "economy": "교역 & 자원",
+            "fleet": "함대",
+            "arena": "투기장"
         },
         "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
+            "shrine_170": "신전 170 공격",
+            "shrine_120": "신전 120 공격",
+            "tribute_vessels": "공물선 10척 공격",
+            "sacred_tribute_vessels": "신성한 공물선 10척 공격",
+            "ark_of_deliverance": "해방의 방주 공격",
+            "send_legendary_cargo": "전설 등급 화물 발송",
+            "mine_legendary": "전설 등급 채굴",
+            "plunder_legendary_mines": "전설 광산 약탈",
+            "hack_legendary_cargo": "전설 화물 해킹",
+            "auto_join_fleets": "함대를 자동 참여 모드로 설정",
+            "arena": "투기장에서 공격"
         }
     },
     "support_page": {
