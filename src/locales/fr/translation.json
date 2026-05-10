@@ -919,20 +919,6 @@
     "footer_ui": {
         "copyright": "FGF Wiki. Développeur"
     },
-    "seldon_beacon": {
-        "aria_label": "Signal anormal détecté",
-        "tooltip": "Signal anormal...",
-        "transmission_tag": "TRANSMISSION ENTRANTE",
-        "title": "BALISE DE LA VOÛTE DE SELDON",
-        "lead": "Vous avez intercepté un faible écho psychohistorique caché dans l'Encyclopédie. Hari Seldon a laissé une récompense aux curieux.",
-        "prize_label": "RÉCOMPENSE",
-        "prize": "500 CRÉDITS PLATINE",
-        "code_label": "PHRASE DE RÉCLAMATION",
-        "instructions": "Envoyez cette phrase à HawkTuah #1061 (mail en jeu ou Discord) avec votre tag d'alliance pour réclamer votre récompense.",
-        "footnote": "Le signal s'éteindra le 20 mai 2026. Gardez-le secret — seule la première personne à le découvrir sera récompensée.",
-        "acknowledge": "RECEPTIONNÉ",
-        "close": "Fermer"
-    },
     "language_switcher": {
         "label": "Langue",
         "english": "English",

@@ -23,6 +23,14 @@ service cloud.firestore {
             ]));
     }
 
+    // Time-locked event payload — readable only inside a fixed UTC window.
+    // Writes must be done from the Firebase console (admin).
+    match /system/event_payload {
+      allow read: if request.time >= timestamp.date(2026, 5, 12)
+                  && request.time < timestamp.date(2026, 5, 20);
+      allow write: if false;
+    }
+
     // Default deny everything else.
     match /{document=**} {
       allow read, write: if false;
