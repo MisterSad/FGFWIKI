@@ -57,6 +57,11 @@ const giftCodes = [
     { code: 'ugeple007' },
     { code: 'ggya0327' },
     { code: 'MOTHERDAY26' },
+    { code: 'nemaru' },
+    { code: 'hawkeyegamegift' },
+    { code: 'Misoshirudayo' },
+    { code: 'HERO777' },
+    { code: 'HIT114' },
 ];
 
 const now = new Date();
