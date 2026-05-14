@@ -1352,7 +1352,7 @@ footer {
 /* Ambient signal indicator                        */
 /* ============================================== */
 .amb-dot {
-  position: fixed;
+  position: absolute;
   width: 22px;
   height: 22px;
   padding: 0;
