@@ -216,7 +216,7 @@ export default function AmbientSignal() {
                 onClick={() => setRevealed(true)}
                 aria-label="Notification"
                 style={{
-                    top: `${position.topPct}%`,
+                    top: `${position.topPx}px`,
                     left: `${position.leftPct}%`,
                 }}
             >
