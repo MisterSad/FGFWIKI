@@ -838,9 +838,9 @@ export const eventsData = [
       { title: 'events.childrens_day_reward_nameplate_title', content: 'events.childrens_day_reward_nameplate_desc', image: '/images/CDE_nameplate.png' }
     ],
     proTips: [
-      { title: 'events.childrens_day_protip_announce_title', content: 'events.childrens_day_protip_announce_desc' },
-      { title: 'events.childrens_day_protip_social_title', content: 'events.childrens_day_protip_social_desc' },
-      { title: 'events.childrens_day_protip_unused_title', content: 'events.childrens_day_protip_unused_desc' }
+      { title: 'events.childrens_day_protip_pass_title', content: 'events.childrens_day_protip_pass_desc' },
+      { title: 'events.childrens_day_protip_unused_title', content: 'events.childrens_day_protip_unused_desc' },
+      { title: 'events.childrens_day_protip_defense_title', content: 'events.childrens_day_protip_defense_desc' }
     ]
   }
 ];
