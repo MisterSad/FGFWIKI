@@ -809,7 +809,6 @@ export const eventsData = [
     cycle: 'events.childrens_day_cycle',
     type: 'events.childrens_day_type',
     description: 'events.childrens_day_desc',
-    image: '/images/CDE1.jpg',
     infoGrid: {
       title: 'events.childrens_day_schedule_title',
       items: [
