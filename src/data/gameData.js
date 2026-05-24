@@ -757,7 +757,6 @@ export const eventsData = [
   {
     id: 'mothers_day',
     title: 'events.mothers_day_title',
-    isNew: true,
     isLimited: true,
     publishDate: '2026-05-03T00:01:00+02:00',
     cycle: 'events.mothers_day_cycle',
