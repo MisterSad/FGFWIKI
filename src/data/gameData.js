@@ -803,7 +803,7 @@ export const eventsData = [
     title: 'events.childrens_day_title',
     isNew: true,
     isLimited: true,
-    publishDate: '2026-05-24T00:00:00Z',
+    publishDate: '2026-05-25T08:00:00Z',
     cycle: 'events.childrens_day_cycle',
     type: 'events.childrens_day_type',
     description: 'events.childrens_day_desc',
