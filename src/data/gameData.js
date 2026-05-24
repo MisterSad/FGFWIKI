@@ -722,7 +722,6 @@ export const eventsData = [
   {
     id: 'united_frontline',
     title: 'events.united_frontline_title',
-    isNew: true,
     cycle: 'events.united_frontline_cycle',
     type: 'events.united_frontline_type',
     description: 'events.united_frontline_desc',
