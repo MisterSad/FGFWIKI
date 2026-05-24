@@ -799,5 +799,48 @@ export const eventsData = [
       { title: 'events.mothers_day_protip_carnations_title', content: 'events.mothers_day_protip_carnations_desc' },
       { title: 'events.mothers_day_protip_gift_title', content: 'events.mothers_day_protip_gift_desc' }
     ]
+  },
+  {
+    id: 'childrens_day',
+    title: 'events.childrens_day_title',
+    isNew: true,
+    isLimited: true,
+    publishDate: '2026-05-24T00:00:00Z',
+    cycle: 'events.childrens_day_cycle',
+    type: 'events.childrens_day_type',
+    description: 'events.childrens_day_desc',
+    image: '/images/CDE1.jpg',
+    infoGrid: {
+      title: 'events.childrens_day_schedule_title',
+      items: [
+        { label: 'events.childrens_day_schedule_servers_a_label', value: 'events.childrens_day_schedule_servers_a_value' },
+        { label: 'events.childrens_day_schedule_servers_b_label', value: 'events.childrens_day_schedule_servers_b_value' },
+        { label: 'events.childrens_day_schedule_reset_label', value: 'events.childrens_day_schedule_reset_value' }
+      ]
+    },
+    stagesTitle: 'events.childrens_day_activities_title',
+    stagesImage: '/images/CDE2.png',
+    stages: [
+      { title: 'events.childrens_day_activity_checkin_title', description: 'events.childrens_day_activity_checkin_desc' },
+      { title: 'events.childrens_day_activity_bingo_title', description: 'events.childrens_day_activity_bingo_desc' },
+      { title: 'events.childrens_day_activity_battlepass_title', description: 'events.childrens_day_activity_battlepass_desc' },
+      { title: 'events.childrens_day_activity_lottery_title', description: 'events.childrens_day_activity_lottery_desc' },
+      { title: 'events.childrens_day_activity_chest_title', description: 'events.childrens_day_activity_chest_desc' },
+      { title: 'events.childrens_day_activity_shop_title', description: 'events.childrens_day_activity_shop_desc', image: '/images/CDE3.png' },
+      { title: 'events.childrens_day_activity_defense_title', description: 'events.childrens_day_activity_defense_desc' }
+    ],
+    tacticsTitle: 'events.childrens_day_rewards_title',
+    tactics: [
+      { title: 'events.childrens_day_reward_skin1_title', content: 'events.childrens_day_reward_skin1_desc', image: '/images/CDE_skin_fire.png' },
+      { title: 'events.childrens_day_reward_skin2_title', content: 'events.childrens_day_reward_skin2_desc', image: '/images/CDE_skin_star.png' },
+      { title: 'events.childrens_day_reward_frame_title', content: 'events.childrens_day_reward_frame_desc', image: '/images/CDE_frame.png' },
+      { title: 'events.childrens_day_reward_chat_title', content: 'events.childrens_day_reward_chat_desc', image: '/images/CDE_chat.png' },
+      { title: 'events.childrens_day_reward_nameplate_title', content: 'events.childrens_day_reward_nameplate_desc', image: '/images/CDE_nameplate.png' }
+    ],
+    proTips: [
+      { title: 'events.childrens_day_protip_announce_title', content: 'events.childrens_day_protip_announce_desc' },
+      { title: 'events.childrens_day_protip_social_title', content: 'events.childrens_day_protip_social_desc' },
+      { title: 'events.childrens_day_protip_unused_title', content: 'events.childrens_day_protip_unused_desc' }
+    ]
   }
 ];
