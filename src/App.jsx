@@ -8,12 +8,9 @@ import LoginModal from './components/LoginModal';
 
 const Guides = lazy(() => import('./components/Guides'));
 const FlagshipGuide = lazy(() => import('./components/FlagshipGuide'));
-const FlagshipDecks = lazy(() => import('./components/FlagshipDecks'));
-const GroundGuide = lazy(() => import('./components/GroundGuide'));
 const HeroTierList = lazy(() => import('./components/HeroTierList'));
 const EventGuide = lazy(() => import('./components/EventGuide'));
 const Builder = lazy(() => import('./components/Builder'));
-const DailyChecklist = lazy(() => import('./components/DailyChecklist'));
 const GiftCodes = lazy(() => import('./components/GiftCodes'));
 const Support = lazy(() => import('./components/Support'));
 
@@ -39,11 +36,11 @@ function App() {
                 <Route path="/home" element={<Hero />} />
                 <Route path="/guides" element={<Guides />} />
                 <Route path="/guides/:guideId" element={<Guides />} />
-                <Route path="/daily-tasks" element={<DailyChecklist />} />
+                <Route path="/daily-tasks" element={<Navigate to="/guides?tab=daily-tasks" replace />} />
                 <Route path="/champions" element={<HeroTierList />} />
                 <Route path="/flagships" element={<FlagshipGuide />} />
-                <Route path="/flagship-decks" element={<FlagshipDecks />} />
-                <Route path="/ground-teams" element={<GroundGuide />} />
+                <Route path="/flagship-decks" element={<Navigate to="/flagships?tab=decks" replace />} />
+                <Route path="/ground-teams" element={<Navigate to="/champions?tab=ground" replace />} />
                 <Route path="/events" element={<EventGuide />} />
                 <Route path="/events/:eventId" element={<EventGuide />} />
                 <Route path="/tools" element={<Builder />} />

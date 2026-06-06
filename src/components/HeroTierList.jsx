@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { groundTeams } from '../data/gameData';
+import TeamDisplay from './TeamDisplay';
 import { Trophy, Star, Shield, Zap, Crosshair, Heart, AlertTriangle, Gem, Info, BarChart2, Users } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 
@@ -122,145 +125,218 @@ const tierListData = [
 
 export default function ChampionsGuide() {
     const { t } = useTranslation();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const activeTab = searchParams.get('tab') === 'ground' ? 'ground' : 'space';
+
+    const setActiveTab = (tab) => {
+        const newParams = new URLSearchParams(searchParams);
+        newParams.set('tab', tab);
+        setSearchParams(newParams);
+    };
 
     return (
         <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', color: 'var(--text-main)' }}>
 
-            {/* 1. Introduction & Fundamentals */}
-            <div className="card reveal" style={{ padding: 'clamp(1rem, 3vw, 1.5rem)', marginBottom: '2rem', borderLeft: '4px solid var(--gold)' }}>
-                <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', fontSize: 'clamp(1.1rem, 3vw, 1.5rem)', color: 'var(--gold-bright)', marginBottom: '1rem', marginTop: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Shield size={24} /> {t('champions.fundamentals')}
-                </h2>
-                <div style={{
-                    background: 'var(--bg-void)',
-                    border: '1px solid var(--border)',
-                    borderRadius: '2px',
-                    padding: 'clamp(1rem, 4vw, 2rem)',
-                    textAlign: 'center',
-                    boxShadow: 'none'
+            {/* Header */}
+            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                <h2 style={{
+                    fontFamily: 'var(--font-hero)',
+                    fontSize: 'clamp(1.5rem, 5vw, 2.5rem)',
+                    color: "#FFFFFF",
+                    textTransform: 'uppercase',
+                    letterSpacing: 'clamp(1px, 0.4vw, 2px)',
+                    marginBottom: '0.5rem',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap'
                 }}>
-                    <h4 style={{ color: "#FFFFFF", marginBottom: '1rem', fontSize: '1.4rem', textTransform: 'uppercase', letterSpacing: '2px' }}>
-                        {t('champions.synergy_title')}
-                    </h4>
-                    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: 'var(--text-primary)', margin: 0, maxWidth: '800px', marginInline: 'auto' }}>
-                        <Trans i18nKey="champions.synergy_desc" components={{ 1: <strong style={{ color: "#FFFFFF", borderBottom: '1px solid var(--gold)' }} /> }} />
-                    </p>
-                </div>
+                    <Trophy size={40} /> {t('navigation.champions')}
+                </h2>
+                <p style={{ color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)' }}>
+                    {t('seo.champions.description')}
+                </p>
             </div>
 
-            {/* 2. Guide by Damage Type (Tier List) */}
-            {tierListData.map((category, idx) => (
-                <div key={category.id} className="reveal" style={{ transitionDelay: `${0.1 + idx * 0.1}s`, marginBottom: '4rem' }}>
-                    <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: category.color, marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        <category.icon size={28} /> <span className="label-text">{t(category.titleKey)}</span>
-                    </h3>
+            {/* Sub-tab switcher */}
+            <div className="sub-tabs-container">
+                <button
+                    className={`sub-tab-button ${activeTab === 'space' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('space')}
+                >
+                    {t('champions.fundamentals')}
+                </button>
+                <button
+                    className={`sub-tab-button ${activeTab === 'ground' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('ground')}
+                >
+                    {t('ground_guide.title')}
+                </button>
+            </div>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                        {category.champions.map((champ, cIdx) => (
-                            <ChampionTierEntry key={cIdx} champion={champ} />
+            {activeTab === 'space' ? (
+                <>
+                    {/* 1. Introduction & Fundamentals */}
+                    <div className="card reveal" style={{ padding: 'clamp(1rem, 3vw, 1.5rem)', marginBottom: '2rem', borderLeft: '4px solid var(--gold)' }}>
+                        <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', fontSize: 'clamp(1.1rem, 3vw, 1.5rem)', color: 'var(--gold-bright)', marginBottom: '1rem', marginTop: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                            <Shield size={24} /> {t('champions.fundamentals')}
+                        </h2>
+                        <div style={{
+                            background: 'var(--bg-void)',
+                            border: '1px solid var(--border)',
+                            borderRadius: '2px',
+                            padding: 'clamp(1rem, 4vw, 2rem)',
+                            textAlign: 'center',
+                            boxShadow: 'none'
+                        }}>
+                            <h4 style={{ color: "#FFFFFF", marginBottom: '1rem', fontSize: '1.4rem', textTransform: 'uppercase', letterSpacing: '2px' }}>
+                                {t('champions.synergy_title')}
+                            </h4>
+                            <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: 'var(--text-primary)', margin: 0, maxWidth: '800px', marginInline: 'auto' }}>
+                                <Trans i18nKey="champions.synergy_desc" components={{ 1: <strong style={{ color: "#FFFFFF", borderBottom: '1px solid var(--gold)' }} /> }} />
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 2. Guide by Damage Type (Tier List) */}
+                    {tierListData.map((category, idx) => (
+                        <div key={category.id} className="reveal" style={{ transitionDelay: `${0.1 + idx * 0.1}s`, marginBottom: '4rem' }}>
+                            <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: category.color, marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                <category.icon size={28} /> <span className="label-text">{t(category.titleKey)}</span>
+                            </h3>
+
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                                {category.champions.map((champ, cIdx) => (
+                                    <ChampionTierEntry key={cIdx} champion={champ} />
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+
+                    {/* 3. Stat Analysis */}
+                    <div className="reveal" style={{ transitionDelay: '0.4s', marginBottom: '4rem' }}>
+                        <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: 'var(--text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
+                            <BarChart2 size={24} /> <span className="label-text">{t('champions.stats_title')}</span>
+                        </h3>
+                        <div style={{ overflowX: 'auto' }}>
+                            <table style={{ fontFamily: 'var(--font-mono)', width: '100%', borderCollapse: 'collapse', color: 'var(--text-dim)' }}>
+                                <thead>
+                                    <tr style={{ background: 'var(--bg-void)', borderBottom: '1px solid var(--border)' }}>
+                                        <th style={{ padding: '1rem', textAlign: 'left', color: 'var(--text-primary)' }}>Type</th>
+                                        <th style={{ padding: '1rem', textAlign: 'left', color: 'var(--text-primary)' }}>Champion</th>
+                                        <th style={{ padding: '1rem', textAlign: 'left', color: "#FFFFFF" }}>Key Stat</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {/* Kinetic */}
+                                    {[
+                                        { name: 'Zora Dominii', type: 'Kinetic', stat: 'INT' },
+                                        { name: 'Eva von Trier', type: 'Kinetic', stat: 'INT' },
+                                        { name: 'Killer Bee', type: 'Kinetic', stat: 'ATK' },
+                                        { name: 'Cocoon', type: 'Kinetic', stat: 'DEF' },
+                                        { name: 'Riian Dessos', type: 'Kinetic', stat: 'INT / ATK' },
+                                        { name: 'Lani Verita', type: 'Kinetic', stat: 'ATK' }
+                                    ].map((row, idx) => (
+                                        <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
+                                            <td className="label-text" style={{ padding: '1rem', color: "#FFFFFF" }}>{row.type}</td>
+                                            <td style={{ padding: '1rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>{row.name}</td>
+                                            <td style={{ padding: '1rem' }}>{row.stat}</td>
+                                        </tr>
+                                    ))}
+                                    {/* Beam */}
+                                    {[
+                                        { name: 'Evan Rogers', type: 'Beam', stat: 'ATK' },
+                                        { name: 'Aliya', type: 'Beam', stat: 'INT' },
+                                        { name: 'Doug Rockwell', type: 'Beam', stat: 'DEF' },
+                                        { name: 'Klara', type: 'Beam', stat: 'INT' },
+                                        { name: 'Lucius Pullo', type: 'Beam', stat: 'ATK' }
+                                    ].map((row, idx) => (
+                                        <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
+                                            <td className="label-text" style={{ padding: '1rem', color: 'var(--accent-teal)' }}>{row.type}</td>
+                                            <td style={{ padding: '1rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>{row.name}</td>
+                                            <td style={{ padding: '1rem' }}>{row.stat}</td>
+                                        </tr>
+                                    ))}
+                                    {/* Ion */}
+                                    {[
+                                        { name: 'Ajita', type: 'Ion', stat: 'ATK' },
+                                        { name: 'Lily', type: 'Ion', stat: 'ATK' },
+                                        { name: 'Jodie Beart', type: 'Ion', stat: 'ATK' },
+                                        { name: 'Kama Moai', type: 'Ion', stat: 'INT' },
+                                        { name: 'Phade', type: 'Ion', stat: 'ATK' }
+                                    ].map((row, idx) => (
+                                        <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
+                                            <td className="label-text" style={{ padding: '1rem', color: 'var(--accent-blue)' }}>{row.type}</td>
+                                            <td style={{ padding: '1rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>{row.name}</td>
+                                            <td style={{ padding: '1rem' }}>{row.stat}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {/* 4. Pro Tips */}
+                    <div className="card reveal" style={{ transitionDelay: '0.5s', padding: 'clamp(1rem, 4vw, 2rem)', border: '1px solid var(--border)', borderTop: '2px solid var(--gold)' }}>
+                        <h3 style={{ fontFamily: 'var(--font-hero)', color: "#FFFFFF", marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textTransform: 'uppercase' }}>
+                            <Zap size={24} /> {t('champions.pro_tips_title')}
+                        </h3>
+                        <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '1rem' }}>
+                            <li style={{ display: 'flex', gap: '1rem' }}>
+                                <AlertTriangle size={24} color="var(--accent-red)" />
+                                <div>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.golden_rule')}</strong>
+                                    <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
+                                        {t('champions.golden_rule_desc')}
+                                    </span>
+                                </div>
+                            </li>
+                            <li style={{ display: 'flex', gap: '1rem' }}>
+                                <Gem size={24} color="var(--accent-teal)" />
+                                <div>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.shard_management')}</strong>
+                                    <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
+                                        <Trans i18nKey="champions.shard_management_desc" components={{ 1: <strong /> }} />
+                                    </span>
+                                </div>
+                            </li>
+                            <li style={{ display: 'flex', gap: '1rem' }}>
+                                <Info size={24} color="var(--accent-blue)" />
+                                <div>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.update_note')}</strong>
+                                    <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
+                                        {t('champions.update_note_desc')}
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </>
+            ) : (
+                <div className="fade-in">
+                    {/* Header */}
+                    <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                        <h3 style={{
+                            fontFamily: 'var(--font-hero)',
+                            fontSize: '2rem',
+                            color: "#FFFFFF",
+                            textTransform: 'uppercase',
+                            letterSpacing: '2px',
+                            marginBottom: '0.5rem',
+                            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem'
+                        }}>
+                            <Users size={32} /> {t('ground_guide.title')}
+                        </h3>
+                        <p className="label-text" style={{ color: 'var(--text-primary)', fontSize: '1.1rem', margin: 0 }}>
+                            {t('ground_guide.subtitle')}
+                        </p>
+                    </div>
+
+                    {/* Teams Content */}
+                    <div>
+                        {groundTeams.map(deck => (
+                            <TeamDisplay key={deck.id} deck={deck} isGround={true} />
                         ))}
                     </div>
                 </div>
-            ))}
-
-            {/* 3. Stat Analysis */}
-            <div className="reveal" style={{ transitionDelay: '0.4s', marginBottom: '4rem' }}>
-                <h3 style={{ fontFamily: 'var(--font-hero)', fontSize: '1.8rem', color: 'var(--text-primary)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
-                    <BarChart2 size={24} /> <span className="label-text">{t('champions.stats_title')}</span>
-                </h3>
-                <div style={{ overflowX: 'auto' }}>
-                    <table style={{ fontFamily: 'var(--font-mono)', width: '100%', borderCollapse: 'collapse', color: 'var(--text-dim)' }}>
-                        <thead>
-                            <tr style={{ background: 'var(--bg-void)', borderBottom: '1px solid var(--border)' }}>
-                                <th style={{ padding: '1rem', textAlign: 'left', color: 'var(--text-primary)' }}>Type</th>
-                                <th style={{ padding: '1rem', textAlign: 'left', color: 'var(--text-primary)' }}>Champion</th>
-                                <th style={{ padding: '1rem', textAlign: 'left', color: "#FFFFFF" }}>Key Stat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {/* Kinetic */}
-                            {[
-                                { name: 'Zora Dominii', type: 'Kinetic', stat: 'INT' },
-                                { name: 'Eva von Trier', type: 'Kinetic', stat: 'INT' },
-                                { name: 'Killer Bee', type: 'Kinetic', stat: 'ATK' },
-                                { name: 'Cocoon', type: 'Kinetic', stat: 'DEF' },
-                                { name: 'Riian Dessos', type: 'Kinetic', stat: 'INT / ATK' },
-                                { name: 'Lani Verita', type: 'Kinetic', stat: 'ATK' }
-                            ].map((row, idx) => (
-                                <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
-                                    <td className="label-text" style={{ padding: '1rem', color: "#FFFFFF" }}>{row.type}</td>
-                                    <td style={{ padding: '1rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>{row.name}</td>
-                                    <td style={{ padding: '1rem' }}>{row.stat}</td>
-                                </tr>
-                            ))}
-                            {/* Beam */}
-                            {[
-                                { name: 'Evan Rogers', type: 'Beam', stat: 'ATK' },
-                                { name: 'Aliya', type: 'Beam', stat: 'INT' },
-                                { name: 'Doug Rockwell', type: 'Beam', stat: 'DEF' },
-                                { name: 'Klara', type: 'Beam', stat: 'INT' },
-                                { name: 'Lucius Pullo', type: 'Beam', stat: 'ATK' }
-                            ].map((row, idx) => (
-                                <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
-                                    <td className="label-text" style={{ padding: '1rem', color: 'var(--accent-teal)' }}>{row.type}</td>
-                                    <td style={{ padding: '1rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>{row.name}</td>
-                                    <td style={{ padding: '1rem' }}>{row.stat}</td>
-                                </tr>
-                            ))}
-                            {/* Ion */}
-                            {[
-                                { name: 'Ajita', type: 'Ion', stat: 'ATK' },
-                                { name: 'Lily', type: 'Ion', stat: 'ATK' },
-                                { name: 'Jodie Beart', type: 'Ion', stat: 'ATK' },
-                                { name: 'Kama Moai', type: 'Ion', stat: 'INT' },
-                                { name: 'Phade', type: 'Ion', stat: 'ATK' }
-                            ].map((row, idx) => (
-                                <tr key={idx} style={{ borderBottom: '1px solid var(--border)' }}>
-                                    <td className="label-text" style={{ padding: '1rem', color: 'var(--accent-blue)' }}>{row.type}</td>
-                                    <td style={{ padding: '1rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>{row.name}</td>
-                                    <td style={{ padding: '1rem' }}>{row.stat}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            {/* 4. Pro Tips */}
-            <div className="card reveal" style={{ transitionDelay: '0.5s', padding: 'clamp(1rem, 4vw, 2rem)', border: '1px solid var(--border)', borderTop: '2px solid var(--gold)' }}>
-                <h3 style={{ fontFamily: 'var(--font-hero)', color: "#FFFFFF", marginTop: 0, marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textTransform: 'uppercase' }}>
-                    <Zap size={24} /> {t('champions.pro_tips_title')}
-                </h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '1rem' }}>
-                    <li style={{ display: 'flex', gap: '1rem' }}>
-                        <AlertTriangle size={24} color="var(--accent-red)" />
-                        <div>
-                            <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.golden_rule')}</strong>
-                            <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
-                                {t('champions.golden_rule_desc')}
-                            </span>
-                        </div>
-                    </li>
-                    <li style={{ display: 'flex', gap: '1rem' }}>
-                        <Gem size={24} color="var(--accent-teal)" />
-                        <div>
-                            <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.shard_management')}</strong>
-                            <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
-                                <Trans i18nKey="champions.shard_management_desc" components={{ 1: <strong /> }} />
-                            </span>
-                        </div>
-                    </li>
-                    <li style={{ display: 'flex', gap: '1rem' }}>
-                        <Info size={24} color="var(--accent-blue)" />
-                        <div>
-                            <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.update_note')}</strong>
-                            <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
-                                {t('champions.update_note_desc')}
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            )}
 
         </div>
     );
