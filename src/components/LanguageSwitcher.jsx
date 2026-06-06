@@ -6,19 +6,28 @@ import { Globe, Check, ChevronDown } from 'lucide-react';
 // Order: English first (default), then Latin-script alphabetical, then Cyrillic, then CJK.
 const LANGS = [
     { code: 'en', label: 'English' },
+    { code: 'id', label: 'Bahasa Indonesia' },
+    { code: 'ms', label: 'Bahasa Melayu' },
     { code: 'de', label: 'Deutsch' },
     { code: 'es', label: 'Español' },
     { code: 'fr', label: 'Français' },
     { code: 'it', label: 'Italiano' },
+    { code: 'nl', label: 'Nederlands' },
     { code: 'nb', label: 'Norsk' },
     { code: 'pl', label: 'Polski' },
     { code: 'pt', label: 'Português' },
     { code: 'fi', label: 'Suomi' },
     { code: 'sv', label: 'Svenska' },
+    { code: 'vi', label: 'Tiếng Việt' },
+    { code: 'tr', label: 'Türkçe' },
+    { code: 'ru', label: 'Русский' },
     { code: 'uk', label: 'Українська' },
+    { code: 'ar', label: 'العربية' },
+    { code: 'th', label: 'ไทย' },
     { code: 'ja', label: '日本語' },
     { code: 'ko', label: '한국어' },
-    { code: 'zh', label: '简体中文' }
+    { code: 'zh', label: '简体中文' },
+    { code: 'zh-tw', label: '繁體中文' }
 ];
 
 const DEFAULT_CODE = 'en';
