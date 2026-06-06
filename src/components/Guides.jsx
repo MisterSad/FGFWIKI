@@ -10,10 +10,6 @@ export default function Guides() {
 
     const closeModal = () => setSelectedTip(null);
 
-    const beginnerTips = tips.filter(tip => tip.category === 'beginner');
-    const combatTips = tips.filter(tip => tip.category === 'combat');
-    const economyTips = tips.filter(tip => tip.category === 'economy');
-
     if (selectedTip && selectedTip.hasDetails) {
         return (
             <div className="container fade-in" style={{ maxWidth: '1000px', margin: '0 auto', paddingBottom: '4rem', paddingTop: '2rem' }}>
@@ -178,15 +174,18 @@ export default function Guides() {
                     gap: '1.5rem',
                     alignItems: 'stretch'
                 }}>
-                    {tips.filter(tip => tip.hasDetails).map(tip => (
-                        <TipCard
-                            key={tip.id}
-                            tip={{
-                                ...tip,
-                                onClick: () => tip.hasDetails && setSelectedTip(tip)
-                            }}
-                        />
-                    ))}
+                    {[...tips]
+                        .filter(tip => tip.hasDetails)
+                        .sort((a, b) => new Date(b.publishDate || 0) - new Date(a.publishDate || 0))
+                        .map(tip => (
+                            <TipCard
+                                key={tip.id}
+                                tip={{
+                                    ...tip,
+                                    onClick: () => tip.hasDetails && setSelectedTip(tip)
+                                }}
+                            />
+                        ))}
                 </div>
             </div>
         </>
