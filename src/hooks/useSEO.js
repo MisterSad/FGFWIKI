@@ -165,13 +165,15 @@ export default function useSEO() {
 
         let pageTitle = '';
         let description = '';
+        let tip = null;
+        let event = null;
 
         const guideMatch = location.pathname.match(/^\/guides\/([^/]+)$/);
         const eventMatch = location.pathname.match(/^\/events\/([^/]+)$/);
 
         if (guideMatch) {
             const guideId = Number(guideMatch[1]);
-            const tip = tips.find(t => t.id === guideId);
+            tip = tips.find(t => t.id === guideId);
             if (tip) {
                 pageTitle = t(tip.title, { defaultValue: 'Guide' });
                 description = t(tip.content, {
@@ -185,7 +187,7 @@ export default function useSEO() {
             }
         } else if (eventMatch) {
             const eventId = eventMatch[1];
-            const event = eventsData.find(e => e.id === eventId);
+            event = eventsData.find(e => e.id === eventId);
             if (event) {
                 pageTitle = t(event.title, { defaultValue: 'Event' });
                 description = t(event.description, {
