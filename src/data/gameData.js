@@ -257,6 +257,10 @@ export const tips = [
         text: 'tips.vip_program_how_chosen_txt'
       },
       {
+        header: 'tips.vip_program_perks_hdr',
+        text: 'tips.vip_program_perks_txt'
+      },
+      {
         header: 'tips.vip_program_takeaway_hdr',
         text: 'tips.vip_program_takeaway_txt'
       }
