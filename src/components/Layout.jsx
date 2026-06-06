@@ -8,8 +8,15 @@ import useSEO from '../hooks/useSEO';
 
 export default function Layout({ children, onLoginClick }) {
     const location = useLocation();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     useSEO();
+
+    useEffect(() => {
+        if (i18n.language) {
+            document.documentElement.dir = i18n.language.startsWith('ar') ? 'rtl' : 'ltr';
+            document.documentElement.lang = i18n.language;
+        }
+    }, [i18n.language]);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
