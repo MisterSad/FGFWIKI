@@ -837,7 +837,6 @@ export const eventsData = [
   {
     id: 'childrens_day',
     title: 'events.childrens_day_title',
-    isNew: true,
     isLimited: true,
     publishDate: '2026-05-25T08:00:00Z',
     cycle: 'events.childrens_day_cycle',
