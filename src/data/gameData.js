@@ -20,6 +20,7 @@ export const tips = [
     content: 'tips.fleet_power_desc',
     highlight: true,
     hasDetails: true,
+    publishDate: '2026-05-10T12:00:00Z',
     sections: [
       {
         text: 'tips.fleet_power_intro'
@@ -102,14 +103,16 @@ export const tips = [
     category: 'economy',
     title: 'tips.t7_title',
     content: 'tips.t7_content',
-    highlight: false
+    highlight: false,
+    publishDate: '2026-04-01T00:00:00Z'
   },
   {
     id: 8,
     category: 'economy',
     title: 'tips.t8_title',
     content: 'tips.t8_content',
-    highlight: true
+    highlight: true,
+    publishDate: '2026-04-05T00:00:00Z'
   },
 
   // Guild
@@ -120,6 +123,7 @@ export const tips = [
     content: 'tips.port_occ_desc',
     highlight: true,
     hasDetails: true,
+    publishDate: '2026-05-15T12:00:00Z',
     sections: [
       {
         text: 'tips.port_occ_intro'
@@ -194,6 +198,7 @@ export const tips = [
     content: 'tips.home_port_desc',
     highlight: true,
     hasDetails: true,
+    publishDate: '2026-05-20T12:00:00Z',
     sections: [
       {
         text: 'tips.home_port_intro'
@@ -228,6 +233,32 @@ export const tips = [
         header: 'tips.home_port_final_hdr',
         text: 'tips.home_port_final_txt',
         note: 'tips.home_port_credit'
+      }
+    ]
+  },
+  {
+    id: 12,
+    category: 'beginner',
+    title: 'tips.vip_program_title',
+    content: 'tips.vip_program_desc',
+    highlight: true,
+    hasDetails: true,
+    publishDate: '2026-06-06T14:39:00Z',
+    sections: [
+      {
+        text: 'tips.vip_program_intro'
+      },
+      {
+        header: 'tips.vip_program_what_is_hdr',
+        text: 'tips.vip_program_what_is_txt'
+      },
+      {
+        header: 'tips.vip_program_how_chosen_hdr',
+        text: 'tips.vip_program_how_chosen_txt'
+      },
+      {
+        header: 'tips.vip_program_takeaway_hdr',
+        text: 'tips.vip_program_takeaway_txt'
       }
     ]
   }

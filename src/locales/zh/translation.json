@@ -183,7 +183,16 @@
         "home_port_buffs_txt": "您的母港不仅是安全区 — 它积极放大您的表现。根据港口等级,您会获得以下加成:\n\n• 贸易尝试(TA):您的旗舰可以进行的贸易行程数量。\n• 建造速度(BS):减少升级和建造所需时间。\n• 每日奖励(DR):提高每日宝箱的质量,匹配您的港口等级。\n\n如何领取奖励:\n• 每日奖励:完成贸易网络活动。\n• 资源收益:导航至公会 → 港口 → 领取按钮。",
         "home_port_final_hdr": "最终提示",
         "home_port_final_txt": "• 保持母港升级和活跃 — 它直接定义您的成长潜力。\n• 加入强大公会以获得更高等级的行星港口。\n• 平衡您的策略:考虑何时保持中立以及何时投入公会合作。\n• 每天领取奖励 — 未领取的资源是永久失去的机会。\n\n您的母港是贸易帝国的核心。明智地选择,战略性地升级,自信地指挥您的舰队!",
-        "home_port_credit": "基于官方 Foundation: Galactic Frontier 指南。特别感谢 Mod Liannin。"
+        "home_port_credit": "基于官方 Foundation: Galactic Frontier 指南。特别感谢 Mod Liannin。",
+        "vip_program_title": "揭秘 FGF GTC 专属 VIP 计划",
+        "vip_program_desc": "如何获得《Foundation: Galactic Frontier》仅限邀请的精英 GTC Exclusive VIP 计划的邀请。",
+        "vip_program_intro": "如果您曾《Foundation: Galactic Frontier》(FGF) 的宇宙中度过了一段充实的时光，可能已经听闻过一个仅限邀请的精英俱乐部：GTC Exclusive VIP 计划。\n\n对于许多玩家来说，获得这项高端服务并与 Stella 等专属 GTC 服务代表互动是一个重要目标。但究竟该如何获得这个专属圈子的邀请呢？\n\n我们直接联系了 GTC 服务团队，为 fgfwiki.com 社区获取了官方一手消息。以下是关于 GTC 如何筛选幸运 VIP 玩家的所有细节。",
+        "vip_program_what_is_hdr": "什么是 GTC 专属 VIP 计划？",
+        "vip_program_what_is_txt": "GTC Exclusive VIP 计划是一项专门服务，旨在奖励《Foundation: Galactic Frontier》中最敬业的指挥官。入选该计划的玩家将获得个性化的支持服务，以及为他们的宇宙之旅量身定制的升级版游戏体验。",
+        "vip_program_how_chosen_hdr": "玩家是如何被选中的？",
+        "vip_program_how_chosen_txt": "与可以直接购买的普通订阅不同，GTC Exclusive VIP 资格严格采用仅限邀请制。根据 GTC 官方服务代表的介绍，筛选过程并非基于单一指标。相反，系统会对每位商人和玩家的“综合”表现进行评估。\n\n如果您想增加被选中的机会，需要重点关注以下几个核心领域：\n\n1. 每日活跃度\n持之以恒是关键。GTC 会寻找那些定期登录并日复一日积极参与 FGF 宇宙各项活动的指挥官。\n\n2. 主线任务进度\n不能只是在游戏中闲置；您需要不断拓展边疆！推进主线任务可以向 GTC 表明您对游戏的背景故事、核心机制和长期发展有着深度的投入。\n\n3. 游戏内表现\n您在游戏中的整体行为非常重要。积极配合游戏系统、参与各类活动以及展现良好的游戏内行为，都会提升您作为潜在 VIP 候选人的综合评估。\n\n4. 付费历史\n与许多高级游戏服务一样，您对游戏的投入也是一个考量因素。虽然这不是唯一的决定性因素，但在 GTC 评估您的账户是否符合 VIP 资格时，您在游戏内商家处的消费记录会被纳入考量范围。",
+        "vip_program_takeaway_hdr": "总结",
+        "vip_program_takeaway_txt": "成为 GTC 专属 VIP 没有捷径；这需要您成为《Foundation: Galactic Frontier》社区中敬业、活跃且不断进步的一员。继续推进主线任务、保持每日登录并支持游戏，您可能就是下一位收到 GTC 服务团队邀请信的幸运玩家！"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",
