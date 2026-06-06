@@ -23,31 +23,37 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <Layout onLoginClick={() => setIsLoginModalOpen(true)}>
-          <Suspense fallback={
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh', color: 'var(--text-dim)', fontFamily: 'var(--font-label)', letterSpacing: '2px', textTransform: 'uppercase' }}>
-              Loading Data...
-            </div>
-          }>
-            <Routes>
-              <Route path="/" element={<Navigate to="/home" replace />} />
-              <Route path="/home" element={<Hero />} />
-              <Route path="/guides" element={<Guides />} />
-              <Route path="/guides/:guideId" element={<Guides />} />
-              <Route path="/daily-tasks" element={<DailyChecklist />} />
-              <Route path="/champions" element={<HeroTierList />} />
-              <Route path="/flagships" element={<FlagshipGuide />} />
-              <Route path="/flagship-decks" element={<FlagshipDecks />} />
-              <Route path="/ground-teams" element={<GroundGuide />} />
-              <Route path="/events" element={<EventGuide />} />
-              <Route path="/events/:eventId" element={<EventGuide />} />
-              <Route path="/tools" element={<Builder />} />
-              <Route path="/gift-codes" element={<GiftCodes />} />
-              <Route path="/support" element={<Support />} />
-              <Route path="*" element={<Navigate to="/home" replace />} />
-            </Routes>
-          </Suspense>
-        </Layout>
+        <Suspense fallback={
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', background: '#0a0a0c', color: 'var(--text-dim)', fontFamily: 'var(--font-label)', letterSpacing: '2px', textTransform: 'uppercase' }}>
+            Loading FGF Wiki...
+          </div>
+        }>
+          <Layout onLoginClick={() => setIsLoginModalOpen(true)}>
+            <Suspense fallback={
+              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh', color: 'var(--text-dim)', fontFamily: 'var(--font-label)', letterSpacing: '2px', textTransform: 'uppercase' }}>
+                Loading Data...
+              </div>
+            }>
+              <Routes>
+                <Route path="/" element={<Navigate to="/home" replace />} />
+                <Route path="/home" element={<Hero />} />
+                <Route path="/guides" element={<Guides />} />
+                <Route path="/guides/:guideId" element={<Guides />} />
+                <Route path="/daily-tasks" element={<DailyChecklist />} />
+                <Route path="/champions" element={<HeroTierList />} />
+                <Route path="/flagships" element={<FlagshipGuide />} />
+                <Route path="/flagship-decks" element={<FlagshipDecks />} />
+                <Route path="/ground-teams" element={<GroundGuide />} />
+                <Route path="/events" element={<EventGuide />} />
+                <Route path="/events/:eventId" element={<EventGuide />} />
+                <Route path="/tools" element={<Builder />} />
+                <Route path="/gift-codes" element={<GiftCodes />} />
+                <Route path="/support" element={<Support />} />
+                <Route path="*" element={<Navigate to="/home" replace />} />
+              </Routes>
+            </Suspense>
+          </Layout>
+        </Suspense>
         <Analytics />
         <LoginModal
           isOpen={isLoginModalOpen}
