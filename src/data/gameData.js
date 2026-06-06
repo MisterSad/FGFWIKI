@@ -266,6 +266,41 @@ export const tips = [
         text: 'tips.vip_program_takeaway_txt'
       }
     ]
+  },
+  {
+    id: 13,
+    category: 'beginner',
+    title: 'tips.migration_title',
+    content: 'tips.migration_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-06-06T14:58:00Z',
+    sections: [
+      {
+        text: 'tips.migration_intro'
+      },
+      {
+        header: 'tips.migration_status_hdr',
+        text: 'tips.migration_status_txt'
+      },
+      {
+        header: 'tips.migration_how_works_hdr',
+        text: 'tips.migration_how_works_txt'
+      },
+      {
+        header: 'tips.migration_reqs_hdr',
+        text: 'tips.migration_reqs_txt'
+      },
+      {
+        header: 'tips.migration_effects_hdr',
+        text: 'tips.migration_effects_txt'
+      },
+      {
+        header: 'tips.migration_stages_hdr',
+        text: 'tips.migration_stages_txt'
+      }
+    ]
   }
 ];
 
