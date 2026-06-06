@@ -64,7 +64,9 @@
         "beam": "Raggio",
         "ion": "Ione",
         "core": "Nucleo",
-        "back": "INDIETRO"
+        "back": "INDIETRO",
+        "exclusive": "Esclusivo",
+        "new": "Nuovo"
     },
     "hero": {
         "title_prefix": "Padroneggia la",

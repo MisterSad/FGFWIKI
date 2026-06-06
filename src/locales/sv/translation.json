@@ -64,7 +64,9 @@
         "beam": "Stråle",
         "ion": "Jon",
         "core": "Kärna",
-        "back": "TILLBAKA"
+        "back": "TILLBAKA",
+        "exclusive": "Exklusiv",
+        "new": "Ny"
     },
     "hero": {
         "title_prefix": "Bemästra",

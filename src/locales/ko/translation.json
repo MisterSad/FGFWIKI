@@ -64,7 +64,9 @@
         "beam": "빔",
         "ion": "이온",
         "core": "코어",
-        "back": "뒤로"
+        "back": "뒤로",
+        "exclusive": "독점",
+        "new": "신규"
     },
     "hero": {
         "title_prefix": "정복하라",

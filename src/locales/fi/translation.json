@@ -64,7 +64,9 @@
         "beam": "Sädelaser",
         "ion": "Ioni",
         "core": "Ydin",
-        "back": "TAKAISIN"
+        "back": "TAKAISIN",
+        "exclusive": "Eksklusiivinen",
+        "new": "Uusi"
     },
     "hero": {
         "title_prefix": "Hallitse",

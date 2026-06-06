@@ -64,7 +64,9 @@
         "beam": "Feixe",
         "ion": "Iónico",
         "core": "Núcleo",
-        "back": "VOLTAR"
+        "back": "VOLTAR",
+        "exclusive": "Exclusivo",
+        "new": "Novo"
     },
     "hero": {
         "title_prefix": "Domina a",

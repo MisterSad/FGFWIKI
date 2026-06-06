@@ -64,7 +64,9 @@
         "beam": "Rayo",
         "ion": "Ión",
         "core": "Núcleo",
-        "back": "ATRÁS"
+        "back": "ATRÁS",
+        "exclusive": "Exclusivo",
+        "new": "Nuevo"
     },
     "hero": {
         "title_prefix": "Domina la",

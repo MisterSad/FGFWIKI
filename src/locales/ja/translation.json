@@ -64,7 +64,9 @@
         "beam": "ビーム",
         "ion": "イオン",
         "core": "コア",
-        "back": "戻る"
+        "back": "戻る",
+        "exclusive": "限定",
+        "new": "新着"
     },
     "hero": {
         "title_prefix": "征服せよ",

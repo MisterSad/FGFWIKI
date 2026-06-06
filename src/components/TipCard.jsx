@@ -31,6 +31,40 @@ export default function TipCard({ tip }) {
         >
             <div className="scan-line"></div>
 
+            {/* Corner Ribbon */}
+            {(tip.isExclusive || tip.isNew) && (
+                <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    right: 0,
+                    width: '80px',
+                    height: '80px',
+                    overflow: 'hidden',
+                    zIndex: 10,
+                    pointerEvents: 'none'
+                }}>
+                    <div style={{
+                        position: 'absolute',
+                        top: '18px',
+                        right: '-18px',
+                        width: '100px',
+                        background: 'var(--gold)',
+                        color: 'var(--bg-void)',
+                        textAlign: 'center',
+                        fontSize: '0.65rem',
+                        fontWeight: '800',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        transform: 'rotate(45deg)',
+                        boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                        padding: '4px 0',
+                        fontFamily: 'var(--font-label)'
+                    }}>
+                        {tip.isExclusive ? t('common.exclusive') : t('common.new')}
+                    </div>
+                </div>
+            )}
+
             {/* Ornaments for important cards */}
             {tip.highlight && (
                 <>

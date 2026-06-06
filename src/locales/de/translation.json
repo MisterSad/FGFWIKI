@@ -64,7 +64,9 @@
         "beam": "Strahl",
         "ion": "Ion",
         "core": "Kern",
-        "back": "ZURÜCK"
+        "back": "ZURÜCK",
+        "exclusive": "Exklusiv",
+        "new": "Neu"
     },
     "hero": {
         "title_prefix": "Meistere die",

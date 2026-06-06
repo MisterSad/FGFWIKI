@@ -64,7 +64,9 @@
         "beam": "Wiązkowy",
         "ion": "Jonowy",
         "core": "Rdzeń",
-        "back": "WSTECZ"
+        "back": "WSTECZ",
+        "exclusive": "Ekskluzywne",
+        "new": "Nowe"
     },
     "hero": {
         "title_prefix": "Opanuj",

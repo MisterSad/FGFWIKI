@@ -64,7 +64,9 @@
         "beam": "Stråle",
         "ion": "Ion",
         "core": "Kjerne",
-        "back": "TILBAKE"
+        "back": "TILBAKE",
+        "exclusive": "Eksklusiv",
+        "new": "Ny"
     },
     "hero": {
         "title_prefix": "Mestre",
