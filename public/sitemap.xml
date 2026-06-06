@@ -352,147 +352,147 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://fgfwiki.com/guides/9</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/9" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/9" />
+    <loc>https://fgfwiki.com/guides/fleet-power</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/fleet-power" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/fleet-power" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fgfwiki.com/guides/10</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/10" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/10" />
+    <loc>https://fgfwiki.com/guides/port-occupation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/port-occupation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/port-occupation" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fgfwiki.com/guides/11</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/11" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/11" />
+    <loc>https://fgfwiki.com/guides/home-port</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/home-port" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/home-port" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fgfwiki.com/guides/12</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/12" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/12" />
+    <loc>https://fgfwiki.com/guides/vip-program</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/vip-program" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/vip-program" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fgfwiki.com/guides/13</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/13" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/13" />
+    <loc>https://fgfwiki.com/guides/migration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/migration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/migration" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -14,7 +14,7 @@ export const categories = [
 export const tips = [
   // Combat
   {
-    id: 9, // New detailed guide
+    id: 'fleet-power', // New detailed guide
     category: 'combat',
     title: 'tips.fleet_power_title',
     content: 'tips.fleet_power_desc',
@@ -99,7 +99,7 @@ export const tips = [
 
   // Economy
   {
-    id: 7,
+    id: 't7-economy',
     category: 'economy',
     title: 'tips.t7_title',
     content: 'tips.t7_content',
@@ -107,7 +107,7 @@ export const tips = [
     publishDate: '2026-04-01T00:00:00Z'
   },
   {
-    id: 8,
+    id: 't8-economy',
     category: 'economy',
     title: 'tips.t8_title',
     content: 'tips.t8_content',
@@ -117,7 +117,7 @@ export const tips = [
 
   // Guild
   {
-    id: 10,
+    id: 'port-occupation',
     category: 'gameplay',
     title: 'tips.port_occ_title',
     content: 'tips.port_occ_desc',
@@ -192,7 +192,7 @@ export const tips = [
     ]
   },
   {
-    id: 11,
+    id: 'home-port',
     category: 'gameplay',
     title: 'tips.home_port_title',
     content: 'tips.home_port_desc',
@@ -237,7 +237,7 @@ export const tips = [
     ]
   },
   {
-    id: 12,
+    id: 'vip-program',
     category: 'vip',
     title: 'tips.vip_program_title',
     content: 'tips.vip_program_desc',
@@ -268,7 +268,7 @@ export const tips = [
     ]
   },
   {
-    id: 13,
+    id: 'migration',
     category: 'migration',
     title: 'tips.migration_title',
     content: 'tips.migration_desc',
