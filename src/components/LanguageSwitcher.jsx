@@ -139,6 +139,7 @@ export default function LanguageSwitcher() {
                 <ul
                     role="listbox"
                     aria-label="Choose language"
+                    className="lang-switcher-dropdown"
                     style={{
                         position: 'absolute',
                         top: 'calc(100% + 6px)',
@@ -152,10 +153,7 @@ export default function LanguageSwitcher() {
                         border: '1px solid var(--border)',
                         borderRadius: 4,
                         boxShadow: '0 8px 24px rgba(0, 0, 0, 0.6)',
-                        fontFamily: 'var(--font-label)',
-                        maxHeight: 'min(300px, 60vh)',
-                        overflowY: 'auto',
-                        WebkitOverflowScrolling: 'touch'
+                        fontFamily: 'var(--font-label)'
                     }}
                 >
                     {LANGS.map(({ code, label }) => {
