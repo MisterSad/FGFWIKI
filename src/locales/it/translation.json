@@ -84,7 +84,11 @@
         "ground": "Squadre di terra",
         "events": "Eventi",
         "builder": "Strumenti",
-        "guild": "Gilda"
+        "guild": "Gilda",
+        "combat": "Combattimento",
+        "gameplay": "Giocabilità",
+        "vip": "VIP",
+        "migration": "Migrazione"
     },
     "tips": {
         "t1_title": "Concentrati sulle missioni della storia",

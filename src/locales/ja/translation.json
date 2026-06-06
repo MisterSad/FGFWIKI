@@ -84,7 +84,11 @@
         "ground": "地上部隊",
         "events": "イベント",
         "builder": "ツール",
-        "guild": "ギルド"
+        "guild": "ギルド",
+        "combat": "戦闘",
+        "gameplay": "ゲームプレイ",
+        "vip": "VIP",
+        "migration": "移動"
     },
     "tips": {
         "t1_title": "ストーリーミッションに集中する",

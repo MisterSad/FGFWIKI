@@ -84,7 +84,11 @@
         "ground": "Équipes au sol",
         "events": "Événements",
         "builder": "Outils",
-        "guild": "Guilde"
+        "guild": "Guilde",
+        "combat": "Combat",
+        "gameplay": "Gameplay",
+        "vip": "VIP",
+        "migration": "Migration"
     },
     "tips": {
         "t1_title": "Concentrez-vous sur les missions d'histoire",

@@ -84,7 +84,11 @@
         "ground": "地面部队",
         "events": "活动",
         "builder": "工具",
-        "guild": "公会"
+        "guild": "公会",
+        "combat": "战斗",
+        "gameplay": "游戏玩法",
+        "vip": "VIP",
+        "migration": "移民"
     },
     "tips": {
         "t1_title": "专注于剧情任务",

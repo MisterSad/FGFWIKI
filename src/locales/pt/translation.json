@@ -84,7 +84,11 @@
         "ground": "Equipas terrestres",
         "events": "Eventos",
         "builder": "Ferramentas",
-        "guild": "Guilda"
+        "guild": "Guilda",
+        "combat": "Combate",
+        "gameplay": "Jogabilidade",
+        "vip": "VIP",
+        "migration": "Migração"
     },
     "tips": {
         "t1_title": "Foca-te nas missões da história",

@@ -84,7 +84,11 @@
         "ground": "Maajoukkueet",
         "events": "Tapahtumat",
         "builder": "Työkalut",
-        "guild": "Kilta"
+        "guild": "Kilta",
+        "combat": "Taistelu",
+        "gameplay": "Pelattavuus",
+        "vip": "VIP",
+        "migration": "Migraatio"
     },
     "tips": {
         "t1_title": "Keskity tarinatehtäviin",

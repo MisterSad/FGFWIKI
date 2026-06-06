@@ -84,7 +84,11 @@
         "ground": "Bakketropper",
         "events": "Event",
         "builder": "Verktøy",
-        "guild": "Laug"
+        "guild": "Laug",
+        "combat": "Kamp",
+        "gameplay": "Spillbarhet",
+        "vip": "VIP",
+        "migration": "Migrasjon"
     },
     "tips": {
         "t1_title": "Fokuser på story-oppdrag",
