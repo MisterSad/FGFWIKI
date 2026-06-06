@@ -4,17 +4,31 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://fgfwiki.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/" />
+    <loc>https://fgfwiki.com</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -22,13 +36,27 @@
     <loc>https://fgfwiki.com/home</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/home" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/home" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/home" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/home" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/home" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/home" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/home" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/home" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/home" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/home" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/home" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -37,28 +65,56 @@
     <loc>https://fgfwiki.com/guides</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides" />
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fgfwiki.com/daily-tasks</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/daily-tasks" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/daily-tasks" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/daily-tasks" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/daily-tasks" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/daily-tasks" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/daily-tasks" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/daily-tasks" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/daily-tasks" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/daily-tasks" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/daily-tasks" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/daily-tasks" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -67,13 +123,27 @@
     <loc>https://fgfwiki.com/champions</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/champions" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/champions" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/champions" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/champions" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/champions" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/champions" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/champions" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/champions" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/champions" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/champions" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/champions" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -82,13 +152,27 @@
     <loc>https://fgfwiki.com/flagships</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/flagships" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/flagships" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/flagships" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/flagships" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/flagships" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/flagships" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/flagships" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/flagships" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/flagships" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/flagships" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/flagships" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -97,13 +181,27 @@
     <loc>https://fgfwiki.com/flagship-decks</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/flagship-decks" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/flagship-decks" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/flagship-decks" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/flagship-decks" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/flagship-decks" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/flagship-decks" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/flagship-decks" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/flagship-decks" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/flagship-decks" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/flagship-decks" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/flagship-decks" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -112,13 +210,27 @@
     <loc>https://fgfwiki.com/ground-teams</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/ground-teams" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/ground-teams" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/ground-teams" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/ground-teams" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/ground-teams" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/ground-teams" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/ground-teams" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/ground-teams" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/ground-teams" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/ground-teams" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/ground-teams" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -127,13 +239,27 @@
     <loc>https://fgfwiki.com/events</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -142,13 +268,27 @@
     <loc>https://fgfwiki.com/tools</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/tools" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/tools" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/tools" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/tools" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/tools" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/tools" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/tools" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/tools" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/tools" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/tools" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/tools" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -157,13 +297,27 @@
     <loc>https://fgfwiki.com/gift-codes</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/gift-codes" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/gift-codes" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/gift-codes" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/gift-codes" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/gift-codes" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/gift-codes" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/gift-codes" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/gift-codes" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/gift-codes" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/gift-codes" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/gift-codes" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -172,15 +326,609 @@
     <loc>https://fgfwiki.com/support</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/support" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/support" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/support" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/support" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/support" />
-    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/support" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/support" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/support" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/support" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/support" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/support" />
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/guides/9</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/9" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/guides/10</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/10" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/10" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/guides/11</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/11" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/11" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/guides/12</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/12" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/12" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/guides/13</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/guides/13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/guides/13" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/operation_blackout</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/operation_blackout" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/operation_blackout" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/kaboom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/kaboom" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/kaboom" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/arms_race</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/arms_race" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/arms_race" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/battle_trial</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/battle_trial" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/battle_trial" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/calamity</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/calamity" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/calamity" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/crime_hunt</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/crime_hunt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/crime_hunt" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/starry_recruitment</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/starry_recruitment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/starry_recruitment" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/shadowfront</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/shadowfront" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/shadowfront" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/gvg</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/gvg" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/gvg" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/top100_traders</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/top100_traders" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/top100_traders" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/dominance</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/dominance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/dominance" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/dominion_war_zone</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/dominion_war_zone" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/united_frontline</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/united_frontline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/united_frontline" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/mothers_day</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/mothers_day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/mothers_day" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fgfwiki.com/events/childrens_day</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://fgfwiki.com/events/childrens_day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fgfwiki.com/events/childrens_day" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

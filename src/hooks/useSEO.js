@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
+import { tips, eventsData } from '../data/gameData';
 
 const SITE_URL = 'https://fgfwiki.com';
 const SITE_NAME = 'Foundation: Galactic Frontier Wiki';
@@ -21,7 +22,10 @@ const ROUTE_KEYS = {
 };
 
 // Supported languages — keep in sync with src/i18n.js and the language switcher.
-const SUPPORTED_LANGS = ['en', 'fr', 'de', 'es', 'fi', 'it', 'nb', 'pl', 'pt', 'sv', 'uk', 'ja', 'ko', 'zh'];
+const SUPPORTED_LANGS = [
+    'en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt', 'fi', 'sv', 'nb',
+    'zh-tw', 'nl', 'id', 'tr', 'vi', 'ru', 'th', 'ms', 'ar'
+];
 const OG_LOCALES = {
     en: 'en_US',
     fr: 'fr_FR',
@@ -37,6 +41,15 @@ const OG_LOCALES = {
     ja: 'ja_JP',
     ko: 'ko_KR',
     zh: 'zh_CN',
+    'zh-tw': 'zh_TW',
+    nl: 'nl_NL',
+    id: 'id_ID',
+    tr: 'tr_TR',
+    vi: 'vi_VN',
+    ru: 'ru_RU',
+    th: 'th_TH',
+    ms: 'ms_MY',
+    ar: 'ar_AR',
 };
 // hreflang code per language — Google recommends script subtags for Chinese.
 const HREFLANG = {
@@ -54,6 +67,15 @@ const HREFLANG = {
     ja: 'ja',
     ko: 'ko',
     zh: 'zh-Hans',
+    'zh-tw': 'zh-Hant',
+    nl: 'nl',
+    id: 'id',
+    tr: 'tr',
+    vi: 'vi',
+    ru: 'ru',
+    th: 'th',
+    ms: 'ms',
+    ar: 'ar',
 };
 
 function setMetaByName(name, content) {
@@ -85,6 +107,17 @@ function setLinkByRel(rel, href) {
         document.head.appendChild(el);
     }
     el.setAttribute('href', href);
+}
+
+function setJsonLd(data) {
+    let el = document.head.querySelector('script[data-seo-jsonld]');
+    if (!el) {
+        el = document.createElement('script');
+        el.setAttribute('type', 'application/ld+json');
+        el.setAttribute('data-seo-jsonld', 'true');
+        document.head.appendChild(el);
+    }
+    el.textContent = JSON.stringify(data);
 }
 
 function syncHreflangs(url) {
@@ -129,11 +162,50 @@ export default function useSEO() {
     useEffect(() => {
         const path = location.pathname === '/' ? '/' : location.pathname;
         const url = `${SITE_URL}${path}`;
-        const pageTitle = t(`seo.${key}.title`, { defaultValue: SITE_NAME });
-        const description = t(`seo.${key}.description`, {
-            defaultValue: 'Strategy guides, tier lists, flagship decks, events and tools for Foundation: Galactic Frontier.',
-        });
-        const fullTitle = key === 'home'
+
+        let pageTitle = '';
+        let description = '';
+
+        const guideMatch = location.pathname.match(/^\/guides\/([^/]+)$/);
+        const eventMatch = location.pathname.match(/^\/events\/([^/]+)$/);
+
+        if (guideMatch) {
+            const guideId = Number(guideMatch[1]);
+            const tip = tips.find(t => t.id === guideId);
+            if (tip) {
+                pageTitle = t(tip.title, { defaultValue: 'Guide' });
+                description = t(tip.content, {
+                    defaultValue: 'Strategy guide for Foundation: Galactic Frontier.',
+                });
+            } else {
+                pageTitle = t('seo.guides.title', { defaultValue: 'Guides' });
+                description = t('seo.guides.description', {
+                    defaultValue: 'Strategy guides, tier lists, flagship decks, events and tools for Foundation: Galactic Frontier.',
+                });
+            }
+        } else if (eventMatch) {
+            const eventId = eventMatch[1];
+            const event = eventsData.find(e => e.id === eventId);
+            if (event) {
+                pageTitle = t(event.title, { defaultValue: 'Event' });
+                description = t(event.description, {
+                    defaultValue: 'Event guide for Foundation: Galactic Frontier.',
+                });
+            } else {
+                pageTitle = t('seo.events.title', { defaultValue: 'Events' });
+                description = t('seo.events.description', {
+                    defaultValue: 'Strategy guides, tier lists, flagship decks, events and tools for Foundation: Galactic Frontier.',
+                });
+            }
+        } else {
+            pageTitle = t(`seo.${key}.title`, { defaultValue: SITE_NAME });
+            description = t(`seo.${key}.description`, {
+                defaultValue: 'Strategy guides, tier lists, flagship decks, events and tools for Foundation: Galactic Frontier.',
+            });
+        }
+
+        const isHome = location.pathname === '/' || location.pathname === '/home';
+        const fullTitle = isHome
             ? `${SITE_NAME} — ${pageTitle}`
             : `${pageTitle} — ${SITE_NAME}`;
         const ogLocale = OG_LOCALES[lang] || OG_LOCALES.en;
@@ -142,6 +214,20 @@ export default function useSEO() {
         document.documentElement.lang = lang;
 
         setMetaByName('description', description);
+        
+        // Asian & Eastern European Search Engine Optimization (Baidu, Naver, Yandex)
+        let keywords = t(`seo.${key}.keywords`, {
+            defaultValue: 'Foundation Galactic Frontier, FGF, FGF Wiki, strategy guides, tier list, flagship decks, events, tools'
+        });
+        if (guideMatch && tip) {
+            keywords = `${t(tip.title)}, guide, strategy, Foundation Galactic Frontier, FGF, FGF Wiki`;
+        } else if (eventMatch && event) {
+            keywords = `${t(event.title)}, event, guide, strategy, Foundation Galactic Frontier, FGF, FGF Wiki`;
+        }
+        setMetaByName('keywords', keywords);
+        setMetaByName('applicable-device', 'pc,mobile'); // Baidu mobile indexing directive
+        setMetaByName('renderer', 'webkit'); // Force modern rendering in Chinese dual-core browsers
+
         setMetaByProperty('og:title', fullTitle);
         setMetaByProperty('og:description', description);
         setMetaByProperty('og:url', url);
@@ -151,5 +237,59 @@ export default function useSEO() {
         setMetaByName('twitter:description', description);
         setLinkByRel('canonical', url);
         syncHreflangs(url);
+
+        // Generative AI Engine Optimization (AIO/GEO) using JSON-LD Structured Data
+        let schemaData = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": SITE_NAME,
+            "url": SITE_URL,
+            "inLanguage": lang
+        };
+
+        if (guideMatch && tip) {
+            schemaData = {
+                "@context": "https://schema.org",
+                "@type": "TechArticle",
+                "headline": pageTitle,
+                "description": description,
+                "url": url,
+                "inLanguage": lang,
+                "publisher": {
+                    "@type": "Organization",
+                    "name": SITE_NAME,
+                    "url": SITE_URL
+                },
+                "author": {
+                    "@type": "Organization",
+                    "name": "HawkTuah #1061"
+                }
+            };
+            if (tip.publishDate) {
+                schemaData.datePublished = tip.publishDate;
+            }
+        } else if (eventMatch && event) {
+            schemaData = {
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": pageTitle,
+                "description": description,
+                "url": url,
+                "inLanguage": lang,
+                "eventStatus": "https://schema.org/EventScheduled",
+                "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+                "location": {
+                    "@type": "VirtualLocation",
+                    "url": url
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": SITE_NAME,
+                    "url": SITE_URL
+                }
+            };
+        }
+
+        setJsonLd(schemaData);
     }, [t, lang, location.pathname, key]);
 }

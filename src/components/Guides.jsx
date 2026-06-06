@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
 import { BookOpen, Swords, Coins, Lightbulb, ArrowLeft } from 'lucide-react';
@@ -6,9 +7,12 @@ import { useTranslation } from 'react-i18next';
 
 export default function Guides() {
     const { t } = useTranslation();
-    const [selectedTip, setSelectedTip] = useState(null);
+    const { guideId } = useParams();
+    const navigate = useNavigate();
 
-    const closeModal = () => setSelectedTip(null);
+    const selectedTip = guideId ? tips.find(tip => tip.id === Number(guideId)) : null;
+
+    const closeModal = () => navigate('/guides');
 
     if (selectedTip && selectedTip.hasDetails) {
         return (
@@ -54,7 +58,7 @@ export default function Guides() {
                 >
                     {/* Header */}
                     <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '1.5rem', marginBottom: '2rem' }}>
-                        <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', margin: '0 0 0.5rem', fontSize: 'clamp(1.4rem, 5vw, 2.5rem)', color: 'var(--gold-bright)' }}>{t(selectedTip.title)}</h2>
+                        <h1 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', margin: '0 0 0.5rem', fontSize: 'clamp(1.4rem, 5vw, 2.5rem)', color: 'var(--gold-bright)' }}>{t(selectedTip.title)}</h1>
                         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                             <span className="label-text" style={{
                                 background: 'var(--bg-void)',
@@ -182,7 +186,7 @@ export default function Guides() {
                                 key={tip.id}
                                 tip={{
                                     ...tip,
-                                    onClick: () => tip.hasDetails && setSelectedTip(tip)
+                                    onClick: () => tip.hasDetails && navigate(`/guides/${tip.id}`)
                                 }}
                             />
                         ))}

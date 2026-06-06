@@ -1,77 +1,29 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-
-// Import translation files
-import en from './locales/en/translation.json';
-import fr from './locales/fr/translation.json';
-import ko from './locales/ko/translation.json';
-import de from './locales/de/translation.json';
-import ja from './locales/ja/translation.json';
-import zh from './locales/zh/translation.json';
-import pl from './locales/pl/translation.json';
-import it from './locales/it/translation.json';
-import uk from './locales/uk/translation.json';
-import es from './locales/es/translation.json';
-import pt from './locales/pt/translation.json';
-import fi from './locales/fi/translation.json';
-import sv from './locales/sv/translation.json';
-import nb from './locales/nb/translation.json';
-import zhTw from './locales/zh-tw/translation.json';
-import nl from './locales/nl/translation.json';
-import id from './locales/id/translation.json';
-import tr from './locales/tr/translation.json';
-import vi from './locales/vi/translation.json';
-import ru from './locales/ru/translation.json';
-import th from './locales/th/translation.json';
-import ms from './locales/ms/translation.json';
-import ar from './locales/ar/translation.json';
+import HttpBackend from 'i18next-http-backend';
 
 const savedLang = typeof window !== 'undefined' ? localStorage.getItem('fgfwiki_lang') : null;
 
 i18n
+    .use(HttpBackend)
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        resources: {
-            en: { translation: en },
-            fr: { translation: fr },
-            ko: { translation: ko },
-            de: { translation: de },
-            ja: { translation: ja },
-            zh: { translation: zh },
-            pl: { translation: pl },
-            it: { translation: it },
-            uk: { translation: uk },
-            es: { translation: es },
-            pt: { translation: pt },
-            fi: { translation: fi },
-            sv: { translation: sv },
-            nb: { translation: nb },
-            'zh-tw': { translation: zhTw },
-            nl: { translation: nl },
-            id: { translation: id },
-            tr: { translation: tr },
-            vi: { translation: vi },
-            ru: { translation: ru },
-            th: { translation: th },
-            ms: { translation: ms },
-            ar: { translation: ar }
-        },
-        // Default to English on first visit. Auto-detection from the browser
-        // is intentionally bypassed: the user picks their language explicitly
-        // via the language switcher (preference persisted in localStorage).
-        lng: savedLang || 'en',
         fallbackLng: 'en',
+        lng: savedLang || 'en',
         supportedLngs: [
             'en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt', 'fi', 'sv', 'nb',
             'zh-tw', 'nl', 'id', 'tr', 'vi', 'ru', 'th', 'ms', 'ar'
         ],
-        nonExplicitSupportedLngs: true, // 'fr-FR' -> 'fr', 'zh-CN' -> 'zh', 'pt-BR' -> 'pt', 'es-ES' -> 'es', etc.
+        nonExplicitSupportedLngs: true,
         detection: {
             order: ['localStorage', 'navigator', 'htmlTag'],
             lookupLocalStorage: 'fgfwiki_lang',
             caches: ['localStorage']
+        },
+        backend: {
+            loadPath: '/locales/{{lng}}/translation.json',
         },
         interpolation: {
             escapeValue: false, // React already safes from xss
