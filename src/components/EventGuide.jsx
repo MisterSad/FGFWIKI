@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { eventsData } from '../data/gameData';
 import { Clock, AlertTriangle, Star, Lightbulb, BarChart2, Swords, Calendar, Trophy, ArrowLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function EventGuide() {
     const { t } = useTranslation();
-    const [selectedEvent, setSelectedEvent] = useState(null);
+    const { eventId } = useParams();
+    const navigate = useNavigate();
+
+    const selectedEvent = eventId ? eventsData.find(e => e.id === eventId) : null;
 
     // Close modal when clicking outside or on the close button
-    const closeModal = () => setSelectedEvent(null);
+    const closeModal = () => navigate('/events');
 
     return (
         <>
@@ -53,7 +57,7 @@ export default function EventGuide() {
                                     cursor: 'pointer',
                                     overflow: 'hidden'
                                 }}
-                                onClick={() => setSelectedEvent(event)}
+                                onClick={() => navigate(`/events/${event.id}`)}
                             >
                                 <div className="scan-line"></div>
                                 <div className="corner-tl"></div>
@@ -217,7 +221,7 @@ export default function EventGuide() {
                     >
                         {/* Modal Header */}
                         <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '1.5rem', marginBottom: '2rem' }}>
-                            <h2 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', margin: '0 0 0.5rem', fontSize: 'clamp(1.4rem, 5vw, 2.5rem)', color: 'var(--gold-bright)' }}>{t(selectedEvent.title)}</h2>
+                            <h1 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', margin: '0 0 0.5rem', fontSize: 'clamp(1.4rem, 5vw, 2.5rem)', color: 'var(--gold-bright)' }}>{t(selectedEvent.title)}</h1>
                             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                                 <span className="label-text" style={{
                                     background: 'var(--bg-void)',

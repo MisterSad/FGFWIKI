@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import { AuthProvider } from './context/AuthContext';
@@ -6,16 +6,16 @@ import Layout from './components/Layout';
 import Hero from './components/Hero';
 import LoginModal from './components/LoginModal';
 
-import Guides from './components/Guides';
-import FlagshipGuide from './components/FlagshipGuide';
-import FlagshipDecks from './components/FlagshipDecks';
-import GroundGuide from './components/GroundGuide';
-import HeroTierList from './components/HeroTierList';
-import EventGuide from './components/EventGuide';
-import Builder from './components/Builder';
-import DailyChecklist from './components/DailyChecklist';
-import GiftCodes from './components/GiftCodes';
-import Support from './components/Support';
+const Guides = lazy(() => import('./components/Guides'));
+const FlagshipGuide = lazy(() => import('./components/FlagshipGuide'));
+const FlagshipDecks = lazy(() => import('./components/FlagshipDecks'));
+const GroundGuide = lazy(() => import('./components/GroundGuide'));
+const HeroTierList = lazy(() => import('./components/HeroTierList'));
+const EventGuide = lazy(() => import('./components/EventGuide'));
+const Builder = lazy(() => import('./components/Builder'));
+const DailyChecklist = lazy(() => import('./components/DailyChecklist'));
+const GiftCodes = lazy(() => import('./components/GiftCodes'));
+const Support = lazy(() => import('./components/Support'));
 
 function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -24,21 +24,29 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <Layout onLoginClick={() => setIsLoginModalOpen(true)}>
-          <Routes>
-            <Route path="/" element={<Navigate to="/home" replace />} />
-            <Route path="/home" element={<Hero />} />
-            <Route path="/guides" element={<Guides />} />
-            <Route path="/daily-tasks" element={<DailyChecklist />} />
-            <Route path="/champions" element={<HeroTierList />} />
-            <Route path="/flagships" element={<FlagshipGuide />} />
-            <Route path="/flagship-decks" element={<FlagshipDecks />} />
-            <Route path="/ground-teams" element={<GroundGuide />} />
-            <Route path="/events" element={<EventGuide />} />
-            <Route path="/tools" element={<Builder />} />
-            <Route path="/gift-codes" element={<GiftCodes />} />
-            <Route path="/support" element={<Support />} />
-            <Route path="*" element={<Navigate to="/home" replace />} />
-          </Routes>
+          <Suspense fallback={
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh', color: 'var(--text-dim)', fontFamily: 'var(--font-label)', letterSpacing: '2px', textTransform: 'uppercase' }}>
+              Loading Data...
+            </div>
+          }>
+            <Routes>
+              <Route path="/" element={<Navigate to="/home" replace />} />
+              <Route path="/home" element={<Hero />} />
+              <Route path="/guides" element={<Guides />} />
+              <Route path="/guides/:guideId" element={<Guides />} />
+              <Route path="/daily-tasks" element={<DailyChecklist />} />
+              <Route path="/champions" element={<HeroTierList />} />
+              <Route path="/flagships" element={<FlagshipGuide />} />
+              <Route path="/flagship-decks" element={<FlagshipDecks />} />
+              <Route path="/ground-teams" element={<GroundGuide />} />
+              <Route path="/events" element={<EventGuide />} />
+              <Route path="/events/:eventId" element={<EventGuide />} />
+              <Route path="/tools" element={<Builder />} />
+              <Route path="/gift-codes" element={<GiftCodes />} />
+              <Route path="/support" element={<Support />} />
+              <Route path="*" element={<Navigate to="/home" replace />} />
+            </Routes>
+          </Suspense>
         </Layout>
         <Analytics />
         <LoginModal
