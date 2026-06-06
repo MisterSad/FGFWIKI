@@ -84,7 +84,11 @@
         "ground": "Ground Teams",
         "events": "Events",
         "builder": "Tools",
-        "guild": "Guild"
+        "guild": "Guild",
+        "combat": "Combat",
+        "gameplay": "Gameplay",
+        "vip": "VIP",
+        "migration": "Migration"
     },
     "tips": {
         "t1_title": "Focus on Story Missions",

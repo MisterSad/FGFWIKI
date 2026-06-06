@@ -84,7 +84,11 @@
         "ground": "Marktrupper",
         "events": "Event",
         "builder": "Verktyg",
-        "guild": "Gille"
+        "guild": "Gille",
+        "combat": "Strid",
+        "gameplay": "Spelbarhet",
+        "vip": "VIP",
+        "migration": "Migrering"
     },
     "tips": {
         "t1_title": "Fokusera på story-uppdrag",

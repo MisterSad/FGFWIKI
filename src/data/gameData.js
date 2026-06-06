@@ -118,7 +118,7 @@ export const tips = [
   // Guild
   {
     id: 10,
-    category: 'guild',
+    category: 'gameplay',
     title: 'tips.port_occ_title',
     content: 'tips.port_occ_desc',
     highlight: true,
@@ -193,7 +193,7 @@ export const tips = [
   },
   {
     id: 11,
-    category: 'guild',
+    category: 'gameplay',
     title: 'tips.home_port_title',
     content: 'tips.home_port_desc',
     highlight: true,
@@ -238,7 +238,7 @@ export const tips = [
   },
   {
     id: 12,
-    category: 'beginner',
+    category: 'vip',
     title: 'tips.vip_program_title',
     content: 'tips.vip_program_desc',
     highlight: true,
@@ -269,7 +269,7 @@ export const tips = [
   },
   {
     id: 13,
-    category: 'beginner',
+    category: 'migration',
     title: 'tips.migration_title',
     content: 'tips.migration_desc',
     highlight: true,

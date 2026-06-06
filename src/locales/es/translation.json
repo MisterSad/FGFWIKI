@@ -84,7 +84,11 @@
         "ground": "Equipos terrestres",
         "events": "Eventos",
         "builder": "Herramientas",
-        "guild": "Hermandad"
+        "guild": "Hermandad",
+        "combat": "Combate",
+        "gameplay": "Jugabilidad",
+        "vip": "VIP",
+        "migration": "Migración"
     },
     "tips": {
         "t1_title": "Concéntrate en las misiones de la historia",

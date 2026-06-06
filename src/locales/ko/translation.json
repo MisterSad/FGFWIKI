@@ -84,7 +84,11 @@
         "ground": "지상 부대",
         "events": "이벤트",
         "builder": "도구",
-        "guild": "길드"
+        "guild": "길드",
+        "combat": "전투",
+        "gameplay": "게임플레이",
+        "vip": "VIP",
+        "migration": "이동"
     },
     "tips": {
         "t1_title": "스토리 임무에 집중하세요",

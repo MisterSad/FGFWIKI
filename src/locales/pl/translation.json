@@ -84,7 +84,11 @@
         "ground": "Drużyny naziemne",
         "events": "Wydarzenia",
         "builder": "Narzędzia",
-        "guild": "Gildia"
+        "guild": "Gildia",
+        "combat": "Walka",
+        "gameplay": "Rozgrywka",
+        "vip": "VIP",
+        "migration": "Migracja"
     },
     "tips": {
         "t1_title": "Skup się na misjach fabularnych",
