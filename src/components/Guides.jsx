@@ -1,7 +1,8 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
+import DailyChecklist from './DailyChecklist';
 import { BookOpen, Swords, Coins, Lightbulb, ArrowLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -9,6 +10,14 @@ export default function Guides() {
     const { t } = useTranslation();
     const { guideId } = useParams();
     const navigate = useNavigate();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const activeTab = searchParams.get('tab') === 'daily-tasks' ? 'daily-tasks' : 'list';
+
+    const setActiveTab = (tab) => {
+        const newParams = new URLSearchParams(searchParams);
+        newParams.set('tab', tab);
+        setSearchParams(newParams);
+    };
 
     const selectedTip = guideId ? tips.find(tip => String(tip.id) === guideId) : null;
 
@@ -170,8 +179,42 @@ export default function Guides() {
     }
 
     return (
-        <>
-            <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', paddingBottom: '4rem', paddingTop: '2rem' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', paddingBottom: '4rem', paddingTop: '2rem' }}>
+            {/* Header */}
+            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                <h2 style={{
+                    fontFamily: 'var(--font-hero)',
+                    fontSize: 'clamp(1.5rem, 5vw, 2.5rem)',
+                    color: "#FFFFFF",
+                    textTransform: 'uppercase',
+                    letterSpacing: 'clamp(1px, 0.4vw, 2px)',
+                    marginBottom: '0.5rem',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap'
+                }}>
+                    <BookOpen size={40} /> {t('navigation.guides')}
+                </h2>
+                <p style={{ color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)' }}>
+                    {t('seo.guides.description')}
+                </p>
+            </div>
+
+            {/* Sub-tab switcher */}
+            <div className="sub-tabs-container">
+                <button
+                    className={`sub-tab-button ${activeTab === 'list' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('list')}
+                >
+                    {t('navigation.guides')}
+                </button>
+                <button
+                    className={`sub-tab-button ${activeTab === 'daily-tasks' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('daily-tasks')}
+                >
+                    {t('daily_checklist.title')}
+                </button>
+            </div>
+
+            {activeTab === 'list' ? (
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
@@ -191,7 +234,11 @@ export default function Guides() {
                             />
                         ))}
                 </div>
-            </div>
-        </>
+            ) : (
+                <div className="fade-in">
+                    <DailyChecklist />
+                </div>
+            )}
+        </div>
     );
 }
