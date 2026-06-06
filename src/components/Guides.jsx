@@ -10,7 +10,7 @@ export default function Guides() {
     const { guideId } = useParams();
     const navigate = useNavigate();
 
-    const selectedTip = guideId ? tips.find(tip => tip.id === Number(guideId)) : null;
+    const selectedTip = guideId ? tips.find(tip => String(tip.id) === guideId) : null;
 
     const closeModal = () => navigate('/guides');
 

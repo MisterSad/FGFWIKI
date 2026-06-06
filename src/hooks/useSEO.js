@@ -172,8 +172,8 @@ export default function useSEO() {
         const eventMatch = location.pathname.match(/^\/events\/([^/]+)$/);
 
         if (guideMatch) {
-            const guideId = Number(guideMatch[1]);
-            tip = tips.find(t => t.id === guideId);
+            const guideId = guideMatch[1];
+            tip = tips.find(t => String(t.id) === guideId);
             if (tip) {
                 pageTitle = t(tip.title, { defaultValue: 'Guide' });
                 description = t(tip.content, {
