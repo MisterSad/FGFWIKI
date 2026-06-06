@@ -1728,3 +1728,197 @@ footer {
     letter-spacing: 1px;
   }
 }
+
+/* Responsive Desktop vs Mobile Tabs wrapper */
+.tabs-desktop {
+  display: block;
+}
+
+.tabs-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .tabs-desktop {
+    display: none !important;
+  }
+  
+  .tabs-mobile {
+    display: block !important;
+  }
+
+  /* Hide the top sticky tab bar wrapper entirely on mobile */
+  .sticky-tabs-wrapper {
+    display: none !important;
+  }
+
+  /* Shift main content down slightly less on mobile now that top tabs are gone */
+  .main-content {
+    padding-top: 15px !important;
+    padding-bottom: 80px !important; /* Make room for bottom nav so content isn't covered */
+  }
+}
+
+/* Mobile Bottom Navigation Bar */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(60px + env(safe-area-inset-bottom, 0px));
+  background: rgba(6, 7, 16, 0.98);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.mobile-tab-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.2s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  gap: 3px;
+}
+
+.mobile-tab-item:hover,
+.mobile-tab-item.active {
+  color: var(--gold-bright);
+}
+
+/* Slim indicator line on active tab at the top of the tab item */
+.mobile-tab-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: transparent;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.mobile-tab-item.active::before {
+  background-color: var(--gold-bright);
+  box-shadow: 0 0 8px var(--gold-bright);
+}
+
+/* Grid Drawer Overlay for "More" options */
+.mobile-more-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(3, 4, 8, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 998;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.mobile-more-drawer {
+  position: fixed;
+  bottom: calc(70px + env(safe-area-inset-bottom, 0px));
+  left: 12px;
+  right: 12px;
+  background: rgba(13, 14, 20, 0.96);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem;
+  z-index: 999;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.7);
+  animation: slideUp 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+}
+
+.mobile-more-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.mobile-more-card {
+  background: var(--bg-void);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.25rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mobile-more-card:hover,
+.mobile-more-card.active {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 12px rgba(232, 201, 106, 0.15);
+}
+
+.mobile-more-card.active {
+  background: rgba(201, 168, 76, 0.05);
+}
+
+.mobile-more-card__icon {
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.mobile-more-card.active .mobile-more-card__icon,
+.mobile-more-card:hover .mobile-more-card__icon {
+  color: var(--gold-bright);
+}
+
+.mobile-more-card__label {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.mobile-more-card.active .mobile-more-card__label {
+  color: var(--gold-bright);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
