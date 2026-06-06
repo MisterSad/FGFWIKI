@@ -243,6 +243,7 @@ export const tips = [
     content: 'tips.vip_program_desc',
     highlight: true,
     hasDetails: true,
+    isExclusive: true,
     publishDate: '2026-06-06T14:39:00Z',
     sections: [
       {

@@ -64,7 +64,9 @@
         "beam": "光束",
         "ion": "离子",
         "core": "核心",
-        "back": "返回"
+        "back": "返回",
+        "exclusive": "专属",
+        "new": "最新"
     },
     "hero": {
         "title_prefix": "征服",

@@ -64,7 +64,9 @@
         "beam": "Faisceau",
         "ion": "Ion",
         "core": "Noyau",
-        "back": "RETOUR"
+        "back": "RETOUR",
+        "exclusive": "Exclusif",
+        "new": "Nouveau"
     },
     "hero": {
         "title_prefix": "Maîtrisez la",

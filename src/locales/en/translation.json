@@ -64,7 +64,9 @@
         "beam": "Beam",
         "ion": "Ion",
         "core": "Core",
-        "back": "BACK"
+        "back": "BACK",
+        "exclusive": "Exclusive",
+        "new": "New"
     },
     "hero": {
         "title_prefix": "Master the",
