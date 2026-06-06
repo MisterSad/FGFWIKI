@@ -1734,8 +1734,19 @@ footer {
   display: block;
 }
 
+/* Responsive Desktop vs Mobile Tabs wrapper */
+.tabs-desktop {
+  display: block;
+}
+
 .tabs-mobile {
   display: none;
+  overflow: visible !important;
+}
+
+.tabs-mobile,
+.tabs-mobile * {
+  box-sizing: border-box !important;
 }
 
 @media (max-width: 900px) {
@@ -1754,6 +1765,7 @@ footer {
     background: transparent !important;
     border: none !important;
     height: 0 !important;
+    overflow: visible !important;
   }
 
   /* Shift main content down slightly less on mobile now that top tabs are gone */
@@ -1780,6 +1792,7 @@ footer {
   z-index: 1000;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  overflow: visible !important;
 }
 
 .mobile-tab-item {
@@ -1837,24 +1850,25 @@ footer {
   background: rgba(3, 4, 8, 0.7);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  z-index: 998;
+  z-index: 1090; /* covers bottom nav to prevent double clicks */
   animation: fadeIn 0.2s ease-out;
 }
 
 .mobile-more-drawer {
   position: fixed;
-  bottom: calc(70px + env(safe-area-inset-bottom, 0px));
+  bottom: calc(75px + env(safe-area-inset-bottom, 0px)); /* Raised to 75px for spacing */
   left: 12px;
   right: 12px;
-  background: rgba(13, 14, 20, 0.96);
+  background: rgba(13, 14, 20, 0.98);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 1.25rem;
-  z-index: 999;
-  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.7);
+  z-index: 1100; /* renders strictly on top of bottom nav and overlay */
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
   animation: slideUp 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
+  overflow: visible !important;
 }
 
 .mobile-more-grid {
