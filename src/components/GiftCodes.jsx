@@ -62,6 +62,9 @@ const giftCodes = [
     { code: 'Misoshirudayo' },
     { code: 'HERO777' },
     { code: 'HIT114' },
+    { code: 'YObonus' },
+    { code: 'vinegar2026' },
+    { code: 'CHILDRENSDAY26' },
 ];
 
 const now = new Date();
