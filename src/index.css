@@ -1747,9 +1747,13 @@ footer {
     display: block !important;
   }
 
-  /* Hide the top sticky tab bar wrapper entirely on mobile */
+  /* De-style the top sticky wrapper on mobile so it doesn't take space or render borders,
+     but KEEP it displayed so its child .tabs-mobile (fixed bottom nav) remains visible. */
   .sticky-tabs-wrapper {
-    display: none !important;
+    position: static !important;
+    background: transparent !important;
+    border: none !important;
+    height: 0 !important;
   }
 
   /* Shift main content down slightly less on mobile now that top tabs are gone */
