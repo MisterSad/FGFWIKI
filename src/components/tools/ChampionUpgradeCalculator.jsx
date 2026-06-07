@@ -251,7 +251,7 @@ export default function ChampionUpgradeCalculator() {
                                     onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(0,0,0,.2)"; e.currentTarget.style.borderColor = "transparent"; }}
                                 >
                                     <span style={{ color: V.txSec }}>
-                                        {r.from}–{r.to}
+                                        {r.from}-{r.to}
                                     </span>
                                     <span className="col-r" style={{ color: "#a78bfa" }}>{r.cost / r.levels}</span>
                                     <span className="col-r" style={{ color: V.txSec }}>×{r.levels}</span>

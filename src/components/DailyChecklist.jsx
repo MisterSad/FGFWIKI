@@ -395,7 +395,7 @@ function ProgressGauge({
                     color: isComplete ? 'var(--accent-teal)' : 'var(--text-primary)',
                     fontWeight: 600,
                 }}>
-                    {percent}% — {current}/{total}
+                    {percent}% - {current}/{total}
                 </span>
             </div>
 

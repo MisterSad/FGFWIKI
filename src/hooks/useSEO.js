@@ -204,8 +204,8 @@ export default function useSEO() {
 
         const isHome = location.pathname === '/' || location.pathname === '/home';
         const fullTitle = isHome
-            ? `${SITE_NAME} — ${pageTitle}`
-            : `${pageTitle} — ${SITE_NAME}`;
+            ? `${SITE_NAME} | ${pageTitle}`
+            : `${pageTitle} | ${SITE_NAME}`;
         const ogLocale = OG_LOCALES[lang] || OG_LOCALES.en;
 
         document.title = fullTitle;
