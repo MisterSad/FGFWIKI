@@ -883,8 +883,8 @@
             "ability1_op": "<0>幻影驱动</0>:短时间内将闪避增加 25%。",
             "ability2_op": "<0>精确打击</0>:保证对最低 HP 敌人的暴击。"
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "终极武器",
             "strengths": "原始火力、范围效应、护盾破坏",
             "strategy_title": "核心策略",

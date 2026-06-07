@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: Ökar undvikande med 25 % under korta varaktigheter.",
             "ability2_op": "<0>Precision Strike</0>: Garanterar en kritisk träff på fienden med lägst HP."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "Det ultimata vapnet",
             "strengths": "Rå eldkraft, område, sköldbrytning",
             "strategy_title": "Kärnstrategi",

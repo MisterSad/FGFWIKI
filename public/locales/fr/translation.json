@@ -882,8 +882,8 @@
             "ability1_op": "<0>Propulseur Fantôme</0> : Augmente l'esquive de 25% pour de courtes durées.",
             "ability2_op": "<0>Frappe de Précision</0> : Garantit un coup critique sur l'ennemi avec le moins de PV."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "L'Arme ultime",
             "strengths": "Puissance de feu brute, Zone d'effet, Brisage de boucliers",
             "strategy_title": "Stratégie principale",

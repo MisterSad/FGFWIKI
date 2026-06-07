@@ -17,8 +17,8 @@
             "description": "최신 Foundation: Galactic Frontier 챔피언 티어리스트. 최고의 빔, 키네틱, 이온 영웅 순위와 시너지, 능력치 우선순위, 조각 관리 팁."
         },
         "flagships": {
-            "title": "기함 가이드 — Gram, Opportunity, Demerzal | FGF 위키",
-            "description": "Foundation: Galactic Frontier의 모든 기함을 마스터하세요. Gram 탱크 빌드, Opportunity 회피 사양, Demerzal 광역 전략, 청사진 비용, 에너지 시너지."
+            "title": "기함 가이드 — Gram, Opportunity, Demerzel | FGF 위키",
+            "description": "Foundation: Galactic Frontier의 모든 기함을 마스터하세요. Gram 탱크 빌드, Opportunity 회피 사양, Demerzel 광역 전략, 청사진 비용, 에너지 시너지."
         },
         "flagship_decks": {
             "title": "기함 덱 — 최적의 함대 구성 | FGF 위키",
@@ -883,8 +883,8 @@
             "ability1_op": "<0>팬텀 드라이브</0>: 짧은 시간 동안 회피를 25% 증가시킵니다.",
             "ability2_op": "<0>정밀 공격</0>: HP가 가장 낮은 적에 대한 치명타를 보장합니다."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "궁극의 무기",
             "strengths": "원시적 화력, 광역 효과, 실드 파괴",
             "strategy_title": "핵심 전략",

@@ -883,8 +883,8 @@
             "ability1_op": "<0>ファントムドライブ</0>:短時間で回避を25%増加させます。",
             "ability2_op": "<0>精密ストライク</0>:最低HPの敵にクリティカルヒットを保証します。"
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "究極の武器",
             "strengths": "生の火力、エリア効果、シールド破壊",
             "strategy_title": "コア戦略",

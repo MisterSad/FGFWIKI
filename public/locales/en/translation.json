@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: Increases evasion by 25% for short durations.",
             "ability2_op": "<0>Precision Strike</0>: Guarantees a critical hit on the lowest HP enemy."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "The Ultimate Weapon",
             "strengths": "Raw Firepower, Area of Effect, Shield Breaking",
             "strategy_title": "Core Strategy",

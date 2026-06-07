@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: Aumenta la schivata del 25% per brevi durate.",
             "ability2_op": "<0>Colpo di Precisione</0>: Garantisce un colpo critico sul nemico con i PV più bassi."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "L'arma definitiva",
             "strengths": "Pura potenza di fuoco, Area di effetto, Rottura scudi",
             "strategy_title": "Strategia core",

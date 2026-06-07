@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: Aumenta la evasión un 25% durante períodos cortos.",
             "ability2_op": "<0>Golpe de Precisión</0>: Garantiza un golpe crítico sobre el enemigo con menos PV."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "El arma definitiva",
             "strengths": "Potencia de fuego pura, Daño en área, Rotura de escudos",
             "strategy_title": "Estrategia núcleo",

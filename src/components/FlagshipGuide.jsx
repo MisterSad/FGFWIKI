@@ -156,27 +156,27 @@ export default function FlagshipGuide() {
                             </div>
                         </div>
 
-                        {/* DEMERZAL */}
+                        {/* DEMERZEL */}
                         <div className="card reveal" style={{ transitionDelay: '0.4s', background: 'var(--bg-void)', borderRadius: '2px', overflow: 'hidden', border: '1px solid var(--accent-blue)', borderLeft: '4px solid var(--accent-blue)' }}>
                             <div style={{ padding: '1.5rem', background: 'var(--bg-surface)', borderBottom: '1px solid var(--border)' }}>
                                 <h4 className="label-text" style={{ margin: 0, fontSize: '1.5rem', color: 'var(--accent-blue)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                    {t('flagships.demerzal.title')}
+                                    {t('flagships.demerzel.title')}
                                 </h4>
-                                <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{t('flagships.demerzal.subtitle')}</span>
+                                <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{t('flagships.demerzel.subtitle')}</span>
                             </div>
                             <div style={{ padding: '1.5rem' }}>
                                 <p style={{ color: 'var(--text-dim)', marginBottom: '1rem' }}>
-                                    <strong style={{ color: 'var(--text-primary)' }}>Strengths:</strong> {t('flagships.demerzal.strengths')}
+                                    <strong style={{ color: 'var(--text-primary)' }}>Strengths:</strong> {t('flagships.demerzel.strengths')}
                                 </p>
-                                <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.demerzal.strategy_title')}</h5>
+                                <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.demerzel.strategy_title')}</h5>
                                 <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem', marginBottom: '1rem' }}>
-                                    <li><Trans i18nKey="flagships.demerzal.strategy_synergy" components={{ 0: <strong />, 2: <strong /> }} /></li>
-                                    <li><Trans i18nKey="flagships.demerzal.strategy_unlock" components={{ 0: <strong /> }} /></li>
+                                    <li><Trans i18nKey="flagships.demerzel.strategy_synergy" components={{ 0: <strong />, 2: <strong /> }} /></li>
+                                    <li><Trans i18nKey="flagships.demerzel.strategy_unlock" components={{ 0: <strong /> }} /></li>
                                 </ul>
-                                <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.demerzal.abilities_title')}</h5>
+                                <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.demerzel.abilities_title')}</h5>
                                 <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem' }}>
-                                    <li><Trans i18nKey="flagships.demerzal.ability1_dem" components={{ 0: <strong style={{ color: 'var(--accent-blue)' }} /> }} /></li>
-                                    <li><Trans i18nKey="flagships.demerzal.ability2_dem" components={{ 0: <strong style={{ color: 'var(--accent-blue)' }} /> }} /></li>
+                                    <li><Trans i18nKey="flagships.demerzel.ability1_dem" components={{ 0: <strong style={{ color: 'var(--accent-blue)' }} /> }} /></li>
+                                    <li><Trans i18nKey="flagships.demerzel.ability2_dem" components={{ 0: <strong style={{ color: 'var(--accent-blue)' }} /> }} /></li>
                                 </ul>
                             </div>
                         </div>
