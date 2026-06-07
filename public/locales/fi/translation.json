@@ -61,7 +61,8 @@
         "core": "Ydin",
         "back": "TAKAISIN",
         "exclusive": "Eksklusiivinen",
-        "new": "Uusi"
+        "new": "Uusi",
+        "update": "Päivitys"
     },
     "hero": {
         "title_prefix": "Hallitse",

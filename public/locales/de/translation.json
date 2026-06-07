@@ -61,7 +61,8 @@
         "core": "Kern",
         "back": "ZURÜCK",
         "exclusive": "Exklusiv",
-        "new": "Neu"
+        "new": "Neu",
+        "update": "Update"
     },
     "hero": {
         "title_prefix": "Meistere die",

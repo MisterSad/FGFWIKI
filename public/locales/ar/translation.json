@@ -61,7 +61,8 @@
         "core": "جوهر",
         "back": "خلف",
         "exclusive": "حصري",
-        "new": "جديد"
+        "new": "جديد",
+        "update": "تحديث"
     },
     "hero": {
         "title_prefix": "إتقان",

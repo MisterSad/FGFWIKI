@@ -61,7 +61,8 @@
         "core": "核心",
         "back": "返回",
         "exclusive": "专属",
-        "new": "新"
+        "new": "新",
+        "update": "更新"
     },
     "hero": {
         "title_prefix": "征服",

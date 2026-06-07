@@ -61,7 +61,8 @@
         "core": "Rdzeń",
         "back": "WSTECZ",
         "exclusive": "Ekskluzywne",
-        "new": "Nowość"
+        "new": "Nowość",
+        "update": "Aktualizacja"
     },
     "hero": {
         "title_prefix": "Opanuj",

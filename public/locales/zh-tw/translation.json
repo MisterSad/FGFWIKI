@@ -61,7 +61,8 @@
         "core": "核",
         "back": "後退",
         "exclusive": "獨家的",
-        "new": "新"
+        "new": "新",
+        "update": "更新"
     },
     "hero": {
         "title_prefix": "掌握",

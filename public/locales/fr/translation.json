@@ -61,7 +61,8 @@
         "core": "Noyau",
         "back": "RETOUR",
         "exclusive": "Exclusif",
-        "new": "Nouv."
+        "new": "Nouv.",
+        "update": "Mise à jour"
     },
     "hero": {
         "title_prefix": "Maîtrisez la",

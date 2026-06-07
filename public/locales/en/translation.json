@@ -61,7 +61,8 @@
         "core": "Core",
         "back": "BACK",
         "exclusive": "Exclusive",
-        "new": "New"
+        "new": "New",
+        "update": "Update"
     },
     "hero": {
         "title_prefix": "Master the",

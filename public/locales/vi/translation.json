@@ -61,7 +61,8 @@
         "core": "Cốt lõi",
         "back": "MẶT SAU",
         "exclusive": "Loại trừ",
-        "new": "Mới"
+        "new": "Mới",
+        "update": "Cập nhật"
     },
     "hero": {
         "title_prefix": "Làm chủ",

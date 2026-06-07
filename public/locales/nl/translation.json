@@ -61,7 +61,8 @@
         "core": "Kern",
         "back": "RUG",
         "exclusive": "Exclusief",
-        "new": "Nieuw"
+        "new": "Nieuw",
+        "update": "Update"
     },
     "hero": {
         "title_prefix": "Beheers de",

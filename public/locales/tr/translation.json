@@ -61,7 +61,8 @@
         "core": "Çekirdek",
         "back": "GERİ",
         "exclusive": "Özel",
-        "new": "Yeni"
+        "new": "Yeni",
+        "update": "Güncelleme"
     },
     "hero": {
         "title_prefix": "Ustalaşın",

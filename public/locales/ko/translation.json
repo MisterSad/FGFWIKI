@@ -61,7 +61,8 @@
         "core": "코어",
         "back": "뒤로",
         "exclusive": "독점",
-        "new": "신규"
+        "new": "신규",
+        "update": "업데이트"
     },
     "hero": {
         "title_prefix": "정복하라",
