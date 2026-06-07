@@ -260,7 +260,8 @@
         "build_queue_trick_title": "Andre byggekø-triks",
         "build_queue_trick_desc": "Få mest mulig ut av den 24-timers andre byggekøen.",
         "build_queue_trick_overview_hdr": "Køutvidelsestriks",
-        "build_queue_trick_overview_txt": "Den sekundære byggekøen, låst opp for 500 studiepoeng, har en varighet på 24 timer. Enhver oppgradering som startes før dette vinduet lukkes vil fortsette til fullføring selv om prosjektet krever flere dager, slik at du kan maksimere verdien av den midlertidige køen."
+        "build_queue_trick_overview_txt": "Den sekundære byggekøen, låst opp for 500 studiepoeng, har en varighet på 24 timer. Enhver oppgradering som startes før dette vinduet lukkes vil fortsette til fullføring selv om prosjektet krever flere dager, slik at du kan maksimere verdien av den midlertidige køen.",
+        "credit_snakebite": "Strategi samlet av Snakebite (Server #1003)."
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

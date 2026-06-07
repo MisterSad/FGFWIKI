@@ -260,7 +260,8 @@
         "build_queue_trick_title": "2. Derleme Sırası Hilesi",
         "build_queue_trick_desc": "24 saatlik ikinci inşaat kuyruğundan en iyi şekilde yararlanın.",
         "build_queue_trick_overview_hdr": "Kuyruk Uzatma Hilesi",
-        "build_queue_trick_overview_txt": "500 Kredi karşılığında açılan ikincil inşaat kuyruğunun süresi 24 saattir. Bu pencere kapanmadan önce başlatılan herhangi bir yükseltme, proje birden fazla gün gerektirse bile tamamlanmaya devam edecek ve böylece geçici kuyruğun değerini en üst düzeye çıkarmanıza olanak tanıyacaktır."
+        "build_queue_trick_overview_txt": "500 Kredi karşılığında açılan ikincil inşaat kuyruğunun süresi 24 saattir. Bu pencere kapanmadan önce başlatılan herhangi bir yükseltme, proje birden fazla gün gerektirse bile tamamlanmaya devam edecek ve böylece geçici kuyruğun değerini en üst düzeye çıkarmanıza olanak tanıyacaktır.",
+        "credit_snakebite": "Strateji, Sunucu #1003'ten Snakebite tarafından derlenmiştir."
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

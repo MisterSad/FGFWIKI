@@ -514,6 +514,20 @@ export default function EventGuide() {
                                 </ul>
                             </div>
                         )}
+                    {/* Author Credit */}
+                    {selectedEvent.credit && (
+                        <div style={{
+                            marginTop: '3rem',
+                            borderTop: '1px solid var(--border)',
+                            paddingTop: '1.5rem',
+                            textAlign: 'right',
+                            fontSize: '0.9rem',
+                            color: 'var(--text-dim)',
+                            fontStyle: 'italic'
+                        }}>
+                            {t(selectedEvent.credit)}
+                        </div>
+                    )}
                     </div>
                 </div>
             )

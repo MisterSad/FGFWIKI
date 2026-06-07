@@ -260,7 +260,8 @@
         "build_queue_trick_title": "2. Build-Warteschlangen-Trick",
         "build_queue_trick_desc": "Nutzen Sie die 24-Stunden-Warteschlange für den zweiten Bau optimal aus.",
         "build_queue_trick_overview_hdr": "Trick zur Warteschlangenverlängerung",
-        "build_queue_trick_overview_txt": "Die sekundäre Bauwarteschlange, die für 500 Credits freigeschaltet wird, hat eine Dauer von 24 Stunden. Jedes vor dem Schließen dieses Fensters eingeleitete Upgrade wird auch dann abgeschlossen, wenn das Projekt mehrere Tage in Anspruch nimmt, sodass Sie den Wert der temporären Warteschlange maximieren können."
+        "build_queue_trick_overview_txt": "Die sekundäre Bauwarteschlange, die für 500 Credits freigeschaltet wird, hat eine Dauer von 24 Stunden. Jedes vor dem Schließen dieses Fensters eingeleitete Upgrade wird auch dann abgeschlossen, wenn das Projekt mehrere Tage in Anspruch nimmt, sodass Sie den Wert der temporären Warteschlange maximieren können.",
+        "credit_snakebite": "Strategie zusammengestellt von Snakebite (Server #1003)."
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

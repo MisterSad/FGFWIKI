@@ -260,7 +260,8 @@
         "build_queue_trick_title": "File de Construction carry-over",
         "build_queue_trick_desc": "Profitez au maximum de la file de construction secondaire temporaire de 24h.",
         "build_queue_trick_overview_hdr": "Astuce d'Extension de File",
-        "build_queue_trick_overview_txt": "La file de construction secondaire, débloquée pour 500 crédits, dure 24 heures. Tout projet démarré avant la fin de ce délai se poursuivra jusqu'à son terme, même s'il nécessite plusieurs jours, ce qui permet de maximiser le rendement de la file temporaire."
+        "build_queue_trick_overview_txt": "La file de construction secondaire, débloquée pour 500 crédits, dure 24 heures. Tout projet démarré avant la fin de ce délai se poursuivra jusqu'à son terme, même s'il nécessite plusieurs jours, ce qui permet de maximiser le rendement de la file temporaire.",
+        "credit_snakebite": "Stratégie compilée par Snakebite (Serveur #1003)."
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

@@ -260,7 +260,8 @@
         "build_queue_trick_title": "Thủ thuật xây dựng hàng đợi thứ 2",
         "build_queue_trick_desc": "Tận dụng tối đa hàng đợi xây dựng thứ hai trong 24 giờ.",
         "build_queue_trick_overview_hdr": "Thủ thuật mở rộng hàng đợi",
-        "build_queue_trick_overview_txt": "Hàng đợi xây dựng phụ, được mở khóa với 500 Tín dụng, có thời lượng 24 giờ. Mọi nâng cấp được bắt đầu trước khi thời hạn này đóng sẽ tiếp tục hoàn thành ngay cả khi dự án yêu cầu nhiều ngày, cho phép bạn tối đa hóa giá trị của hàng đợi tạm thời."
+        "build_queue_trick_overview_txt": "Hàng đợi xây dựng phụ, được mở khóa với 500 Tín dụng, có thời lượng 24 giờ. Mọi nâng cấp được bắt đầu trước khi thời hạn này đóng sẽ tiếp tục hoàn thành ngay cả khi dự án yêu cầu nhiều ngày, cho phép bạn tối đa hóa giá trị của hàng đợi tạm thời.",
+        "credit_snakebite": "Chiến thuật được biên soạn bởi Snakebite (Máy chủ #1003)."
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

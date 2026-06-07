@@ -260,7 +260,8 @@
         "build_queue_trick_title": "2e truc voor het bouwen van wachtrijen",
         "build_queue_trick_desc": "Maak optimaal gebruik van de 24-uurs wachtrij voor tweede bouwwerkzaamheden.",
         "build_queue_trick_overview_hdr": "Truc voor wachtrij-extensie",
-        "build_queue_trick_overview_txt": "De secundaire bouwwachtrij, ontgrendeld voor 500 credits, duurt 24 uur. Elke upgrade die wordt gestart voordat dit venster wordt gesloten, wordt voltooid, zelfs als het project meerdere dagen in beslag neemt, waardoor u de waarde van de tijdelijke wachtrij kunt maximaliseren."
+        "build_queue_trick_overview_txt": "De secundaire bouwwachtrij, ontgrendeld voor 500 credits, duurt 24 uur. Elke upgrade die wordt gestart voordat dit venster wordt gesloten, wordt voltooid, zelfs als het project meerdere dagen in beslag neemt, waardoor u de waarde van de tijdelijke wachtrij kunt maximaliseren.",
+        "credit_snakebite": "Strategie samengesteld door Snakebite (Server #1003)."
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

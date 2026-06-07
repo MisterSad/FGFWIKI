@@ -303,6 +303,7 @@ export const tips = [
   },
   {
     id: 'combat-math',
+    credit: 'tips.credit_snakebite',
     category: 'combat',
     title: 'tips.combat_math_title',
     content: 'tips.combat_math_desc',
@@ -326,6 +327,7 @@ export const tips = [
   },
   {
     id: 'gungir-guide',
+    credit: 'tips.credit_snakebite',
     category: 'combat',
     title: 'tips.gungir_guide_title',
     content: 'tips.gungir_guide_desc',
@@ -350,6 +352,7 @@ export const tips = [
   },
   {
     id: 'prismatic-cores',
+    credit: 'tips.credit_snakebite',
     category: 'economy',
     title: 'tips.prismatic_cores_title',
     content: 'tips.prismatic_cores_desc',
@@ -373,6 +376,7 @@ export const tips = [
   },
   {
     id: 'guild-vouchers',
+    credit: 'tips.credit_snakebite',
     category: 'economy',
     title: 'tips.guild_vouchers_title',
     content: 'tips.guild_vouchers_desc',
@@ -392,6 +396,7 @@ export const tips = [
   },
   {
     id: 'resource-priority',
+    credit: 'tips.credit_snakebite',
     category: 'economy',
     title: 'tips.resource_priority_title',
     content: 'tips.resource_priority_desc',
@@ -411,6 +416,7 @@ export const tips = [
   },
   {
     id: 'building-priority',
+    credit: 'tips.credit_snakebite',
     category: 'economy',
     title: 'tips.building_priority_title',
     content: 'tips.building_priority_desc',
@@ -430,6 +436,7 @@ export const tips = [
   },
   {
     id: 'home-port-repair',
+    credit: 'tips.credit_snakebite',
     category: 'gameplay',
     title: 'tips.home_port_repair_title',
     content: 'tips.home_port_repair_desc',
@@ -445,6 +452,7 @@ export const tips = [
   },
   {
     id: 'build-queue-trick',
+    credit: 'tips.credit_snakebite',
     category: 'economy',
     title: 'tips.build_queue_trick_title',
     content: 'tips.build_queue_trick_desc',
@@ -537,6 +545,7 @@ export const groundTeams = [
 export const eventsData = [
   {
     id: 'operation_blackout',
+    credit: 'tips.credit_snakebite',
     title: 'events.operation_blackout_title',
     cycle: 'events.operation_blackout_cycle',
     type: 'events.operation_blackout_type',
@@ -577,6 +586,7 @@ export const eventsData = [
   },
   {
     id: 'kaboom',
+    credit: 'tips.credit_snakebite',
     title: 'events.kaboom_title',
     cycle: 'events.kaboom_cycle',
     type: 'events.kaboom_type',
@@ -603,6 +613,7 @@ export const eventsData = [
   },
   {
     id: 'arms_race',
+    credit: 'tips.credit_snakebite',
     title: 'events.arms_race_title',
     cycle: 'events.arms_race_cycle',
     type: 'events.arms_race_type',
@@ -815,6 +826,7 @@ export const eventsData = [
   },
   {
     id: 'top100_traders',
+    credit: 'tips.credit_snakebite',
     title: 'events.top100_title',
     cycle: 'events.top100_cycle',
     type: 'events.top100_type',
@@ -858,6 +870,7 @@ export const eventsData = [
   },
   {
     id: 'dominance',
+    credit: 'tips.credit_snakebite',
     title: 'events.dominance_title',
     cycle: 'events.dominance_cycle',
     type: 'events.dominance_type',
@@ -1068,6 +1081,7 @@ export const eventsData = [
   },
   {
     id: 'trade_route_defense',
+    credit: 'tips.credit_snakebite',
     title: 'events.trade_route_defense_title',
     cycle: 'events.trade_route_defense_cycle',
     type: 'events.trade_route_defense_type',

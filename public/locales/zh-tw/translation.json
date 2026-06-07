@@ -260,7 +260,8 @@
         "build_queue_trick_title": "第二個建構隊列技巧",
         "build_queue_trick_desc": "充分利用 24 小時第二施工隊列。",
         "build_queue_trick_overview_hdr": "隊列擴充技巧",
-        "build_queue_trick_overview_txt": "二級建造隊列需要 500 銀幣解鎖，持續時間為 24 小時。即使專案需要多天時間，在此視窗關閉之前啟動的任何升級都會繼續完成，使您能夠最大限度地發揮臨時佇列的價值。"
+        "build_queue_trick_overview_txt": "二級建造隊列需要 500 銀幣解鎖，持續時間為 24 小時。即使專案需要多天時間，在此視窗關閉之前啟動的任何升級都會繼續完成，使您能夠最大限度地發揮臨時佇列的價值。",
+        "credit_snakebite": "策略由來自伺服器 #1003 的 Snakebite 整理。"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

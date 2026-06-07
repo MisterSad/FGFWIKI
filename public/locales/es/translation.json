@@ -260,7 +260,8 @@
         "build_queue_trick_title": "Segundo truco de cola de compilación",
         "build_queue_trick_desc": "Aprovecha al máximo la segunda cola de construcción de 24 horas.",
         "build_queue_trick_overview_hdr": "Truco de extensión de cola",
-        "build_queue_trick_overview_txt": "La cola de construcción secundaria, desbloqueada por 500 créditos, tiene una duración de 24 horas. Cualquier actualización iniciada antes de que se cierre esta ventana se completará incluso si el proyecto requiere varios días, lo que le permitirá maximizar el valor de la cola temporal."
+        "build_queue_trick_overview_txt": "La cola de construcción secundaria, desbloqueada por 500 créditos, tiene una duración de 24 horas. Cualquier actualización iniciada antes de que se cierre esta ventana se completará incluso si el proyecto requiere varios días, lo que le permitirá maximizar el valor de la cola temporal.",
+        "credit_snakebite": "Estrategia compilada por Snakebite (Servidor #1003)."
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",

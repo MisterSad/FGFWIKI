@@ -173,6 +173,20 @@ export default function Guides() {
                             )}
                         </div>
                     ))}
+                    {/* Author Credit */}
+                    {selectedTip.credit && (
+                        <div style={{
+                            marginTop: '3rem',
+                            borderTop: '1px solid var(--border)',
+                            paddingTop: '1.5rem',
+                            textAlign: 'right',
+                            fontSize: '0.9rem',
+                            color: 'var(--text-dim)',
+                            fontStyle: 'italic'
+                        }}>
+                            {t(selectedTip.credit)}
+                        </div>
+                    )}
                 </div>
             </div>
         );

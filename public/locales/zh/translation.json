@@ -260,7 +260,8 @@
         "build_queue_trick_title": "第二个构建队列技巧",
         "build_queue_trick_desc": "充分利用 24 小时第二施工队列。",
         "build_queue_trick_overview_hdr": "队列扩展技巧",
-        "build_queue_trick_overview_txt": "二级建造队列需要 500 银币解锁，持续时间为 24 小时。即使项目需要多天时间，在此窗口关闭之前启动的任何升级都将继续完成，从而使您能够最大限度地发挥临时队列的价值。"
+        "build_queue_trick_overview_txt": "二级建造队列需要 500 银币解锁，持续时间为 24 小时。即使项目需要多天时间，在此窗口关闭之前启动的任何升级都将继续完成，从而使您能够最大限度地发挥临时队列的价值。",
+        "credit_snakebite": "策略由来自服务器 #1003 的 Snakebite 整理。"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",

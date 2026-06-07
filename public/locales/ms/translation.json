@@ -260,7 +260,8 @@
         "build_queue_trick_title": "Trik Barisan Ke-2 Binaan",
         "build_queue_trick_desc": "Manfaatkan sepenuhnya baris gilir pembinaan kedua 24 jam.",
         "build_queue_trick_overview_hdr": "Trik Sambungan Baris",
-        "build_queue_trick_overview_txt": "Baris gilir pembinaan sekunder, dibuka untuk 500 Kredit, mempunyai tempoh 24 jam. Sebarang naik taraf yang dimulakan sebelum tetingkap ini ditutup akan diteruskan hingga siap walaupun projek memerlukan beberapa hari, membolehkan anda memaksimumkan nilai baris gilir sementara."
+        "build_queue_trick_overview_txt": "Baris gilir pembinaan sekunder, dibuka untuk 500 Kredit, mempunyai tempoh 24 jam. Sebarang naik taraf yang dimulakan sebelum tetingkap ini ditutup akan diteruskan hingga siap walaupun projek memerlukan beberapa hari, membolehkan anda memaksimumkan nilai baris gilir sementara.",
+        "credit_snakebite": "Strategi disusun oleh Snakebite (Pelayan #1003)."
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",
