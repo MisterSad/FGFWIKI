@@ -181,6 +181,31 @@ export default function FlagshipGuide() {
                             </div>
                         </div>
 
+                        {/* GUNGIR */}
+                        <div className="card reveal" style={{ transitionDelay: '0.5s', background: 'var(--bg-void)', borderRadius: '2px', overflow: 'hidden', border: '1px solid var(--accent-red)', borderLeft: '4px solid var(--accent-red)' }}>
+                            <div style={{ padding: '1.5rem', background: 'var(--bg-surface)', borderBottom: '1px solid var(--border)' }}>
+                                <h4 className="label-text" style={{ margin: 0, fontSize: '1.5rem', color: 'var(--accent-red)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                    {t('flagships.gungir.title', 'Gungir')}
+                                </h4>
+                                <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{t('flagships.gungir.subtitle', 'The Tempo Disruptor')}</span>
+                            </div>
+                            <div style={{ padding: '1.5rem' }}>
+                                <p style={{ color: 'var(--text-dim)', marginBottom: '1rem' }}>
+                                    <strong style={{ color: 'var(--text-primary)' }}>Strengths:</strong> {t('flagships.gungir.strengths', 'Extreme energy generation, enemy energy suppression, high stat scaling.')}
+                                </p>
+                                <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.gungir.strategy_title', 'Core Strategy')}</h5>
+                                <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem', marginBottom: '1rem' }}>
+                                    <li>{t('flagships.gungir.strategy_1', 'Use to accelerate your own champion rotations while slowing down enemy ability activations.')}</li>
+                                    <li>{t('flagships.gungir.strategy_2', 'Gungir scales up to 25% after 2 full champion rotations, outclassing other flagships in long fights.')}</li>
+                                </ul>
+                                <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.gungir.abilities_title', 'Key Abilities')}</h5>
+                                <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem' }}>
+                                    <li><strong>{t('flagships.gungir.ability1_title', 'Energy Surge')}</strong>: {t('flagships.gungir.ability1_desc', 'Guarantees ~720 Energy gain per champion cycle.')}</li>
+                                    <li><strong>{t('flagships.gungir.ability2_title', 'Suppression Core')}</strong>: {t('flagships.gungir.ability2_desc', 'Reduces enemy ship energy by a flat 300 points, delaying their ability rotations.')}</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
 
                     {/* 5. Expert Tips */}
@@ -206,6 +231,28 @@ export default function FlagshipGuide() {
                                 <p style={{ color: 'var(--text-dim)', fontSize: '0.95rem' }}>
                                     <Trans i18nKey="flagships.acquisition_desc" components={{ 1: <strong />, 3: <strong /> }} />
                                 </p>
+                            </div>
+                        </div>
+
+                        <div style={{ marginTop: '2rem', borderTop: '1px solid var(--border)', paddingTop: '1.5rem' }}>
+                            <strong className="label-text" style={{ color: 'var(--gold-bright)', display: 'block', fontSize: '1.2rem', marginBottom: '0.5rem' }}>{t('flagships.deployment_title', 'Recommended Ship Deployment Configurations')}</strong>
+                            <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+                                <div>
+                                    <strong className="label-text" style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('flagships.deployment_whales_title', 'Whale Configuration')}</strong>
+                                    <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem', margin: 0 }}>
+                                        <li>{t('flagships.deployment_whales_kinetic', 'Kinetic -> Gungir (best combat ship with Bee)')}</li>
+                                        <li>{t('flagships.deployment_whales_beam', 'Beam -> Gram (high tier support)')}</li>
+                                        <li>{t('flagships.deployment_whales_ion', 'Ion -> Opportunity (glass cannon)')}</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong className="label-text" style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('flagships.deployment_f2p_title', 'Non-Whale Configuration')}</strong>
+                                    <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem', margin: 0 }}>
+                                        <li>{t('flagships.deployment_f2p_kinetic', 'Kinetic -> Gram (primary combat ship, easy blueprints)')}</li>
+                                        <li>{t('flagships.deployment_f2p_beam', 'Beam -> Gungir (un-maxed/low tier storage)')}</li>
+                                        <li>{t('flagships.deployment_f2p_ion', 'Ion -> Opportunity (trade and burst)')}</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

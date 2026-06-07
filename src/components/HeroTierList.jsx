@@ -306,6 +306,33 @@ export default function ChampionsGuide() {
                                     </span>
                                 </div>
                             </li>
+                            <li style={{ display: 'flex', gap: '1rem' }}>
+                                <Info size={24} color="var(--gold)" />
+                                <div>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.order_matters_title', 'Order Matters')}</strong>
+                                    <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
+                                        {t('champions.order_matters_desc', 'Buffers (Jodie, Eva, Aliya) must ALWAYS be placed first in your flagship slots so their buffs apply to the DPS/finishers (Zora, Evan, Lily, Bee) that trigger after them.')}
+                                    </span>
+                                </div>
+                            </li>
+                            <li style={{ display: 'flex', gap: '1rem' }}>
+                                <AlertTriangle size={24} color="var(--accent-red)" />
+                                <div>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.cocoon_tooltip_warning_title', 'Cocoon Tooltip Warning')}</strong>
+                                    <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
+                                        {t('champions.cocoon_tooltip_warning_desc', 'The game UI claims Cocoon provides a "1500% DEF Shield" and "240% DEF Heal". In actual combat, this is complete fiction; real PvP logs show the total value scales around 110–150% DEF per cast.')}
+                                    </span>
+                                </div>
+                            </li>
+                            <li style={{ display: 'flex', gap: '1rem' }}>
+                                <Gem size={24} color="var(--accent-teal)" />
+                                <div>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.ultra_premium_title', 'Endgame Ultra-Premiums')}</strong>
+                                    <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
+                                        {t('champions.ultra_premium_desc', 'Evan Rogers, Killer Bee, and Lily are elite endgame units. Evan and Bee are expensive premium purchases, while Lily is a long-term GvG and Arena shop grind. Even at low star levels (green), they rival maxed-out epic champions.')}
+                                    </span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </>

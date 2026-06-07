@@ -300,6 +300,162 @@ export const tips = [
         text: 'tips.migration_stages_txt'
       }
     ]
+  },
+  {
+    id: 'combat-math',
+    category: 'combat',
+    title: 'tips.combat_math_title',
+    content: 'tips.combat_math_desc',
+    highlight: true,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:00:00Z',
+    sections: [
+      {
+        header: 'tips.combat_math_timeline_hdr',
+        text: 'tips.combat_math_timeline_txt'
+      },
+      {
+        header: 'tips.combat_math_stats_hdr',
+        text: 'tips.combat_math_stats_txt'
+      },
+      {
+        header: 'tips.combat_math_cp_dr_hdr',
+        text: 'tips.combat_math_cp_dr_txt'
+      }
+    ]
+  },
+  {
+    id: 'gungir-guide',
+    category: 'combat',
+    title: 'tips.gungir_guide_title',
+    content: 'tips.gungir_guide_desc',
+    highlight: true,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:01:00Z',
+    sections: [
+      {
+        header: 'tips.gungir_guide_overview_hdr',
+        text: 'tips.gungir_guide_overview_txt'
+      },
+      {
+        header: 'tips.gungir_guide_mechanics_hdr',
+        text: 'tips.gungir_guide_mechanics_txt'
+      },
+      {
+        header: 'tips.gungir_guide_deployment_hdr',
+        text: 'tips.gungir_guide_deployment_txt'
+      }
+    ]
+  },
+  {
+    id: 'prismatic-cores',
+    category: 'economy',
+    title: 'tips.prismatic_cores_title',
+    content: 'tips.prismatic_cores_desc',
+    highlight: true,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:02:00Z',
+    sections: [
+      {
+        header: 'tips.prismatic_cores_overview_hdr',
+        text: 'tips.prismatic_cores_overview_txt'
+      },
+      {
+        header: 'tips.prismatic_cores_attempt_hdr',
+        text: 'tips.prismatic_cores_attempt_txt'
+      },
+      {
+        header: 'tips.prismatic_cores_strategy_hdr',
+        text: 'tips.prismatic_cores_strategy_txt'
+      }
+    ]
+  },
+  {
+    id: 'guild-vouchers',
+    category: 'economy',
+    title: 'tips.guild_vouchers_title',
+    content: 'tips.guild_vouchers_desc',
+    highlight: false,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:03:00Z',
+    sections: [
+      {
+        header: 'tips.guild_vouchers_overview_hdr',
+        text: 'tips.guild_vouchers_overview_txt'
+      },
+      {
+        header: 'tips.guild_vouchers_farm_hdr',
+        text: 'tips.guild_vouchers_farm_txt'
+      }
+    ]
+  },
+  {
+    id: 'resource-priority',
+    category: 'economy',
+    title: 'tips.resource_priority_title',
+    content: 'tips.resource_priority_desc',
+    highlight: false,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:04:00Z',
+    sections: [
+      {
+        header: 'tips.resource_priority_standard_hdr',
+        text: 'tips.resource_priority_standard_txt'
+      },
+      {
+        header: 'tips.resource_priority_premium_hdr',
+        text: 'tips.resource_priority_premium_txt'
+      }
+    ]
+  },
+  {
+    id: 'building-priority',
+    category: 'economy',
+    title: 'tips.building_priority_title',
+    content: 'tips.building_priority_desc',
+    highlight: false,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:05:00Z',
+    sections: [
+      {
+        header: 'tips.building_priority_critical_hdr',
+        text: 'tips.building_priority_critical_txt'
+      },
+      {
+        header: 'tips.building_priority_important_hdr',
+        text: 'tips.building_priority_important_txt'
+      }
+    ]
+  },
+  {
+    id: 'home-port-repair',
+    category: 'gameplay',
+    title: 'tips.home_port_repair_title',
+    content: 'tips.home_port_repair_desc',
+    highlight: true,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:06:00Z',
+    sections: [
+      {
+        header: 'tips.home_port_repair_overview_hdr',
+        text: 'tips.home_port_repair_overview_txt'
+      }
+    ]
+  },
+  {
+    id: 'build-queue-trick',
+    category: 'economy',
+    title: 'tips.build_queue_trick_title',
+    content: 'tips.build_queue_trick_desc',
+    highlight: true,
+    hasDetails: true,
+    publishDate: '2026-06-07T07:07:00Z',
+    sections: [
+      {
+        header: 'tips.build_queue_trick_overview_hdr',
+        text: 'tips.build_queue_trick_overview_txt'
+      }
+    ]
   }
 ];
 
@@ -907,6 +1063,19 @@ export const eventsData = [
       { title: 'events.childrens_day_protip_pass_title', content: 'events.childrens_day_protip_pass_desc' },
       { title: 'events.childrens_day_protip_unused_title', content: 'events.childrens_day_protip_unused_desc' },
       { title: 'events.childrens_day_protip_defense_title', content: 'events.childrens_day_protip_defense_desc' }
+    ]
+  },
+  {
+    id: 'trade_route_defense',
+    title: 'events.trade_route_defense_title',
+    cycle: 'events.trade_route_defense_cycle',
+    type: 'events.trade_route_defense_type',
+    description: 'events.trade_route_defense_desc',
+    tactics: [
+      { title: 'events.trade_route_defense_phases', content: 'events.trade_route_defense_phases_desc' }
+    ],
+    proTips: [
+      { title: 'events.trade_route_defense_escort', content: 'events.trade_route_defense_escort_desc' }
     ]
   }
 ];
