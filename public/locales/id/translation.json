@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Kode Hadiah Aktif",
             "description": "Daftar kode hadiah yang dapat ditukarkan dan diperbarui secara berkala untuk Foundation: Galactic Frontier. Salinan sekali klik, pemfilteran sadar kadaluwarsa."
-        },
-        "support": {
-            "title": "Dukung Wiki",
-            "description": "Dukung Yayasan: Galactic Frontier Wiki — pendanaan membantu mencakup hosting, domain, dan pembaruan konten yang berkelanjutan."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Acara",
         "builder": "Peralatan",
         "economy": "Ekonomi",
-        "gift_codes": "Kode Hadiah",
-        "support": "Dukung Saya"
+        "gift_codes": "Kode Hadiah"
     },
     "common": {
         "kinetic": "Kinetic",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Atur armada ke mode gabung otomatis",
             "arena": "Serang di arena"
         }
-    },
-    "support_page": {
-        "title": "Dukung Situs",
-        "subtitle_line1": "Situs ini gratis, mandiri, dan dibangun dengan penuh semangat.",
-        "subtitle_line2": "Jika hal ini telah membantu Anda di Galactic Frontier, pertimbangkan untuk mendukung pertumbuhannya!",
-        "badge_free": "100% Gratis",
-        "badge_no_ads": "Tanpa Iklan",
-        "store_title": "Toko Yayasan",
-        "store_desc": "Salah satu cara terbaik untuk mendukung saya adalah dengan memberi saya Kredit Platinum melalui toko resmi Foundation. Cukup gunakan UID saya saat checkout, ini cara termudah untuk menunjukkan dukungan Anda langsung dalam game!",
-        "my_uid": "UID saya",
-        "copy": "Menyalin",
-        "copied": "Disalin!",
-        "copy_uid": "Salin UID",
-        "open_store": "Buka Toko",
-        "paypal_desc": "Lebih suka PayPal? Kirim jumlah berapa pun secara langsung. Cepat, aman, dan tersedia di seluruh dunia.",
-        "donate_paypal": "Donasi melalui PayPal",
-        "revolut_desc": "Donasi Anda membantu menutupi biaya menjalankan situs ini (hosting, nama domain, dan segala sesuatu di antaranya). Setiap bagian penting dan sangat dihargai. 🙏",
-        "donate_revolut": "Donasi melalui Revolut",
-        "footer_line1": "Setiap dukungan membuat Galactic Frontier Encyclopedia tetap hidup.",
-        "footer_line2": "Terima kasih, Komandan."
     },
     "header_ui": {
         "subtitle": "Ensiklopedia Galactica",

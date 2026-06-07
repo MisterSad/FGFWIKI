@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Códigos de oferta ativos",
             "description": "Lista curada e atualizada regularmente de códigos de oferta resgatáveis para Foundation: Galactic Frontier. Cópia com um clique, filtragem por validade."
-        },
-        "support": {
-            "title": "Apoiar a wiki",
-            "description": "Apoie a wiki de Foundation: Galactic Frontier — o financiamento ajuda a cobrir alojamento, domínio e atualizações contínuas de conteúdo."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Eventos",
         "builder": "Ferramentas",
         "economy": "Economia",
-        "gift_codes": "Códigos de oferta",
-        "support": "Apoiar"
+        "gift_codes": "Códigos de oferta"
     },
     "common": {
         "kinetic": "Cinético",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Colocar as frotas em modo de adesão automática",
             "arena": "Atacar na arena"
         }
-    },
-    "support_page": {
-        "title": "Apoiar o Site",
-        "subtitle_line1": "Este site é gratuito, independente e construído com paixão.",
-        "subtitle_line2": "Se te tem ajudado na Fronteira Galáctica, considera apoiar o seu crescimento!",
-        "badge_free": "100% Gratuito",
-        "badge_no_ads": "Sem Anúncios",
-        "store_title": "Loja Foundation",
-        "store_desc": "Uma ótima forma de me apoiares é oferecer-me Créditos Platina através da loja oficial Foundation. Basta usares o meu UID na finalização da compra, é a forma mais fácil de demonstrar o teu apoio diretamente no jogo!",
-        "my_uid": "O meu UID",
-        "copy": "Copiar",
-        "copied": "Copiado!",
-        "copy_uid": "Copiar UID",
-        "open_store": "Abrir Loja",
-        "paypal_desc": "Preferes PayPal? Envia o valor que quiseres diretamente. Rápido, seguro e disponível em todo o mundo.",
-        "donate_paypal": "Doar via PayPal",
-        "revolut_desc": "A tua doação ajuda a cobrir os custos de manutenção deste site (alojamento, nome de domínio e tudo o resto). Cada contribuição conta e é profundamente apreciada. 🙏",
-        "donate_revolut": "Doar via Revolut",
-        "footer_line1": "Cada bocadinho de apoio mantém viva a Enciclopédia da Fronteira Galáctica.",
-        "footer_line2": "Obrigado, Comandantes."
     },
     "header_ui": {
         "subtitle": "Enciclopédia Galáctica",

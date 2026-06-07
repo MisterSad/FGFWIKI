@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "有効なギフトコード",
             "description": "Foundation: Galactic Frontier用の引き換え可能なギフトコードの厳選され、定期的に更新されるリスト。ワンクリックコピー、有効期限フィルタリング。"
-        },
-        "support": {
-            "title": "wikiを支援する",
-            "description": "Foundation: Galactic Frontier wikiを支援 — 寄付はホスティング、ドメイン、継続的なコンテンツ更新の費用に役立ちます。"
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "イベント",
         "builder": "ツール",
         "economy": "経済",
-        "gift_codes": "ギフトコード",
-        "support": "支援する"
+        "gift_codes": "ギフトコード"
     },
     "common": {
         "kinetic": "実弾",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "艦隊を自動参加モードに設定",
             "arena": "アリーナで攻撃"
         }
-    },
-    "support_page": {
-        "title": "サイトを支援",
-        "subtitle_line1": "このサイトは無料、独立、情熱で構築されています。",
-        "subtitle_line2": "Galactic Frontierで役に立った場合は、その成長を支援することを検討してください!",
-        "badge_free": "100%無料",
-        "badge_no_ads": "広告なし",
-        "store_title": "Foundationストア",
-        "store_desc": "私を支援する素晴らしい方法の1つは、公式FoundationストアでプラチナクレジットをギフトすることでChは、私のUIDをチェックアウトで使用するだけで、ゲーム内で直接サポートを示す最も簡単な方法です!",
-        "my_uid": "私のUID",
-        "copy": "コピー",
-        "copied": "コピーされました!",
-        "copy_uid": "UIDをコピー",
-        "open_store": "ストアを開く",
-        "paypal_desc": "PayPalを希望? 任意の金額を直接送信。素早く、安全で、世界中で利用可能。",
-        "donate_paypal": "PayPalで寄付",
-        "revolut_desc": "あなたの寄付は、このサイトの運営費用(ホスティング、ドメイン名、その他すべて)をカバーするのに役立ちます。すべてのビットがカウントされ、深く感謝されます。🙏",
-        "donate_revolut": "Revolutで寄付",
-        "footer_line1": "すべての支援がGalactic Frontier Encyclopediaを生かし続けます。",
-        "footer_line2": "ありがとう、コマンダー。"
     },
     "header_ui": {
         "subtitle": "銀河百科事典",

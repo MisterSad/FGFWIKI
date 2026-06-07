@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Aktive Geschenkcodes",
             "description": "Kuratierte, regelmäßig aktualisierte Liste einlösbarer Geschenkcodes für Foundation: Galactic Frontier. Ein-Klick-Kopie, ablauffähige Filterung."
-        },
-        "support": {
-            "title": "Unterstütze das Wiki",
-            "description": "Unterstütze das Foundation: Galactic Frontier Wiki — Spenden helfen bei Hosting, Domain und laufenden Inhaltsaktualisierungen."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Events",
         "builder": "Tools",
         "economy": "Wirtschaft",
-        "gift_codes": "Geschenkcodes",
-        "support": "Unterstütze mich"
+        "gift_codes": "Geschenkcodes"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Flotten in Auto-Beitritt-Modus stellen",
             "arena": "In der Arena angreifen"
         }
-    },
-    "support_page": {
-        "title": "Unterstütze die Seite",
-        "subtitle_line1": "Diese Seite ist kostenlos, unabhängig und mit Leidenschaft gebaut.",
-        "subtitle_line2": "Wenn sie dir in der Galactic Frontier geholfen hat, erwäge ihre Wachstumsunterstützung!",
-        "badge_free": "100 % Kostenlos",
-        "badge_no_ads": "Keine Werbung",
-        "store_title": "Foundation-Store",
-        "store_desc": "Eine großartige Möglichkeit, mich zu unterstützen, ist, mir Platinum-Credits über den offiziellen Foundation-Store zu schenken. Verwende einfach meine UID an der Kasse, das ist der einfachste Weg, deine Unterstützung direkt im Spiel zu zeigen!",
-        "my_uid": "Meine UID",
-        "copy": "Kopieren",
-        "copied": "Kopiert!",
-        "copy_uid": "UID kopieren",
-        "open_store": "Store öffnen",
-        "paypal_desc": "Bevorzugst du PayPal? Sende einen beliebigen Betrag direkt. Schnell, sicher und weltweit verfügbar.",
-        "donate_paypal": "Per PayPal spenden",
-        "revolut_desc": "Deine Spende hilft, die Kosten für den Betrieb dieser Seite zu decken (Hosting, Domainname und alles dazwischen). Jeder Beitrag zählt und wird zutiefst geschätzt. 🙏",
-        "donate_revolut": "Per Revolut spenden",
-        "footer_line1": "Jede Unterstützung hält die Galactic Frontier Encyclopedia am Leben.",
-        "footer_line2": "Danke, Kommandanten."
     },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",

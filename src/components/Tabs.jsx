@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, Heart, MoreHorizontal } from 'lucide-react';
+import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal } from 'lucide-react';
 
 // Map route paths to icons and translation labels
 const NAV_ITEMS = [
@@ -12,7 +12,6 @@ const NAV_ITEMS = [
     { path: '/events', labelKey: 'navigation.events', icon: Calendar },
     { path: '/tools', labelKey: 'navigation.builder', icon: Hammer },
     { path: '/gift-codes', labelKey: 'navigation.gift_codes', icon: Gift },
-    { path: '/support', labelKey: 'navigation.support', icon: Heart },
 ];
 
 export default function Tabs() {
@@ -26,7 +25,7 @@ export default function Tabs() {
     const isChampionsActive = location.pathname.startsWith('/champions');
     const isToolsActive = location.pathname.startsWith('/tools');
     
-    const morePaths = ['/flagships', '/events', '/gift-codes', '/support'];
+    const morePaths = ['/flagships', '/events', '/gift-codes'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));
 
     return (
@@ -150,16 +149,6 @@ export default function Tabs() {
                                 >
                                     <Gift className="mobile-more-card__icon" size={24} />
                                     <span className="mobile-more-card__label">{t('navigation.gift_codes')}</span>
-                                </NavLink>
-
-                                {/* Support */}
-                                <NavLink
-                                    to="/support"
-                                    className={() => `mobile-more-card ${location.pathname.startsWith('/support') ? 'active' : ''}`}
-                                    onClick={() => setIsMoreOpen(false)}
-                                >
-                                    <Heart className="mobile-more-card__icon" size={24} />
-                                    <span className="mobile-more-card__label">{t('navigation.support')}</span>
                                 </NavLink>
                             </div>
                         </div>

@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Kod Hadiah Aktif",
             "description": "Senarai kod hadiah boleh tebus yang disusun susun dan dikemas kini secara kerap untuk Foundation: Galactic Frontier. Salinan satu klik, penapisan sedar tamat tempoh."
-        },
-        "support": {
-            "title": "Sokong Wiki",
-            "description": "Sokong Yayasan: Galactic Frontier Wiki — pembiayaan membantu meliputi pengehosan, domain dan kemas kini kandungan yang berterusan."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Peristiwa",
         "builder": "Alatan",
         "economy": "ekonomi",
-        "gift_codes": "Kod Hadiah",
-        "support": "Sokong Saya"
+        "gift_codes": "Kod Hadiah"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Tetapkan armada kepada mod auto-serta",
             "arena": "Serangan di arena"
         }
-    },
-    "support_page": {
-        "title": "Sokong Tapak",
-        "subtitle_line1": "Tapak ini adalah percuma, bebas dan dibina dengan penuh semangat.",
-        "subtitle_line2": "Jika ia telah membantu anda dalam Galactic Frontier, pertimbangkan untuk menyokong pertumbuhannya!",
-        "badge_free": "100% Percuma",
-        "badge_no_ads": "Tiada Iklan",
-        "store_title": "Kedai Yayasan",
-        "store_desc": "Satu cara terbaik untuk menyokong saya ialah memberi saya Kredit Platinum melalui kedai Yayasan rasmi. Hanya gunakan UID saya semasa pembayaran, ini adalah cara paling mudah untuk menunjukkan sokongan anda secara terus dalam permainan!",
-        "my_uid": "UID saya",
-        "copy": "salin",
-        "copied": "disalin!",
-        "copy_uid": "Salin UID",
-        "open_store": "Buka Kedai",
-        "paypal_desc": "Lebih suka PayPal? Hantar sebarang jumlah terus. Cepat, selamat dan tersedia di seluruh dunia.",
-        "donate_paypal": "Derma melalui PayPal",
-        "revolut_desc": "Derma anda membantu menampung kos menjalankan tapak ini (penghosan, nama domain dan segala-galanya di antaranya). Setiap bit penting dan amat dihargai. 🙏",
-        "donate_revolut": "Derma melalui Revolut",
-        "footer_line1": "Setiap sedikit sokongan memastikan Galactic Frontier Encyclopedia hidup.",
-        "footer_line2": "Terima kasih, Komander."
     },
     "header_ui": {
         "subtitle": "Ensiklopedia Galactica",

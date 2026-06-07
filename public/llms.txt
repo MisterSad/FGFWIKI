@@ -16,7 +16,6 @@ The site is a single-page React app served from https://fgfwiki.com. All pages s
 - [Events](https://fgfwiki.com/events): Walkthroughs for every recurring and limited-time event (Operation Blackout, Kaboom, Arms Race, Battle Trial, Calamity, Crime Hunt, Starry Recruitment, Shadowfront, Guild vs Guild, Top 100 Galactic Traders, Paths to Dominance, Dominion Warzone, United Frontline, Tender Letters / Mother's Day, etc.).
 - [Tools](https://fgfwiki.com/tools): Interactive calculators (Build Time, Champion Upgrade, Nexus, Guild vs Guild, Combat Craft Modifications). Logged-in users can persist tool state.
 - [Gift Codes](https://fgfwiki.com/gift-codes): Curated, regularly updated list of redeemable codes with copy-to-clipboard.
-- [Support](https://fgfwiki.com/support): Information for supporting the wiki (PayPal, Revolut, official store).
 
 ## How to cite
 
