@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Actieve cadeaucodes",
             "description": "Samengestelde, regelmatig bijgewerkte lijst met inwisselbare cadeaucodes voor Foundation: Galactic Frontier. Kopiëren met één klik, filtering met vervaldatum."
-        },
-        "support": {
-            "title": "Steun de Wiki",
-            "description": "Steun de Foundation: Galactic Frontier Wiki – financiering helpt bij het dekken van hosting, domein- en voortdurende inhoudsupdates."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Evenementen",
         "builder": "Hulpmiddelen",
         "economy": "Economie",
-        "gift_codes": "Cadeaucodes",
-        "support": "Steun mij"
+        "gift_codes": "Cadeaucodes"
     },
     "common": {
         "kinetic": "Kinetisch",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Stel wagenparken in op automatische deelnamemodus",
             "arena": "Aanval in de arena"
         }
-    },
-    "support_page": {
-        "title": "Steun de website",
-        "subtitle_line1": "Deze site is gratis, onafhankelijk en gebouwd met passie.",
-        "subtitle_line2": "Als het je heeft geholpen in de Galactische Grens, overweeg dan om de groei ervan te ondersteunen!",
-        "badge_free": "100% gratis",
-        "badge_no_ads": "Geen advertenties",
-        "store_title": "Stichting Winkel",
-        "store_desc": "Een geweldige manier om mij te steunen is door mij Platinum Credits cadeau te doen via de officiële Foundation-winkel. Gebruik gewoon mijn UID bij het afrekenen, dit is de gemakkelijkste manier om je steun direct in de game te tonen!",
-        "my_uid": "Mijn UID",
-        "copy": "Kopiëren",
-        "copied": "Gekopieerd!",
-        "copy_uid": "Kopieer UID",
-        "open_store": "Winkel openen",
-        "paypal_desc": "Liever PayPal? Stuur elk bedrag direct over. Snel, veilig en wereldwijd beschikbaar.",
-        "donate_paypal": "Doneer via PayPal",
-        "revolut_desc": "Met uw donatie kunt u de kosten dekken van het runnen van deze site (hosting, domeinnaam en alles daartussenin). Elk beetje telt en wordt zeer gewaardeerd. 🙏",
-        "donate_revolut": "Doneer via Revolut",
-        "footer_line1": "Elk beetje steun houdt de Galactic Frontier Encyclopedia levend.",
-        "footer_line2": "Bedankt, commandanten."
     },
     "header_ui": {
         "subtitle": "Galactische encyclopedie",

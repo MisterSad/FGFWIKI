@@ -12,7 +12,6 @@ const HeroTierList = lazy(() => import('./components/HeroTierList'));
 const EventGuide = lazy(() => import('./components/EventGuide'));
 const Builder = lazy(() => import('./components/Builder'));
 const GiftCodes = lazy(() => import('./components/GiftCodes'));
-const Support = lazy(() => import('./components/Support'));
 
 function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -45,7 +44,6 @@ function App() {
                 <Route path="/events/:eventId" element={<EventGuide />} />
                 <Route path="/tools" element={<Builder />} />
                 <Route path="/gift-codes" element={<GiftCodes />} />
-                <Route path="/support" element={<Support />} />
                 <Route path="*" element={<Navigate to="/home" replace />} />
               </Routes>
             </Suspense>

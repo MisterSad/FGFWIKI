@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Aktywne kody upominkowe",
             "description": "Wyselekcjonowana, regularnie aktualizowana lista wymienialnych kodów upominkowych dla Foundation: Galactic Frontier. Kopiowanie jednym kliknięciem, filtrowanie według wygaśnięcia."
-        },
-        "support": {
-            "title": "Wesprzyj Wiki",
-            "description": "Wesprzyj Wiki Foundation: Galactic Frontier — fundusze pomagają pokryć hosting, domenę i bieżące aktualizacje treści."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Wydarzenia",
         "builder": "Narzędzia",
         "economy": "Gospodarka",
-        "gift_codes": "Kody upominkowe",
-        "support": "Wesprzyj mnie"
+        "gift_codes": "Kody upominkowe"
     },
     "common": {
         "kinetic": "Kinetyczny",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Ustaw floty w trybie automatycznego dołączania",
             "arena": "Zaatakuj na arenie"
         }
-    },
-    "support_page": {
-        "title": "Wesprzyj witrynę",
-        "subtitle_line1": "Ta witryna jest darmowa, niezależna i zbudowana z pasją.",
-        "subtitle_line2": "Jeśli pomogła ci w Galactic Frontier, rozważ wsparcie jej rozwoju!",
-        "badge_free": "100% za darmo",
-        "badge_no_ads": "Bez reklam",
-        "store_title": "Sklep Foundation",
-        "store_desc": "Jednym z świetnych sposobów wsparcia mnie jest podarowanie mi Platynowych Kredytów przez oficjalny sklep Foundation. Po prostu użyj mojego UID przy kasie, to najprostszy sposób, aby pokazać swoje wsparcie bezpośrednio w grze!",
-        "my_uid": "Mój UID",
-        "copy": "Kopiuj",
-        "copied": "Skopiowano!",
-        "copy_uid": "Kopiuj UID",
-        "open_store": "Otwórz sklep",
-        "paypal_desc": "Wolisz PayPal? Wyślij dowolną kwotę bezpośrednio. Szybko, bezpiecznie i dostępne na całym świecie.",
-        "donate_paypal": "Wpłać przez PayPal",
-        "revolut_desc": "Twoja darowizna pomaga pokryć koszty prowadzenia tej witryny (hosting, domena i wszystko pomiędzy). Każdy kawałek się liczy i jest głęboko doceniany. 🙏",
-        "donate_revolut": "Wpłać przez Revolut",
-        "footer_line1": "Każda forma wsparcia utrzymuje przy życiu Encyklopedię Galactic Frontier.",
-        "footer_line2": "Dziękuję, Komandorzy."
     },
     "header_ui": {
         "subtitle": "Encyklopedia galaktyczna",

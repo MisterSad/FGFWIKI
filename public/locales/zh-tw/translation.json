@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "有效的禮品代碼",
             "description": "精心策劃、定期更新的《基金會：銀河前沿》可兌換禮品代碼清單。一鍵複製，過期感知過濾。"
-        },
-        "support": {
-            "title": "支援維基",
-            "description": "支援基金會：銀河前沿維基 — 資金用於資助託管、網域和持續的內容更新。"
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "活動",
         "builder": "工具",
         "economy": "經濟",
-        "gift_codes": "禮品代碼",
-        "support": "支持我"
+        "gift_codes": "禮品代碼"
     },
     "common": {
         "kinetic": "動能",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "將車隊設定為自動加入模式",
             "arena": "競技場中的攻擊"
         }
-    },
-    "support_page": {
-        "title": "支援網站",
-        "subtitle_line1": "這個網站是免費、獨立的，並且充滿熱情。",
-        "subtitle_line2": "如果它對您在銀河前沿有所幫助，請考慮支持它的成長！",
-        "badge_free": "100% 免費",
-        "badge_no_ads": "無廣告",
-        "store_title": "粉底店",
-        "store_desc": "支持我的一個好方法是透過官方基金會商店贈送我白金積分。只需在結帳時使用我的 UID，這是直接在遊戲中表達您支持的最簡單方法！",
-        "my_uid": "我的UID",
-        "copy": "複製",
-        "copied": "複製了！",
-        "copy_uid": "複製UID",
-        "open_store": "開店",
-        "paypal_desc": "更喜歡貝寶？直接發送任意金額。快速、安全且全球可用。",
-        "donate_paypal": "透過 PayPal 捐贈",
-        "revolut_desc": "您的捐款有助於支付經營網站的費用（託管、網域名稱以及介於兩者之間的所有費用）。每一點都很重要，並且受到深深的讚賞。 🙏",
-        "donate_revolut": "透過 Revolut 捐款",
-        "footer_line1": "每一點支持都讓銀河邊境百科全書保持活力。",
-        "footer_line2": "謝謝各位指揮官。"
     },
     "header_ui": {
         "subtitle": "銀河百科全書",

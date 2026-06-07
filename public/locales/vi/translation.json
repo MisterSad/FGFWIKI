@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Mã quà tặng đang hoạt động",
             "description": "Danh sách mã quà tặng có thể đổi được được tuyển chọn, cập nhật thường xuyên cho Foundation: Galactic Frontier. Sao chép bằng một cú nhấp chuột, lọc nhận biết hết hạn."
-        },
-        "support": {
-            "title": "Hỗ trợ Wiki",
-            "description": "Hỗ trợ Quỹ: Galactic Frontier Wiki — nguồn tài trợ giúp chi trả cho việc lưu trữ, tên miền và cập nhật nội dung đang diễn ra."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Sự kiện",
         "builder": "Công cụ",
         "economy": "Kinh tế",
-        "gift_codes": "Mã quà tặng",
-        "support": "Hỗ trợ tôi"
+        "gift_codes": "Mã quà tặng"
     },
     "common": {
         "kinetic": "Động Năng",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Đặt nhóm sang chế độ tự động tham gia",
             "arena": "Tấn công vào đấu trường"
         }
-    },
-    "support_page": {
-        "title": "Hỗ trợ trang web",
-        "subtitle_line1": "Trang web này miễn phí, độc lập và được xây dựng bằng niềm đam mê.",
-        "subtitle_line2": "Nếu nó đã giúp ích cho bạn trong Biên giới Thiên hà, hãy cân nhắc việc hỗ trợ sự phát triển của nó!",
-        "badge_free": "Miễn phí 100%",
-        "badge_no_ads": "Không có quảng cáo",
-        "store_title": "Cửa hàng kem nền",
-        "store_desc": "Một cách tuyệt vời để hỗ trợ tôi là tặng tôi Tín dụng Bạch kim thông qua cửa hàng Foundation chính thức. Chỉ cần sử dụng UID của tôi khi thanh toán, đó là cách dễ nhất để thể hiện sự ủng hộ của bạn trực tiếp trong trò chơi!",
-        "my_uid": "UID của tôi",
-        "copy": "Sao chép",
-        "copied": "Đã sao chép!",
-        "copy_uid": "Sao chép UID",
-        "open_store": "Mở cửa hàng",
-        "paypal_desc": "Thích PayPal hơn? Gửi bất kỳ số tiền trực tiếp. Nhanh chóng, an toàn và có sẵn trên toàn thế giới.",
-        "donate_paypal": "Đóng góp qua PayPal",
-        "revolut_desc": "Khoản đóng góp của bạn giúp trang trải chi phí vận hành trang web này (lưu trữ, tên miền và mọi thứ liên quan). Mỗi bit đều có giá trị và được đánh giá cao. 🙏",
-        "donate_revolut": "Đóng góp qua Revolut",
-        "footer_line1": "Mọi sự hỗ trợ đều giữ cho Bách khoa toàn thư biên giới thiên hà tồn tại.",
-        "footer_line2": "Cảm ơn các chỉ huy."
     },
     "header_ui": {
         "subtitle": "Bách Khoa Toàn Thư Thiên Hà",

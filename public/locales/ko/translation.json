@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "기프트 코드 — 활성 Foundation Galactic Frontier 코드 | FGF 위키",
             "description": "최신 활성 Foundation: Galactic Frontier 기프트 코드. 무료 크레딧, 가속, 청사진, 자원 — 매일 업데이트되는 전체 사용 가이드."
-        },
-        "support": {
-            "title": "FGF 위키 후원 — 기부하고 성장에 도움주기",
-            "description": "FGF 위키를 무료, 광고 없음, 독립적으로 유지하는 데 도움을 주세요. PayPal, Revolut으로 기부하거나 공식 Foundation 상점을 통해 플래티넘 크레딧을 선물하세요."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "이벤트",
         "builder": "도구",
         "economy": "경제",
-        "gift_codes": "기프트 코드",
-        "support": "후원하기"
+        "gift_codes": "기프트 코드"
     },
     "common": {
         "kinetic": "키네틱",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "함대를 자동 참여 모드로 설정",
             "arena": "투기장에서 공격"
         }
-    },
-    "support_page": {
-        "title": "사이트 후원",
-        "subtitle_line1": "이 사이트는 무료, 독립적이며 열정으로 만들어졌습니다.",
-        "subtitle_line2": "은하 프론티어에서 도움이 되었다면 성장을 후원해주세요!",
-        "badge_free": "100% 무료",
-        "badge_no_ads": "광고 없음",
-        "store_title": "Foundation 상점",
-        "store_desc": "저를 후원하는 좋은 방법 중 하나는 공식 Foundation 상점을 통해 플래티넘 크레딧을 선물하는 것입니다. 결제 시 제 UID를 사용하기만 하면 게임 내에서 직접 후원을 보여주는 가장 쉬운 방법입니다!",
-        "my_uid": "내 UID",
-        "copy": "복사",
-        "copied": "복사됨!",
-        "copy_uid": "UID 복사",
-        "open_store": "상점 열기",
-        "paypal_desc": "PayPal을 선호하시나요? 어떤 금액이든 직접 보내세요. 빠르고, 안전하며, 전 세계에서 사용 가능합니다.",
-        "donate_paypal": "PayPal로 기부",
-        "revolut_desc": "여러분의 기부는 이 사이트 운영 비용(호스팅, 도메인 이름, 그 사이의 모든 것)을 충당하는 데 도움이 됩니다. 모든 부분이 중요하며 깊이 감사드립니다. 🙏",
-        "donate_revolut": "Revolut으로 기부",
-        "footer_line1": "모든 후원이 은하 프론티어 백과사전을 살아있게 합니다.",
-        "footer_line2": "감사합니다, 사령관님."
     },
     "header_ui": {
         "subtitle": "갤럭시 백과사전",

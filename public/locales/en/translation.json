@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Active Gift Codes",
             "description": "Curated, regularly updated list of redeemable gift codes for Foundation: Galactic Frontier. One-click copy, expiry-aware filtering."
-        },
-        "support": {
-            "title": "Support the Wiki",
-            "description": "Support the Foundation: Galactic Frontier Wiki — funding helps cover hosting, domain and ongoing content updates."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Events",
         "builder": "Tools",
         "economy": "Economy",
-        "gift_codes": "Gift Codes",
-        "support": "Support Me"
+        "gift_codes": "Gift Codes"
     },
     "common": {
         "kinetic": "Kinetic",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Set fleets to auto-join mode",
             "arena": "Attack in the arena"
         }
-    },
-    "support_page": {
-        "title": "Support the Site",
-        "subtitle_line1": "This site is free, independent, and built with passion.",
-        "subtitle_line2": "If it has helped you in the Galactic Frontier, consider supporting its growth!",
-        "badge_free": "100% Free",
-        "badge_no_ads": "No Ads",
-        "store_title": "Foundation Store",
-        "store_desc": "One great way to support me is to gift me Platinum Credits via the official Foundation store. Simply use my UID at checkout, it's the easiest way to show your support directly in-game!",
-        "my_uid": "My UID",
-        "copy": "Copy",
-        "copied": "Copied!",
-        "copy_uid": "Copy UID",
-        "open_store": "Open Store",
-        "paypal_desc": "Prefer PayPal? Send any amount directly. Quick, secure, and available worldwide.",
-        "donate_paypal": "Donate via PayPal",
-        "revolut_desc": "Your donation helps cover the costs of running this site (hosting, domain name, and everything in between). Every bit counts and is deeply appreciated. 🙏",
-        "donate_revolut": "Donate via Revolut",
-        "footer_line1": "Every bit of support keeps the Galactic Frontier Encyclopedia alive.",
-        "footer_line2": "Thank you, Commanders."
     },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",

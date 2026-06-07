@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Aktiiviset lahjakoodit",
             "description": "Käsin valittu, säännöllisesti päivitetty lista lunastettavista lahjakoodeista Foundation: Galactic Frontier -peliin. Kopiointi yhdellä klikkauksella, suodatus voimassaolon mukaan."
-        },
-        "support": {
-            "title": "Tue wikiä",
-            "description": "Tue Foundation: Galactic Frontier -wikiä — rahoitus auttaa kattamaan hostauksen, verkkotunnuksen ja jatkuvat sisältöpäivitykset."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Tapahtumat",
         "builder": "Työkalut",
         "economy": "Talous",
-        "gift_codes": "Lahjakoodit",
-        "support": "Tue minua"
+        "gift_codes": "Lahjakoodit"
     },
     "common": {
         "kinetic": "Kineettinen",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Aseta laivastot automaattiliittymistilaan",
             "arena": "Hyökkää areenalla"
         }
-    },
-    "support_page": {
-        "title": "Tue sivustoa",
-        "subtitle_line1": "Tämä sivusto on ilmainen, riippumaton ja rakennettu intohimolla.",
-        "subtitle_line2": "Jos se on auttanut sinua Galactic Frontierissa, harkitse sen kasvun tukemista!",
-        "badge_free": "100 % ilmainen",
-        "badge_no_ads": "Ei mainoksia",
-        "store_title": "Foundation Store",
-        "store_desc": "Yksi loistava tapa tukea minua on lahjoittaa Platinum Creditejä virallisen Foundation-kaupan kautta. Käytä vain UID:täni kassalla — se on helpoin tapa osoittaa tukesi suoraan pelin sisällä!",
-        "my_uid": "Minun UID",
-        "copy": "Kopioi",
-        "copied": "Kopioitu!",
-        "copy_uid": "Kopioi UID",
-        "open_store": "Avaa kauppa",
-        "paypal_desc": "Suosittu PayPalia? Lähetä mikä tahansa summa suoraan. Nopea, turvallinen ja saatavilla maailmanlaajuisesti.",
-        "donate_paypal": "Lahjoita PayPalin kautta",
-        "revolut_desc": "Lahjoituksesi auttaa kattamaan tämän sivuston ylläpitokustannukset (hostaus, verkkotunnus ja kaikki siltä väliltä). Jokainen pala lasketaan ja sitä arvostetaan suuresti. 🙏",
-        "donate_revolut": "Lahjoita Revolutin kautta",
-        "footer_line1": "Jokainen tuki pitää Galactic Frontier Encyclopedian elossa.",
-        "footer_line2": "Kiitos, komentajat."
     },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",

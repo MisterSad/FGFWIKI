@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Aktif Hediye Kodları",
             "description": "Foundation: Galactic Frontier için kullanılabilecek hediye kodlarının derlenmiş, düzenli olarak güncellenen listesi. Tek tıklamayla kopyalama, son kullanma tarihine duyarlı filtreleme."
-        },
-        "support": {
-            "title": "Wiki'yi destekleyin",
-            "description": "Vakfı Destekleyin: Galactic Frontier Wiki — finansman, barındırma, alan adı ve devam eden içerik güncellemelerinin karşılanmasına yardımcı olur."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Olaylar",
         "builder": "Aletler",
         "economy": "Ekonomi",
-        "gift_codes": "Hediye Kodları",
-        "support": "Beni Destekle"
+        "gift_codes": "Hediye Kodları"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Filoları otomatik katılma moduna ayarlayın",
             "arena": "Arenada saldırı"
         }
-    },
-    "support_page": {
-        "title": "Siteyi Destekleyin",
-        "subtitle_line1": "Bu site ücretsizdir, bağımsızdır ve tutkuyla oluşturulmuştur.",
-        "subtitle_line2": "Eğer Galaktik Sınırda size yardımcı olduysa, büyümesini desteklemeyi düşünün!",
-        "badge_free": "%100 Ücretsiz",
-        "badge_no_ads": "Reklam Yok",
-        "store_title": "Vakıf Mağazası",
-        "store_desc": "Beni desteklemenin en iyi yollarından biri resmi Vakıf mağazası aracılığıyla bana Platinum Kredi hediye etmektir. Ödeme sırasında UID'mi kullanmanız yeterli; bu, desteğinizi doğrudan oyun içinde göstermenin en kolay yoludur!",
-        "my_uid": "UID'im",
-        "copy": "Kopyala",
-        "copied": "Kopyalandı!",
-        "copy_uid": "UID'yi kopyala",
-        "open_store": "Mağazayı Aç",
-        "paypal_desc": "PayPal'ı mı tercih edersiniz? İstediğiniz tutarı doğrudan gönderin. Hızlı, güvenli ve dünya çapında kullanılabilir.",
-        "donate_paypal": "PayPal aracılığıyla bağış yapın",
-        "revolut_desc": "Bağışınız bu siteyi işletme maliyetlerinin (barındırma, alan adı ve aradaki her şey) karşılanmasına yardımcı olur. Her bir parçası önemlidir ve derinden takdir edilir. 🙏",
-        "donate_revolut": "Revolut aracılığıyla bağış yapın",
-        "footer_line1": "Her bir destek Galaktik Sınır Ansiklopedisi'ni canlı tutuyor.",
-        "footer_line2": "Teşekkür ederiz Komutanlar."
     },
     "header_ui": {
         "subtitle": "Ansiklopedi",

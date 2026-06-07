@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "Aktiva presentkoder",
             "description": "Kurerad, regelbundet uppdaterad lista över inlösningsbara presentkoder för Foundation: Galactic Frontier. Kopiering med ett klick, filtrering baserat på utgångsdatum."
-        },
-        "support": {
-            "title": "Stöd wikin",
-            "description": "Stöd Foundation: Galactic Frontier-wikin — finansiering hjälper till att täcka hosting, domän och löpande innehållsuppdateringar."
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "Event",
         "builder": "Verktyg",
         "economy": "Ekonomi",
-        "gift_codes": "Presentkoder",
-        "support": "Stöd mig"
+        "gift_codes": "Presentkoder"
     },
     "common": {
         "kinetic": "Kinetisk",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "Sätt flottor i auto-anslutningsläge",
             "arena": "Attackera i arenan"
         }
-    },
-    "support_page": {
-        "title": "Stöd sajten",
-        "subtitle_line1": "Den här sajten är gratis, oberoende och byggd med passion.",
-        "subtitle_line2": "Om den har hjälpt dig i Galactic Frontier, överväg att stödja dess tillväxt!",
-        "badge_free": "100 % gratis",
-        "badge_no_ads": "Inga annonser",
-        "store_title": "Foundation Store",
-        "store_desc": "Ett bra sätt att stödja mig är att skicka mig Platinum Credits via den officiella Foundation-butiken. Använd bara mitt UID i kassan, det är det enklaste sättet att visa ditt stöd direkt i spelet!",
-        "my_uid": "Mitt UID",
-        "copy": "Kopiera",
-        "copied": "Kopierad!",
-        "copy_uid": "Kopiera UID",
-        "open_store": "Öppna butik",
-        "paypal_desc": "Föredrar du PayPal? Skicka valfritt belopp direkt. Snabbt, säkert och tillgängligt världen över.",
-        "donate_paypal": "Donera via PayPal",
-        "revolut_desc": "Din donation hjälper till att täcka kostnaderna för att driva denna sajt (hosting, domännamn och allt däremellan). Varje bit räknas och uppskattas djupt. 🙏",
-        "donate_revolut": "Donera via Revolut",
-        "footer_line1": "Varje bit av stöd håller Galactic Frontier Encyclopedia vid liv.",
-        "footer_line2": "Tack, befälhavare."
     },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",

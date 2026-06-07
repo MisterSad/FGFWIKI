@@ -39,10 +39,6 @@
         "gift_codes": {
             "title": "有效礼包码",
             "description": "Foundation: Galactic Frontier 可兑换礼包码的精选定期更新列表。一键复制,过期感知过滤。"
-        },
-        "support": {
-            "title": "支持维基",
-            "description": "支持 Foundation: Galactic Frontier 维基 — 资金有助于支付托管、域名和持续的内容更新。"
         }
     },
     "navigation": {
@@ -56,8 +52,7 @@
         "events": "活动",
         "builder": "工具",
         "economy": "经济",
-        "gift_codes": "礼包码",
-        "support": "支持我"
+        "gift_codes": "礼包码"
     },
     "common": {
         "kinetic": "动能",
@@ -889,26 +884,6 @@
             "auto_join_fleets": "将舰队设为自动加入模式",
             "arena": "在竞技场中攻击"
         }
-    },
-    "support_page": {
-        "title": "支持网站",
-        "subtitle_line1": "本网站免费、独立,以热情构建。",
-        "subtitle_line2": "如果它在银河边境帮助了您,请考虑支持其成长!",
-        "badge_free": "100% 免费",
-        "badge_no_ads": "无广告",
-        "store_title": "Foundation 商店",
-        "store_desc": "支持我的一个好方法是通过官方 Foundation 商店赠送我白金点数。只需在结账时使用我的 UID,这是直接在游戏中显示您支持的最简单方式!",
-        "my_uid": "我的 UID",
-        "copy": "复制",
-        "copied": "已复制!",
-        "copy_uid": "复制 UID",
-        "open_store": "打开商店",
-        "paypal_desc": "更喜欢 PayPal? 直接发送任何金额。快速、安全,全球可用。",
-        "donate_paypal": "通过 PayPal 捐赠",
-        "revolut_desc": "您的捐赠有助于支付运营本网站的成本(托管、域名以及一切)。每一份都很重要,深表感谢。🙏",
-        "donate_revolut": "通过 Revolut 捐赠",
-        "footer_line1": "每一份支持都使银河边境百科全书保持活力。",
-        "footer_line2": "谢谢,指挥官们。"
     },
     "header_ui": {
         "subtitle": "银河百科全书",
