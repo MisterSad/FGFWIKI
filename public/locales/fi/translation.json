@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: Kasvattaa väistöä 25 % lyhyiksi ajoiksi.",
             "ability2_op": "<0>Precision Strike</0>: Takaa kriittisen osuman matalimman HP:n viholliseen."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "Lopullinen ase",
             "strengths": "Raaka tulivoima, alueiskut, kilpien rikkominen",
             "strategy_title": "Ydinstrategia",

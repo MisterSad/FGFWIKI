@@ -883,8 +883,8 @@
             "ability1_op": "<0>Napęd fantomowy</0>: Zwiększa unik o 25% na krótki czas.",
             "ability2_op": "<0>Precyzyjny strzał</0>: Gwarantuje krytyczne trafienie wroga z najmniejszym HP."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "Ostateczna broń",
             "strengths": "Surowa siła ognia, obszar efektu, łamanie tarcz",
             "strategy_title": "Strategia rdzenia",

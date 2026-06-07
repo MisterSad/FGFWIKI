@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: Kaçınmayı kısa süreliğine %25 artırır.",
             "ability2_op": "<0>Hassas Saldırı</0>: En düşük HP'li düşmana kritik vuruş yapılmasını garanti eder."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "Nihai Silah",
             "strengths": "Ham Ateş Gücü, Etki Alanı, Kalkan Kırma",
             "strategy_title": "Temel Strateji",

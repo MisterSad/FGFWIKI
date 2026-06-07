@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: verhoogt het ontwijken met 25% voor korte perioden.",
             "ability2_op": "<0>Precisieaanval</0>: garandeert een kritieke treffer op de vijand met de laagste HP."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "Het ultieme wapen",
             "strengths": "Ruwe vuurkracht, effectgebied, schildbreken",
             "strategy_title": "Kernstrategie",

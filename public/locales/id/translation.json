@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom Drive</0>: Meningkatkan penghindaran sebesar 25% untuk jangka waktu singkat.",
             "ability2_op": "<0>Serangan Presisi</0>: Menjamin serangan kritis pada musuh dengan HP terendah."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "Senjata Utama",
             "strengths": "Daya Tembak Mentah, Area Efek, Penghancuran Perisai",
             "strategy_title": "Strategi Inti",

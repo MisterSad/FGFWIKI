@@ -883,8 +883,8 @@
             "ability1_op": "<0>Phantom-Antrieb</0>: Erhöht Ausweichen um 25 % für kurze Dauer.",
             "ability2_op": "<0>Präzisionsschlag</0>: Garantiert einen kritischen Treffer auf den Feind mit niedrigster HP."
         },
-        "demerzal": {
-            "title": "Demerzal",
+        "demerzel": {
+            "title": "Demerzel",
             "subtitle": "Die Ultimative Waffe",
             "strengths": "Rohe Feuerkraft, Flächenwirkung, Schildbruch",
             "strategy_title": "Kernstrategie",
