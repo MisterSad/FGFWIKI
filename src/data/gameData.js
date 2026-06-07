@@ -273,7 +273,6 @@ export const tips = [
     content: 'tips.migration_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-06-06T14:58:00Z',
     sections: [
       {
@@ -331,7 +330,8 @@ export const tips = [
     content: 'tips.gungir_guide_desc',
     highlight: true,
     hasDetails: true,
-    publishDate: '2026-06-07T07:01:00Z',
+    isNew: true,
+    publishDate: '2026-06-07T07:10:00Z',
     sections: [
       {
         header: 'tips.gungir_guide_overview_hdr',
