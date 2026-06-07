@@ -260,7 +260,8 @@
         "build_queue_trick_title": "Trik Membangun Antrian ke-2",
         "build_queue_trick_desc": "Manfaatkan antrian konstruksi kedua 24 jam semaksimal mungkin.",
         "build_queue_trick_overview_hdr": "Trik Perpanjangan Antrian",
-        "build_queue_trick_overview_txt": "Antrian konstruksi sekunder, yang dibuka untuk 500 Kredit, memiliki durasi 24 jam. Setiap peningkatan yang dimulai sebelum jendela ini ditutup akan dilanjutkan hingga selesai meskipun proyek memerlukan beberapa hari, sehingga Anda dapat memaksimalkan nilai antrean sementara."
+        "build_queue_trick_overview_txt": "Antrian konstruksi sekunder, yang dibuka untuk 500 Kredit, memiliki durasi 24 jam. Setiap peningkatan yang dimulai sebelum jendela ini ditutup akan dilanjutkan hingga selesai meskipun proyek memerlukan beberapa hari, sehingga Anda dapat memaksimalkan nilai antrean sementara.",
+        "credit_snakebite": "Strategi disusun oleh Snakebite (Server #1003)."
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

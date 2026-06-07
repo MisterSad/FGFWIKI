@@ -260,7 +260,8 @@
         "build_queue_trick_title": "2° trucco della coda di creazione",
         "build_queue_trick_desc": "Sfrutta al massimo la seconda coda di costruzione di 24 ore.",
         "build_queue_trick_overview_hdr": "Trucco per l'estensione della coda",
-        "build_queue_trick_overview_txt": "La coda di costruzione secondaria, sbloccata per 500 Crediti, ha una durata di 24 ore. Qualsiasi aggiornamento avviato prima della chiusura di questa finestra verrà completato anche se il progetto richiede più giorni, consentendoti di massimizzare il valore della coda temporanea."
+        "build_queue_trick_overview_txt": "La coda di costruzione secondaria, sbloccata per 500 Crediti, ha una durata di 24 ore. Qualsiasi aggiornamento avviato prima della chiusura di questa finestra verrà completato anche se il progetto richiede più giorni, consentendoti di massimizzare il valore della coda temporanea.",
+        "credit_snakebite": "Strategia compilata da Snakebite (Server #1003)."
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

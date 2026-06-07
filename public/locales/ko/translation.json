@@ -260,7 +260,8 @@
         "build_queue_trick_title": "두 번째 빌드 대기열 트릭",
         "build_queue_trick_desc": "24시간 두 번째 건설 대기열을 최대한 활용하세요.",
         "build_queue_trick_overview_hdr": "대기열 확장 트릭",
-        "build_queue_trick_overview_txt": "500크레딧으로 잠금 해제되는 보조 건설 대기열의 지속 시간은 24시간입니다. 이 창이 닫히기 전에 시작된 모든 업그레이드는 프로젝트에 며칠이 소요되더라도 계속해서 완료되므로 임시 대기열의 가치를 극대화할 수 있습니다."
+        "build_queue_trick_overview_txt": "500크레딧으로 잠금 해제되는 보조 건설 대기열의 지속 시간은 24시간입니다. 이 창이 닫히기 전에 시작된 모든 업그레이드는 프로젝트에 며칠이 소요되더라도 계속해서 완료되므로 임시 대기열의 가치를 극대화할 수 있습니다.",
+        "credit_snakebite": "전략 컴파일러: 서버 #1003 Snakebite"
     },
     "hero_data": {
         "h1_notes": "이온 회전에 필수. 거대한 치유와 팀 전체 지능 버프.",

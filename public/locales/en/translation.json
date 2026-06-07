@@ -260,7 +260,8 @@
         "build_queue_trick_title": "2nd Build Queue Trick",
         "build_queue_trick_desc": "Make the most of the 24-hour second construction queue.",
         "build_queue_trick_overview_hdr": "Queue Extension Trick",
-        "build_queue_trick_overview_txt": "The secondary construction queue, unlocked for 500 Credits, has a 24-hour duration. Any upgrade initiated before this window closes will proceed to completion even if the project requires multiple days, allowing you to maximize the value of the temporary queue."
+        "build_queue_trick_overview_txt": "The secondary construction queue, unlocked for 500 Credits, has a 24-hour duration. Any upgrade initiated before this window closes will proceed to completion even if the project requires multiple days, allowing you to maximize the value of the temporary queue.",
+        "credit_snakebite": "Strategy compiled by Snakebite (Server #1003)."
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

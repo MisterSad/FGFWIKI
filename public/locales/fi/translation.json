@@ -260,7 +260,8 @@
         "build_queue_trick_title": "Toinen rakennusjonotemppu",
         "build_queue_trick_desc": "Hyödynnä 24 tunnin toinen rakennusjono.",
         "build_queue_trick_overview_hdr": "Jonon laajennustemppu",
-        "build_queue_trick_overview_txt": "Toissijainen rakennusjono, joka on avattu 500 krediittiä varten, kestää 24 tuntia. Kaikki päivitykset, jotka aloitetaan ennen tämän ikkunan sulkeutumista, etenevät loppuun, vaikka projekti vaatisi useita päiviä, jolloin voit maksimoida väliaikaisen jonon arvon."
+        "build_queue_trick_overview_txt": "Toissijainen rakennusjono, joka on avattu 500 krediittiä varten, kestää 24 tuntia. Kaikki päivitykset, jotka aloitetaan ennen tämän ikkunan sulkeutumista, etenevät loppuun, vaikka projekti vaatisi useita päiviä, jolloin voit maksimoida väliaikaisen jonon arvon.",
+        "credit_snakebite": "Strategian koonnut Snakebite (Palvelin #1003)."
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

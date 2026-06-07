@@ -260,7 +260,8 @@
         "build_queue_trick_title": "2º truque da fila de construção",
         "build_queue_trick_desc": "Aproveite ao máximo a segunda fila de construção de 24 horas.",
         "build_queue_trick_overview_hdr": "Truque de extensão de fila",
-        "build_queue_trick_overview_txt": "A fila de construção secundária, desbloqueada por 500 créditos, tem duração de 24 horas. Qualquer atualização iniciada antes do fechamento desta janela será concluída mesmo que o projeto exija vários dias, permitindo maximizar o valor da fila temporária."
+        "build_queue_trick_overview_txt": "A fila de construção secundária, desbloqueada por 500 créditos, tem duração de 24 horas. Qualquer atualização iniciada antes do fechamento desta janela será concluída mesmo que o projeto exija vários dias, permitindo maximizar o valor da fila temporária.",
+        "credit_snakebite": "Estratégia compilada por Snakebite (Servidor #1003)."
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",

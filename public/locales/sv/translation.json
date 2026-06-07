@@ -260,7 +260,8 @@
         "build_queue_trick_title": "2:a Bygg kö-tricket",
         "build_queue_trick_desc": "Få ut det mesta av den 24-timmars andra byggkön.",
         "build_queue_trick_overview_hdr": "Trick för köförlängning",
-        "build_queue_trick_overview_txt": "Den sekundära byggkön, upplåst för 500 poäng, har en varaktighet på 24 timmar. Alla uppgraderingar som initieras innan detta fönster stängs kommer att fortsätta till slutförandet även om projektet kräver flera dagar, vilket gör att du kan maximera värdet på den tillfälliga kön."
+        "build_queue_trick_overview_txt": "Den sekundära byggkön, upplåst för 500 poäng, har en varaktighet på 24 timmar. Alla uppgraderingar som initieras innan detta fönster stängs kommer att fortsätta till slutförandet även om projektet kräver flera dagar, vilket gör att du kan maximera värdet på den tillfälliga kön.",
+        "credit_snakebite": "Strategi sammanställd av Snakebite (Server #1003)."
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",
