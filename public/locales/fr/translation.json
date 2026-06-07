@@ -756,7 +756,8 @@
         "trade_route_defense_phases": "Tactiques de Phase",
         "trade_route_defense_phases_desc": "Phase 1 : Concentrez-vous sur les dégâts rapides contre les essaims de vaisseaux légers sans utiliser d'escorte. Phase 2 : Répartissez vos attaques sur les shrines et menaces moyennes avec un seul escorteur maximum. Phase 3 : Un vaisseau géant apparaît, exigeant une escorte immédiate de toute l'équipe.",
         "trade_route_defense_escort": "Stratégie d'Escorte",
-        "trade_route_defense_escort_desc": "Sélectionnez toujours le niveau de difficulté maximal. Les pertes de vaisseaux sont temporaires, mais l'obtention de ces récompenses rares a une valeur permanente. La coordination manuelle surpasse largement le bouton auto-join. Ajustez les rotations d'escorte selon les points de vie du convoi."
+        "trade_route_defense_escort_desc": "Sélectionnez toujours le niveau de difficulté maximal. Les pertes de vaisseaux sont temporaires, mais l'obtention de ces récompenses rares a une valeur permanente. La coordination manuelle surpasse largement le bouton auto-join. Ajustez les rotations d'escorte selon les points de vie du convoi.",
+        "mothers_day_protip_gift_title": "Profitez des récompenses à offrir"
     },
     "events_ui": {
         "golden_rule": "Règle d'or",
