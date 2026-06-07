@@ -109,19 +109,6 @@ export default function TipCard({ tip }) {
                 </p>
             </div>
 
-            {/* Highlight Badge if applicable */}
-            {tip.highlight && (
-                <div className="label-text" style={{
-                    marginTop: '2rem',
-                    alignSelf: 'flex-start',
-                    color: "#FFFFFF",
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.5rem'
-                }}>
-                    <Star size={14} strokeWidth={1.5} /> {t('core.important', 'CRITICAL')}
-                </div>
-            )}
 
             {tip.hasDetails && (
                 <div style={{
