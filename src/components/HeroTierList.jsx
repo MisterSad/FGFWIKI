@@ -309,18 +309,18 @@ export default function ChampionsGuide() {
                             <li style={{ display: 'flex', gap: '1rem' }}>
                                 <Info size={24} color="var(--gold)" />
                                 <div>
-                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.order_matters_title', 'Order Matters')}</strong>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.order_matters_title', 'Slot Sequencing')}</strong>
                                     <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
-                                        {t('champions.order_matters_desc', 'Buffers (Jodie, Eva, Aliya) must ALWAYS be placed first in your flagship slots so their buffs apply to the DPS/finishers (Zora, Evan, Lily, Bee) that trigger after them.')}
+                                        {t('champions.order_matters_desc', 'Position support champions such as Aliya, Eva, or Jodie in the initial slots of your flagship. Because slot abilities trigger sequentially, this sequencing ensures their stat enhancements are active when primary damage dealers execute their skills.')}
                                     </span>
                                 </div>
                             </li>
                             <li style={{ display: 'flex', gap: '1rem' }}>
                                 <AlertTriangle size={24} color="var(--accent-red)" />
                                 <div>
-                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.cocoon_tooltip_warning_title', 'Cocoon Tooltip Warning')}</strong>
+                                    <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.cocoon_tooltip_warning_title', 'Cocoon Tooltip Inaccuracy')}</strong>
                                     <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
-                                        {t('champions.cocoon_tooltip_warning_desc', 'The game UI claims Cocoon provides a "1500% DEF Shield" and "240% DEF Heal". In actual combat, this is complete fiction; real PvP logs show the total value scales around 110–150% DEF per cast.')}
+                                        {t('champions.cocoon_tooltip_warning_desc', 'The interface displays inaccurate values for Cocoon\'s healing and shielding stats. In live battles, rather than the stated 1500% shield and 240% heal, it actually provides a total absorption of approximately 110% to 150% of the defense rating.')}
                                     </span>
                                 </div>
                             </li>
@@ -329,7 +329,7 @@ export default function ChampionsGuide() {
                                 <div>
                                     <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '0.3rem' }}>{t('champions.ultra_premium_title', 'Endgame Ultra-Premiums')}</strong>
                                     <span style={{ color: 'var(--text-dim)', lineHeight: '1.5' }}>
-                                        {t('champions.ultra_premium_desc', 'Evan Rogers, Killer Bee, and Lily are elite endgame units. Evan and Bee are expensive premium purchases, while Lily is a long-term GvG and Arena shop grind. Even at low star levels (green), they rival maxed-out epic champions.')}
+                                        {t('champions.ultra_premium_desc', 'Top-tier endgame heroes like Evan Rogers, Killer Bee, and Lily offer exceptional power. While Evan and Bee are premium acquisitions and Lily requires a dedicated grind in Arena or Guild shops, they outperform fully upgraded epic heroes even at their lowest ranks (green star level).')}
                                     </span>
                                 </div>
                             </li>
