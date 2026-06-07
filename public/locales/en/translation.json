@@ -83,7 +83,8 @@
         "combat": "Combat",
         "gameplay": "Gameplay",
         "vip": "VIP",
-        "migration": "Migration"
+        "migration": "Migration",
+        "economy": "Economy"
     },
     "tips": {
         "t1_title": "Focus on Story Missions",
