@@ -61,7 +61,8 @@
         "core": "Núcleo",
         "back": "VOLTAR",
         "exclusive": "Exclusivo",
-        "new": "Novo"
+        "new": "Novo",
+        "update": "Atualização"
     },
     "hero": {
         "title_prefix": "Domina a",

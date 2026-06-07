@@ -61,7 +61,8 @@
         "core": "Núcleo",
         "back": "ATRÁS",
         "exclusive": "Exclusivo",
-        "new": "Nuevo"
+        "new": "Nuevo",
+        "update": "Actualización"
     },
     "hero": {
         "title_prefix": "Domina la",

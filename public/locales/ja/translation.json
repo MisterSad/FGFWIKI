@@ -61,7 +61,8 @@
         "core": "コア",
         "back": "戻る",
         "exclusive": "限定",
-        "new": "NEW"
+        "new": "NEW",
+        "update": "アップデート"
     },
     "hero": {
         "title_prefix": "征服せよ",

@@ -61,7 +61,8 @@
         "core": "teras",
         "back": "KEMBALI",
         "exclusive": "Eksklusif",
-        "new": "Baharu"
+        "new": "Baharu",
+        "update": "Kemas kini"
     },
     "hero": {
         "title_prefix": "Kuasai",

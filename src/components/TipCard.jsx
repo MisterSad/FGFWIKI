@@ -35,7 +35,7 @@ export default function TipCard({ tip }) {
             <div className="scan-line"></div>
 
             {/* Corner Ribbon */}
-            {(tip.isExclusive || tip.isNew) && (
+            {(tip.isExclusive || tip.isNew || tip.isUpdate) && (
                 <div style={{
                     position: 'absolute',
                     top: 0,
@@ -63,7 +63,7 @@ export default function TipCard({ tip }) {
                         padding: '4px 0',
                         fontFamily: 'var(--font-label)'
                     }}>
-                        {tip.isExclusive ? t('common.exclusive') : t('common.new')}
+                        {tip.isExclusive ? t('common.exclusive') : (tip.isUpdate ? t('common.update', 'Update') : t('common.new'))}
                     </div>
                 </div>
             )}

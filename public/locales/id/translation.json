@@ -61,7 +61,8 @@
         "core": "Inti",
         "back": "KEMBALI",
         "exclusive": "Eksklusif",
-        "new": "Baru"
+        "new": "Baru",
+        "update": "Pembaruan"
     },
     "hero": {
         "title_prefix": "Kuasai",

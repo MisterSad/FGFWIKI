@@ -61,7 +61,8 @@
         "core": "Kärna",
         "back": "TILLBAKA",
         "exclusive": "Exklusiv",
-        "new": "Nytt"
+        "new": "Nytt",
+        "update": "Uppdatering"
     },
     "hero": {
         "title_prefix": "Bemästra",

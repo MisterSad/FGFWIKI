@@ -61,7 +61,8 @@
         "core": "Nucleo",
         "back": "INDIETRO",
         "exclusive": "Esclusivo",
-        "new": "Nuovo"
+        "new": "Nuovo",
+        "update": "Aggiornamento"
     },
     "hero": {
         "title_prefix": "Padroneggia la",

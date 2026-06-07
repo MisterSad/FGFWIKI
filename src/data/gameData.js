@@ -273,6 +273,7 @@ export const tips = [
     content: 'tips.migration_desc',
     highlight: true,
     hasDetails: true,
+    isUpdate: true,
     publishDate: '2026-06-06T14:58:00Z',
     sections: [
       {

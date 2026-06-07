@@ -61,7 +61,8 @@
         "core": "Kjerne",
         "back": "TILBAKE",
         "exclusive": "Eksklusiv",
-        "new": "Ny"
+        "new": "Ny",
+        "update": "Oppdatering"
     },
     "hero": {
         "title_prefix": "Mestre",
