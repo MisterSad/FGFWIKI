@@ -65,6 +65,17 @@ const giftCodes = [
     { code: 'YObonus' },
     { code: 'vinegar2026' },
     { code: 'CHILDRENSDAY26' },
+    { code: 'Cartoonz' },
+    { code: 'cinepals' },
+    { code: 'heavyspoilers' },
+    { code: 'HMT888' },
+    { code: 'PLAYONPC2026' },
+    { code: 'screencrush' },
+    { code: 'thegoldman' },
+    { code: 'sixwong' },
+    { code: 'pudding1223' },
+    { code: 'mizuyuno' },
+    { code: 'niu0716' },
 ];
 
 const now = new Date();
