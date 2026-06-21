@@ -9,6 +9,7 @@ const SITE_NAME = 'Foundation: Galactic Frontier Wiki';
 const ROUTE_KEYS = {
     '/': 'home',
     '/home': 'home',
+    '/news': 'news',
     '/guides': 'guides',
     '/champions': 'champions',
     '/flagships': 'flagships',
@@ -164,10 +165,25 @@ export default function useSEO() {
         let tip = null;
         let event = null;
 
+        const newsMatch = location.pathname.match(/^\/news\/([^/]+)$/);
         const guideMatch = location.pathname.match(/^\/guides\/([^/]+)$/);
         const eventMatch = location.pathname.match(/^\/events\/([^/]+)$/);
 
-        if (guideMatch) {
+        if (newsMatch) {
+            const newsId = newsMatch[1];
+            tip = tips.find(t => String(t.id) === newsId);
+            if (tip) {
+                pageTitle = t(tip.title, { defaultValue: 'News' });
+                description = t(tip.content, {
+                    defaultValue: 'News update for Foundation: Galactic Frontier.',
+                });
+            } else {
+                pageTitle = t('seo.news.title', { defaultValue: 'News' });
+                description = t('seo.news.description', {
+                    defaultValue: 'All the latest news, updates and migration details for Foundation: Galactic Frontier.',
+                });
+            }
+        } else if (guideMatch) {
             const guideId = guideMatch[1];
             tip = tips.find(t => String(t.id) === guideId);
             if (tip) {
@@ -217,8 +233,8 @@ export default function useSEO() {
         let keywords = t(`seo.${key}.keywords`, {
             defaultValue: 'Foundation Galactic Frontier, FGF, FGF Wiki, strategy guides, tier list, flagship decks, events, tools'
         });
-        if (guideMatch && tip) {
-            keywords = `${t(tip.title)}, guide, strategy, Foundation Galactic Frontier, FGF, FGF Wiki`;
+        if ((guideMatch || newsMatch) && tip) {
+            keywords = `${t(tip.title)}, ${newsMatch ? 'news' : 'guide'}, strategy, Foundation Galactic Frontier, FGF, FGF Wiki`;
         } else if (eventMatch && event) {
             keywords = `${t(event.title)}, event, guide, strategy, Foundation Galactic Frontier, FGF, FGF Wiki`;
         }
@@ -245,7 +261,7 @@ export default function useSEO() {
             "inLanguage": lang
         };
 
-        if (guideMatch && tip) {
+        if ((guideMatch || newsMatch) && tip) {
             schemaData = {
                 "@context": "https://schema.org",
                 "@type": "TechArticle",

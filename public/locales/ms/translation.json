@@ -4,6 +4,10 @@
             "title": "Panduan Strategi, Senarai Peringkat & Alat",
             "description": "Rujukan wiki untuk Yayasan: Galactic Frontier. Panduan strategi, senarai peringkat wira, dek perdana, pasukan darat, panduan acara, kod hadiah dan alatan mendalam, dalam bahasa Inggeris dan Perancis."
         },
+        "news": {
+            "title": "Berita",
+            "description": "Semua berita terkini, kemas kini dan butiran migrasi untuk Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Panduan Strategi",
             "description": "Asas Mendalam: Panduan Galactic Frontier merangkumi perkembangan awal, pertengahan dan lewat permainan, taktik pertempuran, ekonomi dan pengurusan sumber."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Rumah",
+        "news": "Berita",
         "guides": "Pemandu",
         "daily_tasks": "Tugasan Harian",
         "champions": "Juara",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Pemandu",
+        "news": "Berita",
         "champions": "Juara",
         "meta_ships": "Kapal perdana",
         "flagship_decks": "Dek Utama",

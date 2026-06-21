@@ -4,6 +4,10 @@
             "title": "Guide strategiche, tier list e strumenti",
             "description": "La wiki di riferimento per Foundation: Galactic Frontier. Guide strategiche, tier list degli eroi, mazzi delle ammiraglie, squadre di terra, guide eventi, codici regalo e strumenti approfonditi, in inglese, francese, tedesco, italiano, polacco, turco, ucraino, giapponese, coreano e cinese semplificato."
         },
+        "news": {
+            "title": "Notizie",
+            "description": "Tutte le ultime notizie, aggiornamenti e dettagli sulla migrazione per Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Guide strategiche",
             "description": "Guide approfondite di Foundation: Galactic Frontier che coprono progressione iniziale, intermedia e tardiva, tattiche di combattimento, economia e gestione delle risorse."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Home",
+        "news": "Notizie",
         "guides": "Guide",
         "daily_tasks": "Compiti giornalieri",
         "champions": "Campioni",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Guide",
+        "news": "Notizie",
         "champions": "Campioni",
         "meta_ships": "Ammiraglie",
         "flagship_decks": "Mazzi ammiraglie",

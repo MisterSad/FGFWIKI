@@ -4,6 +4,10 @@
             "title": "Hướng dẫn chiến lược, danh sách cấp độ & công cụ",
             "description": "Wiki tham khảo cho Foundation: Galactic Frontier. Hướng dẫn chiến lược, danh sách cấp độ anh hùng, bộ bài chủ lực, đội mặt đất, hướng dẫn sự kiện, mã quà tặng và các công cụ chuyên sâu, bằng tiếng Anh và tiếng Pháp."
         },
+        "news": {
+            "title": "Tin tức",
+            "description": "Tất cả tin tức, cập nhật mới nhất và chi tiết di cư cho Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Hướng dẫn chiến lược",
             "description": "Nền tảng chuyên sâu: Hướng dẫn về Biên giới thiên hà bao gồm tiến trình đầu, giữa và cuối trò chơi, chiến thuật chiến đấu, kinh tế và quản lý tài nguyên."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Trang chủ",
+        "news": "Tin tức",
         "guides": "Hướng dẫn",
         "daily_tasks": "Nhiệm vụ hàng ngày",
         "champions": "Nhà vô địch",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Hướng dẫn",
+        "news": "Tin tức",
         "champions": "Nhà vô địch",
         "meta_ships": "Flagship",
         "flagship_decks": "Bộ bài hàng đầu",

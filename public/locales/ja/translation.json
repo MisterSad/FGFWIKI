@@ -4,6 +4,10 @@
             "title": "戦略ガイド、ティアリスト、ツール",
             "description": "Foundation: Galactic Frontierのリファレンスwiki。戦略ガイド、ヒーローティアリスト、旗艦デッキ、地上部隊、イベント攻略、ギフトコード、詳細ツールを英語、フランス語、韓国語、ドイツ語、日本語、中国語で提供。"
         },
+        "news": {
+            "title": "ニュース",
+            "description": "Foundation: Galactic Frontier の最新ニュース、アップデート、移住に関する詳細情報。"
+        },
         "guides": {
             "title": "戦略ガイド",
             "description": "初期、中盤、終盤の進行、戦闘戦術、経済、リソース管理を網羅したFoundation: Galactic Frontierの詳細ガイド。"
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "ホーム",
+        "news": "ニュース",
         "guides": "ガイド",
         "daily_tasks": "デイリータスク",
         "champions": "チャンピオン",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "ガイド",
+        "news": "ニュース",
         "champions": "チャンピオン",
         "meta_ships": "旗艦",
         "flagship_decks": "旗艦デッキ",

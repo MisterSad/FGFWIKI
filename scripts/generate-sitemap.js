@@ -41,6 +41,7 @@ const HREFLANG = {
 const staticRoutes = [
   { path: '', changefreq: 'weekly', priority: '1.0' },
   { path: '/home', changefreq: 'weekly', priority: '1.0' },
+  { path: '/news', changefreq: 'weekly', priority: '0.9' },
   { path: '/guides', changefreq: 'weekly', priority: '0.9' },
   { path: '/champions', changefreq: 'weekly', priority: '0.9' },
   { path: '/flagships', changefreq: 'weekly', priority: '0.9' },
@@ -73,10 +74,10 @@ staticRoutes.forEach(route => {
   });
 });
 
-// 2. Guides routes (only those with hasDetails: true)
+// 2. Guides & News routes (only those with hasDetails: true)
 tips.forEach(tip => {
   if (tip.hasDetails) {
-    const routePath = `/guides/${tip.id}`;
+    const routePath = tip.category === 'news' ? `/news/${tip.id}` : `/guides/${tip.id}`;
     urls.push({
       loc: `${SITE_URL}${routePath}`,
       alternates: getAlternateLinks(routePath),

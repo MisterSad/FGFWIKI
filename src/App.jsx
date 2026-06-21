@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import LoginModal from './components/LoginModal';
 
 const Guides = lazy(() => import('./components/Guides'));
+const News = lazy(() => import('./components/News'));
 const FlagshipGuide = lazy(() => import('./components/FlagshipGuide'));
 const HeroTierList = lazy(() => import('./components/HeroTierList'));
 const EventGuide = lazy(() => import('./components/EventGuide'));
@@ -33,6 +34,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Navigate to="/home" replace />} />
                 <Route path="/home" element={<Hero />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/news/:newsId" element={<News />} />
                 <Route path="/guides" element={<Guides />} />
                 <Route path="/guides/:guideId" element={<Guides />} />
                 <Route path="/daily-tasks" element={<Navigate to="/guides?tab=daily-tasks" replace />} />

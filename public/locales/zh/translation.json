@@ -4,6 +4,10 @@
             "title": "攻略指南、英雄排行榜与工具",
             "description": "Foundation: Galactic Frontier 的参考维基。攻略指南、英雄排行榜、旗舰阵容、地面部队、活动攻略、礼包码与深度工具,提供英语、法语、韩语、德语、日语和中文版本。"
         },
+        "news": {
+            "title": "新闻",
+            "description": "Foundation: Galactic Frontier 的最新新闻、更新及移民详情。"
+        },
         "guides": {
             "title": "攻略指南",
             "description": "深入的 Foundation: Galactic Frontier 指南,涵盖前期、中期和后期进度、战斗战术、经济和资源管理。"
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "首页",
+        "news": "新闻",
         "guides": "指南",
         "daily_tasks": "每日任务",
         "champions": "英雄",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "指南",
+        "news": "新闻",
         "champions": "英雄",
         "meta_ships": "旗舰",
         "flagship_decks": "旗舰阵容",

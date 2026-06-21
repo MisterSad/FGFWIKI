@@ -268,7 +268,7 @@ export const tips = [
   },
   {
     id: 'migration',
-    category: 'migration',
+    category: 'news',
     title: 'tips.migration_title',
     content: 'tips.migration_desc',
     highlight: true,

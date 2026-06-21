@@ -4,6 +4,10 @@
             "title": "Strategiguider, tier-lister og verktøy",
             "description": "Referanse-wikien for Foundation: Galactic Frontier. Strategiguider, helte-tier-lister, flaggskipdekk, bakketropper, eventguider, gavekoder og dyptgående verktøy, på norsk og engelsk."
         },
+        "news": {
+            "title": "Nyheter",
+            "description": "Alle de siste nyhetene, oppdateringene og migrasjonsdetaljene for Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Strategiguider",
             "description": "Dyptgående Foundation: Galactic Frontier-guider som dekker tidlig, midt- og sent spill, kamptaktikk, økonomi og ressurshåndtering."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Hjem",
+        "news": "Nyheter",
         "guides": "Guider",
         "daily_tasks": "Daglige oppgaver",
         "champions": "Helter",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Guider",
+        "news": "Nyheter",
         "champions": "Helter",
         "meta_ships": "Flaggskip",
         "flagship_decks": "Flaggskipdekk",

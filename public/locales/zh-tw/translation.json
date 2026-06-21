@@ -4,6 +4,10 @@
             "title": "策略指南、層級清單和工具",
             "description": "《基金會：銀河前沿》的參考 wiki。英語和法語的策略指南、英雄等級清單、旗艦牌組、地面團隊、活動演練、禮品代碼和深入工具。"
         },
+        "news": {
+            "title": "新聞",
+            "description": "Foundation: Galactic Frontier 的最新新聞、更新及移民詳情。"
+        },
         "guides": {
             "title": "策略指南",
             "description": "深入的《基礎：銀河前沿》指南，涵蓋早期、中期和後期的遊戲進程、戰鬥策略、經濟和資源管理。"
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "家",
+        "news": "新聞",
         "guides": "指南",
         "daily_tasks": "日常任務",
         "champions": "冠軍",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "指南",
+        "news": "新聞",
         "champions": "冠軍",
         "meta_ships": "旗艦",
         "flagship_decks": "旗艦套牌",

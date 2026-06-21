@@ -4,6 +4,10 @@
             "title": "Guias de estratégia, tier lists e ferramentas",
             "description": "A wiki de referência para Foundation: Galactic Frontier. Guias de estratégia, tier lists de heróis, decks de naves capitânia, equipas terrestres, guias de eventos, códigos de oferta e ferramentas detalhadas, em inglês e francês."
         },
+        "news": {
+            "title": "Notícias",
+            "description": "Todas as últimas notícias, atualizações e detalhes de migração para Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Guias de estratégia",
             "description": "Guias detalhados de Foundation: Galactic Frontier que cobrem a progressão inicial, intermédia e avançada, táticas de combate, economia e gestão de recursos."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Início",
+        "news": "Notícias",
         "guides": "Guias",
         "daily_tasks": "Tarefas diárias",
         "champions": "Campeões",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Guias",
+        "news": "Notícias",
         "champions": "Campeões",
         "meta_ships": "Naves capitânia",
         "flagship_decks": "Decks de capitânias",

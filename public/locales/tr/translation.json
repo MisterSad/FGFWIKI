@@ -4,6 +4,10 @@
             "title": "Strateji Kılavuzları, Kademe Listeleri ve Araçlar",
             "description": "Foundation: Galactic Frontier için referans wiki. İngilizce ve Fransızca olarak strateji kılavuzları, kahraman kademe listeleri, amiral gemisi desteleri, yer ekipleri, etkinlik açıklamaları, hediye kodları ve ayrıntılı araçlar."
         },
+        "news": {
+            "title": "Haberler",
+            "description": "Foundation: Galactic Frontier için en son haberler, güncellemeler og göç detayları."
+        },
         "guides": {
             "title": "Strateji Kılavuzları",
             "description": "Ayrıntılı Temel: Oyunun erken, orta ve geç ilerlemesini, savaş taktiklerini, ekonomiyi ve kaynak yönetimini kapsayan Galaktik Sınır kılavuzları."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Ev",
+        "news": "Haberler",
         "guides": "Kılavuzlar",
         "daily_tasks": "Günlük Görevler",
         "champions": "Şampiyonlar",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Kılavuzlar",
+        "news": "Haberler",
         "champions": "Şampiyonlar",
         "meta_ships": "Amiral gemileri",
         "flagship_decks": "Amiral Gemisi Güverteleri",
