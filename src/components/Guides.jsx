@@ -110,6 +110,155 @@ export default function Guides() {
                                 </p>
                             )}
 
+                            {section.quotas && (
+                                <div className="migration-quotas-container" style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                                    gap: '1.5rem',
+                                    marginTop: '2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    {section.quotas.map((quotaGroup, qIdx) => (
+                                        <div key={qIdx} className="quota-group-card" style={{
+                                            background: 'rgba(255,255,255,0.01)',
+                                            border: '1px solid var(--border)',
+                                            borderRadius: '6px',
+                                            padding: '1.5rem',
+                                            transition: 'all 0.3s ease',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            justifyContent: 'space-between'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.borderColor = 'var(--gold)';
+                                            e.currentTarget.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.1)';
+                                            e.currentTarget.style.transform = 'translateY(-2px)';
+                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.borderColor = 'var(--border)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.transform = 'none';
+                                            e.currentTarget.style.background = 'rgba(255,255,255,0.01)';
+                                        }}
+                                        >
+                                            <div>
+                                                <h4 style={{
+                                                    margin: '0 0 0.5rem 0',
+                                                    fontFamily: 'var(--font-label)',
+                                                    fontSize: '1.25rem',
+                                                    color: 'var(--gold)',
+                                                    textTransform: 'uppercase',
+                                                    letterSpacing: '1px'
+                                                }}>{t(quotaGroup.tierName)}</h4>
+                                                <p style={{
+                                                    margin: '0 0 1.5rem 0',
+                                                    fontSize: '0.85rem',
+                                                    color: 'var(--text-dim)',
+                                                    lineHeight: '1.4'
+                                                }}>{t(quotaGroup.tierDesc)}</p>
+                                            </div>
+
+                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                                                {quotaGroup.quotaDetails.map((detail, dIdx) => (
+                                                    <div key={dIdx} style={{
+                                                        display: 'flex',
+                                                        justifyContent: 'space-between',
+                                                        alignItems: 'center',
+                                                        padding: '0.5rem 0.75rem',
+                                                        background: 'var(--bg-void)',
+                                                        borderRadius: '4px',
+                                                        borderLeft: `3px solid ${detail.color}`
+                                                    }}>
+                                                        <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{t(detail.label)}</span>
+                                                        <span style={{
+                                                            fontSize: '1.1rem',
+                                                            fontFamily: 'var(--font-mono)',
+                                                            fontWeight: 'bold',
+                                                            color: '#FFFFFF',
+                                                            background: 'rgba(255,255,255,0.05)',
+                                                            padding: '2px 8px',
+                                                            borderRadius: '3px'
+                                                        }}>{detail.value}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+
+                            {section.stages && (
+                                <div className="migration-stages-flow" style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                                    gap: '1.5rem',
+                                    marginTop: '2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    {section.stages.map((stage, sIdx) => (
+                                        <div key={sIdx} className="stage-card" style={{
+                                            background: 'rgba(255, 255, 255, 0.02)',
+                                            border: '1px solid var(--border)',
+                                            borderRadius: '6px',
+                                            padding: '1.5rem',
+                                            position: 'relative',
+                                            transition: 'all 0.3s ease',
+                                            overflow: 'hidden'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.borderColor = 'var(--gold)';
+                                            e.currentTarget.style.transform = 'translateY(-4px)';
+                                            e.currentTarget.style.background = 'rgba(212, 175, 55, 0.02)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.borderColor = 'var(--border)';
+                                            e.currentTarget.style.transform = 'none';
+                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                                        }}
+                                        >
+                                            <div style={{
+                                                position: 'absolute',
+                                                top: '-10px',
+                                                right: '-5px',
+                                                fontSize: '5rem',
+                                                fontWeight: '900',
+                                                fontFamily: 'var(--font-hero)',
+                                                color: 'var(--gold)',
+                                                opacity: 0.08,
+                                                lineHeight: '1',
+                                                pointerEvents: 'none'
+                                            }}>
+                                                {stage.number}
+                                            </div>
+                                            <div style={{
+                                                fontFamily: 'var(--font-mono)',
+                                                fontSize: '0.8rem',
+                                                color: 'var(--gold)',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '2px',
+                                                marginBottom: '0.5rem'
+                                            }}>
+                                                {t('common.phase', 'Phase')} 0{stage.number}
+                                            </div>
+                                            <h4 style={{
+                                                color: 'var(--text-primary)',
+                                                fontSize: '1.25rem',
+                                                margin: '0 0 1rem 0',
+                                                fontFamily: 'var(--font-label)',
+                                                letterSpacing: '1px'
+                                            }}>{t(stage.name)}</h4>
+                                            <p style={{
+                                                color: 'var(--text-dim)',
+                                                fontSize: '0.95rem',
+                                                lineHeight: '1.6',
+                                                margin: 0
+                                            }}>{t(stage.desc)}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+
                             {section.image && (
                                 <div style={{ margin: '2rem 0', textAlign: 'center' }}>
                                     <img
