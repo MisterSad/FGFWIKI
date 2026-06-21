@@ -312,7 +312,39 @@ export const tips = [
       },
       {
         header: 'tips.migration_how_works_hdr',
-        text: 'tips.migration_how_works_txt'
+        text: 'tips.migration_how_works_txt',
+        quotas: [
+          {
+            tierName: 'tips.migration_tier_high_title',
+            tierDesc: 'tips.migration_tier_high_desc',
+            quotaDetails: [
+              { label: 'tips.quota_ultra', value: 1, color: '#ff5b5b' },
+              { label: 'tips.quota_high', value: 3, color: '#d4af37' },
+              { label: 'tips.quota_mid', value: 30, color: '#4cd9c0' },
+              { label: 'tips.quota_low', value: 40, color: '#888888' }
+            ]
+          },
+          {
+            tierName: 'tips.migration_tier_mid_title',
+            tierDesc: 'tips.migration_tier_mid_desc',
+            quotaDetails: [
+              { label: 'tips.quota_ultra', value: 2, color: '#ff5b5b' },
+              { label: 'tips.quota_high', value: 5, color: '#d4af37' },
+              { label: 'tips.quota_mid', value: 40, color: '#4cd9c0' },
+              { label: 'tips.quota_low', value: 60, color: '#888888' }
+            ]
+          },
+          {
+            tierName: 'tips.migration_tier_low_title',
+            tierDesc: 'tips.migration_tier_low_desc',
+            quotaDetails: [
+              { label: 'tips.quota_ultra', value: 3, color: '#ff5b5b' },
+              { label: 'tips.quota_high', value: 8, color: '#d4af37' },
+              { label: 'tips.quota_mid', value: 60, color: '#4cd9c0' },
+              { label: 'tips.quota_low', value: 80, color: '#888888' }
+            ]
+          }
+        ]
       },
       {
         header: 'tips.migration_reqs_hdr',
@@ -324,7 +356,13 @@ export const tips = [
       },
       {
         header: 'tips.migration_stages_hdr',
-        text: 'tips.migration_stages_txt'
+        text: 'tips.migration_stages_txt',
+        stages: [
+          { number: 1, name: 'tips.migration_stage1_title', desc: 'tips.migration_stage1_desc' },
+          { number: 2, name: 'tips.migration_stage2_title', desc: 'tips.migration_stage2_desc' },
+          { number: 3, name: 'tips.migration_stage3_title', desc: 'tips.migration_stage3_desc' },
+          { number: 4, name: 'tips.migration_stage4_title', desc: 'tips.migration_stage4_desc' }
+        ]
       }
     ]
   },
