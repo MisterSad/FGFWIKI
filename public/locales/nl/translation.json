@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migratie",
         "migration_stage3_desc": "Goedgekeurde kandidaten bevestigen en voltooien de overdracht.",
         "migration_stage4_title": "Weergave",
-        "migration_stage4_desc": "De definitieve migratieresultaten worden verwerkt en openbaar gemaakt."
+        "migration_stage4_desc": "De definitieve migratieresultaten worden verwerkt en openbaar gemaakt.",
+        "magnetic_title": "Overlevings-Tip: Magnetische Stormweerstand",
+        "magnetic_desc": "Bereid je vloot voor op kosmische magnetische stormen. Leer hoe je je weerstand verhoogt en je schepen beschermt.",
+        "magnetic_intro": "Kosmische magnetische stormen zijn zeer destructief. Onvoorbereide vloten zullen ernstige hinder ondervinden. Händlers moeten hun Magnetische Stormweerstand verbeteren.",
+        "magnetic_rules_hdr": "Weerstand begrijpen",
+        "magnetic_rules_txt": "Magnetische Stormweerstand is het vermogen van je vloot om stormstoringen te weerstaan. Als je weerstand te laag is, daalt de schade van je vlaggenschip en stijgt het risico op zware schade.",
+        "magnetic_increase_hdr": "Manieren om weerstand te verhogen",
+        "magnetic_increase_txt": "1. Bouw en upgrade de Elektromagnetische Schildtoren.\n2. Vestig je in een Thuishaven van een hoger niveau voor grotere weerstandsbonussen.\n3. Ontgrendel Seizoenspas-privileges.\n4. Wissel Anti-Magnetische Apparaten uit met gildeleden.",
+        "magnetic_combat_hdr": "Weerstand en gevecht",
+        "magnetic_combat_txt": "1. In sologevechten wordt de schade berekend op basis van de weerstand van de eerste speler die het doelwit raakt.\n2. In rallygevechten gebruiken alle leden de weerstand van de Rally-leider."
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

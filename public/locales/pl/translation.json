@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migracja",
         "migration_stage3_desc": "Zatwierdzeni kandydaci potwierdzają i kończą transfer serwera.",
         "migration_stage4_title": "Wyświetlanie",
-        "migration_stage4_desc": "Ostateczne wyniki migracji są przetwarzane i podawane do publicznej wiadomości."
+        "migration_stage4_desc": "Ostateczne wyniki migracji są przetwarzane i podawane do publicznej wiadomości.",
+        "magnetic_title": "Porada przetrwania: Odporność na burze magnetyczne",
+        "magnetic_desc": "Przygotuj swoją flotę na kosmiczne burze magnetyczne. Dowiedz się, jak zwiększyć odporność.",
+        "magnetic_intro": "Kosmiczne burze magnetyczne są wysoce niszczycielskie. Nieprzygotowane floty ucierpią z powodu silnych zakłóceń. Aby nawigować bezpiecznie, musisz zwiększyć odporność na burze magnetyczne.",
+        "magnetic_rules_hdr": "Zrozumienie odporności",
+        "magnetic_rules_txt": "Odporność na burze magnetyczne reprezentuje zdolność floty do wytrzymywania zakłóceń. Jeśli odporność jest zbyt niska, obrażenia twojego okrętu flagowego spadają, a ryzyko poważnych uszkodzeń rośnie.",
+        "magnetic_increase_hdr": "Sposoby na zwiększenie odporności",
+        "magnetic_increase_txt": "1. Zbuduj i ulepsz wieżę tarczy elektromagnetycznej.\n2. Osiedl się w porcie macierzystym wyższego poziomu.\n3. Odblokuj przywileje przepustki sezonowej.\n4. Wymieniaj urządzenia antymagnetyczne z członkami gildii.",
+        "magnetic_combat_hdr": "Odporność i walka",
+        "magnetic_combat_txt": "1. W walce solo obrażenia są obliczane na podstawie odporności pierwszego gracza, który zaatakuje cel.\n2. W bitwach rajdowych wszyscy członkowie używają odporności lidera rajdu."
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

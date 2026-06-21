@@ -267,6 +267,33 @@ export const tips = [
     ]
   },
   {
+    id: 'magnetic-resistance',
+    category: 'news',
+    title: 'tips.magnetic_title',
+    content: 'tips.magnetic_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-06-21T18:48:00Z',
+    sections: [
+      {
+        text: 'tips.magnetic_intro'
+      },
+      {
+        header: 'tips.magnetic_rules_hdr',
+        text: 'tips.magnetic_rules_txt'
+      },
+      {
+        header: 'tips.magnetic_increase_hdr',
+        text: 'tips.magnetic_increase_txt'
+      },
+      {
+        header: 'tips.magnetic_combat_hdr',
+        text: 'tips.magnetic_combat_txt'
+      }
+    ]
+  },
+  {
     id: 'star-of-the-guild',
     category: 'news',
     title: 'tips.star_of_guild_title',

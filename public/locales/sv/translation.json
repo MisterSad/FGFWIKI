@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migrering",
         "migration_stage3_desc": "Godkända kandidater bekräftar och slutför serveröverföringen.",
         "migration_stage4_title": "Visning",
-        "migration_stage4_desc": "De slutliga migreringsresultaten behandlas och offentliggörs."
+        "migration_stage4_desc": "De slutliga migreringsresultaten behandlas och offentliggörs.",
+        "magnetic_title": "Överlevnadstips: Magnetstormsresistens",
+        "magnetic_desc": "Förbered din flotta för kosmiska magnetstormar. Lär dig hur du ökar din resistens och skyddar dina skepp.",
+        "magnetic_intro": "Kosmiska magnetstormar är mycket destruktiva. Oförberedda flottor drabbas av allvarliga störningar. För att navigera säkert måste handelsresande öka sin magnetstormsresistens.",
+        "magnetic_rules_hdr": "Förstå resistens",
+        "magnetic_rules_txt": "Magnetstormsresistens är flottans förmåga att motstå stormstörningar. Om din resistens är för låg minskar flaggskeppets skadeeffekt och risken för kritiska skador ökar.",
+        "magnetic_increase_hdr": "Sätt att öka resistensen",
+        "magnetic_increase_txt": "1. Bygg och uppgradera det elektromagnetiska sköldtornet.\n2. Bosätt dig i en hemhamn på högre nivå för större resistensbonusar.\n3. Lås upp privilegier i säsongspasset.\n4. Byt antimagnetiska enheter med handelsgillemedlemmar.",
+        "magnetic_combat_hdr": "Resistens och strid",
+        "magnetic_combat_txt": "1. I solostrid beräknas skadan baserat på resistensen hos den första spelaren som angriper målet.\n2. I rallystrider använder alla medlemmar rallyledarens resistensvärde."
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",

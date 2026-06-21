@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migration",
         "migration_stage3_desc": "Les candidats approuvés confirment et effectuent le transfert de serveur.",
         "migration_stage4_title": "Affichage",
-        "migration_stage4_desc": "Les résultats finaux de la migration sont traités et rendus publics."
+        "migration_stage4_desc": "Les résultats finaux de la migration sont traités et rendus publics.",
+        "magnetic_title": "Astuce de survie : Résistance aux tempêtes magnétiques",
+        "magnetic_desc": "Préparez votre flotte aux tempêtes magnétiques cosmiques. Découvrez comment augmenter votre résistance et protéger vos vaisseaux.",
+        "magnetic_intro": "Les tempêtes magnétiques cosmiques sont extrêmement destructrices. Pour naviguer en sécurité, les marchands doivent renforcer leur résistance à l'aide de structures protectrices, d'équipements spécialisés et de l'aide de la guilde.",
+        "magnetic_rules_hdr": "Comprendre la résistance",
+        "magnetic_rules_txt": "La résistance aux tempêtes magnétiques réduit l'interférence subie. Si elle est trop basse, les dégâts de votre vaisseau amiral diminuent et le risque de subir des dégâts majeurs augmente.",
+        "magnetic_increase_hdr": "Comment augmenter la résistance",
+        "magnetic_increase_txt": "1. Construisez et améliorez la Tour de bouclier électromagnétique.\n2. Installez-vous dans des ports d'attache de niveau supérieur.\n3. Débloquez les privilèges du pass saisonnier.\n4. Échangez des dispositifs anti-magnétiques avec votre guilde.",
+        "magnetic_combat_hdr": "Résistance et combat",
+        "magnetic_combat_txt": "1. En combat solo, les dégâts sont calculés selon la résistance du premier attaquant.\n2. En ralliement, c'est la résistance du chef de ralliement qui s'applique à tout le groupe."
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

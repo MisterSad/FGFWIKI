@@ -296,7 +296,16 @@
         "migration_stage3_title": "Göç",
         "migration_stage3_desc": "Onaylanan adaylar doğrular ve sunucu transferini tamamlar.",
         "migration_stage4_title": "Görüntüleme",
-        "migration_stage4_desc": "Nihai göç sonuçları işlenir ve kamuoyuna açıklanır."
+        "migration_stage4_desc": "Nihai göç sonuçları işlenir ve kamuoyuna açıklanır.",
+        "magnetic_title": "Hayatta Kalma İpucu: Manyetik Fırtına Direnci",
+        "magnetic_desc": "Filonuzu kozmik manyetik fırtınalara hazırlayın. Direncinizi nasıl artıracağınızı ve savaşta gemilerinizi nasıl koruyacağınızı öğrenin.",
+        "magnetic_intro": "Kozmik manyetik fırtınalar oldukça yıkıcıdır. Hazırlıksız filolar ciddi parazitlerden muzdarip olacaktır. Güvenli seyir için tüccarlar Manyetik Fırtına Direncini artırmalıdır.",
+        "magnetic_rules_hdr": "Direnci Anlamak",
+        "magnetic_rules_txt": "Manyetik Fırtına Direnci filonuzun fırtına etkilerine dayanma yeteneğini temsil eder. Direnciniz çok düşükse amiral geminizin hasar gücü düşer ve ağır hasar alma riski artar.",
+        "magnetic_increase_hdr": "Direnci Artırmanın Yolları",
+        "magnetic_increase_txt": "1. Elektromanyetik Kalkan Kulesi inşa edin ve yükseltin.\n2. Daha büyük direnç bonusları için daha yüksek seviyeli bir Ana Limana yerleşin.\n3. Sezon Bileti ayrıcalıklarının kilidini açın.\n4. Ticaret Loncası üyeleriyle Manyetizma Önleyici Cihazlar takas edin.",
+        "magnetic_combat_hdr": "Direnç ve Savaş",
+        "magnetic_combat_txt": "1. Tekli savaşta, hasar ve ağır hasar oranları hedefe ilk saldıran tüccarın direncine göre hesaplanır.\n2. Bir toplu saldırıya katılırken, tüm üyeler hesaplamalar için Topluluk Liderinin direncini kullanır."
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

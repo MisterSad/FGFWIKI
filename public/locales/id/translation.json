@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migrasi",
         "migration_stage3_desc": "Kandidat yang disetujui mengonfirmasi dan menyelesaikan transfer.",
         "migration_stage4_title": "Tampilan",
-        "migration_stage4_desc": "Hasil migrasi akhir diproses dan dipublikasikan."
+        "migration_stage4_desc": "Hasil migrasi akhir diproses dan dipublikasikan.",
+        "magnetic_title": "Tips Bertahan Hidup: Resistensi Badai Magnet",
+        "magnetic_desc": "Persiapkan armada Anda untuk badai magnet kosmik. Pelajari cara meningkatkan resistensi dan melindungi kapal Anda.",
+        "magnetic_intro": "Badai magnet kosmik sangat merusak. Armada yang tidak siap akan mengalami gangguan parah. Untuk bernavigasi dengan aman, pedagang harus meningkatkan Resistensi Badai Magnet mereka.",
+        "magnetic_rules_hdr": "Memahami Resistensi",
+        "magnetic_rules_txt": "Resistensi Badai Magnet mewakili kemampuan armada Anda untuk menahan gangguan badai. Jika resistensi terlalu rendah, output kerusakan kapal induk berkurang dan risiko kerusakan kritis meningkat.",
+        "magnetic_increase_hdr": "Cara Meningkatkan Resistensi",
+        "magnetic_increase_txt": "1. Bangun dan tingkatkan Menara Perisai Elektromagnetik.\n2. Menetap di Pelabuhan Rumah tingkat yang lebih tinggi untuk bonus resistensi yang lebih besar.\n3. Buka hak istimewa Tiket Musim.\n4. Tukarkan Perangkat Anti-Magnet dengan anggota Guild Perdagangan.",
+        "magnetic_combat_hdr": "Resistensi dan Pertempuran",
+        "magnetic_combat_txt": "1. Dalam pertempuran solo, kerusakan dihitung berdasarkan resistensi dari pedagang pertama yang menyerang target.\n2. Saat berpartisipasi dalam reli, semua anggota menggunakan resistensi Pemimpin Reli untuk perhitungan pertempuran."
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

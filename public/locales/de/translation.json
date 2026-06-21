@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migration",
         "migration_stage3_desc": "Zugelassene Kandidaten bestätigen und vollziehen den Transfer.",
         "migration_stage4_title": "Anzeige",
-        "migration_stage4_desc": "Die endgültigen Migrationsergebnisse werden veröffentlicht."
+        "migration_stage4_desc": "Die endgültigen Migrationsergebnisse werden veröffentlicht.",
+        "magnetic_title": "Überlebens-Tipp: Magnetsturm-Resistenz",
+        "magnetic_desc": "Bereiten Sie Ihre Flotte auf kosmische Magnetstürme vor. Erfahren Sie, wie Sie Ihre Resistenz erhöhen.",
+        "magnetic_intro": "Kosmische Magnetstürme sind hochgradig zerstörerisch. Um sicher zu navigieren, müssen Händler ihre Magnetsturm-Resistenz durch Schutzstrukturen und Gilden-Kooperation verbessern.",
+        "magnetic_rules_hdr": "Verständnis der Resistenz",
+        "magnetic_rules_txt": "Resistenz minimiert Stürme. Bei unzureichender Resistenz sinkt der Schaden des Flaggschiffs und das Risiko für schweren Schaden steigt.",
+        "magnetic_increase_hdr": "Möglichkeiten zur Erhöhung",
+        "magnetic_increase_txt": "1. Bauen und verbessern Sie den elektromagnetischen Schildturm.\n2. Nutzen Sie höherstufige Heimatports.\n3. Schalten Sie Season-Pass-Privilegien frei.\n4. Tauschen Sie Anti-Magnet-Geräte in der Gilde aus.",
+        "magnetic_combat_hdr": "Resistenz im Kampf",
+        "magnetic_combat_txt": "1. Im Solokampf bestimmt der erste Angreifer die Resistenzstufe.\n2. Bei einer Versammlung gilt die Resistenz des Versammlungsleiters für die gesamte Gruppe."
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

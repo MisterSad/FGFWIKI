@@ -296,7 +296,16 @@
         "migration_stage3_title": "移民階段",
         "migration_stage3_desc": "通過審批的申請人確認並完成伺服器轉移。",
         "migration_stage4_title": "展示階段",
-        "migration_stage4_desc": "最終移民結果處理完畢並向全體公開。"
+        "migration_stage4_desc": "最終移民結果處理完畢並向全體公開。",
+        "magnetic_title": "生存指南：電磁風暴抵抗力",
+        "magnetic_desc": "讓您的艦隊做好應對宇宙電磁風暴的準備。了解如何提升抵抗力並保護您的飛船。",
+        "magnetic_intro": "宇宙中的電磁風暴極具破壞性。未做好準備的艦隊將遭受嚴重干擾。為了安全航行，开拓者必須通過防禦建築、特種設備以及公會協作來提升自身的電磁風暴抵抗力。",
+        "magnetic_rules_hdr": "認識抵抗力",
+        "magnetic_rules_txt": "電磁風暴抵抗力代表著艦隊抵禦風暴干擾的能力。若抵抗力不足，旗艦的傷害輸出將大幅下降，且承受重創的風險將顯著增加。",
+        "magnetic_increase_hdr": "提升抵抗力的方法",
+        "magnetic_increase_txt": "1. 建造並升級【電磁防護盾塔】。\n2. 遷入更高等級的母港以獲得更多抵抗力加成。\n3. 解鎖賽季通行證特權。\n4. 與商會成員互助交換【抗磁設備】。",
+        "magnetic_combat_hdr": "抵抗力與戰鬥",
+        "magnetic_combat_txt": "1. 單人戰鬥中，傷害與重創率根據首個對敵人造成傷害的开拓者的抵抗力計算。\n2. 參與集結時，全體成員均使用集結發起者的抵抗力進行計算。"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

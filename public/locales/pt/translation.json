@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migração",
         "migration_stage3_desc": "Candidatos aprovados confirmam e concluem a transferência de servidor.",
         "migration_stage4_title": "Exibição",
-        "migration_stage4_desc": "Os resultados finais da migração são processados e divulgados."
+        "migration_stage4_desc": "Os resultados finais da migração são processados e divulgados.",
+        "magnetic_title": "Dica de sobrevivência: Resistência a tempestades magnéticas",
+        "magnetic_desc": "Prepare sua frota para tempestades magnéticas cósmicas. Aprenda a aumentar sua resistência.",
+        "magnetic_intro": "Tempestades magnéticas cósmicas são destrutivas. Navegue em segurança usando defesas eletromagnéticas e cooperação da guilda.",
+        "magnetic_rules_hdr": "Entendendo a resistência",
+        "magnetic_rules_txt": "Uma baixa resistência reduz os danos causados por sua nau capitânia e aumenta a chance de sofrer avarias críticas.",
+        "magnetic_increase_hdr": "Formas de aumentar a resistência",
+        "magnetic_increase_txt": "1. Construa e melhore a Torre de Escudo Eletromagnético.\n2. Estabeleça-se em Portos de Origem de nível mais alto.\n3. Adquira os benefícios do passe de temporada.\n4. Troque dispositivos antimagnéticos com membros da guilda.",
+        "magnetic_combat_hdr": "Resistência no combate",
+        "magnetic_combat_txt": "1. Em combates solo, a resistência é baseada no primeiro jogador que ataca.\n2. Em ralis, a resistência aplicada ao grupo é a do líder do rali."
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",

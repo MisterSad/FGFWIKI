@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migrasi",
         "migration_stage3_desc": "Calon yang diluluskan mengesahkan dan menyelesaikan pemindahan.",
         "migration_stage4_title": "Paparan",
-        "migration_stage4_desc": "Keputusan migrasi akhir diproses dan didedahkan kepada umum."
+        "migration_stage4_desc": "Keputusan migrasi akhir diproses dan didedahkan kepada umum.",
+        "magnetic_title": "Tip Kelangsungan Hidup: Rintangan Ribut Magnetik",
+        "magnetic_desc": "Sediakan armada anda untuk ribut magnetik kosmik. Ketahui cara meningkatkan rintangan dan melindungi kapal anda.",
+        "magnetic_intro": "Ribut magnetik kosmik sangat merosakkan. Armada yang tidak bersedia akan mengalami gangguan teruk. Untuk mengemudi dengan selamat, pedagang mesti meningkatkan Rintangan Ribut Magnetik mereka.",
+        "magnetic_rules_hdr": "Memahami Rintangan",
+        "magnetic_rules_txt": "Rintangan Ribut Magnetik mewakili keupayaan armada anda untuk menahan gangguan ribut. Jika rintangan terlalu rendah, output kerosakan kapal utama berkurangan dan risiko kerosakan kritikal meningkat.",
+        "magnetic_increase_hdr": "Cara Meningkatkan Rintangan",
+        "magnetic_increase_txt": "1. Bina dan tingkatkan Menara Perisai Elektromagnetik.\n2. Menetap di Pelabuhan Rumah tahap yang lebih tinggi untuk bonus rintangan yang lebih besar.\n3. Buka keistimewaan Pas Musim.\n4. Tukar Peranti Anti-Magnet dengan ahli Persatuan Dagangan.",
+        "magnetic_combat_hdr": "Rintangan dan Pertempuran",
+        "magnetic_combat_txt": "1. Dalam pertempuran solo, kerosakan dikira berdasarkan rintangan pedagang pertama yang menyerang sasaran.\n2. Apabila menyertai rali, semua ahli menggunakan rintangan Ketua Rali untuk pengiraan pertempuran."
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",
