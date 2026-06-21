@@ -67,7 +67,8 @@
         "back": "TAKAISIN",
         "exclusive": "Eksklusiivinen",
         "new": "Uusi",
-        "update": "Päivittää"
+        "update": "Päivittää",
+        "read_news": "Lue uutinen"
     },
     "hero": {
         "title_prefix": "Hallitse",

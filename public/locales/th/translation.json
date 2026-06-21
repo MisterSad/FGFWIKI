@@ -67,7 +67,8 @@
         "back": "กลับ",
         "exclusive": "พิเศษ",
         "new": "ใหม่",
-        "update": "อัปเดต"
+        "update": "อัปเดต",
+        "read_news": "อ่านข่าวสาร"
     },
     "hero": {
         "title_prefix": "ปริญญาโท",

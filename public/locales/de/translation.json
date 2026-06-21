@@ -67,7 +67,8 @@
         "back": "ZURÜCK",
         "exclusive": "Exklusiv",
         "new": "Neu",
-        "update": "Aktualisieren"
+        "update": "Aktualisieren",
+        "read_news": "News lesen"
     },
     "hero": {
         "title_prefix": "Meistere die",

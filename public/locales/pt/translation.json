@@ -67,7 +67,8 @@
         "back": "VOLTAR",
         "exclusive": "Exclusivo",
         "new": "Novo",
-        "update": "Atualizar"
+        "update": "Atualizar",
+        "read_news": "Ler notícia"
     },
     "hero": {
         "title_prefix": "Domina a",

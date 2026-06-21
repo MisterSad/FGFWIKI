@@ -67,7 +67,8 @@
         "back": "INDIETRO",
         "exclusive": "Esclusivo",
         "new": "Nuovo",
-        "update": "Aggiornamento"
+        "update": "Aggiornamento",
+        "read_news": "Leggi notizia"
     },
     "hero": {
         "title_prefix": "Padroneggia la",

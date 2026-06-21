@@ -67,7 +67,8 @@
         "back": "ATRÁS",
         "exclusive": "Exclusivo",
         "new": "Nuevo",
-        "update": "Actualizar"
+        "update": "Actualizar",
+        "read_news": "Leer noticia"
     },
     "hero": {
         "title_prefix": "Domina la",

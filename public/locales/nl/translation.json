@@ -67,7 +67,8 @@
         "back": "RUG",
         "exclusive": "Exclusief",
         "new": "Nieuw",
-        "update": "Update"
+        "update": "Update",
+        "read_news": "Nieuws lezen"
     },
     "hero": {
         "title_prefix": "Beheers de",

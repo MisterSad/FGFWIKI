@@ -67,7 +67,8 @@
         "back": "返回",
         "exclusive": "专属",
         "new": "新",
-        "update": "更新"
+        "update": "更新",
+        "read_news": "阅读新闻"
     },
     "hero": {
         "title_prefix": "征服",

@@ -67,7 +67,8 @@
         "back": "TILLBAKA",
         "exclusive": "Exklusiv",
         "new": "Nytt",
-        "update": "Uppdatera"
+        "update": "Uppdatera",
+        "read_news": "Läs nyhet"
     },
     "hero": {
         "title_prefix": "Bemästra",

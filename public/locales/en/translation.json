@@ -67,7 +67,8 @@
         "back": "BACK",
         "exclusive": "Exclusive",
         "new": "New",
-        "update": "Update"
+        "update": "Update",
+        "read_news": "Read news"
     },
     "hero": {
         "title_prefix": "Master the",

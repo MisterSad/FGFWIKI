@@ -67,7 +67,8 @@
         "back": "GERİ",
         "exclusive": "Özel",
         "new": "Yeni",
-        "update": "Güncelleme"
+        "update": "Güncelleme",
+        "read_news": "Haberi oku"
     },
     "hero": {
         "title_prefix": "Ustalaşın",

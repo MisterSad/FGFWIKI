@@ -67,7 +67,8 @@
         "back": "TILBAKE",
         "exclusive": "Eksklusiv",
         "new": "Ny",
-        "update": "Oppdater"
+        "update": "Oppdater",
+        "read_news": "Les nyhet"
     },
     "hero": {
         "title_prefix": "Mestre",
