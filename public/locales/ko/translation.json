@@ -67,7 +67,8 @@
         "back": "뒤로",
         "exclusive": "독점",
         "new": "신규",
-        "update": "업데이트"
+        "update": "업데이트",
+        "read_news": "뉴스 읽기"
     },
     "hero": {
         "title_prefix": "정복하라",

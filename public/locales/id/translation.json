@@ -67,7 +67,8 @@
         "back": "KEMBALI",
         "exclusive": "Eksklusif",
         "new": "Baru",
-        "update": "Memperbarui"
+        "update": "Memperbarui",
+        "read_news": "Baca berita"
     },
     "hero": {
         "title_prefix": "Kuasai",

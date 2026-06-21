@@ -67,7 +67,8 @@
         "back": "戻る",
         "exclusive": "限定",
         "new": "NEW",
-        "update": "アップデート"
+        "update": "アップデート",
+        "read_news": "ニュースを読む"
     },
     "hero": {
         "title_prefix": "征服せよ",

@@ -67,7 +67,8 @@
         "back": "MẶT SAU",
         "exclusive": "Loại trừ",
         "new": "Mới",
-        "update": "Cập nhật"
+        "update": "Cập nhật",
+        "read_news": "Đọc tin tức"
     },
     "hero": {
         "title_prefix": "Làm chủ",

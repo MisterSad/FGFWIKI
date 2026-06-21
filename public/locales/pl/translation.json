@@ -67,7 +67,8 @@
         "back": "WSTECZ",
         "exclusive": "Ekskluzywne",
         "new": "Nowość",
-        "update": "Aktualizacja"
+        "update": "Aktualizacja",
+        "read_news": "Czytaj aktualności"
     },
     "hero": {
         "title_prefix": "Opanuj",

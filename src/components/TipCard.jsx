@@ -125,7 +125,7 @@ export default function TipCard({ tip }) {
                     gap: '0.8rem',
                     opacity: 0.8
                 }}>
-                    {t('hero.cta', 'DETAILS')}
+                    {t(tip.category === 'news' ? 'common.read_news' : 'hero.cta', 'DETAILS')}
                     <span style={{ fontSize: '1.2em' }}>→</span>
                 </div>
             )}

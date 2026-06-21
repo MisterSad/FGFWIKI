@@ -67,7 +67,8 @@
         "back": "RETOUR",
         "exclusive": "Exclusif",
         "new": "Nouv.",
-        "update": "Mise à jour"
+        "update": "Mise à jour",
+        "read_news": "Lire l'actualité"
     },
     "hero": {
         "title_prefix": "Maîtrisez la",

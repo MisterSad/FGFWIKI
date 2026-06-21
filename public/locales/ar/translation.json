@@ -67,7 +67,8 @@
         "back": "خلف",
         "exclusive": "حصري",
         "new": "جديد",
-        "update": "تحديث"
+        "update": "تحديث",
+        "read_news": "اقرأ الخبر"
     },
     "hero": {
         "title_prefix": "إتقان",

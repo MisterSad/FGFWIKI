@@ -67,7 +67,8 @@
         "back": "後退",
         "exclusive": "獨家的",
         "new": "新",
-        "update": "更新"
+        "update": "更新",
+        "read_news": "閱讀新聞"
     },
     "hero": {
         "title_prefix": "掌握",
