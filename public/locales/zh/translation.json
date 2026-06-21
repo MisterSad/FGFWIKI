@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "充分利用 24 小时第二施工队列。",
         "build_queue_trick_overview_hdr": "队列扩展技巧",
         "build_queue_trick_overview_txt": "二级建造队列需要 500 银币解锁，持续时间为 24 小时。即使项目需要多天时间，在此窗口关闭之前启动的任何升级都将继续完成，从而使您能够最大限度地发挥临时队列的价值。",
-        "credit_snakebite": "由 Snakebite（服务器＃1003）编译的策略。"
+        "credit_snakebite": "由 Snakebite（服务器＃1003）编译的策略。",
+        "star_of_guild_title": "即将推出：公会之星",
+        "star_of_guild_desc": "了解即将于6月28日在服务器1-16开启的公会之星锦标赛。与您的商业公会一起晋级，提升奖励。",
+        "star_of_guild_intro": "全新每周竞争活动“公会之星”将于6月28日在服务器1-16开启！与您的公会成员携手合作，赢取专属奖励，彰显商业实力。",
+        "star_of_guild_qualify_hdr": "晋级规则",
+        "star_of_guild_qualify_txt": "每周一 00:00 UTC，服务器内战力前10的商业公会即可晋级。晋级完成后，当周排行榜锁定。",
+        "star_of_guild_rewards_hdr": "活跃与奖励",
+        "star_of_guild_rewards_txt": "公会整周的活跃度和表现将决定最终奖励。所有公会成员共享基础奖励，而指定的“公会之星”的卓越表现能进一步提升总奖励。",
+        "star_of_guild_leader_hdr": "评选荣誉商人",
+        "star_of_guild_leader_txt": "公会会长将有权任命一名杰出成员为“荣誉商人”，代表公会的荣耀与成功。"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",

@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Wykorzystaj w pełni 24-godzinną drugą kolejkę budowy.",
         "build_queue_trick_overview_hdr": "Sztuczka z wydłużaniem kolejki",
         "build_queue_trick_overview_txt": "Kolejka budowy dodatkowej, odblokowana za 500 Kredytów, trwa 24 godziny. Każda aktualizacja rozpoczęta przed zamknięciem tego okna zostanie ukończona, nawet jeśli projekt wymaga wielu dni, co pozwala zmaksymalizować wartość kolejki tymczasowej.",
-        "credit_snakebite": "Strategia opracowana przez Snakebite (serwer nr 1003)."
+        "credit_snakebite": "Strategia opracowana przez Snakebite (serwer nr 1003).",
+        "star_of_guild_title": "Nowa funkcja: Gwiazda Gildii",
+        "star_of_guild_desc": "Poznaj nadchodzący turniej Gwiazdy Gildii, który rusza 28 czerwca na serwerach 1–16. Zakwalifikuj się ze swoją gildią handlową i zwiększ nagrody.",
+        "star_of_guild_intro": "Nowe tygodniowe wydarzenie rywalizacyjne, Gwiazda Gildii, startuje 28 czerwca na serwerach 1-16! Współpracuj z członkami gildii, aby zdobywać ekskluzywne bonusy.",
+        "star_of_guild_qualify_hdr": "Zasady kwalifikacji",
+        "star_of_guild_qualify_txt": "W każdy poniedziałek o 00:00 UTC kwalifikuje się 10 najlepszych gildii handlowych na serwerze pod względem mocy. Po kwalifikacji rankingi są blokowane na cały tydzień.",
+        "star_of_guild_rewards_hdr": "Aktywność i nagrody",
+        "star_of_guild_rewards_txt": "Wyniki gildii i aktywny udział w ciągu tygodnia decydują o nagrodach. Nagrody bazowe są dzielone między wszystkich członków, ale wysiłki wyznaczonych Gwiazd Gildii mogą zwiększyć łączną pulę.",
+        "star_of_guild_leader_hdr": "Wybór Honorowego Handlarza",
+        "star_of_guild_leader_txt": "Lider gildii ma prawo wyznaczyć jednego wyróżniającego się członka jako 'Honorowego Handlarza' reprezentującego sukces gildii."
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

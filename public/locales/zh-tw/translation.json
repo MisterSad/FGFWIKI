@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "充分利用 24 小時第二施工隊列。",
         "build_queue_trick_overview_hdr": "隊列擴充技巧",
         "build_queue_trick_overview_txt": "二級建造隊列需要 500 銀幣解鎖，持續時間為 24 小時。即使專案需要多天時間，在此視窗關閉之前啟動的任何升級都會繼續完成，使您能夠最大限度地發揮臨時佇列的價值。",
-        "credit_snakebite": "由 Snakebite（伺服器＃1003）編譯的策略。"
+        "credit_snakebite": "由 Snakebite（伺服器＃1003）編譯的策略。",
+        "star_of_guild_title": "即將推出：公會之星",
+        "star_of_guild_desc": "了解即將於6月28日在伺服器1-16開啟的公會之星錦標賽。與您的商業公會一起晉級，提升獎勵。",
+        "star_of_guild_intro": "全新每周競爭活動“公會之星”將於6月28日在伺服器1-16開啟！與您的公會成員攜手合作，贏取專屬獎勵，彰顯商業實力。",
+        "star_of_guild_qualify_hdr": "晉級規則",
+        "star_of_guild_qualify_txt": "每周一 00:00 UTC，伺服器內戰力前10的商業公會即可晉級。晉級完成後，當周排行榜鎖定。",
+        "star_of_guild_rewards_hdr": "活躍與獎勵",
+        "star_of_guild_rewards_txt": "公會整周的活躍度和表現將決定最終獎勵。所有公會成員共享基礎獎勵，而指定的“公會之星”的卓越表現能進一步提升總獎勵。",
+        "star_of_guild_leader_hdr": "評選榮譽商人",
+        "star_of_guild_leader_txt": "公會會長將有權任命一名傑出成員為“榮譽商人”，代表公會的榮耀與成功。"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

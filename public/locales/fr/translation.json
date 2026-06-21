@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Profitez au maximum de la file de construction secondaire temporaire de 24h.",
         "build_queue_trick_overview_hdr": "Astuce d'Extension de File",
         "build_queue_trick_overview_txt": "La file de construction secondaire, débloquée pour 500 crédits, dure 24 heures. Tout projet démarré avant la fin de ce délai se poursuivra jusqu'à son terme, même s'il nécessite plusieurs jours, ce qui permet de maximiser le rendement de la file temporaire.",
-        "credit_snakebite": "Stratégie compilée par Snakebite (Serveur #1003)."
+        "credit_snakebite": "Stratégie compilée par Snakebite (Serveur #1003).",
+        "star_of_guild_title": "Nouvelle fonctionnalité : Étoile de la guilde",
+        "star_of_guild_desc": "Découvrez le prochain tournoi de l'Étoile de la guilde qui débute le 28 juin sur les serveurs 1 à 16. Qualifiez-vous avec votre guilde commerciale et boostez vos récompenses.",
+        "star_of_guild_intro": "Un nouvel événement compétitif hebdomadaire, l'Étoile de la guilde, débute le 28 juin sur les serveurs 1 à 16 ! Collaborez avec les membres de votre guilde pour gagner des bonus exclusifs et prouver votre puissance commerciale.",
+        "star_of_guild_qualify_hdr": "Règles de qualification",
+        "star_of_guild_qualify_txt": "Chaque lundi à 00:00 UTC, les 10 meilleures guildes commerciales du serveur classées par puissance seront qualifiées. Une fois qualifiées, les classements sont verrouillés pour la semaine.",
+        "star_of_guild_rewards_hdr": "Activité et récompenses",
+        "star_of_guild_rewards_txt": "Les performances et la participation globale de la guilde déterminent les récompenses. Les récompenses de base sont partagées, mais les performances des étoiles désignées peuvent multiplier les prix totaux.",
+        "star_of_guild_leader_hdr": "Sélection du commerçant honorable",
+        "star_of_guild_leader_txt": "Le chef de guilde aura l'autorité de nommer un membre exceptionnel comme 'Commerçant honorable' pour symboliser le succès de la guilde."
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

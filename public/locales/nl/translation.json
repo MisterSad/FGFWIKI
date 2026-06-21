@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Maak optimaal gebruik van de 24-uurs wachtrij voor tweede bouwwerkzaamheden.",
         "build_queue_trick_overview_hdr": "Truc voor wachtrij-extensie",
         "build_queue_trick_overview_txt": "De secundaire bouwwachtrij, ontgrendeld voor 500 credits, duurt 24 uur. Elke upgrade die wordt gestart voordat dit venster wordt gesloten, wordt voltooid, zelfs als het project meerdere dagen in beslag neemt, waardoor u de waarde van de tijdelijke wachtrij kunt maximaliseren.",
-        "credit_snakebite": "Strategie samengesteld door Snakebite (Server #1003)."
+        "credit_snakebite": "Strategie samengesteld door Snakebite (Server #1003).",
+        "star_of_guild_title": "Nieuwe functie: Ster van het Gilde",
+        "star_of_guild_desc": "Ontdek het komende Ster van het Gilde-toernooi dat op 28 juni start voor servers 1-16. Kwalificeer je met je handelsgilde en verhoog de beloningen.",
+        "star_of_guild_intro": "Een nieuw competitief wekelijks evenement, Ster van het Gilde, start op 28 juni voor servers 1 tot 16! Werk samen met je gildeleden om exclusieve bonussen te verdienen.",
+        "star_of_guild_qualify_hdr": "Kwalificatieregels",
+        "star_of_guild_qualify_txt": "Elke maandag om 00:00 UTC kwalificeren de top 10 handelsgilden op de server op basis van kracht zich. Zodra de kwalificatie is voltooid, worden de rangschikkingen voor de week vergrendeld.",
+        "star_of_guild_rewards_hdr": "Activiteit & Beloningen",
+        "star_of_guild_rewards_txt": "Gilde-prestaties en actieve deelname tijdens de week bepalen de beloningen. Basisbeloningen worden gedeeld door alle leden, maar de inspanningen van aangewezen Gildesterren kunnen de totale prijzen verhogen.",
+        "star_of_guild_leader_hdr": "Selectie van de Eervolle Handelaar",
+        "star_of_guild_leader_txt": "De gildeleider heeft de bevoegdheid om een uitstekend lid te benoemen tot 'Eervolle Handelaar' om het succes van het gilde te vertegenwoordigen."
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

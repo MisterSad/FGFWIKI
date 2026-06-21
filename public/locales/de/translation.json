@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Nutzen Sie die 24-Stunden-Warteschlange für den zweiten Bau optimal aus.",
         "build_queue_trick_overview_hdr": "Trick zur Warteschlangenverlängerung",
         "build_queue_trick_overview_txt": "Die sekundäre Bauwarteschlange, die für 500 Credits freigeschaltet wird, hat eine Dauer von 24 Stunden. Jedes vor dem Schließen dieses Fensters eingeleitete Upgrade wird auch dann abgeschlossen, wenn das Projekt mehrere Tage in Anspruch nimmt, sodass Sie den Wert der temporären Warteschlange maximieren können.",
-        "credit_snakebite": "Strategie zusammengestellt von Snakebite (Server #1003)."
+        "credit_snakebite": "Strategie zusammengestellt von Snakebite (Server #1003).",
+        "star_of_guild_title": "Kommendes Feature: Star der Gilde",
+        "star_of_guild_desc": "Erfahren Sie mehr über das kommende Gildenstern-Turnier, das am 28. Juni auf den Servern 1–16 startet. Qualifizieren Sie sich mit Ihrer Handelsgilde und erhöhen Sie die Belohnungen.",
+        "star_of_guild_intro": "Ein neues kompetitives wöchentliches Event, Star der Gilde, startet am 28. Juni auf den Servern 1 bis 16! Arbeiten Sie mit Ihren Gildenmitgliedern zusammen, um exklusive Boni zu verdienen.",
+        "star_of_guild_qualify_hdr": "Qualifikationsregeln",
+        "star_of_guild_qualify_txt": "Jeden Montag um 00:00 Uhr UTC qualifizieren sich die 10 besten Handelsgilden des Servers nach Macht. Nach der Qualifikation sind die Ranglisten für die Woche gesperrt.",
+        "star_of_guild_rewards_hdr": "Aktivität & Belohnungen",
+        "star_of_guild_rewards_txt": "Die Gildenleistung und die aktive Teilnahme bestimmen die Belohnungen. Basisbelohnungen werden geteilt, aber die Bemühungen der Gildensterne können die Gesamtpreise vervielfachen.",
+        "star_of_guild_leader_hdr": "Wahl des ehrenhaften Händlers",
+        "star_of_guild_leader_txt": "Der Gildenleiter ist berechtigt, ein herausragendes Mitglied als 'Ehrenhaften Händler' zu ernennen, um den Erfolg der Gilde zu repräsentieren."
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

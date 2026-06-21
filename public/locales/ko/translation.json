@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "24시간 두 번째 건설 대기열을 최대한 활용하세요.",
         "build_queue_trick_overview_hdr": "대기열 확장 트릭",
         "build_queue_trick_overview_txt": "500크레딧으로 잠금 해제되는 보조 건설 대기열의 지속 시간은 24시간입니다. 이 창이 닫히기 전에 시작된 모든 업그레이드는 프로젝트에 며칠이 소요되더라도 계속해서 완료되므로 임시 대기열의 가치를 극대화할 수 있습니다.",
-        "credit_snakebite": "Snakebite(서버 #1003)가 편집한 전략입니다."
+        "credit_snakebite": "Snakebite(서버 #1003)가 편집한 전략입니다.",
+        "star_of_guild_title": "예정된 기능: 길드의 별",
+        "star_of_guild_desc": "6월 28일부터 서버 1-16에서 시작되는 길드의 별 토너먼트를 확인해보세요. 상업 길드와 함께 예선을 통과하고 보상을 높이세요.",
+        "star_of_guild_intro": "신규 주간 경쟁 이벤트 '길드의 별'이 6월 28일 서버 1~16에서 시작됩니다! 길드원과 협력하여 독점 보너스를 획득하고 상업적 위상을 입증하세요.",
+        "star_of_guild_qualify_hdr": "예선 룰",
+        "star_of_guild_qualify_txt": "매주 월요일 00:00 UTC 기준, 서버 내 전투력 상위 10개 상업 길드가 예선을 통과합니다. 자격이 부여되면 해당 주간의 랭킹이 고정됩니다.",
+        "star_of_guild_rewards_hdr": "활동 & 보상",
+        "star_of_guild_rewards_txt": "길드의 한 주간 성과 및 활동량에 따라 보상이 결정됩니다. 기본 보상은 모든 길드원이 공유하며, 지정된 '길드 스타'의 활약에 따라 전체 상금이 배가됩니다.",
+        "star_of_guild_leader_hdr": "명예 상인 선정",
+        "star_of_guild_leader_txt": "길드장은 길드의 성공을 대표할 우수 멤버 1명을 '명예 상인'으로 지명할 수 있는 권한을 가집니다."
     },
     "hero_data": {
         "h1_notes": "이온 회전에 필수. 거대한 치유와 팀 전체 지능 버프.",

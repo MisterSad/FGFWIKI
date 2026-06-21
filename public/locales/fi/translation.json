@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Hyödynnä 24 tunnin toinen rakennusjono.",
         "build_queue_trick_overview_hdr": "Jonon laajennustemppu",
         "build_queue_trick_overview_txt": "Toissijainen rakennusjono, joka on avattu 500 krediittiä varten, kestää 24 tuntia. Kaikki päivitykset, jotka aloitetaan ennen tämän ikkunan sulkeutumista, etenevät loppuun, vaikka projekti vaatisi useita päiviä, jolloin voit maksimoida väliaikaisen jonon arvon.",
-        "credit_snakebite": "Strategian koonnut Snakebite (palvelin #1003)."
+        "credit_snakebite": "Strategian koonnut Snakebite (palvelin #1003).",
+        "star_of_guild_title": "Uusi ominaisuus: Killan tähti",
+        "star_of_guild_desc": "Tutustu tulevaan Killan tähti -turnaukseen, joka alkaa 28. kesäkuuta palvelimilla 1–16. Karsiudu kauppakiltasi kanssa ja kasvata palkintoja.",
+        "star_of_guild_intro": "Uusi viikoittainen kilpailutapahtuma, Killan tähti, alkaa 28. kesäkuuta palvelimilla 1–16! Tee yhteistyötä kiltalaistesi kanssa ansaitaksesi eksklusiivisia bonuksia.",
+        "star_of_guild_qualify_hdr": "Karsintasäännöt",
+        "star_of_guild_qualify_txt": "Joka maanantai klo 00:00 UTC palvelimen 10 parasta kauppakiltaa tehon mukaan karsiutuu. Karsinnan jälkeen sijoitukset lukitaan viikoksi.",
+        "star_of_guild_rewards_hdr": "Aktiivisuus ja palkinnot",
+        "star_of_guild_rewards_txt": "Killan suoriutuminen ja aktiivisuus viikon aikana määrittävät palkinnot. Peruspalkinnot jaetaan kaikille jäsenille, mutta nimettyjen kiltatähtien suoritukset voivat lisätä kokonaispalkintoja.",
+        "star_of_guild_leader_hdr": "Kunnianarvoisan kauppiaan valinta",
+        "star_of_guild_leader_txt": "Killan johtajalla on valtuudet valita yksi ansioitunut jäsen 'Kunnianarvoisaksi kauppiaaksi' edustamaan killan menestystä."
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Make the most of the 24-hour second construction queue.",
         "build_queue_trick_overview_hdr": "Queue Extension Trick",
         "build_queue_trick_overview_txt": "The secondary construction queue, unlocked for 500 Credits, has a 24-hour duration. Any upgrade initiated before this window closes will proceed to completion even if the project requires multiple days, allowing you to maximize the value of the temporary queue.",
-        "credit_snakebite": "Strategy compiled by Snakebite (Server #1003)."
+        "credit_snakebite": "Strategy compiled by Snakebite (Server #1003).",
+        "star_of_guild_title": "Upcoming Feature: Star of the Guild",
+        "star_of_guild_desc": "Discover the upcoming Guild Star tournament launching on June 28 for Servers 1-16. Qualify with your commerce guild, complete challenges, and boost rewards.",
+        "star_of_guild_intro": "A new competitive weekly event, Star of the Guild, is launching on June 28 for Servers 1 to 16! Work together with your guild members to earn exclusive bonuses and prove your commercial power.",
+        "star_of_guild_qualify_hdr": "Qualification Rules",
+        "star_of_guild_qualify_txt": "Every Monday at 00:00 UTC, the top 10 Commerce Guilds on the server ranked by power will qualify. Once qualification is complete, rankings are locked for the week.",
+        "star_of_guild_rewards_hdr": "Activity & Rewards",
+        "star_of_guild_rewards_txt": "Guild performance and overall active participation during the week determine the rewards. Baseline rewards are shared by all members, but individual efforts of designated Guild Stars can multiply the total prizes.",
+        "star_of_guild_leader_hdr": "Honorable Trader Selection",
+        "star_of_guild_leader_txt": "The guild leader will have the authority to appoint one outstanding member as the 'Honorable Trader' to represent the guild's success."
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

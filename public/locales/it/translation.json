@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Sfrutta al massimo la seconda coda di costruzione di 24 ore.",
         "build_queue_trick_overview_hdr": "Trucco per l'estensione della coda",
         "build_queue_trick_overview_txt": "La coda di costruzione secondaria, sbloccata per 500 Crediti, ha una durata di 24 ore. Qualsiasi aggiornamento avviato prima della chiusura di questa finestra verrà completato anche se il progetto richiede più giorni, consentendoti di massimizzare il valore della coda temporanea.",
-        "credit_snakebite": "Strategia compilata da Snakebite (Server #1003)."
+        "credit_snakebite": "Strategia compilata da Snakebite (Server #1003).",
+        "star_of_guild_title": "Prossima funzione: Stella della Gilda",
+        "star_of_guild_desc": "Scopri il prossimo torneo Stella della Gilda in arrivo il 28 giugno per i server 1-16. Qualificati con la tua gilda commerciale e aumenta i premi.",
+        "star_of_guild_intro": "Un nuovo evento competitivo settimanale, Stella della Gilda, inizierà il 28 giugno per i server 1-16! Collabora con i membri per ottenere bonus esclusivi.",
+        "star_of_guild_qualify_hdr": "Regole di qualificazione",
+        "star_of_guild_qualify_txt": "Ogni lunedì alle 00:00 UTC, si qualificheranno le prime 10 gilde commerciali in base alla potenza. Una vez qualificate, le classifiche sono bloccate per la settimana.",
+        "star_of_guild_rewards_hdr": "Attività e ricompense",
+        "star_of_guild_rewards_txt": "Le prestazioni della gilda e la partecipazione attiva determinano le ricompense. Le ricompense di base sono condivise, ma gli sforzi delle Stelle della Gilda designate possono moltiplicare i premi totali.",
+        "star_of_guild_leader_hdr": "Selezione del mercante d'onore",
+        "star_of_guild_leader_txt": "Il capo della gilda avrà l'autorità di nominare un membro eccezionale come 'Mercante d'onore' per rappresentare il successo della gilda."
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

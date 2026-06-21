@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "24 saatlik ikinci inşaat kuyruğundan en iyi şekilde yararlanın.",
         "build_queue_trick_overview_hdr": "Kuyruk Uzatma Hilesi",
         "build_queue_trick_overview_txt": "500 Kredi karşılığında açılan ikincil inşaat kuyruğunun süresi 24 saattir. Bu pencere kapanmadan önce başlatılan herhangi bir yükseltme, proje birden fazla gün gerektirse bile tamamlanmaya devam edecek ve böylece geçici kuyruğun değerini en üst düzeye çıkarmanıza olanak tanıyacaktır.",
-        "credit_snakebite": "Snakebite tarafından derlenen strateji (Sunucu #1003)."
+        "credit_snakebite": "Snakebite tarafından derlenen strateji (Sunucu #1003).",
+        "star_of_guild_title": "Yeni Özellik: Lonca Yıldızı",
+        "star_of_guild_desc": "Sunucular 1-16 için 28 Haziran'da başlayacak olan Lonca Yıldızı turnuvasını keşfedin. Ticaret loncanızla katılın ve ödülleri artırın.",
+        "star_of_guild_intro": "Yeni bir rekabetçi haftalık etkinlik olan Lonca Yıldızı, 28 Haziran'da 1-16 sunucularında başlıyor! Özel bonuslar kazanmak için lonca üyelerinizle iş birliği yapın.",
+        "star_of_guild_qualify_hdr": "Katılım Kuralları",
+        "star_of_guild_qualify_txt": "Her Pazartesi saat 00:00 UTC'de sunucudaki güç sıralamasına göre ilk 10 Ticaret Loncası katılmaya hak kazanır. Katılım gerçekleştikten sonra sıralamalar o hafta için kilitlenir.",
+        "star_of_guild_rewards_hdr": "Aktivite & Ödüller",
+        "star_of_guild_rewards_txt": "Hafta boyunca lonca performansı ve aktif katılım ödülleri belirler. Temel ödüller tüm üyeler tarafından paylaşılır, ancak belirlenen Lonca Yıldızlarının çabaları toplam ödülleri katlayabilir.",
+        "star_of_guild_leader_hdr": "Onursal Tüccar Seçimi",
+        "star_of_guild_leader_txt": "Lonca lideri, loncanın başarısını temsil etmek üzere bir seçkin üyeyi 'Onursal Tüccar' olarak atama yetkisine sahip olacaktır."
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

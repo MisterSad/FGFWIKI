@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Få ut det mesta av den 24-timmars andra byggkön.",
         "build_queue_trick_overview_hdr": "Trick för köförlängning",
         "build_queue_trick_overview_txt": "Den sekundära byggkön, upplåst för 500 poäng, har en varaktighet på 24 timmar. Alla uppgraderingar som initieras innan detta fönster stängs kommer att fortsätta till slutförandet även om projektet kräver flera dagar, vilket gör att du kan maximera värdet på den tillfälliga kön.",
-        "credit_snakebite": "Strategi sammanställd av Snakebite (Server #1003)."
+        "credit_snakebite": "Strategi sammanställd av Snakebite (Server #1003).",
+        "star_of_guild_title": "Ny funktion: Gillestjärna",
+        "star_of_guild_desc": "Upptäck den kommende Gillestjärna-turneringen som startar 28 juni för servrar 1–16. Kvalificera dig med ditt handelsgille och öka belöningarna.",
+        "star_of_guild_intro": "Ett nytt tävlingsinriktat veckoevenemang, Gillestjärna, startar 28 juni för servrar 1 till 16! Samarbeta med dina gillemedlemmar för att tjäna exklusiva bonuser.",
+        "star_of_guild_qualify_hdr": "Kvalificeringsregler",
+        "star_of_guild_qualify_txt": "Varje måndag kl. 00:00 UTC kommer de 10 bästa handelsgillena på servern baserat på makt att kvalificera sig. När kvalificeringen är klar låses rankningen för veckan.",
+        "star_of_guild_rewards_hdr": "Aktivitet & Belöningar",
+        "star_of_guild_rewards_txt": "Gillets prestation och aktiva deltagande under veckan avgör belöningarna. Basbelöningar delas av alla medlemmar, men insatserna från utsedda gillesstjärnor kan öka de totala priserna.",
+        "star_of_guild_leader_hdr": "Val av Hedershandlare",
+        "star_of_guild_leader_txt": "Gillesledaren har befogenhet att utse en framstående medlem till 'Hedershandlare' för att representera gillets framgång."
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",

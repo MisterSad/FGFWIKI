@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Aproveite ao máximo a segunda fila de construção de 24 horas.",
         "build_queue_trick_overview_hdr": "Truque de extensão de fila",
         "build_queue_trick_overview_txt": "A fila de construção secundária, desbloqueada por 500 créditos, tem duração de 24 horas. Qualquer atualização iniciada antes do fechamento desta janela será concluída mesmo que o projeto exija vários dias, permitindo maximizar o valor da fila temporária.",
-        "credit_snakebite": "Estratégia compilada por Snakebite (Servidor #1003)."
+        "credit_snakebite": "Estratégia compilada por Snakebite (Servidor #1003).",
+        "star_of_guild_title": "Nova função: Estrela da Guilda",
+        "star_of_guild_desc": "Descubra o próximo torneio Estrela da Guilda que começa em 28 de junho para os servidores 1-16. Qualifique-se com sua guilda comercial e aumente as recompensas.",
+        "star_of_guild_intro": "Um novo evento semanal competitivo, Estrela da Guilda, será lançado em 28 de junho para os servidores 1 a 16! Trabalhe com sua guilda para ganhar bônus.",
+        "star_of_guild_qualify_hdr": "Regras de qualificação",
+        "star_of_guild_qualify_txt": "Toda segunda-feira às 00:00 UTC, as 10 melhores guildas comerciais do servidor por poder se qualificarão. Após a qualificação, os rankings são bloqueados para a semana.",
+        "star_of_guild_rewards_hdr": "Atividade & Recompensas",
+        "star_of_guild_rewards_txt": "O desempenho da guilda e a participação ativa determinam as recompensas. As recompensas básicas são compartilhadas, mas o esforço das Estrelas da Guilda pode multiplicar os prêmios totais.",
+        "star_of_guild_leader_hdr": "Seleção de comerciante honorário",
+        "star_of_guild_leader_txt": "O líder da guilda terá autoridade para nomear um membro de destaque como 'Comerciante Honorário' para representar o sucesso da guilda."
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",
