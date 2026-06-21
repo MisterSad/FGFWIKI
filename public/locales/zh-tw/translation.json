@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "認識抵抗力",
         "magnetic_rules_txt": "電磁風暴抵抗力代表著艦隊抵禦風暴干擾的能力。若抵抗力不足，旗艦的傷害輸出將大幅下降，且承受重創的風險將顯著增加。",
         "magnetic_increase_hdr": "提升抵抗力的方法",
-        "magnetic_increase_txt": "1. 建造並升級【電磁防護盾塔】。\n2. 遷入更高等級的母港以獲得更多抵抗力加成。\n3. 解鎖賽季通行證特權。\n4. 與商會成員互助交換【抗磁設備】。",
+        "magnetic_increase_txt": "為了在宇宙電磁風暴的強烈干擾下生存，开拓者必須通過以下途徑提升抵抗力：",
         "magnetic_combat_hdr": "抵抗力與戰鬥",
-        "magnetic_combat_txt": "1. 單人戰鬥中，傷害與重創率根據首個對敵人造成傷害的开拓者的抵抗力計算。\n2. 參與集結時，全體成員均使用集結發起者的抵抗力進行計算。"
+        "magnetic_combat_txt": "艦隊抵抗力在不同的交戰策略下，對戰鬥結果的計算規則如下：",
+        "magnetic_method1_title": "電磁防護盾塔",
+        "magnetic_method1_desc": "建造並升級【電磁防護盾塔】。",
+        "magnetic_method2_title": "母港進駐",
+        "magnetic_method2_desc": "遷入更高等級的母港以獲得更多抵抗力加成。",
+        "magnetic_method3_title": "賽季通行證特權",
+        "magnetic_method3_desc": "解鎖賽季通行證特權。",
+        "magnetic_method4_title": "商會互助協作",
+        "magnetic_method4_desc": "與商會成員互助交換【抗磁設備】。",
+        "magnetic_combat1_title": "單人遭遇戰",
+        "magnetic_combat1_desc": "單人戰鬥中，傷害與重創率根據首個對敵人造成傷害的开拓者的抵抗力計算。",
+        "magnetic_combat2_title": "集結聯合行動",
+        "magnetic_combat2_desc": "參與集結時，全體成員均使用集結發起者的抵抗力進行計算。"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Sietokyvyn ymmärtäminen",
         "magnetic_rules_txt": "Magneettisen myrskyn sietokyky kertoo laivastosi kyvystä sietää myrskyhäiriöitä. Jos sietokykysi on liian alhainen, lippulaivasi vauriotulokset laskevat ja kriittisten vaurioiden riski kasvaa merkittävästi.",
         "magnetic_increase_hdr": "Tapoja lisätä sietokykyä",
-        "magnetic_increase_txt": "1. Rakenna ja päivitä sähkömagneettinen kilpitorni.\n2. Asetu korkeamman tason kotisatamaan saadaksesi suurempia sietokykybonuksia.\n3. Avaa kausipassin etuoikeudet.\n4. Vaihda magneettisuutta estäviä laitteita kauppakillan jäsenten kanssa.",
+        "magnetic_increase_txt": "Selviytyäkseen kosmisista magneettisista myrskyistä kauppiaiden on lisättävä sietokykyään seuraavilla tavoilla:",
         "magnetic_combat_hdr": "Sietokyky ja taistelu",
-        "magnetic_combat_txt": "1. Yksintaistelussa vauriot ja kriittisten vaurioiden määrät lasketaan ensimmäisen vihollista iskeneen kauppiaan sietokyvyn mukaan.\n2. Rallissa kaikki jäsenet käyttävät rallinjohtajan sietokykyarvoa laskelmissa."
+        "magnetic_combat_txt": "Laivaston sietokyky vaikuttaa taistelulaskelmiin eri tavoin riippuen valitsemastasi strategiasta:",
+        "magnetic_method1_title": "Sähkömagneettinen kilpitorni",
+        "magnetic_method1_desc": "Rakenna ja päivitä sähkömagneettinen kilpitorni.",
+        "magnetic_method2_title": "Kotisatamaan asettuminen",
+        "magnetic_method2_desc": "Asetu korkeamman tason kotisatamaan saadaksesi suurempia sietokykybonuksia.",
+        "magnetic_method3_title": "Kausipassi",
+        "magnetic_method3_desc": "Avaa kausipassin etuoikeudet.",
+        "magnetic_method4_title": "Killan yhteistyö",
+        "magnetic_method4_desc": "Vaihda magneettisuutta estäviä laitteita kauppakillan jäsenten kanssa.",
+        "magnetic_combat1_title": "Yksintaistelu",
+        "magnetic_combat1_desc": "Yksintaistelussa vauriot ja kriittisten vaurioiden määrät lasketaan ensimmäisen vihollista iskeneen kauppiaan sietokyvyn mukaan.",
+        "magnetic_combat2_title": "Rallioperaatiot",
+        "magnetic_combat2_desc": "Rallissa kaikki jäsenet käyttävät rallinjohtajan sietokykyarvoa laskelmissa."
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

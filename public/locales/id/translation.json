@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Memahami Resistensi",
         "magnetic_rules_txt": "Resistensi Badai Magnet mewakili kemampuan armada Anda untuk menahan gangguan badai. Jika resistensi terlalu rendah, output kerusakan kapal induk berkurang dan risiko kerusakan kritis meningkat.",
         "magnetic_increase_hdr": "Cara Meningkatkan Resistensi",
-        "magnetic_increase_txt": "1. Bangun dan tingkatkan Menara Perisai Elektromagnetik.\n2. Menetap di Pelabuhan Rumah tingkat yang lebih tinggi untuk bonus resistensi yang lebih besar.\n3. Buka hak istimewa Tiket Musim.\n4. Tukarkan Perangkat Anti-Magnet dengan anggota Guild Perdagangan.",
+        "magnetic_increase_txt": "Untuk bertahan dari gangguan badai magnet kosmik, pedagang harus meningkatkan resistensi mereka menggunakan metode berikut:",
         "magnetic_combat_hdr": "Resistensi dan Pertempuran",
-        "magnetic_combat_txt": "1. Dalam pertempuran solo, kerusakan dihitung berdasarkan resistensi dari pedagang pertama yang menyerang target.\n2. Saat berpartisipasi dalam reli, semua anggota menggunakan resistensi Pemimpin Reli untuk perhitungan pertempuran."
+        "magnetic_combat_txt": "Resistensi armada mempengaruhi perhitungan pertempuran secara berbeda tergantung pada strategi pertempuran Anda:",
+        "magnetic_method1_title": "Menara Perisai Elektromagnetik",
+        "magnetic_method1_desc": "Bangun dan tingkatkan Menara Perisai Elektromagnetik.",
+        "magnetic_method2_title": "Pelabuhan Rumah",
+        "magnetic_method2_desc": "Menetap di Pelabuhan Rumah tingkat yang lebih tinggi untuk bonus resistensi yang lebih besar.",
+        "magnetic_method3_title": "Tiket Musim",
+        "magnetic_method3_desc": "Buka hak istimewa Tiket Musim.",
+        "magnetic_method4_title": "Kerjasama Guild",
+        "magnetic_method4_desc": "Tukarkan Perangkat Anti-Magnet dengan anggota Guild Perdagangan.",
+        "magnetic_combat1_title": "Pertempuran Solo",
+        "magnetic_combat1_desc": "Dalam pertempuran solo, kerusakan dihitung berdasarkan resistensi dari pedagang pertama yang menyerang target.",
+        "magnetic_combat2_title": "Operasi Reli",
+        "magnetic_combat2_desc": "Saat berpartisipasi dalam reli, semua anggota menggunakan resistensi Pemimpin Reli untuk perhitungan pertempuran."
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

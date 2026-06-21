@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Weerstand begrijpen",
         "magnetic_rules_txt": "Magnetische Stormweerstand is het vermogen van je vloot om stormstoringen te weerstaan. Als je weerstand te laag is, daalt de schade van je vlaggenschip en stijgt het risico op zware schade.",
         "magnetic_increase_hdr": "Manieren om weerstand te verhogen",
-        "magnetic_increase_txt": "1. Bouw en upgrade de Elektromagnetische Schildtoren.\n2. Vestig je in een Thuishaven van een hoger niveau voor grotere weerstandsbonussen.\n3. Ontgrendel Seizoenspas-privileges.\n4. Wissel Anti-Magnetische Apparaten uit met gildeleden.",
+        "magnetic_increase_txt": "Om kosmische magnetische stormen te overleven, moeten handelaren hun weerstand verhogen met de volgende methoden:",
         "magnetic_combat_hdr": "Weerstand en gevecht",
-        "magnetic_combat_txt": "1. In sologevechten wordt de schade berekend op basis van de weerstand van de eerste speler die het doelwit raakt.\n2. In rallygevechten gebruiken alle leden de weerstand van de Rally-leider."
+        "magnetic_combat_txt": "Vlootweerstand beïnvloedt gevechtsberekeningen anders afhankelijk van je gevechtsstrategie:",
+        "magnetic_method1_title": "Elektromagnetische Schildtoren",
+        "magnetic_method1_desc": "Bouw en upgrade de Elektromagnetische Schildtoren.",
+        "magnetic_method2_title": "Thuishaven",
+        "magnetic_method2_desc": "Vestig je in een Thuishaven van een hoger niveau voor grotere weerstandsbonussen.",
+        "magnetic_method3_title": "Seizoenspas",
+        "magnetic_method3_desc": "Ontgrendel Seizoenspas-privileges.",
+        "magnetic_method4_title": "Gildesamenwerking",
+        "magnetic_method4_desc": "Wissel Anti-Magnetische Apparaten uit met gildeleden.",
+        "magnetic_combat1_title": "Sologevechten",
+        "magnetic_combat1_desc": "In sologevechten wordt de schade berekend op basis van de weerstand van de eerste speler die het doelwit raakt.",
+        "magnetic_combat2_title": "Rally-operaties",
+        "magnetic_combat2_desc": "In rallygevechten gebruiken alle leden de weerstand van de Rally-leider."
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

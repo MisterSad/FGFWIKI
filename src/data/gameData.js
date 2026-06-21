@@ -285,11 +285,21 @@ export const tips = [
       },
       {
         header: 'tips.magnetic_increase_hdr',
-        text: 'tips.magnetic_increase_txt'
+        text: 'tips.magnetic_increase_txt',
+        methods: [
+          { title: 'tips.magnetic_method1_title', desc: 'tips.magnetic_method1_desc', icon: 'Shield' },
+          { title: 'tips.magnetic_method2_title', desc: 'tips.magnetic_method2_desc', icon: 'Home' },
+          { title: 'tips.magnetic_method3_title', desc: 'tips.magnetic_method3_desc', icon: 'Crown' },
+          { title: 'tips.magnetic_method4_title', desc: 'tips.magnetic_method4_desc', icon: 'Users' }
+        ]
       },
       {
         header: 'tips.magnetic_combat_hdr',
-        text: 'tips.magnetic_combat_txt'
+        text: 'tips.magnetic_combat_txt',
+        combatTypes: [
+          { title: 'tips.magnetic_combat1_title', desc: 'tips.magnetic_combat1_desc', icon: 'Swords' },
+          { title: 'tips.magnetic_combat2_title', desc: 'tips.magnetic_combat2_desc', icon: 'Users' }
+        ]
       }
     ]
   },

@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Memahami Rintangan",
         "magnetic_rules_txt": "Rintangan Ribut Magnetik mewakili keupayaan armada anda untuk menahan gangguan ribut. Jika rintangan terlalu rendah, output kerosakan kapal utama berkurangan dan risiko kerosakan kritikal meningkat.",
         "magnetic_increase_hdr": "Cara Meningkatkan Rintangan",
-        "magnetic_increase_txt": "1. Bina dan tingkatkan Menara Perisai Elektromagnetik.\n2. Menetap di Pelabuhan Rumah tahap yang lebih tinggi untuk bonus rintangan yang lebih besar.\n3. Buka keistimewaan Pas Musim.\n4. Tukar Peranti Anti-Magnet dengan ahli Persatuan Dagangan.",
+        "magnetic_increase_txt": "Untuk bertahan daripada gangguan ribut magnetik kosmik, pedagang mesti meningkatkan rintangan mereka menggunakan kaedah berikut:",
         "magnetic_combat_hdr": "Rintangan dan Pertempuran",
-        "magnetic_combat_txt": "1. Dalam pertempuran solo, kerosakan dikira berdasarkan rintangan pedagang pertama yang menyerang sasaran.\n2. Apabila menyertai rali, semua ahli menggunakan rintangan Ketua Rali untuk pengiraan pertempuran."
+        "magnetic_combat_txt": "Rintangan armada mempengaruhi pengiraan pertempuran secara berbeza bergantung pada strategi pertempuran anda:",
+        "magnetic_method1_title": "Menara Perisai Elektromagnetik",
+        "magnetic_method1_desc": "Bina dan tingkatkan Menara Perisai Elektromagnetik.",
+        "magnetic_method2_title": "Pelabuhan Rumah",
+        "magnetic_method2_desc": "Menetap di Pelabuhan Rumah tahap yang lebih tinggi untuk bonus rintangan yang lebih besar.",
+        "magnetic_method3_title": "Pas Musim",
+        "magnetic_method3_desc": "Buka keistimewaan Pas Musim.",
+        "magnetic_method4_title": "Kerjasama Persatuan",
+        "magnetic_method4_desc": "Tukar Peranti Anti-Magnet dengan ahli Persatuan Dagangan.",
+        "magnetic_combat1_title": "Pertempuran Solo",
+        "magnetic_combat1_desc": "Dalam pertempuran solo, kerosakan dikira berdasarkan rintangan pedagang pertama yang menyerang sasaran.",
+        "magnetic_combat2_title": "Operasi Rali",
+        "magnetic_combat2_desc": "Apabila menyertai rali, semua ahli menggunakan rintangan Ketua Rali untuk pengiraan pertempuran."
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",

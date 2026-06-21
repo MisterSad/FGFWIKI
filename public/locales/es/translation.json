@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Entendiendo la resistencia",
         "magnetic_rules_txt": "La resistencia contrarresta la tormenta. Si es insuficiente, el daño de tu nave insignia disminuye y aumenta el riesgo de sufrir daños graves.",
         "magnetic_increase_hdr": "Formas de aumentar la resistencia",
-        "magnetic_increase_txt": "1. Construye y mejora la Torre del Escudo Electromagnético.\n2. Establécete en Puertos de Origen de mayor nivel.\n3. Desbloquea privilegios del pase de temporada.\n4. Intercambia dispositivos antimagnéticos con miembros del gremio.",
+        "magnetic_increase_txt": "Para sobrevivir a la tormenta magnética cósmica, los comerciantes deben aumentar su resistencia con estos métodos:",
         "magnetic_combat_hdr": "Resistencia en el combate",
-        "magnetic_combat_txt": "1. En combate individual, la resistencia la define el primer atacante.\n2. En batallas de reunión, se usa la resistencia del líder de reunión para todo el grupo."
+        "magnetic_combat_txt": "La resistencia de la flota afecta las batallas de manera diferente según la estrategia:",
+        "magnetic_method1_title": "Torre del escudo electromagnético",
+        "magnetic_method1_desc": "Construye y mejora la Torre del Escudo Electromagnético.",
+        "magnetic_method2_title": "Asentamiento de puerto base",
+        "magnetic_method2_desc": "Establécete en Puertos de Origen de mayor nivel.",
+        "magnetic_method3_title": "Pase de temporada",
+        "magnetic_method3_desc": "Desbloquea privilegios del pase de temporada.",
+        "magnetic_method4_title": "Cooperación de gremio",
+        "magnetic_method4_desc": "Intercambia dispositivos antimagnéticos con miembros del gremio.",
+        "magnetic_combat1_title": "Combate individual",
+        "magnetic_combat1_desc": "En combate individual, la resistencia la define el primer atacante.",
+        "magnetic_combat2_title": "Operaciones de reunión",
+        "magnetic_combat2_desc": "En batallas de reunión, se usa la resistencia del líder de reunión para todo el grupo."
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",

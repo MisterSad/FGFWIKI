@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Direnci Anlamak",
         "magnetic_rules_txt": "Manyetik Fırtına Direnci filonuzun fırtına etkilerine dayanma yeteneğini temsil eder. Direnciniz çok düşükse amiral geminizin hasar gücü düşer ve ağır hasar alma riski artar.",
         "magnetic_increase_hdr": "Direnci Artırmanın Yolları",
-        "magnetic_increase_txt": "1. Elektromanyetik Kalkan Kulesi inşa edin ve yükseltin.\n2. Daha büyük direnç bonusları için daha yüksek seviyeli bir Ana Limana yerleşin.\n3. Sezon Bileti ayrıcalıklarının kilidini açın.\n4. Ticaret Loncası üyeleriyle Manyetizma Önleyici Cihazlar takas edin.",
+        "magnetic_increase_txt": "Kozmik manyetik fırtınaların etkilerinden kurtulmak için tüccarlar aşağıdaki yöntemleri kullanarak dirençlerini artırmalıdır:",
         "magnetic_combat_hdr": "Direnç ve Savaş",
-        "magnetic_combat_txt": "1. Tekli savaşta, hasar ve ağır hasar oranları hedefe ilk saldıran tüccarın direncine göre hesaplanır.\n2. Bir toplu saldırıya katılırken, tüm üyeler hesaplamalar için Topluluk Liderinin direncini kullanır."
+        "magnetic_combat_txt": "Filo direnci, savaş hesaplamalarını çatışma stratejinize bağlı olarak farklı şekilde etkiler:",
+        "magnetic_method1_title": "Elektromanyetik Kalkan Kulesi",
+        "magnetic_method1_desc": "Elektromanyetik Kalkan Kulesi inşa edin ve yükseltin.",
+        "magnetic_method2_title": "Ana Liman",
+        "magnetic_method2_desc": "Daha büyük direnç bonusları için daha yüksek seviyeli bir Ana Limana yerleşin.",
+        "magnetic_method3_title": "Sezon Bileti",
+        "magnetic_method3_desc": "Sezon Bileti ayrıcalıklarının kilidini açın.",
+        "magnetic_method4_title": "Lonca İş Birliği",
+        "magnetic_method4_desc": "Ticaret Loncası üyeleriyle Manyetizma Önleyici Cihazlar takas edin.",
+        "magnetic_combat1_title": "Tekli Savaşlar",
+        "magnetic_combat1_desc": "Tekli savaşta, hasar ve ağır hasar oranları hedefe ilk saldıran tüccarın direncine göre hesaplanır.",
+        "magnetic_combat2_title": "Toplu Saldırı",
+        "magnetic_combat2_desc": "Bir toplu saldırıya katılırken, tüm üyeler hesaplamalar için Topluluk Liderinin direncini kullanır."
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

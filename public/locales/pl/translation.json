@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Zrozumienie odporności",
         "magnetic_rules_txt": "Odporność na burze magnetyczne reprezentuje zdolność floty do wytrzymywania zakłóceń. Jeśli odporność jest zbyt niska, obrażenia twojego okrętu flagowego spadają, a ryzyko poważnych uszkodzeń rośnie.",
         "magnetic_increase_hdr": "Sposoby na zwiększenie odporności",
-        "magnetic_increase_txt": "1. Zbuduj i ulepsz wieżę tarczy elektromagnetycznej.\n2. Osiedl się w porcie macierzystym wyższego poziomu.\n3. Odblokuj przywileje przepustki sezonowej.\n4. Wymieniaj urządzenia antymagnetyczne z członkami gildii.",
+        "magnetic_increase_txt": "Aby przetrwać kosmiczne zakłócenia burz magnetycznych, kupcy muszą zwiększyć swoją odporność za pomocą następujących metod:",
         "magnetic_combat_hdr": "Odporność i walka",
-        "magnetic_combat_txt": "1. W walce solo obrażenia są obliczane na podstawie odporności pierwszego gracza, który zaatakuje cel.\n2. W bitwach rajdowych wszyscy członkowie używają odporności lidera rajdu."
+        "magnetic_combat_txt": "Odporność floty wpływa na obliczenia walki w różny sposób, w zależności od wybranej strategii:",
+        "magnetic_method1_title": "Wieża tarczy elektromagnetycznej",
+        "magnetic_method1_desc": "Zbuduj i ulepsz wieżę tarczy elektromagnetycznej.",
+        "magnetic_method2_title": "Port macierzysty",
+        "magnetic_method2_desc": "Osiedl się w porcie macierzystym wyższego poziomu.",
+        "magnetic_method3_title": "Przepustka sezonowa",
+        "magnetic_method3_desc": "Odblokuj przywileje przepustki sezonowej.",
+        "magnetic_method4_title": "Współpraca w gildii",
+        "magnetic_method4_desc": "Wymieniaj urządzenia antymagnetyczne z członkami gildii.",
+        "magnetic_combat1_title": "Walka solo",
+        "magnetic_combat1_desc": "W walce solo obrażenia są obliczane na podstawie odporności pierwszego gracza, który zaatakuje cel.",
+        "magnetic_combat2_title": "Operacje rajdowe",
+        "magnetic_combat2_desc": "W bitwach rajdowych wszyscy członkowie używają odporności lidera rajdu."
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",
