@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Combat Solo",
         "magnetic_combat1_desc": "En combat solo, les dégâts sont calculés selon la résistance du premier attaquant.",
         "magnetic_combat2_title": "Ralliement de Guilde",
-        "magnetic_combat2_desc": "En ralliement, c'est la résistance du chef de ralliement qui s'applique à tout le groupe."
+        "magnetic_combat2_desc": "En ralliement, c'est la résistance du chef de ralliement qui s'applique à tout le groupe.",
+        "magnetic_increase_disclaimer": "Visuel non définitif"
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

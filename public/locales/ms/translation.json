@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Pertempuran Solo",
         "magnetic_combat1_desc": "Dalam pertempuran solo, kerosakan dikira berdasarkan rintangan pedagang pertama yang menyerang sasaran.",
         "magnetic_combat2_title": "Operasi Rali",
-        "magnetic_combat2_desc": "Apabila menyertai rali, semua ahli menggunakan rintangan Ketua Rali untuk pengiraan pertempuran."
+        "magnetic_combat2_desc": "Apabila menyertai rali, semua ahli menggunakan rintangan Ketua Rali untuk pengiraan pertempuran.",
+        "magnetic_increase_disclaimer": "Visual bukan hasil akhir"
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",

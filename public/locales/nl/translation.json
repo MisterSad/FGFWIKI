@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Sologevechten",
         "magnetic_combat1_desc": "In sologevechten wordt de schade berekend op basis van de weerstand van de eerste speler die het doelwit raakt.",
         "magnetic_combat2_title": "Rally-operaties",
-        "magnetic_combat2_desc": "In rallygevechten gebruiken alle leden de weerstand van de Rally-leider."
+        "magnetic_combat2_desc": "In rallygevechten gebruiken alle leden de weerstand van de Rally-leider.",
+        "magnetic_increase_disclaimer": "Niet-definitief beeld"
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

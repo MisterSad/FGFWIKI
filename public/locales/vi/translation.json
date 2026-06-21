@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Chiến đấu cá nhân",
         "magnetic_combat1_desc": "Trong chiến đấu cá nhân, sát thương được tính dựa trên chỉ số kháng của thương nhân đầu tiên tấn công mục tiêu.",
         "magnetic_combat2_title": "Chiến dịch Tập hợp",
-        "magnetic_combat2_desc": "Khi tham gia tập hợp, tất cả các thành viên sử dụng chỉ số kháng của Trưởng nhóm tập hợp."
+        "magnetic_combat2_desc": "Khi tham gia tập hợp, tất cả các thành viên sử dụng chỉ số kháng của Trưởng nhóm tập hợp.",
+        "magnetic_increase_disclaimer": "Hình ảnh không phải là bản chính thức"
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "솔로전",
         "magnetic_combat1_desc": "개인 전투 시, 피해량과 대파 확률은 대상을 가장 먼저 공격한 길드원의 저항력을 바탕으로 계산됩니다.",
         "magnetic_combat2_title": "집결 연합 작전",
-        "magnetic_combat2_desc": "집결(랠리) 참여 시, 모든 길드원은 집결장(랠리 리더)의 저항력을 기준으로 전투를 수행합니다."
+        "magnetic_combat2_desc": "집결(랠리) 참여 시, 모든 길드원은 집결장(랠리 리더)의 저항력을 기준으로 전투를 수행합니다.",
+        "magnetic_increase_disclaimer": "최종 이미지 아님"
     },
     "hero_data": {
         "h1_notes": "이온 회전에 필수. 거대한 치유와 팀 전체 지능 버프.",

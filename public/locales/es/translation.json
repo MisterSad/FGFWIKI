@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Combate individual",
         "magnetic_combat1_desc": "En combate individual, la resistencia la define el primer atacante.",
         "magnetic_combat2_title": "Operaciones de reunión",
-        "magnetic_combat2_desc": "En batallas de reunión, se usa la resistencia del líder de reunión para todo el grupo."
+        "magnetic_combat2_desc": "En batallas de reunión, se usa la resistencia del líder de reunión para todo el grupo.",
+        "magnetic_increase_disclaimer": "Diseño no definitivo"
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",

@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Tekli Savaşlar",
         "magnetic_combat1_desc": "Tekli savaşta, hasar ve ağır hasar oranları hedefe ilk saldıran tüccarın direncine göre hesaplanır.",
         "magnetic_combat2_title": "Toplu Saldırı",
-        "magnetic_combat2_desc": "Bir toplu saldırıya katılırken, tüm üyeler hesaplamalar için Topluluk Liderinin direncini kullanır."
+        "magnetic_combat2_desc": "Bir toplu saldırıya katılırken, tüm üyeler hesaplamalar için Topluluk Liderinin direncini kullanır.",
+        "magnetic_increase_disclaimer": "Görsel nihai değildir"
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

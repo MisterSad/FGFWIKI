@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Solokampf",
         "magnetic_combat1_desc": "Im Solokampf bestimmt der erste Angreifer die Resistenzstufe.",
         "magnetic_combat2_title": "Sammeloperationen",
-        "magnetic_combat2_desc": "Bei einer Versammlung gilt die Resistenz des Versammlungsleiters für die gesamte Gruppe."
+        "magnetic_combat2_desc": "Bei einer Versammlung gilt die Resistenz des Versammlungsleiters für die gesamte Gruppe.",
+        "magnetic_increase_disclaimer": "Grafik nicht final"
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

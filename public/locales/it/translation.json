@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Combattimento singolo",
         "magnetic_combat1_desc": "Nel combattimento singolo si usa la resistenza del primo giocatore che ingaggia il bersaglio.",
         "magnetic_combat2_title": "Raggruppamenti di gilda",
-        "magnetic_combat2_desc": "Nei raggruppamenti si applica la resistenza del capo raggruppamento."
+        "magnetic_combat2_desc": "Nei raggruppamenti si applica la resistenza del capo raggruppamento.",
+        "magnetic_increase_disclaimer": "Grafico non definitivo"
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

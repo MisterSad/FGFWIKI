@@ -414,6 +414,17 @@ export default function Guides() {
                                             boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
                                         }}
                                     />
+                                    {section.disclaimer && (
+                                        <p style={{
+                                            marginTop: '0.75rem',
+                                            fontSize: '0.85rem',
+                                            color: 'var(--text-dim)',
+                                            fontStyle: 'italic',
+                                            opacity: 0.8
+                                        }}>
+                                            * {t(section.disclaimer)}
+                                        </p>
+                                    )}
                                 </div>
                             )}
 

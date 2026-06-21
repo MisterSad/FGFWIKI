@@ -286,6 +286,8 @@ export const tips = [
       {
         header: 'tips.magnetic_increase_hdr',
         text: 'tips.magnetic_increase_txt',
+        image: '/images/MSR_increase_resistance.png',
+        disclaimer: 'tips.magnetic_increase_disclaimer',
         methods: [
           { title: 'tips.magnetic_method1_title', desc: 'tips.magnetic_method1_desc', icon: 'Shield' },
           { title: 'tips.magnetic_method2_title', desc: 'tips.magnetic_method2_desc', icon: 'Home' },

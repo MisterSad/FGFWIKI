@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "单人遭遇战",
         "magnetic_combat1_desc": "单人战斗中，伤害与重创率根据首个对敌人造成伤害的开拓者的抵抗力计算。",
         "magnetic_combat2_title": "集结联合行动",
-        "magnetic_combat2_desc": "参与集结时，全体成员均使用集结发起者的抵抗力进行计算。"
+        "magnetic_combat2_desc": "参与集结时，全体成员均使用集结发起者的抵抗力进行计算。",
+        "magnetic_increase_disclaimer": "非最终画面"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",

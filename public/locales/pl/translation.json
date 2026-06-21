@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Walka solo",
         "magnetic_combat1_desc": "W walce solo obrażenia są obliczane na podstawie odporności pierwszego gracza, który zaatakuje cel.",
         "magnetic_combat2_title": "Operacje rajdowe",
-        "magnetic_combat2_desc": "W bitwach rajdowych wszyscy członkowie używają odporności lidera rajdu."
+        "magnetic_combat2_desc": "W bitwach rajdowych wszyscy członkowie używają odporności lidera rajdu.",
+        "magnetic_increase_disclaimer": "Grafika nie jest ostateczna"
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

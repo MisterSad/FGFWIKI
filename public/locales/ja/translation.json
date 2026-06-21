@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "ソロ遭遇戦",
         "magnetic_combat1_desc": "ソロ戦闘時、与ダメージおよび大破率はターゲットを最初に攻撃したプレイヤーの耐性で計算されます。",
         "magnetic_combat2_title": "集結ラリー作戦",
-        "magnetic_combat2_desc": "集結（ラリー）戦闘時は、集結リーダーの耐性が全メンバーに一律で適用されます。"
+        "magnetic_combat2_desc": "集結（ラリー）戦闘時は、集結リーダーの耐性が全メンバーに一律で適用されます。",
+        "magnetic_increase_disclaimer": "画像は最終版ではありません"
     },
     "hero_data": {
         "h1_notes": "イオンローテーションに必須。膨大な回復とチーム全体の知力バフ。",

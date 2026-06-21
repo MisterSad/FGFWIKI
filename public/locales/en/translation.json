@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Solo Combat",
         "magnetic_combat1_desc": "In solo combat, the damage and critical damage rates are calculated based on the resistance of the first trader who engages the target.",
         "magnetic_combat2_title": "Rally Operations",
-        "magnetic_combat2_desc": "In rally battles, the entire group utilizes the Rally Leader's resistance value for damage and protection calculations."
+        "magnetic_combat2_desc": "In rally battles, the entire group utilizes the Rally Leader's resistance value for damage and protection calculations.",
+        "magnetic_increase_disclaimer": "Visual is not final"
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",
