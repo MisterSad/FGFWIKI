@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Solostrid",
         "magnetic_combat1_desc": "I solostrid beräknas skadan baserat på resistensen hos den första spelaren som angriper målet.",
         "magnetic_combat2_title": "Rallyoperationer",
-        "magnetic_combat2_desc": "I rallystrider använder alla medlemmar rallyledarens resistensvärde."
+        "magnetic_combat2_desc": "I rallystrider använder alla medlemmar rallyledarens resistensvärde.",
+        "magnetic_increase_disclaimer": "Inte slutgiltig bild"
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",

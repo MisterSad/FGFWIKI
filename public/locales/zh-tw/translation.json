@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "單人遭遇戰",
         "magnetic_combat1_desc": "單人戰鬥中，傷害與重創率根據首個對敵人造成傷害的开拓者的抵抗力計算。",
         "magnetic_combat2_title": "集結聯合行動",
-        "magnetic_combat2_desc": "參與集結時，全體成員均使用集結發起者的抵抗力進行計算。"
+        "magnetic_combat2_desc": "參與集結時，全體成員均使用集結發起者的抵抗力進行計算。",
+        "magnetic_increase_disclaimer": "非最終畫面"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

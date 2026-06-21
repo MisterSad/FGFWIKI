@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Combates Solo",
         "magnetic_combat1_desc": "Em combates solo, a resistência é baseada no primeiro jogador que ataca.",
         "magnetic_combat2_title": "Operações de Rali",
-        "magnetic_combat2_desc": "Em ralis, a resistência aplicada ao grupo é a do líder do rali."
+        "magnetic_combat2_desc": "Em ralis, a resistência aplicada ao grupo é a do líder do rali.",
+        "magnetic_increase_disclaimer": "Visual não definitivo"
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",

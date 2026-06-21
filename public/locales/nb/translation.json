@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Solokamp",
         "magnetic_combat1_desc": "I solokamp beregnes skade basert på motstanden til den første handelsmannen som angriper målet.",
         "magnetic_combat2_title": "Samlingsoperasjoner",
-        "magnetic_combat2_desc": "I samlingskamper bruker alle medlemmene samlingslederens motstand for beregninger."
+        "magnetic_combat2_desc": "I samlingskamper bruker alle medlemmene samlingslederens motstand for beregninger.",
+        "magnetic_increase_disclaimer": "Ikke endelig utseende"
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

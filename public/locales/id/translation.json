@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Pertempuran Solo",
         "magnetic_combat1_desc": "Dalam pertempuran solo, kerusakan dihitung berdasarkan resistensi dari pedagang pertama yang menyerang target.",
         "magnetic_combat2_title": "Operasi Reli",
-        "magnetic_combat2_desc": "Saat berpartisipasi dalam reli, semua anggota menggunakan resistensi Pemimpin Reli untuk perhitungan pertempuran."
+        "magnetic_combat2_desc": "Saat berpartisipasi dalam reli, semua anggota menggunakan resistensi Pemimpin Reli untuk perhitungan pertempuran.",
+        "magnetic_increase_disclaimer": "Tampilan bukan hasil akhir"
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

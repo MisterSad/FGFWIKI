@@ -317,7 +317,8 @@
         "magnetic_combat1_title": "Yksintaistelu",
         "magnetic_combat1_desc": "Yksintaistelussa vauriot ja kriittisten vaurioiden määrät lasketaan ensimmäisen vihollista iskeneen kauppiaan sietokyvyn mukaan.",
         "magnetic_combat2_title": "Rallioperaatiot",
-        "magnetic_combat2_desc": "Rallissa kaikki jäsenet käyttävät rallinjohtajan sietokykyarvoa laskelmissa."
+        "magnetic_combat2_desc": "Rallissa kaikki jäsenet käyttävät rallinjohtajan sietokykyarvoa laskelmissa.",
+        "magnetic_increase_disclaimer": "Ei lopullinen ulkoasu"
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",
