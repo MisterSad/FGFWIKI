@@ -267,6 +267,33 @@ export const tips = [
     ]
   },
   {
+    id: 'star-of-the-guild',
+    category: 'news',
+    title: 'tips.star_of_guild_title',
+    content: 'tips.star_of_guild_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-06-21T18:38:00Z',
+    sections: [
+      {
+        text: 'tips.star_of_guild_intro'
+      },
+      {
+        header: 'tips.star_of_guild_qualify_hdr',
+        text: 'tips.star_of_guild_qualify_txt'
+      },
+      {
+        header: 'tips.star_of_guild_rewards_hdr',
+        text: 'tips.star_of_guild_rewards_txt'
+      },
+      {
+        header: 'tips.star_of_guild_leader_hdr',
+        text: 'tips.star_of_guild_leader_txt'
+      }
+    ]
+  },
+  {
     id: 'migration',
     category: 'news',
     title: 'tips.migration_title',

@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Manfaatkan sepenuhnya baris gilir pembinaan kedua 24 jam.",
         "build_queue_trick_overview_hdr": "Trik Sambungan Baris",
         "build_queue_trick_overview_txt": "Baris gilir pembinaan sekunder, dibuka untuk 500 Kredit, mempunyai tempoh 24 jam. Sebarang naik taraf yang dimulakan sebelum tetingkap ini ditutup akan diteruskan hingga siap walaupun projek memerlukan beberapa hari, membolehkan anda memaksimumkan nilai baris gilir sementara.",
-        "credit_snakebite": "Strategi disusun oleh Snakebite (Pelayan #1003)."
+        "credit_snakebite": "Strategi disusun oleh Snakebite (Pelayan #1003).",
+        "star_of_guild_title": "Ciri Baharu: Bintang Persatuan",
+        "star_of_guild_desc": "Ketahui kejohanan Bintang Persatuan akan datang yang dilancarkan pada 28 Jun untuk Pelayan 1-16. Layak dengan persatuan perdagangan anda dan tingkatkan ganjaran.",
+        "star_of_guild_intro": "Acara mingguan kompetitif baharu, Bintang Persatuan, dilancarkan pada 28 Jun untuk Pelayan 1 hingga 16! Bekerjasama dengan ahli persatuan anda untuk mendapatkan bonus eksklusif.",
+        "star_of_guild_qualify_hdr": "Peraturan Kelayakan",
+        "star_of_guild_qualify_txt": "Setiap hari Isnin pada jam 00:00 UTC, 10 Persatuan Perdagangan teratas dalam pelayan mengikut kuasa akan layak. Selepas kelayakan tamat, kedudukan dikunci untuk minggu tersebut.",
+        "star_of_guild_rewards_hdr": "Aktiviti & Ganjaran",
+        "star_of_guild_rewards_txt": "Prestasi persatuan dan penyertaan aktif sepanjang minggu menentukan ganjaran. Ganjaran asas dikongsi oleh semua ahli, tetapi usaha individu Bintang Persatuan yang dilantik boleh meningkatkan jumlah ganjaran.",
+        "star_of_guild_leader_hdr": "Pemilihan Pedagang Kehormat",
+        "star_of_guild_leader_txt": "Ketua persatuan mempunyai kuasa untuk melantik seorang ahli cemerlang sebagai 'Pedagang Kehormat' untuk mewakili kejayaan persatuan."
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",

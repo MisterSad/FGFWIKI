@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Tận dụng tối đa hàng đợi xây dựng thứ hai trong 24 giờ.",
         "build_queue_trick_overview_hdr": "Thủ thuật mở rộng hàng đợi",
         "build_queue_trick_overview_txt": "Hàng đợi xây dựng phụ, được mở khóa với 500 Tín dụng, có thời lượng 24 giờ. Mọi nâng cấp được bắt đầu trước khi thời hạn này đóng sẽ tiếp tục hoàn thành ngay cả khi dự án yêu cầu nhiều ngày, cho phép bạn tối đa hóa giá trị của hàng đợi tạm thời.",
-        "credit_snakebite": "Chiến lược được biên soạn bởi Snakebite (Máy chủ #1003)."
+        "credit_snakebite": "Chiến lược được biên soạn bởi Snakebite (Máy chủ #1003).",
+        "star_of_guild_title": "Tính năng mới: Ngôi sao Bang hội",
+        "star_of_guild_desc": "Khám phá giải đấu Ngôi sao Bang hội sắp diễn ra vào ngày 28 tháng 6 cho Máy chủ 1-16. Đạt điều kiện với bang hội thương mại của bạn và tăng phần thưởng.",
+        "star_of_guild_intro": "Sự kiện cạnh tranh hàng tuần mới, Ngôi sao Bang hội, sẽ ra mắt vào ngày 28 tháng 6 cho Máy chủ 1 đến 16! Hãy hợp tác với các thành viên để nhận thưởng lớn.",
+        "star_of_guild_qualify_hdr": "Quy tắc Đạt điều kiện",
+        "star_of_guild_qualify_txt": "Mỗi thứ Hai lúc 00:00 UTC, top 10 Bang hội Thương mại trên máy chủ theo lực chiến sẽ đạt điều kiện. Khi điều kiện hoàn tất, bảng xếp hạng sẽ được khóa trong tuần.",
+        "star_of_guild_rewards_hdr": "Hoạt động & Phần thưởng",
+        "star_of_guild_rewards_txt": "Hiệu suất và sự tham gia tích cực của bang hội trong tuần sẽ quyết định phần thưởng. Phần thưởng cơ bản được chia đều, nhưng nỗ lực của các Ngôi sao Bang hội có thể nhân đôi phần thưởng.",
+        "star_of_guild_leader_hdr": "Lựa chọn Thương nhân Danh dự",
+        "star_of_guild_leader_txt": "Bang chủ sẽ có quyền bổ nhiệm một thành viên xuất sắc làm 'Thương nhân Danh dự' đại diện cho sự thành công của bang hội."
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

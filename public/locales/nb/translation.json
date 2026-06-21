@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Få mest mulig ut av den 24-timers andre byggekøen.",
         "build_queue_trick_overview_hdr": "Køutvidelsestriks",
         "build_queue_trick_overview_txt": "Den sekundære byggekøen, låst opp for 500 studiepoeng, har en varighet på 24 timer. Enhver oppgradering som startes før dette vinduet lukkes vil fortsette til fullføring selv om prosjektet krever flere dager, slik at du kan maksimere verdien av den midlertidige køen.",
-        "credit_snakebite": "Strategi kompilert av Snakebite (Server #1003)."
+        "credit_snakebite": "Strategi kompilert av Snakebite (Server #1003).",
+        "star_of_guild_title": "Ny funksjon: Laugets stjerne",
+        "star_of_guild_desc": "Oppdag den kommende Laugets stjerne-turneringen som starter 28. juni for servere 1–16. Kvalifiser deg med handelslauget ditt og øk belønningene.",
+        "star_of_guild_intro": "En ny konkurransepreget ukentlig begivenhet, Laugets stjerne, starter 28. juni for servere 1 til 16! Samarbeid med laugsmedlemmene dine for å tjene eksklusive bonuser.",
+        "star_of_guild_qualify_hdr": "Kvalifiseringsregler",
+        "star_of_guild_qualify_txt": "Hver mandag kl. 00:00 UTC vil de 10 beste handelslaugene på serveren rangert etter makt kvalifisere seg. Når kvalifiseringen er fullført, låses rangeringen for uken.",
+        "star_of_guild_rewards_hdr": "Aktivitet og belønninger",
+        "star_of_guild_rewards_txt": "Laugets ytelse og aktive deltakelse i løpet av uken avgjør belønningene. Grunnbelønninger deles av alle medlemmer, men innsatsen til utpekte laugsstjerner kan øke totalbelønningen.",
+        "star_of_guild_leader_hdr": "Valg av æreskjøpmann",
+        "star_of_guild_leader_txt": "Laugslederen vil ha myndighet til å utnevne et fremtredende medlem til 'Æreskjøpmann' for å representere laugets suksess."
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

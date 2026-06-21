@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Manfaatkan antrian konstruksi kedua 24 jam semaksimal mungkin.",
         "build_queue_trick_overview_hdr": "Trik Perpanjangan Antrian",
         "build_queue_trick_overview_txt": "Antrian konstruksi sekunder, yang dibuka untuk 500 Kredit, memiliki durasi 24 jam. Setiap peningkatan yang dimulai sebelum jendela ini ditutup akan dilanjutkan hingga selesai meskipun proyek memerlukan beberapa hari, sehingga Anda dapat memaksimalkan nilai antrean sementara.",
-        "credit_snakebite": "Strategi disusun oleh Snakebite (Server #1003)."
+        "credit_snakebite": "Strategi disusun oleh Snakebite (Server #1003).",
+        "star_of_guild_title": "Fitur Baru: Bintang Guild",
+        "star_of_guild_desc": "Temukan turnamen Bintang Guild mendatang yang diluncurkan pada 28 Juni untuk Server 1-16. Lolos dengan guild perdagangan Anda dan tingkatkan hadiah.",
+        "star_of_guild_intro": "Acara mingguan kompetitif baru, Bintang Guild, diluncurkan pada 28 Juni untuk Server 1 hingga 16! Bekerjasamalah dengan anggota guild Anda untuk mendapatkan bonus eksklusif.",
+        "star_of_guild_qualify_hdr": "Aturan Kualifikasi",
+        "star_of_guild_qualify_txt": "Setiap hari Senin pukul 00:00 UTC, 10 Guild Perdagangan teratas di server berdasarkan kekuatan akan lolos. Setelah kualifikasi selesai, peringkat akan dikunci untuk minggu itu.",
+        "star_of_guild_rewards_hdr": "Aktivitas & Hadiah",
+        "star_of_guild_rewards_txt": "Kinerja guild dan partisipasi aktif selama seminggu menentukan hadiah. Hadiah dasar dibagikan kepada semua anggota, tetapi upaya individu dari Bintang Guild yang ditunjuk dapat meningkatkan total hadiah.",
+        "star_of_guild_leader_hdr": "Pemilihan Pedagang Terhormat",
+        "star_of_guild_leader_txt": "Pemimpin guild akan memiliki wewenang untuk menunjuk satu anggota berprestasi sebagai 'Pedagang Terhormat' untuk mewakili kesuksesan guild."
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

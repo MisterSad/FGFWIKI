@@ -268,7 +268,16 @@
         "build_queue_trick_desc": "Aprovecha al máximo la segunda cola de construcción de 24 horas.",
         "build_queue_trick_overview_hdr": "Truco de extensión de cola",
         "build_queue_trick_overview_txt": "La cola de construcción secundaria, desbloqueada por 500 créditos, tiene una duración de 24 horas. Cualquier actualización iniciada antes de que se cierre esta ventana se completará incluso si el proyecto requiere varios días, lo que le permitirá maximizar el valor de la cola temporal.",
-        "credit_snakebite": "Estrategia compilada por Snakebite (Servidor #1003)."
+        "credit_snakebite": "Estrategia compilada por Snakebite (Servidor #1003).",
+        "star_of_guild_title": "Próxima función: Estrella del gremio",
+        "star_of_guild_desc": "Descubre el próximo torneo de la Estrella del Gremio que comienza el 28 de junio para los servidores 1-16. Califícate con tu gremio comercial y aumenta las recompensas.",
+        "star_of_guild_intro": "¡Un nuevo evento competitivo semanal, Estrella del Gremio, se lanza el 28 de junio para los servidores 1 a 16! Trabaja junto a los miembros de tu gremio para ganar bonificaciones exclusivas.",
+        "star_of_guild_qualify_hdr": "Reglas de calificación",
+        "star_of_guild_qualify_txt": "Cada lunes a las 00:00 UTC, los 10 mejores gremios comerciales del servidor según su poder se clasificarán. Una vez completada la clasificación, las clasificaciones se bloquean para la semana.",
+        "star_of_guild_rewards_hdr": "Actividad y recompensas",
+        "star_of_guild_rewards_txt": "El rendimiento del gremio y la participación activa durante la semana determinan las recompensas. Las recompensas básicas se comparten, pero los esfuerzos de las Estrellas del Gremio designadas pueden aumentar los premios totales.",
+        "star_of_guild_leader_hdr": "Selección del comerciante honorable",
+        "star_of_guild_leader_txt": "El líder del gremio tendrá la autoridad para designar a un miembro destacado como 'Comerciante Honorable' para representar el éxito del gremio."
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",
