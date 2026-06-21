@@ -296,7 +296,16 @@
         "migration_stage3_title": "移民阶段",
         "migration_stage3_desc": "通过审批的申请人确认并完成服务器转移。",
         "migration_stage4_title": "展示阶段",
-        "migration_stage4_desc": "最终移民结果处理完毕并向全体公开。"
+        "migration_stage4_desc": "最终移民结果处理完毕并向全体公开。",
+        "magnetic_title": "生存指南：电磁风暴抵抗力",
+        "magnetic_desc": "让您的舰队做好应对宇宙电磁风暴的准备。了解如何提升抵抗力并保护您的飞船。",
+        "magnetic_intro": "宇宙中的电磁风暴极具破坏性。未做好准备的舰队将遭受严重干扰。为了安全航行，开拓者必须通过防御建筑、特种设备以及公会协作来提升自身的电磁风暴抵抗力。",
+        "magnetic_rules_hdr": "认识抵抗力",
+        "magnetic_rules_txt": "电磁风暴抵抗力代表着舰队抵御风暴干扰的能力。若抵抗力不足，旗舰的伤害输出将大幅下降，且承受重创的风险将显著增加。",
+        "magnetic_increase_hdr": "提升抵抗力的方法",
+        "magnetic_increase_txt": "1. 建造并升级【电磁防护盾塔】。\n2. 迁入更高等级的母港以获得更多抵抗力加成。\n3. 解锁赛季通行证特权。\n4. 与商会成员互助交换【抗磁设备】。",
+        "magnetic_combat_hdr": "抵抗力与战斗",
+        "magnetic_combat_txt": "1. 单人战斗中，伤害与重创率根据首个对敌人造成伤害的开拓者的抵抗力计算。\n2. 参与集结时，全体成员均使用集结发起者的抵抗力进行计算。"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",

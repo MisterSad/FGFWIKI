@@ -296,7 +296,16 @@
         "migration_stage3_title": "Siirto",
         "migration_stage3_desc": "Hyväksytyt hakijat vahvistavat ja suorittavat siirron.",
         "migration_stage4_title": "Tulokset",
-        "migration_stage4_desc": "Lopulliset siirtotulokset käsitellään ja julkistetaan."
+        "migration_stage4_desc": "Lopulliset siirtotulokset käsitellään ja julkistetaan.",
+        "magnetic_title": "Selviytymisohje: Magneettisen myrskyn sietokyky",
+        "magnetic_desc": "Valmistele laivastosi kosmisiin magneettisiin myrskyihin. Opi lisäämään sietokykyäsi ja suojelemaan aluksiasi.",
+        "magnetic_intro": "Kosmiset magneettimyrskyt ovat erittäin tuhoisia. Valmistautumattomat laivastot kärsivät vakavista häiriöistä. Navigoidakseen turvallisesti kauppiaiden on parannettava magneettisen myrskyn sietokykyään.",
+        "magnetic_rules_hdr": "Sietokyvyn ymmärtäminen",
+        "magnetic_rules_txt": "Magneettisen myrskyn sietokyky kertoo laivastosi kyvystä sietää myrskyhäiriöitä. Jos sietokykysi on liian alhainen, lippulaivasi vauriotulokset laskevat ja kriittisten vaurioiden riski kasvaa merkittävästi.",
+        "magnetic_increase_hdr": "Tapoja lisätä sietokykyä",
+        "magnetic_increase_txt": "1. Rakenna ja päivitä sähkömagneettinen kilpitorni.\n2. Asetu korkeamman tason kotisatamaan saadaksesi suurempia sietokykybonuksia.\n3. Avaa kausipassin etuoikeudet.\n4. Vaihda magneettisuutta estäviä laitteita kauppakillan jäsenten kanssa.",
+        "magnetic_combat_hdr": "Sietokyky ja taistelu",
+        "magnetic_combat_txt": "1. Yksintaistelussa vauriot ja kriittisten vaurioiden määrät lasketaan ensimmäisen vihollista iskeneen kauppiaan sietokyvyn mukaan.\n2. Rallissa kaikki jäsenet käyttävät rallinjohtajan sietokykyarvoa laskelmissa."
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migración",
         "migration_stage3_desc": "Los candidatos aprobados confirman y completan la transferencia.",
         "migration_stage4_title": "Exhibición",
-        "migration_stage4_desc": "Los resultados finales de la migración se procesan y se publican."
+        "migration_stage4_desc": "Los resultados finales de la migración se procesan y se publican.",
+        "magnetic_title": "Consejo de supervivencia: Resistencia a tormentas magnéticas",
+        "magnetic_desc": "Prepara tu flota para las tormentas magnéticas cósmicas. Aprende a aumentar tu resistencia y proteger tus naves.",
+        "magnetic_intro": "Las tormentas magnéticas cósmicas son muy destructivas. Para navegar con seguridad, los comerciantes deben mejorar su resistencia mediante estructuras protectoras y cooperación de gremio.",
+        "magnetic_rules_hdr": "Entendiendo la resistencia",
+        "magnetic_rules_txt": "La resistencia contrarresta la tormenta. Si es insuficiente, el daño de tu nave insignia disminuye y aumenta el riesgo de sufrir daños graves.",
+        "magnetic_increase_hdr": "Formas de aumentar la resistencia",
+        "magnetic_increase_txt": "1. Construye y mejora la Torre del Escudo Electromagnético.\n2. Establécete en Puertos de Origen de mayor nivel.\n3. Desbloquea privilegios del pase de temporada.\n4. Intercambia dispositivos antimagnéticos con miembros del gremio.",
+        "magnetic_combat_hdr": "Resistencia en el combate",
+        "magnetic_combat_txt": "1. En combate individual, la resistencia la define el primer atacante.\n2. En batallas de reunión, se usa la resistencia del líder de reunión para todo el grupo."
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",

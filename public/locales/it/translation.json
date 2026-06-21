@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migrazione",
         "migration_stage3_desc": "I candidati approvati confermano e completano il trasferimento.",
         "migration_stage4_title": "Mostra",
-        "migration_stage4_desc": "I risultati finali della migrazione vengono elaborati e pubblicati."
+        "migration_stage4_desc": "I risultati finali della migrazione vengono elaborati e pubblicati.",
+        "magnetic_title": "Consiglio di sopravvivenza: Resistenza alle tempeste magnetiche",
+        "magnetic_desc": "Prepara la tua flotta alle tempeste magnetiche cosmiche. Scopri come aumentare la resistenza.",
+        "magnetic_intro": "Le tempeste magnetiche cosmiche sono altamente distruttive. I mercanti devono aumentare la propria resistenza con scudi e collaborazione.",
+        "magnetic_rules_hdr": "Capire la resistenza",
+        "magnetic_rules_txt": "Se la resistenza è insufficiente, i danni della nave ammiraglia diminuiscono e aumenta il rischio di subire danni strutturali gravi.",
+        "magnetic_increase_hdr": "Metodi per aumentare la resistenza",
+        "magnetic_increase_txt": "1. Costruisci e potenzia la Torre dello scudo elettromagnetico.\n2. Scegli porti d'attacco di livello superiore.\n3. Sblocca i privilegi del pass stagionale.\n4. Scambia dispositivi anti-magnetici con i membri della gilda.",
+        "magnetic_combat_hdr": "Resistenza e combattimento",
+        "magnetic_combat_txt": "1. Nel combattimento singolo si usa la resistenza del primo giocatore che ingaggia il bersaglio.\n2. Nei raggruppamenti si applica la resistenza del capo raggruppamento."
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

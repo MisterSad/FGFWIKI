@@ -296,7 +296,16 @@
         "migration_stage3_title": "Migrering",
         "migration_stage3_desc": "Godkjente kandidater bekrefter og fullfører serveroverføringen.",
         "migration_stage4_title": "Visning",
-        "migration_stage4_desc": "De endelige migreringsresultatene behandles og offentliggjøres."
+        "migration_stage4_desc": "De endelige migreringsresultatene behandles og offentliggjøres.",
+        "magnetic_title": "Overlevelsestips: Magnetstormmotstand",
+        "magnetic_desc": "Forbered flåten din på kosmiske magnetstormer. Lær hvordan du øker motstanden din og beskytter skipene dine.",
+        "magnetic_intro": "Kosmiske magnetstormer er svært ødeleggende. Uforberedte flåter vil lide av alvorlig interferens. For å navigere trygt, må handelsmenn øke magnetstormmotstanden sin.",
+        "magnetic_rules_hdr": "Forstå motstand",
+        "magnetic_rules_txt": "Magnetstormmotstand representerer flåtens evne til å motstå storminterferens. Hvis motstanden er for lav, reduseres flaggskipets skadeutgang, og risikoen for kritisk skade øker.",
+        "magnetic_increase_hdr": "Måter å øke motstanden på",
+        "magnetic_increase_txt": "1. Bygg og oppgrader det elektromagnetiske skjoldtårnet.\n2. Bosett deg i et Hjemmehavn med høyere nivå for større motstandsbonuser.\n3. Lås opp privilegier i sesongpasset.\n4. Bytt antimagnetiske enheter med medlemmer av handelslauget.",
+        "magnetic_combat_hdr": "Motstand og kamp",
+        "magnetic_combat_txt": "1. I solokamp beregnes skade basert på motstanden til den første handelsmannen som angriper målet.\n2. I samlingskamper bruker alle medlemmene samlingslederens motstand for beregninger."
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

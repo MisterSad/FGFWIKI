@@ -296,7 +296,16 @@
         "migration_stage3_title": "Di cư",
         "migration_stage3_desc": "Ứng viên được duyệt xác nhận và hoàn tất chuyển máy chủ.",
         "migration_stage4_title": "Hiển thị",
-        "migration_stage4_desc": "Kết quả di cư cuối cùng được xử lý và công bố rộng rãi."
+        "migration_stage4_desc": "Kết quả di cư cuối cùng được xử lý và công bố rộng rãi.",
+        "magnetic_title": "Mẹo sinh tồn: Kháng Bão Từ",
+        "magnetic_desc": "Chuẩn bị hạm đội của bạn trước những cơn bão từ vũ trụ. Tìm hiểu cách tăng Kháng Bão Từ và bảo vệ tàu chiến.",
+        "magnetic_intro": "Bão từ vũ trụ có sức tàn phá dữ dội. Những hạm đội không chuẩn bị trước sẽ gặp trục trặc nghiêm trọng. Để định vị an toàn, các thương nhân phải tăng Kháng Bão Từ.",
+        "magnetic_rules_hdr": "Tìm hiểu về Kháng",
+        "magnetic_rules_txt": "Kháng Bão Từ thể hiện khả năng chống chịu nhiễu bão từ của hạm đội. Nếu kháng quá thấp, sát thương từ tàu chiến chủ lực sẽ giảm đi và nguy cơ chịu thiệt hại lớn sẽ tăng lên.",
+        "magnetic_increase_hdr": "Cách tăng Kháng",
+        "magnetic_increase_txt": "1. Xây dựng và nâng cấp Tháp Khiên Điện Từ.\n2. Định cư tại Cảng Nhà có cấp độ cao hơn để nhận bonus kháng lớn hơn.\n3. Mở khóa các đặc quyền của Vé Mùa.\n4. Trao đổi thiết bị chống từ tính với các thành viên trong bang hội.",
+        "magnetic_combat_hdr": "Kháng Bão Từ và Chiến đấu",
+        "magnetic_combat_txt": "1. Trong chiến đấu cá nhân, sát thương được tính dựa trên chỉ số kháng của thương nhân đầu tiên tấn công mục tiêu.\n2. Khi tham gia tập hợp, tất cả các thành viên sử dụng chỉ số kháng của Trưởng nhóm tập hợp."
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",
