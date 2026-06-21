@@ -262,7 +262,7 @@ export default function Guides() {
                             {section.methods && (
                                 <div className="magnetic-methods-grid" style={{
                                     display: 'grid',
-                                    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                                    gridTemplateColumns: 'repeat(2, 1fr)',
                                     gap: '1.5rem',
                                     marginTop: '2rem',
                                     marginBottom: '2rem'
@@ -407,7 +407,8 @@ export default function Guides() {
                                         src={section.image}
                                         alt={section.header ? t(section.header) : "Guide Illustration"}
                                         style={{
-                                            maxWidth: '100%',
+                                            maxWidth: section.image.includes('MSR') ? '500px' : '100%',
+                                            width: '100%',
                                             height: 'auto',
                                             borderRadius: '8px',
                                             border: '1px solid rgba(255,255,255,0.1)',
