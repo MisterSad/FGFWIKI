@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "저항 규칙",
         "magnetic_rules_txt": "자기장 폭풍 저항이 부족하면 기함의 피해량이 감소하고, 큰 피해(대파)를 입을 확률이 크게 증가하게 됩니다.",
         "magnetic_increase_hdr": "저항 강화 방법",
-        "magnetic_increase_txt": "1. 전자기 실드 타워를 건설 및 업그레이드합니다.\n2. 고레벨의 홈 포트에 안착하여 추가 저항 보너스를 획득합니다.\n3. 시즌 패스 특권을 획득합니다.\n4. 상업 길드원들과 함께 전자기 저항 기기를 교환 및 나눕니다.",
+        "magnetic_increase_txt": "자기장 폭풍의 치명적인 방해를 피하려면 다음 방법을 이용해 함대 저항을 강화해야 합니다:",
         "magnetic_combat_hdr": "저항력과 전투",
-        "magnetic_combat_txt": "1. 개인 전투 시, 피해량과 대파 확률은 대상을 가장 먼저 공격한 길드원의 저항력을 바탕으로 계산됩니다.\n2. 집결(랠리) 참여 시, 모든 길드원은 집결장(랠리 리더)의 저항력을 기준으로 전투를 수행합니다."
+        "magnetic_combat_txt": "함대 저항은 전투 진행 형태에 따라 각각 다음과 같이 반영됩니다:",
+        "magnetic_method1_title": "전자기 실드 타워",
+        "magnetic_method1_desc": "전자기 실드 타워를 건설 및 업그레이드합니다.",
+        "magnetic_method2_title": "홈 포트 진입",
+        "magnetic_method2_desc": "고레벨의 홈 포트에 안착하여 추가 저항 보너스를 획득합니다.",
+        "magnetic_method3_title": "시즌 패스 특권",
+        "magnetic_method3_desc": "시즌 패스 특권을 획득합니다.",
+        "magnetic_method4_title": "길드 상호 협력",
+        "magnetic_method4_desc": "상업 길드원들과 함께 전자기 저항 기기를 교환 및 나눕니다.",
+        "magnetic_combat1_title": "솔로전",
+        "magnetic_combat1_desc": "개인 전투 시, 피해량과 대파 확률은 대상을 가장 먼저 공격한 길드원의 저항력을 바탕으로 계산됩니다.",
+        "magnetic_combat2_title": "집결 연합 작전",
+        "magnetic_combat2_desc": "집결(랠리) 참여 시, 모든 길드원은 집결장(랠리 리더)의 저항력을 기준으로 전투를 수행합니다."
     },
     "hero_data": {
         "h1_notes": "이온 회전에 필수. 거대한 치유와 팀 전체 지능 버프.",

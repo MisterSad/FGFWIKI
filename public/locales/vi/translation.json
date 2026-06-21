@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Tìm hiểu về Kháng",
         "magnetic_rules_txt": "Kháng Bão Từ thể hiện khả năng chống chịu nhiễu bão từ của hạm đội. Nếu kháng quá thấp, sát thương từ tàu chiến chủ lực sẽ giảm đi và nguy cơ chịu thiệt hại lớn sẽ tăng lên.",
         "magnetic_increase_hdr": "Cách tăng Kháng",
-        "magnetic_increase_txt": "1. Xây dựng và nâng cấp Tháp Khiên Điện Từ.\n2. Định cư tại Cảng Nhà có cấp độ cao hơn để nhận bonus kháng lớn hơn.\n3. Mở khóa các đặc quyền của Vé Mùa.\n4. Trao đổi thiết bị chống từ tính với các thành viên trong bang hội.",
+        "magnetic_increase_txt": "Để sống sót qua những nhiễu loạn của bão từ vũ trụ, các thương nhân phải tăng chỉ số kháng bằng các phương pháp sau:",
         "magnetic_combat_hdr": "Kháng Bão Từ và Chiến đấu",
-        "magnetic_combat_txt": "1. Trong chiến đấu cá nhân, sát thương được tính dựa trên chỉ số kháng của thương nhân đầu tiên tấn công mục tiêu.\n2. Khi tham gia tập hợp, tất cả các thành viên sử dụng chỉ số kháng của Trưởng nhóm tập hợp."
+        "magnetic_combat_txt": "Kháng của hạm đội ảnh hưởng đến tính toán chiến đấu khác nhau tùy thuộc vào chiến thuật của bạn:",
+        "magnetic_method1_title": "Tháp Khiên Điện Từ",
+        "magnetic_method1_desc": "Xây dựng và nâng cấp Tháp Khiên Điện Từ.",
+        "magnetic_method2_title": "Cảng Nhà",
+        "magnetic_method2_desc": "Định cư tại Cảng Nhà có cấp độ cao hơn để nhận bonus kháng lớn hơn.",
+        "magnetic_method3_title": "Vé Mùa",
+        "magnetic_method3_desc": "Mở khóa các đặc quyền của Vé Mùa.",
+        "magnetic_method4_title": "Hợp tác Bang hội",
+        "magnetic_method4_desc": "Trao đổi thiết bị chống từ tính với các thành viên trong bang hội.",
+        "magnetic_combat1_title": "Chiến đấu cá nhân",
+        "magnetic_combat1_desc": "Trong chiến đấu cá nhân, sát thương được tính dựa trên chỉ số kháng của thương nhân đầu tiên tấn công mục tiêu.",
+        "magnetic_combat2_title": "Chiến dịch Tập hợp",
+        "magnetic_combat2_desc": "Khi tham gia tập hợp, tất cả các thành viên sử dụng chỉ số kháng của Trưởng nhóm tập hợp."
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

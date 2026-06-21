@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Entendendo a resistência",
         "magnetic_rules_txt": "Uma baixa resistência reduz os danos causados por sua nau capitânia e aumenta a chance de sofrer avarias críticas.",
         "magnetic_increase_hdr": "Formas de aumentar a resistência",
-        "magnetic_increase_txt": "1. Construa e melhore a Torre de Escudo Eletromagnético.\n2. Estabeleça-se em Portos de Origem de nível mais alto.\n3. Adquira os benefícios do passe de temporada.\n4. Troque dispositivos antimagnéticos com membros da guilda.",
+        "magnetic_increase_txt": "Para sobreviver à tempestade magnética cósmica, os mercadores devem aumentar a resistência com estes métodos:",
         "magnetic_combat_hdr": "Resistência no combate",
-        "magnetic_combat_txt": "1. Em combates solo, a resistência é baseada no primeiro jogador que ataca.\n2. Em ralis, a resistência aplicada ao grupo é a do líder do rali."
+        "magnetic_combat_txt": "A resistência da frota afeta os cálculos de combate de acordo com a estratégia:",
+        "magnetic_method1_title": "Torre de Escudo Eletromagnético",
+        "magnetic_method1_desc": "Construa e melhore a Torre de Escudo Eletromagnético.",
+        "magnetic_method2_title": "Porto de Origem",
+        "magnetic_method2_desc": "Estabeleça-se em Portos de Origem de nível mais alto.",
+        "magnetic_method3_title": "Passe de Temporada",
+        "magnetic_method3_desc": "Adquira os benefícios do passe de temporada.",
+        "magnetic_method4_title": "Cooperação de Guilda",
+        "magnetic_method4_desc": "Troque dispositivos antimagnéticos com membros da guilda.",
+        "magnetic_combat1_title": "Combates Solo",
+        "magnetic_combat1_desc": "Em combates solo, a resistência é baseada no primeiro jogador que ataca.",
+        "magnetic_combat2_title": "Operações de Rali",
+        "magnetic_combat2_desc": "Em ralis, a resistência aplicada ao grupo é a do líder do rali."
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",

@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Verständnis der Resistenz",
         "magnetic_rules_txt": "Resistenz minimiert Stürme. Bei unzureichender Resistenz sinkt der Schaden des Flaggschiffs und das Risiko für schweren Schaden steigt.",
         "magnetic_increase_hdr": "Möglichkeiten zur Erhöhung",
-        "magnetic_increase_txt": "1. Bauen und verbessern Sie den elektromagnetischen Schildturm.\n2. Nutzen Sie höherstufige Heimatports.\n3. Schalten Sie Season-Pass-Privilegien frei.\n4. Tauschen Sie Anti-Magnet-Geräte in der Gilde aus.",
+        "magnetic_increase_txt": "Um die kosmischen Störungen zu überstehen, müssen Händler ihre Resistenz wie folgt erhöhen:",
         "magnetic_combat_hdr": "Resistenz im Kampf",
-        "magnetic_combat_txt": "1. Im Solokampf bestimmt der erste Angreifer die Resistenzstufe.\n2. Bei einer Versammlung gilt die Resistenz des Versammlungsleiters für die gesamte Gruppe."
+        "magnetic_combat_txt": "Die Flottenresistenz beeinflusst die Berechnungen je nach Kampfstrategie:",
+        "magnetic_method1_title": "Elektromagnetischer Schildturm",
+        "magnetic_method1_desc": "Bauen und verbessern Sie den elektromagnetischen Schildturm.",
+        "magnetic_method2_title": "Heimatport-Siedlung",
+        "magnetic_method2_desc": "Nutzen Sie höherstufige Heimatports.",
+        "magnetic_method3_title": "Season-Pass",
+        "magnetic_method3_desc": "Schalten Sie Season-Pass-Privilegien frei.",
+        "magnetic_method4_title": "Gildenkooperation",
+        "magnetic_method4_desc": "Tauschen Sie Anti-Magnet-Geräte in der Gilde aus.",
+        "magnetic_combat1_title": "Solokampf",
+        "magnetic_combat1_desc": "Im Solokampf bestimmt der erste Angreifer die Resistenzstufe.",
+        "magnetic_combat2_title": "Sammeloperationen",
+        "magnetic_combat2_desc": "Bei einer Versammlung gilt die Resistenz des Versammlungsleiters für die gesamte Gruppe."
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

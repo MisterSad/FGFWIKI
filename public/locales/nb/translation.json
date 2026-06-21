@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Forstå motstand",
         "magnetic_rules_txt": "Magnetstormmotstand representerer flåtens evne til å motstå storminterferens. Hvis motstanden er for lav, reduseres flaggskipets skadeutgang, og risikoen for kritisk skade øker.",
         "magnetic_increase_hdr": "Måter å øke motstanden på",
-        "magnetic_increase_txt": "1. Bygg og oppgrader det elektromagnetiske skjoldtårnet.\n2. Bosett deg i et Hjemmehavn med høyere nivå for større motstandsbonuser.\n3. Lås opp privilegier i sesongpasset.\n4. Bytt antimagnetiske enheter med medlemmer av handelslauget.",
+        "magnetic_increase_txt": "For å overleve de kosmiske magnetstormene, må handelsmenn øke motstanden sin ved å bruke følgende metoder:",
         "magnetic_combat_hdr": "Motstand og kamp",
-        "magnetic_combat_txt": "1. I solokamp beregnes skade basert på motstanden til den første handelsmannen som angriper målet.\n2. I samlingskamper bruker alle medlemmene samlingslederens motstand for beregninger."
+        "magnetic_combat_txt": "Flåtens motstand påvirker kampberegninger forskjellig avhengig av din kampstrategi:",
+        "magnetic_method1_title": "Elektromagnetisk skjoldtårn",
+        "magnetic_method1_desc": "Bygg og oppgrader det elektromagnetiske skjoldtårnet.",
+        "magnetic_method2_title": "Hjemmehavn",
+        "magnetic_method2_desc": "Bosett deg i et Hjemmehavn med høyere nivå for større motstandsbonuser.",
+        "magnetic_method3_title": "Sesongpass",
+        "magnetic_method3_desc": "Lås opp privilegier i sesongpasset.",
+        "magnetic_method4_title": "Laugsamarbeid",
+        "magnetic_method4_desc": "Bytt antimagnetiske enheter med medlemmer av handelslauget.",
+        "magnetic_combat1_title": "Solokamp",
+        "magnetic_combat1_desc": "I solokamp beregnes skade basert på motstanden til den første handelsmannen som angriper målet.",
+        "magnetic_combat2_title": "Samlingsoperasjoner",
+        "magnetic_combat2_desc": "I samlingskamper bruker alle medlemmene samlingslederens motstand for beregninger."
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

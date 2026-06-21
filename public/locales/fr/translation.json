@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Comprendre la résistance",
         "magnetic_rules_txt": "La résistance aux tempêtes magnétiques réduit l'interférence subie. Si elle est trop basse, les dégâts de votre vaisseau amiral diminuent et le risque de subir des dégâts majeurs augmente.",
         "magnetic_increase_hdr": "Comment augmenter la résistance",
-        "magnetic_increase_txt": "1. Construisez et améliorez la Tour de bouclier électromagnétique.\n2. Installez-vous dans des ports d'attache de niveau supérieur.\n3. Débloquez les privilèges du pass saisonnier.\n4. Échangez des dispositifs anti-magnétiques avec votre guilde.",
+        "magnetic_increase_txt": "Pour survivre aux interférences des tempêtes magnétiques cosmiques, les marchands doivent renforcer leur résistance grâce aux méthodes suivantes :",
         "magnetic_combat_hdr": "Résistance et combat",
-        "magnetic_combat_txt": "1. En combat solo, les dégâts sont calculés selon la résistance du premier attaquant.\n2. En ralliement, c'est la résistance du chef de ralliement qui s'applique à tout le groupe."
+        "magnetic_combat_txt": "La résistance de la flotte influence les calculs de combat différemment selon votre stratégie d'engagement :",
+        "magnetic_method1_title": "Tour de bouclier électromagnétique",
+        "magnetic_method1_desc": "Construisez et améliorez la Tour de bouclier électromagnétique.",
+        "magnetic_method2_title": "Installation en Port d'Attache",
+        "magnetic_method2_desc": "Installez-vous dans des ports d'attache de niveau supérieur.",
+        "magnetic_method3_title": "Pass de Saison",
+        "magnetic_method3_desc": "Débloquez les privilèges du pass saisonnier.",
+        "magnetic_method4_title": "Coopération de Guilde",
+        "magnetic_method4_desc": "Échangez des dispositifs anti-magnétiques avec votre guilde.",
+        "magnetic_combat1_title": "Combat Solo",
+        "magnetic_combat1_desc": "En combat solo, les dégâts sont calculés selon la résistance du premier attaquant.",
+        "magnetic_combat2_title": "Ralliement de Guilde",
+        "magnetic_combat2_desc": "En ralliement, c'est la résistance du chef de ralliement qui s'applique à tout le groupe."
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

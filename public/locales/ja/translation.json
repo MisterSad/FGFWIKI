@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "耐性の仕組み",
         "magnetic_rules_txt": "電磁嵐耐性は艦隊の耐久力と直結します。耐性が不足していると、旗艦の与ダメージが低下し、致命的な大破を受けるリスクが大幅に増加します。",
         "magnetic_increase_hdr": "耐性を上げる方法",
-        "magnetic_increase_txt": "1. 電磁シールドタワーを建設・アップグレードする。\n2. より高レベルのホームポートに入港する。\n3. シーズンパスの特典を解放する。\n4. 商会のメンバー間で対電磁嵐デバイスを交換する。",
+        "magnetic_increase_txt": "宇宙の電磁嵐による深刻な妨害を乗り切るため、以下の方法で耐性を強化してください：",
         "magnetic_combat_hdr": "耐性と戦闘",
-        "magnetic_combat_txt": "1. ソロ戦闘時、与ダメージおよび大破率はターゲットを最初に攻撃したプレイヤーの耐性で計算されます。\n2. 集結（ラリー）戦闘時は、集結リーダーの耐性が全メンバーに一律で適用されます。"
+        "magnetic_combat_txt": "艦隊の耐性は、交戦時の編成によって以下のように戦闘計算に反映されます：",
+        "magnetic_method1_title": "電磁シールドタワー",
+        "magnetic_method1_desc": "電磁シールドタワーを建設・アップグレードする。",
+        "magnetic_method2_title": "ホームポート進駐",
+        "magnetic_method2_desc": "より高レベルのホームポートに入港する。",
+        "magnetic_method3_title": "シーズンパス特典",
+        "magnetic_method3_desc": "シーズンパスの特典を解放する。",
+        "magnetic_method4_title": "商会メンバー間協力",
+        "magnetic_method4_desc": "商会のメンバー間で対電磁嵐デバイスを交換する。",
+        "magnetic_combat1_title": "ソロ遭遇戦",
+        "magnetic_combat1_desc": "ソロ戦闘時、与ダメージおよび大破率はターゲットを最初に攻撃したプレイヤーの耐性で計算されます。",
+        "magnetic_combat2_title": "集結ラリー作戦",
+        "magnetic_combat2_desc": "集結（ラリー）戦闘時は、集結リーダーの耐性が全メンバーに一律で適用されます。"
     },
     "hero_data": {
         "h1_notes": "イオンローテーションに必須。膨大な回復とチーム全体の知力バフ。",

@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Förstå resistens",
         "magnetic_rules_txt": "Magnetstormsresistens är flottans förmåga att motstå stormstörningar. Om din resistens är för låg minskar flaggskeppets skadeeffekt och risken för kritiska skador ökar.",
         "magnetic_increase_hdr": "Sätt att öka resistensen",
-        "magnetic_increase_txt": "1. Bygg och uppgradera det elektromagnetiska sköldtornet.\n2. Bosätt dig i en hemhamn på högre nivå för större resistensbonusar.\n3. Lås upp privilegier i säsongspasset.\n4. Byt antimagnetiska enheter med handelsgillemedlemmar.",
+        "magnetic_increase_txt": "För att överleva kosmiska magnetstormar måste handelsresande öka sin resistens med följande metoder:",
         "magnetic_combat_hdr": "Resistens och strid",
-        "magnetic_combat_txt": "1. I solostrid beräknas skadan baserat på resistensen hos den första spelaren som angriper målet.\n2. I rallystrider använder alla medlemmar rallyledarens resistensvärde."
+        "magnetic_combat_txt": "Flottans resistens påverkar stridsberäkningar på olika sätt beroende på din stridsstrategi:",
+        "magnetic_method1_title": "Elektromagnetiskt sköldtorn",
+        "magnetic_method1_desc": "Bygg och uppgradera det elektromagnetiska sköldtornet.",
+        "magnetic_method2_title": "Hemhamn",
+        "magnetic_method2_desc": "Bosätt dig i en hemhamn på högre nivå för större resistensbonusar.",
+        "magnetic_method3_title": "Säsongspass",
+        "magnetic_method3_desc": "Lås upp privilegier i säsongspasset.",
+        "magnetic_method4_title": "Gillesamarbete",
+        "magnetic_method4_desc": "Byt antimagnetiska enheter med handelsgillemedlemmar.",
+        "magnetic_combat1_title": "Solostrid",
+        "magnetic_combat1_desc": "I solostrid beräknas skadan baserat på resistensen hos den första spelaren som angriper målet.",
+        "magnetic_combat2_title": "Rallyoperationer",
+        "magnetic_combat2_desc": "I rallystrider använder alla medlemmar rallyledarens resistensvärde."
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",

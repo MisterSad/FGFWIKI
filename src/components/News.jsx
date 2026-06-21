@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
-import { Newspaper, Lightbulb, ArrowLeft } from 'lucide-react';
+import { Newspaper, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Swords } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function News() {
@@ -247,6 +247,148 @@ export default function News() {
                                             }}>{t(stage.desc)}</p>
                                         </div>
                                     ))}
+                                </div>
+                            )}
+
+                            {section.methods && (
+                                <div className="magnetic-methods-grid" style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                                    gap: '1.5rem',
+                                    marginTop: '2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    {section.methods.map((method, mIdx) => {
+                                        const IconComponent = { Shield, Home, Crown, Users }[method.icon] || Shield;
+                                        return (
+                                            <div key={mIdx} className="method-card" style={{
+                                                background: 'rgba(255, 255, 255, 0.01)',
+                                                border: '1px solid var(--border)',
+                                                borderRadius: '8px',
+                                                padding: '1.5rem',
+                                                transition: 'all 0.3s ease',
+                                                display: 'flex',
+                                                flexDirection: 'column',
+                                                gap: '1rem',
+                                                position: 'relative',
+                                                overflow: 'hidden'
+                                            }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.borderColor = 'var(--gold)';
+                                                e.currentTarget.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.1)';
+                                                e.currentTarget.style.transform = 'translateY(-2px)';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.borderColor = 'var(--border)';
+                                                e.currentTarget.style.boxShadow = 'none';
+                                                e.currentTarget.style.transform = 'none';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.01)';
+                                            }}
+                                            >
+                                                <div style={{
+                                                    width: '45px',
+                                                    height: '45px',
+                                                    borderRadius: '6px',
+                                                    background: 'rgba(212, 175, 55, 0.1)',
+                                                    border: '1px solid rgba(212, 175, 55, 0.2)',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    color: 'var(--gold)',
+                                                    transition: 'all 0.3s ease'
+                                                }}>
+                                                    <IconComponent size={22} />
+                                                </div>
+                                                <div>
+                                                    <h4 style={{
+                                                        margin: '0 0 0.5rem 0',
+                                                        fontFamily: 'var(--font-label)',
+                                                        fontSize: '1.2rem',
+                                                        color: 'var(--text-primary)',
+                                                        letterSpacing: '0.5px'
+                                                    }}>{t(method.title)}</h4>
+                                                    <p style={{
+                                                        margin: 0,
+                                                        fontSize: '0.95rem',
+                                                        color: 'var(--text-dim)',
+                                                        lineHeight: '1.6'
+                                                    }}>{t(method.desc)}</p>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            )}
+
+                            {section.combatTypes && (
+                                <div className="magnetic-combat-grid" style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                                    gap: '1.5rem',
+                                    marginTop: '2rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    {section.combatTypes.map((type, cIdx) => {
+                                        const IconComponent = { Swords, Users }[type.icon] || Swords;
+                                        return (
+                                            <div key={cIdx} className="combat-card" style={{
+                                                background: 'rgba(255, 255, 255, 0.01)',
+                                                border: '1px solid var(--border)',
+                                                borderRadius: '8px',
+                                                padding: '1.5rem',
+                                                transition: 'all 0.3s ease',
+                                                display: 'flex',
+                                                flexDirection: 'column',
+                                                gap: '1rem',
+                                                position: 'relative',
+                                                overflow: 'hidden'
+                                            }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.borderColor = 'var(--gold)';
+                                                e.currentTarget.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.1)';
+                                                e.currentTarget.style.transform = 'translateY(-2px)';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.borderColor = 'var(--border)';
+                                                e.currentTarget.style.boxShadow = 'none';
+                                                e.currentTarget.style.transform = 'none';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.01)';
+                                            }}
+                                            >
+                                                <div style={{
+                                                    width: '45px',
+                                                    height: '45px',
+                                                    borderRadius: '6px',
+                                                    background: 'rgba(212, 175, 55, 0.1)',
+                                                    border: '1px solid rgba(212, 175, 55, 0.2)',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    color: 'var(--gold)',
+                                                    transition: 'all 0.3s ease'
+                                                }}>
+                                                    <IconComponent size={22} />
+                                                </div>
+                                                <div>
+                                                    <h4 style={{
+                                                        margin: '0 0 0.5rem 0',
+                                                        fontFamily: 'var(--font-label)',
+                                                        fontSize: '1.2rem',
+                                                        color: 'var(--text-primary)',
+                                                        letterSpacing: '0.5px'
+                                                    }}>{t(type.title)}</h4>
+                                                    <p style={{
+                                                        margin: 0,
+                                                        fontSize: '0.95rem',
+                                                        color: 'var(--text-dim)',
+                                                        lineHeight: '1.6'
+                                                    }}>{t(type.desc)}</p>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             )}
 

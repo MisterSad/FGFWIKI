@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Understanding Resistance",
         "magnetic_rules_txt": "Magnetic Storm Resistance represents your fleet's ability to withstand and neutralize storm interference. If your resistance is too low, your flagship's damage output is reduced, and the risk of taking critical hull damage increases significantly.",
         "magnetic_increase_hdr": "Ways to Increase Resistance",
-        "magnetic_increase_txt": "1. Build and upgrade the Electromagnetic Shield Tower.\n2. Settle in higher-level Home Ports for greater resistance bonuses.\n3. Unlock Season Pass privileges.\n4. Exchange Anti-Magnetic Devices with guild members to assist each other.",
+        "magnetic_increase_txt": "To survive the cosmic magnetic storm interference, traders must enhance their resistance using the following methods:",
         "magnetic_combat_hdr": "Resistance and Combat",
-        "magnetic_combat_txt": "1. In solo combat, the damage and critical damage rates are calculated based on the resistance of the first trader who engages the target.\n2. In rally battles, the entire group utilizes the Rally Leader's resistance value for damage and protection calculations."
+        "magnetic_combat_txt": "Fleet resistance affects combat calculations differently depending on your engagement strategy:",
+        "magnetic_method1_title": "Electromagnetic Shield Tower",
+        "magnetic_method1_desc": "Build and upgrade the Electromagnetic Shield Tower.",
+        "magnetic_method2_title": "Home Port Settlement",
+        "magnetic_method2_desc": "Settle in higher-level Home Ports for greater resistance bonuses.",
+        "magnetic_method3_title": "Season Pass Privileges",
+        "magnetic_method3_desc": "Unlock Season Pass privileges.",
+        "magnetic_method4_title": "Guild Cooperation",
+        "magnetic_method4_desc": "Exchange Anti-Magnetic Devices with guild members to assist each other.",
+        "magnetic_combat1_title": "Solo Combat",
+        "magnetic_combat1_desc": "In solo combat, the damage and critical damage rates are calculated based on the resistance of the first trader who engages the target.",
+        "magnetic_combat2_title": "Rally Operations",
+        "magnetic_combat2_desc": "In rally battles, the entire group utilizes the Rally Leader's resistance value for damage and protection calculations."
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

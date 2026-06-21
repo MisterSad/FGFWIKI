@@ -303,9 +303,21 @@
         "magnetic_rules_hdr": "Capire la resistenza",
         "magnetic_rules_txt": "Se la resistenza è insufficiente, i danni della nave ammiraglia diminuiscono e aumenta il rischio di subire danni strutturali gravi.",
         "magnetic_increase_hdr": "Metodi per aumentare la resistenza",
-        "magnetic_increase_txt": "1. Costruisci e potenzia la Torre dello scudo elettromagnetico.\n2. Scegli porti d'attacco di livello superiore.\n3. Sblocca i privilegi del pass stagionale.\n4. Scambia dispositivi anti-magnetici con i membri della gilda.",
+        "magnetic_increase_txt": "Per sopravvivere alle tempeste magnetiche cosmiche, i mercanti devono potenziare la resistenza nei seguenti modi:",
         "magnetic_combat_hdr": "Resistenza e combattimento",
-        "magnetic_combat_txt": "1. Nel combattimento singolo si usa la resistenza del primo giocatore che ingaggia il bersaglio.\n2. Nei raggruppamenti si applica la resistenza del capo raggruppamento."
+        "magnetic_combat_txt": "La resistenza influisce sui calcoli in base alla strategia di attacco scelta:",
+        "magnetic_method1_title": "Torre dello scudo elettromagnetico",
+        "magnetic_method1_desc": "Costruisci e potenzia la Torre dello scudo elettromagnetico.",
+        "magnetic_method2_title": "Porto d'attacco",
+        "magnetic_method2_desc": "Scegli porti d'attacco di livello superiore.",
+        "magnetic_method3_title": "Pass stagionale",
+        "magnetic_method3_desc": "Sblocca i privilegi del pass stagionale.",
+        "magnetic_method4_title": "Cooperazione di gilda",
+        "magnetic_method4_desc": "Scambia dispositivi anti-magnetici con i membri della gilda.",
+        "magnetic_combat1_title": "Combattimento singolo",
+        "magnetic_combat1_desc": "Nel combattimento singolo si usa la resistenza del primo giocatore che ingaggia il bersaglio.",
+        "magnetic_combat2_title": "Raggruppamenti di gilda",
+        "magnetic_combat2_desc": "Nei raggruppamenti si applica la resistenza del capo raggruppamento."
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",
