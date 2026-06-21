@@ -313,7 +313,7 @@ export const tips = [
     highlight: true,
     hasDetails: true,
     isNew: true,
-    publishDate: '2026-06-21T18:38:00Z',
+    publishDate: '2026-06-21T18:58:00Z',
     sections: [
       {
         text: 'tips.star_of_guild_intro'
