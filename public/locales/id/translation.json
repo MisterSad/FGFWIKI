@@ -4,6 +4,10 @@
             "title": "Panduan Strategi, Daftar Tingkat & Alat",
             "description": "Wiki referensi untuk Foundation: Galactic Frontier. Panduan strategi, daftar tingkat pahlawan, dek andalan, tim darat, penelusuran acara, kode hadiah, dan alat mendalam, dalam bahasa Inggris dan Prancis."
         },
+        "news": {
+            "title": "Berita",
+            "description": "Semua berita terbaru, pembaruan, dan detail migrasi untuk Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Panduan Strategi",
             "description": "Landasan Mendalam: Panduan Galactic Frontier yang mencakup perkembangan awal, pertengahan, dan akhir game, taktik tempur, ekonomi, dan manajemen sumber daya."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Rumah",
+        "news": "Berita",
         "guides": "Panduan",
         "daily_tasks": "Tugas Harian",
         "champions": "Juara",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Panduan",
+        "news": "Berita",
         "champions": "Juara",
         "meta_ships": "Unggulan",
         "flagship_decks": "Dek Unggulan",

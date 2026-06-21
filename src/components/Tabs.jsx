@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal } from 'lucide-react';
+import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper } from 'lucide-react';
 
 // Map route paths to icons and translation labels
 const NAV_ITEMS = [
     { path: '/home', labelKey: 'navigation.home', icon: Home },
+    { path: '/news', labelKey: 'navigation.news', icon: Newspaper },
     { path: '/guides', labelKey: 'navigation.guides', icon: BookOpen },
     { path: '/champions', labelKey: 'navigation.champions', icon: Trophy },
     { path: '/flagships', labelKey: 'navigation.flagships', icon: Rocket },
@@ -21,11 +22,12 @@ export default function Tabs() {
 
     // Active state checkers for mobile bottom nav
     const isHomeActive = location.pathname.startsWith('/home') || location.pathname === '/';
+    const isNewsActive = location.pathname.startsWith('/news');
     const isGuidesActive = location.pathname.startsWith('/guides');
     const isChampionsActive = location.pathname.startsWith('/champions');
     const isToolsActive = location.pathname.startsWith('/tools');
     
-    const morePaths = ['/flagships', '/events', '/gift-codes'];
+    const morePaths = ['/tools', '/flagships', '/events', '/gift-codes'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));
 
     return (
@@ -71,6 +73,16 @@ export default function Tabs() {
                         <span className="mobile-label">{t('navigation.home')}</span>
                     </NavLink>
 
+                    {/* News */}
+                    <NavLink
+                        to="/news"
+                        className={() => `mobile-tab-item ${isNewsActive ? 'active' : ''}`}
+                        onClick={() => setIsMoreOpen(false)}
+                    >
+                        <Newspaper size={20} />
+                        <span className="mobile-label">{t('navigation.news')}</span>
+                    </NavLink>
+
                     {/* Guides */}
                     <NavLink
                         to="/guides"
@@ -89,16 +101,6 @@ export default function Tabs() {
                     >
                         <Trophy size={20} />
                         <span className="mobile-label">{t('navigation.champions')}</span>
-                    </NavLink>
-
-                    {/* Tools */}
-                    <NavLink
-                        to="/tools"
-                        className={() => `mobile-tab-item ${isToolsActive ? 'active' : ''}`}
-                        onClick={() => setIsMoreOpen(false)}
-                    >
-                        <Hammer size={20} />
-                        <span className="mobile-label">{t('navigation.builder')}</span>
                     </NavLink>
 
                     {/* More button */}
@@ -121,6 +123,16 @@ export default function Tabs() {
                         />
                         <div className="mobile-more-drawer">
                             <div className="mobile-more-grid">
+                                {/* Tools */}
+                                <NavLink
+                                    to="/tools"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/tools') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Hammer className="mobile-more-card__icon" size={24} />
+                                    <span className="mobile-more-card__label">{t('navigation.builder')}</span>
+                                </NavLink>
+
                                 {/* Flagships */}
                                 <NavLink
                                     to="/flagships"

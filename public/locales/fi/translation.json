@@ -4,6 +4,10 @@
             "title": "Strategiaoppaat, tier-listat ja työkalut",
             "description": "Foundation: Galactic Frontier -pelin viiteopas. Strategiaoppaat, sankarien tier-listat, lippulaivapakat, maajoukkueet, tapahtumaoppaat, lahjakoodit ja syvälliset työkalut suomeksi ja englanniksi."
         },
+        "news": {
+            "title": "Uutiset",
+            "description": "Kaikki viimeisimmät uutiset, päivitykset ja siirtotiedot pelille Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Strategiaoppaat",
             "description": "Yksityiskohtaiset Foundation: Galactic Frontier -oppaat, jotka kattavat alku-, keski- ja loppupelin etenemisen, taistelutaktiikat, talouden ja resurssienhallinnan."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Etusivu",
+        "news": "Uutiset",
         "guides": "Oppaat",
         "daily_tasks": "Päivittäiset tehtävät",
         "champions": "Sankarit",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Oppaat",
+        "news": "Uutiset",
         "champions": "Sankarit",
         "meta_ships": "Lippulaivat",
         "flagship_decks": "Lippulaivapakat",

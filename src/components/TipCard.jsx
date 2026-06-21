@@ -1,5 +1,5 @@
 import React from 'react';
-import { Lightbulb, Star, BookOpen, Swords, Rocket, Users, Calendar, Trophy, Coins, Hammer, Home, Crown, Globe, Gamepad2 } from 'lucide-react';
+import { Lightbulb, Star, BookOpen, Swords, Rocket, Users, Calendar, Trophy, Coins, Hammer, Home, Crown, Globe, Gamepad2, Newspaper } from 'lucide-react';
 
 const CATEGORY_ICONS = {
     beginner: BookOpen,
@@ -12,7 +12,8 @@ const CATEGORY_ICONS = {
     builder: Hammer,
     gameplay: Gamepad2,
     vip: Crown,
-    migration: Globe
+    migration: Globe,
+    news: Newspaper
 };
 
 import { useTranslation } from 'react-i18next';

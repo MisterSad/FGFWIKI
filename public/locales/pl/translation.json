@@ -4,6 +4,10 @@
             "title": "Poradniki strategiczne, listy tier i narzędzia",
             "description": "Wiki referencyjne dla Foundation: Galactic Frontier. Poradniki strategiczne, listy tier bohaterów, talie okrętów flagowych, drużyny naziemne, instrukcje wydarzeń, kody upominkowe i zaawansowane narzędzia, w angielskim, francuskim, niemieckim, włoskim, polskim, tureckim, ukraińskim, japońskim, koreańskim i chińskim uproszczonym."
         },
+        "news": {
+            "title": "Aktualności",
+            "description": "Wszystkie najnowsze wiadomości, aktualizacje i szczegóły dotyczące migracji w Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Poradniki strategiczne",
             "description": "Szczegółowe poradniki Foundation: Galactic Frontier obejmujące postęp wczesnej, średniej i późnej gry, taktyki bojowe, gospodarkę i zarządzanie zasobami."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Strona główna",
+        "news": "Aktualności",
         "guides": "Poradniki",
         "daily_tasks": "Codzienne zadania",
         "champions": "Mistrzowie",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Poradniki",
+        "news": "Aktualności",
         "champions": "Mistrzowie",
         "meta_ships": "Okręty flagowe",
         "flagship_decks": "Talie flagowe",

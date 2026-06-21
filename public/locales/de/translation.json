@@ -4,6 +4,10 @@
             "title": "Strategieguides, Tier-Listen & Tools",
             "description": "Das Referenz-Wiki für Foundation: Galactic Frontier. Strategieguides, Helden-Tier-Listen, Flaggschiff-Decks, Bodentruppen, Event-Walkthroughs, Geschenkcodes und detaillierte Tools — auf Englisch, Französisch, Koreanisch, Deutsch, Japanisch und Chinesisch."
         },
+        "news": {
+            "title": "Neuigkeiten",
+            "description": "Die neuesten Nachrichten, Updates und Migrationsdetails für Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Strategieguides",
             "description": "Tiefgehende Foundation: Galactic Frontier Guides für frühen, mittleren und späten Spielfortschritt, Kampftaktiken, Wirtschaft und Ressourcenverwaltung."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Startseite",
+        "news": "Neuigkeiten",
         "guides": "Guides",
         "daily_tasks": "Tägliche Aufgaben",
         "champions": "Champions",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Guides",
+        "news": "Neuigkeiten",
         "champions": "Champions",
         "meta_ships": "Flaggschiffe",
         "flagship_decks": "Flaggschiff-Decks",

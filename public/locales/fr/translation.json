@@ -4,6 +4,10 @@
             "title": "Guides de stratégie, tier lists et outils",
             "description": "Le wiki de référence pour Foundation: Galactic Frontier. Guides de stratégie, tier lists des héros, decks de vaisseaux-amiraux, équipes au sol, soluces d'événements, codes cadeaux et outils interactifs, en français et anglais."
         },
+        "news": {
+            "title": "Actualités",
+            "description": "Toutes les dernières actualités, mises à jour et détails de migration pour Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Guides de stratégie",
             "description": "Guides détaillés Foundation: Galactic Frontier couvrant la progression début, milieu et fin de partie, les tactiques de combat, l'économie et la gestion des ressources."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Accueil",
+        "news": "Actualités",
         "guides": "Guides",
         "daily_tasks": "Tâches quotidiennes",
         "champions": "Champions",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Guides",
+        "news": "Actualités",
         "champions": "Champions",
         "meta_ships": "Vaisseaux amiraux",
         "flagship_decks": "Compositions amiraux",

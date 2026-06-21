@@ -4,6 +4,10 @@
             "title": "Strategiegidsen, niveaulijsten en hulpmiddelen",
             "description": "De referentiewiki voor Foundation: Galactic Frontier. Strategiegidsen, lijsten met heldsniveaus, vlaggenschipdecks, grondteams, walkthroughs van evenementen, cadeaucodes en diepgaande tools, in het Engels en Frans."
         },
+        "news": {
+            "title": "Nieuws",
+            "description": "Al het laatste nieuws, updates en migratiegegevens voor Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Strategie Gidsen",
             "description": "Diepgaande basis: Galactic Frontier-gidsen over de voortgang van het vroege, midden en late spel, gevechtstactieken, economie en hulpbronnenbeheer."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Thuis",
+        "news": "Nieuws",
         "guides": "Gidsen",
         "daily_tasks": "Dagelijkse taken",
         "champions": "Kampioenen",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Gidsen",
+        "news": "Nieuws",
         "champions": "Kampioenen",
         "meta_ships": "Vlaggenschepen",
         "flagship_decks": "Vlaggenschipdekken",

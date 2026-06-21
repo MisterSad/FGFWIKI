@@ -4,6 +4,10 @@
             "title": "Strategy Guides, Tier Lists & Tools",
             "description": "The reference wiki for Foundation: Galactic Frontier. Strategy guides, hero tier lists, flagship decks, ground teams, event walkthroughs, gift codes and in-depth tools, in English and French."
         },
+        "news": {
+            "title": "News",
+            "description": "All the latest news, updates and migration details for Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Strategy Guides",
             "description": "In-depth Foundation: Galactic Frontier guides covering early, mid and late game progression, combat tactics, economy and resource management."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Home",
+        "news": "News",
         "guides": "Guides",
         "daily_tasks": "Daily Tasks",
         "champions": "Champions",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Guides",
+        "news": "News",
         "champions": "Champions",
         "meta_ships": "Flagships",
         "flagship_decks": "Flagship Decks",

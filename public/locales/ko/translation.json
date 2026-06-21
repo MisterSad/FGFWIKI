@@ -4,6 +4,10 @@
             "title": "FGF 위키 — Foundation: Galactic Frontier 가이드, 티어리스트 & 기프트 코드",
             "description": "Foundation: Galactic Frontier의 궁극의 위키. 챔피언 티어리스트, 기함 가이드, 일일 체크리스트, 기프트 코드, 이벤트 전략, 은하 정복을 위한 도구."
         },
+        "news": {
+            "title": "뉴스",
+            "description": "Foundation: Galactic Frontier에 대한 모든 최신 뉴스, 업데이트 및 이전 세부 정보."
+        },
         "guides": {
             "title": "가이드 — 전략, 전투 & 경제 | FGF 위키",
             "description": "Foundation: Galactic Frontier의 완전한 전략 가이드 — 초보자 로드맵, 전투 전술, 에너지 타입, 함대 파워, 항구 점령, 경제 마스터."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "홈",
+        "news": "뉴스",
         "guides": "가이드",
         "daily_tasks": "일일 임무",
         "champions": "챔피언",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "가이드",
+        "news": "뉴스",
         "champions": "챔피언",
         "meta_ships": "기함",
         "flagship_decks": "기함 덱",

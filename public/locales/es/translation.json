@@ -4,6 +4,10 @@
             "title": "Guías estratégicas, tier lists y herramientas",
             "description": "La wiki de referencia para Foundation: Galactic Frontier. Guías estratégicas, tier lists de héroes, mazos de naves nodriza, equipos terrestres, guías de eventos, códigos de regalo y herramientas detalladas, en inglés y francés."
         },
+        "news": {
+            "title": "Noticias",
+            "description": "Todas las últimas noticias, actualizaciones y detalles de migración para Foundation: Galactic Frontier."
+        },
         "guides": {
             "title": "Guías estratégicas",
             "description": "Guías detalladas de Foundation: Galactic Frontier que cubren la progresión inicial, intermedia y avanzada, tácticas de combate, economía y gestión de recursos."
@@ -43,6 +47,7 @@
     },
     "navigation": {
         "home": "Inicio",
+        "news": "Noticias",
         "guides": "Guías",
         "daily_tasks": "Tareas diarias",
         "champions": "Campeones",
@@ -74,6 +79,7 @@
     },
     "categories": {
         "guides": "Guías",
+        "news": "Noticias",
         "champions": "Campeones",
         "meta_ships": "Naves nodriza",
         "flagship_decks": "Mazos de nodrizas",
