@@ -57,7 +57,8 @@
         "events": "Wydarzenia",
         "builder": "Narzędzia",
         "economy": "Gospodarka",
-        "gift_codes": "Kody upominkowe"
+        "gift_codes": "Kody upominkowe",
+        "stella_anomaly": "Stella Anomaly"
     },
     "common": {
         "kinetic": "Kinetyczny",
@@ -1362,5 +1363,20 @@
         "hermit_name": "Pustelnik",
         "hermit_bonus": "Odblokowuje T7 jonowe",
         "tech_progress": "Postęp technologii statków bojowych"
+    },
+    "stella_anomaly": {
+        "main_subtitle": "A critical bug has locked Stella’s security systems. Restore her matrices and log your UID to claim 1,000 Platinum Credits.",
+        "reset_confirm": "Reset all event progress?",
+        "p1_desc": "A low-frequency space wave is emitting repeating sequences on all channels. Transcribe the Morse pulse code to log into the terminal:",
+        "morse_placeholder": "Enter decrypted message...",
+        "p2_desc": "Stella’s information nodes are missing context blocks. Input the correct core metrics to reconstruct the sector database:",
+        "q1_text": "What is the level 12 system at the heart of the Siwenna Province where the Emperor's palace stands?",
+        "q2_text": "What is the name of the GTC Exclusive VIP program support agent?",
+        "q3_text": "Which energy type is NOT used by combat craft in Foundation: Galactic Frontier?",
+        "p3_desc": "The power distribution grid is misaligned. Align the node rows to match the energy flow protocols: Row 1 = Kinetic, Row 2 = Beam, Row 3 = Ion.",
+        "p4_desc": "System restored. Requesting authorization parameters. Input your Game UID to register for the 1,000 Platinum Credits award:",
+        "uid_invalid_error": "UID must be a number containing 8 to 12 digits.",
+        "submit_failed": "Database transmission error. Please try again.",
+        "success_msg": "Verification complete. The 1,000 Platinum Credits will be sent to your in-game mailbox before September 30, 2026."
     }
 }

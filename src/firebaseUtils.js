@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, addDoc } from "firebase/firestore";
 import { db } from "./firebase";
 
 /**
@@ -51,5 +51,32 @@ export const loadUserToolData = async (uid, toolId) => {
     } catch (error) {
         console.error("Error loading tool data: ", error);
         return null;
+    }
+};
+
+/**
+ * Submit game UID for the Stella Anomaly event.
+ * 
+ * @param {string} gameUid In-game User ID
+ * @param {string|null} firebaseUid Logged in user's ID
+ * @param {string} lang Current language code
+ */
+export const submitStellaAnomalyUid = async (gameUid, firebaseUid = null, lang = 'en') => {
+    if (!db) {
+        throw new Error("Firebase database not initialized");
+    }
+    
+    try {
+        const colRef = collection(db, "stella_anomaly_submissions");
+        await addDoc(colRef, {
+            gameUid,
+            firebaseUid,
+            lang,
+            submittedAt: new Date().toISOString()
+        });
+        return true;
+    } catch (error) {
+        console.error("Error submitting Stella Anomaly UID: ", error);
+        throw error;
     }
 };
