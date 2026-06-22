@@ -7,6 +7,24 @@ import Tabs from './Tabs';
 import AmbientSignal from './AmbientSignal';
 import useSEO from '../hooks/useSEO';
 
+const CODES = [
+    "STELLA_ANOMALY_CORE_ERR",
+    "01001100 01001111 01010110 01000101",
+    "DECRYPT_STATUS: FAIL",
+    "MEM_SECTOR_CORRUPTED: 0x4f3e",
+    "ORUN_SYSTEM_LEVEL_12",
+    "RE-ALIGNING_ENERGY_NODES...",
+    "KINETIC_BEAM_ION_REPAIR",
+    "PASSCODE: I LOVE FGF WIKI",
+    "GTC_PLATINUM_REWARDS_PENDING",
+    "SYS_RESET_CONFIRM_0",
+    "WARN: MEMORY_MATRIX_OFFLINE",
+    "TRIVIA_LORE_RECONSTRUCT",
+    "MORSE_SIGNAL: ... - . .-.. .-.. .-",
+    "SYS_STATUS: CORRUPTED_ANOMALY",
+    "CONNECTING_TO_FGF_DATABASE..."
+];
+
 export default function Layout({ children, onLoginClick }) {
     const location = useLocation();
     const { t, i18n } = useTranslation();
@@ -123,10 +141,28 @@ export default function Layout({ children, onLoginClick }) {
         ? `glitch-intensity-${['high', 'medium', 'low', 'subtle', 'none'][Math.min(completedCount, 4)]}`
         : 'glitch-intensity-none';
 
+    // Helper to render background scrolling code columns
+    const renderCodeColumn = (directionClass) => {
+        const doubleCodes = [...CODES, ...CODES]; // double list for seamless loop
+        return (
+            <div className={`anomaly-code-column ${directionClass}`} aria-hidden="true">
+                <div className="code-column-inner">
+                    {doubleCodes.map((code, idx) => (
+                        <div key={idx} className="code-line">{code}</div>
+                    ))}
+                </div>
+            </div>
+        );
+    };
+
     return (
         <div className={`app-layout ${glitchIntensityClass}`}>
             {isGlitchActive && completedCount < 4 && (
-                <div className="anomaly-scanlines" aria-hidden="true" />
+                <>
+                    <div className="anomaly-scanlines" aria-hidden="true" />
+                    {renderCodeColumn('column-left')}
+                    {renderCodeColumn('column-right')}
+                </>
             )}
             <Header onLoginClick={onLoginClick} />
 
