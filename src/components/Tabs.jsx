@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper } from 'lucide-react';
+import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles } from 'lucide-react';
 
 // Map route paths to icons and translation labels
 const NAV_ITEMS = [
@@ -13,6 +13,7 @@ const NAV_ITEMS = [
     { path: '/events', labelKey: 'navigation.events', icon: Calendar },
     { path: '/tools', labelKey: 'navigation.builder', icon: Hammer },
     { path: '/gift-codes', labelKey: 'navigation.gift_codes', icon: Gift },
+    { path: '/stella-anomaly', labelKey: 'navigation.stella_anomaly', icon: Sparkles, badge: 'EVENT' },
 ];
 
 export default function Tabs() {
@@ -27,7 +28,7 @@ export default function Tabs() {
     const isChampionsActive = location.pathname.startsWith('/champions');
     const isToolsActive = location.pathname.startsWith('/tools');
     
-    const morePaths = ['/tools', '/flagships', '/events', '/gift-codes'];
+    const morePaths = ['/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));
 
     return (
@@ -49,7 +50,24 @@ export default function Tabs() {
                                             <span className="tab-icon">
                                                 <IconComponent size={14} />
                                             </span>
-                                            <span className="tab-label">{t(item.labelKey)}</span>
+                                            <span className="tab-label">
+                                                {t(item.labelKey)}
+                                                {item.badge && (
+                                                    <span className="tab-badge-event" style={{
+                                                        marginLeft: '6px',
+                                                        background: 'var(--accent-teal)',
+                                                        color: 'var(--bg-void)',
+                                                        fontSize: '9px',
+                                                        fontWeight: 'bold',
+                                                        padding: '1px 5px',
+                                                        borderRadius: '3px',
+                                                        boxShadow: '0 0 8px rgba(78, 205, 196, 0.4)',
+                                                        letterSpacing: '0'
+                                                    }}>
+                                                        {item.badge}
+                                                    </span>
+                                                )}
+                                            </span>
                                             {isActive && <div className="tab-indicator" />}
                                         </>
                                     )}
@@ -123,6 +141,31 @@ export default function Tabs() {
                         />
                         <div className="mobile-more-drawer">
                             <div className="mobile-more-grid">
+                                {/* Stella Anomaly */}
+                                <NavLink
+                                    to="/stella-anomaly"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/stella-anomaly') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                    style={{ position: 'relative' }}
+                                >
+                                    <Sparkles className="mobile-more-card__icon" size={24} style={{ color: 'var(--accent-teal)' }} />
+                                    <span className="mobile-more-card__label">{t('navigation.stella_anomaly')}</span>
+                                    <span style={{
+                                        position: 'absolute',
+                                        top: '6px',
+                                        right: '6px',
+                                        background: 'var(--accent-teal)',
+                                        color: 'var(--bg-void)',
+                                        fontSize: '8px',
+                                        fontWeight: 'bold',
+                                        padding: '1px 4px',
+                                        borderRadius: '2px',
+                                        boxShadow: '0 0 6px rgba(78, 205, 196, 0.4)'
+                                    }}>
+                                        EVENT
+                                    </span>
+                                </NavLink>
+
                                 {/* Tools */}
                                 <NavLink
                                     to="/tools"
