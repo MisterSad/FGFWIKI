@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { ArrowUp } from 'lucide-react';
 import Header from './Header';
 import Tabs from './Tabs';
 import AmbientSignal from './AmbientSignal';
@@ -9,7 +10,27 @@ import useSEO from '../hooks/useSEO';
 export default function Layout({ children, onLoginClick }) {
     const location = useLocation();
     const { t, i18n } = useTranslation();
+    const [showScrollTop, setShowScrollTop] = useState(false);
     useSEO();
+
+    useEffect(() => {
+        const toggleVisibility = () => {
+            if (window.scrollY > 300) {
+                setShowScrollTop(true);
+            } else {
+                setShowScrollTop(false);
+            }
+        };
+        window.addEventListener('scroll', toggleVisibility);
+        return () => window.removeEventListener('scroll', toggleVisibility);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
 
     useEffect(() => {
         if (i18n.language) {
@@ -87,6 +108,47 @@ export default function Layout({ children, onLoginClick }) {
 
                 <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
             </footer>
+
+            {showScrollTop && (
+                <button
+                    onClick={scrollToTop}
+                    style={{
+                        position: 'fixed',
+                        bottom: '2rem',
+                        right: '2rem',
+                        zIndex: 99,
+                        background: 'rgba(20, 20, 20, 0.85)',
+                        backdropFilter: 'blur(8px)',
+                        border: '1px solid var(--gold)',
+                        color: 'var(--gold-bright)',
+                        width: '3.2rem',
+                        height: '3.2rem',
+                        borderRadius: '4px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        boxShadow: '0 0 15px rgba(212, 175, 55, 0.2)',
+                        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                        outline: 'none',
+                    }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'var(--gold)';
+                        e.currentTarget.style.color = 'var(--bg-void)';
+                        e.currentTarget.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.6)';
+                        e.currentTarget.style.transform = 'translateY(-3px)';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(20, 20, 20, 0.85)';
+                        e.currentTarget.style.color = 'var(--gold-bright)';
+                        e.currentTarget.style.boxShadow = '0 0 15px rgba(212, 175, 55, 0.2)';
+                        e.currentTarget.style.transform = 'none';
+                    }}
+                    aria-label="Scroll to top"
+                >
+                    <ArrowUp size={20} />
+                </button>
+            )}
 
             <AmbientSignal />
         </div>
