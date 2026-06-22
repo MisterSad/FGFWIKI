@@ -254,11 +254,24 @@ export const tips = [
       },
       {
         header: 'tips.vip_program_how_chosen_hdr',
-        text: 'tips.vip_program_how_chosen_txt'
+        text: 'tips.vip_program_how_chosen_intro',
+        methods: [
+          { title: 'tips.vip_program_factor1_title', desc: 'tips.vip_program_factor1_desc', icon: 'Calendar' },
+          { title: 'tips.vip_program_factor2_title', desc: 'tips.vip_program_factor2_desc', icon: 'Trophy' },
+          { title: 'tips.vip_program_factor3_title', desc: 'tips.vip_program_factor3_desc', icon: 'Heart' },
+          { title: 'tips.vip_program_factor4_title', desc: 'tips.vip_program_factor4_desc', icon: 'Coins' }
+        ]
       },
       {
         header: 'tips.vip_program_perks_hdr',
-        text: 'tips.vip_program_perks_txt'
+        text: 'tips.vip_program_perks_intro',
+        methods: [
+          { title: 'tips.vip_program_perk1_title', desc: 'tips.vip_program_perk1_desc', icon: 'Gift' },
+          { title: 'tips.vip_program_perk2_title', desc: 'tips.vip_program_perk2_desc', icon: 'Star' },
+          { title: 'tips.vip_program_perk3_title', desc: 'tips.vip_program_perk3_desc', icon: 'Sparkles' },
+          { title: 'tips.vip_program_perk4_title', desc: 'tips.vip_program_perk4_desc', icon: 'MessageSquare' },
+          { title: 'tips.vip_program_perk5_title', desc: 'tips.vip_program_perk5_desc', icon: 'Crown' }
+        ]
       },
       {
         header: 'tips.vip_program_takeaway_hdr',

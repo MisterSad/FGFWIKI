@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
-import { Newspaper, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Swords } from 'lucide-react';
+import { Newspaper, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Swords, Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function News() {
@@ -259,7 +259,10 @@ export default function News() {
                                     marginBottom: '2rem'
                                 }}>
                                     {section.methods.map((method, mIdx) => {
-                                        const IconComponent = { Shield, Home, Crown, Users }[method.icon] || Shield;
+                                        const IconComponent = {
+                                            Shield, Home, Crown, Users,
+                                            Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare
+                                        }[method.icon] || Shield;
                                         return (
                                             <div key={mIdx} className="method-card" style={{
                                                 background: 'rgba(255, 255, 255, 0.01)',
