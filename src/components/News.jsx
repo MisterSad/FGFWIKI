@@ -10,7 +10,7 @@ export default function News() {
     const { newsId } = useParams();
     const navigate = useNavigate();
 
-    const selectedTip = newsId ? tips.find(tip => String(tip.id) === newsId) : null;
+    const selectedTip = newsId ? tips.find(tip => String(tip.id) === newsId && tip.category === 'news') : null;
 
     const closeModal = () => navigate('/news');
 

@@ -19,7 +19,7 @@ export default function Guides() {
         setSearchParams(newParams);
     };
 
-    const selectedTip = guideId ? tips.find(tip => String(tip.id) === guideId) : null;
+    const selectedTip = guideId ? tips.find(tip => String(tip.id) === guideId && tip.category !== 'news') : null;
 
     const closeModal = () => navigate('/guides');
 
@@ -539,7 +539,7 @@ export default function Guides() {
                     alignItems: 'stretch'
                 }}>
                     {[...tips]
-                        .filter(tip => tip.hasDetails)
+                        .filter(tip => tip.hasDetails && tip.category !== 'news')
                         .sort((a, b) => {
                             if (a.id === 'vip-program') return -1;
                             if (b.id === 'vip-program') return 1;
