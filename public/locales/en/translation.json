@@ -336,6 +336,7 @@
         "magnetic_combat1_title": "Solo Combat",
         "magnetic_combat1_desc": "In solo combat, the damage and critical damage rates are calculated based on the resistance of the first trader who engages the target.",
         "magnetic_combat2_title": "Rally Operations",
+        "magnetic_combat2_desc": "When participating in a rally, all members use the Rally Leader's resistance for combat calculations.",
         "magnetic_increase_disclaimer": "Visual is not final",
         "magnetic_map_hdr": "New Frontier: The Siwenna Province",
         "magnetic_map_txt": "Traders will explore Siwenna, a vast new territory split into two major zones. Newcomers begin in the Border Region (containing Level 8 and 9 star systems). The Core Region, controlled by the Ascendancy Court, features high-risk Level 10 to 12 systems. At its center lies \"Orun\", a Level 12 system housing the Ascendancy Hall, the emperor's imperial residence and the ultimate objective for conquering guilds.",
