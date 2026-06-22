@@ -123,6 +123,11 @@ export default function StellaAnomaly() {
             const reset = { 1: false, 2: false, 3: false, 4: false };
             setCompletedPhases(reset);
             localStorage.setItem('stella_anomaly_completed', JSON.stringify(reset));
+            localStorage.removeItem('stella_anomaly_submitted_uid');
+            localStorage.removeItem('stella_anomaly_submitted_rank');
+            setRank(null);
+            setSubmitSuccess(false);
+            setGameUid('');
             playBeep('power');
             setSelectedTab(1);
         }
@@ -253,6 +258,10 @@ export default function StellaAnomaly() {
     const [submitSuccess, setSubmitSuccess] = useState(() => {
         return localStorage.getItem('stella_anomaly_submitted_uid') !== null;
     });
+    const [rank, setRank] = useState(() => {
+        const saved = localStorage.getItem('stella_anomaly_submitted_rank');
+        return saved ? parseInt(saved, 10) : null;
+    });
 
     const handleUidSubmit = async (e) => {
         e.preventDefault();
@@ -271,14 +280,21 @@ export default function StellaAnomaly() {
 
         try {
             // Save to Firebase (or skip if not initialized/env variables missing)
+            let userRank = 1;
             try {
-                await submitStellaAnomalyUid(trimmed, currentUser?.uid || null, i18n.language);
+                userRank = await submitStellaAnomalyUid(trimmed, currentUser?.uid || null, i18n.language);
             } catch (firebaseErr) {
                 console.warn('Firebase submission failed, fallback to localStorage saving:', firebaseErr);
+                // Mock rank in case database fails
+                const mockCount = parseInt(localStorage.getItem('stella_anomaly_mock_count') || '0', 10) + 1;
+                localStorage.setItem('stella_anomaly_mock_count', mockCount.toString());
+                userRank = mockCount;
             }
 
             // Success saving state
             localStorage.setItem('stella_anomaly_submitted_uid', trimmed);
+            localStorage.setItem('stella_anomaly_submitted_rank', userRank.toString());
+            setRank(userRank);
             setSubmitSuccess(true);
             markPhaseComplete(4);
         } catch (err) {
@@ -820,8 +836,59 @@ export default function StellaAnomaly() {
                                                 <div style={{ fontSize: '0.85rem', marginTop: '0.6rem', color: 'var(--accent-teal)' }}>
                                                     UID: {localStorage.getItem('stella_anomaly_submitted_uid')} REGISTERED
                                                 </div>
-                                                <div style={{ fontSize: '0.75rem', marginTop: '1rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                                                    {t('stella_anomaly.success_msg') || 'Verification complete. The 1,000 Platinum Credits will be sent to your in-game mailbox before September 30, 2026.'}
+                                                
+                                                {/* Ranking Display */}
+                                                <div style={{
+                                                    margin: '1.5rem 0',
+                                                    padding: '1rem',
+                                                    background: 'rgba(6, 7, 16, 0.8)',
+                                                    border: '1px solid rgba(232, 201, 106, 0.2)',
+                                                    borderRadius: '4px'
+                                                }}>
+                                                    {rank === 1 && (
+                                                        <>
+                                                            <div style={{ color: 'var(--gold-bright)', fontWeight: 'bold', fontSize: '1rem' }}>
+                                                                🏆 {t('stella_anomaly.rank_1_title') || "1st PLACE"}
+                                                            </div>
+                                                            <div style={{ color: '#FFFFFF', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+                                                                {t('stella_anomaly.rank_1_desc') || "Congratulations! You are the fastest commander. You win 1,000 Platinum Credits!"}
+                                                            </div>
+                                                        </>
+                                                    )}
+                                                    {rank === 2 && (
+                                                        <>
+                                                            <div style={{ color: '#C0C0C0', fontWeight: 'bold', fontSize: '1rem' }}>
+                                                                🥈 {t('stella_anomaly.rank_2_title') || "2nd PLACE"}
+                                                            </div>
+                                                            <div style={{ color: '#FFFFFF', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+                                                                {t('stella_anomaly.rank_2_desc') || "Excellent speed! You win 500 Platinum Credits!"}
+                                                            </div>
+                                                        </>
+                                                    )}
+                                                    {rank === 3 && (
+                                                        <>
+                                                            <div style={{ color: '#CD7F32', fontWeight: 'bold', fontSize: '1rem' }}>
+                                                                🥉 {t('stella_anomaly.rank_3_title') || "3rd PLACE"}
+                                                            </div>
+                                                            <div style={{ color: '#FFFFFF', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+                                                                {t('stella_anomaly.rank_3_desc') || "Good job! You win 250 Platinum Credits!"}
+                                                            </div>
+                                                        </>
+                                                    )}
+                                                    {rank && rank > 3 && (
+                                                        <>
+                                                            <div style={{ color: 'var(--text-secondary)', fontWeight: 'bold', fontSize: '0.95rem' }}>
+                                                                🏁 {t('stella_anomaly.rank_other_title', { rank }) || `RANK: ${rank}`}
+                                                            </div>
+                                                            <div style={{ color: '#FFFFFF', fontSize: '0.8rem', marginTop: '0.4rem' }}>
+                                                                {t('stella_anomaly.rank_other_desc') || "The podium is full, but your time is logged. Thank you for participating!"}
+                                                            </div>
+                                                        </>
+                                                    )}
+                                                </div>
+
+                                                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                                                    {t('stella_anomaly.success_msg') || 'Verification complete. Rewards will be sent directly to your in-game mailbox before September 30, 2026.'}
                                                 </div>
                                             </div>
                                         ) : (
