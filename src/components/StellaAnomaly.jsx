@@ -115,6 +115,7 @@ export default function StellaAnomaly() {
         const updated = { ...completedPhases, [phaseNum]: true };
         setCompletedPhases(updated);
         localStorage.setItem('stella_anomaly_completed', JSON.stringify(updated));
+        window.dispatchEvent(new CustomEvent('stella-progress-update'));
         playBeep('success');
     };
 
@@ -123,6 +124,7 @@ export default function StellaAnomaly() {
             const reset = { 1: false, 2: false, 3: false, 4: false };
             setCompletedPhases(reset);
             localStorage.setItem('stella_anomaly_completed', JSON.stringify(reset));
+            window.dispatchEvent(new CustomEvent('stella-progress-update'));
             localStorage.removeItem('stella_anomaly_submitted_uid');
             localStorage.removeItem('stella_anomaly_submitted_rank');
             setRank(null);

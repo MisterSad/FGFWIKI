@@ -13,6 +13,50 @@ export default function Layout({ children, onLoginClick }) {
     const [showScrollTop, setShowScrollTop] = useState(false);
     useSEO();
 
+    // Event calendar check: Teaser glitches start June 22nd, 2026; event runs to August 31st, 2026
+    const now = new Date();
+    const eventStartDate = new Date('2026-06-22T00:00:00Z');
+    const eventEndDate = new Date('2026-08-31T23:59:59Z');
+    const isEventActive = now >= eventStartDate && now <= eventEndDate;
+    // Glitch is active if event is active, or if we have a debug phase param, or if we are on the stella anomaly page
+    const isGlitchActive = isEventActive || location.search.includes('debugPhase') || location.pathname.startsWith('/stella-anomaly');
+
+    // Helper to count completed phases (0 to 4)
+    const getCompletedCount = () => {
+        // Check URL debugParam first for easy testing of glitch levels
+        const params = new URLSearchParams(location.search);
+        const debugPhaseParam = params.get('debugPhase');
+        if (debugPhaseParam) {
+            const dp = parseInt(debugPhaseParam, 10);
+            if (dp >= 1 && dp <= 4) {
+                return dp - 1; // debugPhase=1 -> 0 completed, debugPhase=4 -> 3 completed
+            }
+        }
+        try {
+            const saved = localStorage.getItem('stella_anomaly_completed');
+            if (!saved) return 0;
+            const parsed = JSON.parse(saved);
+            return Object.values(parsed).filter(Boolean).length;
+        } catch (e) {
+            return 0;
+        }
+    };
+
+    const [completedCount, setCompletedCount] = useState(getCompletedCount());
+
+    useEffect(() => {
+        const handleUpdate = () => {
+            setCompletedCount(getCompletedCount());
+        };
+        // Listen to custom updates from StellaAnomaly terminal
+        window.addEventListener('stella-progress-update', handleUpdate);
+        // Sync on route / search query updates
+        handleUpdate();
+        return () => {
+            window.removeEventListener('stella-progress-update', handleUpdate);
+        };
+    }, [location.pathname, location.search]);
+
     useEffect(() => {
         const toggleVisibility = () => {
             if (window.scrollY > 300) {
@@ -75,8 +119,15 @@ export default function Layout({ children, onLoginClick }) {
         window.scrollTo({ top: 0, behavior: 'instant' });
     }, [location.pathname]);
 
+    const glitchIntensityClass = isGlitchActive
+        ? `glitch-intensity-${['high', 'medium', 'low', 'subtle', 'none'][Math.min(completedCount, 4)]}`
+        : 'glitch-intensity-none';
+
     return (
-        <div className="app-layout">
+        <div className={`app-layout ${glitchIntensityClass}`}>
+            {isGlitchActive && completedCount < 4 && (
+                <div className="anomaly-scanlines" aria-hidden="true" />
+            )}
             <Header onLoginClick={onLoginClick} />
 
             <div className="sticky-tabs-wrapper">

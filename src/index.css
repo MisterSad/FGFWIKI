@@ -1949,3 +1949,139 @@ footer {
     -webkit-overflow-scrolling: touch !important;
   }
 }
+
+/* ==========================================================================
+   THE STELLA ANOMALY - PROGRESSIVE GLITCH SYSTEM
+   ========================================================================== */
+
+/* Scanline/CRT Screen Overlay */
+.anomaly-scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.05),
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 0, 255, 0.05)
+  );
+  background-size: 100% 4px, 6px 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* 1. HIGH INTENSITY (0 completed phases) */
+.glitch-intensity-high .anomaly-scanlines {
+  opacity: 0.15;
+  animation: scanline-flicker-high 0.15s infinite;
+}
+.glitch-intensity-high {
+  animation: layout-jitter-high 4s infinite steps(1);
+}
+.glitch-intensity-high .header-title-main,
+.glitch-intensity-high h1,
+.glitch-intensity-high .news-title {
+  animation: glitch-text-high 2.2s infinite steps(1);
+}
+.glitch-intensity-high .header-subtitle {
+  animation: glitch-text-high 2.8s infinite steps(1);
+}
+
+/* 2. MEDIUM INTENSITY (1 completed phase) */
+.glitch-intensity-medium .anomaly-scanlines {
+  opacity: 0.10;
+  animation: scanline-flicker-medium 0.3s infinite;
+}
+.glitch-intensity-medium .header-title-main,
+.glitch-intensity-medium h1,
+.glitch-intensity-medium .news-title {
+  animation: glitch-text-medium 3.8s infinite steps(1);
+}
+.glitch-intensity-medium .header-subtitle {
+  animation: glitch-text-medium 4.5s infinite steps(1);
+}
+
+/* 3. LOW INTENSITY (2 completed phases) */
+.glitch-intensity-low .anomaly-scanlines {
+  opacity: 0.06;
+  animation: scanline-flicker-low 0.6s infinite;
+}
+.glitch-intensity-low .header-title-main,
+.glitch-intensity-low h1,
+.glitch-intensity-low .news-title {
+  animation: glitch-text-low 5.5s infinite steps(1);
+}
+
+/* 4. SUBTLE INTENSITY (3 completed phases) */
+.glitch-intensity-subtle .anomaly-scanlines {
+  opacity: 0.03;
+}
+.glitch-intensity-subtle .header-title-main,
+.glitch-intensity-subtle h1 {
+  animation: glitch-text-subtle 8.5s infinite steps(1);
+}
+
+/* 5. NONE INTENSITY (4 completed phases / inactive) */
+.glitch-intensity-none .anomaly-scanlines {
+  opacity: 0;
+  display: none;
+}
+
+/* KEYFRAMES - Scanline Flickers */
+@keyframes scanline-flicker-high {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.08; }
+}
+@keyframes scanline-flicker-medium {
+  0%, 100% { opacity: 0.10; }
+  50% { opacity: 0.05; }
+}
+@keyframes scanline-flicker-low {
+  0%, 100% { opacity: 0.06; }
+  50% { opacity: 0.03; }
+}
+
+/* KEYFRAMES - Layout Shiver */
+@keyframes layout-jitter-high {
+  0%, 98.5%, 100% { transform: none; }
+  99% { transform: translate(1px, -1px); filter: contrast(1.03) brightness(1.03); }
+}
+
+/* KEYFRAMES - Text Chromatic Aberration & Skew */
+@keyframes glitch-text-high {
+  0%, 100% { text-shadow: none; transform: none; }
+  5% { text-shadow: 2px -1px 0 rgba(255, 0, 80, 0.6), -2px 1px 0 rgba(0, 240, 255, 0.6); transform: skew(1.5deg); }
+  7% { text-shadow: -2px 2px 0 rgba(255, 0, 80, 0.7), 2px -2px 0 rgba(0, 240, 255, 0.7); transform: skew(-1deg); }
+  9% { text-shadow: none; transform: none; }
+  35% { text-shadow: 3px 2px 0 rgba(255, 0, 80, 0.6), -3px -2px 0 rgba(0, 240, 255, 0.6); transform: scaleY(0.98) skew(1deg); }
+  37% { text-shadow: none; transform: none; }
+  70% { text-shadow: -2px -1px 0 rgba(255, 0, 80, 0.5), 2px 1px 0 rgba(0, 240, 255, 0.5); transform: skew(-1.5deg); }
+  72% { text-shadow: none; transform: none; }
+}
+
+@keyframes glitch-text-medium {
+  0%, 100% { text-shadow: none; transform: none; }
+  6% { text-shadow: 1.5px -0.5px 0 rgba(255, 0, 80, 0.5), -1.5px 0.5px 0 rgba(0, 240, 255, 0.5); transform: skew(0.8deg); }
+  8% { text-shadow: none; transform: none; }
+  45% { text-shadow: -2px 1px 0 rgba(255, 0, 80, 0.5), 2px -1px 0 rgba(0, 240, 255, 0.5); transform: skew(-0.8deg); }
+  47% { text-shadow: none; transform: none; }
+}
+
+@keyframes glitch-text-low {
+  0%, 100% { text-shadow: none; transform: none; }
+  10% { text-shadow: 1px -0.5px 0 rgba(255, 0, 80, 0.4), -1px 0.5px 0 rgba(0, 240, 255, 0.4); transform: skew(0.3deg); }
+  12% { text-shadow: none; transform: none; }
+}
+
+@keyframes glitch-text-subtle {
+  0%, 100% { text-shadow: none; transform: none; }
+  15% { text-shadow: 0.8px -0.4px 0 rgba(255, 0, 80, 0.3), -0.8px 0.4px 0 rgba(0, 240, 255, 0.3); }
+  16% { text-shadow: none; transform: none; }
+}
