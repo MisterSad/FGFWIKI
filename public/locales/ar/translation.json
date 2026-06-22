@@ -838,7 +838,8 @@
         "recommended_teams": "الفرق الموصى بها",
         "pro_tips": "نصائح للمحترفين",
         "tips": "نصائح",
-        "limited_event": "وقت محدود"
+        "limited_event": "وقت محدود",
+        "currently_suspended": "معلق حاليًا"
     },
     "builder_data": {
         "hp_none": "لا أحد",

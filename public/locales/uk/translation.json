@@ -838,7 +838,8 @@
         "recommended_teams": "Рекомендовані команди",
         "pro_tips": "Профі-поради",
         "tips": "Поради",
-        "limited_event": "Обмежений час"
+        "limited_event": "Обмежений час",
+        "currently_suspended": "Наразі призупинено"
     },
     "builder_data": {
         "hp_none": "Немає",

@@ -838,7 +838,8 @@
         "recommended_teams": "Anbefalte team",
         "pro_tips": "Pro-tips",
         "tips": "Tips",
-        "limited_event": "Begrenset tid"
+        "limited_event": "Begrenset tid",
+        "currently_suspended": "Midlertidig suspendert"
     },
     "builder_data": {
         "hp_none": "Ingen",

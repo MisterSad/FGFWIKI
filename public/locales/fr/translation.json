@@ -837,7 +837,8 @@
         "recommended_teams": "Équipes recommandées",
         "pro_tips": "Astuces pro",
         "tips": "Conseils",
-        "limited_event": "Événement Ponctuel"
+        "limited_event": "Événement Ponctuel",
+        "currently_suspended": "Actuellement suspendu"
     },
     "builder_data": {
         "hp_none": "Aucun",

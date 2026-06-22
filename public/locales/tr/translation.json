@@ -838,7 +838,8 @@
         "recommended_teams": "Önerilen Takımlar",
         "pro_tips": "Profesyonel İpuçları",
         "tips": "İpuçları",
-        "limited_event": "Sınırlı Süre"
+        "limited_event": "Sınırlı Süre",
+        "currently_suspended": "Şu anda askıya alındı"
     },
     "builder_data": {
         "hp_none": "Hiçbiri",

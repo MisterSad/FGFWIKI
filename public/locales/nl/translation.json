@@ -838,7 +838,8 @@
         "recommended_teams": "Aanbevolen teams",
         "pro_tips": "Professionele tips",
         "tips": "Tips",
-        "limited_event": "Beperkte tijd"
+        "limited_event": "Beperkte tijd",
+        "currently_suspended": "Momenteel opgeschort"
     },
     "builder_data": {
         "hp_none": "Geen",

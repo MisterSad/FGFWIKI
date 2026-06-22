@@ -110,6 +110,32 @@ export default function EventGuide() {
                                     </div>
                                 )}
 
+                                {event.status === 'suspended' && (
+                                    <div className="label-text" style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        background: 'linear-gradient(90deg, #ef4444, #b91c1c)',
+                                        color: '#FFFFFF',
+                                        padding: '0.5rem 1rem',
+                                        fontSize: '0.75rem',
+                                        fontWeight: 'bold',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '2px',
+                                        zIndex: 5,
+                                        textAlign: 'center',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        gap: '0.5rem',
+                                        boxShadow: '0 2px 8px rgba(0,0,0,0.4)'
+                                    }}>
+                                        <AlertTriangle size={14} />
+                                        {t('events_ui.currently_suspended', 'Currently Suspended')}
+                                    </div>
+                                )}
+
                                 {/* Decorative Icon Background */}
                                 <div style={{
                                     position: 'absolute',
@@ -236,6 +262,27 @@ export default function EventGuide() {
                                 </span>
                             </div>
                         </div>
+
+                        {/* Suspended Warning */}
+                        {selectedEvent.status === 'suspended' && (
+                            <div style={{
+                                background: 'rgba(239, 68, 68, 0.1)',
+                                borderLeft: '4px solid var(--accent-red)',
+                                border: '1px solid rgba(239, 68, 68, 0.3)',
+                                borderLeftWidth: '4px',
+                                padding: '1rem',
+                                borderRadius: '4px',
+                                marginBottom: '1.5rem',
+                                color: 'var(--accent-red)',
+                                fontWeight: 'bold',
+                                fontSize: '1rem',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '0.8rem'
+                            }}>
+                                <AlertTriangle size={20} /> {t('events_ui.currently_suspended')}
+                            </div>
+                        )}
 
                         {/* Warning Section */}
                         {selectedEvent.warning && (

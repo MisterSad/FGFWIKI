@@ -838,7 +838,8 @@
         "recommended_teams": "推奨チーム",
         "pro_tips": "プロのヒント",
         "tips": "ヒント",
-        "limited_event": "期間限定"
+        "limited_event": "期間限定",
+        "currently_suspended": "現在休止中"
     },
     "builder_data": {
         "hp_none": "なし",

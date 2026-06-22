@@ -838,7 +838,8 @@
         "recommended_teams": "ทีมแนะนำ",
         "pro_tips": "เคล็ดลับมือโปร",
         "tips": "เคล็ดลับ",
-        "limited_event": "เวลาจำกัด"
+        "limited_event": "เวลาจำกัด",
+        "currently_suspended": "ระงับชั่วคราว"
     },
     "builder_data": {
         "hp_none": "ไม่มี",

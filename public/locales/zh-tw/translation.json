@@ -838,7 +838,8 @@
         "recommended_teams": "推薦隊伍",
         "pro_tips": "專業提示",
         "tips": "尖端",
-        "limited_event": "限時"
+        "limited_event": "限時",
+        "currently_suspended": "目前已暫停"
     },
     "builder_data": {
         "hp_none": "沒有任何",

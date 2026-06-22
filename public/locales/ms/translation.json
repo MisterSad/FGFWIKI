@@ -838,7 +838,8 @@
         "recommended_teams": "Pasukan yang Disyorkan",
         "pro_tips": "Petua Pro",
         "tips": "Petua",
-        "limited_event": "Masa Terhad"
+        "limited_event": "Masa Terhad",
+        "currently_suspended": "Ditangguhkan buat masa ini"
     },
     "builder_data": {
         "hp_none": "tiada",

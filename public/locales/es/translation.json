@@ -838,7 +838,8 @@
         "recommended_teams": "Equipos recomendados",
         "pro_tips": "Consejos pro",
         "tips": "Consejos",
-        "limited_event": "Tiempo limitado"
+        "limited_event": "Tiempo limitado",
+        "currently_suspended": "Actualmente suspendido"
     },
     "builder_data": {
         "hp_none": "Ninguno",

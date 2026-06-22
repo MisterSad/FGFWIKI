@@ -838,7 +838,8 @@
         "recommended_teams": "추천 팀",
         "pro_tips": "프로 팁",
         "tips": "팁",
-        "limited_event": "한정 기간"
+        "limited_event": "한정 기간",
+        "currently_suspended": "현재 일시 중단됨"
     },
     "builder_data": {
         "hp_none": "없음",

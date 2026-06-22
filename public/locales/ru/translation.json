@@ -838,7 +838,8 @@
         "recommended_teams": "Рекомендуемые команды",
         "pro_tips": "Советы профессионалов",
         "tips": "Советы",
-        "limited_event": "Ограниченное время"
+        "limited_event": "Ограниченное время",
+        "currently_suspended": "В настоящее время приостановлено"
     },
     "builder_data": {
         "hp_none": "Никто",
