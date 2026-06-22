@@ -58,11 +58,12 @@ export const loadUserToolData = async (uid, toolId) => {
  * Submit game UID for the Stella Anomaly event and return the user's rank.
  * 
  * @param {string} gameUid In-game User ID
+ * @param {string} secretCode Secret event passkey code
  * @param {string|null} firebaseUid Logged in user's ID
  * @param {string} lang Current language code
  * @returns {Promise<number>} User's rank (1 for 1st place, 2 for 2nd, etc.)
  */
-export const submitStellaAnomalyUid = async (gameUid, firebaseUid = null, lang = 'en') => {
+export const submitStellaAnomalyUid = async (gameUid, secretCode, firebaseUid = null, lang = 'en') => {
     if (!db) {
         // Fallback for local testing: increment a counter in localStorage
         const mockCount = parseInt(localStorage.getItem('stella_anomaly_mock_count') || '0', 10) + 1;
@@ -77,6 +78,7 @@ export const submitStellaAnomalyUid = async (gameUid, firebaseUid = null, lang =
         // Save the submission
         await addDoc(colRef, {
             gameUid,
+            secretCode,
             firebaseUid,
             lang,
             submittedAt
