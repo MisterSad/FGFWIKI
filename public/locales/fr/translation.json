@@ -336,6 +336,7 @@
         "magnetic_combat1_title": "Combat Solo",
         "magnetic_combat1_desc": "En combat solo, les dégâts sont calculés selon la résistance du premier attaquant.",
         "magnetic_combat2_title": "Ralliement de Guilde",
+        "magnetic_combat2_desc": "Lors d'un ralliement, tous les membres utilisent la résistance du chef de ralliement pour les calculs de combat.",
         "magnetic_increase_disclaimer": "Visuel non définitif",
         "magnetic_map_hdr": "Nouvelle frontière : La Province de Siwenna",
         "magnetic_map_txt": "Les marchands s'aventureront dans la province de Siwenna, un vaste territoire divisé en deux zones distinctes. Les nouveaux arrivants débuteront dans la région frontalière (systèmes stellaires de niveau 8 et 9). La région centrale, sous le contrôle strict de la Cour d'Ascendance, abrite des systèmes dangereux de niveau 10 à 12. Au cœur de cette zone se trouve le système \"Orun\" (niveau 12) où se dresse le Hall d'Ascendance, résidence impériale et objectif ultime de toutes les guildes.",
