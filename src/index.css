@@ -1977,55 +1977,104 @@ footer {
   transition: opacity 0.5s ease;
 }
 
+/* Glitch Code Columns */
+.anomaly-code-column {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 130px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 2.2;
+  color: var(--accent-teal);
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.column-left {
+  left: clamp(10px, 2vw, 30px);
+  text-align: left;
+}
+.column-right {
+  right: clamp(10px, 2vw, 30px);
+  text-align: right;
+}
+
+@media (max-width: 1400px) {
+  .anomaly-code-column {
+    display: none !important; /* Hide on smaller screens to avoid overlapping main content */
+  }
+}
+
 /* 1. HIGH INTENSITY (0 completed phases) */
 .glitch-intensity-high .anomaly-scanlines {
-  opacity: 0.15;
-  animation: scanline-flicker-high 0.15s infinite;
+  opacity: 0.22;
+  animation: scanline-flicker-high 0.12s infinite;
+}
+.glitch-intensity-high .anomaly-code-column {
+  opacity: 0.18;
+}
+.glitch-intensity-high .column-left .code-line:nth-child(3n) {
+  color: var(--accent-red);
 }
 .glitch-intensity-high {
-  animation: layout-jitter-high 4s infinite steps(1);
+  animation: layout-jitter-high 3s infinite steps(1);
 }
 .glitch-intensity-high .header-title-main,
 .glitch-intensity-high h1,
 .glitch-intensity-high .news-title {
-  animation: glitch-text-high 2.2s infinite steps(1);
+  animation: glitch-text-high 1.8s infinite steps(1);
 }
 .glitch-intensity-high .header-subtitle {
-  animation: glitch-text-high 2.8s infinite steps(1);
+  animation: glitch-text-high 2.2s infinite steps(1);
 }
 
 /* 2. MEDIUM INTENSITY (1 completed phase) */
 .glitch-intensity-medium .anomaly-scanlines {
+  opacity: 0.14;
+  animation: scanline-flicker-medium 0.25s infinite;
+}
+.glitch-intensity-medium .anomaly-code-column {
   opacity: 0.10;
-  animation: scanline-flicker-medium 0.3s infinite;
 }
 .glitch-intensity-medium .header-title-main,
 .glitch-intensity-medium h1,
 .glitch-intensity-medium .news-title {
-  animation: glitch-text-medium 3.8s infinite steps(1);
+  animation: glitch-text-medium 3s infinite steps(1);
 }
 .glitch-intensity-medium .header-subtitle {
-  animation: glitch-text-medium 4.5s infinite steps(1);
+  animation: glitch-text-medium 3.8s infinite steps(1);
 }
 
 /* 3. LOW INTENSITY (2 completed phases) */
 .glitch-intensity-low .anomaly-scanlines {
-  opacity: 0.06;
-  animation: scanline-flicker-low 0.6s infinite;
+  opacity: 0.07;
+  animation: scanline-flicker-low 0.5s infinite;
+}
+.glitch-intensity-low .anomaly-code-column {
+  opacity: 0.05;
 }
 .glitch-intensity-low .header-title-main,
 .glitch-intensity-low h1,
 .glitch-intensity-low .news-title {
-  animation: glitch-text-low 5.5s infinite steps(1);
+  animation: glitch-text-low 4.5s infinite steps(1);
 }
 
 /* 4. SUBTLE INTENSITY (3 completed phases) */
 .glitch-intensity-subtle .anomaly-scanlines {
   opacity: 0.03;
 }
+.glitch-intensity-subtle .anomaly-code-column {
+  opacity: 0.015;
+}
 .glitch-intensity-subtle .header-title-main,
 .glitch-intensity-subtle h1 {
-  animation: glitch-text-subtle 8.5s infinite steps(1);
+  animation: glitch-text-subtle 7.5s infinite steps(1);
 }
 
 /* 5. NONE INTENSITY (4 completed phases / inactive) */
@@ -2033,50 +2082,55 @@ footer {
   opacity: 0;
   display: none;
 }
+.glitch-intensity-none .anomaly-code-column {
+  display: none !important;
+}
 
 /* KEYFRAMES - Scanline Flickers */
 @keyframes scanline-flicker-high {
-  0%, 100% { opacity: 0.15; }
-  50% { opacity: 0.08; }
+  0%, 100% { opacity: 0.22; }
+  50% { opacity: 0.12; }
 }
 @keyframes scanline-flicker-medium {
-  0%, 100% { opacity: 0.10; }
-  50% { opacity: 0.05; }
+  0%, 100% { opacity: 0.14; }
+  50% { opacity: 0.07; }
 }
 @keyframes scanline-flicker-low {
-  0%, 100% { opacity: 0.06; }
-  50% { opacity: 0.03; }
+  0%, 100% { opacity: 0.07; }
+  50% { opacity: 0.04; }
 }
 
 /* KEYFRAMES - Layout Shiver */
 @keyframes layout-jitter-high {
-  0%, 98.5%, 100% { transform: none; }
-  99% { transform: translate(1px, -1px); filter: contrast(1.03) brightness(1.03); }
+  0%, 98.2%, 100% { transform: none; }
+  98.7% { transform: translate(1.5px, -1.5px) skewX(0.2deg); filter: contrast(1.04) brightness(1.04); }
+  99.2% { transform: translate(-1px, 1px) skewX(-0.1deg); filter: contrast(0.98) brightness(1.02); }
+  99.7% { transform: none; }
 }
 
 /* KEYFRAMES - Text Chromatic Aberration & Skew */
 @keyframes glitch-text-high {
   0%, 100% { text-shadow: none; transform: none; }
-  5% { text-shadow: 2px -1px 0 rgba(255, 0, 80, 0.6), -2px 1px 0 rgba(0, 240, 255, 0.6); transform: skew(1.5deg); }
-  7% { text-shadow: -2px 2px 0 rgba(255, 0, 80, 0.7), 2px -2px 0 rgba(0, 240, 255, 0.7); transform: skew(-1deg); }
+  5% { text-shadow: 3px -1.5px 0 rgba(255, 0, 80, 0.7), -3px 1.5px 0 rgba(0, 240, 255, 0.7); transform: skew(2deg); }
+  7% { text-shadow: -3px 2px 0 rgba(255, 0, 80, 0.8), 3px -2px 0 rgba(0, 240, 255, 0.8); transform: skew(-1.5deg); }
   9% { text-shadow: none; transform: none; }
-  35% { text-shadow: 3px 2px 0 rgba(255, 0, 80, 0.6), -3px -2px 0 rgba(0, 240, 255, 0.6); transform: scaleY(0.98) skew(1deg); }
+  35% { text-shadow: 4px 2px 0 rgba(255, 0, 80, 0.7), -4px -2px 0 rgba(0, 240, 255, 0.7); transform: scaleY(0.97) skew(1.2deg); }
   37% { text-shadow: none; transform: none; }
-  70% { text-shadow: -2px -1px 0 rgba(255, 0, 80, 0.5), 2px 1px 0 rgba(0, 240, 255, 0.5); transform: skew(-1.5deg); }
+  70% { text-shadow: -3px -1px 0 rgba(255, 0, 80, 0.6), 3px 1px 0 rgba(0, 240, 255, 0.6); transform: skew(-2deg); }
   72% { text-shadow: none; transform: none; }
 }
 
 @keyframes glitch-text-medium {
   0%, 100% { text-shadow: none; transform: none; }
-  6% { text-shadow: 1.5px -0.5px 0 rgba(255, 0, 80, 0.5), -1.5px 0.5px 0 rgba(0, 240, 255, 0.5); transform: skew(0.8deg); }
+  6% { text-shadow: 2px -1px 0 rgba(255, 0, 80, 0.6), -2px 1px 0 rgba(0, 240, 255, 0.6); transform: skew(1deg); }
   8% { text-shadow: none; transform: none; }
-  45% { text-shadow: -2px 1px 0 rgba(255, 0, 80, 0.5), 2px -1px 0 rgba(0, 240, 255, 0.5); transform: skew(-0.8deg); }
+  45% { text-shadow: -2px 1.5px 0 rgba(255, 0, 80, 0.5), 2px -1.5px 0 rgba(0, 240, 255, 0.5); transform: skew(-1deg); }
   47% { text-shadow: none; transform: none; }
 }
 
 @keyframes glitch-text-low {
   0%, 100% { text-shadow: none; transform: none; }
-  10% { text-shadow: 1px -0.5px 0 rgba(255, 0, 80, 0.4), -1px 0.5px 0 rgba(0, 240, 255, 0.4); transform: skew(0.3deg); }
+  10% { text-shadow: 1.2px -0.6px 0 rgba(255, 0, 80, 0.4), -1.2px 0.6px 0 rgba(0, 240, 255, 0.4); transform: skew(0.4deg); }
   12% { text-shadow: none; transform: none; }
 }
 
@@ -2084,4 +2138,27 @@ footer {
   0%, 100% { text-shadow: none; transform: none; }
   15% { text-shadow: 0.8px -0.4px 0 rgba(255, 0, 80, 0.3), -0.8px 0.4px 0 rgba(0, 240, 255, 0.3); }
   16% { text-shadow: none; transform: none; }
+}
+
+/* KEYFRAMES - Background Code Columns Scrolling */
+.code-column-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.column-left .code-column-inner {
+  animation: code-scroll-vertical-up 35s linear infinite;
+}
+.column-right .code-column-inner {
+  animation: code-scroll-vertical-down 40s linear infinite;
+}
+
+@keyframes code-scroll-vertical-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+@keyframes code-scroll-vertical-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
 }
