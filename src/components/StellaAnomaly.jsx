@@ -128,6 +128,7 @@ export default function StellaAnomaly() {
             setRank(null);
             setSubmitSuccess(false);
             setGameUid('');
+            setFinalSecretCode('');
             playBeep('power');
             setSelectedTab(1);
         }
@@ -253,6 +254,7 @@ export default function StellaAnomaly() {
     // PHASE 4: Game UID Submission States
     // ==========================================
     const [gameUid, setGameUid] = useState('');
+    const [finalSecretCode, setFinalSecretCode] = useState('');
     const [submitLoading, setSubmitLoading] = useState(false);
     const [submitError, setSubmitError] = useState('');
     const [submitSuccess, setSubmitSuccess] = useState(() => {
@@ -266,10 +268,18 @@ export default function StellaAnomaly() {
     const handleUidSubmit = async (e) => {
         e.preventDefault();
         setSubmitError('');
-        const trimmed = gameUid.trim();
         
+        // Validate Secret Code (must match "STELLA ANOMALY")
+        const cleanedCode = finalSecretCode.trim().toUpperCase().replace(/[^A-Z]/g, '');
+        if (cleanedCode !== 'STELLAANOMALY') {
+            setSubmitError(t('stella_anomaly.code_invalid_error') || 'INVALID SECRET CODE. Please enter the correct event code.');
+            playBeep('error');
+            return;
+        }
+
+        const trimmedUid = gameUid.trim();
         // Regex: 8 to 12 digits
-        if (!/^\d{8,12}$/.test(trimmed)) {
+        if (!/^\d{8,12}$/.test(trimmedUid)) {
             setSubmitError(t('stella_anomaly.uid_invalid_error') || 'UID must be a number containing 8 to 12 digits.');
             playBeep('error');
             return;
@@ -282,7 +292,7 @@ export default function StellaAnomaly() {
             // Save to Firebase (or skip if not initialized/env variables missing)
             let userRank = 1;
             try {
-                userRank = await submitStellaAnomalyUid(trimmed, currentUser?.uid || null, i18n.language);
+                userRank = await submitStellaAnomalyUid(trimmedUid, finalSecretCode, currentUser?.uid || null, i18n.language);
             } catch (firebaseErr) {
                 console.warn('Firebase submission failed, fallback to localStorage saving:', firebaseErr);
                 // Mock rank in case database fails
@@ -292,7 +302,7 @@ export default function StellaAnomaly() {
             }
 
             // Success saving state
-            localStorage.setItem('stella_anomaly_submitted_uid', trimmed);
+            localStorage.setItem('stella_anomaly_submitted_uid', trimmedUid);
             localStorage.setItem('stella_anomaly_submitted_rank', userRank.toString());
             setRank(userRank);
             setSubmitSuccess(true);
@@ -893,9 +903,35 @@ export default function StellaAnomaly() {
                                             </div>
                                         ) : (
                                             <form onSubmit={handleUidSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                                                {/* Secret Code Field */}
                                                 <div>
                                                     <label style={{ display: 'block', fontSize: '0.75rem', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
-                                                        GAME USER ID (UID)
+                                                        {t('stella_anomaly.secret_code_label') || "SECRET CODE"}
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        placeholder={t('stella_anomaly.secret_code_placeholder') || "Enter the decrypted event code..."}
+                                                        value={finalSecretCode}
+                                                        onChange={(e) => setFinalSecretCode(e.target.value)}
+                                                        style={{
+                                                            width: '100%',
+                                                            background: 'rgba(10, 10, 12, 0.9)',
+                                                            border: submitError && (submitError.includes('CODE') || submitError.includes('code')) ? '1px solid #FF5A5A' : '1px solid rgba(78, 205, 196, 0.3)',
+                                                            color: '#FFFFFF',
+                                                            padding: '0.8rem 1rem',
+                                                            fontFamily: 'var(--font-mono)',
+                                                            fontSize: '1rem',
+                                                            outline: 'none',
+                                                            borderRadius: '4px',
+                                                            textTransform: 'uppercase'
+                                                        }}
+                                                    />
+                                                </div>
+
+                                                {/* UID Field */}
+                                                <div>
+                                                    <label style={{ display: 'block', fontSize: '0.75rem', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                                                        {t('stella_anomaly.uid_label') || "GAME USER ID (UID)"}
                                                     </label>
                                                     <input
                                                         type="text"
@@ -905,7 +941,7 @@ export default function StellaAnomaly() {
                                                         style={{
                                                             width: '100%',
                                                             background: 'rgba(10, 10, 12, 0.9)',
-                                                            border: submitError ? '1px solid #FF5A5A' : '1px solid rgba(78, 205, 196, 0.3)',
+                                                            border: submitError && !(submitError.includes('CODE') || submitError.includes('code')) ? '1px solid #FF5A5A' : '1px solid rgba(78, 205, 196, 0.3)',
                                                             color: '#FFFFFF',
                                                             padding: '0.8rem 1rem',
                                                             fontFamily: 'var(--font-mono)',

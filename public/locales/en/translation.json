@@ -1384,6 +1384,10 @@
         "rank_3_title": "3rd PLACE",
         "rank_3_desc": "Good job! You win 250 Platinum Credits!",
         "rank_other_title": "RANK: {{rank}}",
-        "rank_other_desc": "The podium is full, but your time is logged. Thank you for participating!"
+        "rank_other_desc": "The podium is full, but your time is logged. Thank you for participating!",
+        "secret_code_label": "SECRET CODE",
+        "secret_code_placeholder": "Enter the decrypted event code...",
+        "uid_label": "GAME USER ID (UID)",
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
     }
 }

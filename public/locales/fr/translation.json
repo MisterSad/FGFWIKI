@@ -1384,6 +1384,10 @@
         "rank_3_title": "3ème PLACE",
         "rank_3_desc": "Bon travail ! Vous remportez 250 Crédits Platine !",
         "rank_other_title": "CLASSEMENT : {{rank}}ème",
-        "rank_other_desc": "Le podium est complet, mais votre temps a été enregistré. Merci de votre participation !"
+        "rank_other_desc": "Le podium est complet, mais votre temps a été enregistré. Merci de votre participation !",
+        "secret_code_label": "CODE SECRET",
+        "secret_code_placeholder": "Entrez le code décrypté de l'événement...",
+        "uid_label": "IDENTIFIANT DE JOUEUR (UID)",
+        "code_invalid_error": "CODE SECRET INVALIDE. Veuillez entrer le code d'événement correct."
     }
 }
