@@ -398,7 +398,7 @@ export default function News() {
                                         src={section.image}
                                         alt={section.header ? t(section.header) : "Guide Illustration"}
                                         style={{
-                                            maxWidth: section.image.includes('MSR') ? '500px' : '100%',
+                                            maxWidth: section.imageMaxWidth || (section.image.includes('MSR') ? '500px' : '100%'),
                                             width: '100%',
                                             height: 'auto',
                                             borderRadius: '8px',
