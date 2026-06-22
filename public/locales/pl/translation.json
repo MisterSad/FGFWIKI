@@ -1375,7 +1375,7 @@
         "q3_text": "Which energy type is NOT used by combat craft in Foundation: Galactic Frontier?",
         "p3_desc": "The power distribution grid is misaligned. Align the node rows to match the energy flow protocols: Row 1 = Kinetic, Row 2 = Beam, Row 3 = Ion.",
         "p4_desc": "System restored. Requesting authorization parameters. Input your Game UID to register for the 1,000 Platinum Credits award:",
-        "uid_invalid_error": "UID must be a number containing 8 to 12 digits.",
+        "uid_invalid_error": "UID must be a valid number.",
         "submit_failed": "Database transmission error. Please try again.",
         "success_msg": "Verification complete. The 1,000 Platinum Credits will be sent to your in-game mailbox before September 30, 2026.",
         "rank_1_title": "1st PLACE",

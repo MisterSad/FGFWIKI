@@ -1374,7 +1374,7 @@
         "q3_text": "Quel type d'énergie n'est PAS utilisé par les vaisseaux de combat dans Foundation: Galactic Frontier ?",
         "p3_desc": "Le réseau de distribution d'énergie est désaligné. Alignez les rangées de nœuds pour correspondre aux protocoles de flux d'énergie : Rangée 1 = Cinétique, Rangée 2 = Faisceau, Rangée 3 = Ion.",
         "p4_desc": "Système restauré. Demande de paramètres d'autorisation. Saisissez votre UID de jeu pour vous inscrire afin de recevoir la récompense de 1 000 Crédits Platine :",
-        "uid_invalid_error": "L'UID doit être un nombre contenant entre 8 et 12 chiffres.",
+        "uid_invalid_error": "L'UID doit être un nombre valide.",
         "submit_failed": "Erreur de transmission avec la base de données. Veuillez réessayer.",
         "success_msg": "Vérification terminée. Les 1 000 Crédits Platine seront envoyés dans votre boîte de messagerie en jeu avant le 30 septembre 2026.",
         "rank_1_title": "1ère PLACE",
