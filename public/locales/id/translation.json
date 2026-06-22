@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "Dalam pertempuran solo, kerusakan dihitung berdasarkan resistensi dari pedagang pertama yang menyerang target.",
         "magnetic_combat2_title": "Operasi Reli",
         "magnetic_combat2_desc": "Saat berpartisipasi dalam reli, semua anggota menggunakan resistensi Pemimpin Reli untuk perhitungan pertempuran.",
-        "magnetic_increase_disclaimer": "Tampilan bukan hasil akhir"
+        "magnetic_increase_disclaimer": "Tampilan bukan hasil akhir",
+        "magnetic_map_hdr": "Perbatasan Baru: Provinsi Siwenna",
+        "magnetic_map_txt": "Para pedagang akan menjelajahi Siwenna, wilayah baru yang luas dan terbagi menjadi dua zona utama. Pendatang baru memulai di Wilayah Perbatasan (berisi sistem bintang Level 8 dan 9). Wilayah Inti, yang dikendalikan ketat oleh Ascendancy Court, memiliki sistem Level 10 hingga 12 yang berisiko tinggi. Di pusatnya terletak sistem Level 12 \"Orun\", tempat berdirinya Ascendancy Hall, kediaman kekaisaran kaisar dan target utama bagi semua guild penakluk.",
+        "magnetic_mechanic_hdr": "Bahaya Lingkungan: Badai Magnetik",
+        "magnetic_mechanic_txt": "Musim 2 memperkenalkan badai magnetik intens yang melanda medan bintang, mengubah cara Anda menjelajah dan bertempur. Untuk bertahan hidup dan masuk lebih dalam ke Siwenna, Anda harus meningkatkan resistansi magnetik. Meningkatkan stat ini memungkinkan armada Anda menahan bahaya ini, membasmi tentara Ascendancy Court yang berkeliaran, dan mengamankan target berharga.",
+        "magnetic_buildings_hdr": "Infrastruktur Pertahanan: Bangunan Musiman",
+        "magnetic_buildings_txt": "Lingkungan elektromagnetik Siwenna yang ekstrem menimbulkan ancaman konstan terhadap navigasi dan sistem kapal. Untuk mengatasinya, pedagang dapat membangun bangunan musiman khusus baru yang dirancang untuk meningkatkan perlindungan elektromagnetik. Mendirikan struktur pertahanan ini adalah kunci untuk mengamankan posisi Anda di ruang berbahaya ini.",
+        "magnetic_settlement_hdr": "Penyelesaian & Penaklukan Musim 2",
+        "magnetic_settlement_txt": "Bersainglah untuk supremasi dengan merebut Pelabuhan Siwenna guna mengumpulkan Poin Pendudukan untuk Guild Dagang Anda. Saat musim berakhir, peringkat akhir akan ditentukan berdasarkan poin ini, menobatkan guild terkuat di provinsi tersebut. Anggota guild peringkat teratas juga akan menerima hadiah musiman yang melimpah!"
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

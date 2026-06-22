@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "Nel combattimento singolo si usa la resistenza del primo giocatore che ingaggia il bersaglio.",
         "magnetic_combat2_title": "Raggruppamenti di gilda",
         "magnetic_combat2_desc": "Nei raggruppamenti si applica la resistenza del capo raggruppamento.",
-        "magnetic_increase_disclaimer": "Grafico non definitivo"
+        "magnetic_increase_disclaimer": "Grafico non definitivo",
+        "magnetic_map_hdr": "Nuova frontiera: La provincia di Siwenna",
+        "magnetic_map_txt": "I mercanti esploreranno Siwenna, un vasto nuovo territorio diviso in due zone principali. I nuovi arrivati iniziano nella Regione di Confine (sistemi stellari di livello 8 e 9). La Regione Centrale, controllata dalla Corte dell'Ascendente, presenta sistemi ad alto rischio dal livello 10 al 12. Al centro si trova \"Orun\", un sistema di livello 12 che ospita la Sala dell'Ascendente, la residenza imperiale dell'imperatore e l'obiettivo finale per le gilde conquistatrici.",
+        "magnetic_mechanic_hdr": "Pericolo ambientale: Tempeste magnetiche",
+        "magnetic_mechanic_txt": "La stagione 2 introduce intense tempeste magnetiche che devastano il campo stellare, alterando il modo in cui esplori e combatti. Per sopravvivere e spingerti più a fondo a Siwenna, devi accumulare resistenza magnetica. L'aumento di questa statistica consente alla tua flotta di resistere a questi pericoli, eliminare gli eserciti erranti della Corte dell'Ascendente e proteggere obiettivi di alto valore.",
+        "magnetic_buildings_hdr": "Infrastruttura difensiva: Edifici stagionali",
+        "magnetic_buildings_txt": "Il violento ambiente elettromagnetico di Siwenna rappresenta una minaccia costante per la navigazione e i sistemi delle navi. Per contrastare questo fenomeno, i mercanti possono costruire nuovi edifici stagionali specializzati progettati per aumentare la protezione elettromagnetica. Stabilire queste strutture difensive è fondamentale per assicurarsi un punto d'appoggio in questo spazio ostile.",
+        "magnetic_settlement_hdr": "Regolamento e conquista della stagione 2",
+        "magnetic_settlement_txt": "Competi per la supremazia conquistando i porti di Siwenna per accumulare punti di occupazione per la tua gilda commerciale. Al termine della stagione, la classifica finale sarà determinata da questi punti, incoronando la gilda definitiva della provincia. Le gilde con il punteggio più alto e i loro membri riceveranno tesori stagionali esclusivi!"
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "En combate individual, la resistencia la define el primer atacante.",
         "magnetic_combat2_title": "Operaciones de reunión",
         "magnetic_combat2_desc": "En batallas de reunión, se usa la resistencia del líder de reunión para todo el grupo.",
-        "magnetic_increase_disclaimer": "Diseño no definitivo"
+        "magnetic_increase_disclaimer": "Diseño no definitivo",
+        "magnetic_map_hdr": "Nueva frontera: La provincia de Siwenna",
+        "magnetic_map_txt": "Los comerciantes explorarán Siwenna, un vasto territorio nuevo dividido en dos zonas principales. Los recién llegados comienzan en la Región Fronteriza (sistemas estelares de nivel 8 y 9). La Región Central, controlada por la Corte de la Ascendencia, presenta sistemas de alto riesgo de nivel 10 a 12. En su centro se encuentra \"Orun\", un sistema de nivel 12 que alberga el Salón de la Ascendencia, la residencia imperial del emperador y el objetivo final para los gremios conquistadores.",
+        "magnetic_mechanic_hdr": "Peligro ambiental: Tormentas magnéticas",
+        "magnetic_mechanic_txt": "La temporada 2 introduce intensas tormentas magnéticas que azotan el campo estelar, alterando la forma en que exploras y luchas. Para sobrevivir y adentrarte más en Siwenna, debes aumentar tu resistencia magnética. Incrementar esta estadística permite a tu flota resistir estos peligros, eliminar los ejércitos errantes de la Corte de la Ascendencia y asegurar objetivos de gran valor.",
+        "magnetic_buildings_hdr": "Infraestructura defensiva: Edificios de temporada",
+        "magnetic_buildings_txt": "El violento entorno electromagnético de Siwenna representa una amenaza constante para la navegación y los sistemas de las naves. Para contrarrestar esto, los comerciantes pueden construir nuevos edificios de temporada especializados diseñados para aumentar la protección electromagnética. Establecer estas estructuras defensivas es clave para asegurar su posición en este espacio hostil.",
+        "magnetic_settlement_hdr": "Liquidación y conquista de la temporada 2",
+        "magnetic_settlement_txt": "Compite por la supremacía capturando los puertos de Siwenna para acumular puntos de ocupación para tu gremio comercial. Cuando concluya la temporada, la clasificación final se determinará mediante estos puntos, coronando al gremio definitivo de la provincia. ¡Los gremios mejor clasificados y sus miembros recibirán tesoros de temporada exclusivos!"
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",
