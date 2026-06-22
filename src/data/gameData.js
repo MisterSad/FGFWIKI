@@ -319,6 +319,10 @@ export const tips = [
         text: 'tips.star_of_guild_intro'
       },
       {
+        image: '/images/SOTG_1.png',
+        imageMaxWidth: '320px'
+      },
+      {
         header: 'tips.star_of_guild_qualify_hdr',
         text: 'tips.star_of_guild_qualify_txt'
       },
