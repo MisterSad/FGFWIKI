@@ -1376,6 +1376,14 @@
         "p4_desc": "Système restauré. Demande de paramètres d'autorisation. Saisissez votre UID de jeu pour vous inscrire afin de recevoir la récompense de 1 000 Crédits Platine :",
         "uid_invalid_error": "L'UID doit être un nombre contenant entre 8 et 12 chiffres.",
         "submit_failed": "Erreur de transmission avec la base de données. Veuillez réessayer.",
-        "success_msg": "Vérification terminée. Les 1 000 Crédits Platine seront envoyés dans votre boîte de messagerie en jeu avant le 30 septembre 2026."
+        "success_msg": "Vérification terminée. Les 1 000 Crédits Platine seront envoyés dans votre boîte de messagerie en jeu avant le 30 septembre 2026.",
+        "rank_1_title": "1ère PLACE",
+        "rank_1_desc": "Félicitations ! Vous êtes le commandant le plus rapide. Vous remportez 1 000 Crédits Platine !",
+        "rank_2_title": "2ème PLACE",
+        "rank_2_desc": "Vitesse excellente ! Vous remportez 500 Crédits Platine !",
+        "rank_3_title": "3ème PLACE",
+        "rank_3_desc": "Bon travail ! Vous remportez 250 Crédits Platine !",
+        "rank_other_title": "CLASSEMENT : {{rank}}ème",
+        "rank_other_desc": "Le podium est complet, mais votre temps a été enregistré. Merci de votre participation !"
     }
 }

@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, collection, addDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, addDoc, query, where, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
 
 /**
@@ -55,28 +55,42 @@ export const loadUserToolData = async (uid, toolId) => {
 };
 
 /**
- * Submit game UID for the Stella Anomaly event.
+ * Submit game UID for the Stella Anomaly event and return the user's rank.
  * 
  * @param {string} gameUid In-game User ID
  * @param {string|null} firebaseUid Logged in user's ID
  * @param {string} lang Current language code
+ * @returns {Promise<number>} User's rank (1 for 1st place, 2 for 2nd, etc.)
  */
 export const submitStellaAnomalyUid = async (gameUid, firebaseUid = null, lang = 'en') => {
     if (!db) {
-        throw new Error("Firebase database not initialized");
+        // Fallback for local testing: increment a counter in localStorage
+        const mockCount = parseInt(localStorage.getItem('stella_anomaly_mock_count') || '0', 10) + 1;
+        localStorage.setItem('stella_anomaly_mock_count', mockCount.toString());
+        return mockCount;
     }
     
     try {
+        const submittedAt = new Date().toISOString();
         const colRef = collection(db, "stella_anomaly_submissions");
+        
+        // Save the submission
         await addDoc(colRef, {
             gameUid,
             firebaseUid,
             lang,
-            submittedAt: new Date().toISOString()
+            submittedAt
         });
-        return true;
+        
+        // Query previous submissions
+        const q = query(colRef, where("submittedAt", "<", submittedAt));
+        const snap = await getDocs(q);
+        
+        // Rank is number of previous submissions + 1
+        const rank = snap.size + 1;
+        return rank;
     } catch (error) {
-        console.error("Error submitting Stella Anomaly UID: ", error);
+        console.error("Error submitting Stella Anomaly UID and getting rank: ", error);
         throw error;
     }
 };
