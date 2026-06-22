@@ -317,8 +317,15 @@
         "magnetic_combat1_title": "Solo Combat",
         "magnetic_combat1_desc": "In solo combat, the damage and critical damage rates are calculated based on the resistance of the first trader who engages the target.",
         "magnetic_combat2_title": "Rally Operations",
-        "magnetic_combat2_desc": "In rally battles, the entire group utilizes the Rally Leader's resistance value for damage and protection calculations.",
-        "magnetic_increase_disclaimer": "Visual is not final"
+        "magnetic_increase_disclaimer": "Visual is not final",
+        "magnetic_map_hdr": "New Frontier: The Siwenna Province",
+        "magnetic_map_txt": "Traders will explore Siwenna, a vast new territory split into two major zones. Newcomers begin in the Border Region (containing Level 8 and 9 star systems). The Core Region, controlled by the Ascendancy Court, features high-risk Level 10 to 12 systems. At its center lies \"Orun\", a Level 12 system housing the Ascendancy Hall, the emperor's imperial residence and the ultimate objective for conquering guilds.",
+        "magnetic_mechanic_hdr": "Environmental Hazard: Magnetic Storms",
+        "magnetic_mechanic_txt": "Season 2 introduces intense magnetic storms that ravage the starfield, altering how you explore and fight. To survive and push deeper into Siwenna, you must build up your magnetic resistance. Increasing this stat allows your fleet to withstand these hazards, eliminate wandering Ascendancy armies, and secure high-value targets.",
+        "magnetic_buildings_hdr": "Defensive Infrastructure: Seasonal Buildings",
+        "magnetic_buildings_txt": "The violent electromagnetic environment of Siwenna poses a constant threat to ship navigation and systems. To counter this, traders can construct new specialized seasonal buildings designed to boost electromagnetic protection. Establishing these defensive structures is key to securing your foothold in this hostile space.",
+        "magnetic_settlement_hdr": "Season 2 Settlement & Conquest",
+        "magnetic_settlement_txt": "Compete for supremacy by seizing Siwenna Ports to accumulate Occupation Points for your Commerce Guild. When the season concludes, the final standings will be determined by these points, crowning the ultimate guild of the province. Top-ranking guilds and their members will be awarded exclusive seasonal treasures!"
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

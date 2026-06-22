@@ -280,6 +280,14 @@ export const tips = [
         text: 'tips.magnetic_intro'
       },
       {
+        header: 'tips.magnetic_map_hdr',
+        text: 'tips.magnetic_map_txt'
+      },
+      {
+        header: 'tips.magnetic_mechanic_hdr',
+        text: 'tips.magnetic_mechanic_txt'
+      },
+      {
         header: 'tips.magnetic_rules_hdr',
         text: 'tips.magnetic_rules_txt'
       },
@@ -296,12 +304,20 @@ export const tips = [
         ]
       },
       {
+        header: 'tips.magnetic_buildings_hdr',
+        text: 'tips.magnetic_buildings_txt'
+      },
+      {
         header: 'tips.magnetic_combat_hdr',
         text: 'tips.magnetic_combat_txt',
         combatTypes: [
           { title: 'tips.magnetic_combat1_title', desc: 'tips.magnetic_combat1_desc', icon: 'Swords' },
           { title: 'tips.magnetic_combat2_title', desc: 'tips.magnetic_combat2_desc', icon: 'Users' }
         ]
+      },
+      {
+        header: 'tips.magnetic_settlement_hdr',
+        text: 'tips.magnetic_settlement_txt'
       }
     ]
   },

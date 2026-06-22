@@ -317,8 +317,15 @@
         "magnetic_combat1_title": "Combat Solo",
         "magnetic_combat1_desc": "En combat solo, les dégâts sont calculés selon la résistance du premier attaquant.",
         "magnetic_combat2_title": "Ralliement de Guilde",
-        "magnetic_combat2_desc": "En ralliement, c'est la résistance du chef de ralliement qui s'applique à tout le groupe.",
-        "magnetic_increase_disclaimer": "Visuel non définitif"
+        "magnetic_increase_disclaimer": "Visuel non définitif",
+        "magnetic_map_hdr": "Nouvelle frontière : La Province de Siwenna",
+        "magnetic_map_txt": "Les marchands s'aventureront dans la province de Siwenna, un vaste territoire divisé en deux zones distinctes. Les nouveaux arrivants débuteront dans la région frontalière (systèmes stellaires de niveau 8 et 9). La région centrale, sous le contrôle strict de la Cour d'Ascendance, abrite des systèmes dangereux de niveau 10 à 12. Au cœur de cette zone se trouve le système \"Orun\" (niveau 12) où se dresse le Hall d'Ascendance, résidence impériale et objectif ultime de toutes les guildes.",
+        "magnetic_mechanic_hdr": "Danger environnemental : Tempêtes magnétiques",
+        "magnetic_mechanic_txt": "La saison 2 introduit des tempêtes magnétiques intenses qui perturbent le champ d'étoiles, redéfinissant les règles de l'exploration et des affrontements. Pour progresser plus profondément dans Siwenna, vous devrez accroître votre résistance. Cela permettra à votre flotte de survivre à ces perturbations, de vaincre les armées errantes de la Cour d'Ascendance et de sécuriser vos objectifs.",
+        "magnetic_buildings_hdr": "Infrastructures de défense : Nouveaux bâtiments de saison",
+        "magnetic_buildings_txt": "L'environnement électromagnétique instable de Siwenna menace constamment le bon fonctionnement de vos vaisseaux. Pour y faire face, de nouveaux bâtiments saisonniers permettront d'augmenter votre protection électromagnétique. Déployer ces structures de soutien est essentiel pour naviguer sereinement.",
+        "magnetic_settlement_hdr": "Bilan de saison et conquête",
+        "magnetic_settlement_txt": "Affrontez d'autres factions pour capturer les ports de Siwenna et accumuler des points d'occupation pour votre guilde. À la fin de la saison, le classement final déterminera la guilde suprême de la province. Les membres des meilleures guildes recevront de prestigieuses récompenses de saison !"
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",
