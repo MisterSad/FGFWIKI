@@ -1,6 +1,7 @@
 import React from 'react';
 import { User, LogOut } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -12,14 +13,14 @@ export default function Header({ onLoginClick }) {
         <header className="sticky-nav header-container">
             <div className="header-spacer" aria-hidden="true" />
 
-            <div className="header-text-wrapper">
+            <Link to="/home" className="header-text-wrapper" style={{ textDecoration: 'none' }}>
                 <div className="header-title-main" aria-label="FGF Wiki">
                     <span className="header-title-accent">FGF</span>
                     <span className="header-title-sep" aria-hidden="true">·</span>
                     <span className="header-title-base">WIKI</span>
                 </div>
                 <div className="header-subtitle">{t('header_ui.subtitle')}</div>
-            </div>
+            </Link>
 
             <div className="header-auth-container">
                 <LanguageSwitcher />
