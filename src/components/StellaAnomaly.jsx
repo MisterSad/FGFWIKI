@@ -278,9 +278,9 @@ export default function StellaAnomaly() {
         }
 
         const trimmedUid = gameUid.trim();
-        // Regex: 8 to 12 digits
-        if (!/^\d{8,12}$/.test(trimmedUid)) {
-            setSubmitError(t('stella_anomaly.uid_invalid_error') || 'UID must be a number containing 8 to 12 digits.');
+        // Check only that it is a valid number of any length
+        if (!/^\d+$/.test(trimmedUid)) {
+            setSubmitError(t('stella_anomaly.uid_invalid_error') || 'UID must be a valid number.');
             playBeep('error');
             return;
         }
