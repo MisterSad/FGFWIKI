@@ -838,7 +838,8 @@
         "recommended_teams": "Rekommenderade team",
         "pro_tips": "Pro-tips",
         "tips": "Tips",
-        "limited_event": "Begränsad tid"
+        "limited_event": "Begränsad tid",
+        "currently_suspended": "För närvarande inställt"
     },
     "builder_data": {
         "hp_none": "Ingen",

@@ -838,7 +838,8 @@
         "recommended_teams": "Tim yang Direkomendasikan",
         "pro_tips": "Kiat Pro",
         "tips": "Kiat",
-        "limited_event": "Waktu Terbatas"
+        "limited_event": "Waktu Terbatas",
+        "currently_suspended": "Saat ini ditangguhkan"
     },
     "builder_data": {
         "hp_none": "Tidak ada",

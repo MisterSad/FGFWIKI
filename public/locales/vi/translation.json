@@ -838,7 +838,8 @@
         "recommended_teams": "Đội được đề xuất",
         "pro_tips": "Mẹo chuyên nghiệp",
         "tips": "Mẹo",
-        "limited_event": "Thời gian có hạn"
+        "limited_event": "Thời gian có hạn",
+        "currently_suspended": "Hiện đang tạm ngưng"
     },
     "builder_data": {
         "hp_none": "Không có",

@@ -838,7 +838,8 @@
         "recommended_teams": "Suositellut tiimit",
         "pro_tips": "Pro-vinkit",
         "tips": "Vinkit",
-        "limited_event": "Rajoitettu aika"
+        "limited_event": "Rajoitettu aika",
+        "currently_suspended": "Tällä hetkellä keskeytetty"
     },
     "builder_data": {
         "hp_none": "Ei mitään",

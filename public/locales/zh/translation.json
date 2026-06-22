@@ -838,7 +838,8 @@
         "recommended_teams": "推荐团队",
         "pro_tips": "专家提示",
         "tips": "提示",
-        "limited_event": "限时"
+        "limited_event": "限时",
+        "currently_suspended": "目前已暂停"
     },
     "builder_data": {
         "hp_none": "无",
