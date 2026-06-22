@@ -149,7 +149,7 @@ export default function EventGuide() {
                                     <Calendar size={140} strokeWidth={1} />
                                 </div>
 
-                                <div style={{ flex: 1, position: 'relative', zIndex: 2, paddingTop: event.isLimited ? '1.5rem' : 0 }}>
+                                <div style={{ flex: 1, position: 'relative', zIndex: 2, paddingTop: (event.isLimited || event.status === 'suspended') ? '1.5rem' : 0 }}>
                                     <h3 style={{
                                         color: 'var(--text-primary)',
                                         marginTop: 0,
