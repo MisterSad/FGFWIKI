@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "Tekli savaşta, hasar ve ağır hasar oranları hedefe ilk saldıran tüccarın direncine göre hesaplanır.",
         "magnetic_combat2_title": "Toplu Saldırı",
         "magnetic_combat2_desc": "Bir toplu saldırıya katılırken, tüm üyeler hesaplamalar için Topluluk Liderinin direncini kullanır.",
-        "magnetic_increase_disclaimer": "Görsel nihai değildir"
+        "magnetic_increase_disclaimer": "Görsel nihai değildir",
+        "magnetic_map_hdr": "Yeni Sınır: Siwenna Eyaleti",
+        "magnetic_map_txt": "Tüccarlar, iki ana bölgeye ayrılmış geniş ve yeni bir bölge olan Siwenna Eyaleti'ni keşfedecekler. Yeni gelenler, 8. ve 9. Seviye yıldız sistemlerinden oluşan Sınır Bölgesi'nden başlayacaklar. Ascendancy Court'un sıkı kontrolü altındaki Çekirdek Bölge ise 10. ila 12. Seviye yüksek riskli sistemlerden oluşuyor. Merkezdeki 12. Seviye \"Orun\" sisteminde, eyaletin kalbindeki imparatorluk konutu olan Ascendancy Hall yer alıyor ve bu, tüm fatih loncalarının nihai hedefi olacak.",
+        "magnetic_mechanic_hdr": "Çevresel Tehlike: Manyetik Fırtınalar",
+        "magnetic_mechanic_txt": "2. Sezon, yıldız alanını kasıp kavuran ve keşif ile savaş şeklinizi değiştiren yoğun manyetik fırtınaları getiriyor. Hayatta kalmak ve Siwenna'nın derinliklerine ilerlemek için manyetik direncinizi artırmalısınız. Bu statı yükseltmek, filonuzun bu tehlikelere dayanmasını, Ascendancy Court'un başıboş ordularını yok etmesini ve yüksek değerli hedefleri güvence altına almasını sağlar.",
+        "magnetic_buildings_hdr": "Savunma Altyapısı: Sezonluk Binalar",
+        "magnetic_buildings_txt": "Siwenna'nın şiddetli elektromanyetik ortamı, gemi navigasyonu ve sistemleri için sürekli bir tehdit oluşturur. Buna karşı koymak için tüccarlar, elektromanyetik korumayı artırmak üzere tasarlanmış yeni özel sezonluk binalar inşa edebilirler. Bu savunma yapılarını kurmak, bu düşman dünyada yerinizi sağlamlaştırmanın anahtarıdır.",
+        "magnetic_settlement_hdr": "2. Sezon Sonuçları ve Fetih",
+        "magnetic_settlement_txt": "Ticaret Loncanız için İşgal Puanı biriktirmek üzere Siwenna Limanları'nı ele geçirerek üstünlük için yarışın. Sezon sona erdiğinde, nihai sıralamalar bu puanlara göre belirlenecek ve eyaletin en güçlü loncası taçlandırılacak. Dereceye giren loncaların üyeleri de harika sezonluk ödüller kazanacak!"
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

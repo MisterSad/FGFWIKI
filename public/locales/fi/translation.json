@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "Yksintaistelussa vauriot ja kriittisten vaurioiden määrät lasketaan ensimmäisen vihollista iskeneen kauppiaan sietokyvyn mukaan.",
         "magnetic_combat2_title": "Rallioperaatiot",
         "magnetic_combat2_desc": "Rallissa kaikki jäsenet käyttävät rallinjohtajan sietokykyarvoa laskelmissa.",
-        "magnetic_increase_disclaimer": "Ei lopullinen ulkoasu"
+        "magnetic_increase_disclaimer": "Ei lopullinen ulkoasu",
+        "magnetic_map_hdr": "Uusi rintama: Siwennan provinssi",
+        "magnetic_map_txt": "Kauppiaat tutkivat Siwennaa, joka on kahdeksi pääalueeksi jaettu laaja uusi territorio. Uudet tulokkaat aloittavat Rajaseudulta (tasojen 8 ja 9 tähtijärjestelmät). Keskusalue, joka on Ascendancy Courtin tiukassa valvonnassa, sisältää korkean riskin tasojen 10–12 järjestelmiä. Sen ytimessä sijaitsee tason 12 järjestelmä \"Orun\", jossa kohoaa keisarin keisarillinen residenssi Ascendancy Hall – kaikkien kauppiaiden perimmäinen kohde.",
+        "magnetic_mechanic_hdr": "Ympäristöuhka: Magneettiset myrskyt",
+        "magnetic_mechanic_txt": "Kausi 2 tuo mukanaan voimakkaita magneettisia myrskyjä, jotka riehuvat tähtikentässä ja muuttavat tapaa tutkia ja taistella. Selviytyäksesi ja päästäksesi syvemmälle Siwennaan sinun on kasvatettava magneettista vastustuskykyäsi. Tämän arvon nostaminen auttaa laivastoasi kestämään vaaroja, tuhoamaan Ascendancy Courtin vaeltavia armeijoita ja turvaamaan arvokkaita kohteita.",
+        "magnetic_buildings_hdr": "Puolustusinfrastruktuuri: Kausirakennukset",
+        "magnetic_buildings_txt": "Siwennan rajut sähkömagneettiset myrskyt uhkaavat jatkuvasti alusten järjestelmiä ja navigointia. Tämän torjumiseksi kauppiaat voivat rakentaa uusia erikoistuneita kausirakennuksia, jotka lisäävät sähkömagneettista suojaa. Näiden rakenteiden pystyttäminen on avainasemassa asemasi vakiinnuttamisessa tässä vihamielisessä avaruudessa.",
+        "magnetic_settlement_hdr": "Kauden 2 ratkaisu & valloitus",
+        "magnetic_settlement_txt": "Kilpaile herruudesta valtaamalla Siwennan satamia kerätäksesi miehityspisteitä kauppakillallesi. Kauden päättyessä lopullinen sijoitus määräytyy näiden pisteiden perusteella, ja provinssin vahvin kilta kruunataan. Parhaiten sijoittuneiden kiltojen jäsenet saavat myös runsaita kausipalkintoja!"
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

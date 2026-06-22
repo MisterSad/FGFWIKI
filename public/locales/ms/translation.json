@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "Dalam pertempuran solo, kerosakan dikira berdasarkan rintangan pedagang pertama yang menyerang sasaran.",
         "magnetic_combat2_title": "Operasi Rali",
         "magnetic_combat2_desc": "Apabila menyertai rali, semua ahli menggunakan rintangan Ketua Rali untuk pengiraan pertempuran.",
-        "magnetic_increase_disclaimer": "Visual bukan hasil akhir"
+        "magnetic_increase_disclaimer": "Visual bukan hasil akhir",
+        "magnetic_map_hdr": "Sempadan Baru: Wilayah Siwenna",
+        "magnetic_map_txt": "Pedagang akan menerokai Siwenna, wilayah baru yang luas yang terbahagi kepada dua zon utama. Pendatang baru bermula di Wilayah Sempadan (mengandungi sistem bintang Tahap 8 dan 9). Wilayah Teras, yang dikawal ketat oleh Ascendancy Court, mempunyai sistem Tahap 10 hingga 12 yang berisiko tinggi. Di pusatnya terletak sistem Tahap 12 \"Orun\", tempat terdirinya Ascendancy Hall, kediaman empayar maharaja dan sasaran utama bagi semua persatuan penakluk.",
+        "magnetic_mechanic_hdr": "Bahaya Lingkungan: Ribut Magnetik",
+        "magnetic_mechanic_txt": "Musim 2 memperkenalkan ribut magnetik sengit yang melanda medan bintang, mengubah cara anda meneroka dan bertempur. Untuk bertahan hidup dan masuk lebih dalam ke Siwenna, anda mesti meningkatkan rintangan magnetik. Meningkatkan stat ini membolehkan armada anda menahan bahaya ini, membasmi tentara Ascendancy Court yang merayau, dan mengamankan sasaran berharga.",
+        "magnetic_buildings_hdr": "Infrastruktur Pertahanan: Bangunan Bermusim",
+        "magnetic_buildings_txt": "Persekitaran elektromagnetik Siwenna yang ekstrem menimbulkan ancaman berterusan terhadap navigasi dan sistem kapal. Untuk mengatasinya, pedagang boleh membina bangunan bermusim khas baru yang dirancang untuk meningkatkan perlindungan elektromagnetik. Mendirikan struktur pertahanan ini adalah kunci untuk mengamankan kedudukan anda di ruang berbahaya ini.",
+        "magnetic_settlement_hdr": "Penyelesaian & Penaklukan Musim 2",
+        "magnetic_settlement_txt": "Bersainglah untuk supremasi dengan merebut Pelabuhan Siwenna untuk mengumpulkan Mata Pendudukan bagi Persatuan Dagang anda. Apabila musim berakhir, kedudukan akhir akan ditentukan berdasarkan mata ini, menobatkan persatuan terkuat di wilayah tersebut. Anggota persatuan kedudukan teratas juga akan menerima ganjaran bermusim yang melimpah!"
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",

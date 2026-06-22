@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "I solokamp beregnes skade basert på motstanden til den første handelsmannen som angriper målet.",
         "magnetic_combat2_title": "Samlingsoperasjoner",
         "magnetic_combat2_desc": "I samlingskamper bruker alle medlemmene samlingslederens motstand for beregninger.",
-        "magnetic_increase_disclaimer": "Ikke endelig utseende"
+        "magnetic_increase_disclaimer": "Ikke endelig utseende",
+        "magnetic_map_hdr": "Nye grenser: Siwenna-provinsen",
+        "magnetic_map_txt": "Handelsreisende vil utforske Siwenna, et enormt nytt territorium delt inn i to hovedsoner. Nykommere starter i Grenseregionen (stjernesystemer på nivå 8 og 9). Kjerneregionen, som er under Ascendancy Courts strenge kontroll, består av risikofylte systemer på nivå 10 til 12. I sentrum ligger nivå 12-systemet \"Orun\", der Ascendancy Hall – keiserens imperiale residens – står som det ultimate målet for alle erobrende laug.",
+        "magnetic_mechanic_hdr": "Miljøfare: Magnetiske stormer",
+        "magnetic_mechanic_txt": "Sesong 2 introduserer intense magnetiske stormer som herjer stjernefeltet, og endrer hvordan du utforsker og kjemper. For å overleve og trenge dypere inn i Siwenna, må du bygge opp din magnetiske motstand. Ved å øke denne statistikken kan flåten din motstå disse farene, eliminere Ascendancy Courts vandrende hærer og sikre verdifulle mål.",
+        "magnetic_buildings_hdr": "Forsvarsinfrastruktur: Sesongbaserte bygninger",
+        "magnetic_buildings_txt": "Det voldsomme elektromagnetiske miljøet i Siwenna utgjør en konstant trussel mot skipenes navigasjon og systemer. For å motvirke dette kan handelsreisende bygge nye spesialiserte sesongbygninger designet for å øke den elektromagnetiske beskyttelsen. Å etablere disse forsvarsstrukturene er nøkkelen til å sikre fotfeste i dette fiendtlige rommet.",
+        "magnetic_settlement_hdr": "Sesong 2 Oppgjør & Erobring",
+        "magnetic_settlement_txt": "Kjemp om herredømmet by å erobre Siwenna-havner for å samle okkupasjonspoeng for ditt handelslaug. Når sesongen avsluttes, vil den endelige plasseringen bli bestemt av disse poengene, og det sterkeste lauget i Siwenna vil bli kåret. Handelsreisende fra de best rangerte laugene vil også motta sjenerøse sesongbelønninger!"
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

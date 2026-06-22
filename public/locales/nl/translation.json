@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "In sologevechten wordt de schade berekend op basis van de weerstand van de eerste speler die het doelwit raakt.",
         "magnetic_combat2_title": "Rally-operaties",
         "magnetic_combat2_desc": "In rallygevechten gebruiken alle leden de weerstand van de Rally-leider.",
-        "magnetic_increase_disclaimer": "Niet-definitief beeld"
+        "magnetic_increase_disclaimer": "Niet-definitief beeld",
+        "magnetic_map_hdr": "Nieuwe grens: De provincie Siwenna",
+        "magnetic_map_txt": "Handelaren verkennen Siwenna, een uitgestrekt nieuw gebied verdeeld in twee hoofdzones. Nieuwkomers beginnen in de Grensregio (sterrenstelsels van niveau 8 en 9). De Kernregio, die onder de strikte controle van het Ascendancy Court staat, bevat risicovolle stelsels van niveau 10 tot 12. In het centrum ligt het niveau 12-stelsel \"Orun\", waar de Ascendancy Hall staat — de keizerlijke residentie van de keizer en het ultieme doel voor alle veroverende gilden.",
+        "magnetic_mechanic_hdr": "Milieugevaar: Magnetische stormen",
+        "magnetic_mechanic_txt": "Seizoen 2 introduceert intense magnetische stormen die het sterrenveld teisteren, waardoor de manier waarop je verkent en vecht verandert. Om te overleven en dieper in Siwenna door te dringen, moet je je magnetische weerstand opbouwen. Door deze statistiek te verhogen, kan je vloot deze gevaren weerstaan, de rondtrekkende legers van het Ascendancy Court elimineren en waardevolle doelen veiligstellen.",
+        "magnetic_buildings_hdr": "Defensieve infrastructuur: Seizoensgebonden gebouwen",
+        "magnetic_buildings_txt": "De heftige elektromagnetische omgeving van Siwenna vormt een constante bedreiging voor de navigatie en systemen van schepen. Om dit tegen te gaan, kunnen handelaren nieuwe gespecialiseerde seizoensgebouwen bouwen die zijn ontworpen om de elektromagnetische bescherming te verhogen. Het bouwen van deze defensieve structuren is de sleutel tot het veiligstellen van je positie in deze vijandelijke ruimte.",
+        "magnetic_settlement_hdr": "Seizoen 2 Afrekening & Verovering",
+        "magnetic_settlement_txt": "Strijd om de oppermacht door Siwenna-havens te veroveren om bezettingspunten te verzamelen voor je handelsgilde. Aan het einde van het seizoen wordt de eindstand bepaald op basis van deze punten en wordt de ultieme gilde van de provincie gekroond. Leden van de hoogst geklasseerde gilden ontvangen ook royale seizoensbeloningen!"
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "Im Solokampf bestimmt der erste Angreifer die Resistenzstufe.",
         "magnetic_combat2_title": "Sammeloperationen",
         "magnetic_combat2_desc": "Bei einer Versammlung gilt die Resistenz des Versammlungsleiters für die gesamte Gruppe.",
-        "magnetic_increase_disclaimer": "Grafik nicht final"
+        "magnetic_increase_disclaimer": "Grafik nicht final",
+        "magnetic_map_hdr": "Neue Grenze: Die Provinz Siwenna",
+        "magnetic_map_txt": "Händler erkunden Siwenna, ein riesiges neues Gebiet, das in zwei Hauptzonen unterteilt ist. Neueinsteiger beginnen in der Grenzregion (mit Sternensystemen der Stufen 8 und 9). Die Kernregion, die unter der strengen Kontrolle des Herrschaftshofs steht, bietet risikoreiche Systeme der Stufen 10 bis 12. In ihrem Zentrum liegt „Orun“, ein Stufe-12-System, in dem sich die Herrschaftshalle befindet, die imperiale Residenz des Herrschers und das ultimative Ziel für erobernde Gilden.",
+        "magnetic_mechanic_hdr": "Umweltgefahr: Magnetstürme",
+        "magnetic_mechanic_txt": "Saison 2 führt intensive Magnetstürme ein, die das Sternenfeld verwüsten und die Art und Weise, wie Sie erkunden und kämpfen, verändern. Um zu überleben und tiefer in Siwenna vorzudringen, müssen Sie Ihren Magnetwiderstand aufbauen. Durch die Erhöhung dieses Werts kann Ihre Flotte diesen Gefahren standhalten, umherziehende Armeen des Herrschaftshofs eliminieren und wertvolle Ziele sichern.",
+        "magnetic_buildings_hdr": "Verteidigungsinfrastruktur: Saisonale Gebäude",
+        "magnetic_buildings_txt": "Die heftige elektromagnetische Umgebung von Siwenna stellt eine ständige Bedrohung für die Navigation und die Systeme der Schiffe dar. Um dem entgegenzuwirken, können Händler neue spezialisierte saisonale Gebäude errichten, die den elektromagnetischen Schutz erhöhen. Der Bau dieser Verteidigungsstrukturen ist der Schlüssel zur Sicherung Ihrer Position in diesem feindlichen Raum.",
+        "magnetic_settlement_hdr": "Saison 2 Abrechnung & Eroberung",
+        "magnetic_settlement_txt": "Kämpfen Sie um die Vorherrschaft, indem Sie Siwenna-Häfen einnehmen, um Besetzungspunkte für Ihre Handelsgilde zu sammeln. Am Ende der Saison wird der Endstand anhand dieser Punkte ermittelt und die ultimative Gilde der Provinz gekrönt. Die bestplatzierten Gilden und ihre Mitglieder erhalten exklusive saisonale Schätze!"
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

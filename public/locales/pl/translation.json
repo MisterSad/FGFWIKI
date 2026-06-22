@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "W walce solo obrażenia są obliczane na podstawie odporności pierwszego gracza, który zaatakuje cel.",
         "magnetic_combat2_title": "Operacje rajdowe",
         "magnetic_combat2_desc": "W bitwach rajdowych wszyscy członkowie używają odporności lidera rajdu.",
-        "magnetic_increase_disclaimer": "Grafika nie jest ostateczna"
+        "magnetic_increase_disclaimer": "Grafika nie jest ostateczna",
+        "magnetic_map_hdr": "Nowa granica: Prowincja Siwenna",
+        "magnetic_map_txt": "Kupcy będą eksplorować Siwennę, ogromne nowe terytorium podzielone na dwie główne strefy. Nowicjusze zaczynają w Regionie Przygranicznym (układy gwiezdne na poziomach 8 i 9). Region Centralny, kontrolowany żelazną ręką przez Ascendancy Court, obejmuje niebezpieczne układy na poziomach od 10 do 12. W samym sercu leży układ 12. poziomu „Orun”, gdzie wznosi się Ascendancy Hall — cesarska rezydencja cesarza i ostateczny cel wszystkich gildii kupieckich.",
+        "magnetic_mechanic_hdr": "Zagrożenie środowiskowe: Burze magnetyczne",
+        "magnetic_mechanic_txt": "Sezon 2 wprowadza potężne burze magnetyczne, które pustoszą przestrzeń kosmiczną, zmieniając zasady eksploracji i walki. Aby przetrwać i dotrzeć głębiej do Siwenny, musisz zwiększyć odporność magnetyczną swojej floty. Podniesienie tego parametru pozwoli twojej flocie stawić czoła zagrożeniom, eliminować grasujące armie Ascendancy Court i zabezpieczać cenne cele.",
+        "magnetic_buildings_hdr": "Infrastruktura obronna: Budynki sezonowe",
+        "magnetic_buildings_txt": "Gwałtowne zjawiska elektromagnetyczne w Siwennie stanowią ciągłe zagrożenie dla systemów i nawigacji statków. Aby temu zaradzić, kupcy mogą wznosić nowe specjalistyczne budynki sezonowe zaprojektowane z myślą o zwiększeniu ochrony elektromagnetycznej. Budowa tych struktur obronnych jest kluczem do umocnienia pozycji w tej wrogiej przestrzeni.",
+        "magnetic_settlement_hdr": "Podsumowanie i podbój sezonu 2",
+        "magnetic_settlement_txt": "Walcz o dominację, przejmując porty Siwenny, aby zdobywać punkty okupacji dla swojej gildii. Po zakończeniu sezonu na podstawie tych punktów zostanie ustalona końcowa klasyfikacja, która wyłoni najsilniejszą gildię prowincji. Członkowie najlepszych gildii otrzymają również cenne nagrody sezonowe!"
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

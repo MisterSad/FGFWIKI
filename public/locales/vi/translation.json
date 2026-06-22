@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "Trong chiến đấu cá nhân, sát thương được tính dựa trên chỉ số kháng của thương nhân đầu tiên tấn công mục tiêu.",
         "magnetic_combat2_title": "Chiến dịch Tập hợp",
         "magnetic_combat2_desc": "Khi tham gia tập hợp, tất cả các thành viên sử dụng chỉ số kháng của Trưởng nhóm tập hợp.",
-        "magnetic_increase_disclaimer": "Hình ảnh không phải là bản chính thức"
+        "magnetic_increase_disclaimer": "Hình ảnh không phải là bản chính thức",
+        "magnetic_map_hdr": "Bản Đồ Mới: Tỉnh Siwenna",
+        "magnetic_map_txt": "Thương nhân sẽ khám phá Siwenna, một vùng lãnh thổ mới rộng lớn được chia thành hai khu vực hành chính: Khu Vực Biên Giới và Khu Vực Trung Tâm. Khu Vực Biên Giới gồm các hệ sao Cấp 8 và Cấp 9, là nơi bắt đầu cho các Thương Nhân khi tiến vào Siwenna. Khu Vực Trung Tâm, gồm các hệ sao Cấp 10 đến Cấp 12, nằm dưới sự kiểm soát chặt chẽ của Tòa Án Ascendancy. Tại hệ sao Cấp 12 \"Orun\", Cung Điện Ascendancy là nơi ở của Hoàng Đế Ascendancy và là mục tiêu tối thượng của tất cả Thương Nhân.",
+        "magnetic_mechanic_hdr": "Cơ Chế Mới: Bão Từ & Kháng Bão Từ",
+        "magnetic_mechanic_txt": "Trong Mùa 2, một tinh trường hoàn toàn mới bị bao phủ bởi các cơn bão từ. Việc khám phá và giao tranh giờ đây sẽ thay đổi theo áp lực môi trường này. Thông qua lối chơi mùa giải, Thương Nhân có thể tăng kháng bão từ, dần thích nghi với bão từ, tiến sâu hơn vào Siwenna và tiêu diệt các đội quân tuần tra của Tòa Án Ascendancy.",
+        "magnetic_buildings_hdr": "Công Trình Mùa Giải Mới",
+        "magnetic_buildings_txt": "Siwenna liên tục bị tàn phá bởi các cơn bão điện từ, hệ thống tàu có thể hỏng hóc bất cứ lúc nào. Các công trình mùa giải mới sẽ giúp Thương Nhân tăng kháng điện từ để chống chọi với bão tố. Tại Siwenna, sinh tồn là bước đi đầu tiên để khám phá.",
+        "magnetic_settlement_hdr": "Tổng Kết Mùa Giải Mới",
+        "magnetic_settlement_txt": "Trong Mùa 2, các Thương Hội có thể tích lũy Điểm Chiếm Đóng bằng cách đánh chiếm các Cảng Siwenna. Vào cuối mùa giải, việc tổng kết sẽ dựa trên tổng Điểm Chiếm Đóng để vinh danh Thương Hội mạnh nhất Siwenna. Các thương nhân thuộc Thương Hội đứng đầu cũng nhận được phần thưởng phong phú!"
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

@@ -318,7 +318,15 @@
         "magnetic_combat1_desc": "I solostrid beräknas skadan baserat på resistensen hos den första spelaren som angriper målet.",
         "magnetic_combat2_title": "Rallyoperationer",
         "magnetic_combat2_desc": "I rallystrider använder alla medlemmar rallyledarens resistensvärde.",
-        "magnetic_increase_disclaimer": "Inte slutgiltig bild"
+        "magnetic_increase_disclaimer": "Inte slutgiltig bild",
+        "magnetic_map_hdr": "Nya gränser: Siwenna-provinsen",
+        "magnetic_map_txt": "Handelsmän kommer att utforska Siwenna, ett enormt nytt territorium uppdelat i två huvudzoner. Nykomlingar börjar i Gränsregionen (stjärnsystem på nivå 8 och 9). Kärnregionen, som står under Ascendancy Courts strikta kontroll, består av risksystem på nivå 10 till 12. I dess centrum ligger nivå 12-systemet \"Orun\", där Ascendancy Hall — kejsarens imperiala residens — står som det slutgiltiga målet för alla erövrande gillen.",
+        "magnetic_mechanic_hdr": "Miljöfara: Magnetiska stormar",
+        "magnetic_mechanic_txt": "Säsong 2 introducerar intensiva magnetiska stormar som härjar stjärnfältet och förändrar hur du utforskar och strider. För att överleva och tränga djupare in i Siwenna måste du bygga upp din magnetiska motståndskraft. Genom att öka denna statistik kan din flotta motstå dessa faror, eliminera Ascendancy Courts vandrande arméer och säkra värdefulla mål.",
+        "magnetic_buildings_hdr": "Försvarsinfrastruktur: Säsongsbyggnader",
+        "magnetic_buildings_txt": "Den våldsamma elektromagnetiska miljön i Siwenna utgör ett ständigt hot mot skeppens navigering och system. För att motverka detta kan handelsmän bygga nya specialiserade säsongsbyggnader utformade för att öka det elektromagnetiska skyddet. Att etablera dessa försvarsstrukturer är nyckeln till att säkra fotfäste i denna fientliga rymd.",
+        "magnetic_settlement_hdr": "Säsong 2 Avslutning & Erövring",
+        "magnetic_settlement_txt": "Kämpa om herraväldet genom ka erövra Siwenna-hamnar för å samla ockupationspoäng till ditt handelsgille. När säsongen avslutas kommer den slutliga ställningen att fastställas baserat på dessa poäng, och provinsens starkaste gille krönas. Medlemmar i de bäst rankade gillena kommer också att få generösa säsongsbelöningar!"
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",
