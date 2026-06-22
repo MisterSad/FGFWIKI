@@ -154,8 +154,8 @@ export default function StellaAnomaly() {
     const handleMorseSubmit = (e) => {
         e.preventDefault();
         const cleaned = morseInput.trim().toUpperCase().replace(/[^A-Z]/g, '');
-        // Answer is "STELLAANOMALY" (STELLA ANOMALY)
-        if (cleaned === 'STELLAANOMALY') {
+        // Answer is "ILOVEFGFWIKI" (I LOVE FGF WIKI)
+        if (cleaned === 'ILOVEFGFWIKI') {
             setMorseError(false);
             markPhaseComplete(1);
         } else {
@@ -269,9 +269,9 @@ export default function StellaAnomaly() {
         e.preventDefault();
         setSubmitError('');
         
-        // Validate Secret Code (must match "STELLA ANOMALY")
+        // Validate Secret Code (must match "I LOVE FGF WIKI")
         const cleanedCode = finalSecretCode.trim().toUpperCase().replace(/[^A-Z]/g, '');
-        if (cleanedCode !== 'STELLAANOMALY') {
+        if (cleanedCode !== 'ILOVEFGFWIKI') {
             setSubmitError(t('stella_anomaly.code_invalid_error') || 'INVALID SECRET CODE. Please enter the correct event code.');
             playBeep('error');
             return;
@@ -559,13 +559,15 @@ export default function StellaAnomaly() {
                                             
                                             {/* Morse Symbols code */}
                                             <div style={{
-                                                fontSize: '1.8rem',
-                                                letterSpacing: '6px',
+                                                fontSize: '1.6rem',
+                                                letterSpacing: '4px',
                                                 fontWeight: 'bold',
                                                 color: '#FFFFFF',
-                                                textShadow: '0 0 8px rgba(255, 255, 255, 0.6)'
+                                                textShadow: '0 0 8px rgba(255, 255, 255, 0.6)',
+                                                wordBreak: 'break-all',
+                                                padding: '0 10px'
                                             }}>
-                                                ... - . .-.. .-.. .- / .- -. --- -- .- .-.. -.--
+                                                .. / .-.. --- ...- . / ..-. --. ..-. / .-- .. -.- ..
                                             </div>
                                         </div>
 
@@ -580,7 +582,7 @@ export default function StellaAnomaly() {
                                                 border: '1px solid rgba(78, 205, 196, 0.2)'
                                             }}>
                                                 <CheckCircle2 size={32} style={{ margin: '0 auto 0.8rem' }} />
-                                                <div style={{ fontWeight: 'bold' }}>TRANSMISSION DECODED: "STELLA ANOMALY"</div>
+                                                <div style={{ fontWeight: 'bold' }}>TRANSMISSION DECODED: "I LOVE FGF WIKI"</div>
                                                 <div style={{ fontSize: '0.75rem', marginTop: '0.4rem', opacity: 0.8 }}>
                                                     Signal tunnel initialized. Proceed to Phase 2.
                                                 </div>
