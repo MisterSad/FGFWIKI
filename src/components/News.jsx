@@ -517,7 +517,11 @@ export default function News() {
             }}>
                 {[...tips]
                     .filter(tip => tip.category === 'news')
-                    .sort((a, b) => new Date(b.publishDate || 0) - new Date(a.publishDate || 0))
+                    .sort((a, b) => {
+                        if (a.id === 'migration') return -1;
+                        if (b.id === 'migration') return 1;
+                        return new Date(b.publishDate || 0) - new Date(a.publishDate || 0);
+                    })
                     .map(tip => (
                         <TipCard
                             key={tip.id}
