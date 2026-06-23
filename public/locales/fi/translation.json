@@ -364,7 +364,7 @@
         "migration_effect_preserve2": "Vakioresurssit säilytetään, ellei palautusvaroituksia ole.",
         "migration_effect_preserve3": "Aiemmin löydetyt planeetat ja järjestelmät ovat edelleen tutkittuja.",
         "migration_cta_title": "Kiinnostaako Server 1061?",
-        "migration_cta_desc": "Liity koordinoituun siirtoon palvelimelle 1061! Lähetä siirtohakemuksesi etukäteen portaalissa varmistaaksesi, että kaikki on valmiina sujuvaa laskeutumista varten maahanmuuttopäivänä.",
+        "migration_cta_desc": "Oletko valmis äärimmäiseen harppaukseen? Koordinoi siirtosi Server 1061:lle nyt! Lähetä hakemuksesi hyvissä ajoin portaaliin varmistaaksesi virheettömän laskeutumisen muuttopäivänä.",
         "migration_cta_btn": "Hae Server 1061:tä"
     },
     "hero_data": {
