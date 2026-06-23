@@ -3,7 +3,7 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
 import DailyChecklist from './DailyChecklist';
-import { BookOpen, Swords, Coins, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Calendar, Trophy, Heart, Gift, Star, Sparkles, MessageSquare } from 'lucide-react';
+import { BookOpen, Swords, Coins, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Calendar, Trophy, Heart, Gift, Star, Sparkles, MessageSquare, AlertTriangle, CheckCircle, ArrowUpRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function Guides() {
@@ -262,7 +262,7 @@ export default function Guides() {
                             {section.methods && (
                                 <div className="magnetic-methods-grid" style={{
                                     display: 'grid',
-                                    gridTemplateColumns: 'repeat(2, 1fr)',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
                                     gap: '1.5rem',
                                     marginTop: '2rem',
                                     marginBottom: '2rem'
@@ -330,6 +330,131 @@ export default function Guides() {
                                             </div>
                                         );
                                     })}
+                                </div>
+                            )}
+
+                            {section.serverGroups && (
+                                <div style={{
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    gap: '1rem',
+                                    marginTop: '1.5rem',
+                                    marginBottom: '1.5rem'
+                                }}>
+                                    {section.serverGroups.map((group, gIdx) => (
+                                        <div key={gIdx} style={{
+                                            background: 'rgba(212, 175, 55, 0.05)',
+                                            border: '1px solid rgba(212, 175, 55, 0.25)',
+                                            borderRadius: '6px',
+                                            padding: '0.8rem 1.5rem',
+                                            fontFamily: 'var(--font-mono)',
+                                            fontSize: '1.1rem',
+                                            color: 'var(--gold-bright)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '0.5rem',
+                                            boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+                                            transition: 'all 0.3s ease'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.borderColor = 'var(--gold)';
+                                            e.currentTarget.style.background = 'rgba(212, 175, 55, 0.1)';
+                                            e.currentTarget.style.transform = 'translateY(-2px)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.25)';
+                                            e.currentTarget.style.background = 'rgba(212, 175, 55, 0.05)';
+                                            e.currentTarget.style.transform = 'none';
+                                        }}
+                                        >
+                                            <span style={{ opacity: 0.6, fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px' }}>SV</span>
+                                            <strong>{group}</strong>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+
+                            {section.effects && (
+                                <div style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                                    gap: '1.5rem',
+                                    marginTop: '1.5rem',
+                                    marginBottom: '1.5rem'
+                                }}>
+                                    {/* Reset Column */}
+                                    <div style={{
+                                        background: 'rgba(255, 91, 91, 0.02)',
+                                        border: '1px solid rgba(255, 91, 91, 0.15)',
+                                        borderRadius: '8px',
+                                        padding: '1.5rem'
+                                    }}>
+                                        <h4 style={{
+                                            color: '#ff5b5b',
+                                            margin: '0 0 1.5rem 0',
+                                            fontFamily: 'var(--font-label)',
+                                            letterSpacing: '1px',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '0.5rem',
+                                            fontSize: '1.1rem',
+                                            textTransform: 'uppercase'
+                                        }}>
+                                            <AlertTriangle size={18} /> {t('common.reset_data', 'RESET DATA')}
+                                        </h4>
+                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                            {section.effects.reset.map((item, rIdx) => (
+                                                <div key={rIdx} style={{
+                                                    display: 'flex',
+                                                    gap: '0.8rem',
+                                                    alignItems: 'flex-start',
+                                                    background: 'rgba(0,0,0,0.2)',
+                                                    padding: '0.75rem 1rem',
+                                                    borderRadius: '4px',
+                                                    borderLeft: '3px solid #ff5b5b'
+                                                }}>
+                                                    <span style={{ color: 'var(--text-dim)', fontSize: '0.95rem', lineHeight: '1.5' }}>{t(item)}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {/* Preserved Column */}
+                                    <div style={{
+                                        background: 'rgba(76, 217, 192, 0.02)',
+                                        border: '1px solid rgba(76, 217, 192, 0.15)',
+                                        borderRadius: '8px',
+                                        padding: '1.5rem'
+                                    }}>
+                                        <h4 style={{
+                                            color: 'var(--accent-teal)',
+                                            margin: '0 0 1.5rem 0',
+                                            fontFamily: 'var(--font-label)',
+                                            letterSpacing: '1px',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '0.5rem',
+                                            fontSize: '1.1rem',
+                                            textTransform: 'uppercase'
+                                        }}>
+                                            <CheckCircle size={18} /> {t('common.preserved_data', 'PRESERVED DATA')}
+                                        </h4>
+                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                            {section.effects.preserved.map((item, pIdx) => (
+                                                <div key={pIdx} style={{
+                                                    display: 'flex',
+                                                    gap: '0.8rem',
+                                                    alignItems: 'flex-start',
+                                                    background: 'rgba(0,0,0,0.2)',
+                                                    padding: '0.75rem 1rem',
+                                                    borderRadius: '4px',
+                                                    borderLeft: '3px solid var(--accent-teal)'
+                                                }}>
+                                                    <span style={{ color: 'var(--text-dim)', fontSize: '0.95rem', lineHeight: '1.5' }}>{t(item)}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                             )}
 
@@ -456,6 +581,95 @@ export default function Guides() {
                                             ))}
                                         </tbody>
                                     </table>
+                                </div>
+                            )}
+
+                            {section.cta && (
+                                <div className="cta-panel" style={{
+                                    background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(10, 10, 12, 0.95) 100%)',
+                                    border: '1px solid var(--gold)',
+                                    borderRadius: '8px',
+                                    padding: '2.5rem',
+                                    marginTop: '3rem',
+                                    textAlign: 'center',
+                                    boxShadow: '0 0 35px rgba(212, 175, 55, 0.1)',
+                                    position: 'relative',
+                                    overflow: 'hidden',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    gap: '1.5rem'
+                                }}>
+                                    <div style={{
+                                        position: 'absolute',
+                                        top: '-20%',
+                                        right: '-10%',
+                                        fontSize: '12rem',
+                                        fontFamily: 'var(--font-hero)',
+                                        color: 'var(--gold)',
+                                        opacity: 0.03,
+                                        pointerEvents: 'none',
+                                        fontWeight: 'bold'
+                                    }}>
+                                        1061
+                                    </div>
+                                    <h3 style={{
+                                        fontFamily: 'var(--font-hero)',
+                                        fontSize: 'clamp(1.4rem, 4vw, 2rem)',
+                                        color: 'var(--gold-bright)',
+                                        margin: 0,
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '1px'
+                                    }}>
+                                        {t(section.cta.title)}
+                                    </h3>
+                                    <p style={{
+                                        color: 'var(--text-dim)',
+                                        fontSize: '1.1rem',
+                                        lineHeight: '1.7',
+                                        maxWidth: '700px',
+                                        margin: 0
+                                    }}>
+                                        {t(section.cta.desc)}
+                                    </p>
+                                    <a
+                                        href={section.cta.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '0.8rem',
+                                            background: 'var(--gold)',
+                                            color: 'var(--bg-void)',
+                                            border: '1px solid var(--gold)',
+                                            fontFamily: 'var(--font-label)',
+                                            fontWeight: 'bold',
+                                            fontSize: '1rem',
+                                            padding: '1rem 2.5rem',
+                                            borderRadius: '4px',
+                                            textDecoration: 'none',
+                                            textTransform: 'uppercase',
+                                            letterSpacing: '2px',
+                                            transition: 'all 0.3s ease',
+                                            boxShadow: '0 4px 15px rgba(212, 175, 55, 0.25)',
+                                            marginTop: '0.5rem'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.background = 'transparent';
+                                            e.currentTarget.style.color = 'var(--gold)';
+                                            e.currentTarget.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.4)';
+                                            e.currentTarget.style.transform = 'translateY(-2px)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.background = 'var(--gold)';
+                                            e.currentTarget.style.color = 'var(--bg-void)';
+                                            e.currentTarget.style.boxShadow = '0 4px 15px rgba(212, 175, 55, 0.25)';
+                                            e.currentTarget.style.transform = 'none';
+                                        }}
+                                    >
+                                        {t(section.cta.buttonText)} <ArrowUpRight size={20} />
+                                    </a>
                                 </div>
                             )}
 
