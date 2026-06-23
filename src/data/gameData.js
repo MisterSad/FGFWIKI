@@ -391,30 +391,30 @@ export const tips = [
             tierName: 'tips.migration_tier_high_title',
             tierDesc: 'tips.migration_tier_high_desc',
             quotaDetails: [
-              { label: 'tips.quota_ultra', value: 1, color: '#ff5b5b' },
-              { label: 'tips.quota_high', value: 3, color: '#d4af37' },
-              { label: 'tips.quota_mid', value: 30, color: '#4cd9c0' },
-              { label: 'tips.quota_low', value: 40, color: '#888888' }
+              { label: 'tips.quota_ultra', range: '> 110M', value: 1, color: '#ff5b5b' },
+              { label: 'tips.quota_high', range: '90M - 110M', value: 3, color: '#d4af37' },
+              { label: 'tips.quota_mid', range: '43M - 90M', value: 30, color: '#4cd9c0' },
+              { label: 'tips.quota_low', range: '< 43M', value: 40, color: '#888888' }
             ]
           },
           {
             tierName: 'tips.migration_tier_mid_title',
             tierDesc: 'tips.migration_tier_mid_desc',
             quotaDetails: [
-              { label: 'tips.quota_ultra', value: 2, color: '#ff5b5b' },
-              { label: 'tips.quota_high', value: 5, color: '#d4af37' },
-              { label: 'tips.quota_mid', value: 40, color: '#4cd9c0' },
-              { label: 'tips.quota_low', value: 60, color: '#888888' }
+              { label: 'tips.quota_ultra', range: '> 110M', value: 2, color: '#ff5b5b' },
+              { label: 'tips.quota_high', range: '90M - 110M', value: 5, color: '#d4af37' },
+              { label: 'tips.quota_mid', range: '43M - 90M', value: 40, color: '#4cd9c0' },
+              { label: 'tips.quota_low', range: '< 43M', value: 60, color: '#888888' }
             ]
           },
           {
             tierName: 'tips.migration_tier_low_title',
             tierDesc: 'tips.migration_tier_low_desc',
             quotaDetails: [
-              { label: 'tips.quota_ultra', value: 3, color: '#ff5b5b' },
-              { label: 'tips.quota_high', value: 8, color: '#d4af37' },
-              { label: 'tips.quota_mid', value: 60, color: '#4cd9c0' },
-              { label: 'tips.quota_low', value: 80, color: '#888888' }
+              { label: 'tips.quota_ultra', range: '> 110M', value: 3, color: '#ff5b5b' },
+              { label: 'tips.quota_high', range: '90M - 110M', value: 8, color: '#d4af37' },
+              { label: 'tips.quota_mid', range: '43M - 90M', value: 60, color: '#4cd9c0' },
+              { label: 'tips.quota_low', range: '< 43M', value: 80, color: '#888888' }
             ]
           }
         ]
