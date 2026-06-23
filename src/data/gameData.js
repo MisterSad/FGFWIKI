@@ -367,7 +367,7 @@ export const tips = [
     highlight: true,
     hasDetails: true,
     isUpdate: true,
-    publishDate: '2026-06-06T14:58:00Z',
+    publishDate: '2026-06-23T08:00:00Z',
     sections: [
       {
         text: 'tips.migration_intro'
