@@ -170,7 +170,10 @@ export default function Guides() {
                                                         borderRadius: '4px',
                                                         borderLeft: `3px solid ${detail.color}`
                                                     }}>
-                                                        <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>{t(detail.label)}</span>
+                                                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                                                            <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontWeight: '500' }}>{t(detail.label)}</span>
+                                                            {detail.range && <span style={{ color: 'var(--text-dim)', fontSize: '0.75rem' }}>{detail.range}</span>}
+                                                        </div>
                                                         <span style={{
                                                             fontSize: '1.1rem',
                                                             fontFamily: 'var(--font-mono)',
