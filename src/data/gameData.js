@@ -374,7 +374,14 @@ export const tips = [
       },
       {
         header: 'tips.migration_status_hdr',
-        text: 'tips.migration_status_txt'
+        text: 'tips.migration_status_txt',
+        serverGroups: [
+          '1049–1056',
+          '1057–1064',
+          '1065–1072',
+          '1073–1080',
+          '1081–1088'
+        ]
       },
       {
         header: 'tips.migration_how_works_hdr',
@@ -414,11 +421,29 @@ export const tips = [
       },
       {
         header: 'tips.migration_reqs_hdr',
-        text: 'tips.migration_reqs_txt'
+        methods: [
+          { title: 'tips.migration_req_cost_title', desc: 'tips.migration_req_cost_desc', icon: 'Coins' },
+          { title: 'tips.migration_req_dest_title', desc: 'tips.migration_req_dest_desc', icon: 'Home' },
+          { title: 'tips.migration_req_confirm_title', desc: 'tips.migration_req_confirm_desc', icon: 'Calendar' },
+          { title: 'tips.migration_req_prince_title', desc: 'tips.migration_req_prince_desc', icon: 'Crown' },
+          { title: 'tips.migration_req_base_title', desc: 'tips.migration_req_base_desc', icon: 'Shield' }
+        ]
       },
       {
         header: 'tips.migration_effects_hdr',
-        text: 'tips.migration_effects_txt'
+        effects: {
+          reset: [
+            'tips.migration_effect_reset1',
+            'tips.migration_effect_reset2',
+            'tips.migration_effect_reset3',
+            'tips.migration_effect_reset4'
+          ],
+          preserved: [
+            'tips.migration_effect_preserve1',
+            'tips.migration_effect_preserve2',
+            'tips.migration_effect_preserve3'
+          ]
+        }
       },
       {
         header: 'tips.migration_stages_hdr',
@@ -429,6 +454,14 @@ export const tips = [
           { number: 3, name: 'tips.migration_stage3_title', desc: 'tips.migration_stage3_desc' },
           { number: 4, name: 'tips.migration_stage4_title', desc: 'tips.migration_stage4_desc' }
         ]
+      },
+      {
+        cta: {
+          title: 'tips.migration_cta_title',
+          desc: 'tips.migration_cta_desc',
+          buttonText: 'tips.migration_cta_btn',
+          url: 'https://moveto1061.com/'
+        }
       }
     ]
   },
