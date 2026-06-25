@@ -191,11 +191,11 @@ export default function FlagshipGuide() {
                             </div>
                             <div style={{ padding: '1.5rem' }}>
                                 <p style={{ color: 'var(--text-dim)', marginBottom: '1rem' }}>
-                                    <strong style={{ color: 'var(--text-primary)' }}>Strengths:</strong> {t('flagships.gungir.strengths', 'High energy generation, opponent suppression, and scaling combat boosts.')}
+                                    <strong style={{ color: 'var(--text-primary)' }}>Strengths:</strong> {t('flagships.gungir.strengths', 'High energy generation, opponent suppression, and scaling combat boosts (Key abilities unlocked at MAX upgrade level).')}
                                 </p>
                                 <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.gungir.strategy_title', 'Core Strategy')}</h5>
                                 <ul style={{ color: 'var(--text-dim)', paddingLeft: '1.2rem', marginBottom: '1rem' }}>
-                                    <li>{t('flagships.gungir.strategy_1', 'Accelerate your champion skill cycle while suppressing the enemy\'s ability speed.')}</li>
+                                    <li>{t('flagships.gungir.strategy_1', 'Accelerate your champion skill cycle while suppressing the enemy\'s ability speed (Requires max upgrade for key abilities).')}</li>
                                     <li>{t('flagships.gungir.strategy_2', 'Scales to 25% after two full skill rotations, outperforming other options in longer engagements.')}</li>
                                 </ul>
                                 <h5 className="label-text" style={{ color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{t('flagships.gungir.abilities_title', 'Key Abilities')}</h5>
