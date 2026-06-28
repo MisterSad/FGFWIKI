@@ -239,67 +239,83 @@ export default function CreatorsCorner() {
                             {t(selectedCreator.descKey)}
                         </p>
 
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
+                        {/* Social Links Row */}
+                        <div style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '1rem',
+                            marginTop: '0.5rem'
+                        }}>
                             {/* YouTube */}
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                <span style={{
-                                    fontFamily: 'var(--font-mono)',
-                                    color: 'var(--text-dim)',
-                                    fontSize: '1rem'
-                                }}>
-                                    YouTube: <strong>{selectedCreator.youtubeHandle}</strong>
-                                </span>
-                                <a
-                                    href={selectedCreator.youtubeUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{
-                                        color: 'var(--gold)',
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '0.3rem',
-                                        textDecoration: 'none',
-                                        fontSize: '0.9rem',
-                                        textTransform: 'uppercase',
-                                        letterSpacing: '1px',
-                                        fontFamily: 'var(--font-label)',
-                                        fontWeight: 'bold'
-                                    }}
-                                >
-                                    {t('creators_page.youtube_btn', 'Visit YouTube')} <ArrowUpRight size={14} />
-                                </a>
-                            </div>
+                            <a
+                                href={selectedCreator.youtubeUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '0.8rem',
+                                    background: 'rgba(255, 255, 255, 0.02)',
+                                    border: '1px solid rgba(212, 175, 55, 0.3)',
+                                    borderRadius: '4px',
+                                    color: '#FFFFFF',
+                                    padding: '0.6rem 1.2rem',
+                                    textDecoration: 'none',
+                                    fontSize: '0.95rem',
+                                    transition: 'all 0.3s ease',
+                                    fontFamily: 'var(--font-mono)'
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.borderColor = 'var(--gold)';
+                                    e.currentTarget.style.background = 'rgba(212, 175, 55, 0.1)';
+                                    e.currentTarget.style.boxShadow = '0 0 15px rgba(212, 175, 55, 0.2)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                                    e.currentTarget.style.boxShadow = 'none';
+                                }}
+                            >
+                                <Video size={16} style={{ color: 'var(--gold)' }} />
+                                <span>YouTube: <strong>{selectedCreator.youtubeHandle}</strong></span>
+                                <ArrowUpRight size={14} style={{ opacity: 0.6 }} />
+                            </a>
 
                             {/* X / Twitter */}
                             {selectedCreator.xUrl && (
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', borderLeft: '1px solid var(--border)', paddingLeft: '1.5rem' }}>
-                                    <span style={{
-                                        fontFamily: 'var(--font-mono)',
-                                        color: 'var(--text-dim)',
-                                        fontSize: '1rem'
-                                    }}>
-                                        X: <strong>{selectedCreator.xHandle}</strong>
-                                    </span>
-                                    <a
-                                        href={selectedCreator.xUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                            color: 'var(--gold)',
-                                            display: 'inline-flex',
-                                            alignItems: 'center',
-                                            gap: '0.3rem',
-                                            textDecoration: 'none',
-                                            fontSize: '0.9rem',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '1px',
-                                            fontFamily: 'var(--font-label)',
-                                            fontWeight: 'bold'
-                                        }}
-                                    >
-                                        {t('creators_page.x_btn', 'Visit X')} <ArrowUpRight size={14} />
-                                    </a>
-                                </div>
+                                <a
+                                    href={selectedCreator.xUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '0.8rem',
+                                        background: 'rgba(255, 255, 255, 0.02)',
+                                        border: '1px solid rgba(212, 175, 55, 0.3)',
+                                        borderRadius: '4px',
+                                        color: '#FFFFFF',
+                                        padding: '0.6rem 1.2rem',
+                                        textDecoration: 'none',
+                                        fontSize: '0.95rem',
+                                        transition: 'all 0.3s ease',
+                                        fontFamily: 'var(--font-mono)'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.borderColor = 'var(--gold)';
+                                        e.currentTarget.style.background = 'rgba(212, 175, 55, 0.1)';
+                                        e.currentTarget.style.boxShadow = '0 0 15px rgba(212, 175, 55, 0.2)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+                                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                    }}
+                                >
+                                    <span style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '0.9rem', fontFamily: 'var(--font-hero)', width: '16px', textAlign: 'center' }}>X</span>
+                                    <span>X: <strong>{selectedCreator.xHandle}</strong></span>
+                                    <ArrowUpRight size={14} style={{ opacity: 0.6 }} />
+                                </a>
                             )}
                         </div>
                     </div>
