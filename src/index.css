@@ -2022,11 +2022,13 @@ footer {
 .glitch-intensity-high .column-left .code-line:nth-child(3n) {
   color: var(--accent-red);
 }
-.glitch-intensity-high .sticky-nav,
-.glitch-intensity-high .main-content,
-.glitch-intensity-high footer,
-.glitch-intensity-high .anomaly-code-column {
-  animation: layout-jitter-high 3s infinite steps(1);
+@media (min-width: 901px) {
+  .glitch-intensity-high .sticky-nav,
+  .glitch-intensity-high .main-content,
+  .glitch-intensity-high footer,
+  .glitch-intensity-high .anomaly-code-column {
+    animation: layout-jitter-high 3s infinite steps(1);
+  }
 }
 .glitch-intensity-high .header-title-main,
 .glitch-intensity-high h1,
@@ -2214,6 +2216,7 @@ footer {
   .is-home-page .main-content {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    height: calc(100vh - var(--header-h) - 60px);
     height: calc(100dvh - var(--header-h) - 60px);
     overflow: hidden;
   }
