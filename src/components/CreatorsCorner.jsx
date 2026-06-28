@@ -9,7 +9,7 @@ export default function CreatorsCorner() {
         {
             name: "Mirandus Plays",
             youtubeUrl: "https://www.youtube.com/@mirandusplaysmobile",
-            avatar: "/images/creator_mirandus.jpg",
+            avatar: "/images/Mirandus.jpg",
             descKey: "creators_page.mirandus_desc",
             isPartner: true,
             youtubeHandle: "@mirandusplaysmobile"
