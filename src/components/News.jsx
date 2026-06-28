@@ -735,6 +735,8 @@ export default function News() {
                 {[...tips]
                     .filter(tip => tip.category === 'news')
                     .sort((a, b) => {
+                        if (a.id === 'season2-new-map') return -1;
+                        if (b.id === 'season2-new-map') return 1;
                         if (a.id === 'migration') return -1;
                         if (b.id === 'migration') return 1;
                         return new Date(b.publishDate || 0) - new Date(a.publishDate || 0);
