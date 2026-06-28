@@ -1441,6 +1441,22 @@
         "video3_desc": "Jak koordynować działania z gildią, aby przejmować porty i zdobywać punkty okupacji.",
         "video4_title": "Pokonywanie trybu Radiant i misji Strikeback",
         "video4_desc": "Zaawansowane taktyki walki w celu ukończenia etapów końcowych i optymalizacji floty.",
-        "view_content": "Zobacz zawartość"
+        "view_content": "Zobacz zawartość",
+        "video5_title": "Budowa floty i optymalizacja statków",
+        "video5_desc": "Dowiedz się, jak budować optymalne floty i parować je ze statkami dla maksymalnego DPS.",
+        "video6_title": "Szybki start dla początkujących",
+        "video6_desc": "Niezbędne wskazówki dla nowych graczy, pozwalające na szybki postęp i zarządzanie zasobami.",
+        "video7_title": "Formacje i talie okrętów flagowych",
+        "video7_desc": "Przewodnik po formacjach talii: konfiguracje kinetyczne, wiązkowe i jonowe dla PvP i PvE.",
+        "video8_title": "Strategia ulepszania Nexusa",
+        "video8_desc": "Jak ustalać priorytety ulepszeń Nexusa, aby odblokować zaawansowane technologie.",
+        "video9_title": "Galaktyczna Arena i talie PvP meta",
+        "video9_desc": "Najlepsze kompozycje zespołów PvP do wspinania się w rankingu Galaktycznej Areny.",
+        "video10_title": "Przewodnik po Zjednoczonym Froncie",
+        "video10_desc": "Taktyki na wydarzenie sojuszu Zjednoczony Front: jak zdobywać punkty i współpracować w gildii.",
+        "video11_title": "Zadania codzienne i farmowanie zasobów",
+        "video11_desc": "Najlepsze rutyny do codziennego farmowania zasobów, komponentów i materiałów ulepszeń.",
+        "video12_title": "Rada Galaktyczna i przejmowanie stacji",
+        "video12_desc": "Koordynacja z sojuszem w celu przejmowania stacji kosmicznych i rozszerzania terytorium."
     }
 }

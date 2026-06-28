@@ -1441,6 +1441,22 @@
         "video3_desc": "Miten toimia yhteistyössä killan kanssa satamien valtaamiseksi ja pisteiden saamiseksi.",
         "video4_title": "Radiant-tilan ja Strikeback-tehtävien suorittaminen",
         "video4_desc": "Kehittyneet taistelutaktiikat loppupelin tasojen läpäisemiseksi ja laivaston tehon parantamiseksi.",
-        "view_content": "Näytä sisältö"
+        "view_content": "Näytä sisältö",
+        "video5_title": "Laivaston rakennus ja taistelualusten optimointi",
+        "video5_desc": "Opi rakentamaan optimaalisia laivastoja ja yhdistämään ne oikeisiin taistelualuksiin parhaan DPS:n saamiseksi.",
+        "video6_title": "Aloittelijan nopean aloituksen opas",
+        "video6_desc": "Tärkeimmät vinkit uusille pelaajille nopeaan edistymiseen ja resurssien hallintaan.",
+        "video7_title": "Lippulaivan pakat ja kokoonpanot",
+        "video7_desc": "Opas lippulaivojen kokoonpanoihin: Kineettiset, säde- ja ioniasetukset PvP:hen ja PvE:hen.",
+        "video8_title": "Nexus-päivitysstrategia",
+        "video8_desc": "Miten priorisoida Nexus-päivitykset huipputeknologian avaamiseksi ja kapasiteetin kasvattamiseksi.",
+        "video9_title": "Galaktinen neuvosto ja avaruusaseman valtaus",
+        "video9_desc": "Yhteistyö allianssin kanssa massiivisten avaruusasemien valtaamiseksi ja alueen laajentamiseksi.",
+        "video10_title": "Yhteisen eturintaman tapahtumaopas",
+        "video10_desc": "Taktiikat Yhteinen eturintama -allianssitapahtumaan: pisteiden maksimointi ja yhteistyö killassa.",
+        "video11_title": "Päivittäiset tehtävät ja resurssien kerääminen",
+        "video11_desc": "Parhaat rutiinit resurssien, komponenttien ja päivitysmateriaalien päivittäiseen keräämiseen.",
+        "video12_title": "Galaktinen neuvosto ja avaruusaseman valtaus",
+        "video12_desc": "Yhteistyö allianssin kanssa massiivisten avaruusasemien valtaamiseksi ja alueen laajentamiseksi."
     }
 }
