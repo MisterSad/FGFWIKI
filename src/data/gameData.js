@@ -300,7 +300,11 @@ export const tips = [
       },
       {
         header: 'tips.season2_mechanic_hdr',
-        text: 'tips.season2_mechanic_txt'
+        text: 'tips.season2_mechanic_txt',
+        internalLink: {
+          path: '/news/magnetic-resistance',
+          text: 'tips.season2_mechanic_link_text'
+        }
       },
       {
         header: 'tips.season2_buildings_hdr',

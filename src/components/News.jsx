@@ -551,6 +551,39 @@ export default function News() {
                                 </div>
                             )}
 
+                            {section.internalLink && (
+                                 <div style={{ marginTop: '1rem', marginBottom: '2rem' }}>
+                                     <button
+                                         onClick={() => navigate(section.internalLink.path)}
+                                         className="label-text"
+                                         style={{
+                                             display: 'inline-flex',
+                                             alignItems: 'center',
+                                             gap: '0.6rem',
+                                             background: 'transparent',
+                                             border: '1px solid var(--gold)',
+                                             color: 'var(--gold)',
+                                             padding: '0.8rem 1.5rem',
+                                             cursor: 'pointer',
+                                             fontSize: '0.95rem',
+                                             transition: 'all 0.3s ease',
+                                             textTransform: 'uppercase',
+                                             letterSpacing: '1px'
+                                         }}
+                                         onMouseEnter={(e) => {
+                                             e.currentTarget.style.background = 'var(--gold)';
+                                             e.currentTarget.style.color = 'var(--bg-void)';
+                                         }}
+                                         onMouseLeave={(e) => {
+                                             e.currentTarget.style.background = 'transparent';
+                                             e.currentTarget.style.color = 'var(--gold)';
+                                         }}
+                                     >
+                                         {t(section.internalLink.text)} <ArrowUpRight size={18} />
+                                     </button>
+                                 </div>
+                             )}
+
                             {section.grid && (
                                 <div style={{ marginBottom: '2.5rem', overflowX: 'auto' }}>
                                     <table style={{ fontFamily: 'var(--font-mono)', width: '100%', borderCollapse: 'collapse', fontSize: '1rem' }}>
