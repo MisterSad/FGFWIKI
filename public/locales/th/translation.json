@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "รหัสของขวัญที่ใช้งานอยู่",
             "description": "รายการรหัสของขวัญที่แลกได้ที่ได้รับการดูแลจัดการและอัปเดตเป็นประจำสำหรับมูลนิธิ: Galactic Frontier คัดลอกเพียงคลิกเดียว การกรองที่ทราบวันหมดอายุ"
+        },
+        "creators": {
+            "title": "มุมครีเอเตอร์",
+            "description": "แนะนำครีเอเตอร์ผู้สร้างสรรค์ผลงานที่โดดเด่นของชุมชน Foundation: Galactic Frontier"
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "เครื่องมือ",
         "economy": "เศรษฐกิจ",
         "gift_codes": "รหัสของขวัญ",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "ครีเอเตอร์"
     },
     "common": {
         "kinetic": "คิเนติก",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "มุมครีเอเตอร์",
+        "subtitle": "แนะนำครีเอเตอร์ผู้สร้างสรรค์ผลงานที่โดดเด่นของชุมชน Foundation: Galactic Frontier",
+        "mirandus_desc": "Mirandus เป็นครีเอเตอร์พันธมิตรอย่างเป็นทางการของ Foundation: Galactic Frontier เขาเชี่ยวชาญด้านไกด์แบบละเอียด การจัดทัพยานให้เหมาะสมที่สุด การจัดอันดับฮีโร่ (Tier List) และการอัปเดตข่าวสาร",
+        "youtube_btn": "เยี่ยมชมช่อง YouTube"
     }
 }

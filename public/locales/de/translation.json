@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Aktive Geschenkcodes",
             "description": "Kuratierte, regelmäßig aktualisierte Liste einlösbarer Geschenkcodes für Foundation: Galactic Frontier. Ein-Klick-Kopie, ablauffähige Filterung."
+        },
+        "creators": {
+            "title": "Creators Corner",
+            "description": "Hervorhebung der herausragenden Content Creator der Foundation: Galactic Frontier-Community."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Tools",
         "economy": "Wirtschaft",
         "gift_codes": "Geschenkcodes",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Creators"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "CREATORS CORNER",
+        "subtitle": "Hervorhebung der herausragenden Content Creator der Foundation: Galactic Frontier-Community.",
+        "mirandus_desc": "Mirandus ist ein offizieller Partner-Content-Creator für Foundation: Galactic Frontier. Er ist spezialisiert auf detaillierte Guides, Flottenoptimierung, Helden-Tier-Listen und Neuigkeiten.",
+        "youtube_btn": "YouTube-Kanal besuchen"
     }
 }

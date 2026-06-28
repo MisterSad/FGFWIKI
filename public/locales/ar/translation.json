@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "رموز الهدايا النشطة",
             "description": "قائمة منسقة ومحدثة بانتظام لرموز الهدايا القابلة للاسترداد لـ Foundation: Galactic Frontier. نسخة بنقرة واحدة، وتصفية مع علم انتهاء الصلاحية."
+        },
+        "creators": {
+            "title": "ركن صناع المحتوى",
+            "description": "تسليط الضوء على صناع المحتوى المتميزين في مجتمع Foundation: Galactic Frontier."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "أدوات",
         "economy": "اقتصاد",
         "gift_codes": "رموز الهدايا",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "صناع المحتوى"
     },
     "common": {
         "kinetic": "حركي",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "ركن صناع المحتوى",
+        "subtitle": "تسليط الضوء على صناع المحتوى المتميزين في مجتمع Foundation: Galactic Frontier.",
+        "mirandus_desc": "ميراندوس هو صانع محتوى شريك رسمي للعبة Foundation: Galactic Frontier. وهو متخصص في تقديم أدلة مفصلة، وتحسين أسطول السفن، وقوائم تصنيف الأبطال، وآخر الأخبار.",
+        "youtube_btn": "زيارة قناة يوتيوب"
     }
 }

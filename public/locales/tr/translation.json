@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Aktif Hediye Kodları",
             "description": "Foundation: Galactic Frontier için kullanılabilecek hediye kodlarının derlenmiş, düzenli olarak güncellenen listesi. Tek tıklamayla kopyalama, son kullanma tarihine duyarlı filtreleme."
+        },
+        "creators": {
+            "title": "İçerik Üretici Köşesi",
+            "description": "Foundation: Galactic Frontier topluluğunun öne çıkan içerik üreticilerini öne çıkarıyoruz."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Aletler",
         "economy": "Ekonomi",
         "gift_codes": "Hediye Kodları",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "İçerik Üreticileri"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "İÇERIK ÜRETICI KÖŞESI",
+        "subtitle": "Foundation: Galactic Frontier topluluğunun öne çıkan içerik üreticilerini öne çıkarıyoruz.",
+        "mirandus_desc": "Mirandus, Foundation: Galactic Frontier için resmi ortak içerik üreticisidir. Detaylı rehberler, gemi filosu optimizasyonu, kahraman tier listeleri ve haber güncellemeleri konusunda uzmandır.",
+        "youtube_btn": "YouTube Kanalını Ziyaret Et"
     }
 }

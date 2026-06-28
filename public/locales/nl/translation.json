@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Actieve cadeaucodes",
             "description": "Samengestelde, regelmatig bijgewerkte lijst met inwisselbare cadeaucodes voor Foundation: Galactic Frontier. Kopiëren met één klik, filtering met vervaldatum."
+        },
+        "creators": {
+            "title": "Creators Corner",
+            "description": "Zet de uitstekende content creators van de Foundation: Galactic Frontier-community in de schijnwerpers."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Hulpmiddelen",
         "economy": "Economie",
         "gift_codes": "Cadeaucodes",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Creators"
     },
     "common": {
         "kinetic": "Kinetisch",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "CREATORS CORNER",
+        "subtitle": "Zet de uitstekende content creators van de Foundation: Galactic Frontier-community in de schijnwerpers.",
+        "mirandus_desc": "Mirandus is een officieel samenwerkende content creator voor Foundation: Galactic Frontier. Hij is gespecialiseerd in gedetailleerde gidsen, vlootoptimalisatie, hero tier lists en nieuwsupdates.",
+        "youtube_btn": "Bezoek YouTube-kanaal"
     }
 }

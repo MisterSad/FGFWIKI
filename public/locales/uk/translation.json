@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Активні подарункові коди",
             "description": "Підібраний, регулярно оновлюваний список погашуваних подарункових кодів для Foundation: Galactic Frontier. Копіювання одним кліком, фільтрація за терміном дії."
+        },
+        "creators": {
+            "title": "Куточок авторів",
+            "description": "Представляємо видатних авторів контенту спільноти Foundation: Galactic Frontier."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Інструменти",
         "economy": "Економіка",
         "gift_codes": "Подарункові коди",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Автори"
     },
     "common": {
         "kinetic": "Кінетичний",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "КУТОЧОК АВТОРІВ",
+        "subtitle": "Представляємо видатних авторів контенту спільноти Foundation: Galactic Frontier.",
+        "mirandus_desc": "Mirandus є офіційним партнером-автором контенту для Foundation: Galactic Frontier. Він спеціалізується на детальних посібниках, оптимізації флоту кораблів, тир-листах героїв та свіжих новинах.",
+        "youtube_btn": "Відвідати YouTube-канал"
     }
 }

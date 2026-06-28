@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "有效的禮品代碼",
             "description": "精心策劃、定期更新的《基金會：銀河前沿》可兌換禮品代碼清單。一鍵複製，過期感知過濾。"
+        },
+        "creators": {
+            "title": "創作者專區",
+            "description": "展示 Foundation: Galactic Frontier 社群中優秀的內容創作者。"
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "工具",
         "economy": "經濟",
         "gift_codes": "禮品代碼",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "創作者"
     },
     "common": {
         "kinetic": "動能",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "創作者專區",
+        "subtitle": "展示 Foundation: Galactic Frontier 社群中優秀的內容創作者。",
+        "mirandus_desc": "Mirandus 是 Foundation: Galactic Frontier 的官方合作內容創作者。他專注於詳細指南、艦隊優化、英雄排行表以及最新消息更新。",
+        "youtube_btn": "造訪 YouTube 頻道"
     }
 }

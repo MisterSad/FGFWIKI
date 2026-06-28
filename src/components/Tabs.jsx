@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles } from 'lucide-react';
+import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles, Video } from 'lucide-react';
 
 // Map route paths to icons and translation labels
 const NAV_ITEMS = [
@@ -14,6 +14,7 @@ const NAV_ITEMS = [
     { path: '/tools', labelKey: 'navigation.builder', icon: Hammer },
     { path: '/gift-codes', labelKey: 'navigation.gift_codes', icon: Gift },
     { path: '/stella-anomaly', labelKey: 'navigation.stella_anomaly', icon: Sparkles, badge: 'EVENT' },
+    { path: '/creators', labelKey: 'navigation.creators', icon: Video },
 ];
 
 export default function Tabs() {
@@ -35,7 +36,7 @@ export default function Tabs() {
     const isChampionsActive = location.pathname.startsWith('/champions');
     const isToolsActive = location.pathname.startsWith('/tools');
     
-    const morePaths = ['/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly'];
+    const morePaths = ['/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly', '/creators'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));
 
     return (
@@ -215,6 +216,16 @@ export default function Tabs() {
                                 >
                                     <Gift className="mobile-more-card__icon" size={24} />
                                     <span className="mobile-more-card__label">{t('navigation.gift_codes')}</span>
+                                </NavLink>
+
+                                {/* Creators Corner */}
+                                <NavLink
+                                    to="/creators"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/creators') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Video className="mobile-more-card__icon" size={24} />
+                                    <span className="mobile-more-card__label">{t('navigation.creators')}</span>
                                 </NavLink>
                             </div>
                         </div>
