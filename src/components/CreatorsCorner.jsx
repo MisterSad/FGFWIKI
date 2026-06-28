@@ -275,7 +275,7 @@ export default function CreatorsCorner() {
                                 border: '1px solid rgba(255, 255, 255, 0.05)'
                             }}>
                                 <iframe
-                                    src={`https://www.youtube.com/embed/videoseries?list=${selectedCreator.playlistId}`}
+                                    src={`https://www.youtube-nocookie.com/embed/videoseries?list=${selectedCreator.playlistId}`}
                                     title="Foundation Galactic Frontier - Mirandus Plays Video Database"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -351,7 +351,7 @@ export default function CreatorsCorner() {
                                 background: 'var(--bg-void)'
                             }}>
                                 <iframe
-                                    src={`https://www.youtube.com/embed/${video.id}`}
+                                    src={`https://www.youtube-nocookie.com/embed/${video.id}`}
                                     title={t(video.titleKey)}
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
