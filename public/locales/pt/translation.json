@@ -1458,6 +1458,8 @@
         "video11_desc": "As melhores rotinas diárias para farmar recursos, componentes e materiais de melhoria.",
         "video12_title": "Conselho Galáctico e captura de estações",
         "video12_desc": "Coordene com sua aliança para capturar estações espaciais gigantes e expandir território.",
-        "playlist_title": "BANCO DE DADOS COMPLETO DE VÍDEOS"
+        "playlist_title": "BANCO DE DADOS COMPLETO DE VÍDEOS",
+        "search_placeholder": "Pesquisar guias e vídeos...",
+        "load_more": "Carregar mais vídeos"
     }
 }

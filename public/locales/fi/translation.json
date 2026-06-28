@@ -1458,6 +1458,8 @@
         "video11_desc": "Parhaat rutiinit resurssien, komponenttien ja päivitysmateriaalien päivittäiseen keräämiseen.",
         "video12_title": "Galaktinen neuvosto ja avaruusaseman valtaus",
         "video12_desc": "Yhteistyö allianssin kanssa massiivisten avaruusasemien valtaamiseksi ja alueen laajentamiseksi.",
-        "playlist_title": "TÄYDELLINEN VIDEOARKISTO"
+        "playlist_title": "TÄYDELLINEN VIDEOARKISTO",
+        "search_placeholder": "Etsi oppaita ja videoita...",
+        "load_more": "Lataa lisää videoita"
     }
 }

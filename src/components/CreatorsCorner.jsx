@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Video, ArrowLeft, ArrowUpRight } from 'lucide-react';
+import { Video, ArrowLeft, ArrowUpRight, Search } from 'lucide-react';
+import staticVideos from '../data/mirandusVideos.json';
 
 export default function CreatorsCorner() {
     const { t } = useTranslation();
     const { creatorId } = useParams();
     const navigate = useNavigate();
 
+    // Creators data list
     const creators = [
         {
             id: "mirandus-plays",
@@ -17,73 +19,101 @@ export default function CreatorsCorner() {
             descKey: "creators_page.mirandus_desc",
             isPartner: true,
             youtubeHandle: "@mirandusplaysmobile",
-            playlistId: "PLIhGK3_oSMaS0SeK7VCdQ0dBIOYIQS9p3",
-            videos: [
-                {
-                    id: "Qd9P-zDmq3A",
-                    titleKey: "creators_page.video1_title",
-                    descKey: "creators_page.video1_desc"
-                },
-                {
-                    id: "K6QhO12P5vI",
-                    titleKey: "creators_page.video2_title",
-                    descKey: "creators_page.video2_desc"
-                },
-                {
-                    id: "W_j2P19y5tI",
-                    titleKey: "creators_page.video3_title",
-                    descKey: "creators_page.video3_desc"
-                },
-                {
-                    id: "R_j8p24s7v8",
-                    titleKey: "creators_page.video4_title",
-                    descKey: "creators_page.video4_desc"
-                },
-                {
-                    id: "_rGvT3l9K1E",
-                    titleKey: "creators_page.video5_title",
-                    descKey: "creators_page.video5_desc"
-                },
-                {
-                    id: "V6lP-k1l9R2",
-                    titleKey: "creators_page.video6_title",
-                    descKey: "creators_page.video6_desc"
-                },
-                {
-                    id: "F6lR9v1M2tI",
-                    titleKey: "creators_page.video7_title",
-                    descKey: "creators_page.video7_desc"
-                },
-                {
-                    id: "N1k2pL9T4vI",
-                    titleKey: "creators_page.video8_title",
-                    descKey: "creators_page.video8_desc"
-                },
-                {
-                    id: "A6lP9r2M3tI",
-                    titleKey: "creators_page.video9_title",
-                    descKey: "creators_page.video9_desc"
-                },
-                {
-                    id: "U6lP1k2R8vI",
-                    titleKey: "creators_page.video10_title",
-                    descKey: "creators_page.video10_desc"
-                },
-                {
-                    id: "D1k9pL2R3tI",
-                    titleKey: "creators_page.video11_title",
-                    descKey: "creators_page.video11_desc"
-                },
-                {
-                    id: "G6lP2k9R8vM",
-                    titleKey: "creators_page.video12_title",
-                    descKey: "creators_page.video12_desc"
-                }
-            ]
+            playlistId: "UUkwuVMbcFtaKk37i2_5CR5A" // upload playlist
         }
     ];
 
     const selectedCreator = creatorId ? creators.find(c => c.id === creatorId) : null;
+
+    // Videos and UI states
+    const [videos, setVideos] = useState([]);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [visibleCount, setVisibleCount] = useState(12);
+    const [loading, setLoading] = useState(false);
+
+    // Robust RSS tag content retriever helper
+    const getTagContent = (element, tag) => {
+        let el = element.querySelector(tag);
+        if (!el) {
+            // Try namespace format
+            const nsTag = tag.includes(':') ? tag.replace(':', '\\:') : tag;
+            el = element.querySelector(nsTag);
+        }
+        if (!el && tag.includes(':')) {
+            const parts = tag.split(':');
+            el = element.getElementsByTagName(parts[1])[0] || element.getElementsByTagName(tag)[0];
+        }
+        return el ? el.textContent : '';
+    };
+
+    useEffect(() => {
+        if (!selectedCreator) return;
+
+        const fetchLatestVideos = async () => {
+            setLoading(true);
+            try {
+                // Fetch the channel's uploads RSS feed through a CORS proxy
+                const rssUrl = `https://www.youtube.com/feeds/videos.xml?playlist_id=${selectedCreator.playlistId}`;
+                const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(rssUrl)}`;
+                
+                const response = await fetch(proxyUrl);
+                if (!response.ok) throw new Error('Failed to fetch uploads RSS feed');
+                const text = await response.text();
+
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(text, 'text/xml');
+                const entries = xmlDoc.querySelectorAll('entry');
+                
+                const fetchedVideos = [];
+                entries.forEach((entry) => {
+                    const videoId = getTagContent(entry, 'yt:videoId') || getTagContent(entry, 'videoId');
+                    const title = getTagContent(entry, 'title') || '';
+                    const published = getTagContent(entry, 'published') || '';
+                    
+                    // Filter: Only include videos about Foundation, exclude other games like Godforge
+                    if (videoId && title && !title.toLowerCase().includes('godforge')) {
+                        fetchedVideos.push({
+                            id: videoId,
+                            title: title,
+                            published: published
+                        });
+                    }
+                });
+
+                // Merge real-time fetched videos with our static JSON file data
+                const mergedMap = new Map();
+                
+                // 1. Insert fetched videos first (to keep latest versions)
+                fetchedVideos.forEach(v => mergedMap.set(v.id, v));
+                
+                // 2. Insert static videos if not already present
+                staticVideos.forEach(v => {
+                    if (!mergedMap.has(v.id)) {
+                        mergedMap.set(v.id, v);
+                    }
+                });
+
+                const mergedList = Array.from(mergedMap.values());
+                
+                // Sort by date (most recent first)
+                mergedList.sort((a, b) => new Date(b.published) - new Date(a.published));
+                setVideos(mergedList);
+            } catch (err) {
+                console.error('Failed to retrieve YouTube feed, falling back to static database:', err);
+                const sortedStatic = [...staticVideos].sort((a, b) => new Date(b.published) - new Date(a.published));
+                setVideos(sortedStatic);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchLatestVideos();
+    }, [creatorId, selectedCreator]);
+
+    // Filter videos by search query
+    const filteredVideos = videos.filter(video => 
+        video.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
     if (selectedCreator) {
         return (
@@ -238,64 +268,17 @@ export default function CreatorsCorner() {
                     </div>
                 </div>
 
-                {/* Full YouTube Playlist Embed */}
-                {selectedCreator.playlistId && (
-                    <div style={{ marginBottom: '4.5rem' }}>
-                        <div style={{ marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '1rem' }}>
-                            <h2 style={{
-                                fontFamily: 'var(--font-hero)',
-                                fontSize: '1.8rem',
-                                color: '#FFFFFF',
-                                textTransform: 'uppercase',
-                                letterSpacing: '1px',
-                                margin: 0,
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '0.8rem'
-                            }}>
-                                <Video size={24} style={{ color: 'var(--gold)' }} /> {t('creators_page.playlist_title', 'FULL VIDEO DATABASE')}
-                            </h2>
-                        </div>
-                        <div className="glass-panel reveal visible" style={{
-                            padding: 'clamp(1rem, 3vw, 2rem)',
-                            border: '1px solid var(--border)',
-                            borderRadius: '8px',
-                            background: 'rgba(255, 255, 255, 0.01)',
-                            position: 'relative'
-                        }}>
-                            <div className="corner-tl"></div>
-                            <div className="corner-br"></div>
-                            <div style={{
-                                position: 'relative',
-                                paddingBottom: '56.25%',
-                                height: 0,
-                                overflow: 'hidden',
-                                borderRadius: '6px',
-                                boxShadow: '0 12px 40px rgba(0, 0, 0, 0.7)',
-                                border: '1px solid rgba(255, 255, 255, 0.05)'
-                            }}>
-                                <iframe
-                                    src={`https://www.youtube-nocookie.com/embed/videoseries?list=${selectedCreator.playlistId}`}
-                                    title="Foundation Galactic Frontier - Mirandus Plays Video Database"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    style={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        width: '100%',
-                                        height: '100%',
-                                        border: 0
-                                    }}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                )}
-
-                {/* Featured Video Gallery Section */}
-                <div style={{ marginBottom: '2rem', borderBottom: '1px solid var(--border)', paddingBottom: '1rem' }}>
+                {/* Video Gallery Title & Search Filter */}
+                <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: '1.5rem',
+                    marginBottom: '2rem',
+                    borderBottom: '1px solid var(--border)',
+                    paddingBottom: '1.25rem'
+                }}>
                     <h2 style={{
                         fontFamily: 'var(--font-hero)',
                         fontSize: '1.8rem',
@@ -307,9 +290,53 @@ export default function CreatorsCorner() {
                         alignItems: 'center',
                         gap: '0.8rem'
                     }}>
-                        <Video size={24} style={{ color: 'var(--gold)' }} /> FEATURED VIDEO GUIDES
+                        <Video size={24} style={{ color: 'var(--gold)' }} /> {t('creators_page.playlist_title', 'VIDEO DATABASE')}
                     </h2>
+
+                    {/* Search Field */}
+                    <div style={{ position: 'relative', width: 'clamp(200px, 100%, 320px)' }}>
+                        <span style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }}>
+                            <Search size={16} />
+                        </span>
+                        <input
+                            type="text"
+                            placeholder={t('creators_page.search_placeholder', 'Search guides & videos...')}
+                            value={searchQuery}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                                setVisibleCount(12); // Reset count on search
+                            }}
+                            style={{
+                                width: '100%',
+                                padding: '0.65rem 1rem 0.65rem 2.25rem',
+                                background: 'rgba(255, 255, 255, 0.02)',
+                                border: '1px solid var(--border)',
+                                color: '#FFFFFF',
+                                borderRadius: '4px',
+                                fontSize: '0.95rem',
+                                fontFamily: 'var(--font-label)',
+                                outline: 'none',
+                                boxSizing: 'border-box',
+                                transition: 'all 0.3s ease'
+                            }}
+                            onFocus={(e) => {
+                                e.target.style.borderColor = 'var(--gold)';
+                                e.target.style.background = 'rgba(255, 255, 255, 0.04)';
+                            }}
+                            onBlur={(e) => {
+                                e.target.style.borderColor = 'var(--border)';
+                                e.target.style.background = 'rgba(255, 255, 255, 0.02)';
+                            }}
+                        />
+                    </div>
                 </div>
+
+                {/* Loading state indicator */}
+                {loading && videos.length === 0 && (
+                    <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-dim)', fontFamily: 'var(--font-mono)' }}>
+                        {t('common.loading', 'Loading video files...')}
+                    </div>
+                )}
 
                 {/* Grid of videos */}
                 <div style={{
@@ -317,7 +344,7 @@ export default function CreatorsCorner() {
                     gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
                     gap: '2rem'
                 }}>
-                    {selectedCreator.videos.map((video, vIdx) => (
+                    {filteredVideos.slice(0, visibleCount).map((video, vIdx) => (
                         <div
                             key={vIdx}
                             className="glass-panel reveal visible"
@@ -352,7 +379,7 @@ export default function CreatorsCorner() {
                             }}>
                                 <iframe
                                     src={`https://www.youtube-nocookie.com/embed/${video.id}`}
-                                    title={t(video.titleKey)}
+                                    title={video.title}
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
@@ -370,25 +397,79 @@ export default function CreatorsCorner() {
                                 <h3 style={{
                                     margin: '0 0 0.5rem 0',
                                     color: 'var(--text-primary)',
-                                    fontSize: '1.2rem',
+                                    fontSize: '1.15rem',
                                     fontFamily: 'var(--font-label)',
                                     letterSpacing: '0.5px',
-                                    lineHeight: '1.4'
+                                    lineHeight: '1.4',
+                                    height: '2.8rem',
+                                    overflow: 'hidden',
+                                    display: '-webkit-box',
+                                    WebkitLineClamp: 2,
+                                    WebkitBoxOrient: 'vertical'
                                 }}>
-                                    {t(video.titleKey)}
+                                    {video.title}
                                 </h3>
-                                <p style={{
-                                    margin: 0,
+                                <span style={{
+                                    fontFamily: 'var(--font-mono)',
                                     color: 'var(--text-dim)',
-                                    fontSize: '0.95rem',
-                                    lineHeight: '1.5'
+                                    fontSize: '0.85rem'
                                 }}>
-                                    {t(video.descKey)}
-                                </p>
+                                    {new Date(video.published).toLocaleDateString(undefined, {
+                                        year: 'numeric',
+                                        month: 'long',
+                                        day: 'numeric'
+                                    })}
+                                </span>
                             </div>
                         </div>
                     ))}
                 </div>
+
+                {/* No results message */}
+                {filteredVideos.length === 0 && !loading && (
+                    <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-dim)' }}>
+                        {t('common.no_results', 'No videos match your search.')}
+                    </div>
+                )}
+
+                {/* Paginate / Load More button */}
+                {visibleCount < filteredVideos.length && (
+                    <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
+                        <button
+                            type="button"
+                            onClick={() => setVisibleCount(prev => prev + 12)}
+                            style={{
+                                background: 'transparent',
+                                border: '1px solid var(--gold)',
+                                color: 'var(--gold)',
+                                fontFamily: 'var(--font-label)',
+                                fontWeight: 'bold',
+                                fontSize: '0.95rem',
+                                padding: '1rem 2.5rem',
+                                borderRadius: '4px',
+                                cursor: 'pointer',
+                                textTransform: 'uppercase',
+                                letterSpacing: '2px',
+                                transition: 'all 0.3s ease',
+                                boxShadow: '0 4px 12px rgba(212, 175, 55, 0.05)'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.background = 'var(--gold)';
+                                e.currentTarget.style.color = 'var(--bg-void)';
+                                e.currentTarget.style.boxShadow = '0 0 20px rgba(212, 175, 55, 0.3)';
+                                e.currentTarget.style.transform = 'translateY(-1px)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.background = 'transparent';
+                                e.currentTarget.style.color = 'var(--gold)';
+                                e.currentTarget.style.boxShadow = '0 4px 12px rgba(212, 175, 55, 0.05)';
+                                e.currentTarget.style.transform = 'none';
+                            }}
+                        >
+                            {t('creators_page.load_more', 'Load More Videos')}
+                        </button>
+                    </div>
+                )}
             </div>
         );
     }
