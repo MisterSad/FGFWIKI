@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Aktiiviset lahjakoodit",
             "description": "Käsin valittu, säännöllisesti päivitetty lista lunastettavista lahjakoodeista Foundation: Galactic Frontier -peliin. Kopiointi yhdellä klikkauksella, suodatus voimassaolon mukaan."
+        },
+        "creators": {
+            "title": "Sisällöntuottajien nurkka",
+            "description": "Foundation: Galactic Frontier -yhteisön parhaiden sisällöntuottajien esittely."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Työkalut",
         "economy": "Talous",
         "gift_codes": "Lahjakoodit",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Sisällöntuottajat"
     },
     "common": {
         "kinetic": "Kineettinen",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "SISÄLLÖNTUOTTAJIEN NURKKA",
+        "subtitle": "Foundation: Galactic Frontier -yhteisön parhaiden sisällöntuottajien esittely.",
+        "mirandus_desc": "Mirandus on Foundation: Galactic Frontierin virallinen kumppanuussisällöntuottaja. Hän on erikoistunut yksityiskohtaisiin oppaisiin, aluslaivaston optimointiin, sankarien tier-listoihin ja uutispäivityksiin.",
+        "youtube_btn": "Käy YouTube-kanavalla"
     }
 }

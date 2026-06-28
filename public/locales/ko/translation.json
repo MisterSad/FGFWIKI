@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "기프트 코드 — 활성 Foundation Galactic Frontier 코드 | FGF 위키",
             "description": "최신 활성 Foundation: Galactic Frontier 기프트 코드. 무료 크레딧, 가속, 청사진, 자원 — 매일 업데이트되는 전체 사용 가이드."
+        },
+        "creators": {
+            "title": "크리에이터 코너",
+            "description": "Foundation: Galactic Frontier 커뮤ни티의 우수한 콘텐츠 크리에이터들을 소개합니다."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "도구",
         "economy": "경제",
         "gift_codes": "기프트 코드",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "크리에이터"
     },
     "common": {
         "kinetic": "키네틱",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "크리에이터 코너",
+        "subtitle": "Foundation: Galactic Frontier 커뮤ни티의 우수한 콘텐츠 크리에이터들을 소개합니다.",
+        "mirandus_desc": "Mirandus는 Foundation: Galactic Frontier의 공식 파特너 콘텐츠 크리에이터입니다. 상세 가이드, 함선 함대 최적화, 영웅 등급표 및 최신 뉴스 업데이트를 전문으로 다룹니다.",
+        "youtube_btn": "YouTube 채널 방문"
     }
 }

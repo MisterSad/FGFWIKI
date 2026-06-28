@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Aktywne kody upominkowe",
             "description": "Wyselekcjonowana, regularnie aktualizowana lista wymienialnych kodów upominkowych dla Foundation: Galactic Frontier. Kopiowanie jednym kliknięciem, filtrowanie według wygaśnięcia."
+        },
+        "creators": {
+            "title": "Kącik twórców",
+            "description": "Przedstawiamy wybitnych twórców treści w społeczności Foundation: Galactic Frontier."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Narzędzia",
         "economy": "Gospodarka",
         "gift_codes": "Kody upominkowe",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Twórcy"
     },
     "common": {
         "kinetic": "Kinetyczny",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "KĄCIK TWÓRCÓW",
+        "subtitle": "Przedstawiamy wybitnych twórców treści w społeczności Foundation: Galactic Frontier.",
+        "mirandus_desc": "Mirandus to oficjalny, partnerski twórca treści dla Foundation: Galactic Frontier. Specjalizuje się w szczegółowych poradnikach, optymalizacji floty statków, listach poziomów bohaterów (tier listach) i aktualnościach.",
+        "youtube_btn": "Odwiedź kanał YouTube"
     }
 }

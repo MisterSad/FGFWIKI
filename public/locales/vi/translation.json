@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Mã quà tặng đang hoạt động",
             "description": "Danh sách mã quà tặng có thể đổi được được tuyển chọn, cập nhật thường xuyên cho Foundation: Galactic Frontier. Sao chép bằng một cú nhấp chuột, lọc nhận biết hết hạn."
+        },
+        "creators": {
+            "title": "Góc Nhà Sáng Tạo",
+            "description": "Tôn vinh những nhà sáng tạo nội dung xuất sắc của cộng đồng Foundation: Galactic Frontier."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Công cụ",
         "economy": "Kinh tế",
         "gift_codes": "Mã quà tặng",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Nhà sáng tạo"
     },
     "common": {
         "kinetic": "Động Năng",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "GÓC NHÀ SÁNG TẠO",
+        "subtitle": "Tôn vinh những nhà sáng tạo nội dung xuất sắc của cộng đồng Foundation: Galactic Frontier.",
+        "mirandus_desc": "Mirandus là nhà sáng tạo nội dung đối tác chính thức của Foundation: Galactic Frontier. Anh ấy chuyên về các bài hướng dẫn chi tiết, tối ưu hóa đội tàu, bảng xếp hạng anh hùng và cập nhật tin tức.",
+        "youtube_btn": "Ghé thăm Kênh YouTube"
     }
 }

@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "有効なギフトコード",
             "description": "Foundation: Galactic Frontier用の引き換え可能なギフトコードの厳選され、定期的に更新されるリスト。ワンクリックコピー、有効期限フィルタリング。"
+        },
+        "creators": {
+            "title": "クリエイターズコーナー",
+            "description": "Foundation: Galactic Frontierコミュニティの優れたコンテンツクリエイターをご紹介します。"
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "ツール",
         "economy": "経済",
         "gift_codes": "ギフトコード",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "クリエイター"
     },
     "common": {
         "kinetic": "実弾",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "クリエイターズコーナー",
+        "subtitle": "Foundation: Galactic Frontierコミュニティの優れたコンテンツクリエイターをご紹介します。",
+        "mirandus_desc": "Mirandusは、Foundation: Galactic Frontierの公式パートナーコンテンツクリエイターです。詳細なガイド、艦隊の最適化、ヒーローのティアリスト、最新ニュースの提供を専門としています。",
+        "youtube_btn": "YouTubeチャンネルにアクセス"
     }
 }

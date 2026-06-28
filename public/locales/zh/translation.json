@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "有效礼包码",
             "description": "Foundation: Galactic Frontier 可兑换礼包码的精选定期更新列表。一键复制,过期感知过滤。"
+        },
+        "creators": {
+            "title": "创作者专区",
+            "description": "展示 Foundation: Galactic Frontier 社区中优秀的内容创作者。"
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "工具",
         "economy": "经济",
         "gift_codes": "礼包码",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "创作者"
     },
     "common": {
         "kinetic": "动能",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "创作者专区",
+        "subtitle": "展示 Foundation: Galactic Frontier 社区中优秀的内容创作者。",
+        "mirandus_desc": "Mirandus 是 Foundation: Galactic Frontier 的官方合作内容创作者。他专注于详细指南、舰队优化、英雄排行表以及最新消息更新。",
+        "youtube_btn": "访问 YouTube 频道"
     }
 }

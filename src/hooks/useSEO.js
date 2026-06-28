@@ -16,6 +16,7 @@ const ROUTE_KEYS = {
     '/events': 'events',
     '/tools': 'tools',
     '/gift-codes': 'gift_codes',
+    '/creators': 'creators',
 };
 
 // Supported languages — keep in sync with src/i18n.js and the language switcher.

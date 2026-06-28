@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Kod Hadiah Aktif",
             "description": "Senarai kod hadiah boleh tebus yang disusun susun dan dikemas kini secara kerap untuk Foundation: Galactic Frontier. Salinan satu klik, penapisan sedar tamat tempoh."
+        },
+        "creators": {
+            "title": "Sudut Pencipta",
+            "description": "Menonjolkan pencipta kandungan yang luar biasa dalam komuniti Foundation: Galactic Frontier."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Alatan",
         "economy": "ekonomi",
         "gift_codes": "Kod Hadiah",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Pencipta"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "SUDUT PENCIPTA",
+        "subtitle": "Menonjolkan pencipta kandungan yang luar biasa dalam komuniti Foundation: Galactic Frontier.",
+        "mirandus_desc": "Mirandus ialah pencipta kandungan rakan kongsi rasmi untuk Foundation: Galactic Frontier. Beliau pakar dalam panduan terperinci, pengoptimuman armada kapal, senarai peringkat wira dan kemas kini berita.",
+        "youtube_btn": "Melawat Saluran YouTube"
     }
 }

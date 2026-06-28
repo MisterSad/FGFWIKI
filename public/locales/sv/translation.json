@@ -43,6 +43,10 @@
         "gift_codes": {
             "title": "Aktiva presentkoder",
             "description": "Kurerad, regelbundet uppdaterad lista över inlösningsbara presentkoder för Foundation: Galactic Frontier. Kopiering med ett klick, filtrering baserat på utgångsdatum."
+        },
+        "creators": {
+            "title": "Skaparhörnan",
+            "description": "Uppmärksammar de enastående innehållsskaparna i Foundation: Galactic Frontier-communityn."
         }
     },
     "navigation": {
@@ -58,7 +62,8 @@
         "builder": "Verktyg",
         "economy": "Ekonomi",
         "gift_codes": "Presentkoder",
-        "stella_anomaly": "Stella Anomaly"
+        "stella_anomaly": "Stella Anomaly",
+        "creators": "Skapare"
     },
     "common": {
         "kinetic": "Kinetisk",
@@ -1422,5 +1427,11 @@
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+    },
+    "creators_page": {
+        "title": "SKAPARHÖRNAN",
+        "subtitle": "Uppmärksammar de enastående innehållsskaparna i Foundation: Galactic Frontier-communityn.",
+        "mirandus_desc": "Mirandus är en officiell samarbetspartner och innehållsskapare för Foundation: Galactic Frontier. Han är specialiserad på detaljerade guider, optimering av skeppsflottor, tierlistor för hjältar och nyhetsuppdateringar.",
+        "youtube_btn": "Besök YouTube-kanal"
     }
 }
