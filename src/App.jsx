@@ -51,6 +51,7 @@ function App() {
                 <Route path="/gift-codes" element={<GiftCodes />} />
                 <Route path="/stella-anomaly" element={<StellaAnomaly />} />
                 <Route path="/creators" element={<CreatorsCorner />} />
+                <Route path="/creators/:creatorId" element={<CreatorsCorner />} />
                 <Route path="*" element={<Navigate to="/home" replace />} />
               </Routes>
             </Suspense>

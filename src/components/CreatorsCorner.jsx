@@ -1,20 +1,300 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Video, ArrowUpRight } from 'lucide-react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { Video, ArrowLeft, ArrowUpRight } from 'lucide-react';
 
 export default function CreatorsCorner() {
     const { t } = useTranslation();
+    const { creatorId } = useParams();
+    const navigate = useNavigate();
 
     const creators = [
         {
+            id: "mirandus-plays",
             name: "Mirandus Plays",
             youtubeUrl: "https://www.youtube.com/@mirandusplaysmobile",
             avatar: "/images/Mirandus.jpg",
             descKey: "creators_page.mirandus_desc",
             isPartner: true,
-            youtubeHandle: "@mirandusplaysmobile"
+            youtubeHandle: "@mirandusplaysmobile",
+            videos: [
+                {
+                    id: "Qd9P-zDmq3A",
+                    titleKey: "creators_page.video1_title",
+                    descKey: "creators_page.video1_desc"
+                },
+                {
+                    id: "K6QhO12P5vI",
+                    titleKey: "creators_page.video2_title",
+                    descKey: "creators_page.video2_desc"
+                },
+                {
+                    id: "W_j2P19y5tI",
+                    titleKey: "creators_page.video3_title",
+                    descKey: "creators_page.video3_desc"
+                },
+                {
+                    id: "R_j8p24s7v8",
+                    titleKey: "creators_page.video4_title",
+                    descKey: "creators_page.video4_desc"
+                }
+            ]
         }
     ];
+
+    const selectedCreator = creatorId ? creators.find(c => c.id === creatorId) : null;
+
+    if (selectedCreator) {
+        return (
+            <div className="container fade-in" style={{ maxWidth: '1000px', margin: '0 auto', paddingBottom: '4rem', paddingTop: '2rem' }}>
+                {/* Back Button */}
+                <button
+                    onClick={() => navigate('/creators')}
+                    className="label-text"
+                    style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.8rem',
+                        background: 'transparent',
+                        border: '1px solid var(--gold)',
+                        color: "#FFFFFF",
+                        padding: '0.8rem 1.5rem',
+                        cursor: 'pointer',
+                        fontSize: '1rem',
+                        marginBottom: '2.5rem',
+                        transition: 'all 0.3s ease',
+                        textTransform: 'uppercase',
+                        letterSpacing: '2px'
+                    }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'var(--gold)';
+                        e.currentTarget.style.color = 'var(--bg-void)';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'transparent';
+                        e.currentTarget.style.color = 'var(--gold)';
+                    }}
+                >
+                    <ArrowLeft size={20} /> {t('common.back', 'BACK')}
+                </button>
+
+                {/* Creator Header Profile Card */}
+                <div
+                    className="glass-panel"
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'row',
+                        flexWrap: 'wrap',
+                        gap: '2.5rem',
+                        padding: 'clamp(1.5rem, 5vw, 3rem)',
+                        border: '1px solid var(--gold)',
+                        boxShadow: '0 0 50px rgba(0, 0, 0, 0.3)',
+                        borderRadius: '8px',
+                        alignItems: 'center',
+                        marginBottom: '4rem',
+                        position: 'relative'
+                    }}
+                >
+                    <div className="scan-line" style={{ pointerEvents: 'none' }}></div>
+                    <div className="corner-tl"></div>
+                    <div className="corner-br"></div>
+
+                    {/* Avatar */}
+                    <div style={{
+                        flex: '0 0 auto',
+                        width: 'clamp(120px, 25vw, 180px)',
+                        height: 'clamp(120px, 25vw, 180px)',
+                        borderRadius: '8px',
+                        border: '2px solid rgba(212, 175, 55, 0.4)',
+                        overflow: 'hidden',
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.6)',
+                        margin: '0 auto'
+                    }}>
+                        <img
+                            src={selectedCreator.avatar}
+                            alt={selectedCreator.name}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover'
+                            }}
+                        />
+                    </div>
+
+                    {/* Profile details */}
+                    <div style={{
+                        flex: '1 1 400px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '1.2rem',
+                        textAlign: 'left'
+                    }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                            <h1 style={{
+                                margin: 0,
+                                fontFamily: 'var(--font-hero)',
+                                fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+                                color: 'var(--gold-bright)',
+                                letterSpacing: '1px',
+                                textTransform: 'uppercase'
+                            }}>
+                                {selectedCreator.name}
+                            </h1>
+                            {selectedCreator.isPartner && (
+                                <span style={{
+                                    background: 'rgba(212, 175, 55, 0.15)',
+                                    border: '1px solid var(--gold)',
+                                    color: 'var(--gold-bright)',
+                                    fontSize: '0.8rem',
+                                    fontWeight: 'bold',
+                                    padding: '4px 12px',
+                                    borderRadius: '2px',
+                                    letterSpacing: '2px',
+                                    fontFamily: 'var(--font-mono)'
+                                }}>
+                                    PARTNER
+                                </span>
+                            )}
+                        </div>
+
+                        <p style={{
+                            color: 'var(--text-main)',
+                            fontSize: '1.15rem',
+                            lineHeight: '1.8',
+                            margin: 0
+                        }}>
+                            {t(selectedCreator.descKey)}
+                        </p>
+
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                            <span style={{
+                                fontFamily: 'var(--font-mono)',
+                                color: 'var(--text-dim)',
+                                fontSize: '1rem'
+                            }}>
+                                YouTube: <strong>{selectedCreator.youtubeHandle}</strong>
+                            </span>
+                            <a
+                                href={selectedCreator.youtubeUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    color: 'var(--gold)',
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '0.3rem',
+                                    textDecoration: 'none',
+                                    fontSize: '0.9rem',
+                                    textTransform: 'uppercase',
+                                    letterSpacing: '1px',
+                                    fontFamily: 'var(--font-label)',
+                                    fontWeight: 'bold'
+                                }}
+                            >
+                                {t('creators_page.youtube_btn', 'Visit YouTube')} <ArrowUpRight size={14} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Video Gallery Section */}
+                <div style={{ marginBottom: '2rem', borderBottom: '1px solid var(--border)', paddingBottom: '1rem' }}>
+                    <h2 style={{
+                        fontFamily: 'var(--font-hero)',
+                        fontSize: '1.8rem',
+                        color: '#FFFFFF',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        margin: 0,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.8rem'
+                    }}>
+                        <Video size={24} style={{ color: 'var(--gold)' }} /> {t('navigation.creators').toUpperCase()} VIDEOS
+                    </h2>
+                </div>
+
+                {/* Grid of videos */}
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+                    gap: '2rem'
+                }}>
+                    {selectedCreator.videos.map((video, vIdx) => (
+                        <div
+                            key={vIdx}
+                            className="glass-panel reveal visible"
+                            style={{
+                                padding: '1.25rem',
+                                border: '1px solid var(--border)',
+                                borderRadius: '6px',
+                                background: 'rgba(255, 255, 255, 0.01)',
+                                transition: 'all 0.3s ease',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '1rem'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.borderColor = 'var(--gold)';
+                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.borderColor = 'var(--border)';
+                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.01)';
+                            }}
+                        >
+                            {/* Responsive Aspect Ratio iframe container (16:9) */}
+                            <div style={{
+                                position: 'relative',
+                                paddingBottom: '56.25%',
+                                height: 0,
+                                overflow: 'hidden',
+                                borderRadius: '4px',
+                                border: '1px solid rgba(255, 255, 255, 0.05)',
+                                background: 'var(--bg-void)'
+                            }}>
+                                <iframe
+                                    src={`https://www.youtube.com/embed/${video.id}`}
+                                    title={t(video.titleKey)}
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%',
+                                        border: 0
+                                    }}
+                                />
+                            </div>
+                            <div style={{ textAlign: 'left' }}>
+                                <h3 style={{
+                                    margin: '0 0 0.5rem 0',
+                                    color: 'var(--text-primary)',
+                                    fontSize: '1.2rem',
+                                    fontFamily: 'var(--font-label)',
+                                    letterSpacing: '0.5px',
+                                    lineHeight: '1.4'
+                                }}>
+                                    {t(video.titleKey)}
+                                </h3>
+                                <p style={{
+                                    margin: 0,
+                                    color: 'var(--text-dim)',
+                                    fontSize: '0.95rem',
+                                    lineHeight: '1.5'
+                                }}>
+                                    {t(video.descKey)}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="container fade-in" style={{ maxWidth: '900px', margin: '0 auto', paddingBottom: '4rem', paddingTop: '2rem' }}>
@@ -63,8 +343,10 @@ export default function CreatorsCorner() {
                             overflow: 'hidden',
                             borderRadius: '8px',
                             transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                            alignItems: 'center'
+                            alignItems: 'center',
+                            cursor: 'pointer'
                         }}
+                        onClick={() => navigate(`/creators/${creator.id}`)}
                         onMouseEnter={(e) => {
                             e.currentTarget.style.borderColor = 'var(--gold)';
                             e.currentTarget.style.boxShadow = '0 0 35px rgba(212, 175, 55, 0.15)';
@@ -163,22 +445,21 @@ export default function CreatorsCorner() {
                                 marginTop: '0.5rem',
                                 flexWrap: 'wrap'
                             }}>
-                                <a
-                                    href={creator.youtubeUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                <button
+                                    type="button"
                                     style={{
                                         display: 'inline-flex',
                                         alignItems: 'center',
                                         gap: '0.6rem',
                                         background: 'var(--gold)',
                                         color: 'var(--bg-void)',
+                                        border: '1px solid var(--gold)',
                                         fontFamily: 'var(--font-label)',
                                         fontWeight: 'bold',
                                         fontSize: '0.9rem',
                                         padding: '0.8rem 1.8rem',
                                         borderRadius: '4px',
-                                        textDecoration: 'none',
+                                        cursor: 'pointer',
                                         textTransform: 'uppercase',
                                         letterSpacing: '2px',
                                         transition: 'all 0.3s ease',
@@ -198,9 +479,9 @@ export default function CreatorsCorner() {
                                     }}
                                 >
                                     <Video size={18} />
-                                    {t('creators_page.youtube_btn', 'Visit YouTube Channel')}
+                                    {t('hero.cta', 'DETAILS')}
                                     <ArrowUpRight size={16} />
-                                </a>
+                                </button>
 
                                 <span style={{
                                     fontFamily: 'var(--font-mono)',

@@ -1432,6 +1432,14 @@
         "title": "创作者专区",
         "subtitle": "展示 Foundation: Galactic Frontier 社区中优秀的内容创作者。",
         "mirandus_desc": "Mirandus 是 Foundation: Galactic Frontier 的官方合作内容创作者。他专注于详细指南、舰队优化、英雄排行表以及最新消息更新。",
-        "youtube_btn": "访问 YouTube 频道"
+        "youtube_btn": "访问 YouTube 频道",
+        "video1_title": "终极英雄与战舰排行指南",
+        "video1_desc": "当前主流英雄与旗舰配搭的详细深度解析。",
+        "video2_title": "Shadowfront 活动战术攻略",
+        "video2_desc": "教你如何最大化活动奖励并占领高价值星域节点。",
+        "video3_title": "公会之星 - GvG 港口夺取攻略",
+        "video3_desc": "如何与公会成员协同占领港口并赚取占领积分。",
+        "video4_title": "挑战 Radiant 模式与 Radiant 战役任务",
+        "video4_desc": "通关游戏后期高难度关卡并优化舰队战力的进阶战术。"
     }
 }

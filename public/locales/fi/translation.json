@@ -1432,6 +1432,14 @@
         "title": "SISÄLLÖNTUOTTAJIEN NURKKA",
         "subtitle": "Foundation: Galactic Frontier -yhteisön parhaiden sisällöntuottajien esittely.",
         "mirandus_desc": "Mirandus on Foundation: Galactic Frontierin virallinen kumppanuussisällöntuottaja. Hän on erikoistunut yksityiskohtaisiin oppaisiin, aluslaivaston optimointiin, sankarien tier-listoihin ja uutispäivityksiin.",
-        "youtube_btn": "Käy YouTube-kanavalla"
+        "youtube_btn": "Käy YouTube-kanavalla",
+        "video1_title": "Lopullinen sankari- ja alustason lista",
+        "video1_desc": "Yksityiskohtainen katsaus nykyisiin meta-sankareihin ja lippulaivapareihin.",
+        "video2_title": "Shadowfront-tapahtuman strategian opas",
+        "video2_desc": "Taktiikat palkintojen maksimoimiseksi ja tärkeiden solmukohtien valtaamiseksi.",
+        "video3_title": "Killan tähti - GvG-valtausopas",
+        "video3_desc": "Miten toimia yhteistyössä killan kanssa satamien valtaamiseksi ja pisteiden saamiseksi.",
+        "video4_title": "Radiant-tilan ja Strikeback-tehtävien suorittaminen",
+        "video4_desc": "Kehittyneet taistelutaktiikat loppupelin tasojen läpäisemiseksi ja laivaston tehon parantamiseksi."
     }
 }

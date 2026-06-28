@@ -1432,6 +1432,14 @@
         "title": "SKAPARHÖRNAN",
         "subtitle": "Uppmärksammar de enastående innehållsskaparna i Foundation: Galactic Frontier-communityn.",
         "mirandus_desc": "Mirandus är en officiell samarbetspartner och innehållsskapare för Foundation: Galactic Frontier. Han är specialiserad på detaljerade guider, optimering av skeppsflottor, tierlistor för hjältar och nyhetsuppdateringar.",
-        "youtube_btn": "Besök YouTube-kanal"
+        "youtube_btn": "Besök YouTube-kanal",
+        "video1_title": "Ultimat hjälte- och skepp-tierlista",
+        "video1_desc": "Detaljerad analys av nuvarande metahjältar och kombinationer av flaggskepp.",
+        "video2_title": "Shadowfront-event strategiguide",
+        "video2_desc": "Taktiker för att maximera belöningar och säkra viktiga noder.",
+        "video3_title": "Gillesstjärna - GvG Capture Guide",
+        "video3_desc": "Hur man samarbetar med gillet för att erövra hamnar och samla poäng.",
+        "video4_title": "Klara Radiant-läge & Strikeback-uppdrag",
+        "video4_desc": "Avancerade stridstaktiker för att klara svåra nivåer och optimera flottstyrkan."
     }
 }
