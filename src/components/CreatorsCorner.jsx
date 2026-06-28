@@ -479,7 +479,7 @@ export default function CreatorsCorner() {
                                     }}
                                 >
                                     <Video size={18} />
-                                    {t('hero.cta', 'DETAILS')}
+                                    {t('creators_page.view_content', 'View Content')}
                                     <ArrowUpRight size={16} />
                                 </button>
 
