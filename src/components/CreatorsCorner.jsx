@@ -19,7 +19,7 @@ export default function CreatorsCorner() {
             descKey: "creators_page.mirandus_desc",
             isPartner: true,
             youtubeHandle: "@mirandusplaysmobile",
-            playlistId: "UUkwuVMbcFtaKk37i2_5CR5A" // upload playlist
+            playlistId: "PL2VyftArNQtQ2EbXMAmgwrPH0P4EvBVAR" // dedicated playlist ID
         }
     ];
 
