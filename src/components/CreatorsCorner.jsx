@@ -17,6 +17,7 @@ export default function CreatorsCorner() {
             descKey: "creators_page.mirandus_desc",
             isPartner: true,
             youtubeHandle: "@mirandusplaysmobile",
+            playlistId: "PLIhGK3_oSMaS0SeK7VCdQ0dBIOYIQS9p3",
             videos: [
                 {
                     id: "Qd9P-zDmq3A",
@@ -237,7 +238,63 @@ export default function CreatorsCorner() {
                     </div>
                 </div>
 
-                {/* Video Gallery Section */}
+                {/* Full YouTube Playlist Embed */}
+                {selectedCreator.playlistId && (
+                    <div style={{ marginBottom: '4.5rem' }}>
+                        <div style={{ marginBottom: '1.5rem', borderBottom: '1px solid var(--border)', paddingBottom: '1rem' }}>
+                            <h2 style={{
+                                fontFamily: 'var(--font-hero)',
+                                fontSize: '1.8rem',
+                                color: '#FFFFFF',
+                                textTransform: 'uppercase',
+                                letterSpacing: '1px',
+                                margin: 0,
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '0.8rem'
+                            }}>
+                                <Video size={24} style={{ color: 'var(--gold)' }} /> {t('creators_page.playlist_title', 'FULL VIDEO DATABASE')}
+                            </h2>
+                        </div>
+                        <div className="glass-panel reveal visible" style={{
+                            padding: 'clamp(1rem, 3vw, 2rem)',
+                            border: '1px solid var(--border)',
+                            borderRadius: '8px',
+                            background: 'rgba(255, 255, 255, 0.01)',
+                            position: 'relative'
+                        }}>
+                            <div className="corner-tl"></div>
+                            <div className="corner-br"></div>
+                            <div style={{
+                                position: 'relative',
+                                paddingBottom: '56.25%',
+                                height: 0,
+                                overflow: 'hidden',
+                                borderRadius: '6px',
+                                boxShadow: '0 12px 40px rgba(0, 0, 0, 0.7)',
+                                border: '1px solid rgba(255, 255, 255, 0.05)'
+                            }}>
+                                <iframe
+                                    src={`https://www.youtube.com/embed/videoseries?list=${selectedCreator.playlistId}`}
+                                    title="Foundation Galactic Frontier - Mirandus Plays Video Database"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        width: '100%',
+                                        height: '100%',
+                                        border: 0
+                                    }}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {/* Featured Video Gallery Section */}
                 <div style={{ marginBottom: '2rem', borderBottom: '1px solid var(--border)', paddingBottom: '1rem' }}>
                     <h2 style={{
                         fontFamily: 'var(--font-hero)',
@@ -250,7 +307,7 @@ export default function CreatorsCorner() {
                         alignItems: 'center',
                         gap: '0.8rem'
                     }}>
-                        <Video size={24} style={{ color: 'var(--gold)' }} /> {t('navigation.creators').toUpperCase()} VIDEOS
+                        <Video size={24} style={{ color: 'var(--gold)' }} /> FEATURED VIDEO GUIDES
                     </h2>
                 </div>
 
