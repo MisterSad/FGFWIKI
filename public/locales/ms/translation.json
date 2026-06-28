@@ -1458,6 +1458,8 @@
         "video11_desc": "Laluan harian terbaik untuk menuai sumber, komponen dan bahan naik taraf.",
         "video12_title": "Galactic Council & Penawanan Stesen Angkasa",
         "video12_desc": "Menyelaras dengan pakatan anda untuk menawan stesen angkasa besar dan meluaskan kawasan.",
-        "playlist_title": "DATABASE VIDEO LENGKAP"
+        "playlist_title": "DATABASE VIDEO LENGKAP",
+        "search_placeholder": "Cari panduan & video...",
+        "load_more": "Muat Lebih Banyak Video"
     }
 }

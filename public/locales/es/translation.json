@@ -1458,6 +1458,8 @@
         "video11_desc": "Las mejores rutinas diarias para farmear recursos, componentes y materiales de mejora.",
         "video12_title": "Consejo Galáctico y captura de estaciones",
         "video12_desc": "Coordinación con su alianza para capturar estaciones espaciales y expandir el territorio.",
-        "playlist_title": "BASE DE DATOS COMPLETA DE VIDEOS"
+        "playlist_title": "BASE DE DATOS COMPLETA DE VIDEOS",
+        "search_placeholder": "Buscar guías y videos...",
+        "load_more": "Cargar más videos"
     }
 }

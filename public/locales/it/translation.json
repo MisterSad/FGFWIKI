@@ -1458,6 +1458,8 @@
         "video11_desc": "Le migliori routine quotidiane per farmare risorse, componenti e materiali di potenziamento.",
         "video12_title": "Consiglio Galattico e cattura delle stazioni",
         "video12_desc": "Coordinati con l'alleanza per catturar stazioni spaziali giganti ed espandere il territorio.",
-        "playlist_title": "DATABASE VIDEO COMPLETO"
+        "playlist_title": "DATABASE VIDEO COMPLETO",
+        "search_placeholder": "Cerca guide e video...",
+        "load_more": "Carica altri video"
     }
 }

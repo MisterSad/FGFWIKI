@@ -1460,6 +1460,8 @@
         "video11_desc": "Les meilleures routines pour farmer efficacement les ressources, composants et matériaux d'amélioration.",
         "video12_title": "Conseil Galactique et Capture de Station Spatiale",
         "video12_desc": "Coordonnez vos attaques avec votre Alliance pour capturer des stations géantes et étendre votre territoire.",
-        "playlist_title": "BASE DE DONNÉES VIDÉO COMPLÈTE"
+        "playlist_title": "BASE DE DONNÉES VIDÉO COMPLÈTE",
+        "search_placeholder": "Rechercher des guides et vidéos...",
+        "load_more": "Charger plus de vidéos"
     }
 }
