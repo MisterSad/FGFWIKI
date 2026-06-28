@@ -14,6 +14,8 @@ const creators = [
         descKey: "creators_page.mirandus_desc",
         isPartner: true,
         youtubeHandle: "@mirandusplaysmobile",
+        xUrl: "https://x.com/miranduscrafter",
+        xHandle: "@miranduscrafter",
         playlistId: "PL2VyftArNQtQ2EbXMAmgwrPH0P4EvBVAR" // dedicated playlist ID
     }
 ];
@@ -237,33 +239,68 @@ export default function CreatorsCorner() {
                             {t(selectedCreator.descKey)}
                         </p>
 
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                            <span style={{
-                                fontFamily: 'var(--font-mono)',
-                                color: 'var(--text-dim)',
-                                fontSize: '1rem'
-                            }}>
-                                YouTube: <strong>{selectedCreator.youtubeHandle}</strong>
-                            </span>
-                            <a
-                                href={selectedCreator.youtubeUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{
-                                    color: 'var(--gold)',
-                                    display: 'inline-flex',
-                                    alignItems: 'center',
-                                    gap: '0.3rem',
-                                    textDecoration: 'none',
-                                    fontSize: '0.9rem',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: '1px',
-                                    fontFamily: 'var(--font-label)',
-                                    fontWeight: 'bold'
-                                }}
-                            >
-                                {t('creators_page.youtube_btn', 'Visit YouTube')} <ArrowUpRight size={14} />
-                            </a>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
+                            {/* YouTube */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                <span style={{
+                                    fontFamily: 'var(--font-mono)',
+                                    color: 'var(--text-dim)',
+                                    fontSize: '1rem'
+                                }}>
+                                    YouTube: <strong>{selectedCreator.youtubeHandle}</strong>
+                                </span>
+                                <a
+                                    href={selectedCreator.youtubeUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        color: 'var(--gold)',
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '0.3rem',
+                                        textDecoration: 'none',
+                                        fontSize: '0.9rem',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '1px',
+                                        fontFamily: 'var(--font-label)',
+                                        fontWeight: 'bold'
+                                    }}
+                                >
+                                    {t('creators_page.youtube_btn', 'Visit YouTube')} <ArrowUpRight size={14} />
+                                </a>
+                            </div>
+
+                            {/* X / Twitter */}
+                            {selectedCreator.xUrl && (
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', borderLeft: '1px solid var(--border)', paddingLeft: '1.5rem' }}>
+                                    <span style={{
+                                        fontFamily: 'var(--font-mono)',
+                                        color: 'var(--text-dim)',
+                                        fontSize: '1rem'
+                                    }}>
+                                        X: <strong>{selectedCreator.xHandle}</strong>
+                                    </span>
+                                    <a
+                                        href={selectedCreator.xUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{
+                                            color: 'var(--gold)',
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '0.3rem',
+                                            textDecoration: 'none',
+                                            fontSize: '0.9rem',
+                                            textTransform: 'uppercase',
+                                            letterSpacing: '1px',
+                                            fontFamily: 'var(--font-label)',
+                                            fontWeight: 'bold'
+                                        }}
+                                    >
+                                        {t('creators_page.x_btn', 'Visit X')} <ArrowUpRight size={14} />
+                                    </a>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
