@@ -4,24 +4,24 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Video, ArrowLeft, ArrowUpRight, Search } from 'lucide-react';
 import staticVideos from '../data/mirandusVideos.json';
 
+// Creators data list static configuration
+const creators = [
+    {
+        id: "mirandus-plays",
+        name: "Mirandus Plays",
+        youtubeUrl: "https://www.youtube.com/@mirandusplaysmobile",
+        avatar: "/images/Mirandus.jpg",
+        descKey: "creators_page.mirandus_desc",
+        isPartner: true,
+        youtubeHandle: "@mirandusplaysmobile",
+        playlistId: "PL2VyftArNQtQ2EbXMAmgwrPH0P4EvBVAR" // dedicated playlist ID
+    }
+];
+
 export default function CreatorsCorner() {
     const { t } = useTranslation();
     const { creatorId } = useParams();
     const navigate = useNavigate();
-
-    // Creators data list
-    const creators = [
-        {
-            id: "mirandus-plays",
-            name: "Mirandus Plays",
-            youtubeUrl: "https://www.youtube.com/@mirandusplaysmobile",
-            avatar: "/images/Mirandus.jpg",
-            descKey: "creators_page.mirandus_desc",
-            isPartner: true,
-            youtubeHandle: "@mirandusplaysmobile",
-            playlistId: "PL2VyftArNQtQ2EbXMAmgwrPH0P4EvBVAR" // dedicated playlist ID
-        }
-    ];
 
     const selectedCreator = creatorId ? creators.find(c => c.id === creatorId) : null;
 
@@ -108,7 +108,7 @@ export default function CreatorsCorner() {
         };
 
         fetchLatestVideos();
-    }, [creatorId, selectedCreator]);
+    }, [creatorId]);
 
     // Filter videos by search query
     const filteredVideos = videos.filter(video => 
