@@ -1434,6 +1434,14 @@
         "title": "CREATORS CORNER",
         "subtitle": "Highlighting the outstanding content creators of the Foundation: Galactic Frontier community.",
         "mirandus_desc": "Mirandus is an official partnered content creator for Foundation: Galactic Frontier. He specializes in detailed guides, ship fleet optimization, hero tier lists, and news updates.",
-        "youtube_btn": "Visit YouTube Channel"
+        "youtube_btn": "Visit YouTube Channel",
+        "video1_title": "Ultimate Hero & Ship Tier List",
+        "video1_desc": "A detailed breakdown of the current meta heroes and flagship pairings.",
+        "video2_title": "Shadowfront Event Strategy Guide",
+        "video2_desc": "Tactics to maximize your activity rewards and secure high-value nodes.",
+        "video3_title": "Star of The Guild - GvG Capture Guide",
+        "video3_desc": "How to coordinate with your guild to capture ports and earn Occupation Points.",
+        "video4_title": "Pushing Radiant Mode & Strikeback Missions",
+        "video4_desc": "Advanced combat tactics to clear late-game stages and optimize fleet power."
     }
 }

@@ -1432,6 +1432,14 @@
         "title": "RINCÓN DE CREADORES",
         "subtitle": "Destacando a los creadores de contenido más destacados de la comunidad de Foundation: Galactic Frontier.",
         "mirandus_desc": "Mirandus es un creador de contenido socio oficial de Foundation: Galactic Frontier. Se especializa en guías detalladas, optimización de flotas de naves, listas de niveles de héroes y actualizaciones de noticias.",
-        "youtube_btn": "Visitar canal de YouTube"
+        "youtube_btn": "Visitar canal de YouTube",
+        "video1_title": "Lista definitiva de héroes y naves",
+        "video1_desc": "Análisis detallado de los héroes meta actuales y sus emparejamientos de naves.",
+        "video2_title": "Guía de estrategia para el evento Shadowfront",
+        "video2_desc": "Tácticas para maximizar recompensas y asegurar los nodos clave.",
+        "video3_title": "Estrella del Gremio - Guía de captura GvG",
+        "video3_desc": "Cómo coordinarse con su gremio para capturar puertos y sumar puntos de ocupación.",
+        "video4_title": "Superar el modo Radiante y misiones Strikeback",
+        "video4_desc": "Tácticas de combate avanzadas para superar fases finales y optimizar flotas."
     }
 }

@@ -1432,6 +1432,14 @@
         "title": "KĄCIK TWÓRCÓW",
         "subtitle": "Przedstawiamy wybitnych twórców treści w społeczności Foundation: Galactic Frontier.",
         "mirandus_desc": "Mirandus to oficjalny, partnerski twórca treści dla Foundation: Galactic Frontier. Specjalizuje się w szczegółowych poradnikach, optymalizacji floty statków, listach poziomów bohaterów (tier listach) i aktualnościach.",
-        "youtube_btn": "Odwiedź kanał YouTube"
+        "youtube_btn": "Odwiedź kanał YouTube",
+        "video1_title": "Ostateczna lista tierów bohaterów i statków",
+        "video1_desc": "Szczegółowa analiza obecnych bohaterów meta i parowania z okrętami flagowymi.",
+        "video2_title": "Przewodnik strategiczny po wydarzeniu Shadowfront",
+        "video2_desc": "Taktyki mające na celu zmaksymalizowanie nagród i zabezpieczenie kluczowych punktów.",
+        "video3_title": "Gwiazda Gildii - Przewodnik po bitwach GvG",
+        "video3_desc": "Jak koordynować działania z gildią, aby przejmować porty i zdobywać punkty okupacji.",
+        "video4_title": "Pokonywanie trybu Radiant i misji Strikeback",
+        "video4_desc": "Zaawansowane taktyki walki w celu ukończenia etapów końcowych i optymalizacji floty."
     }
 }

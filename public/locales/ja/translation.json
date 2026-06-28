@@ -1432,6 +1432,14 @@
         "title": "クリエイターズコーナー",
         "subtitle": "Foundation: Galactic Frontierコミュニティの優れたコンテンツクリエイターをご紹介します。",
         "mirandus_desc": "Mirandusは、Foundation: Galactic Frontierの公式パートナーコンテンツクリエイターです。詳細なガイド、艦隊の最適化、ヒーローのティアリスト、最新ニュースの提供を専門としています。",
-        "youtube_btn": "YouTubeチャンネルにアクセス"
+        "youtube_btn": "YouTubeチャンネルにアクセス",
+        "video1_title": "究極のヒーロー＆宇宙船ティアリスト",
+        "video1_desc": "現在のメタヒーローとフラッグシップの組み合わせの詳細な解説。",
+        "video2_title": "シャドウフロントイベント攻略ガイド",
+        "video2_desc": "報酬を最大化し、高価値ノードを確保するための戦術。",
+        "video3_title": "ギルドの星 - GvGキャプチャーガイド",
+        "video3_desc": "ギルドメンバーと協力して港を占領し、占領ポイントを稼ぐ方法。",
+        "video4_title": "ラディアントモード＆ストライクバック任務の攻略",
+        "video4_desc": "ゲーム終盤のステージをクリアし、艦隊パワーを最適化する高度な戦闘戦術。"
     }
 }

@@ -1434,6 +1434,14 @@
         "title": "ESPACE CRÉATEURS",
         "subtitle": "Mise à l'honneur des créateurs de contenu exceptionnels de la communauté de Foundation: Galactic Frontier.",
         "mirandus_desc": "Mirandus est un créateur de contenu partenaire officiel de Foundation: Galactic Frontier. Il est spécialisé dans les guides détaillés, l'optimisation des flottes, les classements de héros et les actualités du jeu.",
-        "youtube_btn": "Visiter la chaîne YouTube"
+        "youtube_btn": "Visiter la chaîne YouTube",
+        "video1_title": "Tier List ultime des Héros et Vaisseaux",
+        "video1_desc": "Analyse détaillée de la méta actuelle des héros et de leurs meilleures associations.",
+        "video2_title": "Guide stratégique de l'événement Shadowfront",
+        "video2_desc": "Tactiques pour maximiser vos récompenses et sécuriser les objectifs clés.",
+        "video3_title": "Étoile de la Guilde - Guide de Capture GvG",
+        "video3_desc": "Comment collaborer avec votre guilde pour capturer les ports et gagner des points.",
+        "video4_title": "Progression en Mode Radiant & Missions de Repli",
+        "video4_desc": "Tactiques de combat avancées pour terminer les niveaux difficiles de fin de partie."
     }
 }
