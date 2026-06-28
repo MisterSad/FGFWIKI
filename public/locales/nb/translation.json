@@ -1460,6 +1460,7 @@
         "video12_desc": "Samarbeid med alliansen for å erobre store romstasjoner og utvide territoriet.",
         "playlist_title": "KOMPLETT VIDEODATABASE",
         "search_placeholder": "Søk etter guider og videoer...",
-        "load_more": "Last inn flere videoer"
+        "load_more": "Last inn flere videoer",
+        "x_btn": "Besøk X"
     }
 }

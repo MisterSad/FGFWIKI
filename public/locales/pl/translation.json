@@ -1460,6 +1460,7 @@
         "video12_desc": "Koordynacja z sojuszem w celu przejmowania stacji kosmicznych i rozszerzania terytorium.",
         "playlist_title": "PEŁNA BAZA DANYCH WIDEO",
         "search_placeholder": "Wyszukaj poradniki i wideo...",
-        "load_more": "Załaduj więcej wideo"
+        "load_more": "Załaduj więcej wideo",
+        "x_btn": "Odwiedź X"
     }
 }

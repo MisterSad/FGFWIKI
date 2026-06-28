@@ -1462,6 +1462,7 @@
         "video12_desc": "Coordinating with your Alliance to capture massive space stations and expand your territory control.",
         "playlist_title": "FULL VIDEO DATABASE",
         "search_placeholder": "Search guides & videos...",
-        "load_more": "Load More Videos"
+        "load_more": "Load More Videos",
+        "x_btn": "Visit X"
     }
 }

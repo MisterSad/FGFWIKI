@@ -1460,6 +1460,7 @@
         "video12_desc": "Yhteistyö allianssin kanssa massiivisten avaruusasemien valtaamiseksi ja alueen laajentamiseksi.",
         "playlist_title": "TÄYDELLINEN VIDEOARKISTO",
         "search_placeholder": "Etsi oppaita ja videoita...",
-        "load_more": "Lataa lisää videoita"
+        "load_more": "Lataa lisää videoita",
+        "x_btn": "Vieraile X-profiilissa"
     }
 }

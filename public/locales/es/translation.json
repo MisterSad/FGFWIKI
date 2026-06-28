@@ -1460,6 +1460,7 @@
         "video12_desc": "Coordinación con su alianza para capturar estaciones espaciales y expandir el territorio.",
         "playlist_title": "BASE DE DATOS COMPLETA DE VIDEOS",
         "search_placeholder": "Buscar guías y videos...",
-        "load_more": "Cargar más videos"
+        "load_more": "Cargar más videos",
+        "x_btn": "Visitar X"
     }
 }
