@@ -16,7 +16,7 @@ const creators = [
         youtubeHandle: "@mirandusplaysmobile",
         xUrl: "https://x.com/miranduscrafter",
         xHandle: "@miranduscrafter",
-        playlistId: "PL2VyftArNQtQ2EbXMAmgwrPH0P4EvBVAR" // dedicated playlist ID
+        playlistId: "UUkwuVMbcFtaKk37i2_5CR5A" // uploads playlist ID
     }
 ];
 
@@ -72,8 +72,8 @@ export default function CreatorsCorner() {
                     const title = getTagContent(entry, 'title') || '';
                     const published = getTagContent(entry, 'published') || '';
                     
-                    // Filter: Only include videos about Foundation, exclude other games like Godforge
-                    if (videoId && title && !title.toLowerCase().includes('godforge')) {
+                    // Filter: Only include videos about Foundation, exclude other games like Godforge/Dune
+                    if (videoId && title && !title.toLowerCase().includes('godforge') && !title.toLowerCase().includes('dune')) {
                         fetchedVideos.push({
                             id: videoId,
                             title: title,
