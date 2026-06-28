@@ -155,8 +155,10 @@ export default function Layout({ children, onLoginClick }) {
         );
     };
 
+    const isHomePage = location.pathname === '/home' || location.pathname === '/';
+
     return (
-        <div className={`app-layout ${glitchIntensityClass}`}>
+        <div className={`app-layout ${glitchIntensityClass} ${isHomePage ? 'is-home-page' : ''}`}>
             {isGlitchActive && completedCount < 4 && (
                 <>
                     <div className="anomaly-scanlines" aria-hidden="true" />
@@ -199,38 +201,7 @@ export default function Layout({ children, onLoginClick }) {
             {showScrollTop && (
                 <button
                     onClick={scrollToTop}
-                    style={{
-                        position: 'fixed',
-                        bottom: '2rem',
-                        right: '2rem',
-                        zIndex: 99,
-                        background: 'rgba(20, 20, 20, 0.85)',
-                        backdropFilter: 'blur(8px)',
-                        border: '1px solid var(--gold)',
-                        color: 'var(--gold-bright)',
-                        width: '3.2rem',
-                        height: '3.2rem',
-                        borderRadius: '4px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        cursor: 'pointer',
-                        boxShadow: '0 0 15px rgba(212, 175, 55, 0.2)',
-                        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                        outline: 'none',
-                    }}
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.background = 'var(--gold)';
-                        e.currentTarget.style.color = 'var(--bg-void)';
-                        e.currentTarget.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.6)';
-                        e.currentTarget.style.transform = 'translateY(-3px)';
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.background = 'rgba(20, 20, 20, 0.85)';
-                        e.currentTarget.style.color = 'var(--gold-bright)';
-                        e.currentTarget.style.boxShadow = '0 0 15px rgba(212, 175, 55, 0.2)';
-                        e.currentTarget.style.transform = 'none';
-                    }}
+                    className="scroll-to-top-btn"
                     aria-label="Scroll to top"
                 >
                     <ArrowUp size={20} />
