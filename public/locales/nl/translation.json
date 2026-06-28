@@ -1441,6 +1441,22 @@
         "video3_desc": "Samenwerken met je gilde om havens te veroveren en bezettingspunten te verdienen.",
         "video4_title": "Radiant-modus & Strikeback-missies voltooien",
         "video4_desc": "Geavanceerde gevechtstactieken om de eindfases te voltooien en vlootkracht te optimaliseren.",
-        "view_content": "Inhoud bekijken"
+        "view_content": "Inhoud bekijken",
+        "video5_title": "Vlootbouw & Gevechtsschepen Optimalisatie",
+        "video5_desc": "Leer hoe je optimale vloten bouwt en combineert met gevechtsschepen voor maximale schade.",
+        "video6_title": "Snelstartgids voor beginners",
+        "video6_desc": "Essentiële tips voor nieuwe spelers om snel vooruitgang te boeken en grondstoffen te beheren.",
+        "video7_title": "Vlaggenschip-formaties & decks",
+        "video7_desc": "Gids over formaties: kinetische, stralings- en ionen-opstellingen voor PvP en PvE.",
+        "video8_title": "Nexus-upgradestrategie",
+        "video8_desc": "Prioriteit geven aan Nexus-upgrades om geavanceerde technologie vrij te spelen.",
+        "video9_title": "Galactische Arena & PvP metadecks",
+        "video9_desc": "Beste PvP-teamopstellingen om hogerop te komen in de Galactische Arena.",
+        "video10_title": "Gids voor United Frontline",
+        "video10_desc": "Tactieken voor het alliantie-evenement United Frontline: punten maximaliseren en samenwerken.",
+        "video11_title": "Dagelijkse taken & grondstoffen farmen",
+        "video11_desc": "De beste dagelijkse routines om grondstoffen, componenten en upgradematerialen te farmen.",
+        "video12_title": "Galactische Raad & Ruimtestation Veroveren",
+        "video12_desc": "Samenwerken met je alliantie om ruimtestations te veroveren en territorium uit te breiden."
     }
 }

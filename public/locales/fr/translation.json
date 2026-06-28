@@ -1443,6 +1443,22 @@
         "video3_desc": "Comment collaborer avec votre guilde pour capturer les ports et gagner des points.",
         "video4_title": "Progression en Mode Radiant & Missions de Repli",
         "video4_desc": "Tactiques de combat avancées pour terminer les niveaux difficiles de fin de partie.",
-        "view_content": "Voir le contenu"
+        "view_content": "Voir le contenu",
+        "video5_title": "Optimisation de Flotte et Vaisseaux de Combat",
+        "video5_desc": "Découvrez comment construire des flottes optimales et les associer aux vaisseaux de combat pour un maximum de DPS.",
+        "video6_title": "Guide de démarrage rapide pour débutants",
+        "video6_desc": "Conseils essentiels pour progresser rapidement, éviter les erreurs classiques et gérer ses ressources.",
+        "video7_title": "Decks et Formations de Vaisseaux Amiraux",
+        "video7_desc": "Guide complet des formations : configurations cinétiques, à faisceau et ioniques pour PvP et PvE.",
+        "video8_title": "Stratégie d'amélioration du Nexus",
+        "video8_desc": "Comment prioriser vos améliorations de Nexus pour débloquer les meilleures technologies et augmenter la capacité.",
+        "video9_title": "Arène Galactique et Decks Méta PvP",
+        "video9_desc": "Les meilleures compositions d'équipe et decks PvP pour grimper dans le classement de l'Arène Galactique.",
+        "video10_title": "Guide de l'événement Front Uni",
+        "video10_desc": "Tactiques pour l'événement d'alliance Front Uni : comment optimiser vos points et coopérer en guilde.",
+        "video11_title": "Tâches quotidiennes et Farming de ressources",
+        "video11_desc": "Les meilleures routines pour farmer efficacement les ressources, composants et matériaux d'amélioration.",
+        "video12_title": "Conseil Galactique et Capture de Station Spatiale",
+        "video12_desc": "Coordonnez vos attaques avec votre Alliance pour capturer des stations géantes et étendre votre territoire."
     }
 }

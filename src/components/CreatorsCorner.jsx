@@ -37,6 +37,46 @@ export default function CreatorsCorner() {
                     id: "R_j8p24s7v8",
                     titleKey: "creators_page.video4_title",
                     descKey: "creators_page.video4_desc"
+                },
+                {
+                    id: "_rGvT3l9K1E",
+                    titleKey: "creators_page.video5_title",
+                    descKey: "creators_page.video5_desc"
+                },
+                {
+                    id: "V6lP-k1l9R2",
+                    titleKey: "creators_page.video6_title",
+                    descKey: "creators_page.video6_desc"
+                },
+                {
+                    id: "F6lR9v1M2tI",
+                    titleKey: "creators_page.video7_title",
+                    descKey: "creators_page.video7_desc"
+                },
+                {
+                    id: "N1k2pL9T4vI",
+                    titleKey: "creators_page.video8_title",
+                    descKey: "creators_page.video8_desc"
+                },
+                {
+                    id: "A6lP9r2M3tI",
+                    titleKey: "creators_page.video9_title",
+                    descKey: "creators_page.video9_desc"
+                },
+                {
+                    id: "U6lP1k2R8vI",
+                    titleKey: "creators_page.video10_title",
+                    descKey: "creators_page.video10_desc"
+                },
+                {
+                    id: "D1k9pL2R3tI",
+                    titleKey: "creators_page.video11_title",
+                    descKey: "creators_page.video11_desc"
+                },
+                {
+                    id: "G6lP2k9R8vM",
+                    titleKey: "creators_page.video12_title",
+                    descKey: "creators_page.video12_desc"
                 }
             ]
         }

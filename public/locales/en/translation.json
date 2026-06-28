@@ -1443,6 +1443,22 @@
         "video3_desc": "How to coordinate with your guild to capture ports and earn Occupation Points.",
         "video4_title": "Pushing Radiant Mode & Strikeback Missions",
         "video4_desc": "Advanced combat tactics to clear late-game stages and optimize fleet power.",
-        "view_content": "View Content"
+        "view_content": "View Content",
+        "video5_title": "Fleet Building & Combat Craft Optimization",
+        "video5_desc": "Learn how to build optimal fleets and pair them with appropriate combat crafts for maximum DPS.",
+        "video6_title": "Beginner's Fast Start Guide",
+        "video6_desc": "Essential tips for new players to progress quickly, avoid common mistakes, and manage resources efficiently.",
+        "video7_title": "Flagship Decks & Formations",
+        "video7_desc": "A guide on flagship deck formations: Kinetic, Beam, and Ion setups for PvP and PvE.",
+        "video8_title": "Nexus Upgrade Strategy",
+        "video8_desc": "How to prioritize your Nexus upgrades to unlock top tier technology and increase fleet capacity.",
+        "video9_title": "Galactic Arena & PvP Meta Decks",
+        "video9_desc": "Best PvP team comps and decks to climb the ranks in the Galactic Arena event.",
+        "video10_title": "United Frontline Event Guide",
+        "video10_desc": "Tactics for the United Frontline alliance event: how to maximize points and cooperate with guild members.",
+        "video11_title": "Daily Tasks & Resource Farming",
+        "video11_desc": "The best routes and routines to farm resources, components, and upgrade materials daily.",
+        "video12_title": "Galactic Council & Space Station Capture",
+        "video12_desc": "Coordinating with your Alliance to capture massive space stations and expand your territory control."
     }
 }
