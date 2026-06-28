@@ -280,6 +280,39 @@ export const tips = [
     ]
   },
   {
+    id: 'season2-new-map',
+    category: 'news',
+    title: 'tips.season2_map_title',
+    content: 'tips.season2_map_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-06-28T08:40:00Z',
+    sections: [
+      {
+        text: 'tips.season2_map_intro'
+      },
+      {
+        header: 'tips.season2_map_hdr',
+        text: 'tips.season2_map_txt',
+        image: '/images/Siwenna_MapSeason2.png',
+        imageMaxWidth: '600px'
+      },
+      {
+        header: 'tips.season2_mechanic_hdr',
+        text: 'tips.season2_mechanic_txt'
+      },
+      {
+        header: 'tips.season2_buildings_hdr',
+        text: 'tips.season2_buildings_txt'
+      },
+      {
+        header: 'tips.season2_settlement_hdr',
+        text: 'tips.season2_settlement_txt'
+      }
+    ]
+  },
+  {
     id: 'magnetic-resistance',
     category: 'news',
     title: 'tips.magnetic_title',
