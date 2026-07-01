@@ -1,0 +1,41 @@
+name: Update Videos
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+permissions:
+  contents: write # Allows the workflow to commit and push changes back to the repository
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch and update videos
+        run: node scripts/update-videos.js
+
+      - name: Commit and push if there are changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Stage the changed JSON file
+          git add src/data/mirandusVideos.json
+          
+          # Only commit and push if there are actual modifications staged
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: auto-update Mirandus video database [skip ci]"
+            git push origin main
+          else
+            echo "No new videos found to update."
+          fi
