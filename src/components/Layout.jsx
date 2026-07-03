@@ -195,7 +195,7 @@ export default function Layout({ children, onLoginClick }) {
                     <div style={{ background: 'var(--gold-dim)' }}></div>
                 </div>
 
-                <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkTuah</span> #1061.</p>
+                <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkTuah</span></p>
             </footer>
 
             {showScrollTop && (
