@@ -2227,3 +2227,153 @@ footer {
     overflow: hidden;
   }
 }
+
+/* ==========================================================================
+   STELLA ANOMALY RESPONSIVE IMPROVEMENTS
+   ========================================================================== */
+
+.terminal-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.terminal-console-wrapper {
+  background: rgba(13, 14, 20, 0.85);
+  border: 1px solid rgba(78, 205, 196, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(78, 205, 196, 0.05);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+}
+
+.terminal-console-tabs {
+  display: flex;
+  background: rgba(6, 7, 16, 0.9);
+  border-bottom: 1px solid rgba(78, 205, 196, 0.2);
+}
+
+.terminal-console-tab-item {
+  flex: 1;
+  padding: 1.2rem 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: rgba(255, 255, 255, 0.15);
+  cursor: not-allowed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  outline: none;
+  font-family: var(--font-mono);
+}
+
+.terminal-console-tab-item.unlocked {
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.terminal-console-tab-item.active {
+  background: rgba(78, 205, 196, 0.08);
+  border-bottom: 3px solid var(--accent-teal);
+  color: #FFFFFF;
+}
+
+.terminal-console-tab-item__title {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.terminal-console-tab-item__title-text {
+  font-weight: bold;
+}
+
+.terminal-console-tab-item__subtitle {
+  font-size: 0.65rem;
+  opacity: 0.6;
+}
+
+.terminal-console-viewport {
+  padding: 2.5rem 2rem;
+  min-height: 400px;
+  position: relative;
+}
+
+.trivia-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.morse-input-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.phase3-guide-legend {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+  background: rgba(6, 7, 16, 0.4);
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 900px) {
+  .terminal-dashboard-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal-console-tab-item {
+    padding: 0.8rem 0.5rem !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .terminal-console-tab-item__subtitle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .terminal-console-viewport {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .trivia-options-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .morse-input-container {
+    flex-direction: column !important;
+  }
+
+  .phase3-guide-legend {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .desktop-only-word {
+    display: none !important;
+  }
+
+  .terminal-console-tab-item {
+    padding: 0.6rem 0.25rem !important;
+  }
+
+  .terminal-console-tab-item__title-text::before {
+    content: 'P';
+  }
+}
