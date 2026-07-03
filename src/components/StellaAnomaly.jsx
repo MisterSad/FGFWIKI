@@ -406,28 +406,12 @@ export default function StellaAnomaly() {
             </div>
 
             {/* Main Terminal Dashboard */}
-            <div className="terminal-dashboard-grid" style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 320px',
-                gap: '2rem',
-                alignItems: 'start'
-            }}>
+            <div className="terminal-dashboard-grid">
                 
                 {/* Left Side: Puzzles Console */}
-                <div style={{
-                    background: 'rgba(13, 14, 20, 0.85)',
-                    border: '1px solid rgba(78, 205, 196, 0.2)',
-                    borderRadius: '8px',
-                    boxShadow: '0 0 30px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(78, 205, 196, 0.05)',
-                    backdropFilter: 'blur(12px)',
-                    overflow: 'hidden'
-                }}>
+                <div className="terminal-console-wrapper">
                     {/* Console Header Tabs */}
-                    <div style={{
-                        display: 'flex',
-                        background: 'rgba(6, 7, 16, 0.9)',
-                        borderBottom: '1px solid rgba(78, 205, 196, 0.2)'
-                    }}>
+                    <div className="terminal-console-tabs">
                         {[1, 2, 3, 4].map(phaseNum => {
                             const unlocked = isPhaseUnlocked(phaseNum);
                             const completed = completedPhases[phaseNum];
@@ -445,28 +429,15 @@ export default function StellaAnomaly() {
                                             playBeep('error');
                                         }
                                     }}
-                                    style={{
-                                        flex: 1,
-                                        padding: '1.2rem 1rem',
-                                        background: active ? 'rgba(78, 205, 196, 0.08)' : 'transparent',
-                                        border: 'none',
-                                        borderBottom: active ? '3px solid var(--accent-teal)' : '3px solid transparent',
-                                        color: active ? '#FFFFFF' : (unlocked ? 'var(--text-secondary)' : 'rgba(255, 255, 255, 0.15)'),
-                                        cursor: unlocked ? 'pointer' : 'not-allowed',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        alignItems: 'center',
-                                        gap: '0.4rem',
-                                        fontSize: '0.8rem',
-                                        transition: 'all 0.3s ease',
-                                        outline: 'none'
-                                    }}
+                                    className={`terminal-console-tab-item ${unlocked ? 'unlocked' : ''} ${active ? 'active' : ''}`}
                                 >
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                                    <div className="terminal-console-tab-item__title">
                                         {!unlocked ? <Lock size={12} /> : (completed ? <CheckCircle2 size={12} color="var(--accent-teal)" /> : <Unlock size={12} />)}
-                                        <span style={{ fontWeight: 'bold' }}>PHASE {phaseNum}</span>
+                                        <span className="terminal-console-tab-item__title-text">
+                                            <span className="desktop-only-word">PHASE </span>{phaseNum}
+                                        </span>
                                     </div>
-                                    <span style={{ fontSize: '0.65rem', opacity: 0.6 }}>
+                                    <span className="terminal-console-tab-item__subtitle">
                                         {phaseNum === 1 && 'SIGNAL'}
                                         {phaseNum === 2 && 'DATABASE'}
                                         {phaseNum === 3 && 'CORE'}
@@ -478,7 +449,7 @@ export default function StellaAnomaly() {
                     </div>
 
                     {/* Console Viewport */}
-                    <div style={{ padding: '2.5rem 2rem', minHeight: '400px', position: 'relative' }}>
+                    <div className="terminal-console-viewport">
                         {/* 1. If viewing locked phase */}
                         {!isPhaseUnlocked(selectedTab) ? (
                             <div style={{
@@ -591,7 +562,7 @@ export default function StellaAnomaly() {
                                             </div>
                                         ) : (
                                             <form onSubmit={handleMorseSubmit} style={{ display: 'flex', gap: '1rem', flexDirection: 'column' }}>
-                                                <div style={{ display: 'flex', gap: '1rem' }}>
+                                                <div className="morse-input-container">
                                                     <input
                                                         type="text"
                                                         placeholder={t('stella_anomaly.morse_placeholder') || "Enter decrypted message..."}
@@ -659,7 +630,7 @@ export default function StellaAnomaly() {
                                                     <div style={{ fontSize: '0.85rem', fontWeight: 'bold', marginBottom: '0.8rem', color: '#FFFFFF' }}>
                                                         {qIdx + 1}. {t(question.q)}
                                                     </div>
-                                                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.8rem' }}>
+                                                    <div className="trivia-options-grid">
                                                         {question.options.map(option => {
                                                             const selected = triviaAnswers[qIdx] === option;
                                                             const isCompleted = completedPhases[2];
@@ -746,19 +717,10 @@ export default function StellaAnomaly() {
                                         </p>
 
                                         {/* Guide Legend */}
-                                        <div style={{
-                                            display: 'flex',
-                                            justifyContent: 'space-around',
-                                            fontSize: '0.7rem',
-                                            marginBottom: '2rem',
-                                            background: 'rgba(6, 7, 16, 0.4)',
-                                            padding: '0.6rem',
-                                            borderRadius: '4px',
-                                            border: '1px solid rgba(255, 255, 255, 0.05)'
-                                        }}>
-                                            <span style={{ color: '#FF5A5A', display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Swords size={12}/> ROW 1: KINETIC</span>
-                                            <span style={{ color: '#4ECDC4', display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Shield size={12}/> ROW 2: BEAM</span>
-                                            <span style={{ color: '#E8C96A', display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Coins size={12}/> ROW 3: ION</span>
+                                        <div className="phase3-guide-legend">
+                                            <span style={{ color: '#FF5A5A', display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Swords size={12}/> <span className="desktop-only-word">ROW 1: </span>KINETIC</span>
+                                            <span style={{ color: '#4ECDC4', display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Shield size={12}/> <span className="desktop-only-word">ROW 2: </span>BEAM</span>
+                                            <span style={{ color: '#E8C96A', display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Coins size={12}/> <span className="desktop-only-word">ROW 3: </span>ION</span>
                                         </div>
 
                                         {/* Node Grid */}
