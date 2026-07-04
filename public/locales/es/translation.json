@@ -1461,6 +1461,25 @@
         "playlist_title": "BASE DE DATOS COMPLETA DE VIDEOS",
         "search_placeholder": "Buscar guías y videos...",
         "load_more": "Cargar más videos",
-        "x_btn": "Visitar X"
+        "x_btn": "Visitar X",
+        "interview_title": "Entrevista exclusiva: 5 preguntas para Mirandus",
+        "interview_subtitle": "Sobre su motivación, proceso de theorycrafting, preferencias creativas y consejos para nuevos creadores.",
+        "expand_all": "[ Expandir todo ]",
+        "collapse_all": "[ Colapsar todo ]",
+        "interview_q1_cat": "Inspiración y motivación",
+        "interview_q1": "¿Qué te inspiró al principio a crear guías en video para Foundation: Galactic Frontier y qué te mantiene motivado para producir y compartir contenido con la comunidad semana tras semana?",
+        "interview_a1": "Llevo unos 9 años creando contenido sobre juegos de PC y móviles. Estaba buscando un juego nuevo que cubrir cuando encontré FGF; me gustó cuando lo probé y tenía las características que buscaba, así que lo elegí. Mi motivación es simplemente que me encanta hablar sobre los juegos que me interesan y juego, y también me encanta enseñar a otros cómo hacer las cosas mejor y de manera más eficiente, así que encaja perfectamente conmigo.",
+        "interview_q2_cat": "Theorycrafting y proceso analítico",
+        "interview_q2": "Tus listas de niveles de héroes y guías de optimización de flotas son muy detalladas. ¿Podrías explicarnos tu proceso para investigar nuevas actualizaciones y traducir números complejos en guías accesibles para tus espectadores?",
+        "interview_a2": "La experiencia es la clave, no crearé contenido sobre algo a menos que lo entienda y sienta que puedo enseñárselo a otros primero, lo cual, combinado con la experiencia que he tenido a lo largo de los años haciendo lo mismo en otros juegos, hace que este proceso sea algo habitual para mí. Conocerlo primero antes de intentar enseñarlo siempre ha sido mi plan de juego.",
+        "interview_q3_cat": "Preferencias creativas",
+        "interview_q3": "Entre escribir guías estructuradas de theorycrafting y grabar intensas batallas PvP/SvS en tiempo real, ¿qué tipo de video te resulta más gratificante y divertido de hacer y por qué?",
+        "interview_a3": "Esa pregunta depende del juego en realidad; en el pasado siempre solía ser el típico nerd de la economía y del theorycrafting, pero en FGF he descubierto que el PvP es extremadamente divertido y gratificante y, honestamente, como mi lista de reproducción puede atestiguar, es la mecánica de juego que más he disfrutado en este juego.",
+        "interview_q4_cat": "Temas impulsados por la comunidad",
+        "interview_q4": "¿Cuánto influyen los comentarios de los espectadores y las solicitudes de los gremios en los temas de tus próximos videos, y cómo equilibras hacer videos que te apasionan personalmente con lo que la comunidad quiere ver?",
+        "interview_a4": "Me encanta cuando mi comunidad y los miembros de mi gremio sugieren el contenido que les gustaría ver. Sus ideas me inspiran y me motivan, y no hay nada mejor que poder crear algo que solicitaron y verlos disfrutarlo. La mayoría de las veces, mis intereses en el juego se alinean con lo que la comunidad quiere ver, por lo que termina siendo una situación en la que todos ganan.",
+        "interview_q5_cat": "Consejos para nuevos creadores",
+        "interview_q5": "Como una voz consolidada en el espacio de la estrategia móvil, ¿cuál es el consejo más importante que le darías a un jugador que busca comenzar su propio canal de creación de contenido hoy?",
+        "interview_a5": "Mi consejo número uno es elegir un juego que realmente ames y disfrutes jugar. Cuando te apasiona el juego, crear contenido se siente divertido en lugar de sentirse como un trabajo. Ese disfrute se nota en tus videos y marca una gran diferencia a la hora de mantener la constancia. Construir un canal exitoso lleva tiempo y, si realmente disfrutas el proceso, es mucho más probable que lo sigas intentando el tiempo suficiente para que tu canal crezca y alcance su potencial."
     }
 }

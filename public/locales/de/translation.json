@@ -1461,6 +1461,25 @@
         "playlist_title": "KOMPLETTE VIDEODATENBANK",
         "search_placeholder": "Anleitungen & Videos suchen...",
         "load_more": "Mehr Videos laden",
-        "x_btn": "X besuchen"
+        "x_btn": "X besuchen",
+        "interview_title": "Exklusives Creator-Interview: 5 Fragen an Mirandus",
+        "interview_subtitle": "Über seine Motivation, seinen Theorycrafting-Prozess, kreative Vorlieben und Ratschläge für neue Creator.",
+        "expand_all": "[ Alles ausklappen ]",
+        "collapse_all": "[ Alles einklappen ]",
+        "interview_q1_cat": "Inspiration & Motivation",
+        "interview_q1": "Was hat Sie anfangs dazu inspiriert, Video-Guides für Foundation: Galactic Frontier zu erstellen, und was motiviert Sie, Woche für Woche Inhalte für die Community zu produzieren und zu teilen?",
+        "interview_a1": "Ich erstelle nun seit etwa 9 Jahren Inhalte zu Mobil- und PC-Spielen. Ich war auf der Suche nach einem neuen Spiel, als ich auf FGF stieß. Es hat mir beim Ausprobieren gefallen und hatte genau die Features, die ich gesucht habe, also habe ich mich dafür entschieden. Meine Motivation ist einfach, dass ich es liebe, über Spiele zu sprechen, die mich interessieren und die ich selbst spiele. Zudem macht es mir großen Spaß, anderen zu zeigen, wie sie Dinge besser und effizienter erledigen können – es passt also perfekt zu mir.",
+        "interview_q2_cat": "Theorycrafting & Analyse-Prozess",
+        "interview_q2": "Ihre Helden-Tier-Listen und Flottenoptimierungs-Guides sind extrem detailliert. Könnten Sie uns erklären, wie Sie neue Updates analysieren und komplexe Zahlen in verständliche Guides für Ihre Zuschauer übersetzen?",
+        "interview_a2": "Erfahrung ist der Schlüssel. Ich erstelle keine Inhalte über etwas, das ich nicht selbst verstehe und bei dem ich das Gefühl habe, es anderen beibringen zu können. Zusammen mit der Erfahrung, die ich über die Jahre in anderen Spielen gesammelt habe, ist dieser Prozess für mich Routine. Zuerst verstehen, bevor man es lehrt – das war schon immer mein Plan.",
+        "interview_q3_cat": "Kreative Vorlieben",
+        "interview_q3": "Was macht Ihnen zwischen dem Schreiben strukturierter Theorycrafting-Guides und dem Aufnehmen intensiver Echtzeit-PvP/SvS-Schlachten am meisten Spaß und warum?",
+        "interview_a3": "Das hängt wirklich vom Spiel ab. Früher war ich meistens der Theorycrafting- und Wirtschafts-Nerd. Aber in FGF finde ich das PvP extrem unterhaltsam und lohnend, und wie meine Playlist beweist, hat mir diese Gameplay-Mechanik in diesem Spiel bisher am besten gefallen.",
+        "interview_q4_cat": "Community-gesteuerte Themen",
+        "interview_q4": "Wie stark beeinflussen Zuschauer-Feedback und Gildenanfragen die Themen Ihrer kommenden Videos, und wie halten Sie die Balance zwischen Ihren persönlichen Interessen und den Wünschen der Community?",
+        "interview_a4": "Ich liebe es, wenn meine Community und Gildenmitglieder Vorschläge für Inhalte machen. Ihre Ideen inspirieren und motivieren mich, und es gibt nichts Schöneres, als etwas auf Anfrage zu erstellen und zu sehen, dass es ihnen gefällt. Meistens decken sich meine Interessen im Spiel mit den Wünschen der Community, sodass es am Ende eine Win-Win-Situation für alle ist.",
+        "interview_q5_cat": "Ratschläge für neue Creator",
+        "interview_q5": "Welchen wichtigsten Rat würden Sie als etablierte Stimme im Bereich der mobilen Strategie einem Spieler geben, der heute einen eigenen Content-Kanal starten möchte?",
+        "interview_a5": "Mein wichtigster Rat ist, ein Spiel zu wählen, das man wirklich liebt und gerne spielt. Wenn man leidenschaftlich bei der Sache ist, fühlt sich das Erstellen von Inhalten wie Spaß an und nicht wie Arbeit. Diese Freude überträgt sich auf die Videos und macht einen riesigen Unterschied, um am Ball zu bleiben. Der Aufbau eines erfolgreichen Kanals braucht Zeit, und wenn man den Prozess genießt, ist die Wahrscheinlichkeit viel höher, dass man lange genug durchhält, bis der Kanal wächst und sein Potenzial entfaltet."
     }
 }

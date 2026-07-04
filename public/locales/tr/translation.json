@@ -1461,6 +1461,25 @@
         "playlist_title": "TAM VİDEO VERİTABANI",
         "search_placeholder": "Rehberleri ve videoları ara...",
         "load_more": "Daha Fazla Video Yükle",
-        "x_btn": "X'i Ziyaret Et"
+        "x_btn": "X'i Ziyaret Et",
+        "interview_title": "Özel Yayıncı Röportajı: Mirandus ile 5 Soru 5 Cevap",
+        "interview_subtitle": "Aktivite motivasyonu, analiz süreçleri, içerik tercihleri ve yeni içerik üreticileri için tavsiyeler.",
+        "expand_all": "[ Tümünü Genişlet ]",
+        "collapse_all": "[ Tümünü Daralt ]",
+        "interview_q1_cat": "İlham ve Motivasyon",
+        "interview_q1": "Foundation: Galactic Frontier için video rehberleri hazırlamaya ilk olarak ne ilham verdi ve sizi her hafta toplulukla içerik üretip paylaşmaya motive eden şey nedir?",
+        "interview_a1": "Yaklaşık 9 yıldır mobil ve PC oyunları üzerine içerik üretiyorum. İnceleyecek yeni bir oyun ararken FGF'yi buldum. Denediğimde çok hoşuma gitti ve aradığım özellikleri barındırıyordu, bu yüzden onu seçtim. Motivasyonum, ilgilendiğim ve oynadığım oyunlar hakkında konuşmayı çok sevmemden kaynaklanıyor. Ayrıca başkalarına bir şeyleri nasıl daha iyi ve daha verimli yapacaklarını öğretmeyi de seviyorum, bu yüzden bu iş benim için biçilmiş kaftan.",
+        "interview_q2_cat": "Teori ve Analitik Süreç",
+        "interview_q2": "Kahraman tier listeleriniz ve filo optimizasyon rehberleriniz son derece detaylı. Bize yeni güncellemeleri araştırma ve karmaşık sayıları izleyicileriniz için anlaşılır rehberlere dönüştürme sürecinizden bahseder misiniz?",
+        "interview_a2": "Deneyim burada en önemli anahtar. Önce kendim anlayıp başkalarına öğretebileceğimi hissedene kadar asla bir konuda içerik üretmem. Yıllar boyunca diğer oyunlarda da aynı şeyi yapmış olmanın getirdiği deneyimle birleştiğinde, bu süreç benim için artık çocuk oyuncağı. Öğretmeye çalışmadan önce onu tam anlamıyla öğrenmek her zaman benim ana planım olmuştur.",
+        "interview_q3_cat": "Yayıncılık Tercihleri",
+        "interview_q3": "Yapılandırılmış teori rehberleri yazmak ile heyecanlı, gerçek zamanlı PvP/SvS savaşları kaydetmek arasında, hangi video türünü yapmayı daha tatmin edici ve eğlenceli buluyorsunuz ve neden?",
+        "interview_a3": "Bu soru aslında tamamen oyuna bağlı. Geçmişte genellikle teori üreten, ekonomiyle ilgilenen o oyun nerdü olurdum. Ancak FGF'de PvP yapmayı son derece eğlenceli ve ödüllendirici buldum ve dürüst olmak gerekirse, oynatma listemin de kanıtlayabileceği gibi, bu oyunda en çok keyif aldığım oyun mekaniği bu oldu.",
+        "interview_q4_cat": "Topluluk Odaklı Konular",
+        "interview_q4": "İzleyici geri bildirimleri ve birlik talepleri gelecek videolarınızın konularını ne kadar etkiliyor ve kişisel olarak tutku duyduğunuz videolar hazırlamakla topluluğun görmek istediklerini nasıl dengeliyorsunuz?",
+        "interview_a4": "Topluluğumun ve birlik üyelerimin görmek istedikleri içerikleri önermesini çok seviyorum. Onların fikirleri bana ilham ve motivasyon veriyor. Talep ettikleri bir şeyi oluşturabilmekten ve onların bundan keyif aldığını görmekten daha güzel bir şey olamaz. Çoğu zaman oyundaki ilgi alanlarım topluluğun görmek istedikleriyle örtüşüyor, bu yüzden herkes için kazan-kazan durumu oluyor.",
+        "interview_q5_cat": "Yeni İçerik Üreticilerine Tavsiyeler",
+        "interview_q5": "Mobil strateji alanında kendini kanıtlamış bir isim olarak, bugün kendi içerik üretim kanalını açmak isteyen bir oyuncuya vereceğiniz en önemli tavsiye nedir?",
+        "interview_a5": "Bir numaralı tavsiyem, gerçekten sevdiğiniz ve oynamaktan keyif aldığınız bir oyunu seçmenizdir. Oyuna tutkuyla bağlı olduğunuzda, içerik oluşturmak bir iş gibi gelmek yerine eğlenceli hissettirir. Bu keyif videolarınıza da yansır ve istikrarlı olma konusunda büyük bir fark yaratır. Başarılı bir kanal inşa etmek zaman alır ve eğer süreçten gerçekten keyif alırsanız, kanalınız büyüyüp potansiyeline ulaşana kadar bu işi sürdürme olasılığınız çok daha yüksektir."
     }
 }

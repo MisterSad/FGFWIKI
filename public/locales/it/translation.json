@@ -1461,6 +1461,25 @@
         "playlist_title": "DATABASE VIDEO COMPLETO",
         "search_placeholder": "Cerca guide e video...",
         "load_more": "Carica altri video",
-        "x_btn": "Visita X"
+        "x_btn": "Visita X",
+        "interview_title": "Intervista esclusiva con il creatore: 5 domande a Mirandus",
+        "interview_subtitle": "Sulla sua motivazione, il processo di theorycrafting, le preferenze creative e i consigli per i nuovi creatori.",
+        "expand_all": "[ Espandi tutto ]",
+        "collapse_all": "[ Riduci tutto ]",
+        "interview_q1_cat": "Ispirazione e motivazione",
+        "interview_q1": "Cosa ti ha ispirato inizialmente a iniziare a creare guide video per Foundation: Galactic Frontier e cosa ti tiene motivato a produrre e condividere contenuti con la community settimana dopo settimana?",
+        "interview_a1": "Creo contenuti per giochi mobile e PC da circa 9 anni. Stavo cercando un nuovo gioco da trattare quando ho trovato FGF. Mi è piaciuto molto quando l'ho provato e aveva le caratteristiche che stavo cercando, quindi l'ho scelto. La mia motivazione è che adoro parlare dei giochi che mi interessano e a cui gioco, e adoro anche insegnare agli altri come fare le cose meglio e con maggiore efficienza, quindi è perfetto per me.",
+        "interview_q2_cat": "Theorycrafting e processo analitico",
+        "interview_q2": "Le tue tier list di eroi e le guide all'ottimizzazione della flotta sono estremamente dettagliate. Potresti spiegarci il tuo processo di ricerca per i nuovi aggiornamenti e come traduci numeri complessi in guide accessibili per i tuoi spettatori?",
+        "interview_a2": "L'esperienza è la chiave, non farò contenuti su qualcosa a meno che non lo capisca e non senta di poterlo insegnare prima agli altri. Questo, unito all'esperienza che ho maturato nel corso degli anni facendo la stessa cosa in altri giochi, rende questo processo una routine per me. Capire a fondo qualcosa prima di provare a spiegarla è sempre stato il mio piano di gioco.",
+        "interview_q3_cat": "Preferenze creative",
+        "interview_q3": "Tra lo scrivere guide strutturate di theorycrafting e il registrare intense battaglie PvP/SvS in tempo reale, quale tipo di video trovi più gratificante e divertente da realizzare e perché?",
+        "interview_a3": "Questa domanda dipende dal gioco. In passato sono sempre stato il classico nerd appassionato di economia e theorycrafting, ma in FGF ho trovato il PvP estremamente divertente e gratificante. Onestamente, come dimostra la mia playlist, è la meccanica di gioco che ho apprezzato di più in questo titolo.",
+        "interview_q4_cat": "Argomenti guidati dalla community",
+        "interview_q4": "In che misura il feedback degli spettatori e le richieste della gilda influenzano gli argomenti dei tuoi prossimi video e come riesci a bilanciare la creazione di video di cui sei appassionato con ciò che la community desidera vedere?",
+        "interview_a4": "Adoro quando la mia community e i membri della gilda suggeriscono i contenuti che vorrebbero vedere. Le loro idee mi danno ispirazione e motivazione, e non c'è niente di meglio che poter creare qualcosa che hanno richiesto e vederli divertirsi. La maggior parte delle volte, i miei interessi nel gioco coincidono con ciò che la community desidera vedere, quindi alla fine è un vantaggio per tutti.",
+        "interview_q5_cat": "Consigli per i nuovi creatori",
+        "interview_q5": "In qualità di voce affermata nello spazio della strategia mobile, qual è il consiglio più importante che daresti a un giocatore che desidera avviare il proprio canale di creazione di contenuti oggi?",
+        "interview_a5": "Il mio consiglio numero uno è scegliere un gioco che ami sinceramente e con cui ti diverti a giocare. Quando sei appassionato del gioco, creare contenuti è divertente e non sembra un lavoro. Questo divertimento si vede nei tuoi video e fa un'enorme differenza in termini di costanza. Costruire un canale di successo richiede tempo e, se ti piace davvero il processo, è molto più probabile che continuerai a farlo abbastanza a lungo da far crescere il tuo canale ed esprimere il suo potenziale."
     }
 }

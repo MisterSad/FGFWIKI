@@ -1461,6 +1461,25 @@
         "playlist_title": "DATABASE VIDEO LENGKAP",
         "search_placeholder": "Cari panduan & video...",
         "load_more": "Muat Lebih Banyak Video",
-        "x_btn": "Kunjungi X"
+        "x_btn": "Kunjungi X",
+        "interview_title": "Wawancara Eksklusif Kreator: 5 Pertanyaan untuk Mirandus",
+        "interview_subtitle": "Tentang motivasi, proses theorycrafting, preferensi kreatif, dan saran untuk kreator baru.",
+        "expand_all": "[ Buka Semua ]",
+        "collapse_all": "[ Tutup Semua ]",
+        "interview_q1_cat": "Inspirasi & Motivasi",
+        "interview_q1": "Apa yang pertama kali menginspirasi Anda untuk mulai membuat panduan video untuk Foundation: Galactic Frontier, dan apa yang membuat Anda termotivasi untuk memproduksi dan membagikan konten kepada komunitas minggu demi minggu?",
+        "interview_a1": "Saya telah membuat konten tentang game seluler dan PC selama sekitar 9 tahun sekarang. Saya sedang mencari game baru untuk dibahas ketika saya menemukan FGF. Saya menyukainya saat mencobanya dan game ini memiliki fitur yang saya cari, jadi saya memilihnya. Motivasi saya adalah karena saya sangat suka membicarakan game yang saya minati dan mainkan. Saya juga suka mengajari orang lain cara melakukan sesuatu dengan lebih baik dan lebih efisien, jadi ini sangat cocok untuk saya.",
+        "interview_q2_cat": "Theorycrafting & Proses Analitis",
+        "interview_q2": "Daftar tingkat hero dan panduan optimasi armada Anda sangat detail. Bisakah Anda menjelaskan proses Anda dalam meneliti pembaruan baru dan menerjemahkan angka-angka rumit menjadi panduan yang mudah dipahami bagi penonton Anda?",
+        "interview_a2": "Pengalaman adalah kuncinya. Saya tidak akan membuat konten tentang sesuatu kecuali saya memahaminya dan merasa bisa mengajarinya kepada orang lain terlebih dahulu. Dikombinasikan dengan pengalaman yang saya miliki selama bertahun-tahun melakukan hal yang sama di game lain, membuat proses ini menjadi hal yang biasa bagi saya. Pahami dulu sebelum mencoba mengajarinya, itu selalu menjadi rencana permainan saya.",
+        "interview_q3_cat": "Preferensi Kreatif",
+        "interview_q3": "Di antara menulis panduan theorycrafting terstruktur dan merekam pertempuran PvP/SvS real-time yang intens, jenis video mana yang menurut Anda paling memuaskan dan menyenangkan untuk dibuat, dan mengapa?",
+        "interview_a3": "Pertanyaan itu sebenarnya tergantung pada gamenya. Di masa lalu saya biasanya selalu menjadi orang yang menyukai theorycrafting dan ekonomi, tetapi di FGF saya menemukan PvP sangat menyenangkan dan memuaskan. Sejujurnya, seperti yang dibuktikan oleh daftar putar saya, saya paling menikmati mekanik gameplay tersebut di game ini.",
+        "interview_q4_cat": "Topik Berdasarkan Komunitas",
+        "interview_q4": "Seberapa besar masukan penonton dan permintaan guild memengaruhi topik video Anda mendatang, dan bagaimana Anda menyeimbangkan pembuatan video yang Anda sukai secara pribadi dengan apa yang ingin dilihat komunitas?",
+        "interview_a4": "Saya senang ketika komunitas dan anggota guild saya menyarankan konten yang ingin mereka lihat. Ide-ide mereka memberi saya inspirasi dan motivasi, dan tidak ada yang lebih baik daripada bisa membuat sesuatu yang mereka minta dan melihat mereka menikmatinya. Sebagian besar waktu, minat saya dalam game sejalan dengan apa yang ingin dilihat komunitas, jadi pada akhirnya ini menjadi win-win bagi semua orang.",
+        "interview_q5_cat": "Saran untuk Kreator Baru",
+        "interview_q5": "Sebagai suara yang mapan di ruang strategi seluler, apa satu-satunya saran terpenting yang akan Anda berikan kepada seorang gamer yang ingin memulai saluran pembuatan konten mereka sendiri hari ini?",
+        "interview_a5": "Saran nomor satu saya adalah memilih game yang benar-benar Anda sukai dan nikmati untuk dimainkan. Ketika Anda bersemangat tentang game tersebut, membuat konten akan terasa menyenangkan alih-alih terasa seperti pekerjaan. Kesenangan itu terlihat dalam video Anda, dan itu membuat perbedaan besar dalam hal konsistensi. Membangun saluran yang sukses membutuhkan waktu, dan jika Anda benar-benar menikmati prosesnya, Anda jauh lebih mungkin untuk bertahan cukup lama hingga saluran Anda berkembang dan mencapai potensinya."
     }
 }

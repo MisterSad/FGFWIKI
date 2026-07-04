@@ -20,49 +20,6 @@ const creators = [
     }
 ];
 
-const interviewQuestions = [
-    {
-        category: "Inspiration & Motivation",
-        categoryFr: "Inspiration & Motivation",
-        question: "What first inspired you to start creating video guides for Foundation: Galactic Frontier, and what keeps you motivated to produce and share content with the community week after week?",
-        questionFr: "Qu'est-ce qui vous a d'abord inspiré à créer des guides vidéo pour Foundation: Galactic Frontier, et qu'est-ce qui vous motive à produire et à partager du contenu avec la communauté semaine après semaine ?",
-        answer: "I have been making content on mobile and PC games for about 9 years now. I was looking for a new game to cover when I found FGF, I liked it when I tried it and it had the features I was looking for so I chose it. My motivation is that I just love to talk about games that I am interested in and playing, I also love to teach others how to do things better and with more efficiency so it's a great fit for me.",
-        answerFr: "Je crée du contenu sur les jeux mobiles et PC depuis environ 9 ans maintenant. Je cherchais un nouveau jeu à couvrir quand j'ai découvert FGF. J'ai aimé le jeu en l'essayant et il avait les fonctionnalités que je recherchais, alors je l'ai choisi. Ma motivation vient du fait que j'adore tout simplement parler des jeux qui m'intéressent et auxquels je joue. J'aime aussi enseigner aux autres comment faire les choses mieux et plus efficacement, c'est donc un choix idéal pour moi."
-    },
-    {
-        category: "Theorycrafting & Analytical Process",
-        categoryFr: "Théorie & Processus Analytique",
-        question: "Your hero tier lists and fleet optimization guides are highly detailed. Could you walk us through your process for researching new updates and translating complex numbers into accessible guides for your viewers?",
-        questionFr: "Vos tier lists de héros et vos guides d'optimisation de flotte sont extrêmement détaillés. Pouvez-vous nous expliquer votre processus de recherche lors des nouvelles mises à jour et comment vous traduisez des chiffres complexes en guides accessibles pour vos spectateurs ?",
-        answer: "Experience is the key, I won't make content on something unless I understand it and feel like I can teach others about it first, combined with the experience I have had over the years doing this same thing in other games that makes this process old hat for me. Know it first, before you try to teach it has always been my gameplan.",
-        answerFr: "L'expérience est la clé. Je ne ferai pas de contenu sur un sujet à moins de le comprendre et de sentir que je peux l'enseigner aux autres d'abord. Combiné avec l'expérience que j'ai acquise au fil des ans en faisant la même chose dans d'autres jeux, ce processus est devenu une seconde nature pour moi. Ma stratégie a toujours été de maîtriser le sujet avant d'essayer de l'enseigner."
-    },
-    {
-        category: "Creative Preferences",
-        categoryFr: "Préférences Créatives",
-        question: "Between writing structured theorycrafting guides and recording intense, real-time PvP/SvS battles, which type of video do you find the most rewarding and fun to make, and why?",
-        questionFr: "Entre la rédaction de guides théoriques structurés et l'enregistrement de combats PvP/SvS intenses en temps réel, quel type de vidéo trouvez-vous le plus gratifiant et le plus amusant à réaliser, et pourquoi ?",
-        answer: "That question depends on the game really, I have always usually been that theory crafting, economy nerd in the past, but in FGF I have found PVP to be extremely fun and rewarding and honestly as my playlist can attest, I have enjoyed that gameplay mechanic the best in this game.",
-        answerFr: "Cette question dépend vraiment du jeu. Par le passé, j'ai généralement été le genre de geek branché théorie et économie, mais dans FGF, je trouve le PvP extrêmement amusant et gratifiant. Honnêtement, comme ma playlist en témoigne, c'est la mécanique de jeu que j'ai le plus appréciée dans ce jeu."
-    },
-    {
-        category: "Community-driven Topics",
-        categoryFr: "Sujets Communautaires",
-        question: "How much does viewer feedback and guild requests influence the topics of your upcoming videos, and how do you balance making videos you are personally passionate about with what the community wants to see?",
-        questionFr: "À quel point les retours des spectateurs et les demandes de guilde rencontrent-ils les sujets de vos prochaines vidéos, et comment équilibrez-vous la création de vidéos qui vous passionnent personnellement avec ce que la communauté souhaite voir ?",
-        answer: "I love it when my community and guild members suggest content they'd like to see. Their ideas give me inspiration and motivation, and there's nothing better than being able to create something they requested and seeing them enjoy it. Most of the time, my interests in the game line up with what the community wants to see, so it ends up being a win-win for everyone.",
-        answerFr: "J'adore quand ma communauté et les membres de ma guilde suggèrent du contenu qu'ils aimeraient voir. Leurs idées me donnent de l'inspiration et de la motivation, et il n'y a rien de mieux que de pouvoir créer quelque chose qu'ils ont demandé et de les voir l'apprécier. La plupart du temps, mes intérêts dans le jeu s'alignent avec ce que la communauté veut voir, donc tout le monde y trouve son compte."
-    },
-    {
-        category: "Advising New Creators",
-        categoryFr: "Conseils aux Nouveaux Créateurs",
-        question: "As a well-established voice in the mobile strategy space, what is the single most important piece of advice you would give to a gamer looking to start their own content creation channel today?",
-        questionFr: "En tant que voix reconnue dans le domaine de la stratégie mobile, quel est le conseil le plus important que vous donneriez à un joueur qui souhaite lancer sa propre chaîne de création de contenu aujourd'hui ?",
-        answer: "My number one piece of advice is to choose a game you genuinely love and enjoy playing. When you're passionate about the game, creating content feels fun instead of feeling like a job. That enjoyment shows in your videos, and it makes a huge difference when it comes to staying consistent. Building a successful channel takes time, and if you actually enjoy the process, you're much more likely to stick with it long enough for your channel to grow and reach its potential.",
-        answerFr: "Mon conseil numéro un est de choisir un jeu que vous aimez sincèrement et auquel vous prenez plaisir à jouer. Quand vous êtes passionné par le jeu, créer du contenu est amusant au lieu de ressembler à un travail. Ce plaisir se ressent dans vos vidéos, et cela fait une énorme différence pour rester régulier. Construire une chaîne à succès prend du temps, et si vous appréciez réellement le processus, vous avez beaucoup plus de chances de persévérer suffisamment longtemps pour que votre chaîne grandisse et atteigne son potentiel."
-    }
-];
-
 export default function CreatorsCorner() {
     const { t, i18n } = useTranslation();
     const lang = (i18n.language || 'en').split('-')[0];
@@ -535,11 +492,12 @@ export default function CreatorsCorner() {
 
                                     {/* Questions Accordion */}
                                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                                        {interviewQuestions.map((q, idx) => {
+                                        {[1, 2, 3, 4, 5].map((num) => {
+                                            const idx = num - 1;
                                             const isOpen = !!openQuestions[idx];
-                                            const qCategory = lang === 'fr' ? q.categoryFr : q.category;
-                                            const qQuestion = lang === 'fr' ? q.questionFr : q.question;
-                                            const qAnswer = lang === 'fr' ? q.answerFr : q.answer;
+                                            const qCategory = t(`creators_page.interview_q${num}_cat`);
+                                            const qQuestion = t(`creators_page.interview_q${num}`);
+                                            const qAnswer = t(`creators_page.interview_a${num}`);
 
                                             return (
                                                 <div

@@ -1467,6 +1467,21 @@
         "interview_title": "Entretien exclusif : 5 questions pour Mirandus",
         "interview_subtitle": "Sur son inspiration, son processus de recherche, ses préférences et ses conseils.",
         "expand_all": "[ Tout afficher ]",
-        "collapse_all": "[ Tout masquer ]"
+        "collapse_all": "[ Tout masquer ]",
+        "interview_q1_cat": "Inspiration & Motivation",
+        "interview_q1": "Qu'est-ce qui vous a d'abord inspiré à créer des guides vidéo pour Foundation: Galactic Frontier, et qu'est-ce qui vous motive à produire et à partager du contenu avec la communauté semaine après semaine ?",
+        "interview_a1": "Je crée du contenu sur les jeux mobiles et PC depuis environ 9 ans maintenant. Je cherchais un nouveau jeu à couvrir quand j'ai découvert FGF. J'ai aimé le jeu en l'essayant et il avait les fonctionnalités que je recherchais, alors je l'ai choisi. Ma motivation vient du fait que j'adore tout simplement parler des jeux qui m'intéressent et auxquels je joue. J'aime aussi enseigner aux autres comment faire les choses mieux et plus efficacement, c'est donc un choix idéal pour moi.",
+        "interview_q2_cat": "Théorie & Processus Analytique",
+        "interview_q2": "Vos tier lists de héros et vos guides d'optimisation de flotte sont extrêmement détaillés. Pouvez-vous nous expliquer votre processus de recherche lors des nouvelles mises à jour et comment vous traduisez des chiffres complexes en guides accessibles pour vos spectateurs ?",
+        "interview_a2": "L'expérience est la clé. Je ne ferai pas de contenu sur un sujet à moins de le comprendre et de sentir que je peux l'enseigner aux autres d'abord. Combiné avec l'expérience que j'ai acquise au fil des ans en faisant la même chose dans d'autres jeux, ce processus est devenu une seconde nature pour moi. Ma stratégie a toujours été de maîtriser le sujet avant d'essayer de l'enseigner.",
+        "interview_q3_cat": "Préférences Créatives",
+        "interview_q3": "Entre la rédaction de guides théoriques structurés et l'enregistrement de combats PvP/SvS intenses en temps réel, quel type de vidéo trouvez-vous le plus gratifiant et le plus amusant à réaliser, et pourquoi ?",
+        "interview_a3": "Cette question dépend vraiment du jeu. Par le passé, j'ai généralement été le genre de geek branché théorie et économie, mais dans FGF, je trouve le PvP extrêmement amusant et gratifiant. Honnêtement, comme ma playlist en témoigne, c'est la mécanique de jeu que j'ai le plus appréciée dans ce jeu.",
+        "interview_q4_cat": "Sujets Communautaires",
+        "interview_q4": "À quel point les retours des spectateurs et les demandes de guilde rencontrent-ils les sujets de vos prochaines vidéos, et comment équilibrez-vous la création de vidéos qui vous passionnent personnellement avec ce que la communauté souhaite voir ?",
+        "interview_a4": "J'adore quand ma communauté et les membres de ma guilde suggèrent du contenu qu'ils aimeraient voir. Leurs idées me donnent de l'inspiration et de la motivation, et il n'y a rien de mieux que de pouvoir créer quelque chose qu'ils ont demandé et de les voir l'apprécier. La plupart du temps, mes intérêts dans le jeu s'alignent avec ce que la communauté veut voir, donc tout le monde y trouve son compte.",
+        "interview_q5_cat": "Conseils aux Nouveaux Créateurs",
+        "interview_q5": "En tant que voix reconnue dans le domaine de la stratégie mobile, quel est le conseil le plus important que vous donneriez à un joueur qui souhaite lancer sa propre chaîne de création de contenu aujourd'hui ?",
+        "interview_a5": "Mon conseil numéro un est de choisir un jeu que vous aimez sincèrement et auquel vous prenez plaisir à jouer. Quand vous êtes passionné par le jeu, créer du contenu est amusant au lieu de ressembler à un travail. Ce plaisir se ressent dans vos vidéos, et cela fait une énorme différence pour rester régulier. Construire une chaîne à succès prend du temps, et si vous appréciez réellement le processus, vous avez beaucoup plus de chances de persévérer suffisamment longtemps pour que votre chaîne grandisse et atteigne son potentiel."
     }
 }
