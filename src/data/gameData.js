@@ -1294,5 +1294,35 @@ export const eventsData = [
     proTips: [
       { title: 'events.trade_route_defense_escort', content: 'events.trade_route_defense_escort_desc' }
     ]
+  },
+  {
+    id: 'commerce_guild_duel_league',
+    title: 'events.commerce_guild_duel_league_title',
+    publishDate: '2026-07-04T15:00:00Z',
+    isNew: true,
+    cycle: 'events.commerce_guild_duel_league_cycle',
+    type: 'events.commerce_guild_duel_league_type',
+    description: 'events.commerce_guild_duel_league_desc',
+    leagueRanks: [
+      { rank: 'bronze', points: '10,000–13,999', rangeMin: 10000, rangeMax: 13999, demote: false },
+      { rank: 'silver', points: '14,000–17,999', rangeMin: 14000, rangeMax: 17999, demote: false },
+      { rank: 'gold', points: '18,000–21,999', rangeMin: 18000, rangeMax: 21999, demote: false },
+      { rank: 'platinum', points: '22,000–27,999', rangeMin: 22000, rangeMax: 27999, demote: false },
+      { rank: 'diamond', points: '28,000–33,999', rangeMin: 28000, rangeMax: 33999, demote: true },
+      { rank: 'master', points: '34,000+', rangeMin: 34000, rangeMax: null, demote: true }
+    ],
+    leagueNametags: [
+      { rank: 'silver', name: 'League Elite', duration: 14, nameKey: 'events.commerce_guild_duel_league_nametag_silver' },
+      { rank: 'gold', name: 'League Vanguard', duration: 14, nameKey: 'events.commerce_guild_duel_league_nametag_gold' },
+      { rank: 'platinum', name: 'League Champion', duration: 14, nameKey: 'events.commerce_guild_duel_league_nametag_platinum' },
+      { rank: 'diamond', name: 'League King', duration: 14, nameKey: 'events.commerce_guild_duel_league_nametag_diamond' },
+      { rank: 'master', name: 'League Legend', duration: 14, nameKey: 'events.commerce_guild_duel_league_nametag_master' }
+    ],
+    tacticsTitle: 'events.commerce_guild_duel_league_ranks_rules_title',
+    tactics: [
+      { title: 'events.commerce_guild_duel_league_ranks_rules_title', content: 'events.commerce_guild_duel_league_ranks_rules' },
+      { title: 'events.commerce_guild_duel_league_match_rules_title', content: 'events.commerce_guild_duel_league_match_rules' },
+      { title: 'events.commerce_guild_duel_league_rewards_title', content: 'events.commerce_guild_duel_league_rewards_desc' }
+    ]
   }
 ];

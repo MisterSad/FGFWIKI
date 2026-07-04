@@ -335,8 +335,236 @@ export default function EventGuide() {
                             )}
                         </div>
 
-                        {/* Score Grid */}
-                        {selectedEvent.scoreGrid && (
+                        {/* Graphical League Ranks Section */}
+                        {selectedEvent.leagueRanks && (
+                            <div style={{ marginBottom: '2.5rem' }}>
+                                <h4 style={{ margin: '0 0 1.2rem', color: 'var(--gold-bright)', fontSize: '1.3rem', display: 'flex', alignItems: 'center', gap: '0.6rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
+                                    <Trophy size={20} color="var(--gold)" />
+                                    <span className="label-text">{t('events_ui.league_ranks')}</span>
+                                </h4>
+                                <div style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                                    gap: '1rem',
+                                    marginBottom: '2rem'
+                                }}>
+                                    {selectedEvent.leagueRanks.map((rankObj) => {
+                                        let rankColor = 'var(--text-secondary)';
+                                        let rankBg = 'rgba(255,255,255,0.02)';
+                                        let rankBorder = 'rgba(255,255,255,0.05)';
+                                        let rankGlow = 'rgba(255,255,255,0)';
+                                        
+                                        if (rankObj.rank === 'bronze') {
+                                            rankColor = '#A08240';
+                                            rankBg = 'linear-gradient(135deg, rgba(160, 130, 64, 0.05) 0%, rgba(160, 130, 64, 0.15) 100%)';
+                                            rankBorder = 'rgba(160, 130, 64, 0.3)';
+                                        } else if (rankObj.rank === 'silver') {
+                                            rankColor = '#C0C0C0';
+                                            rankBg = 'linear-gradient(135deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.15) 100%)';
+                                            rankBorder = 'rgba(192, 192, 192, 0.3)';
+                                        } else if (rankObj.rank === 'gold') {
+                                            rankColor = 'var(--gold-bright)';
+                                            rankBg = 'linear-gradient(135deg, rgba(232, 201, 106, 0.05) 0%, rgba(232, 201, 106, 0.15) 100%)';
+                                            rankBorder = 'rgba(232, 201, 106, 0.3)';
+                                            rankGlow = 'rgba(232, 201, 106, 0.1)';
+                                        } else if (rankObj.rank === 'platinum') {
+                                            rankColor = '#4ECDC4';
+                                            rankBg = 'linear-gradient(135deg, rgba(78, 205, 196, 0.05) 0%, rgba(78, 205, 196, 0.15) 100%)';
+                                            rankBorder = 'rgba(78, 205, 196, 0.3)';
+                                            rankGlow = 'rgba(78, 205, 196, 0.1)';
+                                        } else if (rankObj.rank === 'diamond') {
+                                            rankColor = '#63B3ED';
+                                            rankBg = 'linear-gradient(135deg, rgba(99, 179, 237, 0.05) 0%, rgba(99, 179, 237, 0.15) 100%)';
+                                            rankBorder = 'rgba(99, 179, 237, 0.3)';
+                                            rankGlow = 'rgba(99, 179, 237, 0.15)';
+                                        } else if (rankObj.rank === 'master') {
+                                            rankColor = '#B794F4';
+                                            rankBg = 'linear-gradient(135deg, rgba(183, 148, 244, 0.05) 0%, rgba(183, 148, 244, 0.15) 100%)';
+                                            rankBorder = 'rgba(183, 148, 244, 0.3)';
+                                            rankGlow = 'rgba(183, 148, 244, 0.2)';
+                                        }
+                                        
+                                        return (
+                                            <div 
+                                                key={rankObj.rank} 
+                                                style={{
+                                                    background: rankBg,
+                                                    border: `1px solid ${rankBorder}`,
+                                                    borderRadius: '4px',
+                                                    padding: '1rem',
+                                                    textAlign: 'center',
+                                                    position: 'relative',
+                                                    boxShadow: `0 4px 20px ${rankGlow}`,
+                                                    transition: 'all 0.3s ease',
+                                                    overflow: 'hidden'
+                                                }}
+                                            >
+                                                <div style={{ 
+                                                    textTransform: 'uppercase', 
+                                                    fontWeight: 'bold', 
+                                                    fontSize: '1rem', 
+                                                    color: rankColor, 
+                                                    letterSpacing: '1px',
+                                                    marginBottom: '0.4rem'
+                                                }}>
+                                                    {t(`events.commerce_guild_duel_league_${rankObj.rank}`)}
+                                                </div>
+                                                <div style={{ 
+                                                    fontFamily: 'var(--font-mono)', 
+                                                    fontSize: '0.85rem', 
+                                                    color: 'var(--text-primary)',
+                                                    marginBottom: '0.8rem'
+                                                }}>
+                                                    {rankObj.points}
+                                                </div>
+                                                
+                                                <div style={{
+                                                    fontSize: '0.7rem',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    gap: '0.25rem',
+                                                    color: rankObj.demote ? 'var(--accent-red)' : 'var(--accent-teal)',
+                                                    background: rankObj.demote ? 'rgba(196, 48, 48, 0.1)' : 'rgba(78, 205, 196, 0.1)',
+                                                    padding: '2px 6px',
+                                                    borderRadius: '2px',
+                                                    fontWeight: '600'
+                                                }}>
+                                                    {rankObj.demote ? (
+                                                        <>
+                                                            <AlertTriangle size={10} />
+                                                            {t('events_ui.demotion_active')}
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <Star size={10} />
+                                                            {t('events_ui.demotion_safe')}
+                                                        </>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Graphical Nametags Section */}
+                        {selectedEvent.leagueNametags && (
+                            <div style={{ marginBottom: '2.5rem' }}>
+                                <h4 style={{ margin: '0 0 1.2rem', color: 'var(--gold-bright)', fontSize: '1.3rem', display: 'flex', alignItems: 'center', gap: '0.6rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
+                                    <Star size={20} color="var(--gold)" />
+                                    <span className="label-text">{t('events_ui.league_nametags')}</span>
+                                </h4>
+                                <div style={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    gap: '0.8rem',
+                                    background: 'var(--bg-void)',
+                                    border: '1px solid var(--border)',
+                                    padding: '1.2rem',
+                                    borderRadius: '4px'
+                                }}>
+                                    {selectedEvent.leagueNametags.map((tag) => {
+                                        let borderGlow = 'rgba(255,255,255,0.2)';
+                                        let tagBg = 'rgba(255,255,255,0.02)';
+                                        let rankBadgeColor = '#C0C0C0';
+                                        
+                                        if (tag.rank === 'silver') {
+                                            borderGlow = '#C0C0C0';
+                                            tagBg = 'rgba(192, 192, 192, 0.05)';
+                                            rankBadgeColor = '#C0C0C0';
+                                        } else if (tag.rank === 'gold') {
+                                            borderGlow = 'var(--gold)';
+                                            tagBg = 'rgba(201, 168, 76, 0.05)';
+                                            rankBadgeColor = 'var(--gold-bright)';
+                                        } else if (tag.rank === 'platinum') {
+                                            borderGlow = '#4ECDC4';
+                                            tagBg = 'rgba(78, 205, 196, 0.05)';
+                                            rankBadgeColor = '#4ECDC4';
+                                        } else if (tag.rank === 'diamond') {
+                                            borderGlow = '#63B3ED';
+                                            tagBg = 'rgba(99, 179, 237, 0.05)';
+                                            rankBadgeColor = '#90CDF4';
+                                        } else if (tag.rank === 'master') {
+                                            borderGlow = '#B794F4';
+                                            tagBg = 'rgba(183, 148, 244, 0.05)';
+                                            rankBadgeColor = '#D6BCFA';
+                                        }
+                                        
+                                        return (
+                                            <div 
+                                                key={tag.rank}
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'space-between',
+                                                    gap: '1rem',
+                                                    padding: '0.8rem 1.2rem',
+                                                    background: tagBg,
+                                                    border: `1px solid rgba(255, 255, 255, 0.05)`,
+                                                    borderLeft: `4px solid ${borderGlow}`,
+                                                    borderRadius: '2px',
+                                                    flexWrap: 'wrap'
+                                                }}
+                                            >
+                                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: '1', minWidth: '200px' }}>
+                                                    <span style={{ 
+                                                        fontSize: '0.75rem', 
+                                                        fontWeight: 'bold', 
+                                                        textTransform: 'uppercase', 
+                                                        color: rankBadgeColor,
+                                                        background: 'rgba(0,0,0,0.3)',
+                                                        padding: '3px 8px',
+                                                        borderRadius: '2px',
+                                                        border: `1px solid ${borderGlow}33`
+                                                    }}>
+                                                        {t(`events.commerce_guild_duel_league_${tag.rank}`)}
+                                                    </span>
+                                                    
+                                                    <div style={{
+                                                        background: '#090B10',
+                                                        border: `1px solid ${borderGlow}`,
+                                                        boxShadow: `0 0 10px ${borderGlow}33`,
+                                                        padding: '5px 12px',
+                                                        borderRadius: '2px',
+                                                        display: 'inline-flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        position: 'relative'
+                                                    }}>
+                                                        <span style={{
+                                                            color: rankBadgeColor,
+                                                            fontSize: '0.8rem',
+                                                            fontWeight: 'bold',
+                                                            fontFamily: 'var(--font-label)',
+                                                            textTransform: 'uppercase',
+                                                            letterSpacing: '1px',
+                                                            textShadow: `0 0 6px ${borderGlow}`
+                                                        }}>
+                                                            {t(tag.nameKey)}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div style={{
+                                                    fontSize: '0.85rem',
+                                                    color: 'var(--text-secondary)',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    gap: '0.4rem'
+                                                }}>
+                                                    <Clock size={14} />
+                                                    <span>{tag.duration} {t('events_ui.days')}</span>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
+
+                            {selectedEvent.scoreGrid && (
                             <div style={{ marginBottom: '2.5rem', overflowX: 'auto' }}>
                                 <h4 style={{ margin: '0 0 1rem', color: 'var(--text-primary)', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                     <BarChart2 size={20} /> <span className="label-text">{t('events_ui.score_grid')}</span>

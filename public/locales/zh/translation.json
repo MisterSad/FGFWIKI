@@ -878,7 +878,28 @@
         "trade_route_defense_phases": "相战术",
         "trade_route_defense_phases_desc": "第一阶段：集中精力对集群舰队造成快速伤害并避免分配护航。第2阶段：在神殿和中等威胁之间分配伤害；最多需要一名护送。第三阶段：一艘巨大的旗舰出现，需要立即全队护航。",
         "trade_route_defense_escort": "护航策略",
-        "trade_route_defense_escort_desc": "选择尽可能最高的难度级别。船舶损失是暂时的，但获得这些稀有奖励具有永久的账户价值。手动团队协调优于自动加入。根据护航队的耐用性调整护航轮换。"
+        "trade_route_defense_escort_desc": "选择尽可能最高的难度级别。船舶损失是暂时的，但获得这些稀有奖励具有永久的账户价值。手动团队协调优于自动加入。根据护航队的耐用性调整护航轮换。",
+        "commerce_guild_duel_league_title": "商会对决联赛",
+        "commerce_guild_duel_league_cycle": "Duration: 1 month (Testing)",
+        "commerce_guild_duel_league_type": "Cross-Server Guild PVP",
+        "commerce_guild_duel_league_desc": "Exciting news from the developers! An all-new League gameplay is coming to the Cross-Server Commerce Guild Duel. Starting July 6th, servers open for more than 6 weeks will enter a one-month testing phase to refine this competitive format. Guilds will battle, accumulate Rank Points, and climb from Bronze all the way to Master to unlock exclusive rewards and special temporary nametags.",
+        "commerce_guild_duel_league_ranks_rules": "The League features six ranks: Bronze, Silver, Gold, Platinum, Diamond, and Master, each divided into multiple star levels. Ranks increase as your Guild meets specific Point requirements. In Bronze, Silver, Gold, and Platinum, you are safe: there are no demotions upon defeat. However, Diamond and Master ranks are highly competitive, and losses can deduct points, potentially demoting your Guild if you fall below the threshold.",
+        "commerce_guild_duel_league_match_rules": "At the end of each round, Rank Points are calculated based on your match results, overall Guild performance, and individual member contributions. Winning yields the highest points, but a strong performance in a loss still provides a solid point boost. Keep in mind that Diamond and Master guilds face extra point deductions when defeated, so coordinate your attacks carefully!",
+        "commerce_guild_duel_league_rewards_desc": "Prizes are distributed via mail at the end of the event: Day 5 rewards are based on your total accumulated Duel Points from Days 1-5, and Day 6 rewards are based on your final ranking in the Duel Stage. Reaching higher ranks also grants temporary 14-day Nametags to display your Guild's prestige.",
+        "commerce_guild_duel_league_ranks_rules_title": "League Ranks & Rules",
+        "commerce_guild_duel_league_match_rules_title": "Match & Performance Points",
+        "commerce_guild_duel_league_rewards_title": "Reward Distribution",
+        "commerce_guild_duel_league_nametag_silver": "League Elite",
+        "commerce_guild_duel_league_nametag_gold": "League Vanguard",
+        "commerce_guild_duel_league_nametag_platinum": "League Champion",
+        "commerce_guild_duel_league_nametag_diamond": "League King",
+        "commerce_guild_duel_league_nametag_master": "League Legend",
+        "commerce_guild_duel_league_bronze": "青铜",
+        "commerce_guild_duel_league_silver": "白银",
+        "commerce_guild_duel_league_gold": "黄金",
+        "commerce_guild_duel_league_platinum": "铂金",
+        "commerce_guild_duel_league_diamond": "钻石",
+        "commerce_guild_duel_league_master": "大师"
     },
     "events_ui": {
         "golden_rule": "黄金法则",
@@ -895,7 +916,12 @@
         "pro_tips": "专家提示",
         "tips": "提示",
         "limited_event": "限时",
-        "currently_suspended": "目前已暂停"
+        "currently_suspended": "目前已暂停",
+        "league_ranks": "League Ranks & Points",
+        "league_nametags": "Exclusive League Nametags",
+        "demotion_active": "Demotion Active",
+        "demotion_safe": "Safe (No Drop)",
+        "days": "days"
     },
     "builder_data": {
         "hp_none": "无",

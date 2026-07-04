@@ -878,7 +878,28 @@
         "trade_route_defense_phases": "フェーズ戦術",
         "trade_route_defense_phases_desc": "フェーズ 1: 群れの艦隊に急速なダメージを与えることに集中し、護衛の割り当てを避けます。フェーズ 2: 神社と中程度の脅威にダメージを分散します。最大でも 1 人の付き添いが必要です。フェーズ 3: 巨大な旗艦が出現し、直ちにチーム全体の護衛任務が必要になります。",
         "trade_route_defense_escort": "エスコート戦略",
-        "trade_route_defense_escort_desc": "可能な限り最高の難易度を選択してください。船の損失は一時的なものですが、これらの希少な報酬を確保することには永久的なアカウント価値があります。手動によるチーム調整は、自動参加よりも優れています。護送船団の耐久性に基づいて護衛のローテーションを調整します。"
+        "trade_route_defense_escort_desc": "可能な限り最高の難易度を選択してください。船の損失は一時的なものですが、これらの希少な報酬を確保することには永久的なアカウント価値があります。手動によるチーム調整は、自動参加よりも優れています。護送船団の耐久性に基づいて護衛のローテーションを調整します。",
+        "commerce_guild_duel_league_title": "ギルド対決リーグ",
+        "commerce_guild_duel_league_cycle": "Duration: 1 month (Testing)",
+        "commerce_guild_duel_league_type": "Cross-Server Guild PVP",
+        "commerce_guild_duel_league_desc": "Exciting news from the developers! An all-new League gameplay is coming to the Cross-Server Commerce Guild Duel. Starting July 6th, servers open for more than 6 weeks will enter a one-month testing phase to refine this competitive format. Guilds will battle, accumulate Rank Points, and climb from Bronze all the way to Master to unlock exclusive rewards and special temporary nametags.",
+        "commerce_guild_duel_league_ranks_rules": "The League features six ranks: Bronze, Silver, Gold, Platinum, Diamond, and Master, each divided into multiple star levels. Ranks increase as your Guild meets specific Point requirements. In Bronze, Silver, Gold, and Platinum, you are safe: there are no demotions upon defeat. However, Diamond and Master ranks are highly competitive, and losses can deduct points, potentially demoting your Guild if you fall below the threshold.",
+        "commerce_guild_duel_league_match_rules": "At the end of each round, Rank Points are calculated based on your match results, overall Guild performance, and individual member contributions. Winning yields the highest points, but a strong performance in a loss still provides a solid point boost. Keep in mind that Diamond and Master guilds face extra point deductions when defeated, so coordinate your attacks carefully!",
+        "commerce_guild_duel_league_rewards_desc": "Prizes are distributed via mail at the end of the event: Day 5 rewards are based on your total accumulated Duel Points from Days 1-5, and Day 6 rewards are based on your final ranking in the Duel Stage. Reaching higher ranks also grants temporary 14-day Nametags to display your Guild's prestige.",
+        "commerce_guild_duel_league_ranks_rules_title": "League Ranks & Rules",
+        "commerce_guild_duel_league_match_rules_title": "Match & Performance Points",
+        "commerce_guild_duel_league_rewards_title": "Reward Distribution",
+        "commerce_guild_duel_league_nametag_silver": "League Elite",
+        "commerce_guild_duel_league_nametag_gold": "League Vanguard",
+        "commerce_guild_duel_league_nametag_platinum": "League Champion",
+        "commerce_guild_duel_league_nametag_diamond": "League King",
+        "commerce_guild_duel_league_nametag_master": "League Legend",
+        "commerce_guild_duel_league_bronze": "ブロンズ",
+        "commerce_guild_duel_league_silver": "シルバー",
+        "commerce_guild_duel_league_gold": "ゴールド",
+        "commerce_guild_duel_league_platinum": "プラチナ",
+        "commerce_guild_duel_league_diamond": "ダイヤモンド",
+        "commerce_guild_duel_league_master": "マスター"
     },
     "events_ui": {
         "golden_rule": "ゴールデンルール",
@@ -895,7 +916,12 @@
         "pro_tips": "プロのヒント",
         "tips": "ヒント",
         "limited_event": "期間限定",
-        "currently_suspended": "現在休止中"
+        "currently_suspended": "現在休止中",
+        "league_ranks": "League Ranks & Points",
+        "league_nametags": "Exclusive League Nametags",
+        "demotion_active": "Demotion Active",
+        "demotion_safe": "Safe (No Drop)",
+        "days": "days"
     },
     "builder_data": {
         "hp_none": "なし",

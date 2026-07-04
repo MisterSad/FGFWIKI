@@ -880,7 +880,28 @@
         "trade_route_defense_phases_desc": "Phase 1 : Concentrez-vous sur les dégâts rapides contre les essaims de vaisseaux légers sans utiliser d'escorte. Phase 2 : Répartissez vos attaques sur les shrines et menaces moyennes avec un seul escorteur maximum. Phase 3 : Un vaisseau géant apparaît, exigeant une escorte immédiate de toute l'équipe.",
         "trade_route_defense_escort": "Stratégie d'Escorte",
         "trade_route_defense_escort_desc": "Sélectionnez toujours le niveau de difficulté maximal. Il n'y a pas de perte de vaisseau dans cet événement, ce qui rend l'obtention de ces récompenses rares sans risque. La coordination manuelle surpasse largement le bouton auto-join. Ajustez les rotations d'escorte selon les points de vie du convoi.",
-        "mothers_day_protip_gift_title": "Profitez des récompenses à offrir"
+        "mothers_day_protip_gift_title": "Profitez des récompenses à offrir",
+        "commerce_guild_duel_league_title": "Ligue de duel des guildes de commerce",
+        "commerce_guild_duel_league_cycle": "Durée : 1 mois (Test)",
+        "commerce_guild_duel_league_type": "JcJ de guilde inter-serveurs",
+        "commerce_guild_duel_league_desc": "Excellente nouvelle partagée par les développeurs ! Un tout nouveau système de Ligue fait son apparition dans le Duel des guildes de commerce inter-serveurs. À partir du 6 juillet, les serveurs ouverts depuis plus de 6 semaines débuteront une phase de test d'un mois. Les guildes vont s'affronter pour accumuler des Points de Rang, grimper de Bronze jusqu'à Maître, et débloquer des récompenses exclusives ainsi que des titres temporaires.",
+        "commerce_guild_duel_league_ranks_rules": "La Ligue comprend six rangs : Bronze, Argent, Or, Platine, Diamant et Maître, chacun divisé en plusieurs étoiles. Les rangs augmentent dès que la guilde atteint les paliers de points requis. En Bronze, Argent, Or et Platine, vous êtes en sécurité : il n'y a pas de relégation en cas de défaite. En revanche, les rangs Diamant et Maître sont très compétitifs et les défaites y entraînent des retraits de points, pouvant causer une relégation si vous passez sous le seuil requis.",
+        "commerce_guild_duel_league_match_rules": "À la fin de chaque manche, les Points de Rang sont calculés selon le résultat du match, la performance globale de la guilde et les contributions des membres. La victoire rapporte un maximum de points, mais une bonne performance lors d'une défaite permet tout de même d'obtenir des points. Attention, les guildes Diamant et Maître subissent des déductions supplémentaires en cas de défaite, coordonnez donc bien vos attaques !",
+        "commerce_guild_duel_league_rewards_desc": "Les récompenses sont envoyées par courrier à la fin de l'événement : le Jour 5 selon les points accumulés des jours 1 à 5, et le Jour 6 selon votre classement final de la phase de Duel. Atteindre les rangs supérieurs débloque également des Titres exclusifs de 14 jours.",
+        "commerce_guild_duel_league_ranks_rules_title": "Rangs de Ligue et Règles",
+        "commerce_guild_duel_league_match_rules_title": "Points de Match et de Performance",
+        "commerce_guild_duel_league_rewards_title": "Distribution des Récompenses",
+        "commerce_guild_duel_league_nametag_silver": "Élite de la Ligue",
+        "commerce_guild_duel_league_nametag_gold": "Avant-garde de la Ligue",
+        "commerce_guild_duel_league_nametag_platinum": "Champion de la Ligue",
+        "commerce_guild_duel_league_nametag_diamond": "Roi de la Ligue",
+        "commerce_guild_duel_league_nametag_master": "Légende de la Ligue",
+        "commerce_guild_duel_league_bronze": "Bronze",
+        "commerce_guild_duel_league_silver": "Argent",
+        "commerce_guild_duel_league_gold": "Or",
+        "commerce_guild_duel_league_platinum": "Platine",
+        "commerce_guild_duel_league_diamond": "Diamant",
+        "commerce_guild_duel_league_master": "Maître"
     },
     "events_ui": {
         "golden_rule": "Règle d'or",
@@ -897,7 +918,12 @@
         "pro_tips": "Astuces pro",
         "tips": "Conseils",
         "limited_event": "Événement Ponctuel",
-        "currently_suspended": "Actuellement suspendu"
+        "currently_suspended": "Actuellement suspendu",
+        "league_ranks": "Rangs de Ligue et Points",
+        "league_nametags": "Titres de Ligue Exclusifs",
+        "demotion_active": "Relégation Active",
+        "demotion_safe": "Sécurisé (Pas de baisse)",
+        "days": "jours"
     },
     "builder_data": {
         "hp_none": "Aucun",
