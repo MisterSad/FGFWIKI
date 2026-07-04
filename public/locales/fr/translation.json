@@ -1463,6 +1463,10 @@
         "playlist_title": "BASE DE DONNÉES VIDÉO COMPLÈTE",
         "search_placeholder": "Rechercher des guides et vidéos...",
         "load_more": "Charger plus de vidéos",
-        "x_btn": "Visiter X"
+        "x_btn": "Visiter X",
+        "interview_title": "Entretien exclusif : 5 questions pour Mirandus",
+        "interview_subtitle": "Sur son inspiration, son processus de recherche, ses préférences et ses conseils.",
+        "expand_all": "[ Tout afficher ]",
+        "collapse_all": "[ Tout masquer ]"
     }
 }

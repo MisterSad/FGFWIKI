@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Video, ArrowLeft, ArrowUpRight, Search } from 'lucide-react';
+import { Video, ArrowLeft, ArrowUpRight, Search, ChevronDown, MessageSquare } from 'lucide-react';
 import staticVideos from '../data/mirandusVideos.json';
 
 // Creators data list static configuration
@@ -20,8 +20,52 @@ const creators = [
     }
 ];
 
+const interviewQuestions = [
+    {
+        category: "Inspiration & Motivation",
+        categoryFr: "Inspiration & Motivation",
+        question: "What first inspired you to start creating video guides for Foundation: Galactic Frontier, and what keeps you motivated to produce and share content with the community week after week?",
+        questionFr: "Qu'est-ce qui vous a d'abord inspiré à créer des guides vidéo pour Foundation: Galactic Frontier, et qu'est-ce qui vous motive à produire et à partager du contenu avec la communauté semaine après semaine ?",
+        answer: "I have been making content on mobile and PC games for about 9 years now. I was looking for a new game to cover when I found FGF, I liked it when I tried it and it had the features I was looking for so I chose it. My motivation is that I just love to talk about games that I am interested in and playing, I also love to teach others how to do things better and with more efficiency so it's a great fit for me.",
+        answerFr: "Je crée du contenu sur les jeux mobiles et PC depuis environ 9 ans maintenant. Je cherchais un nouveau jeu à couvrir quand j'ai découvert FGF. J'ai aimé le jeu en l'essayant et il avait les fonctionnalités que je recherchais, alors je l'ai choisi. Ma motivation vient du fait que j'adore tout simplement parler des jeux qui m'intéressent et auxquels je joue. J'aime aussi enseigner aux autres comment faire les choses mieux et plus efficacement, c'est donc un choix idéal pour moi."
+    },
+    {
+        category: "Theorycrafting & Analytical Process",
+        categoryFr: "Théorie & Processus Analytique",
+        question: "Your hero tier lists and fleet optimization guides are highly detailed. Could you walk us through your process for researching new updates and translating complex numbers into accessible guides for your viewers?",
+        questionFr: "Vos tier lists de héros et vos guides d'optimisation de flotte sont extrêmement détaillés. Pouvez-vous nous expliquer votre processus de recherche lors des nouvelles mises à jour et comment vous traduisez des chiffres complexes en guides accessibles pour vos spectateurs ?",
+        answer: "Experience is the key, I won't make content on something unless I understand it and feel like I can teach others about it first, combined with the experience I have had over the years doing this same thing in other games that makes this process old hat for me. Know it first, before you try to teach it has always been my gameplan.",
+        answerFr: "L'expérience est la clé. Je ne ferai pas de contenu sur un sujet à moins de le comprendre et de sentir que je peux l'enseigner aux autres d'abord. Combiné avec l'expérience que j'ai acquise au fil des ans en faisant la même chose dans d'autres jeux, ce processus est devenu une seconde nature pour moi. Ma stratégie a toujours été de maîtriser le sujet avant d'essayer de l'enseigner."
+    },
+    {
+        category: "Creative Preferences",
+        categoryFr: "Préférences Créatives",
+        question: "Between writing structured theorycrafting guides and recording intense, real-time PvP/SvS battles, which type of video do you find the most rewarding and fun to make, and why?",
+        questionFr: "Entre la rédaction de guides théoriques structurés et l'enregistrement de combats PvP/SvS intenses en temps réel, quel type de vidéo trouvez-vous le plus gratifiant et le plus amusant à réaliser, et pourquoi ?",
+        answer: "That question depends on the game really, I have always usually been that theory crafting, economy nerd in the past, but in FGF I have found PVP to be extremely fun and rewarding and honestly as my playlist can attest, I have enjoyed that gameplay mechanic the best in this game.",
+        answerFr: "Cette question dépend vraiment du jeu. Par le passé, j'ai généralement été le genre de geek branché théorie et économie, mais dans FGF, je trouve le PvP extrêmement amusant et gratifiant. Honnêtement, comme ma playlist en témoigne, c'est la mécanique de jeu que j'ai le plus appréciée dans ce jeu."
+    },
+    {
+        category: "Community-driven Topics",
+        categoryFr: "Sujets Communautaires",
+        question: "How much does viewer feedback and guild requests influence the topics of your upcoming videos, and how do you balance making videos you are personally passionate about with what the community wants to see?",
+        questionFr: "À quel point les retours des spectateurs et les demandes de guilde rencontrent-ils les sujets de vos prochaines vidéos, et comment équilibrez-vous la création de vidéos qui vous passionnent personnellement avec ce que la communauté souhaite voir ?",
+        answer: "I love it when my community and guild members suggest content they'd like to see. Their ideas give me inspiration and motivation, and there's nothing better than being able to create something they requested and seeing them enjoy it. Most of the time, my interests in the game line up with what the community wants to see, so it ends up being a win-win for everyone.",
+        answerFr: "J'adore quand ma communauté et les membres de ma guilde suggèrent du contenu qu'ils aimeraient voir. Leurs idées me donnent de l'inspiration et de la motivation, et il n'y a rien de mieux que de pouvoir créer quelque chose qu'ils ont demandé et de les voir l'apprécier. La plupart du temps, mes intérêts dans le jeu s'alignent avec ce que la communauté veut voir, donc tout le monde y trouve son compte."
+    },
+    {
+        category: "Advising New Creators",
+        categoryFr: "Conseils aux Nouveaux Créateurs",
+        question: "As a well-established voice in the mobile strategy space, what is the single most important piece of advice you would give to a gamer looking to start their own content creation channel today?",
+        questionFr: "En tant que voix reconnue dans le domaine de la stratégie mobile, quel est le conseil le plus important que vous donneriez à un joueur qui souhaite lancer sa propre chaîne de création de contenu aujourd'hui ?",
+        answer: "My number one piece of advice is to choose a game you genuinely love and enjoy playing. When you're passionate about the game, creating content feels fun instead of feeling like a job. That enjoyment shows in your videos, and it makes a huge difference when it comes to staying consistent. Building a successful channel takes time, and if you actually enjoy the process, you're much more likely to stick with it long enough for your channel to grow and reach its potential.",
+        answerFr: "Mon conseil numéro un est de choisir un jeu que vous aimez sincèrement et auquel vous prenez plaisir à jouer. Quand vous êtes passionné par le jeu, créer du contenu est amusant au lieu de ressembler à un travail. Ce plaisir se ressent dans vos vidéos, et cela fait une énorme différence pour rester régulier. Construire une chaîne à succès prend du temps, et si vous appréciez réellement le processus, vous avez beaucoup plus de chances de persévérer suffisamment longtemps pour que votre chaîne grandisse et atteigne son potentiel."
+    }
+];
+
 export default function CreatorsCorner() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const lang = (i18n.language || 'en').split('-')[0];
     const { creatorId } = useParams();
     const navigate = useNavigate();
 
@@ -32,6 +76,30 @@ export default function CreatorsCorner() {
     const [searchQuery, setSearchQuery] = useState('');
     const [visibleCount, setVisibleCount] = useState(12);
     const [loading, setLoading] = useState(false);
+
+    // Collapsible Interview States
+    const [isInterviewOpen, setIsInterviewOpen] = useState(false);
+    const [openQuestions, setOpenQuestions] = useState({ 0: true }); // First question open by default
+
+    // Toggle individual question
+    const toggleQuestion = (index) => {
+        setOpenQuestions(prev => ({
+            ...prev,
+            [index]: !prev[index]
+        }));
+    };
+
+    // Expand all questions
+    const expandAll = (e) => {
+        e.stopPropagation(); // Avoid triggering main panel collapse
+        setOpenQuestions({ 0: true, 1: true, 2: true, 3: true, 4: true });
+    };
+
+    // Collapse all questions
+    const collapseAll = (e) => {
+        e.stopPropagation(); // Avoid triggering main panel collapse
+        setOpenQuestions({});
+    };
 
     // Robust RSS tag content retriever helper
     const getTagContent = (element, tag) => {
@@ -320,6 +388,334 @@ export default function CreatorsCorner() {
                         </div>
                     </div>
                 </div>
+
+                {/* Collapsible Interview Section */}
+                {selectedCreator.id === 'mirandus-plays' && (
+                    <div
+                        className="glass-panel"
+                        style={{
+                            padding: '2rem',
+                            border: '1px solid var(--gold)',
+                            borderRadius: '8px',
+                            marginBottom: '4rem',
+                            background: 'rgba(13, 14, 20, 0.75)',
+                            backdropFilter: 'blur(12px)',
+                            boxShadow: isInterviewOpen ? '0 0 35px rgba(212, 175, 55, 0.2)' : '0 10px 30px rgba(0, 0, 0, 0.4)',
+                            transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                            position: 'relative'
+                        }}
+                    >
+                        <div className="corner-tl"></div>
+                        <div className="corner-br"></div>
+                        <div className="scan-line" style={{ pointerEvents: 'none' }}></div>
+
+                        {/* Header Toggle */}
+                        <div
+                            onClick={() => setIsInterviewOpen(!isInterviewOpen)}
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                cursor: 'pointer',
+                                userSelect: 'none'
+                            }}
+                        >
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1.2rem', textAlign: 'left' }}>
+                                <div style={{
+                                    background: 'rgba(201, 168, 76, 0.1)',
+                                    border: '1px solid var(--gold)',
+                                    borderRadius: '50%',
+                                    width: '48px',
+                                    height: '48px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: 'var(--gold-bright)',
+                                    boxShadow: '0 0 15px rgba(201, 168, 76, 0.15)',
+                                    flexShrink: 0
+                                }}>
+                                    <MessageSquare size={22} />
+                                </div>
+                                <div>
+                                    <h3 style={{
+                                        margin: 0,
+                                        fontFamily: 'var(--font-hero)',
+                                        fontSize: 'clamp(1.1rem, 3vw, 1.4rem)',
+                                        color: isInterviewOpen ? 'var(--gold-bright)' : '#FFFFFF',
+                                        letterSpacing: '1.5px',
+                                        textTransform: 'uppercase',
+                                        transition: 'color 0.3s ease'
+                                    }}>
+                                        {t('creators_page.interview_title', 'EXCLUSIVE CREATOR INTERVIEW: 5 QUESTIONS WITH MIRANDUS')}
+                                    </h3>
+                                    <p style={{
+                                        margin: '0.3rem 0 0 0',
+                                        fontSize: 'clamp(0.8rem, 2vw, 0.95rem)',
+                                        color: 'var(--text-secondary)',
+                                        lineHeight: '1.4'
+                                    }}>
+                                        {t('creators_page.interview_subtitle', 'Deep dive into his motivation, process, and advice.')}
+                                    </p>
+                                </div>
+                            </div>
+                            <div style={{
+                                color: 'var(--gold-bright)',
+                                transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                                transform: isInterviewOpen ? 'rotate(180deg)' : 'rotate(0)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                flexShrink: 0,
+                                marginLeft: '1rem'
+                            }}>
+                                <ChevronDown size={28} />
+                            </div>
+                        </div>
+
+                        {/* Content Wrapper */}
+                        <div style={{
+                            maxHeight: isInterviewOpen ? '2500px' : '0px',
+                            opacity: isInterviewOpen ? 1 : 0,
+                            overflow: 'hidden',
+                            transition: 'max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease',
+                            marginTop: isInterviewOpen ? '2rem' : '0'
+                        }}>
+                            {isInterviewOpen && (
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                                    {/* Expand/Collapse buttons */}
+                                    <div style={{
+                                        display: 'flex',
+                                        justifyContent: 'flex-end',
+                                        gap: '1.5rem',
+                                        borderBottom: '1px solid rgba(201, 168, 76, 0.1)',
+                                        paddingBottom: '1rem',
+                                        marginTop: '0.5rem'
+                                    }}>
+                                        <button
+                                            type="button"
+                                            onClick={expandAll}
+                                            style={{
+                                                background: 'transparent',
+                                                border: 'none',
+                                                color: 'var(--gold-bright)',
+                                                fontFamily: 'var(--font-mono)',
+                                                fontSize: '0.8rem',
+                                                cursor: 'pointer',
+                                                letterSpacing: '1px',
+                                                textTransform: 'uppercase',
+                                                padding: '4px 8px',
+                                                transition: 'color 0.2s ease'
+                                            }}
+                                            onMouseEnter={(e) => e.target.style.color = '#FFFFFF'}
+                                            onMouseLeave={(e) => e.target.style.color = 'var(--gold-bright)'}
+                                        >
+                                            {t('creators_page.expand_all', '[ EXPAND ALL ]')}
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={collapseAll}
+                                            style={{
+                                                background: 'transparent',
+                                                border: 'none',
+                                                color: 'var(--text-secondary)',
+                                                fontFamily: 'var(--font-mono)',
+                                                fontSize: '0.8rem',
+                                                cursor: 'pointer',
+                                                letterSpacing: '1px',
+                                                textTransform: 'uppercase',
+                                                padding: '4px 8px',
+                                                transition: 'color 0.2s ease'
+                                            }}
+                                            onMouseEnter={(e) => e.target.style.color = '#FFFFFF'}
+                                            onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
+                                        >
+                                            {t('creators_page.collapse_all', '[ COLLAPSE ALL ]')}
+                                        </button>
+                                    </div>
+
+                                    {/* Questions Accordion */}
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                        {interviewQuestions.map((q, idx) => {
+                                            const isOpen = !!openQuestions[idx];
+                                            const qCategory = lang === 'fr' ? q.categoryFr : q.category;
+                                            const qQuestion = lang === 'fr' ? q.questionFr : q.question;
+                                            const qAnswer = lang === 'fr' ? q.answerFr : q.answer;
+
+                                            return (
+                                                <div
+                                                    key={idx}
+                                                    style={{
+                                                        border: isOpen ? '1px solid rgba(201, 168, 76, 0.4)' : '1px solid rgba(201, 168, 76, 0.15)',
+                                                        borderRadius: '6px',
+                                                        background: isOpen ? 'rgba(13, 14, 20, 0.6)' : 'rgba(255, 255, 255, 0.01)',
+                                                        overflow: 'hidden',
+                                                        transition: 'all 0.3s ease',
+                                                        boxShadow: isOpen ? '0 4px 20px rgba(0, 0, 0, 0.3)' : 'none'
+                                                    }}
+                                                >
+                                                    {/* Question header */}
+                                                    <div
+                                                        onClick={() => toggleQuestion(idx)}
+                                                        style={{
+                                                            padding: '1.2rem 1.5rem',
+                                                            display: 'flex',
+                                                            justifyContent: 'space-between',
+                                                            alignItems: 'center',
+                                                            cursor: 'pointer',
+                                                            background: isOpen ? 'rgba(201, 168, 76, 0.04)' : 'transparent',
+                                                            userSelect: 'none',
+                                                            transition: 'background 0.3s ease'
+                                                        }}
+                                                        onMouseEnter={(e) => {
+                                                            if (!isOpen) e.currentTarget.style.background = 'rgba(255, 255, 255, 0.02)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            if (!isOpen) e.currentTarget.style.background = 'transparent';
+                                                        }}
+                                                    >
+                                                        <div style={{ display: 'flex', gap: '1.2rem', alignItems: 'center', width: '90%', textAlign: 'left' }}>
+                                                            <div style={{
+                                                                display: 'flex',
+                                                                flexDirection: 'column',
+                                                                alignItems: 'center',
+                                                                flexShrink: 0
+                                                            }}>
+                                                                <span style={{
+                                                                    fontFamily: 'var(--font-mono)',
+                                                                    fontSize: '0.8rem',
+                                                                    color: 'var(--gold)',
+                                                                    fontWeight: 'bold',
+                                                                    letterSpacing: '1px'
+                                                                }}>
+                                                                    0{idx + 1}
+                                                                </span>
+                                                                <span style={{
+                                                                    fontSize: '0.6rem',
+                                                                    color: 'var(--gold-dim)',
+                                                                    fontFamily: 'var(--font-mono)',
+                                                                    textTransform: 'uppercase'
+                                                                }}>
+                                                                    Q&A
+                                                                </span>
+                                                            </div>
+                                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                                                                <span style={{
+                                                                    fontFamily: 'var(--font-mono)',
+                                                                    fontSize: '0.75rem',
+                                                                    color: 'var(--gold-dim)',
+                                                                    textTransform: 'uppercase',
+                                                                    letterSpacing: '1px'
+                                                                }}>
+                                                                    {qCategory}
+                                                                </span>
+                                                                <h4 style={{
+                                                                    margin: 0,
+                                                                    fontFamily: 'var(--font-label)',
+                                                                    fontSize: '1rem',
+                                                                    color: isOpen ? '#FFFFFF' : 'var(--text-primary)',
+                                                                    fontWeight: '600',
+                                                                    lineHeight: '1.4',
+                                                                    transition: 'color 0.2s ease'
+                                                                }}>
+                                                                    {qQuestion}
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <div style={{
+                                                            color: 'var(--gold)',
+                                                            transition: 'transform 0.3s ease',
+                                                            transform: isOpen ? 'rotate(180deg)' : 'rotate(0)',
+                                                            flexShrink: 0,
+                                                            marginLeft: '1rem'
+                                                        }}>
+                                                            <ChevronDown size={18} />
+                                                        </div>
+                                                    </div>
+
+                                                    {/* Answer slide area */}
+                                                    <div style={{
+                                                        maxHeight: isOpen ? '850px' : '0px',
+                                                        overflow: 'hidden',
+                                                        transition: 'max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                                                        borderTop: isOpen ? '1px solid rgba(201, 168, 76, 0.1)' : '1px solid transparent'
+                                                    }}>
+                                                        {isOpen && (
+                                                            <div style={{
+                                                                padding: '1.5rem 1.8rem',
+                                                                background: 'rgba(6, 7, 16, 0.4)',
+                                                                display: 'flex',
+                                                                flexDirection: 'row',
+                                                                gap: '1.5rem',
+                                                                flexWrap: 'wrap',
+                                                                alignItems: 'flex-start'
+                                                            }}>
+                                                                {/* Left Profile/Avatar column */}
+                                                                <div style={{
+                                                                    display: 'flex',
+                                                                    flexDirection: 'column',
+                                                                    alignItems: 'center',
+                                                                    gap: '0.5rem',
+                                                                    flex: '0 0 60px'
+                                                                }}>
+                                                                    <div style={{
+                                                                        width: '44px',
+                                                                        height: '44px',
+                                                                        borderRadius: '50%',
+                                                                        border: '2px solid var(--gold)',
+                                                                        overflow: 'hidden',
+                                                                        boxShadow: '0 4px 10px rgba(0,0,0,0.4)',
+                                                                        background: 'var(--bg-elevated)',
+                                                                        display: 'flex',
+                                                                        alignItems: 'center',
+                                                                        justifyContent: 'center'
+                                                                    }}>
+                                                                        <img
+                                                                            src={selectedCreator.avatar}
+                                                                            alt="Mirandus Avatar"
+                                                                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                                            onError={(e) => {
+                                                                                e.target.style.display = 'none';
+                                                                                e.target.parentNode.innerHTML = '<span style="font-family:var(--font-hero);color:var(--gold-bright);font-weight:bold;font-size:1rem;">M</span>';
+                                                                            }}
+                                                                        />
+                                                                    </div>
+                                                                    <span style={{
+                                                                        fontFamily: 'var(--font-mono)',
+                                                                        fontSize: '0.65rem',
+                                                                        color: 'var(--gold-bright)',
+                                                                        textTransform: 'uppercase',
+                                                                        letterSpacing: '1px',
+                                                                        fontWeight: 'bold'
+                                                                    }}>
+                                                                        Mirandus
+                                                                    </span>
+                                                                </div>
+
+                                                                {/* Right Answer Text column */}
+                                                                <div style={{
+                                                                    flex: '1 1 250px',
+                                                                    color: 'var(--text-primary)',
+                                                                    fontSize: '1.05rem',
+                                                                    lineHeight: '1.8',
+                                                                    textAlign: 'left',
+                                                                    borderLeft: '2px solid rgba(201, 168, 76, 0.4)',
+                                                                    paddingLeft: '1.5rem',
+                                                                    boxSizing: 'border-box'
+                                                                }}>
+                                                                    {qAnswer}
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                )}
 
                 {/* Video Gallery Title & Search Filter */}
                 <div style={{
