@@ -76,6 +76,7 @@ const giftCodes = [
     { code: 'pudding1223' },
     { code: 'mizuyuno' },
     { code: 'niu0716' },
+    { code: 'GALAXYWITHYOU' },
 ];
 
 const now = new Date();
