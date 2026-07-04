@@ -343,9 +343,10 @@ export default function EventGuide() {
                                     <span className="label-text">{t('events_ui.league_ranks')}</span>
                                 </h4>
                                 <div style={{
-                                    display: 'grid',
-                                    gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
                                     gap: '1rem',
+                                    justifyContent: 'center',
                                     marginBottom: '2rem'
                                 }}>
                                     {selectedEvent.leagueRanks.map((rankObj) => {
@@ -388,6 +389,8 @@ export default function EventGuide() {
                                             <div 
                                                 key={rankObj.rank} 
                                                 style={{
+                                                    flex: '1 1 150px',
+                                                    maxWidth: '220px',
                                                     background: rankBg,
                                                     border: `1px solid ${rankBorder}`,
                                                     borderRadius: '4px',
@@ -510,6 +513,9 @@ export default function EventGuide() {
                                             >
                                                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: '1', minWidth: '200px' }}>
                                                     <span style={{ 
+                                                        display: 'inline-block',
+                                                        width: '90px',
+                                                        textAlign: 'center',
                                                         fontSize: '0.75rem', 
                                                         fontWeight: 'bold', 
                                                         textTransform: 'uppercase', 
