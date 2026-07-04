@@ -1463,6 +1463,10 @@
         "playlist_title": "FULL VIDEO DATABASE",
         "search_placeholder": "Search guides & videos...",
         "load_more": "Load More Videos",
-        "x_btn": "Visit X"
+        "x_btn": "Visit X",
+        "interview_title": "Exclusive Creator Interview: 5 Questions with Mirandus",
+        "interview_subtitle": "On his motivation, theorycrafting process, creative preferences, and advice for new creators.",
+        "expand_all": "[ Expand All ]",
+        "collapse_all": "[ Collapse All ]"
     }
 }
