@@ -1461,6 +1461,25 @@
         "playlist_title": "BANCO DE DADOS COMPLETO DE VÍDEOS",
         "search_placeholder": "Pesquisar guias e vídeos...",
         "load_more": "Carregar mais vídeos",
-        "x_btn": "Visitar X"
+        "x_btn": "Visitar X",
+        "interview_title": "Entrevista exclusiva com o criador: 5 perguntas para Mirandus",
+        "interview_subtitle": "Sobre sua motivação, processo de theorycrafting, preferências criativas e conselhos para novos criadores.",
+        "expand_all": "[ Expandir tudo ]",
+        "collapse_all": "[ Recolher tudo ]",
+        "interview_q1_cat": "Inspiração e motivação",
+        "interview_q1": "O que primeiro o inspirou a começar a criar guias em vídeo para Foundation: Galactic Frontier e o que o mantém motivado a produzir e partilhar conteúdo com a comunidade semana após semana?",
+        "interview_a1": "Eu tenho criado conteúdo de jogos para dispositivos móveis e PC há cerca de 9 anos. Eu estava procurando um novo jogo para cobrir quando encontrei FGF. Gostei do jogo quando o testei e ele tinha os recursos que eu estava procurando, então eu o escolhi. Minha motivação é simplesmente que eu amo falar sobre jogos nos quais estou interessado e jogando. Também amo ensinar os outros a fazer as coisas melhor e com mais eficiência, então é uma combinação perfeita para mim.",
+        "interview_q2_cat": "Theorycrafting e processo analítico",
+        "interview_q2": "Suas listas de nível de herói e guias de otimização de frota são altamente detalhados. Você poderia nos guiar pelo seu processo de pesquisa de novas atualizações e tradução de números complexos em guias acessíveis para seus espectadores?",
+        "interview_a2": "Experiência é a chave. Não farei conteúdo sobre algo a menos que eu entenda e sinta que posso ensinar os outros sobre isso primeiro. Isso, combinado com a experiência que tive ao longo dos anos fazendo a mesma coisa em outros jogos, torna esse processo algo natural para mim. Conhecer primeiro antes de tentar ensinar sempre foi meu plano de jogo.",
+        "interview_q3_cat": "Preferências criativas",
+        "interview_q3": "Entre escrever guias estruturados de theorycrafting e gravar batalhas intensas de PvP/SvS em tempo real, qual tipo de vídeo você acha mais recompensador e divertido de fazer, e por quê?",
+        "interview_a3": "Essa pergunta depende muito do jogo. No passado, eu costumava ser aquele nerd focado em economia e theorycrafting, mas no FGF achei o PvP extremamente divertido e recompensador. Honestamente, como minha lista de reprodução pode atestar, foi a mecânica de jogo que mais gostei neste jogo.",
+        "interview_q4_cat": "Temas guiados pela comunidade",
+        "interview_q4": "O quanto o feedback dos espectadores e os pedidos das guildas influenciam os tópicos dos seus próximos vídeos, e como você equilibra a criação de vídeos pelos quais você é pessoalmente apaixonado com o que a comunidade quer ver?",
+        "interview_a4": "Eu amo quando minha comunidade e membros da guilda sugerem conteúdo que gostariam de ver. Suas ideias me dão inspiração e motivação, e não há nada melhor do que poder criar algo que eles pediram e vê-los se divertindo. Na maioria das vezes, meus interesses no jogo se alinham com o que a comunidade quer ver, então acaba sendo benéfico para todos.",
+        "interview_q5_cat": "Conselhos para novos criadores",
+        "interview_q5": "Como uma voz estabelecida no espaço de estratégia móvel, qual é o conselho mais importante que você daria a um jogador que deseja começar seu próprio canal de criação de conteúdo hoje?",
+        "interview_a5": "Meu conselho número um é escolher um jogo que você genuinamente ame e goste de jogar. Quando você é apaixonado pelo jogo, criar conteúdo é divertido em vez de parecer um trabalho. Esse prazer se reflete nos seus vídeos e faz uma enorme diferença quando se trata de manter a consistência. Construir um canal de sucesso leva tempo e, se você realmente gostar do processo, é muito mais provável que persista o tempo suficiente para que seu canal cresça e alcance seu potencial."
     }
 }

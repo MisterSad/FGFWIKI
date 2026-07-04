@@ -1461,6 +1461,25 @@
         "playlist_title": "KOMPLETT VIDEODATABAS",
         "search_placeholder": "Sök guider och videor...",
         "load_more": "Ladda fler videor",
-        "x_btn": "Besök X"
+        "x_btn": "Besök X",
+        "interview_title": "Exklusiv intervju med skaparen: 5 frågor till Mirandus",
+        "interview_subtitle": "Om hans motivation, theorycrafting-process, kreativa preferenser och råd till nya skapare.",
+        "expand_all": "[ Expandera alla ]",
+        "collapse_all": "[ Minimera alla ]",
+        "interview_q1_cat": "Inspiration & Motivation",
+        "interview_q1": "Vad inspirerade dig först att börja skapa videoguider för Foundation: Galactic Frontier, and vad håller dig motiverad att producera och dela innehåll med communityn vecka efter vecka?",
+        "interview_a1": "Jag har skapat innehåll om mobil- och PC-spel i cirka 9 år nu. Jag letade efter ett nytt spel att täcka när jag hittade FGF. Jag gillade det när jag provade det och det hade funktionerna jag letade efter så jag valde det. Min motivation är helt enkelt att jag älskar att prata om spel som jag är intresserad av och spelar, och jag älskar också att lära andra hur man gör saker bättre och mer effektivt, så det passar mig perfekt.",
+        "interview_q2_cat": "Theorycrafting & Analysprocess",
+        "interview_q2": "Dina hjälte-tierlistor och flottaoptimeringsguider är mycket detaljerade. Kan du ta oss igenom din process för att undersöka nya uppdateringar och översätta komplexa siffror till tillgängliga guider för dina tittare?",
+        "interview_a2": "Erfarenhet är nyckeln. Jag gör inte innehåll om något förrän jag förstår det själv och känner att jag kan lära andra om det först. Det, i kombination med den erfarenhet jag haft genom åren av att göra samma sak i andra spel, gör att denna process är rutinsak för mig. Lär dig det själv först innan du försöker lära ut det har alltid varit min spelplan.",
+        "interview_q3_cat": "Kreativa preferenser",
+        "interview_q3": "Mellan att skriva strukturerade theorycrafting-guider och att spela in intensiva PvP/SvS-strider i realtid, vilken typ av video tycker du är mest givande och roligast att göra, och varför?",
+        "interview_a3": "Den frågan beror verkligen på spelet. Tidigare har jag oftast varit den där theorycrafting- och ekonominörden, men i FGF har jag tyckt att PvP är extremt roligt och givande. Ärligt talat, som min spellista kan intyga, har jag uppskattat den spelmekaniken bäst i det här spelet.",
+        "interview_q4_cat": "Community-drivna ämnen",
+        "interview_q4": "Hur mycket påverkar tittarfeedback och gillesförfrågningar ämnena för dina kommande videor, och hur balanserar du att göra videor du personligen brinner för med vad communityn vill se?",
+        "interview_a4": "Jag älskar när min community och mina gillesmedlemmar föreslår innehåll de vill se. Deras idéer ger mig inspiration och motivation, och det finns inget bättre än att kunna skapa något de efterfrågat och se dem njuta av det. För det mesta sammanfaller mina intressen i spelet med vad communityn vill se, så det blir en win-win för alla.",
+        "interview_q5_cat": "Råd till nya skapare",
+        "interview_q5": "Som en väletablerad röst inom mobilstrategi, vad är det enskilt viktigaste rådet du skulle ge till en spelare som vill starta sin egen innehållskanal idag?",
+        "interview_a5": "Mitt främsta råd är att välja ett spel du genuint älskar och tycker om att spela. När du är passionerad för spelet känns det roligt att skapa innehåll istället för att känna dig som ett jobb. Den glädjen syns i dina videor, och det gör en enorm skillnad när det gäller att vara konsekvent. Att bygga en framgångsrik kanal tar tid, och om du faktiskt gillar processen är det mycket mer troligt att du håller fast vid det tillräckligt länge för att din kanal ska växa och nå sin potential."
     }
 }

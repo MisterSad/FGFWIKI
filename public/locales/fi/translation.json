@@ -1461,6 +1461,25 @@
         "playlist_title": "TÄYDELLINEN VIDEOARKISTO",
         "search_placeholder": "Etsi oppaita ja videoita...",
         "load_more": "Lataa lisää videoita",
-        "x_btn": "Vieraile X-profiilissa"
+        "x_btn": "Vieraile X-profiilissa",
+        "interview_title": "Ainutlaatuinen sisällöntuottajan haastattelu: 5 kysymystestä Mirandukselle",
+        "interview_subtitle": "Hänen motivaatiostaan, analyysiprosessistaan, luovista mieltymyksistään ja neuvoistaan uusille tuottajille.",
+        "expand_all": "[ Avaa kaikki ]",
+        "collapse_all": "[ Sulje kaikki ]",
+        "interview_q1_cat": "Inspiraatio & Motivaatio",
+        "interview_q1": "Mikä inspiroi sinua alun perin aloittamaan videosisällön luomisen Foundation: Galactic Frontier -peliin, ja mikä pitää sinut motivoituneena tuottamaan ja jakamaan sisältöä yhteisölle viikosta toiseen?",
+        "interview_a1": "Olen luonut sisältöä mobiili- ja PC-peleistä noin 9 vuoden ajan. Etsin uutta peliä katettavaksi, kun löysin FGF:n. Pidin siitä kokeiltuani ja siinä oli etsimäni ominaisuudet, joten valitsin sen. Motivaationi on yksinkertaisesti se, että rakastan puhua peleistä, joista olen kiinnostunut ja joita pelaan. Rakastan myös opettaa muille, miten asioita tehdään paremmin ja tehokkaammin, joten tämä sopii minulle loistavasti.",
+        "interview_q2_cat": "Analyysi & Teoriaprosessi",
+        "interview_q2": "Sankari-tierlistasi ja laivaston optimointioppaasi ovat erittäin yksityiskohtaisia. Voisitko viedä meidät läpi prosessisi uusien päivitysten tutkimisessa ja monimutkaisten lukujen kääntämisessä helposti ymmärrettäviksi oppaiksi katsojillesi?",
+        "interview_a2": "Kokemus on avain. En tee sisältöä aiheesta, jota en itse ymmärrä täysin ja tunne voivani opettaa muille ensin. Yhdistettynä vuosien kokemukseen saman tekemisestä muissa peleissä, tämä prosessi on minulle rutiinia. Tunne aihe ensin ennen kuin yrität opettaa sitä – se on aina ollut pelisuunnitelmani.",
+        "interview_q3_cat": "Luovat mieltymykset",
+        "interview_q3": "Kirjoitat mieluummin strukturoituja analyysioppaita vai tallennat intensiivisiä reaaliaikaisia PvP/SvS-taisteluita, kumpi videomuoto on sinulle palkitsevampi ja hauskempi tehdä ja miksi?",
+        "interview_a3": "Tämä kysymys riippuu todella pelistä. Aiemmin olin yleensä se talous- ja analyysinörtti, mutta FGF:ssä olen huomannut PvP:n olevan erittäin hauskaa ja palkitsevaa. Rehellisesti sanottuna, kuten soittolistani osoittaa, olen nauttinut tästä pelimekaniikasta eniten tässä pelissä.",
+        "interview_q4_cat": "Yhteisölähtöiset aiheet",
+        "interview_q4": "Kuinka paljon katsojien palaute ja kiltojen pyynnöt vaikuttavat tulevien videoidesi aiheisiin, ja miten tasapainoilet omien intohimoistesi ja yhteisön toiveiden välillä?",
+        "interview_a4": "Rakastan sitä, kun yhteisöni ja kiltalaiseni ehdottavat sisältöä, jota he haluaisivat nähdä. Heidän ideansa antavat minulle inspiraatiota ja motivaatiota, eikä ole mitään parempaa kuin luoda jotain, mitä he pyysivät, ja nähdä heidän nauttivan siitä. Useimmiten kiinnostukseni pelissä kohtaavat yhteisön toiveiden kanssa, joten se on lopulta win-win kaikille.",
+        "interview_q5_cat": "Neuvoja uusille tuottajille",
+        "interview_q5": "Mobiilistrategian vakiintuneena äänenä, mikä on tärkein neuvo, jonka antaisit pelaajalle, joka haluaa aloittaa oman sisällöntuotantokanavansa tänään?",
+        "interview_a5": "Ykkösneuvoni on valita peli, jota todella rakastat ja josta nautit. Kun olet intohimoinen pelistä, sisällön luominen tuntuu hauskalta työn sijaan. Tämä nautinto näkyy videoillasi, ja sillä on valtava merkitys johdonmukaisuuden säilyttämisessä. Menestyvän kanavan rakentaminen vie aikaa, ja jos todella nautit prosessista, jatkat todennäköisemmin niin pitkään, että kanavasi kasvaa ja saavuttaa potentiaalinsa."
     }
 }

@@ -1461,6 +1461,25 @@
         "playlist_title": "PEŁNA BAZA DANYCH WIDEO",
         "search_placeholder": "Wyszukaj poradniki i wideo...",
         "load_more": "Załaduj więcej wideo",
-        "x_btn": "Odwiedź X"
+        "x_btn": "Odwiedź X",
+        "interview_title": "Ekskluzywny wywiad: 5 pytań do Mirandusa",
+        "interview_subtitle": "O jego motywacji, procesie analizy gry (theorycrafting), preferencjach twórczych i poradach dla początkujących.",
+        "expand_all": "[ Rozwiń wszystko ]",
+        "collapse_all": "[ Zwiń wszystko ]",
+        "interview_q1_cat": "Inspiracja i motywacja",
+        "interview_q1": "Co po raz pierwszy zainspirowało Cię do tworzenia poradników wideo do Foundation: Galactic Frontier i co motywuje Cię do publikowania i dzielenia się treściami ze społecznością tydzień po tygodniu?",
+        "interview_a1": "Tworzę treści o grach mobilnych i PC od około 9 lat. Szukałem nowej gry do zrecenzowania, kiedy znalazłem FGF. Spodobała mi się po wypróbowaniu i miała funkcje, których szukałem, więc ją wybrałem. Moją motywacją jest po prostu to, że uwielbiam rozmawiać o grach, które mnie interesują i w które gram, a także uwielbiam uczyć innych, jak robić rzeczy lepiej i wydajniej, więc jest to dla mnie idealne dopasowanie.",
+        "interview_q2_cat": "Theorycrafting i proces analityczny",
+        "interview_q2": "Twoje listy poziomów bohaterów i przewodniki dotyczące optymalizacji floty są bardzo szczegółowe. Czy mógłbyś przeprowadzić nas przez swój proces badania nowych aktualizacji i tłumaczenia skomplikowanych liczb na przystępne przewodniki dla Twoich widzów?",
+        "interview_a2": "Doświadczenie jest kluczem, nie będę tworzyć treści o czymś, dopóki tego nie zrozumiem i nie poczuję, że mogę najpierw uczyć o tym innych. W połączeniu z doświadczeniem, które zdobyłem przez lata, robiąc to samo w innych grach, sprawia, że ten proces to dla mnie chleb powszedni. Poznaj to najpierw, zanim spróbujesz tego uczyć – to zawsze był mój plan gry.",
+        "interview_q3_cat": "Preferencje twórcze",
+        "interview_q3": "Co sprawia Ci więcej satysfakcji i radości z tworzenia: pisanie ustrukturyzowanych przewodników po theorycraftingu czy nagrywanie intensywnych bitew PvP/SvS w czasie rzeczywistym i dlaczego?",
+        "interview_a3": "To pytanie naprawdę zależy od gry. W przeszłości zazwyczaj byłem tym geekiem od theorycraftingu i ekonomii, ale w FGF odkryłem, że PvP jest niezwykle zabawne i satysfakcjonujące. Szczerze mówiąc, jak może poświadczyć moja lista odtwarzania, ta mechanika rozgrywki podobała mi się najbardziej w tej grze.",
+        "interview_q4_cat": "Tematy napędzane przez społeczność",
+        "interview_q4": "Jak duży wpływ na tematykę Twoich nadchodzących filmów mają opinie widzów i prośby gildii oraz jak godzisz tworzenie filmów, które osobiście Cię pasjonują, z tym, co chce zobaczyć społeczność?",
+        "interview_a4": "Uwielbiam, gdy moja społeczność i członkowie gildii sugerują treści, które chcieliby zobaczyć. Ich pomysły dają mi inspirację i motywację. Nie ma nic lepszego niż możliwość stworzenia czegoś, o co poprosili, i patrzenie, jak sprawia im to radość. Przez większość czasu moje zainteresowania w grze pokrywają się z tym, co chce zobaczyć społeczność, więc ostatecznie jest to sytuacja korzystna dla wszystkich.",
+        "interview_q5_cat": "Porady dla nowych twórców",
+        "interview_q5": "Jako uznany głos w przestrzeni strategii mobilnych, jaka jest najważniejsza rada, którą dałbyś graczowi chcącącemu dzisiaj założyć własny kanał?",
+        "interview_a5": "Moją radą numer jeden jest wybór gry, którą szczerze kochasz i w którą lubisz grać. Kiedy pasjonujesz się grą, tworzenie treści jest zabawą, a nie pracą. Ta radość jest widoczna w Twoich filmach i robi ogromną różnicę, jeśli chodzi o zachowanie spójności. Budowanie udanego kanału wymaga czasu, a jeśli naprawdę lubisz ten proces, jest znacznie bardziej prawdopodobne, że będziesz to robić wystarczająco długo, aby Twój kanał urósł i osiągnął swój potencjał."
     }
 }
