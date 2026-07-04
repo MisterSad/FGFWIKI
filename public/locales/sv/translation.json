@@ -878,7 +878,28 @@
         "trade_route_defense_phases": "Fas taktik",
         "trade_route_defense_phases_desc": "Fas 1: Koncentrera dig på att göra snabba skador på svärmflottor och undvik att tilldela eskorter. Fas 2: Fördela skador mellan helgedomar och medelstora hot; högst en eskort behövs. Fas 3: Ett enormt flaggskepp växer fram, som kräver omedelbar eskorttjänst för hela laget.",
         "trade_route_defense_escort": "Eskortstrategi",
-        "trade_route_defense_escort_desc": "Välj högsta möjliga svårighetsgrad. Fartygsförluster är tillfälliga, men att säkra dessa sällsynta belöningar har ett permanent kontovärde. Manuell teamkoordinering är överlägsen automatiserad anslutning. Justera eskortrotationen baserat på konvojens hållbarhet."
+        "trade_route_defense_escort_desc": "Välj högsta möjliga svårighetsgrad. Fartygsförluster är tillfälliga, men att säkra dessa sällsynta belöningar har ett permanent kontovärde. Manuell teamkoordinering är överlägsen automatiserad anslutning. Justera eskortrotationen baserat på konvojens hållbarhet.",
+        "commerce_guild_duel_league_title": "Commerce Guild Duel League",
+        "commerce_guild_duel_league_cycle": "Duration: 1 month (Testing)",
+        "commerce_guild_duel_league_type": "Cross-Server Guild PVP",
+        "commerce_guild_duel_league_desc": "Exciting news from the developers! An all-new League gameplay is coming to the Cross-Server Commerce Guild Duel. Starting July 6th, servers open for more than 6 weeks will enter a one-month testing phase to refine this competitive format. Guilds will battle, accumulate Rank Points, and climb from Bronze all the way to Master to unlock exclusive rewards and special temporary nametags.",
+        "commerce_guild_duel_league_ranks_rules": "The League features six ranks: Bronze, Silver, Gold, Platinum, Diamond, and Master, each divided into multiple star levels. Ranks increase as your Guild meets specific Point requirements. In Bronze, Silver, Gold, and Platinum, you are safe: there are no demotions upon defeat. However, Diamond and Master ranks are highly competitive, and losses can deduct points, potentially demoting your Guild if you fall below the threshold.",
+        "commerce_guild_duel_league_match_rules": "At the end of each round, Rank Points are calculated based on your match results, overall Guild performance, and individual member contributions. Winning yields the highest points, but a strong performance in a loss still provides a solid point boost. Keep in mind that Diamond and Master guilds face extra point deductions when defeated, so coordinate your attacks carefully!",
+        "commerce_guild_duel_league_rewards_desc": "Prizes are distributed via mail at the end of the event: Day 5 rewards are based on your total accumulated Duel Points from Days 1-5, and Day 6 rewards are based on your final ranking in the Duel Stage. Reaching higher ranks also grants temporary 14-day Nametags to display your Guild's prestige.",
+        "commerce_guild_duel_league_ranks_rules_title": "League Ranks & Rules",
+        "commerce_guild_duel_league_match_rules_title": "Match & Performance Points",
+        "commerce_guild_duel_league_rewards_title": "Reward Distribution",
+        "commerce_guild_duel_league_nametag_silver": "League Elite",
+        "commerce_guild_duel_league_nametag_gold": "League Vanguard",
+        "commerce_guild_duel_league_nametag_platinum": "League Champion",
+        "commerce_guild_duel_league_nametag_diamond": "League King",
+        "commerce_guild_duel_league_nametag_master": "League Legend",
+        "commerce_guild_duel_league_bronze": "Brons",
+        "commerce_guild_duel_league_silver": "Silver",
+        "commerce_guild_duel_league_gold": "Guld",
+        "commerce_guild_duel_league_platinum": "Platina",
+        "commerce_guild_duel_league_diamond": "Diamant",
+        "commerce_guild_duel_league_master": "Mästare"
     },
     "events_ui": {
         "golden_rule": "Gyllene regel",
@@ -895,7 +916,12 @@
         "pro_tips": "Pro-tips",
         "tips": "Tips",
         "limited_event": "Begränsad tid",
-        "currently_suspended": "För närvarande inställt"
+        "currently_suspended": "För närvarande inställt",
+        "league_ranks": "League Ranks & Points",
+        "league_nametags": "Exclusive League Nametags",
+        "demotion_active": "Demotion Active",
+        "demotion_safe": "Safe (No Drop)",
+        "days": "days"
     },
     "builder_data": {
         "hp_none": "Ingen",

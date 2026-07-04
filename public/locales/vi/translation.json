@@ -878,7 +878,28 @@
         "trade_route_defense_phases": "Chiến thuật pha",
         "trade_route_defense_phases_desc": "Giai đoạn 1: Tập trung gây sát thương nhanh cho các hạm đội bầy đàn và tránh phân công người hộ tống. Giai đoạn 2: Phân bổ sát thương giữa các đền thờ và các mối đe dọa trung bình; cần nhiều nhất một người hộ tống. Giai đoạn 3: Một hạm đội khổng lồ xuất hiện, yêu cầu toàn đội phải làm nhiệm vụ hộ tống ngay lập tức.",
         "trade_route_defense_escort": "Chiến lược hộ tống",
-        "trade_route_defense_escort_desc": "Chọn mức độ khó cao nhất có thể. Việc mất tàu chỉ là tạm thời, nhưng việc đảm bảo những phần thưởng quý hiếm này có giá trị tài khoản vĩnh viễn. Phối hợp nhóm thủ công tốt hơn việc tham gia tự động. Điều chỉnh vòng quay hộ tống dựa trên độ bền của đoàn xe."
+        "trade_route_defense_escort_desc": "Chọn mức độ khó cao nhất có thể. Việc mất tàu chỉ là tạm thời, nhưng việc đảm bảo những phần thưởng quý hiếm này có giá trị tài khoản vĩnh viễn. Phối hợp nhóm thủ công tốt hơn việc tham gia tự động. Điều chỉnh vòng quay hộ tống dựa trên độ bền của đoàn xe.",
+        "commerce_guild_duel_league_title": "Giải Đấu Thương Hội Đối Đầu",
+        "commerce_guild_duel_league_cycle": "Duration: 1 month (Testing)",
+        "commerce_guild_duel_league_type": "Cross-Server Guild PVP",
+        "commerce_guild_duel_league_desc": "Exciting news from the developers! An all-new League gameplay is coming to the Cross-Server Commerce Guild Duel. Starting July 6th, servers open for more than 6 weeks will enter a one-month testing phase to refine this competitive format. Guilds will battle, accumulate Rank Points, and climb from Bronze all the way to Master to unlock exclusive rewards and special temporary nametags.",
+        "commerce_guild_duel_league_ranks_rules": "The League features six ranks: Bronze, Silver, Gold, Platinum, Diamond, and Master, each divided into multiple star levels. Ranks increase as your Guild meets specific Point requirements. In Bronze, Silver, Gold, and Platinum, you are safe: there are no demotions upon defeat. However, Diamond and Master ranks are highly competitive, and losses can deduct points, potentially demoting your Guild if you fall below the threshold.",
+        "commerce_guild_duel_league_match_rules": "At the end of each round, Rank Points are calculated based on your match results, overall Guild performance, and individual member contributions. Winning yields the highest points, but a strong performance in a loss still provides a solid point boost. Keep in mind that Diamond and Master guilds face extra point deductions when defeated, so coordinate your attacks carefully!",
+        "commerce_guild_duel_league_rewards_desc": "Prizes are distributed via mail at the end of the event: Day 5 rewards are based on your total accumulated Duel Points from Days 1-5, and Day 6 rewards are based on your final ranking in the Duel Stage. Reaching higher ranks also grants temporary 14-day Nametags to display your Guild's prestige.",
+        "commerce_guild_duel_league_ranks_rules_title": "League Ranks & Rules",
+        "commerce_guild_duel_league_match_rules_title": "Match & Performance Points",
+        "commerce_guild_duel_league_rewards_title": "Reward Distribution",
+        "commerce_guild_duel_league_nametag_silver": "League Elite",
+        "commerce_guild_duel_league_nametag_gold": "League Vanguard",
+        "commerce_guild_duel_league_nametag_platinum": "League Champion",
+        "commerce_guild_duel_league_nametag_diamond": "League King",
+        "commerce_guild_duel_league_nametag_master": "League Legend",
+        "commerce_guild_duel_league_bronze": "Đồng",
+        "commerce_guild_duel_league_silver": "Bạc",
+        "commerce_guild_duel_league_gold": "Vàng",
+        "commerce_guild_duel_league_platinum": "Bạch Kim",
+        "commerce_guild_duel_league_diamond": "Kim Cương",
+        "commerce_guild_duel_league_master": "Cao Thủ"
     },
     "events_ui": {
         "golden_rule": "Quy tắc vàng",
@@ -895,7 +916,12 @@
         "pro_tips": "Mẹo chuyên nghiệp",
         "tips": "Mẹo",
         "limited_event": "Thời gian có hạn",
-        "currently_suspended": "Hiện đang tạm ngưng"
+        "currently_suspended": "Hiện đang tạm ngưng",
+        "league_ranks": "League Ranks & Points",
+        "league_nametags": "Exclusive League Nametags",
+        "demotion_active": "Demotion Active",
+        "demotion_safe": "Safe (No Drop)",
+        "days": "days"
     },
     "builder_data": {
         "hp_none": "Không có",
