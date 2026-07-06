@@ -386,13 +386,13 @@
         "migration_cta_desc": "Prêt pour le grand saut ? Planifiez votre transfert vers le Serveur 1061 dès aujourd'hui ! Déposez votre candidature en avance sur le portail pour garantir un atterrissage parfait le Jour de la Migration.",
         "migration_cta_btn": "Postuler pour le Serveur 1061",
         "roadmap_mid_2026_title": "Feuille de route de développement Foundation : Milieu 2026",
-        "roadmap_mid_2026_desc": "Marchands, la galaxie ne s'arrête jamais, et nous non plus. Voici un aperçu de ce qui est en cours de développement et prévu pour les prochains mois !",
-        "roadmap_mid_2026_intro": "Marchands, la galaxie ne s'arrête jamais, et nous non plus. Voici un aperçu de ce qui est en cours de développement et prévu pour les prochains mois !",
+        "roadmap_mid_2026_desc": "Marchands, les développeurs ont partagé leur feuille de route. Voici un aperçu de ce qui est en cours de développement et prévu pour les prochains mois !",
+        "roadmap_mid_2026_intro": "Marchands, les développeurs ont partagé leur feuille de route. Voici un aperçu de ce qui est en cours de développement et prévu pour les prochains mois !",
         "roadmap_mid_2026_horizon_hdr": "🛰️ Ce qui se profile à l'horizon :",
-        "roadmap_mid_2026_horizon_txt": "• Saison 2 : Notre objectif actuel est le mois d'août. Il s'agit de notre meilleure estimation à ce jour. Si des changements surviennent, nous vous en informerons vers la fin du mois de juillet. Nous vous remercions pour votre patience.\n• Ruines de guilde et ruines interserveurs : Cette nouveauté enrichit les Pilleurs de ruines avec des espaces de guilde partagés, facilitant les fouilles à haute valeur et le matchmaking interserveurs.\n• Ligue Shadowfront : Les 32 meilleures guildes de chaque groupe de 8 serveurs s'affronteront dans un tournoi à élimination directe à 64 équipes, fidèles au style Shadowfront.\n• Mode Boss Rush : Relevez le défi face à des boss successifs et repoussez vos limites.",
+        "roadmap_mid_2026_horizon_txt": "• Saison 2 : L'objectif actuel des développeurs est le mois d'août. Il s'agit de leur meilleure estimation à ce jour. Si des changements surviennent, ils communiqueront vers la fin du mois de juillet. Ils vous remercient pour votre patience.\n• Ruines de guilde et ruines interserveurs : Cette nouveauté enrichit les Pilleurs de ruines avec des espaces de guilde partagés, facilitant les fouilles à haute valeur et le matchmaking interserveurs.\n• Ligue Shadowfront : Les 32 meilleures guildes de chaque groupe de 8 serveurs s'affronteront dans un tournoi à élimination directe à 64 équipes, fidèles au style Shadowfront.\n• Mode Boss Rush : Relevez le défi face à des boss successifs et repoussez vos limites.",
         "roadmap_mid_2026_note_hdr": "⚠️ Note importante :",
         "roadmap_mid_2026_note_txt": "Toutes les fonctionnalités énumérées ci-dessus sont en cours de développement et restent sujettes à modification. Les détails définitifs, les dates et la disponibilité seront confirmés directement en jeu.",
-        "roadmap_mid_2026_outro": "🌌 Restez connectés alors que nous continuons à façonner l'avenir de Foundation, d'autres informations seront partagées au fil du développement!",
+        "roadmap_mid_2026_outro": "🌌 Restez connectés alors que l'équipe de développement continue de façonner l'avenir de Foundation, d'autres informations seront partagées au fil de leur avancement !",
         "roadmap_mid_2026_period": "Juillet–Septembre"
     },
     "hero_data": {
