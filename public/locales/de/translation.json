@@ -383,14 +383,15 @@
         "migration_cta_title": "Interessiert an Server 1061?",
         "migration_cta_desc": "Bereit für den ultimativen Sprung? Koordinieren Sie jetzt Ihren Transfer zum Server 1061! Reichen Sie Ihre Bewerbung frühzeitig auf dem Portal ein, um einen reibungslosen Start am Tag der Migration zu gewährleisten.",
         "migration_cta_btn": "Beantragen Sie Server 1061",
-        "roadmap_mid_2026_title": "🚀 Foundation Entwicklungs-Roadmap: Mitte 2026 (Juli–September) 🚀",
+        "roadmap_mid_2026_title": "Foundation Entwicklungs-Roadmap: Mitte 2026",
         "roadmap_mid_2026_desc": "Händler, die Galaxis steht nicht still, und wir auch nicht. Here is an Ausblick auf das, was sich derzeit in der Entwicklung befindet und für die kommenden Monate geplant ist!",
         "roadmap_mid_2026_intro": "Händler, die Galaxis steht nicht still, und wir auch nicht. Hier ist ein Ausblick auf das, was sich derzeit in der Entwicklung befindet und für die kommenden Monate geplant ist!",
         "roadmap_mid_2026_horizon_hdr": "🛰️ Was uns am Horizont erwartet:",
         "roadmap_mid_2026_horizon_txt": "• Saison 2: Unser aktuelles Ziel ist August. Das ist unsere beste Schätzung basierend auf dem heutigen Stand. Sollte sich etwas ändern, werden wir dies Ende Juli mitteilen. Wir danken Ihnen herzlich für Ihre Geduld.\n• Gilden-Ruinen & Serverübergreifende Ruinen: Erweitert die Ruinenräuber um gemeinsame Gildenbereiche, einfachere Ausgrabungen mit hohem Wert und serverübergreifende Spielersuche.\n• Shadowfront-Liga: Die besten 32 Gilden von jeweils 8 Servern treten in einem Turnier mit 64 Teams im K.-o.-System gegeneinander an, ganz im Stil von Shadowfront.\n• Boss-Rush-Gameplay: Stellen Sie sich aufeinanderfolgenden Bossbegegnungen und gehen Sie an Ihre Grenzen.",
         "roadmap_mid_2026_note_hdr": "⚠️ Wichtiger Hinweis:",
         "roadmap_mid_2026_note_txt": "Alle oben aufgeführten Features befinden sich derzeit in der Entwicklung und können sich noch ändern. Endgültige Details, Zeitpläne und Verfügbarkeiten werden im Spiel bestätigt.",
-        "roadmap_mid_2026_outro": "🌌 Bleiben Sie dran, während wir die Zukunft von Foundation weiter gestalten. Weitere Details werden im Laufe der Entwicklung bekannt gegeben!"
+        "roadmap_mid_2026_outro": "🌌 Bleiben Sie dran, während wir die Zukunft von Foundation weiter gestalten. Weitere Details werden im Laufe der Entwicklung bekannt gegeben!",
+        "roadmap_mid_2026_period": "Juli–September"
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

@@ -383,14 +383,15 @@
         "migration_cta_title": "Kiinnostaako Server 1061?",
         "migration_cta_desc": "Oletko valmis äärimmäiseen harppaukseen? Koordinoi siirtosi Server 1061:lle nyt! Lähetä hakemuksesi hyvissä ajoin portaaliin varmistaaksesi virheettömän laskeutumisen muuttopäivänä.",
         "migration_cta_btn": "Hae Server 1061:tä",
-        "roadmap_mid_2026_title": "🚀 Foundation Kehityksen Tiekartta: Keskivuosi 2026 (Heinä–Syyskuu) 🚀",
+        "roadmap_mid_2026_title": "Foundation Kehityksen Tiekartta: Keskivuosi 2026",
         "roadmap_mid_2026_desc": "Kauppiaat, galaksi ei pysähdy, emmekä mekään. Tässä on katsaus siihen, mitä parhaillaan kehitetään ja mitä on suunnitteilla tuleville kuukausille!",
         "roadmap_mid_2026_intro": "Kauppiaat, galaksi ei pysähdy, emmekä mekään. Tässä on katsaus siihen, mitä parhaillaan kehitetään ja mitä on suunnitteilla tuleville kuukausille!",
         "roadmap_mid_2026_horizon_hdr": "🛰️ Mitä horisontissa siintää:",
         "roadmap_mid_2026_horizon_txt": "• Kausi 2: Tämänhetkinen tavoitteemme on elokuu. Tämä on paras arviomme nykytilanteen perusteella. Jos jokin muuttuu, ilmoitamme siitä heinäkuun lopulla. Kiitämme teitä suuresti kärsivällisyydestänne.\n• Killan rauniot & Palvelinten väliset rauniot: Laajentaa Ruin Raiders -tilaa jaetuilla kiltatiloilla, helpommilla arvokkailla kaivauksilla ja palvelinten välisellä pelinhaulla.\n• Shadowfront-liiga: Top 32 kiltaa joka kahdeksalta palvelimelta kilpailee 64 joukkueen pudotusturnauksessa Shadowfront-tyyliin.\n• Boss Rush -pelitila: Kohtaa peräkkäisiä pomotaisteluita ja koettele rajojasi.",
         "roadmap_mid_2026_note_hdr": "⚠️ Tärkeä huomautus:",
         "roadmap_mid_2026_note_txt": "Kaikki yllä luetellut ominaisuudet ovat parhaillaan kehityksen alla ja voivat muuttua. Lopulliset tiedot, aikataulut ja saatavuus vahvistetaan pelin sisällä.",
-        "roadmap_mid_2026_outro": "🌌 Pysy kuulolla, kun jatkamme Foundationin tulevaisuuden muovaamista. Lisätietoja jaetaan kehityksen edetessä!"
+        "roadmap_mid_2026_outro": "🌌 Pysy kuulolla, kun jatkamme Foundationin tulevaisuuden muovaamista. Lisätietoja jaetaan kehityksen edetessä!",
+        "roadmap_mid_2026_period": "Heinä–Syyskuu"
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

@@ -383,14 +383,15 @@
         "migration_cta_title": "Interessert i Server 1061?",
         "migration_cta_desc": "Klar for det ultimate spranget? Koordiner overføringen til Server 1061 nå! Send inn søknaden din tidlig på portalen for å garantere en feilfri landing på Migrasjonsdagen.",
         "migration_cta_btn": "Søk om Server 1061",
-        "roadmap_mid_2026_title": "🚀 Foundation Utviklingsveikart: Midten av 2026 (Juli–September) 🚀",
+        "roadmap_mid_2026_title": "Foundation Utviklingsveikart: Midten av 2026",
         "roadmap_mid_2026_desc": "Handelsreisende, galaksen står aldri stille, og det gjør ikke vi heller. Her er en oversikt over hva som utvikles og planlegges for de kommende månedene!",
         "roadmap_mid_2026_intro": "Handelsreisende, galaksen står aldri stille, og det gjør ikke vi heller. Her er en oversikt over hva som utvikles og planlegges for de kommende månedene!",
         "roadmap_mid_2026_horizon_hdr": "🛰️ Hva som er i vente:",
         "roadmap_mid_2026_horizon_txt": "• Sesong 2: Vårt nåværende mål er august. Dette er vårt beste anslag basert på hvor vi står i dag. Hvis noe endrer seg, vil vi gi beskjed rundt slutten av juli. Vi setter stor pris på tålmodigheten din.\n• Gilde-ruiner & Serveroverskridende ruiner: Utvider Ruin Raiders med delte gilde-områder, enklere utgravinger av høy verdi og matchmaking på tvers av servere.\n• Shadowfront League: De 32 beste gildene fra hver åttende server konkurrerer i en turnering med 64 lag og direkte utslagning, i ekte Shadowfront-stil.\n• Boss Rush-spillmodus: Kjemp mot flere bosser på rad og press grensene dine.",
         "roadmap_mid_2026_note_hdr": "⚠️ Viktig merknad:",
         "roadmap_mid_2026_note_txt": "Alle funksjonene ovenfor er for tiden under utvikling og kan bli endret. Endelige detaljer, tidslinje og tilgjengelighet vil bli bekreftet i spillet.",
-        "roadmap_mid_2026_outro": "🌌 Følg med mens vi fortsetter å forme fremtiden for Foundation, flere detaljer vil bli delt etter hvert som utviklingen skrider frem!"
+        "roadmap_mid_2026_outro": "🌌 Følg med mens vi fortsetter å forme fremtiden for Foundation, flere detaljer vil bli delt etter hvert som utviklingen skrider frem!",
+        "roadmap_mid_2026_period": "Juli–September"
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

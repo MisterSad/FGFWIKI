@@ -383,14 +383,15 @@
         "migration_cta_title": "Interessato al Server 1061?",
         "migration_cta_desc": "Pronti per il salto finale? Coordina subito il tuo trasferimento al Server 1061! Invia la tua domanda in anticipo sul portale per garantire un atterraggio impeccabile il Giorno della Migrazione.",
         "migration_cta_btn": "Richiedi il Server 1061",
-        "roadmap_mid_2026_title": "🚀 Roadmap di Sviluppo di Foundation: Metà 2026 (Luglio–Settembre) 🚀",
+        "roadmap_mid_2026_title": "Roadmap di Sviluppo di Foundation: Metà 2026",
         "roadmap_mid_2026_desc": "Commercianti, la galassia non si ferma, e nemmeno noi. Ecco uno sguardo a ciò che è attualmente in fase di sviluppo e pianificato per i prossimi mesi!",
         "roadmap_mid_2026_intro": "Commercianti, la galassia non si ferma, e nemmeno noi. Ecco uno sguardo a ciò che è attualmente in fase di sviluppo e pianificato per i prossimi mesi!",
         "roadmap_mid_2026_horizon_hdr": "🛰️ Cosa c'è all'Orizzonte:",
         "roadmap_mid_2026_horizon_txt": "• Stagione 2: Il nostro obiettivo attuale è agosto. Questa è la nostra migliore stima in base alla situazione odierna. In caso di modifiche, lo comunicheremo verso la fine di luglio. Vi ringraziamo sinceramente per la pazienza.\n• Rovine di Gilda e Rovine Cross-Server: Espande i Razziatori di Rovine con spazi di gilda condivisi, scavi di alto valore più semplici e matchmaking tra server diversi.\n• Lega Shadowfront: Le prime 32 gilde di ogni gruppo di 8 server si sfideranno in un torneo a eliminazione diretta a 64 squadre, in stile Shadowfront.\n• Gameplay Boss Rush: Affronta incontri consecutivi con i boss e spingiti oltre i tuoi limiti.",
         "roadmap_mid_2026_note_hdr": "⚠️ Nota Importante:",
         "roadmap_mid_2026_note_txt": "Tutte le funzionalità sopra elencate sono attualmente in fase di sviluppo e soggette a modifiche. I dettagli definitivi, le tempistiche e la disponibilità saranno confermati all'interno del gioco.",
-        "roadmap_mid_2026_outro": "🌌 Rimanete sintonizzati mentre continuiamo a plasmare il futuro di Foundation, ulteriori dettagli saranno condivisi con il progredire dello sviluppo!"
+        "roadmap_mid_2026_outro": "🌌 Rimanete sintonizzati mentre continuiamo a plasmare il futuro di Foundation, ulteriori dettagli saranno condivisi con il progredire dello sviluppo!",
+        "roadmap_mid_2026_period": "Luglio–Settembre"
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",
