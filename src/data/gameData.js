@@ -666,6 +666,32 @@ export const tips = [
         text: 'tips.build_queue_trick_overview_txt'
       }
     ]
+  },
+  {
+    id: 'dev-roadmap-mid-2026',
+    category: 'news',
+    title: 'tips.roadmap_mid_2026_title',
+    content: 'tips.roadmap_mid_2026_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-07-07T00:50:00Z',
+    sections: [
+      {
+        text: 'tips.roadmap_mid_2026_intro'
+      },
+      {
+        header: 'tips.roadmap_mid_2026_horizon_hdr',
+        text: 'tips.roadmap_mid_2026_horizon_txt'
+      },
+      {
+        header: 'tips.roadmap_mid_2026_note_hdr',
+        text: 'tips.roadmap_mid_2026_note_txt'
+      },
+      {
+        text: 'tips.roadmap_mid_2026_outro'
+      }
+    ]
   }
 ];
 

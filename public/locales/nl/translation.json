@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Eerder ontdekte planeten en systemen blijven onderzocht.",
         "migration_cta_title": "Geïnteresseerd in Server 1061?",
         "migration_cta_desc": "Klaar voor de ultieme sprong? Coördineer nu uw overdracht naar Server 1061! Dien uw aanvraag tijdig in via het portaal, zodat u verzekerd bent van een vlekkeloze landing op de Migratiedag.",
-        "migration_cta_btn": "Vraag Server 1061 aan"
+        "migration_cta_btn": "Vraag Server 1061 aan",
+        "roadmap_mid_2026_title": "🚀 Foundation Ontwikkelings-Roadmap: Midden 2026 (Juli–September) 🚀",
+        "roadmap_mid_2026_desc": "Handelaren, de melkweg staat niet stil, en wij ook niet. Hier is een blik op wat er momenteel in ontwikkeling is en gepland staat voor de komende maanden!",
+        "roadmap_mid_2026_intro": "Handelaren, de melkweg staat niet stil, en wij ook niet. Hier is een blik op wat er momenteel in ontwikkeling is en gepland staat voor de komende maanden!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Wat staat er op de horizon:",
+        "roadmap_mid_2026_horizon_txt": "• Seizoen 2: Ons huidige doel is augustus. Dit is onze beste schatting op basis van waar we vandaag staan. Als er iets verandert, communiceren we dat rond eind juli. We stellen uw geduld zeer op prijs.\n• Gilderuïnes & Serveroverschrijdende Ruïnes: Breidt Ruïneplunderaars uit met gedeelde Gilderuïnes, eenvoudigere opgravingen van hoge waarde en serveroverschrijdende matchmaking.\n• Shadowfront League: De top 32 Gilden van elke 8 servers strijden in een toernooi met 64 teams in een knock-outsysteem, in de stijl van Shadowfront.\n• Boss Rush Gameplay: Neem het op tegen opeenvolgende baasgevechten en verleg je grenzen.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Belangrijke Opmerking:",
+        "roadmap_mid_2026_note_txt": "Alle hierboven genoemde functies zijn momenteel in ontwikkeling en kunnen worden gewijzigd. Definitieve details, timing en beschikbaarheid worden in-game bevestigd.",
+        "roadmap_mid_2026_outro": "🌌 Blijf op de hoogte terwijl we de toekomst van Foundation vorm blijven geven, meer details worden gedeeld naarmate de ontwikkeling vordert!"
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

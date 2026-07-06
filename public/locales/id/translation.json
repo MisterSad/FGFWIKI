@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Planet dan sistem yang ditemukan sebelumnya masih terus dieksplorasi.",
         "migration_cta_title": "Tertarik dengan Server 1061?",
         "migration_cta_desc": "Siap untuk lompatan terakhir? Koordinasikan transfer Anda ke Server 1061 sekarang! Kirimkan permohonan Anda lebih awal di portal untuk menjamin penerimaan yang sempurna pada Hari Migrasi.",
-        "migration_cta_btn": "Terapkan untuk Server 1061"
+        "migration_cta_btn": "Terapkan untuk Server 1061",
+        "roadmap_mid_2026_title": "🚀 Peta Jalan Pengembangan Foundation: Pertengahan 2026 (Juli–September) 🚀",
+        "roadmap_mid_2026_desc": "Para Pedagang, galaksi tidak pernah berhenti bergerak, begitu juga kami. Berikut adalah sekilas tentang apa yang saat ini sedang dikembangkan dan direncanakan untuk bulan-bulan mendatang!",
+        "roadmap_mid_2026_intro": "Para Pedagang, galaksi tidak pernah berhenti bergerak, begitu juga kami. Berikut adalah sekilas tentang apa yang saat ini sedang dikembangkan dan direncanakan untuk bulan-bulan mendatang!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Apa yang Ada di Depan Mata:",
+        "roadmap_mid_2026_horizon_txt": "• Musim 2: Target kami saat ini adalah bulan Agustus. Ini adalah perkiraan terbaik kami berdasarkan situasi saat ini. Jika ada perubahan, kami akan mengumumkannya sekitar akhir Juli. Kami sangat menghargai kesabaran Anda.\n• Reruntuhan Serikat & Reruntuhan Lintas Server: Memperluas Ruin Raiders dengan ruang Serikat bersama, penggalian bernilai tinggi yang lebih mudah, dan pencarian lawan lintas server.\n• Liga Shadowfront: 32 Serikat teratas dari setiap 8 server akan bersaing dalam turnamen eliminasi tunggal berisi 64 tim, dengan gaya Shadowfront.\n• Mode Boss Rush: Hadapi pertarungan bos berturut-turut dan dorong batas kemampuan Anda.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Catatan Penting:",
+        "roadmap_mid_2026_note_txt": "Semua fitur yang tercantum di atas saat ini sedang dalam pengembangan dan dapat berubah sewaktu-waktu. Detail akhir, waktu, dan ketersediaan akan dikonfirmasi di dalam game.",
+        "roadmap_mid_2026_outro": "🌌 Ikuti terus perkembangan kami saat kami terus membentuk masa depan Foundation, detail lebih lanjut akan dibagikan seiring kemajuan pengembangan!"
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

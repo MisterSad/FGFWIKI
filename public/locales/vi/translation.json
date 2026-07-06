@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Các hành tinh và hệ thống được phát hiện trước đây vẫn được khám phá.",
         "migration_cta_title": "Quan tâm đến Máy chủ 1061?",
         "migration_cta_desc": "Sẵn sàng cho bước nhảy vọt cuối cùng? Hãy điều phối việc chuyển của bạn sang Máy chủ 1061 ngay bây giờ! Hãy gửi đơn đăng ký của bạn sớm trên cổng thông tin để đảm bảo bạn sẽ đến nơi hoàn hảo vào Ngày di cư.",
-        "migration_cta_btn": "Đăng ký Server 1061"
+        "migration_cta_btn": "Đăng ký Server 1061",
+        "roadmap_mid_2026_title": "🚀 Lộ trình Phát triển Foundation: Giữa năm 2026 (Tháng 7–Tháng 9) 🚀",
+        "roadmap_mid_2026_desc": "Hỡi các Nhà du hành, thiên hà không bao giờ đứng yên, và chúng tôi cũng vậy. Dưới đây là cái nhìn tổng quan về những gì đang được phát triển và lên kế hoạch cho những tháng tới!",
+        "roadmap_mid_2026_intro": "Hỡi các Nhà du hành, thiên hà không bao giờ đứng yên, và chúng tôi cũng vậy. Dưới đây là cái nhìn tổng quan về những gì đang được phát triển và lên kế hoạch cho những tháng tới!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Những gì sắp ra mắt:",
+        "roadmap_mid_2026_horizon_txt": "• Mùa 2: Mục tiêu hiện tại của chúng tôi là tháng 8. Đây là ước tính tốt nhất dựa trên tình hình thực tế hiện tại. Nếu có bất kỳ thay đổi nào, chúng tôi sẽ thông báo vào khoảng cuối tháng 7. Xin chân thành cảm ơn sự kiên nhẫn của các bạn.\n• Phế tích Bang hội & Phế tích Liên Server: Mở rộng tính năng Kẻ cướp phế tích với không gian Bang hội chung, các cuộc khai quật vật phẩm giá trị cao dễ dàng hơn và ghép trận liên server.\n• Giải đấu Shadowfront: 32 Bang hội hàng đầu từ mỗi cụm 8 server sẽ tranh tài trong giải đấu loại trực tiếp 64 đội, theo phong cách Shadowfront.\n• Chế độ Boss Rush: Đối mặt với các trận chiến Boss liên tiếp và thử thách giới hạn của bản thân.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Lưu ý quan trọng:",
+        "roadmap_mid_2026_note_txt": "Tất cả các tính năng liệt kê trên đây hiện đang trong quá trình phát triển và có thể thay đổi. Chi tiết cuối cùng, thời gian và tính khả dụng sẽ được xác nhận cụ thể trong trò chơi.",
+        "roadmap_mid_2026_outro": "🌌 Hãy chú ý theo dõi khi chúng tôi tiếp tục định hình tương lai của Foundation, thông tin chi tiết sẽ được chia sẻ thêm khi quá trình phát triển tiến triển!"
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

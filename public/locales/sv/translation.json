@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Tidigare upptäckta planeter och system är fortfarande utforskade.",
         "migration_cta_title": "Intresserad av Server 1061?",
         "migration_cta_desc": "Redo för det ultimata språnget? Koordinera din överföring till Server 1061 nu! Skicka in din ansökan tidigt på portalen för att garantera en felfri landning på Migrationsdagen.",
-        "migration_cta_btn": "Ansök om Server 1061"
+        "migration_cta_btn": "Ansök om Server 1061",
+        "roadmap_mid_2026_title": "🚀 Foundation Utvecklingsfärdplan: Mitten av 2026 (Juli–September) 🚀",
+        "roadmap_mid_2026_desc": "Handelsmän, galaxen står inte stilla, och det gör inte vi heller. Här är en titt på vad som utvecklas just nu och planeras för de kommande månaderna!",
+        "roadmap_mid_2026_intro": "Handelsmän, galaxen står inte stilla, och det gör inte vi heller. Här är en titt på vad som utvecklas just nu och planeras för de kommande månaderna!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Vad som är på horisonten:",
+        "roadmap_mid_2026_horizon_txt": "• Säsong 2: Vårt nuvarande mål är augusti. Detta är vår bästa uppskattning baserat på var vi är idag. Om något ändras kommer vi att kommunicera det runt slutet av juli. Vi uppskattar verkligen ert tålamod.\n• Gillets Ruiner & Serveröverskridande Ruiner: Utökar Ruinplundrare med delade gille-områden, enklare utgrävningar av högt värde och serveröverskridande matchmaking.\n• Shadowfront League: De 32 främsta gillena från var 8:e server tävlar i en turnering med 64 lag med direktutslagning, i Shadowfront-stil.\n• Boss Rush-spelläge: Möta flera bossar i rad och pressa dina gränser.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Viktig information:",
+        "roadmap_mid_2026_note_txt": "Alla funktioner som listas ovan are för närvarande under utveckling och kan komma att ändras. Slutgiltiga detaljer, tidpunkter och tillgänglighet kommer att bekräftas i spelet.",
+        "roadmap_mid_2026_outro": "🌌 Håll ögonen öppna medan vi fortsätter att forma framtiden för Foundation, fler detaljer kommer att delas allt eftersom utvecklingen fortskrider!"
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",
