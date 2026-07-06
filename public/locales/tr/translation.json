@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Daha önce keşfedilen gezegenler ve sistemler keşfedilmeye devam ediyor.",
         "migration_cta_title": "Sunucu 1061 ile ilgileniyor musunuz?",
         "migration_cta_desc": "Nihai sıçramaya hazır mısınız? Sunucu 1061'e transferinizi şimdi koordine edin! Göç Günü'nde kusursuz bir iniş sağlamak için başvurunuzu portal üzerinden erkenden gönderin.",
-        "migration_cta_btn": "Sunucu 1061'e Başvurun"
+        "migration_cta_btn": "Sunucu 1061'e Başvurun",
+        "roadmap_mid_2026_title": "🚀 Foundation Geliştirici Yol Haritası: 2026 Ortası (Temmuz–Eylül) 🚀",
+        "roadmap_mid_2026_desc": "Tüccarlar, galaksi yerinde durmuyor ve biz de durmuyoruz. İşte şu anda geliştirilmekte olan ve önümüzdeki aylar için planlanan yeniliklere genel bir bakış!",
+        "roadmap_mid_2026_intro": "Tüccarlar, galaksi yerinde durmuyor ve biz de durmuyoruz. İşte şu anda geliştirilmekte olan ve önümüzdeki aylar için planlanan yeniliklere genel bir bakış!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Ufukta Neler Var:",
+        "roadmap_mid_2026_horizon_txt": "• Sezon 2: Şu anki hedefimiz Ağustos ayı. Bu, bugünkü durumumuza göre en iyi tahminimizdir. Herhangi bir değişiklik olması durumunda, bunu Temmuz ayının sonuna doğru ileteceğiz. Sabrınız için içtenlikle teşekkür ederiz.\n• Birlik Harabeleri ve Sunucular Arası Harabeler: Ortak Birlik alanları, daha kolay yüksek değerli kazılar ve sunucular arası eşleştirme ile Harabe Akıncıları modunu genişletir.\n• Shadowfront Ligi: Her 8 sunucunun en iyi 32 Birliği, Shadowfront tarzında 64 takımlı tek elemeli bir turnuvada yarışacak.\n• Boss Rush Oynanışı: Birbiri ardına gelen boss karşılaşmalarıyla yüzleşin ve sınırlarınızı zorlayın.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Önemli Not:",
+        "roadmap_mid_2026_note_txt": "Yukarıda listelenen tüm özellikler şu anda geliştirilme aşamasındadır ve değişikliğe tabidir. Nihai ayrıntılar, zamanlama ve kullanılabilirlik oyun içinde onaylanacaktır.",
+        "roadmap_mid_2026_outro": "🌌 Foundation'ın geleceğini şekillendirmeye devam ederken bizi takip etmeye devam edin, geliştirme ilerledikçe daha fazla ayrıntı paylaşılacaktır!"
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

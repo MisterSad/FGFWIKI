@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Planet dan sistem yang ditemui sebelum ini kekal diterokai.",
         "migration_cta_title": "Berminat dengan Server 1061?",
         "migration_cta_desc": "Bersedia untuk lompatan muktamad? Selaraskan pemindahan anda ke Pelayan 1061 sekarang! Hantar permohonan anda lebih awal di portal untuk menjamin pendaratan yang sempurna pada Hari Migrasi.",
-        "migration_cta_btn": "Mohon untuk Pelayan 1061"
+        "migration_cta_btn": "Mohon untuk Pelayan 1061",
+        "roadmap_mid_2026_title": "🚀 Hala Tuju Pembangunan Foundation: Pertengahan 2026 (Julai–September) 🚀",
+        "roadmap_mid_2026_desc": "Pedagang sekalian, galaksi tidak pernah diam, begitu juga kami. Berikut adalah tinjauan terhadap perkara yang sedang dibangunkan dan dirancang untuk bulan-bulan akan datang!",
+        "roadmap_mid_2026_intro": "Pedagang sekalian, galaksi tidak pernah diam, begitu juga kami. Berikut adalah tinjauan terhadap perkara yang sedang dibangunkan dan dirancang untuk bulan-bulan akan datang!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Apa yang Ada di Ufuk:",
+        "roadmap_mid_2026_horizon_txt": "• Musim 2: Sasaran semasa kami adalah pada bulan Ogos. Ini adalah anggaran terbaik kami berdasarkan kedudukan kami hari ini. Jika ada sebarang perubahan, kami akan maklumkan sekitar akhir Julai. Kami amat menghargai kesabaran anda.\n• Runtuhan Kesatuan & Runtuhan Rentas Pelayan: Memperluaskan Ruin Raiders dengan ruang Kesatuan berkongsi, penggalian bernilai tinggi yang lebih mudah, dan pencarian perlawanan rentas pelayan.\n• Liga Shadowfront: 32 Kesatuan teratas dari setiap 8 pelayan akan bersaing dalam kejohanan penyingkiran tunggal 64 pasukan, mengikut gaya Shadowfront.\n• Permainan Boss Rush: Hadapi pertempuran bos berturut-turut dan uji had keupayaan anda.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Nota Penting:",
+        "roadmap_mid_2026_note_txt": "All features listed above are currently under development and subject to change. Final details, timing, and availability will be confirmed in-game.",
+        "roadmap_mid_2026_outro": "🌌 Nantikan perkembangan lanjut sementara kami terus membentuk masa depan Foundation, butiran lanjut akan dikongsi seiring dengan kemajuan pembangunan!"
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",

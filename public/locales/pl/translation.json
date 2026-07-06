@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Wcześniej odkryte planety i układy pozostają przedmiotem badań.",
         "migration_cta_title": "Zainteresowany serwerem 1061?",
         "migration_cta_desc": "Gotowy na ostateczny skok? Koordynuj swój transfer na Serwer 1061 już teraz! Złóż wniosek wcześniej na portalu, aby zagwarantować bezproblemowe lądowanie w Dniu Migracji.",
-        "migration_cta_btn": "Złóż wniosek o serwer 1061"
+        "migration_cta_btn": "Złóż wniosek o serwer 1061",
+        "roadmap_mid_2026_title": "🚀 Plan rozwoju Foundation: Połowa 2026 roku (Lipiec–Wrzesień) 🚀",
+        "roadmap_mid_2026_desc": "Handlowcy, galaktyka nie stoi w miejscu i my również. Oto spojrzenie na to, co jest obecnie w fazie rozwoju i co planujemy na nadchodzące miesiące!",
+        "roadmap_mid_2026_intro": "Handlowcy, galaktyka nie stoi w miejscu i my również. Oto spojrzenie na to, co jest obecnie w fazie rozwoju i co planujemy na nadchodzące miesiące!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Co na horyzoncie:",
+        "roadmap_mid_2026_horizon_txt": "• Sezon 2: Naszym obecnym celem jest sierpień. To nasze najlepsze szacunki na podstawie obecnego stanu prac. Jeśli coś ulegnie zmianie, poinformujemy o tym pod koniec lipca. Dziękujemy bardzo za cierpliwość.\n• Ruiny gildii i ruiny między-serwerowe: Rozbudowa Ruin Raiders o wspólne przestrzenie gildiowe, łatwiejsze wykopaliska o wysokiej wartości oraz dobieranie graczy z różnych serwerów.\n• Liga Shadowfront: 32 najlepsze gildie z każdych 8 serwerów zmierzą się w 64-zespołowym turnieju eliminacyjnym w stylu Shadowfront.\n• Rozgrywka Boss Rush: Zmierz się z kolejnymi bossami i sprawdź swoje możliwości.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Ważna uwaga:",
+        "roadmap_mid_2026_note_txt": "Wszystkie wymienione wyżej funkcje są obecnie w fazie rozwoju i mogą ulec zmianie. Ostateczne szczegóły, terminy i dostępność zostaną potwierdzone bezpośrednio w grze.",
+        "roadmap_mid_2026_outro": "🌌 Śledźcie wiadomości, ponieważ stale kształtujemy przyszłość Foundation. Więcej szczegółów udostępnimy w miarę postępów prac!"
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

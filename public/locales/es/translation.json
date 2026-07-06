@@ -382,7 +382,15 @@
         "migration_effect_preserve3": "Los planetas y sistemas previamente descubiertos siguen siendo explorados.",
         "migration_cta_title": "¿Interesado en el servidor 1061?",
         "migration_cta_desc": "¿Listo para el salto definitivo? ¡Coordina tu transferencia al Servidor 1061 ahora! Envíe su solicitud con anticipación en el portal para garantizar un aterrizaje impecable el Día de la Migración.",
-        "migration_cta_btn": "Solicite el servidor 1061"
+        "migration_cta_btn": "Solicite el servidor 1061",
+        "roadmap_mid_2026_title": "🚀 Hoja de ruta de desarrollo de Foundation: Mediados de 2026 (Julio–Septiembre) 🚀",
+        "roadmap_mid_2026_desc": "Comerciantes, la galaxia no se detiene, y nosotros tampoco. ¡Aquí tienen un vistazo a lo que está en desarrollo y planificado para los próximos meses!",
+        "roadmap_mid_2026_intro": "Comerciantes, la galaxia no se detiene, y nosotros tampoco. ¡Aquí tienen un vistazo a lo que está en desarrollo y planificado para los próximos meses!",
+        "roadmap_mid_2026_horizon_hdr": "🛰️ Qué hay en el horizonte:",
+        "roadmap_mid_2026_horizon_txt": "• Temporada 2: Nuestro objetivo actual es agosto. Esta es nuestra mejor estimación basándonos en la situación actual. Si hay algún cambio, lo comunicaremos a finales de julio. Agradecemos enormemente su paciencia.\n• Ruinas de gremio y ruinas interservidor: Amplía los Asaltantes de ruinas con espacios de gremio compartidos, excavaciones de gran valor más sencillas y emparejamiento entre servidores.\n• Liga Shadowfront: Los 32 mejores gremios de cada grupo de 8 servidores competirán en un torneo de eliminación directa de 64 equipos, al estilo Shadowfront.\n• Modo Boss Rush: Enfréntate a encuentros consecutivos con jefes y supera tus propios límites.",
+        "roadmap_mid_2026_note_hdr": "⚠️ Nota importante:",
+        "roadmap_mid_2026_note_txt": "Todas las funciones enumeradas anteriormente están en desarrollo y sujetas a cambios. Los detalles finales, fechas y disponibilidad se confirmarán dentro del juego.",
+        "roadmap_mid_2026_outro": "🌌 ¡Sigan atentos mientras seguimos dando forma al futuro de Foundation, compartiremos más detalles a medida que avance el desarrollo!"
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",
