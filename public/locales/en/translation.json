@@ -385,14 +385,15 @@
         "migration_cta_title": "Interested in Server 1061?",
         "migration_cta_desc": "Ready for the ultimate leap? Coordinate your transfer to Server 1061 now! Submit your application early on the portal to guarantee a flawless landing on Migration Day.",
         "migration_cta_btn": "Apply for Server 1061",
-        "roadmap_mid_2026_title": "🚀 Foundation Dev Roadmap: Mid 2026 (July–September) 🚀",
+        "roadmap_mid_2026_title": "Foundation Dev Roadmap: Mid 2026",
         "roadmap_mid_2026_desc": "Traders, the galaxy doesn't stand still, and neither do we. Here's a look at what is currently in development and planned for the coming months!",
         "roadmap_mid_2026_intro": "Traders, the galaxy doesn't stand still, and neither do we. Here's a look at what is currently in development and planned for the coming months!",
         "roadmap_mid_2026_horizon_hdr": "🛰️ What's on the Horizon:",
         "roadmap_mid_2026_horizon_txt": "• Season 2: Our current target is August. This is our best estimate based on where we are today. If anything changes, we will communicate it around the end of July. We truly appreciate your patience.\n• Guild Ruins & Cross-Server Ruins: Expands Ruin Raiders with shared Guild spaces, easier high-value excavations, and cross-server matchmaking.\n• Shadowfront League: The top 32 Guilds from every 8 servers will compete in a 64-team single-elimination tournament, Shadowfront-style.\n• Boss Rush Gameplay: Face consecutive boss encounters and push your limits.",
         "roadmap_mid_2026_note_hdr": "⚠️ Important Note:",
         "roadmap_mid_2026_note_txt": "All features listed above are currently under development and subject to change. Final details, timing, and availability will be confirmed in-game.",
-        "roadmap_mid_2026_outro": "🌌 Stay tuned as we continue shaping the future of Foundation, more details will be shared as development progresses!"
+        "roadmap_mid_2026_outro": "🌌 Stay tuned as we continue shaping the future of Foundation, more details will be shared as development progresses!",
+        "roadmap_mid_2026_period": "July–September"
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

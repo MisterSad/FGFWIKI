@@ -383,14 +383,15 @@
         "migration_cta_title": "Interessado no Servidor 1061?",
         "migration_cta_desc": "Pronto para o salto final? Coordene sua transferência para o Servidor 1061 agora! Envie sua inscrição com antecedência no portal para garantir um pouso perfeito no Dia da Migração.",
         "migration_cta_btn": "Inscreva-se no Servidor 1061",
-        "roadmap_mid_2026_title": "🚀 Cronograma de Desenvolvimento de Foundation: Meados de 2026 (Julho–Setembro) 🚀",
+        "roadmap_mid_2026_title": "Cronograma de Desenvolvimento de Foundation: Meados de 2026",
         "roadmap_mid_2026_desc": "Negociantes, a galáxia não para, e nós também não. Aqui está uma antevisão do que está em desenvolvimento e planeado para os próximos meses!",
         "roadmap_mid_2026_intro": "Negociantes, a galáxia não para, e nós também não. Aqui está uma antevisão do que está em desenvolvimento e planeado para os próximos meses!",
         "roadmap_mid_2026_horizon_hdr": "🛰️ O que está no Horizonte:",
         "roadmap_mid_2026_horizon_txt": "• Temporada 2: O nosso objetivo atual é agosto. Esta é a nossa melhor estimativa com base no ponto em que nos encontramos hoje. Se algo mudar, comunicaremos no final de julho. Agradecemos sinceramente a vossa paciência.\n• Ruínas de Guilda e Ruínas Inter-Servidores: Expande os Saqueadores de Ruínas com espaços de Guilda partilhados, escavações de alto valor mais fáceis e emparelhamento entre servidores.\n• Liga Shadowfront: As 32 melhores Guildas de cada grupo de 8 servidores competirão num torneio de eliminação única de 64 equipas, ao estilo Shadowfront.\n• Modo Boss Rush: Enfrente encontros sucessivos com chefes e supere os seus limites.",
         "roadmap_mid_2026_note_hdr": "⚠️ Nota Importante:",
         "roadmap_mid_2026_note_txt": "Todas as funcionalidades listadas acima estão atualmente em desenvolvimento e sujeitas a alterações. Detalhes finais, datas e disponibilidade serão confirmados no jogo.",
-        "roadmap_mid_2026_outro": "🌌 Fiquem atentos enquanto continuamos a moldar o futuro de Foundation, mais detalhes serão partilhados conforme o desenvolvimento avançar!"
+        "roadmap_mid_2026_outro": "🌌 Fiquem atentos enquanto continuamos a moldar o futuro de Foundation, mais detalhes serão partilhados conforme o desenvolvimento avançar!",
+        "roadmap_mid_2026_period": "Julho–Setembro"
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",
