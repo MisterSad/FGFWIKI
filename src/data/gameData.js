@@ -1350,5 +1350,77 @@ export const eventsData = [
       { title: 'events.commerce_guild_duel_league_match_rules_title', content: 'events.commerce_guild_duel_league_match_rules' },
       { title: 'events.commerce_guild_duel_league_rewards_title', content: 'events.commerce_guild_duel_league_rewards_desc' }
     ]
+  },
+  {
+    id: 'galaxy_cup_carnival',
+    title: 'events.galaxy_cup_carnival_title',
+    publishDate: '2026-07-07T17:39:58+02:00',
+    isNew: true,
+    isLimited: true,
+    cycle: 'events.galaxy_cup_carnival_cycle',
+    type: 'events.galaxy_cup_carnival_type',
+    description: 'events.galaxy_cup_carnival_desc',
+    infoGrid: {
+      title: 'events.galaxy_cup_carnival_schedule_title',
+      items: [
+        { label: 'Server 1001–1016', value: 'events.galaxy_cup_carnival_schedule_servers_1' },
+        { label: 'Server 1017–1205', value: 'events.galaxy_cup_carnival_schedule_servers_2' },
+        { label: 'Stadium Shop Exchange', value: 'events.galaxy_cup_carnival_exchange_hint' }
+      ]
+    },
+    dailyActions: [
+      { focus: 'events.galaxy_cup_carnival_activity_signin', details: 'events.galaxy_cup_carnival_activity_signin_desc' },
+      { focus: 'events.galaxy_cup_carnival_activity_pass', details: 'events.galaxy_cup_carnival_activity_pass_desc' },
+      { focus: 'events.galaxy_cup_carnival_activity_frenzy', details: 'events.galaxy_cup_carnival_activity_frenzy_desc' }
+    ],
+    stagesTitle: 'events.galaxy_cup_sprint_guide_title',
+    stages: [
+      { title: 'events.galaxy_cup_sprint_step_1_title', description: 'events.galaxy_cup_sprint_step_1_desc' },
+      { title: 'events.galaxy_cup_sprint_step_2_title', description: 'events.galaxy_cup_sprint_step_2_desc' },
+      { title: 'events.galaxy_cup_sprint_step_3_title', description: 'events.galaxy_cup_sprint_step_3_desc' },
+      { title: 'events.galaxy_cup_sprint_step_4_title', description: 'events.galaxy_cup_sprint_step_4_desc' },
+      { title: 'events.galaxy_cup_sprint_step_5_title', description: 'events.galaxy_cup_sprint_step_5_desc' },
+      { title: 'events.galaxy_cup_sprint_step_6_title', description: 'events.galaxy_cup_sprint_step_6_desc' }
+    ],
+    tacticsTitle: 'events.galaxy_cup_carnival_features_title',
+    tactics: [
+      {
+        title: 'events.galaxy_cup_carnival_feature_wheel',
+        content: 'events.galaxy_cup_carnival_feature_wheel_desc',
+        image: '/images/GC_carnivalwhistle.png'
+      },
+      {
+        title: 'events.galaxy_cup_carnival_feature_shop',
+        content: 'events.galaxy_cup_carnival_feature_shop_desc',
+        image: '/images/GC_goldenballcoin.png'
+      },
+      {
+        title: 'events.galaxy_cup_carnival_reward_skin',
+        content: 'events.galaxy_cup_carnival_reward_skin_desc',
+        image: '/images/GC_verdantcosmos.png'
+      },
+      {
+        title: 'events.galaxy_cup_carnival_reward_frame',
+        content: 'events.galaxy_cup_carnival_reward_frame_desc',
+        image: '/images/GC_frame.png'
+      },
+      {
+        title: 'events.galaxy_cup_carnival_reward_kill',
+        content: 'events.galaxy_cup_carnival_reward_kill_desc',
+        image: '/images/GC_killingeffect.png'
+      },
+      {
+        title: 'events.galaxy_cup_carnival_reward_chat',
+        content: 'events.galaxy_cup_carnival_reward_chat_desc',
+        image: '/images/GC_chatframe.png'
+      }
+    ],
+    proTips: [
+      { title: 'events.galaxy_cup_carnival_rule_pass_title', content: 'events.galaxy_cup_carnival_rule_pass_content' },
+      { title: 'events.galaxy_cup_carnival_rule_frenzy_title', content: 'events.galaxy_cup_carnival_rule_frenzy_content' },
+      { title: 'events.galaxy_cup_carnival_rule_wheel_title', content: 'events.galaxy_cup_carnival_rule_wheel_content' },
+      { title: 'events.galaxy_cup_carnival_rule_shop_title', content: 'events.galaxy_cup_carnival_rule_shop_content' },
+      { title: 'events.galaxy_cup_carnival_rule_sprint_title', content: 'events.galaxy_cup_sprint_rule_note' }
+    ]
   }
 ];
