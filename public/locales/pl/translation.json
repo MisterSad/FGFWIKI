@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Ważna uwaga:",
         "roadmap_mid_2026_note_txt": "Wszystkie wymienione wyżej funkcje są obecnie w fazie rozwoju i mogą ulec zmianie. Ostateczne szczegóły, terminy i dostępność zostaną potwierdzone bezpośrednio w grze.",
         "roadmap_mid_2026_outro": "🌌 Śledźcie wiadomości, ponieważ stale kształtujemy przyszłość Foundation. Więcej szczegółów udostępnimy w miarę postępów prac!",
-        "roadmap_mid_2026_period": "Lipiec–Wrzesień"
+        "roadmap_mid_2026_period": "Lipiec–Wrzesień",
+        "season2_reveal_title": "SEZON 2: PEŁNA MAPA GWIAZD I STRUKTURY OBRONNE",
+        "season2_reveal_desc": "Pełna mapa gwiazd prowincji Siwenna już jest! Odkryj wszystkie układy gwiezdne i dowiedz się, jak zbudować nową wieżę tarczy elektromagnetycznej i rafinerię rudy.",
+        "season2_reveal_intro": "Kupcy, kolejny etap podróży został w końcu ujawniony. Oto pełna mapa gwiezdna prowincji Siwenna, przedstawiająca szczegółowo każdy układ gwiezdny, w którym gracze będą rywalizować, współpracować i budować swoje imperium w Sezonie 2. Ponadto artykuł ten opisuje dwie kluczowe struktury sezonowe, niezbędne do przetrwania w trudnych warunkach kosmicznych burz magnetycznych.",
+        "season2_reveal_map_hdr": "Pełna mapa prowincji Siwenna",
+        "season2_reveal_map_txt": "Obszar gwiezdny został w pełni zmapowany. Od zewnętrznych granic, gdzie założycie swoje pierwsze bazy, po kluczowe regiony centralne – możecie teraz zaplanować trasę przez układy poziomu 8, 9, 10 i 11, aż do centralnego układu poziomu 12, Orun. Przeanalizujcie ścieżki, zidentyfikujcie punkty krytyczne i koordynujcie działania ze swoją gildią, aby przejąć porty Siwenny.",
+        "season2_reveal_tower_hdr": "Wieża Tarczy Elektromagnetycznej",
+        "season2_reveal_tower_txt": "Wieża Tarczy Elektromagnetycznej skutecznie chroni przed zakłóceniami powodowanymi przez promieniowanie burz magnetycznych. Ulepszaj ją za pomocą kryształów odporności, aby znacznie zwiększyć odporność.",
+        "season2_reveal_refinery_hdr": "Rafineria Rudy",
+        "season2_reveal_refinery_txt": "Rafineria Rudy przetwarza rudę magnetytu w kryształy odporności, które służą do ulepszania wieży tarczy elektromagnetycznej."
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

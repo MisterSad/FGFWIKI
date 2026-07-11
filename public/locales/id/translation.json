@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Catatan Penting:",
         "roadmap_mid_2026_note_txt": "Semua fitur yang tercantum di atas saat ini sedang dalam pengembangan dan dapat berubah sewaktu-waktu. Detail akhir, waktu, dan ketersediaan akan dikonfirmasi di dalam game.",
         "roadmap_mid_2026_outro": "🌌 Ikuti terus perkembangan kami saat kami terus membentuk masa depan Foundation, detail lebih lanjut akan dibagikan seiring kemajuan pengembangan!",
-        "roadmap_mid_2026_period": "Juli–September"
+        "roadmap_mid_2026_period": "Juli–September",
+        "season2_reveal_title": "SEASON 2: PETA BINTANG LENGKAP & STRUKTUR PERTAHANAN",
+        "season2_reveal_desc": "Peta bintang lengkap Provinsi Siwenna telah hadir! Temukan semua sistem bintang dan pelajari cara membangun Menara Perisai Elektromagnetik dan Pengilangan Bijih baru.",
+        "season2_reveal_intro": "Para pedagang, fase berikutnya dari perjalanan kita akhirnya terungkap. Berikut adalah peta bintang lengkap Provinsi Siwenna, yang merinci setiap sistem bintang tempat pemain akan bersaing, bekerja sama, dan membangun kekaisaran di Season 2. Selain itu, artikel ini juga merinci dua struktur musiman penting yang akan sangat penting bagi kelangsungan hidup dari bahaya lingkungan badai magnet kosmik.",
+        "season2_reveal_map_hdr": "Peta Lengkap Provinsi Siwenna",
+        "season2_reveal_map_txt": "Medan bintang telah dipetakan sepenuhnya. Dari batas luar tempat Anda akan mendirikan pangkalan pertama hingga wilayah inti berisiko tinggi, Anda sekarang dapat merencanakan rute melalui sistem Level 8, 9, 10, dan 11, hingga ke sistem pusat Level 12, Orun. Pelajari jalurnya, identifikasi titik-titik penyumbatan, dan berkoordinasi dengan Guild Anda untuk menguasai pelabuhan-pelabuhan Siwenna.",
+        "season2_reveal_tower_hdr": "Menara Perisai Elektromagnetik",
+        "season2_reveal_tower_txt": "Menara Perisai Elektromagnetik secara efektif melindungi dari gangguan radiasi badai magnet. Tingkatkan dengan Kristal Resistansi untuk meningkatkan Resistansi secara drastis.",
+        "season2_reveal_refinery_hdr": "Pengilangan Bijih",
+        "season2_reveal_refinery_txt": "Pengilangan Bijih memproses Bijih Magnetit menjadi Kristal Resistansi, yang digunakan untuk meningkatkan Menara Perisai Elektromagnetik."
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

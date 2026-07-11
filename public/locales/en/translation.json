@@ -393,7 +393,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Important Note:",
         "roadmap_mid_2026_note_txt": "All features listed above are currently under development and subject to change. Final details, timing, and availability will be confirmed in-game.",
         "roadmap_mid_2026_outro": "🌌 Stay tuned as the developers continue shaping the future of Foundation, more details will be shared as development progresses!",
-        "roadmap_mid_2026_period": "July–September"
+        "roadmap_mid_2026_period": "July–September",
+        "season2_reveal_title": "SEASON 2: FULL STAR MAP REVEAL & DEFENSES",
+        "season2_reveal_desc": "The complete star map of Siwenna Province is here! Discover all star systems and learn how to construct the new Electromagnetic Shield Tower and Ore Refinery.",
+        "season2_reveal_intro": "Traders, the next phase of the journey is finally unveiled. Here is the complete stellar map of the Siwenna Province, detailing every star system where players will compete, cooperate, and build their empires in Season 2. In addition, this guide details two critical seasonal structures that will be essential for survival against the environmental hazards of cosmic magnetic storms.",
+        "season2_reveal_map_hdr": "The Complete Siwenna Province Map",
+        "season2_reveal_map_txt": "The starfield is fully mapped. From the outer borders where you will establish your first bases to the high-stakes core regions, you can now plan your route through Level 8, 9, 10, and 11 systems, all the way to the central Level 12 system of Orun. Study the pathways, identify choke points, and coordinate with your Guild to claim the ports of Siwenna.",
+        "season2_reveal_tower_hdr": "Electromagnetic Shield Tower",
+        "season2_reveal_tower_txt": "The Electromagnetic Shield Tower effectively protects against interference from magnetic storm radiation. Upgrade it with Resistance Crystals to greatly increase Resistance.",
+        "season2_reveal_refinery_hdr": "Ore Refinery",
+        "season2_reveal_refinery_txt": "The Ore Refinery processes Magnetite Ore into Resistance Crystals, which are used to enhance the Electromagnetic Shield Tower."
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

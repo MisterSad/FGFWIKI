@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Belangrijke Opmerking:",
         "roadmap_mid_2026_note_txt": "Alle hierboven genoemde functies zijn momenteel in ontwikkeling en kunnen worden gewijzigd. Definitieve details, timing en beschikbaarheid worden in-game bevestigd.",
         "roadmap_mid_2026_outro": "🌌 Blijf op de hoogte terwijl we de toekomst van Foundation vorm blijven geven, meer details worden gedeeld naarmate de ontwikkeling vordert!",
-        "roadmap_mid_2026_period": "Juli–September"
+        "roadmap_mid_2026_period": "Juli–September",
+        "season2_reveal_title": "SEIZOEN 2: VOLLEDIGE STERRENKAART & VERDEDIGING",
+        "season2_reveal_desc": "De volledige sterrenkaart van de provincie Siwenna is er! Ontdek alle sterrenstelsels en leer hoe je de nieuwe elektromagnetische schildtoren en de ertsraffinaderij bouwt.",
+        "season2_reveal_intro": "Handelaren, de volgende fase van de reis is eindelijk onthuld. Hier is de volledige sterrenkaart van de provincie Siwenna, met details over elk sterrenstelsel waarin spelers in Seizoen 2 zullen strijden, samenwerken en hun imperium zullen opbouwen. Daarnaast lichten we twee cruciale seizoensgebonden gebouwen toe die essentieel zijn om te overleven in de vijandige omgeving van kosmische magnetische stormen.",
+        "season2_reveal_map_hdr": "De volledige kaart van de provincie Siwenna",
+        "season2_reveal_map_txt": "Het sterrenveld is volledig in kaart gebracht. Van de buitenste grenzen waar je je eerste bases zult vestigen tot de zwaarbevochten kernregio's, kun je nu je route plannen door systemen van niveau 8, 9, 10 en 11, tot aan het centrale systeem van niveau 12, Orun. Bestudeer de verbindingen, identificeer knelpunten en coördineer met je gilde om de havens van Siwenna te veroveren.",
+        "season2_reveal_tower_hdr": "Elektromagnetische Schildtoren",
+        "season2_reveal_tower_txt": "De Elektromagnetische Schildtoren beschermt effectief tegen interferentie door straling van magnetische stormen. Upgrade hem met weerstandskristallen om de weerstand aanzienlijk te verhogen.",
+        "season2_reveal_refinery_hdr": "Ertsraffinaderij",
+        "season2_reveal_refinery_txt": "De Ertsraffinaderij verwerkt magnetieterts tot weerstandskristallen, die worden gebruikt om de Elektromagnetische Schildtoren te verbeteren."
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

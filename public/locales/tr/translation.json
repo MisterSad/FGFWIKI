@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Önemli Not:",
         "roadmap_mid_2026_note_txt": "Yukarıda listelenen tüm özellikler şu anda geliştirilme aşamasındadır ve değişikliğe tabidir. Nihai ayrıntılar, zamanlama ve kullanılabilirlik oyun içinde onaylanacaktır.",
         "roadmap_mid_2026_outro": "🌌 Foundation'ın geleceğini şekillendirmeye devam ederken bizi takip etmeye devam edin, geliştirme ilerledikçe daha fazla ayrıntı paylaşılacaktır!",
-        "roadmap_mid_2026_period": "Temmuz–Eylül"
+        "roadmap_mid_2026_period": "Temmuz–Eylül",
+        "season2_reveal_title": "SEZON 2: TAM YILDIZ HARİTASI VE YENİ SAVUNMALAR",
+        "season2_reveal_desc": "Siwenna Eyaleti'nin tam yıldız haritası burada! Tüm yıldız sistemlerini keşfedin ve yeni Elektromanyetik Kalkan Kulesi ile Cevher Rafinerisi'ni nasıl inşa edeceğinizi öğrenin.",
+        "season2_reveal_intro": "Tüccarlar, yolculuğumuzun bir sonraki aşaması nihayet gün yüzüne çıktı. Oyuncuların Sezon 2'de rekabet edeceği, iş birliği yapacağı och imparatorluğunu kuracağı Siwenna Eyaleti'nin tam yıldız haritası karşınızda. Ayrıca, kozmik manyetik fırtınaların çevresel tehlikelerine karşı hayatta kalınması için hayati önem taşıyan iki önemli sezonluk yapı detaylandırılıyor.",
+        "season2_reveal_map_hdr": "Tam Siwenna Eyaleti Haritası",
+        "season2_reveal_map_txt": "Yıldız alanı tamamen haritalandırıldı. İlk üslerinizi kuracağınız dış sınırlardan yüksek riskli çekirdek bölgelere kadar, artık Seviye 8, 9, 10 ve 11 sistemlerinden geçerek merkezdeki Seviye 12 Orun sistemine kadar giden rotanızı planlayabilirsiniz. Geçiş yollarını inceleyin, dar geçitleri belirleyin ve Siwenna limanlarını ele geçirmek için Loncanızla koordine olun.",
+        "season2_reveal_tower_hdr": "Elektromanyetik Kalkan Kulesi",
+        "season2_reveal_tower_txt": "Elektromanyetik Kalkan Kulesi, manyetik fırtına radyasyonunun neden olduğu parazitlere karşı etkili bir koruma sağlar. Direnci büyük ölçüde artırmak için kulenizi Direnç Kristalleri ile yükseltin.",
+        "season2_reveal_refinery_hdr": "Cevher Rafinerisi",
+        "season2_reveal_refinery_txt": "Cevher Rafinerisi, Manyetit Cevherini işleyerek Elektromanyetik Kalkan Kulesi'ni geliştirmek için kullanılan Direnç Kristallerine dönüştürür."
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

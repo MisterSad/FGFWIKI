@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Wichtiger Hinweis:",
         "roadmap_mid_2026_note_txt": "Alle oben aufgeführten Features befinden sich derzeit in der Entwicklung und können sich noch ändern. Endgültige Details, Zeitpläne und Verfügbarkeiten werden im Spiel bestätigt.",
         "roadmap_mid_2026_outro": "🌌 Bleiben Sie dran, während wir die Zukunft von Foundation weiter gestalten. Weitere Details werden im Laufe der Entwicklung bekannt gegeben!",
-        "roadmap_mid_2026_period": "Juli–September"
+        "roadmap_mid_2026_period": "Juli–September",
+        "season2_reveal_title": "SAISON 2: VOLLSTÄNDIGE STERNENKARTE & NEUE ABWEHR",
+        "season2_reveal_desc": "Die vollständige Sternenkarte der Provinz Siwenna ist da! Entdecken Sie alle Sternensysteme und erfahren Sie, wie Sie den elektromagnetischen Schildturm und die Erzraffinerie bauen.",
+        "season2_reveal_intro": "Händler, die nächste Phase der Reise ist endlich enthüllt. Hier ist die vollständige Sternenkarte der Provinz Siwenna, die jedes Sternensystem detailliert beschreibt, in dem Spieler in Saison 2 kämpfen, kooperieren und ihr Imperium aufbauen werden. Darüber hinaus beschreibt dieser Leitfaden zwei kritische saisonale Strukturen, die für das Überleben gegen die Umweltgefahren kosmischer Magnetstürme unerlässlich sind.",
+        "season2_reveal_map_hdr": "Die vollständige Karte der Provinz Siwenna",
+        "season2_reveal_map_txt": "Das Sternenfeld ist vollständig kartografiert. Von den äußeren Grenzen, an denen Sie Ihre ersten Basen errichten, bis hin zu den hart umkämpften Kernregionen können Sie nun Ihre Route durch die Systeme der Stufen 8, 9, 10 und 11 planen, bis hin zum zentralen Stufe-12-System Orun. Studieren Sie die Pfade, identifizieren Sie Engpässe und koordinieren Sie sich mit Ihrer Gilde, um die Häfen von Siwenna zu erobern.",
+        "season2_reveal_tower_hdr": "Elektromagnetischer Schildturm",
+        "season2_reveal_tower_txt": "Der Elektromagnetische Schildturm schützt effektiv vor Störungen durch kosmische Magnetsturmstrahlung. Werten Sie ihn mit Widerstandskristallen auf, um den Widerstand erheblich zu erhöhen.",
+        "season2_reveal_refinery_hdr": "Erzraffinerie",
+        "season2_reveal_refinery_txt": "Die Erzraffinerie verarbeitet Magnetiterz zu Widerstandskristallen, mit denen der Elektromagnetische Schildturm verbessert wird."
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

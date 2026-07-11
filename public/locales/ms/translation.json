@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Nota Penting:",
         "roadmap_mid_2026_note_txt": "All features listed above are currently under development and subject to change. Final details, timing, and availability will be confirmed in-game.",
         "roadmap_mid_2026_outro": "🌌 Nantikan perkembangan lanjut sementara kami terus membentuk masa depan Foundation, butiran lanjut akan dikongsi seiring dengan kemajuan pembangunan!",
-        "roadmap_mid_2026_period": "Julai–September"
+        "roadmap_mid_2026_period": "Julai–September",
+        "season2_reveal_title": "MUSIM 2: PENDEDAHAN PETA BINTANG LENGKAP & DEFENSI",
+        "season2_reveal_desc": "Peta bintang lengkap Wilayah Siwenna kini di sini! Temui semua sistem bintang og pelajari cara membina Menara Perisai Elektromagnet dan Penapisan Bijih yang baharu.",
+        "season2_reveal_intro": "Para pedagang, fasa seterusnya perjalanan kita akhirnya didedahkan. Berikut adalah peta bintang lengkap Wilayah Siwenna, memperincikan setiap sistem bintang di mana pemain akan bersaing, bekerjasama, dan membina empayar dalam Musim 2. Selain itu, artikel ini memperincikan dua struktur bermusim kritikal yang penting untuk kelangsungan hidup daripada bahaya badai magnet kosmik.",
+        "season2_reveal_map_hdr": "Peta Penuh Wilayah Siwenna",
+        "season2_reveal_map_txt": "Medan bintang telah dipetakan sepenuhnya. Dari sempadan luar di mana anda akan mendirikan pangkalan pertama anda ke kawasan teras berisiko tinggi, anda kini boleh merancang laluan anda melalui sistem Tahap 8, 9, 10, dan 11, hinggalah ke sistem pusat Tahap 12, Orun. Kaji laluan, kenal pasti titik sempit, dan selaraskan dengan Kesatuan anda untuk menuntut pelabuhan Siwenna.",
+        "season2_reveal_tower_hdr": "Menara Perisai Elektromagnet",
+        "season2_reveal_tower_txt": "Menara Perisai Elektromagnet berkesan melindungi daripada gangguan radiasi badai magnet. Naik taraf dengan Kristal Rintangan untuk meningkatkan Rintangan dengan ketara.",
+        "season2_reveal_refinery_hdr": "Penapisan Bijih",
+        "season2_reveal_refinery_txt": "Penapisan Bijih memproses Bijih Magnetit menjadi Kristal Rintangan, yang digunakan untuk mempertingkatkan Menara Perisai Elektromagnet."
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",

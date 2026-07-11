@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Tärkeä huomautus:",
         "roadmap_mid_2026_note_txt": "Kaikki yllä luetellut ominaisuudet ovat parhaillaan kehityksen alla ja voivat muuttua. Lopulliset tiedot, aikataulut ja saatavuus vahvistetaan pelin sisällä.",
         "roadmap_mid_2026_outro": "🌌 Pysy kuulolla, kun jatkamme Foundationin tulevaisuuden muovaamista. Lisätietoja jaetaan kehityksen edetessä!",
-        "roadmap_mid_2026_period": "Heinä–Syyskuu"
+        "roadmap_mid_2026_period": "Heinä–Syyskuu",
+        "season2_reveal_title": "KAUSI 2: TÄYSI TÄHTIKARTTA & PUOLUSTUSRAKENNUKSET",
+        "season2_reveal_desc": "Siwennan provinssin täysi tähtikartta on täällä! Löydä kaikki tähtijärjestelmät ja opi rakentamaan uusi sähkömagneettinen suojatorni ja malminjalostamo.",
+        "season2_reveal_intro": "Kauppiaat, matkan seuraava vaihe on vihdoin paljastettu. Tässä on Siwennan provinssin täydellinen tähtikartta, joka kuvaa jokaisen tähtijärjestelmän, jossa pelaajat tulevat kilpailemaan, tekemään yhteistyötä ja rakentamaan imperiumiaan kaudella 2. Tämän lisäksi esitellään kaksi kriittistä kausirakennetta, jotka ovat välttämättömiä selviytymiselle kosmisten magneettimyrskyjen vaaroilta.",
+        "season2_reveal_map_hdr": "Täydellinen Siwennan provinssin kartta",
+        "season2_reveal_map_txt": "Tähtikenttä on täysin kartoitettu. Ulkorajoilta, joille perustatte ensimmäiset tukikohtanne, aina korkean riskin ydinalueille asti, voitte nyt suunnitella reittinne tasojen 8, 9, 10 ja 11 järjestelmien läpi aina Orunin tasolle 12 asti. Tutkikaa kulkureittejä, tunnistakaa kapeikot ja tehkää yhteistyötä kiltanne kanssa vallataksenne Siwennan satamat.",
+        "season2_reveal_tower_hdr": "Sähkömagneettinen suojatorni",
+        "season2_reveal_tower_txt": "Sähkömagneettinen suojatorni suojaa tehokkaasti magneettimyrskyjen säteilyn aiheuttamilta häiriöiltä. Päivitä se vastuskristalleilla lisätäksesi vastustuskykyä huomattavasti.",
+        "season2_reveal_refinery_hdr": "Malminjalostamo",
+        "season2_reveal_refinery_txt": "Malminjalostamo jalostaa magnetiittimalmia vastuskristalleiksi, joita käytetään sähkömagneettisen suojatornin parantamiseen."
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",
