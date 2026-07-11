@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Nota importante:",
         "roadmap_mid_2026_note_txt": "Todas las funciones enumeradas anteriormente están en desarrollo y sujetas a cambios. Los detalles finales, fechas y disponibilidad se confirmarán dentro del juego.",
         "roadmap_mid_2026_outro": "🌌 ¡Sigan atentos mientras seguimos dando forma al futuro de Foundation, compartiremos más detalles a medida que avance el desarrollo!",
-        "roadmap_mid_2026_period": "Julio–Septiembre"
+        "roadmap_mid_2026_period": "Julio–Septiembre",
+        "season2_reveal_title": "TEMPORADA 2: MAPA ESTELAR COMPLETO Y DEFENSAS",
+        "season2_reveal_desc": "¡El mapa estelar completo de la provincia de Siwenna ya está aquí! Descubre todos los sistemas estelares y aprende a construir la nueva Torre de Escudo Electromagnético y la Refinería de Mineral.",
+        "season2_reveal_intro": "Comerciantes, la siguiente fase del viaje finalmente se ha revelado. Aquí está el mapa estelar completo de la provincia de Siwenna, detallando cada sistema estelar donde los jugadores competirán, cooperarán y construirán su imperio en la Temporada 2. Además, este artículo detalla dos estructuras estacionales críticas que serán esenciales para la supervivencia frente a los peligros ambientales de las tormentas magnéticas cósmicas.",
+        "season2_reveal_map_hdr": "El mapa completo de la provincia de Siwenna",
+        "season2_reveal_map_txt": "El campo estelar está completamente cartografiado. Desde los límites exteriores donde estableceréis vuestras primeras bases hasta las regiones centrales de alto riesgo, ahora podéis planificar vuestra ruta a través de los sistemas de nivel 8, 9, 10 y 11, hasta llegar al sistema central de nivel 12, Orun. Estudiad las trayectorias, identificad los puntos de estrangulamiento y coordinaos con vuestro gremio para reclamar los puertos de Siwenna.",
+        "season2_reveal_tower_hdr": "Torre de Escudo Electromagnético",
+        "season2_reveal_tower_txt": "La Torre de Escudo Electromagnético protege eficazmente contra la interferencia de la radiación de las tormentas magnéticas. Mejórala con Cristales de Resistencia para aumentar enormemente la Resistencia.",
+        "season2_reveal_refinery_hdr": "Refinería de Mineral",
+        "season2_reveal_refinery_txt": "La Refinería de Mineral procesa el Mineral de Magnetita en Cristales de Resistencia, que se utilizan para mejorar la Torre de Escudo Electromagnético."
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",

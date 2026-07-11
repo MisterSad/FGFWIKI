@@ -391,7 +391,16 @@
         "roadmap_mid_2026_note_hdr": "⚠️ Lưu ý quan trọng:",
         "roadmap_mid_2026_note_txt": "Tất cả các tính năng liệt kê trên đây hiện đang trong quá trình phát triển và có thể thay đổi. Chi tiết cuối cùng, thời gian và tính khả dụng sẽ được xác nhận cụ thể trong trò chơi.",
         "roadmap_mid_2026_outro": "🌌 Hãy chú ý theo dõi khi chúng tôi tiếp tục định hình tương lai của Foundation, thông tin chi tiết sẽ được chia sẻ thêm khi quá trình phát triển tiến triển!",
-        "roadmap_mid_2026_period": "Tháng 7–Tháng 9"
+        "roadmap_mid_2026_period": "Tháng 7–Tháng 9",
+        "season2_reveal_title": "MÙA 2: TIẾT LỘ BẢN ĐỒ SAO TOÀN DIỆN & CẤU TRÚC PHÒNG THỦ",
+        "season2_reveal_desc": "Bản đồ sao toàn diện của tỉnh Siwenna đã xuất hiện! Khám phá tất cả các hệ sao và tìm hiểu cách xây dựng Tháp Khiên Điện Từ và Nhà Máy Lọc Quặng mới.",
+        "season2_reveal_intro": "Thương nhân thân mến, giai đoạn tiếp theo của cuộc hành trình cuối cùng đã lộ diện. Đây là bản đồ sao toàn diện của tỉnh Siwenna, chi tiết từng hệ sao nơi người chơi sẽ cạnh tranh, hợp tác và xây dựng đế chế trong Mùa 2. Ngoài ra, bài viết này cũng thông tin chi tiết về hai cấu trúc mùa cực kỳ quan trọng giúp sống sót trước các hiểm họa từ bão từ vũ trụ.",
+        "season2_reveal_map_hdr": "Bản Đồ Tỉnh Siwenna Toàn Diện",
+        "season2_reveal_map_txt": "Trường sao đã được lập bản đồ đầy đủ. Từ biên giới bên ngoài nơi bạn thiết lập căn cứ đầu tiên đến các khu vực cốt lõi có rủi ro cao, giờ đây bạn có thể lên kế hoạch cho lộ trình của mình qua các hệ sao Cấp 8, 9, 10 và 11, đến tận hệ sao Cấp 12 ở trung tâm là Orun. Hãy nghiên cứu các tuyến đường, xác định điểm nghẽn và phối hợp với Bang hội của bạn để đánh chiếm các cảng Siwenna.",
+        "season2_reveal_tower_hdr": "Tháp Khiên Điện Từ",
+        "season2_reveal_tower_txt": "Tháp Khiên Điện Từ bảo vệ hiệu quả chống lại sự can thiệp từ bức xạ bão từ. Nâng cấp tháp bằng Tinh Thể Kháng để tăng mạnh Kháng.",
+        "season2_reveal_refinery_hdr": "Nhà Máy Lọc Quặng",
+        "season2_reveal_refinery_txt": "Nhà Máy Lọc Quặng chế biến Quặng Magnetite thành Tinh Thể Kháng, được sử dụng để tăng cường Tháp Khiên Điện Từ."
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

@@ -280,6 +280,39 @@ export const tips = [
     ]
   },
   {
+    id: 'season2-complete-map-reveal',
+    category: 'news',
+    title: 'tips.season2_reveal_title',
+    content: 'tips.season2_reveal_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-07-11T23:18:15Z',
+    sections: [
+      {
+        text: 'tips.season2_reveal_intro'
+      },
+      {
+        header: 'tips.season2_reveal_map_hdr',
+        text: 'tips.season2_reveal_map_txt',
+        image: '/images/S2_complete_map.jpg',
+        imageMaxWidth: '800px'
+      },
+      {
+        header: 'tips.season2_reveal_tower_hdr',
+        text: 'tips.season2_reveal_tower_txt',
+        image: '/images/S2_electromagnectic_shield_tower.png',
+        imageMaxWidth: '600px'
+      },
+      {
+        header: 'tips.season2_reveal_refinery_hdr',
+        text: 'tips.season2_reveal_refinery_txt',
+        image: '/images/S2_ore_refinery.png',
+        imageMaxWidth: '600px'
+      }
+    ]
+  },
+  {
     id: 'season2-new-map',
     category: 'news',
     title: 'tips.season2_map_title',
