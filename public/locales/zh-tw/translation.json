@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "電磁護盾塔",
         "season2_reveal_tower_txt": "電磁護盾塔能有效防禦磁暴輻射的干擾。使用電阻水晶對其進行升級，可大幅度提升抵抗力。",
         "season2_reveal_refinery_hdr": "礦石精煉廠",
-        "season2_reveal_refinery_txt": "礦石精煉廠將磁鐵礦石加工成電阻水晶，用於強化電磁護盾塔。"
+        "season2_reveal_refinery_txt": "礦石精煉廠將磁鐵礦石加工成電阻水晶，用於強化電磁護盾塔。",
+        "stella_leaks_title": "7月與8月獨家爆料",
+        "stella_leaks_desc": "關於專屬武器、核心等級上限提升至35級以及公會遺跡日程安排的獨家爆料內容。",
+        "stella_leaks_intro": "最近Stella透露了一些關於即將到來的遊戲更新的有趣爆料。請注意，這些資訊基於內部測試日程，因此具體計劃在正式上線前隨時可能調整。以下是接下來兩個月預計更新內容的彙整。",
+        "stella_leaks_weapons_title": "專屬武器",
+        "stella_leaks_weapons_desc": "初步計劃在8月前推出，可能會在下一個補丁中上線。目前正在進行內部測試。上線後，將透過限時禮包和每週輪換的專屬商店提供。我將在正式更新後在遊戲中確認具體細節。",
+        "stella_leaks_level_title": "核心等級上限35級",
+        "stella_leaks_level_desc": "核心等級上限計劃提升至35級。此項調整同樣計劃在8月前推出，為玩家提供更多成長空間。",
+        "stella_leaks_ruins_title": "公會遺跡與Boss連戰",
+        "stella_leaks_ruins_desc": "公會遺跡和Boss連戰（Boss Rush）的時間表仍有很大變數，目前尚未確認固定日程。根據爆料，這些功能存在較大調整空間，很可能會推遲到8月之後。",
+        "stella_leaks_outro": "本輪爆料到此結束。一旦獲得更多證實的資訊，我將第一時間發布更新。在此期間，我將繼續為網站更新新的攻略和工具！"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

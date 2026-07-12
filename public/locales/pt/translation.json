@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Torre de Escudo Eletromagnético",
         "season2_reveal_tower_txt": "A Torre de Escudo Eletromagnético protege efetivamente contra a interferência da radiação de tempestades magnéticas. Melhore-a com Cristais de Resistência para aumentar consideravelmente a Resistência.",
         "season2_reveal_refinery_hdr": "Refinaria de Minério",
-        "season2_reveal_refinery_txt": "A Refinaria de Minério processa o Minério de Magnetita em Cristais de Resistência, que são usados para aprimorar a Torre de Escudo Eletromagnético."
+        "season2_reveal_refinery_txt": "A Refinaria de Minério processa o Minério de Magnetita em Cristais de Resistência, que são usados para aprimorar a Torre de Escudo Eletromagnético.",
+        "stella_leaks_title": "Vazamentos exclusivos para julho e agosto",
+        "stella_leaks_desc": "Surgiram detalhes exclusivos de Stella sobre armas exclusivas, aumento do nível máximo do núcleo para 35 e atualizações no cronograma das Ruínas de Guilda.",
+        "stella_leaks_intro": "Surgiram recentemente alguns vazamentos interessantes de Stella sobre as próximas atualizações do jogo. Lembre-se de que estes detalhes são baseados em cronogramas de testes internos, portanto os planos podem mudar antes do lançamento oficial. Aqui está um resumo do que é esperado para os próximos meses.",
+        "stella_leaks_weapons_title": "Armas exclusivas",
+        "stella_leaks_weapons_desc": "Programadas provisoriamente para serem lançadas antes de agosto, possivelmente na próxima atualização. Atualmente estão em testes internos. Quando chegarem, estarão disponíveis por meio de pacotes por tempo limitado e uma loja especial com seleção rotativa semanal. Acompanharei o conteúdo do jogo assim que for lançado para confirmar os detalhes.",
+        "stella_leaks_level_title": "Nível máximo do núcleo para 35",
+        "stella_leaks_level_desc": "O limite de nível do núcleo está planejado para subir para o nível 35. Esta mudança também está agendada para antes de agosto, garantindo espaço para mais progressão.",
+        "stella_leaks_ruins_title": "Ruínas de Guilda e Boss Rush",
+        "stella_leaks_ruins_desc": "O cronograma para as Ruínas de Guilda e o Boss Rush continua muito instável e sem datas fixas confirmadas. Com base nos vazamentos, esses recursos provavelmente chegarão após agosto.",
+        "stella_leaks_outro": "Isso é tudo para esta rodada de vazamentos. Postarei mais atualizações assim que surgirem mais informações confirmadas. Enquanto isso, continuo atualizando o site com novos guias e ferramentas!"
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",

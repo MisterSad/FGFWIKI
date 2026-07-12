@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Wieża Tarczy Elektromagnetycznej",
         "season2_reveal_tower_txt": "Wieża Tarczy Elektromagnetycznej skutecznie chroni przed zakłóceniami powodowanymi przez promieniowanie burz magnetycznych. Ulepszaj ją za pomocą kryształów odporności, aby znacznie zwiększyć odporność.",
         "season2_reveal_refinery_hdr": "Rafineria Rudy",
-        "season2_reveal_refinery_txt": "Rafineria Rudy przetwarza rudę magnetytu w kryształy odporności, które służą do ulepszania wieży tarczy elektromagnetycznej."
+        "season2_reveal_refinery_txt": "Rafineria Rudy przetwarza rudę magnetytu w kryształy odporności, które służą do ulepszania wieży tarczy elektromagnetycznej.",
+        "stella_leaks_title": "Ekskluzywne przecieki na lipiec i sierpień",
+        "stella_leaks_desc": "Pojawiły się szczegóły od Stelli dotyczące ekskluzywnych broni, zwiększenia limitu poziomu rdzenia do 35 oraz harmonogramu ruin gildii.",
+        "stella_leaks_intro": "Niedawno pojawiło się kilka ciekawych przecieków od Stelli dotyczących nadchodzących aktualizacji gry. Pamiętaj, że opierają się one na wewnętrznych harmonogramach testów, więc plany mogą ulec zmianie przed oficjalnym wdrożeniem. Oto zestawienie tego, czego można się spodziewać w ciągu najbliższych kilku miesięcy.",
+        "stella_leaks_weapons_title": "Ekskluzywne bronie",
+        "stella_leaks_weapons_desc": "Wstępnie planowane na wrzesień przed sierpniem, potencjalnie w następnej łatce. Obecnie przechodzą wewnętrzne testy. Po wprowadzeniu będą dostępne w ograniczonych czasowo pakietach oraz specjalnym sklepie z cotygodniową rotacją asortymentu. Potwierdzę szczegóły bezpośrednio w grze po aktualizacji.",
+        "stella_leaks_level_title": "Maksymalny poziom rdzenia 35",
+        "stella_leaks_level_desc": "Limit poziomu rdzenia ma zostać zwiększony do 35. Zmiana ta jest również planowana przed sierpniem, co zapewni spore pole do dalszego rozwoju.",
+        "stella_leaks_ruins_title": "Ruiny gildii i Boss Rush",
+        "stella_leaks_ruins_desc": "Harmonogram ruin gildii i trybu Boss Rush pozostaje bardzo niepewny i nie ma potwierdzonych dat. Przecieki sugerują, że te nowości pojawią się prawdopodobnie dopiero po sierpniu.",
+        "stella_leaks_outro": "To wszystko w tej turze przecieków. Opublikuję więcej informacji, gdy tylko pojawi się coś sprawdzonego. W międzyczasie nadal aktualizuję stronę o nowe poradniki i narzędzia!"
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

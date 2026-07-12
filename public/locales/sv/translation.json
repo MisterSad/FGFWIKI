@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Elektromagnetiskt sköldtorn",
         "season2_reveal_tower_txt": "Elektromagnetiskt sköldtorn skyddar effektivt mot störningar från magnetisk stormstrålning. Uppgradera det med motståndskristaller för att öka motståndet avsevärt.",
         "season2_reveal_refinery_hdr": "Malmraffinaderi",
-        "season2_reveal_refinery_txt": "Malmraffinaderiet förädlar magnetitmalm till motståndskristaller, som används för att förbättra det elektromagnetiska sköldtornet."
+        "season2_reveal_refinery_txt": "Malmraffinaderiet förädlar magnetitmalm till motståndskristaller, som används för att förbättra det elektromagnetiska sköldtornet.",
+        "stella_leaks_title": "Exklusiva läckor för juli och augusti",
+        "stella_leaks_desc": "Insiderdetaljer från Stella har dykt upp gällande exklusiva vapen, höjning av nivågränsen till 35 och uppdateringar om tidslinjen för gillesruiner.",
+        "stella_leaks_intro": "Några intressanta läckor från Stella har nyligen dykt upp gällande kommande speluppdateringar. Tänk på att dessa är baserade på interna testscheman, så planer kan alltid ändras innan de släpps officiellt. Här är en sammanfattning av vad som förväntas under de kommande månaderna.",
+        "stella_leaks_weapons_title": "Exklusiva vapen",
+        "stella_leaks_weapons_desc": "Preliminärt planerade att lanseras före augusti, möjligen i nästa uppdatering. De genomgår för närvarande interna tester. När de släpps kommer de att finnas tillgängliga via tidsbegränsade paket och en specialbutik med ett roterande veckourval. Jag kommer att följa upp detaljerna i spelet när uppdateringen är live.",
+        "stella_leaks_level_title": "Maxnivå 35 för kärnan",
+        "stella_leaks_level_desc": "Maxnivån för kärnan planeras att höjas till nivå 35. Denna ändring är också planerad till före augusti, vilket ger gott om utrymme för progression.",
+        "stella_leaks_ruins_title": "Gillesruiner & Boss Rush",
+        "stella_leaks_ruins_desc": "Tidslinjen för gillesruiner och Boss Rush är fortfarande mycket osäker och inga fasta datum har bekräftats. Baserat på läckorna kommer dessa funktioner troligen efter augusti.",
+        "stella_leaks_outro": "Det var allt för denna gång. Jag lägger upp fler uppdateringar så fort mer bekräftad information dyker upp. Under tiden fortsätter jag att uppdatera sajten med nya guider och verktyg!"
     },
     "hero_data": {
         "h1_notes": "Väsentlig för Jon-rotationer. Massiv läkning och team-omfattande INT-boostar.",

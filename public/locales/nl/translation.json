@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Elektromagnetische Schildtoren",
         "season2_reveal_tower_txt": "De Elektromagnetische Schildtoren beschermt effectief tegen interferentie door straling van magnetische stormen. Upgrade hem met weerstandskristallen om de weerstand aanzienlijk te verhogen.",
         "season2_reveal_refinery_hdr": "Ertsraffinaderij",
-        "season2_reveal_refinery_txt": "De Ertsraffinaderij verwerkt magnetieterts tot weerstandskristallen, die worden gebruikt om de Elektromagnetische Schildtoren te verbeteren."
+        "season2_reveal_refinery_txt": "De Ertsraffinaderij verwerkt magnetieterts tot weerstandskristallen, die worden gebruikt om de Elektromagnetische Schildtoren te verbeteren.",
+        "stella_leaks_title": "Exclusieve lekken voor juli en augustus",
+        "stella_leaks_desc": "Insiderdetails van Stella zijn opgedoken over exclusieve wapens, een verhoging van de kernniveau-limiet naar 35 en updates over de tijdlijn van gilderuïnes.",
+        "stella_leaks_intro": "Onlangs zijn er enkele interessante lekken van Stella opgedoken over de komende game-updates. Houd er rekening mee dat deze zijn gebaseerd op interne testschema's, dus plannen kunnen altijd veranderen voordat ze live gaan. Hier is een overzicht van wat er de komende maanden wordt verwacht.",
+        "stella_leaks_weapons_title": "Exclusieve wapens",
+        "stella_leaks_weapons_desc": "Voorlopig gepland voor lancering vóór augustus, mogelijk in de volgende patch. Ze ondergaan momenteel interne tests. Zodra ze beschikbaar zijn, kun je ze verkrijgen via tijdelijke bundels en een speciale winkel met een wekelijks roterend aanbod. Ik zal dit in de game volgen om de details te bevestigen zodra de update live is.",
+        "stella_leaks_level_title": "Kernniveau-limiet naar 35",
+        "stella_leaks_level_desc": "De limiet voor het kernniveau wordt verhoogd naar niveau 35. Deze wijziging staat ook gepland voor vóór augustus, wat voldoende ruimte biedt voor verdere progressie.",
+        "stella_leaks_ruins_title": "Gilderuïnes & Boss Rush",
+        "stella_leaks_ruins_desc": "De tijdlijn voor gilderuïnes en Boss Rush blijft erg onzeker en er is nog geen vaste planning bevestigd. Op basis van de lekken zullen deze functies waarschijnlijk na augustus verschijnen.",
+        "stella_leaks_outro": "Dat was het voor deze ronde van lekken. Ik zal meer updates plaatsen zodra er meer geverifieerde informatie beschikbaar is. Ondertussen blijf ik de site bijwerken met nieuwe handleidingen en tools!"
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

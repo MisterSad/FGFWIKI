@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Tháp Khiên Điện Từ",
         "season2_reveal_tower_txt": "Tháp Khiên Điện Từ bảo vệ hiệu quả chống lại sự can thiệp từ bức xạ bão từ. Nâng cấp tháp bằng Tinh Thể Kháng để tăng mạnh Kháng.",
         "season2_reveal_refinery_hdr": "Nhà Máy Lọc Quặng",
-        "season2_reveal_refinery_txt": "Nhà Máy Lọc Quặng chế biến Quặng Magnetite thành Tinh Thể Kháng, được sử dụng để tăng cường Tháp Khiên Điện Từ."
+        "season2_reveal_refinery_txt": "Nhà Máy Lọc Quặng chế biến Quặng Magnetite thành Tinh Thể Kháng, được sử dụng để tăng cường Tháp Khiên Điện Từ.",
+        "stella_leaks_title": "Rò rỉ độc quyền cho tháng 7 và tháng 8",
+        "stella_leaks_desc": "Chi tiết từ Stella đã tiết lộ về vũ khí độc quyền, tăng giới hạn cấp độ lõi lên 35 và cập nhật lịch trình Di tích Bang hội.",
+        "stella_leaks_intro": "Một số thông tin rò rỉ thú vị từ Stella vừa xuất hiện gần đây liên quan đến các bản cập nhật sắp tới của trò chơi. Hãy nhớ rằng đây là thông tin dựa trên lịch trình thử nghiệm nội bộ, vì vậy kế hoạch có thể thay đổi trước khi chính thức ra mắt. Dưới đây là bảng tổng hợp các nội dung dự kiến trong vài tháng tới.",
+        "stella_leaks_weapons_title": "Vũ khí độc quyền",
+        "stella_leaks_weapons_desc": "Dự kiến ra mắt trước tháng 8, có thể là trong bản cập nhật tiếp theo. Hiện tại chúng đang được thử nghiệm nội bộ. Khi ra mắt, người chơi có thể sở hữu thông qua các gói giới hạn thời gian và cửa hàng đặc biệt xoay vòng hàng tuần. Tôi sẽ kiểm tra thực tế trong game khi ra mắt để xác nhận chi tiết.",
+        "stella_leaks_level_title": "Giới hạn cấp độ lõi 35",
+        "stella_leaks_level_desc": "Giới hạn cấp độ lõi dự kiến sẽ tăng lên Cấp 35. Thay đổi này cũng nằm trong kế hoạch trước tháng 8, mang lại nhiều không gian hơn để phát triển.",
+        "stella_leaks_ruins_title": "Di tích Bang hội & Boss Rush",
+        "stella_leaks_ruins_desc": "Lịch trình cho Di tích Bang hội và chế độ Boss Rush vẫn chưa được xác định rõ ràng. Dựa trên thông tin rò rỉ, các tính năng này nhiều khả năng sẽ xuất hiện sau tháng 8.",
+        "stella_leaks_outro": "Đó là tất cả thông tin rò rỉ lần này. Tôi sẽ đăng tải thêm cập nhật ngay khi có thông tin xác thực. Trong lúc đó, tôi vẫn tiếp tục cập nhật trang web với các hướng dẫn và công cụ mới!"
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Elektromagnetisk skjoldtårn",
         "season2_reveal_tower_txt": "Det elektromagnetiske skjoldtårnet beskytter effektivt mot forstyrrelser fra magnetstormstråling. Oppgrader det med motstandskrystaller for å øke motstanden betydelig.",
         "season2_reveal_refinery_hdr": "Malmraffineri",
-        "season2_reveal_refinery_txt": "Malmraffineriet foredler magnetittmalm til motstandskrystaller, som brukes til å forbedre det elektromagnetiske skjoldtårnet."
+        "season2_reveal_refinery_txt": "Malmraffineriet foredler magnetittmalm til motstandskrystaller, som brukes til å forbedre det elektromagnetiske skjoldtårnet.",
+        "stella_leaks_title": "Eksklusive lekkasjer for juli og august",
+        "stella_leaks_desc": "Detaljer fra Stella har lekket angående eksklusive våpen, økning av nivågrensen til 35 og oppdateringer om tidslinjen for laugruiner.",
+        "stella_leaks_intro": "Noen interessante lekkasjer fra Stella har nylig dukket opp angående kommende spilloppdateringer. Husk at disse er basert på interne testplaner, så planene kan endre seg før de lanseres offisielt. Her er en oversikt over hva som forventes de neste månedene.",
+        "stella_leaks_weapons_title": "Eksklusive våpen",
+        "stella_leaks_weapons_desc": "Foreløpig planlagt å lanseres før august, muligens i neste oppdatering. De er for øyeblikket under intern testing. Når de kommer, vil de være tilgjengelige via tidsbegrensede pakker og en spesialbutikk med et roterende ukentlig utvalg. Jeg vil følge opp i spillet når det er lansert for å bekrefte detaljene.",
+        "stella_leaks_level_title": "Kjernenivå 35",
+        "stella_leaks_level_desc": "Nivågrensen for kjernen planlegges økt til nivå 35. Denne endringen er også planlagt før august, noe som gir god plass til videre progresjon.",
+        "stella_leaks_ruins_title": "Laugruiner & Boss Rush",
+        "stella_leaks_ruins_desc": "Tidslinjen for laugruiner og Boss Rush er fortsatt svært usikker. Ingen faste datoer er bekreftet, og de vil mest sannsynlig ankomme etter august.",
+        "stella_leaks_outro": "Det var alt for denne gang. Jeg vil legge ut flere oppdateringer så snart mer bekreftet informasjon blir tilgjengelig. I mellomtiden fortsetter jeg å oppdatere siden med nye guider og verktøy!"
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

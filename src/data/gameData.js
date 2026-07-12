@@ -280,6 +280,29 @@ export const tips = [
     ]
   },
   {
+    id: 'stella-exclusive-leaks',
+    category: 'news',
+    title: 'tips.stella_leaks_title',
+    content: 'tips.stella_leaks_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-07-12T22:45:00Z',
+    sections: [
+      {
+        text: 'tips.stella_leaks_intro',
+        methods: [
+          { title: 'tips.stella_leaks_weapons_title', desc: 'tips.stella_leaks_weapons_desc', icon: 'Sparkles' },
+          { title: 'tips.stella_leaks_level_title', desc: 'tips.stella_leaks_level_desc', icon: 'Trophy' },
+          { title: 'tips.stella_leaks_ruins_title', desc: 'tips.stella_leaks_ruins_desc', icon: 'Calendar' }
+        ]
+      },
+      {
+        text: 'tips.stella_leaks_outro'
+      }
+    ]
+  },
+  {
     id: 'season2-complete-map-reveal',
     category: 'news',
     title: 'tips.season2_reveal_title',
