@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Elektromagnetischer Schildturm",
         "season2_reveal_tower_txt": "Der Elektromagnetische Schildturm schützt effektiv vor Störungen durch kosmische Magnetsturmstrahlung. Werten Sie ihn mit Widerstandskristallen auf, um den Widerstand erheblich zu erhöhen.",
         "season2_reveal_refinery_hdr": "Erzraffinerie",
-        "season2_reveal_refinery_txt": "Die Erzraffinerie verarbeitet Magnetiterz zu Widerstandskristallen, mit denen der Elektromagnetische Schildturm verbessert wird."
+        "season2_reveal_refinery_txt": "Die Erzraffinerie verarbeitet Magnetiterz zu Widerstandskristallen, mit denen der Elektromagnetische Schildturm verbessert wird.",
+        "stella_leaks_title": "Exklusive Leaks für Juli und August",
+        "stella_leaks_desc": "Insider-Details von Stella sind aufgetaucht bezüglich exklusiver Waffen, einer Erhöhung der Kern-Stufenbegrenzung auf 35 und Updates zum Zeitplan der Gildenruinen.",
+        "stella_leaks_intro": "Vor Kurzem sind einige interessante Leaks von Stella zu den kommenden Spiel-Updates aufgetaucht. Bitte beachten Sie, dass diese auf internen Testplänen basieren, sodass sich Pläne vor der Veröffentlichung jederzeit ändern können. Hier ist eine Übersicht darüber, was in den nächsten Monaten zu erwarten ist.",
+        "stella_leaks_weapons_title": "Exklusive Waffen",
+        "stella_leaks_weapons_desc": "Voraussichtlich vor August geplant, möglicherweise im nächsten Patch. Sie werden derzeit intern getestet. Nach der Veröffentlichung werden sie über zeitlich begrenzte Pakete und einen wöchentlich wechselnden Auswahl-Shop erhältlich sein. Ich werde die tatsächlichen Spielinhalte nach der Veröffentlichung verfolgen, um die Details zu bestätigen.",
+        "stella_leaks_level_title": "Kernstufe 35",
+        "stella_leaks_level_desc": "Die maximale Stufe für den Kern soll auf Level 35 angehoben werden. Diese Änderung soll ebenfalls vor August eingeführt werden und bietet viel Raum für weiteren Fortschritt.",
+        "stella_leaks_ruins_title": "Gildenruinen & Boss-Rush",
+        "stella_leaks_ruins_desc": "Der Zeitplan für Gildenruinen und Boss-Rush bleibt sehr unbeständig, und es ist noch kein fester Termin bestätigt. Basierend auf den Leaks können sich diese Features stark ändern und werden höchstwahrscheinlich nach August erscheinen.",
+        "stella_leaks_outro": "Das war's für diese Leak-Runde. Ich werde weitere Updates posten, sobald mehr verifizierte Informationen vorliegen. In der Zwischenzeit aktualisiere ich die Seite weiterhin mit neuen Guides und Tools!"
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

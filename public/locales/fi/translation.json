@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Sähkömagneettinen suojatorni",
         "season2_reveal_tower_txt": "Sähkömagneettinen suojatorni suojaa tehokkaasti magneettimyrskyjen säteilyn aiheuttamilta häiriöiltä. Päivitä se vastuskristalleilla lisätäksesi vastustuskykyä huomattavasti.",
         "season2_reveal_refinery_hdr": "Malminjalostamo",
-        "season2_reveal_refinery_txt": "Malminjalostamo jalostaa magnetiittimalmia vastuskristalleiksi, joita käytetään sähkömagneettisen suojatornin parantamiseen."
+        "season2_reveal_refinery_txt": "Malminjalostamo jalostaa magnetiittimalmia vastuskristalleiksi, joita käytetään sähkömagneettisen suojatornin parantamiseen.",
+        "stella_leaks_title": "Yksinoikeudelliset vuodot heinä- ja elokuulle",
+        "stella_leaks_desc": "Stellan jakamia paljastuksia koskien yksinoikeudellisia aseita, tason 35 ylärajaa ja kiltaraunioiden aikataulua.",
+        "stella_leaks_intro": "Stellalta on hiljattain tullut mielenkiintoisia paljastuksia tulevista pelipäivityksistä. Muistathan, että nämä perustuvat sisäisiin testiaikatauluihin, joten suunnitelmat voivat muuttua ennen virallista julkaisua. Tässä on katsaus siitä, mitä tulevina kuukausina on odotettavissa.",
+        "stella_leaks_weapons_title": "Yksinoikeudelliset aseet",
+        "stella_leaks_weapons_desc": "Alustavasti suunniteltu julkaistavaksi ennen elokuuta, mahdollisesti seuraavassa päivityksessä. Ne ovat parhaillaan sisäisessä testauksessa. Julkaisun jälkeen ne ovat saatavilla rajoitetun ajan paketeista ja erikoiskaupasta, jonka valikoima vaihtuu viikoittain. Seuraan tilannetta pelin sisällä vahvistaakseni yksityiskohdat.",
+        "stella_leaks_level_title": "Ytimen tasokatto 35",
+        "stella_leaks_level_desc": "Ytimen tasokattoa on tarkoitus nostaa tasolle 35. Tämä muutos on myös suunniteltu ennen elokuuta, mikä antaa runsaasti tilaa edistymiselle.",
+        "stella_leaks_ruins_title": "Kiltarauniot & Boss Rush",
+        "stella_leaks_ruins_desc": "Kiltaraunioiden ja Boss Rushin aikataulu on edelleen erittäin epävarma. Mitään kiinteää päivämäärää ei ole vahvistettu, ja ne saapuvat todennäköisesti vasta elokuun jälkeen.",
+        "stella_leaks_outro": "Tässä kaikki tältä erää. Julkaisen uusia päivityksiä heti, kun luotettavaa tietoa tulee ilmi. Sillä välin jatkan sivuston päivittämistä uusilla oppailla ja työkaluilla!"
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

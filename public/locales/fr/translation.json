@@ -403,7 +403,17 @@
         "season2_reveal_tower_hdr": "Tour de bouclier électromagnétique",
         "season2_reveal_tower_txt": "La Tour de bouclier électromagnétique protège efficacement contre les interférences des radiations des tempêtes magnétiques. Améliorez-la avec des Cristaux de Résistance pour augmenter considérablement la Résistance.",
         "season2_reveal_refinery_hdr": "Raffinerie de minerai",
-        "season2_reveal_refinery_txt": "La Raffinerie de minerai transforme le Minerai de Magnétite en Cristaux de Résistance, utilisés pour améliorer la Tour de bouclier électromagnétique."
+        "season2_reveal_refinery_txt": "La Raffinerie de minerai transforme le Minerai de Magnétite en Cristaux de Résistance, utilisés pour améliorer la Tour de bouclier électromagnétique.",
+        "stella_leaks_title": "Exclusive leaks for July and August",
+        "stella_leaks_desc": "Des détails partagés par Stella concernant les armes exclusives, l'augmentation du niveau max à 35 et le calendrier des Ruines de Guilde ont fuité.",
+        "stella_leaks_intro": "Quelques fuites intéressantes provenant de Stella ont fait surface récemment concernant les prochaines mises à jour du jeu. Gardez à l'esprit que ces informations reposent sur des calendriers de tests internes, les plans peuvent donc changer d'ici la sortie officielle. Voici un aperçu de ce qui est attendu pour les deux prochains mois.",
+        "stella_leaks_weapons_title": "Armes Exclusives",
+        "stella_leaks_weapons_desc": "Provisoirement programmées pour sortir avant le mois d'août, potentiellement dès le prochain patch. Elles sont en phase de test interne. Elles seront disponibles via des packs temporaires et une boutique spéciale avec une sélection rotative hebdomadaire. Je suivrai cela de près lors du déploiement en jeu pour confirmer les détails.",
+        "stella_leaks_level_title": "Niveau max du noyau à 35",
+        "stella_leaks_level_desc": "En plus de ces nouvelles armes, la limite de niveau du noyau devrait passer à 35. Cette modification est également prévue avant le mois d'août, offrant ainsi une nouvelle marge de progression.",
+        "stella_leaks_ruins_title": "Calendrier des Ruines de Guilde et du Boss Rush",
+        "stella_leaks_ruins_desc": "En revanche, le calendrier pour les Ruines de Guilde et le mode Boss Rush reste très incertain. Aucune date fixe n'a été confirmée et ces fonctionnalités sont sujettes à modification. Selon les fuites, elles arriveront très probablement après le mois d'août.",
+        "stella_leaks_outro": "C'est tout pour cette série de fuites. Je publierai d'autres mises à jour dès que des informations fiables feront surface. En attendant, je continue de mettre à jour le site avec de nouveaux guides et outils !"
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Torre de Escudo Electromagnético",
         "season2_reveal_tower_txt": "La Torre de Escudo Electromagnético protege eficazmente contra la interferencia de la radiación de las tormentas magnéticas. Mejórala con Cristales de Resistencia para aumentar enormemente la Resistencia.",
         "season2_reveal_refinery_hdr": "Refinería de Mineral",
-        "season2_reveal_refinery_txt": "La Refinería de Mineral procesa el Mineral de Magnetita en Cristales de Resistencia, que se utilizan para mejorar la Torre de Escudo Electromagnético."
+        "season2_reveal_refinery_txt": "La Refinería de Mineral procesa el Mineral de Magnetita en Cristales de Resistencia, que se utilizan para mejorar la Torre de Escudo Electromagnético.",
+        "stella_leaks_title": "Filtraciones exclusivas para julio y agosto",
+        "stella_leaks_desc": "Se han revelado detalles exclusivos de Stella sobre armas exclusivas, el aumento del nivel máximo a 35 y el calendario de las Ruinas de Gremio.",
+        "stella_leaks_intro": "Recientemente han surgido algunas filtraciones interesantes de Stella sobre las próximas actualizaciones del juego. Tenga en cuenta que estas se basan en calendarios de pruebas internas, por lo que los planes siempre pueden cambiar antes de su lanzamiento oficial. Aquí tiene un resumen de lo que se espera para los próximos meses.",
+        "stella_leaks_weapons_title": "Armas exclusivas",
+        "stella_leaks_weapons_desc": "Programadas provisionalmente para lanzarse antes de agosto, posiblemente en el próximo parche. Actualmente se encuentran en fase de pruebas internas. Cuando lleguen, estarán disponibles a través de paquetes por tiempo limitado y una tienda especial con selección rotativa semanal. Seguiré de cerca el contenido en el juego una vez que se lance para confirmar los detalles.",
+        "stella_leaks_level_title": "Nivel máximo del núcleo a 35",
+        "stella_leaks_level_desc": "Está previsto aumentar el límite de nivel del núcleo al nivel 35. Este cambio también está programado para implementarse antes de agosto, ofreciendo más margen de progresión.",
+        "stella_leaks_ruins_title": "Ruinas de Gremio y Boss Rush",
+        "stella_leaks_ruins_desc": "El calendario para las Ruinas de Gremio y el modo Boss Rush sigue siendo muy inestable y sin fechas fijas confirmadas. Según las filtraciones, es muy probable que lleguen después de agosto.",
+        "stella_leaks_outro": "Eso es todo por esta ronda de filtraciones. Publicaré más actualizaciones tan pronto como surja información más verificada. Mientras tanto, ¡sigo actualizando el sitio con nuevas guías y herramientas!"
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",

@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "电磁护盾塔",
         "season2_reveal_tower_txt": "电磁护盾塔能有效防御磁暴辐射的干扰。使用电阻水晶对其进行升级，可大幅度提升抵抗力。",
         "season2_reveal_refinery_hdr": "矿石精炼厂",
-        "season2_reveal_refinery_txt": "矿石精炼厂将磁铁矿石加工成电阻水晶，用于强化电磁护盾塔。"
+        "season2_reveal_refinery_txt": "矿石精炼厂将磁铁矿石加工成电阻水晶，用于强化电磁护盾塔。",
+        "stella_leaks_title": "7月与8月独占爆料",
+        "stella_leaks_desc": "关于专属武器、核心等级上限提升至35级以及公会遗迹日程安排的独占爆料内容。",
+        "stella_leaks_intro": "最近Stella透露了一些关于即将到来的游戏更新的有趣爆料。请注意，这些信息基于内部测试日程，因此具体计划在正式上线前随时可能调整。以下是接下来两个月预计更新内容的汇总。",
+        "stella_leaks_weapons_title": "专属武器",
+        "stella_leaks_weapons_desc": "初步计划在8月前推出，可能会在下一个补丁中上线。目前正在进行内部测试。上线后，将通过限时礼包和每周轮换的专属商店提供。我将在正式更新后在游戏中确认具体细节。",
+        "stella_leaks_level_title": "核心等级上限35级",
+        "stella_leaks_level_desc": "核心等级上限计划提升至35级。此项调整同样计划在8月前推出，为玩家提供更多成长空间。",
+        "stella_leaks_ruins_title": "公会遗迹与Boss连战",
+        "stella_leaks_ruins_desc": "公会遗迹和Boss连战（Boss Rush）的时间表仍有很大变数，目前尚未确认固定日程。根据爆料，这些功能存在较大调整空间，很可能会推迟到8月之后。",
+        "stella_leaks_outro": "本轮爆料到此结束。一旦获得更多证实的信息，我将第一时间发布更新。在此期间，我将继续为网站更新新的攻略和工具！"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",

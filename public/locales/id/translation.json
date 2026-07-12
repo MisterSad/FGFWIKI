@@ -401,7 +401,17 @@
         "season2_reveal_tower_hdr": "Menara Perisai Elektromagnetik",
         "season2_reveal_tower_txt": "Menara Perisai Elektromagnetik secara efektif melindungi dari gangguan radiasi badai magnet. Tingkatkan dengan Kristal Resistansi untuk meningkatkan Resistansi secara drastis.",
         "season2_reveal_refinery_hdr": "Pengilangan Bijih",
-        "season2_reveal_refinery_txt": "Pengilangan Bijih memproses Bijih Magnetit menjadi Kristal Resistansi, yang digunakan untuk meningkatkan Menara Perisai Elektromagnetik."
+        "season2_reveal_refinery_txt": "Pengilangan Bijih memproses Bijih Magnetit menjadi Kristal Resistansi, yang digunakan untuk meningkatkan Menara Perisai Elektromagnetik.",
+        "stella_leaks_title": "Bocoran eksklusif untuk Juli dan Agustus",
+        "stella_leaks_desc": "Detail orang dalam dari Stella telah beredar mengenai senjata eksklusif, peningkatan batas level inti ke 35, dan pembaruan jadwal Reruntuhan Guild.",
+        "stella_leaks_intro": "Beberapa bocoran menarik dari Stella baru saja beredar mengenai pembaruan game mendatang. Harap diingat bahwa bocoran ini didasarkan pada jadwal pengujian internal, sehingga rencana dapat berubah sebelum dirilis resmi. Berikut adalah rincian apa yang diharapkan selama beberapa bulan ke depan.",
+        "stella_leaks_weapons_title": "Senjata eksklusif",
+        "stella_leaks_weapons_desc": "Direncanakan sementara untuk diluncurkan sebelum Agustus, kemungkinan hadir di patch berikutnya. Saat ini sedang dalam pengujian internal. Ketika tiba, senjata ini akan tersedia melalui paket waktu terbatas dan toko khusus dengan pilihan yang berputar setiap minggu. Saya akan memantau konten in-game setelah dirilis untuk mengonfirmasi detailnya.",
+        "stella_leaks_level_title": "Batas Level Inti 35",
+        "stella_leaks_level_desc": "Batas level inti direncanakan meningkat ke Level 35. Perubahan ini juga dijadwalkan meluncur sebelum Agustus, memberikan banyak ruang untuk perkembangan lebih lanjut.",
+        "stella_leaks_ruins_title": "Reruntuhan Guild & Boss Rush",
+        "stella_leaks_ruins_desc": "Jadwal untuk Reruntuhan Guild dan Boss Rush masih sangat tidak menentu tanpa tanggal pasti yang dikonfirmasi. Berdasarkan bocoran, fitur-fitur ini kemungkinan besar baru akan tiba setelah Agustus.",
+        "stella_leaks_outro": "Itu saja untuk bocoran kali ini. Saya akan memposting pembaruan lebih lanjut begitu ada informasi terverifikasi lainnya. Sementara itu, saya terus memperbarui situs ini dengan panduan dan alat baru!"
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",
