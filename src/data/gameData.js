@@ -296,7 +296,8 @@ export const tips = [
         header: 'tips.season2_reveal_map_hdr',
         text: 'tips.season2_reveal_map_txt',
         image: '/images/S2_complete_map.jpg',
-        imageMaxWidth: '800px'
+        imageMaxWidth: '800px',
+        disclaimer: 'tips.season2_reveal_map_credit'
       },
       {
         header: 'tips.season2_reveal_tower_hdr',
