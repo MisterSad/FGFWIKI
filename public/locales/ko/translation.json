@@ -411,7 +411,20 @@
         "stella_leaks_level_desc": "코어 레벨 상한이 레벨 35로 확장될 예정입니다. 이 변경 사항 역시 8월 이전에 적용되어 더 넓은 성장 공간을 제공합니다.",
         "stella_leaks_ruins_title": "길드 유적 및 보스 러시",
         "stella_leaks_ruins_desc": "길드 유적과 보스 러시 일정은 아직 유동적이며 확정된 일정이 없습니다. 유출 정보에 따르면 이 기능들은 변경 가능성이 높으며 8월 이후에 출시될 확률이 높습니다.",
-        "stella_leaks_outro": "이번 유출 정보는 여기까지입니다. 확인된 정보가 추가되는 대로 다시 공유해 드리겠습니다. 그동안 전 새로운 가이드와 도구로 사이트를 계속 업데이트하고 있겠습니다!"
+        "stella_leaks_outro": "이번 유출 정보는 여기까지입니다. 확인된 정보가 추가되는 대로 다시 공유해 드리겠습니다. 그동안 전 새로운 가이드와 도구로 사이트를 계속 업데이트하고 있겠습니다!",
+        "celestial_transmission_july_2026_title": "천상의 전송: 맹세를 지키는 자와 별의 칙령",
+        "celestial_transmission_july_2026_desc": "2026년 7월 14일 서버 점검 업데이트. 영웅 크루 '루 코린타'의 합류와 에반 및 알리야의 레전더리 무기 미리보기!",
+        "celestial_transmission_july_2026_intro": "안녕하세요 여러분! 내일 7월 14일에 새로운 업데이트가 진행됩니다. 서버 점검은 UTC 06:00부터 09:00까지 예정되어 있습니다. 신규 영웅 크루의 합류, 매칭 및 집결의 편의성 개선, 그리고 에반과 알리야의 새로운 레전더리 무기 프리뷰를 준비했습니다. 이번 패치 내용을 함께 확인해 보시죠!",
+        "celestial_transmission_july_2026_rue_hdr": "신규 영웅 크루: 루 코린타",
+        "celestial_transmission_july_2026_rue_txt": "새로운 영웅 크루로 '루 코린타'가 전장에 합류합니다! 이 크루는 오픈한 지 27주일 이상 경과한 서버에서 이용하실 수 있습니다. 공식 일러스트를 미리 만나보세요:",
+        "celestial_transmission_july_2026_updates_hdr": "주요 업데이트 내용",
+        "celestial_transmission_july_2026_updates_txt": "• **섀도우프런트 조정**: 더 공정한 매칭을 위해 매치메이킹 규칙이 최적화됩니다. 또한 금요일 첫 매치 시간이 UTC 04:00에서 UTC 12:00로 변경됩니다. 길드원들과 매치 시간을 꼭 확인해 두세요!\n• **누적 모집 및 충전 개선**: 1043~1052 서버를 대상으로 최적화된 누적 모집 보상과 신규 누적 충전 이벤트의 선행 테스트가 진행됩니다. 해당 서버에 계신 분들은 놓치지 마세요!\n• **집결 취소 확인 팝업**: 드디어 추가되었습니다! 집결을 취소할 때 실수로 터치하는 것을 방지하기 위해 확인 단계가 추가되어 오작동의 불편함이 해소됩니다.",
+        "celestial_transmission_july_2026_aliya_hdr": "알리야 레전더리 무기: Glimmer Oathkeeper",
+        "celestial_transmission_july_2026_aliya_txt": "알리야의 전용 차크람은 '**Glimmer Oathkeeper**'입니다. 공격력(ATK) 및 치유 시 보호막 생성 메커니즘에 특화되어 있습니다:\n\n**TPS 스킬 - Beacon of Courage**\n챔피언이 전술 스킬을 사용 시, {2}{3}초 동안 모든 챔피언의 공격력(ATK)을 {0}{1} 증가시킵니다. (강화: 공격력 증가치를 {0}{1}로 상승.)\n\n**SLG 스킬 - Walk in the Light**\n챔피언이 스킬을 사용 시, 부대가 받는 치유 효과를 {0}{1} 증가시키고 {2}{3}초 동안 [Walk in the Light]을 발동합니다. [Walk in the Light]: 효과가 만료될 때, 지속 시간 동안 입은 피해의 일부를 총 피해량의 {4}{5}에 해당하는 보호막으로 변환합니다. (강화: 스킬 활성화 동안 [Walk in the Light] 보호막 강도를 총 입은 피해 ×{0}{1}로 상승.)",
+        "celestial_transmission_july_2026_outro_hdr": "업데이트를 맞이할 준비가 되셨나요?",
+        "celestial_transmission_july_2026_outro_txt": "오늘 준비한 소식은 여기까지입니다! 7월 14일 서버 점검에 대비하여 리소스 계획을 세워두세요. 그럼 우주 영토에서 다시 뵙겠습니다!",
+        "celestial_transmission_july_2026_evan_hdr": "에반 레전더리 무기: Stellar Edict",
+        "celestial_transmission_july_2026_evan_txt": "에반의 전용 권총인 '**Stellar Edict**'가 등장합니다! 그의 전술적 역할에 어울리는 대폭의 지력(INT) 상승 효과를 제공합니다:\n\n**TPS 스킬 - Unbroken Edict**\n챔피언이 전술 스킬을 사용 시, {2}{3}초 동안 모든 챔피언의 지력(INT)을 {0}{1} 증가시킵니다. (강화: 지력 증가치를 {0}{1}로 상승.)\n\n**SLG 스킬 - Pain Protocol**\n챔피언이 스킬을 사용 시, 부대의 이동 속도를 {0}{1} 증가시키고 {2}{3}초 동안 [Pain Protocol]을 발동합니다. [Pain Protocol]: 스킬이 활성화된 동안 부대가 최대 HP의 {4}{5}를 잃을 때마다 지력을 {6}{7} 증가시킵니다(최대 {8}{9}까지). (강화: [Pain Protocol] 지력 보너스를 {0}{1}(최대 {2}{3})로 상승.)"
     },
     "hero_data": {
         "h1_notes": "이온 회전에 필수. 거대한 치유와 팀 전체 지능 버프.",

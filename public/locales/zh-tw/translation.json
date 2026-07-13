@@ -411,7 +411,20 @@
         "stella_leaks_level_desc": "核心等級上限計劃提升至35級。此項調整同樣計劃在8月前推出，為玩家提供更多成長空間。",
         "stella_leaks_ruins_title": "公會遺跡與Boss連戰",
         "stella_leaks_ruins_desc": "公會遺跡和Boss連戰（Boss Rush）的時間表仍有很大變數，目前尚未確認固定日程。根據爆料，這些功能存在較大調整空間，很可能會推遲到8月之後。",
-        "stella_leaks_outro": "本輪爆料到此結束。一旦獲得更多證實的資訊，我將第一時間發布更新。在此期間，我將繼續為網站更新新的攻略和工具！"
+        "stella_leaks_outro": "本輪爆料到此結束。一旦獲得更多證實的資訊，我將第一時間發布更新。在此期間，我將繼續為網站更新新的攻略和工具！",
+        "celestial_transmission_july_2026_title": "天界廣播：誓言守護者與星空敕令",
+        "celestial_transmission_july_2026_desc": "2026年7月14日伺服器維護更新，帶來英雄乘員露·科林薩以及埃文和阿莉雅的專屬傳奇武器預覽！",
+        "celestial_transmission_july_2026_intro": "大家好！明天（7月14日）我們將迎来全新版本更新。遊戲將於UTC 06:00至09:00進行停服維護。本次更新將帶來一位全新的英雄乘員，針對匹配和集結的易用性調整，同時我們還拿到了埃文與阿莉雅即將推出的傳奇武器獨家效果預覽。讓我們一起來看看詳細內容吧！",
+        "celestial_transmission_july_2026_rue_hdr": "新英雄乘員：露·科林薩 (Rue Corintha)",
+        "celestial_transmission_july_2026_rue_txt": "露·科林薩將作為最新的英雄乘員加入我們的陣容！她將在開服時間達到或超過27周的的伺服器中開放獲得。以下是她的官方精美原畫：",
+        "celestial_transmission_july_2026_updates_hdr": "核心更新亮點",
+        "celestial_transmission_july_2026_updates_txt": "• **影域戰線 (Shadowfront) 調整**：開發團隊優化了匹配規則以提供更好的平衡性。此外，週五的首場比賽時間從 UTC 04:00 調整至 UTC 12:00。請和盟友確認好時間，避免錯過比賽！\n• **累計招募與充值升級**：1043至1052伺服器將率先測試優化後的累計招募獎勵和全新的累計充值活動。身處這些伺服器的小夥伴請多加留意！\n• **集結取消確認彈窗**：終於實裝了！在取消集結時增加了一個確認步驟，能有效防止因誤觸導致的誤取消，非常實用。",
+        "celestial_transmission_july_2026_aliya_hdr": "阿莉雅專屬傳奇武器：Glimmer Oathkeeper",
+        "celestial_transmission_july_2026_aliya_txt": "阿莉雅的專屬戰輪名為 **Glimmer Oathkeeper**。它專注於提升攻擊力（ATK）和基於治療效果的護盾機制：\n\n**TPS技能 - Beacon of Courage**\n當英雄使用戰術技能時，提升所有英雄的攻擊力（ATK）{0}{1}，持續 {2}{3} 秒。（強化：攻擊力提升數值增加至 {0}{1}。）\n\n**SLG技能 - Walk in the Light**\n當英雄使用技能時，提升編隊受到的治療效果 {0}{1}，並觸發 [Walk in the Light]，持續 {2}{3} 秒。[Walk in the Light]：當效果結束時，期間所受的部分傷害將轉化為等同於總受創值 {4}{5} 的護盾。（強化：技能激活期間，[Walk in the Light] 的護盾強度增加至總受創傷害的 ×{0}{1}。）",
+        "celestial_transmission_july_2026_outro_hdr": "準備好迎接更新了嗎？",
+        "celestial_transmission_july_2026_outro_txt": "以上就是本次更新的全部爆料內容！請在7月14日維護前做好準備並規劃好資源。祝各位指揮官在群星探索中好運，我們虛空中見！",
+        "celestial_transmission_july_2026_evan_hdr": "埃文專屬傳奇武器：Stellar Edict",
+        "celestial_transmission_july_2026_evan_txt": "埃文即將獲得他的專屬手槍——**Stellar Edict**！它擁有極高的智力（INT）加成，非常契合埃文的戰術定位：\n\n**TPS技能 - Unbroken Edict**\n當英雄使用戰術技能時，提升所有英雄的智力（INT）{0}{1}，持續 {2}{3} 秒。（強化：智力提升數值增加至 {0}{1}。）\n\n**SLG技能 - Pain Protocol**\n當英雄使用技能時，提升編隊移動速度 {0}{1}，并觸發 [Pain Protocol]，持續 {2}{3} 秒。[Pain Protocol]：效果持續期間，編隊每損失最大生命值的 {4}{5}，提升智力 {6}{7}（最高可提升至 {8}{9}）。（強化：[Pain Protocol] 的智力加成提升至 {0}{1}，上限提升至 {2}{3}。）"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

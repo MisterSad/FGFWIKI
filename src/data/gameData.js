@@ -731,7 +731,6 @@ export const tips = [
     content: 'tips.roadmap_mid_2026_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-07-07T00:50:00Z',
     sections: [
       {
@@ -749,7 +748,48 @@ export const tips = [
         text: 'tips.roadmap_mid_2026_outro'
       }
     ]
-  }
+  },
+{
+    id: 'celestial-transmission-july-14-2026',
+    category: 'news',
+    title: 'tips.celestial_transmission_july_2026_title',
+    content: 'tips.celestial_transmission_july_2026_desc',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-07-13T18:30:00Z',
+    sections: [
+      {
+        text: 'tips.celestial_transmission_july_2026_intro'
+      },
+      {
+        header: 'tips.celestial_transmission_july_2026_rue_hdr',
+        text: 'tips.celestial_transmission_july_2026_rue_txt',
+        image: '/images/crew_member_Rue_Corintha.jpg',
+        imageMaxWidth: '500px'
+      },
+      {
+        header: 'tips.celestial_transmission_july_2026_updates_hdr',
+        text: 'tips.celestial_transmission_july_2026_updates_txt'
+      },
+      {
+        header: 'tips.celestial_transmission_july_2026_evan_hdr',
+        text: 'tips.celestial_transmission_july_2026_evan_txt',
+        image: '/images/weapon_eva.png',
+        imageMaxWidth: '500px'
+      },
+      {
+        header: 'tips.celestial_transmission_july_2026_aliya_hdr',
+        text: 'tips.celestial_transmission_july_2026_aliya_txt',
+        image: '/images/weapon_aliya.png',
+        imageMaxWidth: '500px'
+      },
+      {
+        header: 'tips.celestial_transmission_july_2026_outro_hdr',
+        text: 'tips.celestial_transmission_july_2026_outro_txt'
+      }
+    ]
+  },
 ];
 
 // --- NEW DATA SECTIONS ---
