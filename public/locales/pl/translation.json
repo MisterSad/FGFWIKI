@@ -413,15 +413,14 @@
         "stella_leaks_ruins_desc": "Harmonogram ruin gildii i trybu Boss Rush pozostaje bardzo niepewny i nie ma potwierdzonych dat. Przecieki sugerują, że te nowości pojawią się prawdopodobnie dopiero po sierpniu.",
         "stella_leaks_outro": "To wszystko w tej turze przecieków. Opublikuję więcej informacji, gdy tylko pojawi się coś sprawdzonego. W międzyczasie nadal aktualizuję stronę o nowe poradniki i narzędzia!",
         "celestial_transmission_july_2026_title": "Niebiańska Transmisja: Strażnik Przysięgi i Gwiezdny Edykt",
-        "celestial_transmission_july_2026_desc": "Przerwa techniczna 14 lipca 2026 r. przyniesie heroiczną członkinię załogi Rue Corinthę oraz zapowiedź legendarnych broni Evana i Aliyi!",
-        "celestial_transmission_july_2026_intro": "Hej wszystkim! Już jutro, 14 lipca, czeka nas nowa aktualizacja. Gra będzie niedostępna z powodu przerwy technicznej od 06:00 do 09:00 UTC. Pojawi się nowa heroiczna członkini załogi, drobne poprawki w matchmakingu i rajdach, oraz ekskluzywna zapowiedź nadchodzących legendarnych broni dla Evana i Aliyi. Sprawdźmy szczegóły!",
+        "celestial_transmission_july_2026_desc": "Przerwa techniczna 14 lipca 2026 r. przyniesie heroiczną członkinię załogi Rue Corinthę oraz zapowiedź legendarnych broni Evy i Aliyi!",
+        "celestial_transmission_july_2026_intro": "Hej wszystkim! Już jutro, 14 lipca, czeka nas nowa aktualizacja. Gra będzie niedostępna z powodu przerwy technicznej od 06:00 do 09:00 UTC. Pojawi się nowa heroiczna członkini załogi, drobne poprawki w matchmakingu i rajdach, oraz ekskluzywna zapowiedź nadchodzących legendarnych broni dla Evy i Aliyi. Sprawdźmy szczegóły!",
         "celestial_transmission_july_2026_rue_hdr": "Nowa Heroiczna Członkini Załogi: Rue Corintha",
         "celestial_transmission_july_2026_rue_txt": "Rue Corintha dołącza do nas jako najnowsza heroiczna członkini załogi! Będzie dostępna na serwerach działających od co najmniej 27 tygodni. Oto jej oficjalna grafika:",
         "celestial_transmission_july_2026_updates_hdr": "Najważniejsze Poprawki w Aktualizacji",
         "celestial_transmission_july_2026_aliya_hdr": "Legendarna Broń Aliyi: Glimmer Oathkeeper",
         "celestial_transmission_july_2026_outro_hdr": "Gotowi na Aktualizację?",
         "celestial_transmission_july_2026_outro_txt": "To wszystkie wiadomości na dziś! Przygotujcie się na przerwę techniczną 14 lipca i odpowiednio zaplanujcie swoje zasoby. Powodzenia w kosmosie!",
-        "celestial_transmission_july_2026_evan_hdr": "Legendarna Broń Evana: Stellar Edict",
         "celestial_transmission_july_2026_update_sf_title": "Dostosowania Shadowfront",
         "celestial_transmission_july_2026_update_sf_desc": "Twórcy optymalizują zasady dobierania graczy dla lepszego balansu. Ponadto czas pierwszej potyczki w piątki zmienia się z 04:00 UTC na 12:00 UTC. Upewnijcie się, że wasze gildie znają nowe godziny!",
         "celestial_transmission_july_2026_update_rec_title": "Rekrutacja i Doładowania",
@@ -437,7 +436,9 @@
         "celestial_transmission_july_2026_aliya_tps_title": "Umiejętność TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Kiedy bohater używa umiejętności taktycznej, zwiększa ATK wszystkich bohaterów o {0}{1} na {2}{3} sek. (Ulepszenie: Zwiększa ATK do {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Umiejętność SLG - Walk in the Light",
-        "celestial_transmission_july_2026_aliya_slg_desc": "Kiedy bohater używa umiejętności, zwiększa otrzymywane leczenie formacji o {0}{1} i aktywuje [Walk in the Light] na {2}{3} sek. [Walk in the Light]: Po zakończeniu efektu część obrażeń zostanie zamieniona w tarczę o wartości równej {4}{5} całkowitych obrażeń. (Ulepszenie: Siła tarczy wzrasta do Obrażenia ×{0}{1}.)"
+        "celestial_transmission_july_2026_aliya_slg_desc": "Kiedy bohater używa umiejętności, zwiększa otrzymywane leczenie formacji o {0}{1} i aktywuje [Walk in the Light] na {2}{3} sek. [Walk in the Light]: Po zakończeniu efektu część obrażeń zostanie zamieniona w tarczę o wartości równej {4}{5} całkowitych obrażeń. (Ulepszenie: Siła tarczy wzrasta do Obrażenia ×{0}{1}.)",
+        "celestial_transmission_july_2026_eva_hdr": "Legendarna Broń Evy: Stellar Edict",
+        "celestial_transmission_july_2026_eva_txt": "Eva otrzymuje swój charakterystyczny pistolet, **Stellar Edict**! Zapewnia on potężne premie do INT, idealne dla jej roli osłabiającej i wspierającej."
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

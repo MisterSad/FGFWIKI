@@ -413,15 +413,14 @@
         "stella_leaks_ruins_desc": "Jadual untuk Reruntuhan Kesatuan and Boss Rush masih sangat tidak menentu tanpa jadual tetap disahkan lagi. Berdasarkan kebocoran, ciri-ciri ini kemungkinan besar akan tiba selepas Ogos.",
         "stella_leaks_outro": "Itu sahaja untuk pusingan kebocoran ini. Saya akan menyiarkan lebih banyak kemas kini sebaik sahaja maklumat yang disahkan diperoleh. Sementara itu, saya terus mengemas kini tapak web dengan panduan dan alatan baharu!",
         "celestial_transmission_july_2026_title": "Transmisi Samawi: Penjaga Sumpah dan Titah Bintang",
-        "celestial_transmission_july_2026_desc": "Penyelenggaraan pelayan pada 14 Julai 2026 membawakan ahli kru Heroik Rue Corintha dan pratonton senjata legendaris Evan dan Aliya!",
-        "celestial_transmission_july_2026_intro": "Helo semua! Kemas kini baharu akan tiba esok, 14 Julai. Permainan akan luar talian untuk penyelenggaraan dari jam 06:00 hingga 09:00 UTC. Ahli kru heroik baharu akan tiba, pelarasan kualiti hidup untuk matchmaking dan rali, serta pratonton senjata legendaris Evan dan Aliya. Mari kita lihat butirannya!",
+        "celestial_transmission_july_2026_desc": "Penyelenggaraan pelayan pada 14 Julai 2026 membawakan ahli kru Heroik Rue Corintha & pratonton senjata legendaris Eva dan Aliya!",
+        "celestial_transmission_july_2026_intro": "Helo semua! Kemas kini baharu akan tiba esok, 14 Julai. Permainan akan luar talian untuk penyelenggaraan dari jam 06:00 hingga 09:00 UTC. Ahli kru heroik baharu akan tiba, pelarasan kualiti hidup untuk matchmaking dan rali, serta pratonton senjata legendaris Eva dan Aliya. Mari kita lihat butirannya!",
         "celestial_transmission_july_2026_rue_hdr": "Ahli Kru Heroik Baharu: Rue Corintha",
         "celestial_transmission_july_2026_rue_txt": "Rue Corintha menyertai sebagai Ahli Kru Heroik terbaharu kami! Dia akan tersedia di pelayan yang telah aktif sekurang-kurangnya 27 minggu. Berikut adalah rupa seni rasmi beliau:",
         "celestial_transmission_july_2026_updates_hdr": "Kemas Kini Penting",
         "celestial_transmission_july_2026_aliya_hdr": "Senjata Legendaris Aliya: Glimmer Oathkeeper",
         "celestial_transmission_july_2026_outro_hdr": "Sedia untuk Kemas Kini?",
         "celestial_transmission_july_2026_outro_txt": "Itu sahaja berita buat masa ini! Bersedia untuk penyelenggaraan pelayan pada 14 Julai dan rancang sumber anda dengan baik. Semoga berjaya!",
-        "celestial_transmission_july_2026_evan_hdr": "Senjata Legendaris Evan: Stellar Edict",
         "celestial_transmission_july_2026_update_sf_title": "Pelarasan Shadowfront",
         "celestial_transmission_july_2026_update_sf_desc": "Pembangun mengoptimumkan peraturan matchmaking untuk keseimbangan yang lebih baik. Selain itu, masa perlawanan pertama pada hari Jumaat beralih dari jam 04:00 UTC ke 12:00 UTC. Semak jadual persatuan anda!",
         "celestial_transmission_july_2026_update_rec_title": "Peningkatan Rekrut & Tambah Nilai",
@@ -437,7 +436,9 @@
         "celestial_transmission_july_2026_aliya_tps_title": "Kemahiran TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Apabila Champion menggunakan Kemahiran Taktikal, meningkatkan ATK semua Champion sebanyak {0}{1} selama {2}{3} saat. (Peningkatan: Meningkatkan ATK kepada {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Kemahiran SLG - Walk in the Light",
-        "celestial_transmission_july_2026_aliya_slg_desc": "Apabila Champion menggunakan kemahiran, meningkatkan pemulihan yang diterima formasi sebanyak {0}{1} dan mencetuskan [Walk in the Light] selama {2}{3} saat. [Walk in the Light]: Apabila kesan tamat, sebahagian damage ditukar menjadi Shield bersamaan dengan {4}{5} daripada damage. (Peningkatan: Shield meningkat kepada Damage ×{0}{1}.)"
+        "celestial_transmission_july_2026_aliya_slg_desc": "Apabila Champion menggunakan kemahiran, meningkatkan pemulihan yang diterima formasi sebanyak {0}{1} dan mencetuskan [Walk in the Light] selama {2}{3} saat. [Walk in the Light]: Apabila kesan tamat, sebahagian damage ditukar menjadi Shield bersamaan dengan {4}{5} daripada damage. (Peningkatan: Shield meningkat kepada Damage ×{0}{1}.)",
+        "celestial_transmission_july_2026_eva_hdr": "Senjata Legendaris Eva: Stellar Edict",
+        "celestial_transmission_july_2026_eva_txt": "Eva mendapat Pistol tandatangannya, **Stellar Edict**! Ia datang dengan peningkatan INT besar yang sesuai untuk peranan debuff dan sokongannya."
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",

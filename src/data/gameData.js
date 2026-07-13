@@ -785,7 +785,7 @@ export const tips = [
         ]
       },
       {
-        header: 'tips.celestial_transmission_july_2026_evan_hdr',
+        header: 'tips.celestial_transmission_july_2026_eva_hdr',
         text: 'tips.celestial_transmission_july_2026_evan_intro_txt',
         image: '/images/weapon_eva.png',
         imageMaxWidth: '500px',

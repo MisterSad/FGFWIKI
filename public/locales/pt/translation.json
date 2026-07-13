@@ -413,15 +413,14 @@
         "stella_leaks_ruins_desc": "O cronograma para as Ruínas de Guilda e o Boss Rush continua muito instável e sem datas fixas confirmadas. Com base nos vazamentos, esses recursos provavelmente chegarão após agosto.",
         "stella_leaks_outro": "Isso é tudo para esta rodada de vazamentos. Postarei mais atualizações assim que surgirem mais informações confirmadas. Enquanto isso, continuo atualizando o site com novos guias e ferramentas!",
         "celestial_transmission_july_2026_title": "Transmissão Celestial: O Guardião do Juramento e o Édito Estelar",
-        "celestial_transmission_july_2026_desc": "Manutenção do servidor em 14 de julho de 2026 traz a tripulante heroica Rue Corintha e uma prévia das armas lendárias de Evan e Aliya!",
-        "celestial_transmission_july_2026_intro": "Olá a todos! Amanhã, dia 14 de julho, teremos uma nova atualização. O jogo ficará offline para manutenção das 06:00 às 09:00 UTC. Uma nova tripulante heroica está chegando, além de melhorias no matchmaking e nos ralis, e temos detalhes exclusivos das próximas armas lendárias de Evan e Aliya. Vamos ver os detalhes!",
+        "celestial_transmission_july_2026_desc": "Manutenção do servidor em 14 de julho de 2026 traz a tripulante heroica Rue Corintha e uma prévia das armas lendárias de Eva e Aliya!",
+        "celestial_transmission_july_2026_intro": "Olá a todos! Amanhã, dia 14 de julho, teremos uma nova atualização. O jogo ficará offline para manutenção das 06:00 às 09:00 UTC. Uma nova tripulante heroica está chegando, além de melhorias no matchmaking e nos ralis, e temos detalhes exclusivos das próximas armas lendárias de Eva e Aliya. Vamos ver os detalhes!",
         "celestial_transmission_july_2026_rue_hdr": "Nova Tripulante Heroica: Rue Corintha",
         "celestial_transmission_july_2026_rue_txt": "Rue Corintha junta-se a nós como a mais nova tripulante heroica! Ela estará disponível nos servidores ativos há pelo menos 27 semanas. Aqui está o visual oficial dela:",
         "celestial_transmission_july_2026_updates_hdr": "Destaques da Atualização",
         "celestial_transmission_july_2026_aliya_hdr": "Arma Lendária de Aliya: Glimmer Oathkeeper",
         "celestial_transmission_july_2026_outro_hdr": "Prontos para a Atualização?",
         "celestial_transmission_july_2026_outro_txt": "Isso é tudo por enquanto! Prepare-se para a manutenção de 14 de julho e planeje bem seus recursos. Boa sorte e nos vemos no espaço!",
-        "celestial_transmission_july_2026_evan_hdr": "Arma Lendária de Evan: Stellar Edict",
         "celestial_transmission_july_2026_update_sf_title": "Ajustes no Shadowfront",
         "celestial_transmission_july_2026_update_sf_desc": "As regras de matchmaking estão sendo otimizadas para melhor equilíbrio. Além disso, o horário do primeiro combate nas sextas-feiras muda das 04:00 UTC para as 12:00 UTC. Confirme os horários!",
         "celestial_transmission_july_2026_update_rec_title": "Recrutamento e Recargas",
@@ -437,7 +436,9 @@
         "celestial_transmission_july_2026_aliya_tps_title": "Habilidade TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Quando o Campeão usa uma Habilidade Tática, aumenta o ATK de todos os Campeões em {0}{1} por {2}{3} segundos. (Melhoria: Aumenta o ATK para {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Habilidade SLG - Walk in the Light",
-        "celestial_transmission_july_2026_aliya_slg_desc": "Quando o Campeão usa uma habilidade, aumenta a cura recebida pela formação em {0}{1} e ativa [Walk in the Light] por {2}{3} segundos. [Walk in the Light]: Quando o efeito expira, parte do dano recebido é convertido em Escudo igual a {4}{5} do dano total. (Melhoria: A força do escudo aumenta para Dano Total Recebido ×{0}{1}.)"
+        "celestial_transmission_july_2026_aliya_slg_desc": "Quando o Campeão usa uma habilidade, aumenta a cura recebida pela formação em {0}{1} e ativa [Walk in the Light] por {2}{3} segundos. [Walk in the Light]: Quando o efeito expira, parte do dano recebido é convertido em Escudo igual a {4}{5} do dano total. (Melhoria: A força do escudo aumenta para Dano Total Recebido ×{0}{1}.)",
+        "celestial_transmission_july_2026_eva_hdr": "Arma Lendária de Eva: Stellar Edict",
+        "celestial_transmission_july_2026_eva_txt": "Eva ganha sua pistola assinatura, a **Stellar Edict**! Ela traz grandes aumentos de INT excelentes para sua função de debuff e suporte."
     },
     "hero_data": {
         "h1_notes": "Essencial para rotações Iónicas. Cura enorme e bónus de INT para toda a equipa.",
