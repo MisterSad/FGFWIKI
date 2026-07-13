@@ -786,19 +786,19 @@ export const tips = [
       },
       {
         header: 'tips.celestial_transmission_july_2026_eva_hdr',
-        text: 'tips.celestial_transmission_july_2026_evan_intro_txt',
+        text: 'tips.celestial_transmission_july_2026_eva_txt',
         image: '/images/weapon_eva.png',
         imageMaxWidth: '500px',
         methods: [
           {
             icon: 'Sparkles',
-            title: 'tips.celestial_transmission_july_2026_evan_tps_title',
-            desc: 'tips.celestial_transmission_july_2026_evan_tps_desc'
+            title: 'tips.celestial_transmission_july_2026_eva_tps_title',
+            desc: 'tips.celestial_transmission_july_2026_eva_tps_desc'
           },
           {
             icon: 'Shield',
-            title: 'tips.celestial_transmission_july_2026_evan_slg_title',
-            desc: 'tips.celestial_transmission_july_2026_evan_slg_desc'
+            title: 'tips.celestial_transmission_july_2026_eva_slg_title',
+            desc: 'tips.celestial_transmission_july_2026_eva_slg_desc'
           }
         ]
       },

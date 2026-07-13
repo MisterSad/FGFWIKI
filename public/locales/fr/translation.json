@@ -429,18 +429,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "Les serveurs 1043 à 1052 obtiennent un accès anticipé aux récompenses de recrutement cumulatif optimisées et à un nouvel événement de recharge cumulative. Restez à l'affût si vous êtes sur ces serveurs !",
         "celestial_transmission_july_2026_update_rally_title": "Confirmation de Ralliement",
         "celestial_transmission_july_2026_update_rally_desc": "Enfin ! Une fenêtre de confirmation a été ajoutée avant d'annuler un ralliement. Fini les clics accidentels qui font perdre du temps et de l'organisation.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Evan Rogers reçoit son pistolet signature, l'**Édit Stellaire** ! Il apporte de gros boosts d'INT parfaits pour son rôle tactique de DPS.",
-        "celestial_transmission_july_2026_evan_tps_title": "Compétence TPS - Édit Inflexible",
-        "celestial_transmission_july_2026_evan_tps_desc": "Quand le champion utilise une capacité tactique, augmente l'INT de tous les champions de {0}{1} pendant {2}{3} secondes. (Amélioration : Augmente l'INT à {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "Compétence SLG - Protocole de Douleur",
-        "celestial_transmission_july_2026_evan_slg_desc": "Quand le champion utilise une capacité, augmente la vitesse de déplacement de la formation de {0}{1} et déclenche [Protocole de Douleur] pendant {2}{3} secondes. [Protocole de Douleur] : Tant que la capacité est active, chaque perte de {4}{5} des PV max de la formation augmente l'INT de {6}{7} (jusqu'à {8}{9}). (Amélioration : Le bonus d'INT de [Protocole de Douleur] augmente à {0}{1} (jusqu'à {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Le chakram signature d'Aliya s'appelle le **Serment Scintillant** (Glimmer Oathkeeper). Il se concentre sur l'ATQ et la génération de boucliers protecteurs après des soins.",
         "celestial_transmission_july_2026_aliya_tps_title": "Compétence TPS - Balise de Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Quand le champion utilise une capacité tactique, augmente l'ATQ de tous les champions de {0}{1} pendant {2}{3} secondes. (Amélioration : Augmente l'ATQ à {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Compétence SLG - Marche dans la Lumière",
         "celestial_transmission_july_2026_aliya_slg_desc": "Quand le champion utilise une capacité, augmente les soins reçus par la formation de {0}{1} et déclenche [Marche dans la Lumière] pendant {2}{3} secondes. [Marche dans la Lumière] : À l'expiration de l'effet, une partie des dégâts subis pendant sa durée est convertie en un bouclier égal à {4}{5} des dégâts totaux subis. (Amélioration : La force du bouclier de [Marche dans la Lumière] augmente à Dégâts Totaux Subis ×{0}{1} tant que la capacité est active.)",
         "celestial_transmission_july_2026_eva_hdr": "Arme légendaire d'Eva : Édit Stellaire",
-        "celestial_transmission_july_2026_eva_txt": "Eva reçoit son pistolet signature, l'**Édit Stellaire** ! Il apporte de gros boosts d'INT parfaits pour son rôle de debuff et de soutien."
+        "celestial_transmission_july_2026_eva_txt": "Eva reçoit son pistolet signature, l'**Édit Stellaire** ! Il apporte de gros boosts d'INT parfaits pour son rôle de debuff et de soutien.",
+        "celestial_transmission_july_2026_eva_tps_title": "Compétence TPS - Édit Inflexible",
+        "celestial_transmission_july_2026_eva_tps_desc": "Quand le champion utilise une capacité tactique, augmente l'INT de tous les champions de {0}{1} pendant {2}{3} secondes. (Amélioration : Augmente l'INT à {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "Compétence SLG - Protocole de Douleur",
+        "celestial_transmission_july_2026_eva_slg_desc": "Quand le champion utilise une capacité, augmente la vitesse de déplacement de la formation de {0}{1} et déclenche [Protocole de Douleur] pendant {2}{3} secondes. [Protocole de Douleur] : Tant que la capacité est active, chaque perte de {4}{5} des PV max de la formation augmente l'INT de {6}{7} (jusqu'à {8}{9}). (Amélioration : Le bonus d'INT de [Protocole de Douleur] augmente à {0}{1} (jusqu'à {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

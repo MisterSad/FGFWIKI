@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "เซิร์ฟเวอร์ 1043 ถึง 1052 จะได้ลองใช้ระบบของรางวัลเกณฑ์พลสะสมที่ปรับปรุงใหม่ พร้อมเติมเงินสะสมใหม่ก่อนใคร!",
         "celestial_transmission_july_2026_update_rally_title": "ยืนยันการยกเลิกรวบรวมทัพ",
         "celestial_transmission_july_2026_update_rally_desc": "ในที่สุด! เพิ่มขั้นตอนการยืนยันก่อนกดยกเลิกรวบรวมทัพเพื่อป้องกันการกดพลาดแล้ว",
-        "celestial_transmission_july_2026_evan_intro_txt": "อีวาน โรเจอร์ส จะได้รับปืนพกคู่กายของเขา **Stellar Edict**! มาพร้อมกับการเพิ่ม INT มหาศาลที่เหมาะกับบทบาททางยุทธวิธีของเขาในฐานะ DPS",
-        "celestial_transmission_july_2026_evan_tps_title": "สกิล TPS - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "เมื่อแชมเปียนใช้สกิลแทคติก จะเพิ่ม INT ของแชมเปียนทั้งหมดขึ้น {0}{1} เป็นเวลา {2}{3} วินาที (ขั้นอัปเกรด: เพิ่ม INT เป็น {0}{1})",
-        "celestial_transmission_july_2026_evan_slg_title": "สกิล SLG - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "เมื่อแชมเปียนใช้สกิล จะเพิ่มความเร็วในการเคลื่อนที่ของกองทัพขึ้น {0}{1} และเปิดใช้งาน [Pain Protocol] เป็นเวลา {2}{3} วินาที [Pain Protocol]: ระหว่างที่สกิลทำงาน ทุกๆ % ของ HP สูงสุดที่กองทัพเสียไปจะเพิ่ม INT ขึ้น {6}{7} (สูงสุด {8}{9}) (ขั้นอัปเกรด: โบนัส INT เพิ่มขึ้นเป็น {0}{1} (สูงสุด {2}{3}))",
         "celestial_transmission_july_2026_aliya_intro_txt": "จักรคู่กายของอาลิยามีชื่อว่า **Glimmer Oathkeeper** ซึ่งจะเน้นไปที่การเพิ่ม ATK และระบบโล่ป้องกันหลังจากการฮีล",
         "celestial_transmission_july_2026_aliya_tps_title": "สกิล TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "เมื่อแชมเปียนใช้สกิลแทคติก จะเพิ่ม ATK ของแชมเปียนทั้งหมดขึ้น {0}{1} เป็นเวลา {2}{3} วินาที (ขั้นอัปเกรด: เพิ่ม ATK เป็น {0}{1})",
         "celestial_transmission_july_2026_aliya_slg_title": "สกิล SLG - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "เมื่อแชมเปียนใช้สกิล จะเพิ่มการรักษาที่กองทัพได้รับขึ้น {0}{1} และเปิดใช้งาน [Walk in the Light] เป็นเวลา {2}{3} วินาที [Walk in the Light]: เมื่อสกิลหมดลง ดาเมจส่วนหนึ่งจะถูกเปลี่ยนเป็นโล่ป้องกันเท่ากับ {4}{5} ของดาเมจทั้งหมด (ขั้นอัปเกรด: ความแข็งแกร่งของโล่จะเพิ่มขึ้นเป็น ดาเมจทั้งหมด ×{0}{1})",
         "celestial_transmission_july_2026_eva_hdr": "อาวุธในตำนานของอีวา: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "อีวาจะได้รับปืนพกคู่กายของเธอ **Stellar Edict**! ซึ่งมาพร้อมกับการเพิ่ม INT มหาศาลที่เหมาะกับสายดีบัฟและซัพพอร์ตอย่างมาก"
+        "celestial_transmission_july_2026_eva_txt": "อีวาจะได้รับปืนพกคู่กายของเธอ **Stellar Edict**! ซึ่งมาพร้อมกับการเพิ่ม INT มหาศาลที่เหมาะกับสายดีบัฟและซัพพอร์ตอย่างมาก",
+        "celestial_transmission_july_2026_eva_tps_title": "สกิล TPS - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "เมื่อแชมเปียนใช้สกิลแทคติก จะเพิ่ม INT ของแชมเปียนทั้งหมดขึ้น {0}{1} เป็นเวลา {2}{3} วินาที (ขั้นอัปเกรด: เพิ่ม INT เป็น {0}{1})",
+        "celestial_transmission_july_2026_eva_slg_title": "สกิล SLG - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "เมื่อแชมเปียนใช้สกิล จะเพิ่มความเร็วในการเคลื่อนที่ของกองทัพขึ้น {0}{1} และเปิดใช้งาน [Pain Protocol] เป็นเวลา {2}{3} วินาที [Pain Protocol]: ระหว่างที่สกิลทำงาน ทุกๆ % ของ HP สูงสุดที่กองทัพเสียไปจะเพิ่ม INT ขึ้น {6}{7} (สูงสุด {8}{9}) (ขั้นอัปเกrด: โบนัส INT เพิ่มขึ้นเป็น {0}{1} (สูงสุด {2}{3}))"
     },
     "hero_data": {
         "h1_notes": "จำเป็นสำหรับการหมุนของไอออน การรักษาครั้งใหญ่และบัฟ INT ทั่วทั้งทีม",

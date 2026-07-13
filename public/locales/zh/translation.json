@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "1043至1052服务器将率先测试优化后的累计招募奖励和全新的累计充值活动。身处这些服务器的小伙伴请多加留意！",
         "celestial_transmission_july_2026_update_rally_title": "集结取消确认弹窗",
         "celestial_transmission_july_2026_update_rally_desc": "终于实装了！在取消集结时增加了一个确认步骤，能有效防止因误触导致的误取消，非常实用。",
-        "celestial_transmission_july_2026_evan_intro_txt": "埃文即将获得他的专属手枪——**Stellar Edict**！它拥有极高的智力（INT）加成，非常契合埃文作为DPS的战术定位。",
-        "celestial_transmission_july_2026_evan_tps_title": "TPS技能 - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "当英雄使用战术技能时，提升所有英雄的智力（INT）{0}{1}，持续 {2}{3} 秒。（强化：智力提升数值增加至 {0}{1}。）",
-        "celestial_transmission_july_2026_evan_slg_title": "SLG技能 - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "当英雄使用技能时，提升编队移动速度 {0}{1}，并触发 [Pain Protocol]，持续 {2}{3} 秒。[Pain Protocol]：效果持续期间，编队每损失最大生命值的 {4}{5}，提升智力 {6}{7}（最高可提升至 {8}{9}）。（强化：[Pain Protocol] 的智力加成提升至 {0}{1}，上限提升至 {2}{3}。）",
         "celestial_transmission_july_2026_aliya_intro_txt": "阿莉雅的专属战轮名为 **Glimmer Oathkeeper**。它专注于提升攻击力（ATK）和基于治疗效果的护盾机制。",
         "celestial_transmission_july_2026_aliya_tps_title": "TPS技能 - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "当英雄使用战术技能时，提升所有英雄的攻击力（ATK）{0}{1}，持续 {2}{3} 秒。（强化：攻击力提升数值增加至 {0}{1}。）",
         "celestial_transmission_july_2026_aliya_slg_title": "SLG技能 - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "当英雄使用技能时，提升编队受到的治疗效果 {0}{1}，并触发 [Walk in the Light]，持续 {2}{3} 秒。[Walk in the Light]：当效果结束时，期间所受的部分伤害将转化为等同于总受创值 {4}{5} 的护盾。（强化：技能激活期间，[Walk in the Light] 的护盾强度增加至总受创伤害的 ×{0}{1}。）",
         "celestial_transmission_july_2026_eva_hdr": "艾娃专属传奇武器：Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "艾娃即将获得她的专属手枪——**Stellar Edict**！它拥有极高的智力（INT）加成，非常契合艾娃的减益与辅助定位。"
+        "celestial_transmission_july_2026_eva_txt": "艾娃即将获得她的专属手枪——**Stellar Edict**！它拥有极高的智力（INT）加成，非常契合艾娃的减益与辅助定位。",
+        "celestial_transmission_july_2026_eva_tps_title": "TPS技能 - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "当英雄使用战术技能时，提升所有英雄的智力（INT）{0}{1}，持续 {2}{3} 秒。（强化：智力提升数值增加至 {0}{1}。）",
+        "celestial_transmission_july_2026_eva_slg_title": "SLG技能 - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "当英雄使用技能时，提升编队移动速度 {0}{1}，并触发 [Pain Protocol]，持续 {2}{3} 秒。[Pain Protocol]：效果持续期间，编队每损失最大生命值的 {4}{5}，提升智力 {6}{7}（最高可提升至 {8}{9}）。（强化：[Pain Protocol] 的智力加成提升至 {0}{1}，上限提升至 {2}{3}。）"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",

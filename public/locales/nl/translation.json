@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "Servers 1043 tot en met 1052 krijgen vroegtijdige toegang tot geoptimaliseerde wervingsbeloningen en een opwaardeerevenement. Let goed op!",
         "celestial_transmission_july_2026_update_rally_title": "Rally-bevestiging",
         "celestial_transmission_july_2026_update_rally_desc": "Eindelijk! Er is een bevestigingsstap toegevoegd aan de 'Annuleren'-knop om per ongeluk annuleren te voorkomen.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Evan Rogers krijgt zijn eigen kenmerkende pistool, de **Stellar Edict**! Het brengt enorme INT-boosts met zich mee die perfect passen bij zijn tactische rol als DPS.",
-        "celestial_transmission_july_2026_evan_tps_title": "TPS-vaardigheid - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "Wanneer de kampioen een tactische vaardigheid gebruikt, verhoogt dit de INT van alle kampioenen met {0}{1} gedurende {2}{3} seconden. (Verbetering: Verhoogt INT naar {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "SLG-vaardigheid - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "Wanneer de kampioen een vaardigheid gebruikt, verhoogt dit de bewegingssnelheid van de formatie met {0}{1} en activeert [Pain Protocol] gedurende {2}{3} seconden. [Pain Protocol]: Terwijl de vaardigheid actief is, verhoogt elk verlies van {4}{5} van Max HP de INT met {6}{7} (tot {8}{9}). (Verbetering: De INT-bonus van [Pain Protocol] stijgt naar {0}{1} (tot {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Aliya's kenmerkende wapen is de chakram **Glimmer Oathkeeper**. Dit wapen focust op ATK-boosts en schildgeneratie na genezing.",
         "celestial_transmission_july_2026_aliya_tps_title": "TPS-vaardigheid - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Wanneer de kampioen een tactische vaardigheid gebruikt, verhoogt dit de ATK van alle kampioenen met {0}{1} gedurende {2}{3} seconden. (Verbetering: Verhoogt ATK naar {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "SLG-vaardigheid - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "Wanneer de kampioen een vaardigheid gebruikt, verhoogt dit de ontvangen genezing met {0}{1} en activeert [Walk in the Light] gedurende {2}{3} seconden. [Walk in the Light]: Na afloop wordt opgelopen schade omgezet in een schild ter waarde van {4}{5} van de schade. (Verbetering: Schildsterkte stijgt naar Schade ×{0}{1}.)",
         "celestial_transmission_july_2026_eva_hdr": "Eva's legendarische wapen: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "Eva krijgt haar eigen kenmerkende pistool, de **Stellar Edict**! Het brengt enorme INT-boosts met zich mee die perfect passen bij haar ondersteunende en verzwakkende rol."
+        "celestial_transmission_july_2026_eva_txt": "Eva krijgt haar eigen kenmerkende pistool, de **Stellar Edict**! Het brengt enorme INT-boosts met zich mee die perfect passen bij haar ondersteunende en verzwakkende rol.",
+        "celestial_transmission_july_2026_eva_tps_title": "TPS-vaardigheid - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "Wanneer de kampioen een tactische vaardigheid gebruikt, verhoogt dit de INT van alle kampioenen met {0}{1} gedurende {2}{3} seconden. (Verbetering: Verhoogt INT naar {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "SLG-vaardigheid - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "Wanneer de kampioen een vaardigheid gebruikt, verhoogt dit de bewegingssnelheid van de formatie met {0}{1} en activeert [Pain Protocol] gedurende {2}{3} seconden. [Pain Protocol]: Terwijl de vaardigheid actief is, verhoogt elk verlies van {4}{5} van Max HP de INT met {6}{7} (tot {8}{9}). (Verbetering: De INT-bonus van [Pain Protocol] stijgt naar {0}{1} (tot {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "Palvelimet 1043–1052 saavat varhaisen pääsyn kumulatiivisiin rekrytointipalkintoihin ja uuteen lataustapahtumaan. Pitäkää silmät auki näillä palvelimilla!",
         "celestial_transmission_july_2026_update_rally_title": "Rally-vahvistus",
         "celestial_transmission_july_2026_update_rally_desc": "Viimeinkin! Peruutuspainikkeeseen on lisätty vahvistusvaihe vahinko-peruutusten estämiseksi.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Evan Rogers saa oman nimikkoaseensa, **Stellar Edict** -pistoolin! Se tarjoaa valtavia älykkyysbonuksia (INT), jotka sopivat erinomaisesti hänen taktiseen DPS-rooliinsa.",
-        "celestial_transmission_july_2026_evan_tps_title": "TPS-kyky - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "Kun sankari käyttää taktista kykyä, kaikkien sankarien älykkyys (INT) kasvaa {0}{1} sekunniksi {2}{3} sekunnin ajaksi. (Tehostus: Älykkyys nousee arvoon {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "SLG-kyky - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "Kun sankari käyttää kykyä, muodostelman liikenopeus kasvaa {0}{1} ja aktivoi [Pain Protocol] -tilan {2}{3} sekunniksi. [Pain Protocol]: Tilan ollessa aktiivinen, jokainen menetetty {4}{5} Max HP -osuus nostaa INT-arvoa {6}{7} verran (enintään {8}{9}). (Tehostus: INT-bonus nousee arvoon {0}{1} (enintään {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Aliyan nimikkoase on **Glimmer Oathkeeper** -chakrami. Se keskittyy hyökkäykseen (ATK) ja paranemiseen pohjautuvaan suojakilven luomiseen.",
         "celestial_transmission_july_2026_aliya_tps_title": "TPS-kyky - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Kun sankari käyttää taktista kykyä, kaikkien sankarien hyökkäysvoima (ATK) kasvaa {0}{1} sekunniksi {2}{3} sekunnin ajaksi. (Tehostus: Hyökkäysvoima nousee arvoon {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "SLG-kyky - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "Kun sankari käyttää kykyä, muodostelman saama paraneminen kasvaa {0}{1} ja aktivoi [Walk in the Light] -tilan {2}{3} sekunniksi. [Walk in the Light]: Kun vaikutus päättyy, osa sen aikana otetusta vahingosta muuttuu suojakilveksi, joka vastaa {4}{5} otetusta kokonaisvahingosta. (Tehostus: Suojakilven voimakkuus nousee arvoon Kokonaisvahinko ×{0}{1}.)",
         "celestial_transmission_july_2026_eva_hdr": "Evan legendaarinen ase: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "Eva saa oman nimikkoaseensa, **Stellar Edict** -pistoolin! Se tarjoaa valtavia älykkyysbonuksia (INT), jotka sopivat erinomaisesti hänen heikentävään ja tukea antavaan rooliinsa."
+        "celestial_transmission_july_2026_eva_txt": "Eva saa oman nimikkoaseensa, **Stellar Edict** -pistoolin! Se tarjoaa valtavia älykkyysbonuksia (INT), jotka sopivat erinomaisesti hänen heikentävään ja tukea antavaan rooliinsa.",
+        "celestial_transmission_july_2026_eva_tps_title": "TPS-kyky - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "Kun sankari käyttää taktista kykyä, kaikkien sankarien älykkyys (INT) kasvaa {0}{1} sekunniksi {2}{3} sekunnin ajaksi. (Tehostus: Älykkyys nousee arvoon {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "SLG-kyky - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "Kun sankari käyttää kykyä, muodostelman liikenopeus kasvaa {0}{1} ja aktivoi [Pain Protocol] -tilan {2}{3} sekunniksi. [Pain Protocol]: Tilan ollessa aktiivinen, jokainen menetetty {4}{5} Max HP -osuus nostaa INT-arvoa {6}{7} verran (enintään {8}{9}). (Tehostus: INT-bonus nousee arvoon {0}{1} (enintään {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",
