@@ -433,7 +433,7 @@
         "celestial_transmission_july_2026_aliya_slg_title": "SLG 스킬 - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "챔피언이 스킬을 사용 시, 부대가 받는 치유 효과를 {0}{1} 증가시키고 {2}{3}초 동안 [Walk in the Light]을 발동합니다. [Walk in the Light]: 효과가 만료될 때, 지속 시간 동안 입은 피해의 일부를 총 피해량의 {4}{5}에 해당하는 보호막으로 변환합니다. (강화: 보호막 강도를 총 입은 피해 ×{0}{1}로 상승.)",
         "celestial_transmission_july_2026_eva_hdr": "에바 레전더리 무기: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "에바의 전용 권총인 '**Stellar Edict**'가 등장합니다! 디버프 및 서포터 역할에 잘 어울리는 대폭의 지력(INT) 상승 효과를 제공합니다.",
+        "celestial_transmission_july_2026_eva_txt": "에바의 전용 권총인 '**Stellar Edict**'가 등장합니다! 디버프 및 서포터 역할에 잘 어울리는 대폭의 지력(INT) 상승 효과를 제공합니다. 이 새로운 레전더리 무기들은 7월 말까지 게임에 추가될 예정입니다!",
         "celestial_transmission_july_2026_eva_tps_title": "TPS 스킬 - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "챔피언이 전술 스킬을 사용 시, {2}{3}초 동안 모든 챔피언의 지력(INT)을 {0}{1} 증가시킵니다. (강화: 지력 증가치를 {0}{1}로 상승.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG 스킬 - Pain Protocol",

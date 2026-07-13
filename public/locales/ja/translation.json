@@ -433,7 +433,7 @@
         "celestial_transmission_july_2026_aliya_slg_title": "SLGスキル - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "チャンピオンがスキルを使用時、部隊の被回復効果を {0}{1} 上昇させ、{2}{3} 秒間「Walk in the Light」をトリガーする。「Walk in the Light」：効果終了時、効果中に受けたダメージの一部を受けた総ダメージの {4}{5} に相当するシールドに変換する。（強化：シールド耐久値を総被ダメージ×{0}{1}に増加。）",
         "celestial_transmission_july_2026_eva_hdr": "エヴァ専用レジェンダリー武器：Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "エヴァ専用のピストル「**Stellar Edict**」が登場！デバフやサポート役に最適な、大幅な知力（INT）上昇効果を誇ります。",
+        "celestial_transmission_july_2026_eva_txt": "エヴァ専用のピストル「**Stellar Edict**」が登場！デバフやサポート役に最適な、大幅な知力（INT）上昇効果を誇ります。 これらの新しいレジェンダリー武器は、7月末までにゲーム内に実装される予定です！",
         "celestial_transmission_july_2026_eva_tps_title": "TPSスキル - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "チャンピオンが戦術スキルを使用時、すべてのチャンピオンの知力（INT）を {2}{3} 秒間 {0}{1} 上昇させる。（強化：知力上昇値を {0}{1} に増加。）",
         "celestial_transmission_july_2026_eva_slg_title": "SLGスキル - Pain Protocol",
