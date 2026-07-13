@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "I server da 1043 a 1052 riceveranno l'accesso anticipato alle ricompense di reclutamento ottimizzate e a un nuovo evento di ricarica cumulativa. Occhio a questi server!",
         "celestial_transmission_july_2026_update_rally_title": "Conferma di Raduno",
         "celestial_transmission_july_2026_update_rally_desc": "Finalmente! Ora riceverete un popup di conferma prima di annullare un raduno. Addio ai click accidentali che fanno sprecare tempo.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Evan Rogers riceve la sua pistola esclusiva, la **Stellar Edict**! Offre grandi potenziamenti di INT perfetti per il suo ruolo tattico di DPS.",
-        "celestial_transmission_july_2026_evan_tps_title": "Abilità TPS - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "Quando il Campione usa un'abilità tattica, aumenta l'INT di tutti i Campioni di {0}{1} per {2}{3} secondi. (Potenziamento: Aumenta l'INT a {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "Abilità SLG - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "Quando il Campione usa un'abilità, aumenta la velocità di movimento della formazione di {0}{1} e attiva [Pain Protocol] per {2}{3} secondi. [Pain Protocol]: Quando attivo, ogni perdita del {4}{5} degli HP massimi della formazione aumenta l'INT di {6}{7} (fino a {8}{9}). (Potenziamento: Il bonus INT di [Pain Protocol] aumenta a {0}{1} (fino a {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Il chakram esclusivo di Aliya si chiama **Glimmer Oathkeeper**. Si concentra su potenziamenti di ATK e scudi basati sulle cure.",
         "celestial_transmission_july_2026_aliya_tps_title": "Abilità TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Quando il Campione usa un'abilità tattica, aumenta l'ATK di tutti i Campioni di {0}{1} per {2}{3} secondi. (Potenziamento: Aumenta l'ATK a {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Abilità SLG - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "Quando il Campione usa un'abilità, aumenta le cure ricevute dalla formazione di {0}{1} e attiva [Walk in the Light] per {2}{3} secondi. [Walk in the Light]: Quando l'effetto scade, parte del danno subito viene convertito in uno scudo pari al {4}{5} del danno totale. (Potenziamento: La potenza dello scudo aumenta al Danno Totale Subito ×{0}{1}.)",
         "celestial_transmission_july_2026_eva_hdr": "Arma Leggendaria di Eva: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "Eva riceve la sua pistola esclusiva, la **Stellar Edict**! Offre grandi potenziamenti di INT perfetti per il suo ruolo di supporto e indebolimento."
+        "celestial_transmission_july_2026_eva_txt": "Eva riceve la sua pistola esclusiva, la **Stellar Edict**! Offre grandi potenziamenti di INT perfetti per il suo ruolo di supporto e indebolimento.",
+        "celestial_transmission_july_2026_eva_tps_title": "Abilità TPS - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "Quando il Campione usa un'abilità tattica, aumenta l'INT di tutti i Campioni di {0}{1} per {2}{3} secondi. (Potenziamento: Aumenta l'INT a {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "Abilità SLG - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "Quando il Campione usa un'abilità, aumenta la velocità di movimento della formazione di {0}{1} e attiva [Pain Protocol] per {2}{3} secondi. [Pain Protocol]: Quando attivo, ogni perdita del {4}{5} degli HP massimi della formazione aumenta l'INT di {6}{7} (fino a {8}{9}). (Potenziamento: Il bonus INT di [Pain Protocol] aumenta a {0}{1} (fino a {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

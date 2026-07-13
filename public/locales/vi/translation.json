@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "Các máy chủ từ 1043 đến 1052 sẽ được trải nghiệm sớm phần thưởng chiêu mộ tích lũy tối ưu hóa và sự kiện nạp tích lũy mới.",
         "celestial_transmission_july_2026_update_rally_title": "Xác Nhận Hủy Tập Hợp",
         "celestial_transmission_july_2026_update_rally_desc": "Cuối cùng cũng có! Một bước xác nhận đã được thêm vào nút 'Hủy' để tránh những cú nhấn nhầm tai hại.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Evan Rogers nhận được khẩu súng ngắn đặc trưng của mình, **Stellar Edict**! Vũ khí này mang lại lượng tăng INT cực lớn rất phù hợp cho vai trò chiến thuật của anh ấy làm DPS.",
-        "celestial_transmission_july_2026_evan_tps_title": "Kỹ năng TPS - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "Khi Tướng sử dụng Kỹ năng Chiến thuật, tăng INT của tất cả Tướng lên {0}{1} trong {2}{3} giây. (Cường hóa: Tăng INT lên {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "Kỹ năng SLG - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "Khi Tướng sử dụng kỹ năng, tăng tốc độ di chuyển của đội hình lên {0}{1} và kích hoạt [Pain Protocol] trong {2}{3} giây. [Pain Protocol]: Khi kỹ năng kích hoạt, mỗi phần HP Tối đa đội hình mất đi sẽ tăng INT thêm {6}{7} (tối đa {8}{9}). (Cường hóa: Điểm thưởng INT của [Pain Protocol] tăng lên {0}{1} (tối đa {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Vòng chakram đặc trưng của Aliya có tên là **Glimmer Oathkeeper**. Nó tập trung vào ATK và cơ chế tạo khiên khi hồi máu.",
         "celestial_transmission_july_2026_aliya_tps_title": "Kỹ năng TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Khi Tướng sử dụng Kỹ năng Chiến thuật, tăng ATK của tất cả Tướng lên {0}{1} trong {2}{3} giây. (Cường hóa: Tăng ATK lên {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Kỹ năng SLG - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "Khi Tướng sử dụng kỹ năng, tăng lượng hồi máu nhận được của đội hình thêm {0}{1} và kích hoạt [Walk in the Light] trong {2}{3} giây. [Walk in the Light]: Khi hiệu ứng kết thúc, một phần sát thương nhận phải sẽ chuyển thành Khiên tương đương với {4}{5} tổng sát thương. (Cường hóa: Khiên tăng lên bằng Tổng Sát Thương ×{0}{1}.)",
         "celestial_transmission_july_2026_eva_hdr": "Vũ Khí Huyền Thoại của Eva: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "Eva nhận được khẩu súng ngắn đặc trưng của mình, **Stellar Edict**! Vũ khí này mang lại lượng tăng INT cực lớn rất phù hợp cho vai trò debuff và hỗ trợ của cô ấy."
+        "celestial_transmission_july_2026_eva_txt": "Eva nhận được khẩu súng ngắn đặc trưng của mình, **Stellar Edict**! Vũ khí này mang lại lượng tăng INT cực lớn rất phù hợp cho vai trò debuff và hỗ trợ của cô ấy.",
+        "celestial_transmission_july_2026_eva_tps_title": "Kỹ năng TPS - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "Khi Tướng sử dụng Kỹ năng Chiến thuật, tăng INT của tất cả Tướng lên {0}{1} trong {2}{3} giây. (Cường hóa: Tăng INT lên {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "Kỹ năng SLG - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "Khi Tướng sử dụng kỹ năng, tăng tốc độ di chuyển của đội hình lên {0}{1} và kích hoạt [Pain Protocol] trong {2}{3} giây. [Pain Protocol]: Khi kỹ năng kích hoạt, mỗi phần HP Tối đa đội hình mất đi sẽ tăng INT thêm {6}{7} (tối đa {8}{9}). (Cường hóa: Điểm thưởng INT của [Pain Protocol] tăng lên {0}{1} (tối đa {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

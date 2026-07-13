@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "Serwery od 1043 do 1052 otrzymają wczesny dostęp do nagród rekrutacyjnych oraz nowego wydarzenia skumulowanego doładowania. Miejcie na to oko!",
         "celestial_transmission_july_2026_update_rally_title": "Potwierdzenie Rajdu",
         "celestial_transmission_july_2026_update_rally_desc": "Nareszcie! Dodano potwierdzenie przy kliknięciu przycisku 'Anuluj', aby zapobiec przypadkowym kliknięciom.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Evan Rogers otrzymuje swój charakterystyczny pistolet, **Stellar Edict**! Zapewnia on potężne premie do INT, idealne dla jego roli taktycznej jako DPS.",
-        "celestial_transmission_july_2026_evan_tps_title": "Umiejętność TPS - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "Kiedy bohater używa umiejętności taktycznej, zwiększa INT wszystkich bohaterów o {0}{1} na {2}{3} sek. (Ulepszenie: Zwiększa INT do {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "Umiejętność SLG - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "Kiedy bohater używa umiejętności, zwiększa prędkość ruchu formacji o {0}{1} i aktywuje [Pain Protocol] na {2}{3} sek. [Pain Protocol]: Podczas działania umiejętności każda utrata {4}{5} maks. PŻ formacji zwiększa INT o {6}{7} (maks. do {8}{9}). (Ulepszenie: Premia INT z [Pain Protocol] wzrasta do {0}{1} (maks. do {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Unikalny czakram Aliyi to **Glimmer Oathkeeper**. Skupia się na bonusach do ATK oraz tworzeniu tarcz ochronnych po leczeniu.",
         "celestial_transmission_july_2026_aliya_tps_title": "Umiejętność TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Kiedy bohater używa umiejętności taktycznej, zwiększa ATK wszystkich bohaterów o {0}{1} na {2}{3} sek. (Ulepszenie: Zwiększa ATK do {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Umiejętność SLG - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "Kiedy bohater używa umiejętności, zwiększa otrzymywane leczenie formacji o {0}{1} i aktywuje [Walk in the Light] na {2}{3} sek. [Walk in the Light]: Po zakończeniu efektu część obrażeń zostanie zamieniona w tarczę o wartości równej {4}{5} całkowitych obrażeń. (Ulepszenie: Siła tarczy wzrasta do Obrażenia ×{0}{1}.)",
         "celestial_transmission_july_2026_eva_hdr": "Legendarna Broń Evy: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "Eva otrzymuje swój charakterystyczny pistolet, **Stellar Edict**! Zapewnia on potężne premie do INT, idealne dla jej roli osłabiającej i wspierającej."
+        "celestial_transmission_july_2026_eva_txt": "Eva otrzymuje swój charakterystyczny pistolet, **Stellar Edict**! Zapewnia on potężne premie do INT, idealne dla jej roli osłabiającej i wspierającej.",
+        "celestial_transmission_july_2026_eva_tps_title": "Umiejętność TPS - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "Kiedy bohater używa umiejętności taktycznej, zwiększa INT wszystkich bohaterów o {0}{1} na {2}{3} sek. (Ulepszenie: Zwiększa INT do {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "Umiejętność SLG - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "Kiedy bohater używa umiejętności, zwiększa prędkość ruchu formacji o {0}{1} i aktywuje [Pain Protocol] na {2}{3} sek. [Pain Protocol]: Podczas działania umiejętności każda utrata {4}{5} maks. PŻ formacji zwiększa INT o {6}{7} (maks. do {8}{9}). (Ulepszenie: Premia INT z [Pain Protocol] wzrasta do {0}{1} (maks. do {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",

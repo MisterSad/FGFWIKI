@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "Серверы 1043-1052 получат ранний доступ к наградам за рекрутинг и накопительному пополнению счета. Обратите внимание!",
         "celestial_transmission_july_2026_update_rally_title": "Подтверждение отмены сбора",
         "celestial_transmission_july_2026_update_rally_desc": "Наконец-то! Добавлено окно подтверждения при отмене сбора, чтобы предотвратить досадные случайные нажатия.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Эван Роджерс получает свой фирменный пистолет **Stellar Edict**! Он дает отличные прибавки к интеллекту (INT), которые отлично подойдут для его тактической роли DPS.",
-        "celestial_transmission_july_2026_evan_tps_title": "Умение TPS - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "Когда чемпион использует тактическое умение, интеллект (INT) всех чемпионов увеличивается на {0}{1} на {2}{3} сек. (Улучшение: Увеличивает интеллект до {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "Умение SLG - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "Когда чемпион использует умение, скорость передвижения построения увеличивается на {0}{1} и активируется [Pain Protocol] на {2}{3} сек. [Pain Protocol]: Пока активен, каждая потеря {4}{5} от макс. ОЗ построения увеличивает интеллект на {6}{7} (до {8}{9}). (Улучшение: Бонус к интеллекту от [Pain Protocol] увеличивается до {0}{1} (до {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Фирменный чакрам Алии называется **Glimmer Oathkeeper**. Он ориентирован на атаку (ATK) и создание щитов после лечения.",
         "celestial_transmission_july_2026_aliya_tps_title": "Умение TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Когда чемпион использует тактическое умение, атака (ATK) всех чемпионов увеличивается на {0}{1} на {2}{3} сек. (Улучшение: Увеличивает атаку до {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Умение SLG - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "Когда чемпион использует умение, получаемое леченое построения увеличивается на {0}{1} и активируется [Walk in the Light] на {2}{3} сек. [Walk in the Light]: После окончания действия эффекта часть урона преобразуется в щит прочностью {4}{5} от общего полученного урона. (Улучшение: Прочность щита увеличивается до Общий урон ×{0}{1}.)",
         "celestial_transmission_july_2026_eva_hdr": "Легендарное оружие Евы: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "Ева получает свой фирменный пистолет **Stellar Edict**! Он дает отличные прибавки к интеллекту (INT), которые идеально подойдут для ее роли поддержки и ослабления врагов."
+        "celestial_transmission_july_2026_eva_txt": "Ева получает свой фирменный пистолет **Stellar Edict**! Он дает отличные прибавки к интеллекту (INT), которые идеально подойдут для ее роли поддержки и ослабления врагов.",
+        "celestial_transmission_july_2026_eva_tps_title": "Умение TPS - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "Когда чемпион использует тактическое умение, интеллект (INT) всех чемпионов увеличивается на {0}{1} на {2}{3} сек. (Улучшение: Увеличивает интеллект до {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "Умение SLG - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "Когда чемпион использует умение, скорость передвижения построения увеличивается на {0}{1} и активируется [Pain Protocol] на {2}{3} сек. [Pain Protocol]: Пока активен, каждая потеря {4}{5} от макс. ОЗ построения увеличивает интеллект на {6}{7} (до {8}{9}). (Улучшение: Бонус к интеллекту от [Pain Protocol] увеличивается до {0}{1} (до {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Необходим для вращения ионов. Огромное исцеление и усиление интеллекта для всей команды.",

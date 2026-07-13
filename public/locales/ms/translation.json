@@ -427,18 +427,17 @@
         "celestial_transmission_july_2026_update_rec_desc": "Pelayan 1043 hingga 1052 mendapat akses awal ke ganjaran rekrut kumulatif yang dioptimumkan dan acara tambah nilai kumulatif baharu. Pantau!",
         "celestial_transmission_july_2026_update_rally_title": "Pengesahan Rali",
         "celestial_transmission_july_2026_update_rally_desc": "Akhirnya! Langkah pengesahan sebelum membatalkan rali telah ditambah untuk mengelakkan ketukan tidak sengaja.",
-        "celestial_transmission_july_2026_evan_intro_txt": "Evan Rogers mendapat Pistol tandatangannya, **Stellar Edict**! Ia datang dengan peningkatan INT besar yang sesuai untuk peranan taktisnya sebagai DPS.",
-        "celestial_transmission_july_2026_evan_tps_title": "Kemahiran TPS - Unbroken Edict",
-        "celestial_transmission_july_2026_evan_tps_desc": "Apabila Champion menggunakan Kemahiran Taktikal, meningkatkan INT semua Champion sebanyak {0}{1} selama {2}{3} saat. (Peningkatan: Meningkatkan INT kepada {0}{1}.)",
-        "celestial_transmission_july_2026_evan_slg_title": "Kemahiran SLG - Pain Protocol",
-        "celestial_transmission_july_2026_evan_slg_desc": "Apabila Champion menggunakan kemahiran, meningkatkan kelajuan pergerakan formasi sebanyak {0}{1} & mencetuskan [Pain Protocol] selama {2}{3} saat. [Pain Protocol]: Semasa aktif, setiap kehilangan {4}{5} daripada HP Maks formasi akan meningkatkan INT sebanyak {6}{7} (sehingga {8}{9}). (Peningkatan: Bonus INT meningkat kepada {0}{1} (sehingga {2}{3}).)",
         "celestial_transmission_july_2026_aliya_intro_txt": "Chakram tandatangan Aliya dinamakan **Glimmer Oathkeeper**. Ia memberi tumpuan kepada ATK dan mekanik pelindung selepas pemulihan.",
         "celestial_transmission_july_2026_aliya_tps_title": "Kemahiran TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Apabila Champion menggunakan Kemahiran Taktikal, meningkatkan ATK semua Champion sebanyak {0}{1} selama {2}{3} saat. (Peningkatan: Meningkatkan ATK kepada {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Kemahiran SLG - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "Apabila Champion menggunakan kemahiran, meningkatkan pemulihan yang diterima formasi sebanyak {0}{1} dan mencetuskan [Walk in the Light] selama {2}{3} saat. [Walk in the Light]: Apabila kesan tamat, sebahagian damage ditukar menjadi Shield bersamaan dengan {4}{5} daripada damage. (Peningkatan: Shield meningkat kepada Damage ×{0}{1}.)",
         "celestial_transmission_july_2026_eva_hdr": "Senjata Legendaris Eva: Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "Eva mendapat Pistol tandatangannya, **Stellar Edict**! Ia datang dengan peningkatan INT besar yang sesuai untuk peranan debuff dan sokongannya."
+        "celestial_transmission_july_2026_eva_txt": "Eva mendapat Pistol tandatangannya, **Stellar Edict**! Ia datang dengan peningkatan INT besar yang sesuai untuk peranan debuff dan sokongannya.",
+        "celestial_transmission_july_2026_eva_tps_title": "Kemahiran TPS - Unbroken Edict",
+        "celestial_transmission_july_2026_eva_tps_desc": "Apabila Champion menggunakan Kemahiran Taktikal, meningkatkan INT semua Champion sebanyak {0}{1} selama {2}{3} saat. (Peningkatan: Meningkatkan INT kepada {0}{1}.)",
+        "celestial_transmission_july_2026_eva_slg_title": "Kemahiran SLG - Pain Protocol",
+        "celestial_transmission_july_2026_eva_slg_desc": "Apabila Champion menggunakan kemahiran, meningkatkan kelajuan pergerakan formasi sebanyak {0}{1} & mencetuskan [Pain Protocol] selama {2}{3} saat. [Pain Protocol]: Semasa aktif, setiap kehilangan {4}{5} daripada HP Maks formasi akan meningkatkan INT sebanyak {6}{7} (sehingga {8}{9}). (Peningkatan: Bonus INT meningkat kepada {0}{1} (sehingga {2}{3}).)"
     },
     "hero_data": {
         "h1_notes": "Penting untuk putaran Ion. Penyembuhan besar & peminat INT seluruh pasukan.",
