@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "Habilidad TPS - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Cuando el campeón usa una habilidad táctica, aumenta la INT de todos los campeones en {0}{1} durante {2}{3} segundos. (Mejora: Aumenta la INT a {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "Habilidad SLG - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Cuando el campeón usa una habilidad, aumenta la velocidad de movimiento de la formación en {0}{1} y activa [Pain Protocol] durante {2}{3} segundos. [Pain Protocol]: Mientras está activa, cada pérdida de {4}{5} de los PS máximos de la formación aumenta la INT en {6}{7} (hasta {8}{9}). (Mejora: El beneficio de INT de [Pain Protocol] aumenta a {0}{1} (hasta {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Cuando el campeón usa una habilidad, aumenta la velocidad de movimiento de la formación en {0}{1} y activa [Pain Protocol] durante {2}{3} segundos. [Pain Protocol]: Mientras está activa, cada pérdida de {4}{5} de los PS máximos de la formación aumenta la INT en {6}{7} (hasta {8}{9}). (Mejora: El beneficio de INT de [Pain Protocol] aumenta a {0}{1} (hasta {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Descargo de responsabilidad: El diseño de arma mostrado es correcto, pero el resto de la imagen es un marcador de posición; las estadísticas e información mostradas no son correctas."
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",

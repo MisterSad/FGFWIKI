@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS-kyky - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Kun sankari käyttää taktista kykyä, kaikkien sankarien älykkyys (INT) kasvaa {0}{1} sekunniksi {2}{3} sekunnin ajaksi. (Tehostus: Älykkyys nousee arvoon {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG-kyky - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Kun sankari käyttää kykyä, muodostelman liikenopeus kasvaa {0}{1} ja aktivoi [Pain Protocol] -tilan {2}{3} sekunniksi. [Pain Protocol]: Tilan ollessa aktiivinen, jokainen menetetty {4}{5} Max HP -osuus nostaa INT-arvoa {6}{7} verran (enintään {8}{9}). (Tehostus: INT-bonus nousee arvoon {0}{1} (enintään {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Kun sankari käyttää kykyä, muodostelman liikenopeus kasvaa {0}{1} ja aktivoi [Pain Protocol] -tilan {2}{3} sekunniksi. [Pain Protocol]: Tilan ollessa aktiivinen, jokainen menetetty {4}{5} Max HP -osuus nostaa INT-arvoa {6}{7} verran (enintään {8}{9}). (Tehostus: INT-bonus nousee arvoon {0}{1} (enintään {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Vastuuvapauslauseke: Näytetty aseen ulkoasu on oikea, mutta muu kuva on vain paikkamerkki; kortilla näkyvät tiedot ja tilastot eivät ole oikeita."
     },
     "hero_data": {
         "h1_notes": "Välttämätön Ion-rotaatioissa. Valtava parannus ja koko tiimin INT-buustit.",

@@ -439,7 +439,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS Skill - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "When the Champion uses a Tactical Ability, increases all Champions' INT by {0}{1} for {2}{3} seconds. (Enhancement: Increases INT to {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG Skill - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "When the Champion uses an ability, increases formation movement speed by {0}{1} and triggers [Pain Protocol] for {2}{3} seconds. [Pain Protocol]: While active, every {4}{5} of Max HP the formation loses increases INT by {6}{7} (up to {8}{9}). (Enhancement: [Pain Protocol] INT bonus increases to {0}{1} (up to {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "When the Champion uses an ability, increases formation movement speed by {0}{1} and triggers [Pain Protocol] for {2}{3} seconds. [Pain Protocol]: While active, every {4}{5} of Max HP the formation loses increases INT by {6}{7} (up to {8}{9}). (Enhancement: [Pain Protocol] INT bonus increases to {0}{1} (up to {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Disclaimer: The weapon skin shown is correct, but the rest of the image is just a placeholder; the stats and information displayed on the card are not accurate."
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "Abilità TPS - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Quando il Campione usa un'abilità tattica, aumenta l'INT di tutti i Campioni di {0}{1} per {2}{3} secondi. (Potenziamento: Aumenta l'INT a {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "Abilità SLG - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Quando il Campione usa un'abilità, aumenta la velocità di movimento della formazione di {0}{1} e attiva [Pain Protocol] per {2}{3} secondi. [Pain Protocol]: Quando attivo, ogni perdita del {4}{5} degli HP massimi della formazione aumenta l'INT di {6}{7} (fino a {8}{9}). (Potenziamento: Il bonus INT di [Pain Protocol] aumenta a {0}{1} (fino a {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Quando il Campione usa un'abilità, aumenta la velocità di movimento della formazione di {0}{1} e attiva [Pain Protocol] per {2}{3} secondi. [Pain Protocol]: Quando attivo, ogni perdita del {4}{5} degli HP massimi della formazione aumenta l'INT di {6}{7} (fino a {8}{9}). (Potenziamento: Il bonus INT di [Pain Protocol] aumenta a {0}{1} (fino a {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Dichiarazione di non responsabilità: La skin dell'arma mostrata è corretta, ma il resto dell'immagine è un segnaposto; le statistiche e le informazioni mostrate sulla carta non sono corrette."
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

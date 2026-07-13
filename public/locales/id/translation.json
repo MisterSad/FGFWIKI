@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "Skill TPS - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Saat Champion menggunakan Kemampuan Taktis, meningkatkan INT semua Champion sebesar {0}{1} selama {2}{3} detik. (Peningkatan: Meningkatkan INT menjadi {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "Skill SLG - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Saat Champion menggunakan kemampuan, meningkatkan kecepatan gerak formasi sebesar {0}{1} dan memicu [Pain Protocol] selama {2}{3} detik. [Pain Protocol]: Saat aktif, setiap kehilangan {4}{5} dari HP Maks formasi akan meningkatkan INT sebesar {6}{7} (hingga {8}{9}). (Peningkatan: Bonus INT meningkat menjadi {0}{1} (hingga {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Saat Champion menggunakan kemampuan, meningkatkan kecepatan gerak formasi sebesar {0}{1} dan memicu [Pain Protocol] selama {2}{3} detik. [Pain Protocol]: Saat aktif, setiap kehilangan {4}{5} dari HP Maks formasi akan meningkatkan INT sebesar {6}{7} (hingga {8}{9}). (Peningkatan: Bonus INT meningkat menjadi {0}{1} (hingga {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Penafian: Tampilan senjata yang ditampilkan sudah benar, tetapi bagian gambar lainnya hanyalah tempat penampung (placeholder); statistik dan informasi pada kartu tidak akurat."
     },
     "hero_data": {
         "h1_notes": "Penting untuk rotasi Ion. Penyembuhan besar & buff INT seluruh tim.",

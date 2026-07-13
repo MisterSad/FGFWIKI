@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "Kỹ năng TPS - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Khi Tướng sử dụng Kỹ năng Chiến thuật, tăng INT của tất cả Tướng lên {0}{1} trong {2}{3} giây. (Cường hóa: Tăng INT lên {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "Kỹ năng SLG - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Khi Tướng sử dụng kỹ năng, tăng tốc độ di chuyển của đội hình lên {0}{1} và kích hoạt [Pain Protocol] trong {2}{3} giây. [Pain Protocol]: Khi kỹ năng kích hoạt, mỗi phần HP Tối đa đội hình mất đi sẽ tăng INT thêm {6}{7} (tối đa {8}{9}). (Cường hóa: Điểm thưởng INT của [Pain Protocol] tăng lên {0}{1} (tối đa {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Khi Tướng sử dụng kỹ năng, tăng tốc độ di chuyển của đội hình lên {0}{1} và kích hoạt [Pain Protocol] trong {2}{3} giây. [Pain Protocol]: Khi kỹ năng kích hoạt, mỗi phần HP Tối đa đội hình mất đi sẽ tăng INT thêm {6}{7} (tối đa {8}{9}). (Cường hóa: Điểm thưởng INT của [Pain Protocol] tăng lên {0}{1} (tối đa {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Tuyên bố miễn trừ trách nhiệm: Ngoại hình vũ khí hiển thị là chính xác, nhưng phần còn lại của hình ảnh chỉ là hình thế chỗ (placeholder); các chỉ số và thông tin trên thẻ không chính xác."
     },
     "hero_data": {
         "h1_notes": "Cần thiết cho sự quay của ion. Hồi máu lớn và buff INT toàn đội.",

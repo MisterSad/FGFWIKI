@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS技能 - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "當英雄使用戰術技能時，提升所有英雄的智力（INT）{0}{1}，持續 {2}{3} 秒。（強化：智力提升數值增加至 {0}{1}。）",
         "celestial_transmission_july_2026_eva_slg_title": "SLG技能 - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "當英雄使用技能時，提升編隊移動速度 {0}{1}，并觸發 [Pain Protocol]，持續 {2}{3} 秒。[Pain Protocol]：效果持續期間，編隊每損失最大生命值的 {4}{5}，提升智力 {6}{7}（最高可提升至 {8}{9}）。（強化：[Pain Protocol] 的智力加成提升至 {0}{1}，上限提升至 {2}{3}。）"
+        "celestial_transmission_july_2026_eva_slg_desc": "當英雄使用技能時，提升編隊移動速度 {0}{1}，并觸發 [Pain Protocol]，持續 {2}{3} 秒。[Pain Protocol]：效果持續期間，編隊每損失最大生命值的 {4}{5}，提升智力 {6}{7}（最高可提升至 {8}{9}）。（強化：[Pain Protocol] 的智力加成提升至 {0}{1}，上限提升至 {2}{3}。）",
+        "celestial_transmission_july_2026_weapon_disclaimer": "免責聲明：展示的武器皮膚是正確的，但圖片的其餘部分僅為占位符，卡片上顯示的信息和屬性並不準確。"
     },
     "hero_data": {
         "h1_notes": "對於離子旋轉至關重要。巨大的治療效果和全隊的智力增益。",

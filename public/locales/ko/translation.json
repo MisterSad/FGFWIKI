@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS 스킬 - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "챔피언이 전술 스킬을 사용 시, {2}{3}초 동안 모든 챔피언의 지력(INT)을 {0}{1} 증가시킵니다. (강화: 지력 증가치를 {0}{1}로 상승.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG 스킬 - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "챔피언이 스킬을 사용 시, 부대의 이동 속도를 {0}{1} 증가시키고 {2}{3}초 동안 [Pain Protocol]을 발동합니다. [Pain Protocol]: 스킬이 활성화된 동안 부대가 최대 HP의 {4}{5}를 잃을 때마다 지력을 {6}{7} 증가시킵니다(최대 {8}{9}까지). (강화: [Pain Protocol] 지력 보너스를 {0}{1}(최대 {2}{3})로 상승.)"
+        "celestial_transmission_july_2026_eva_slg_desc": "챔피언이 스킬을 사용 시, 부대의 이동 속도를 {0}{1} 증가시키고 {2}{3}초 동안 [Pain Protocol]을 발동합니다. [Pain Protocol]: 스킬이 활성화된 동안 부대가 최대 HP의 {4}{5}를 잃을 때마다 지력을 {6}{7} 증가시킵니다(최대 {8}{9}까지). (강화: [Pain Protocol] 지력 보너스를 {0}{1}(최대 {2}{3})로 상승.)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "고지 사항: 표시된 무기 스킨은 올바르나, 이미지의 나머지 부분은 플레이스홀더(임시 이미지)입니다. 카드에 표시된 능력치 및 정보는 실제와 다릅니다."
     },
     "hero_data": {
         "h1_notes": "이온 회전에 필수. 거대한 치유와 팀 전체 지능 버프.",

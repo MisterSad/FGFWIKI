@@ -439,7 +439,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "Compétence TPS - Édit Inflexible",
         "celestial_transmission_july_2026_eva_tps_desc": "Quand le champion utilise une capacité tactique, augmente l'INT de tous les champions de {0}{1} pendant {2}{3} secondes. (Amélioration : Augmente l'INT à {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "Compétence SLG - Protocole de Douleur",
-        "celestial_transmission_july_2026_eva_slg_desc": "Quand le champion utilise une capacité, augmente la vitesse de déplacement de la formation de {0}{1} et déclenche [Protocole de Douleur] pendant {2}{3} secondes. [Protocole de Douleur] : Tant que la capacité est active, chaque perte de {4}{5} des PV max de la formation augmente l'INT de {6}{7} (jusqu'à {8}{9}). (Amélioration : Le bonus d'INT de [Protocole de Douleur] augmente à {0}{1} (jusqu'à {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Quand le champion utilise une capacité, augmente la vitesse de déplacement de la formation de {0}{1} et déclenche [Protocole de Douleur] pendant {2}{3} secondes. [Protocole de Douleur] : Tant que la capacité est active, chaque perte de {4}{5} des PV max de la formation augmente l'INT de {6}{7} (jusqu'à {8}{9}). (Amélioration : Le bonus d'INT de [Protocole de Douleur] augmente à {0}{1} (jusqu'à {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Avertissement : Le skin de l'arme affiché est correct, mais le reste de l'image est un simple placeholder ; les statistiques et informations affichées sur la carte ne sont pas correctes."
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",

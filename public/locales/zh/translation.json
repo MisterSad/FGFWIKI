@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS技能 - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "当英雄使用战术技能时，提升所有英雄的智力（INT）{0}{1}，持续 {2}{3} 秒。（强化：智力提升数值增加至 {0}{1}。）",
         "celestial_transmission_july_2026_eva_slg_title": "SLG技能 - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "当英雄使用技能时，提升编队移动速度 {0}{1}，并触发 [Pain Protocol]，持续 {2}{3} 秒。[Pain Protocol]：效果持续期间，编队每损失最大生命值的 {4}{5}，提升智力 {6}{7}（最高可提升至 {8}{9}）。（强化：[Pain Protocol] 的智力加成提升至 {0}{1}，上限提升至 {2}{3}。）"
+        "celestial_transmission_july_2026_eva_slg_desc": "当英雄使用技能时，提升编队移动速度 {0}{1}，并触发 [Pain Protocol]，持续 {2}{3} 秒。[Pain Protocol]：效果持续期间，编队每损失最大生命值的 {4}{5}，提升智力 {6}{7}（最高可提升至 {8}{9}）。（强化：[Pain Protocol] 的智力加成提升至 {0}{1}，上限提升至 {2}{3}。）",
+        "celestial_transmission_july_2026_weapon_disclaimer": "免责声明：展示的武器皮肤是正确的，但图片的其余部分仅为占位符，卡片上显示的信息和属性并不准确。"
     },
     "hero_data": {
         "h1_notes": "离子轮换的必备。巨大的治疗和团队智力加成。",
