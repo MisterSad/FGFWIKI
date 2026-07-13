@@ -343,7 +343,6 @@ export const tips = [
     content: 'tips.season2_map_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-06-28T08:40:00Z',
     sections: [
       {
@@ -380,7 +379,6 @@ export const tips = [
     content: 'tips.magnetic_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-06-21T18:48:00Z',
     sections: [
       {
@@ -429,7 +427,6 @@ export const tips = [
     content: 'tips.star_of_guild_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-06-21T18:58:00Z',
     sections: [
       {
@@ -460,7 +457,6 @@ export const tips = [
     content: 'tips.migration_desc',
     highlight: true,
     hasDetails: true,
-    isUpdate: true,
     publishDate: '2026-06-23T08:00:00Z',
     sections: [
       {
