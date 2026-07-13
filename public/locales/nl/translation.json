@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS-vaardigheid - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Wanneer de kampioen een tactische vaardigheid gebruikt, verhoogt dit de INT van alle kampioenen met {0}{1} gedurende {2}{3} seconden. (Verbetering: Verhoogt INT naar {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG-vaardigheid - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Wanneer de kampioen een vaardigheid gebruikt, verhoogt dit de bewegingssnelheid van de formatie met {0}{1} en activeert [Pain Protocol] gedurende {2}{3} seconden. [Pain Protocol]: Terwijl de vaardigheid actief is, verhoogt elk verlies van {4}{5} van Max HP de INT met {6}{7} (tot {8}{9}). (Verbetering: De INT-bonus van [Pain Protocol] stijgt naar {0}{1} (tot {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Wanneer de kampioen een vaardigheid gebruikt, verhoogt dit de bewegingssnelheid van de formatie met {0}{1} en activeert [Pain Protocol] gedurende {2}{3} seconden. [Pain Protocol]: Terwijl de vaardigheid actief is, verhoogt elk verlies van {4}{5} van Max HP de INT met {6}{7} (tot {8}{9}). (Verbetering: De INT-bonus van [Pain Protocol] stijgt naar {0}{1} (tot {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Disclaimer: De getoonde wapenskin is correct, maar de rest van de afbeelding is een placeholder; de statistieken en informatie op de kaart zijn niet correct."
     },
     "hero_data": {
         "h1_notes": "Essentieel voor ionenrotaties. Enorme genezings- en teambrede INT-buffs.",

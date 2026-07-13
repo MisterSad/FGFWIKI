@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS-Fähigkeit - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Wenn der Champion eine taktische Fähigkeit einsetzt, erhöht sich die INT aller Champions für {2}{3} Sekunden um {0}{1}. (Verbesserung: Erhöht INT auf {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG-Fähigkeit - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Wenn der Champion eine Fähigkeit einsetzt, erhöht sich das Marschtempo der Formation um {0}{1} und löst [Pain Protocol] für {2}{3} Sekunden aus. [Pain Protocol]: Während die Fähigkeit aktiv ist, erhöht jeder Verlust von {4}{5} der maximalen LP der Formation die INT um {6}{7} (bis zu {8}{9}). (Verbesserung: Der INT-Bonus von [Pain Protocol] erhöht sich auf {0}{1} (bis zu {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Wenn der Champion eine Fähigkeit einsetzt, erhöht sich das Marschtempo der Formation um {0}{1} und löst [Pain Protocol] für {2}{3} Sekunden aus. [Pain Protocol]: Während die Fähigkeit aktiv ist, erhöht jeder Verlust von {4}{5} der maximalen LP der Formation die INT um {6}{7} (bis zu {8}{9}). (Verbesserung: Der INT-Bonus von [Pain Protocol] erhöht sich auf {0}{1} (bis zu {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Haftungsausschluss: Der gezeigte Waffen-Skin ist korrekt, aber der Rest des Bildes ist nur ein Platzhalter; die auf der Karte angezeigten Werte und Informationen sind nicht korrekt."
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

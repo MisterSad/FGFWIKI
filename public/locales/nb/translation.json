@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS-ferdighet - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Når mesteren bruker en taktisk ferdighet, økes alle mesteres INT med {0}{1} i {2}{3} sekunder. (Forbedring: Øker INT to {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG-ferdighet - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Når mesteren bruker en ferdighet, økes formasjonens bevegelseshastighet med {0}{1} og utlöser [Pain Protocol] i {2}{3} sekunder. [Pain Protocol]: Mens ferdigheten er aktiv, øker INT med {6}{7} for hver {4}{5} av Max HP formasjonen mister (opptil {8}{9}). (Forbedring: INT-bonusen fra [Pain Protocol] økes to {0}{1} (opptil {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Når mesteren bruker en ferdighet, økes formasjonens bevegelseshastighet med {0}{1} og utlöser [Pain Protocol] i {2}{3} sekunder. [Pain Protocol]: Mens ferdigheten er aktiv, øker INT med {6}{7} for hver {4}{5} av Max HP formasjonen mister (opptil {8}{9}). (Forbedring: INT-bonusen fra [Pain Protocol] økes to {0}{1} (opptil {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Ansvarsfraskrivelse: Våpenutseendet som vises er riktig, men resten av bildet er en plassholder; statistikken og informasjonen på kortet er ikke korrekt."
     },
     "hero_data": {
         "h1_notes": "Essensiell for Ion-rotasjoner. Massiv helbreding og team-omfattende INT-boost.",

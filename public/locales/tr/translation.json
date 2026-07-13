@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPS Yeteneği - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Şampiyon bir Taktik Yetenek kullandığında, tüm Şampiyonların Zekasını (INT) {2}{3} saniyeliğine {0}{1} artırır. (Geliştirme: Zekayı {0}{1} değerine çıkarır.)",
         "celestial_transmission_july_2026_eva_slg_title": "SLG Yeteneği - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Şampiyon bir yetenek kullandığında, formasyon hareket hızını {0}{1} artırır & [Pain Protocol] tetikler. [Pain Protocol]: Yetenek aktifken, formasyonun kaybettiği her {4}{5} Maks. TP, Zekayı {6}{7} artırır (en fazla {8}{9} kadar). (Geliştirme: [Pain Protocol] Zeka bonusu {0}{1} değerine (en fazla {2}{3} kadar) yükselir.)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Şampiyon bir yetenek kullandığında, formasyon hareket hızını {0}{1} artırır & [Pain Protocol] tetikler. [Pain Protocol]: Yetenek aktifken, formasyonun kaybettiği her {4}{5} Maks. TP, Zekayı {6}{7} artırır (en fazla {8}{9} kadar). (Geliştirme: [Pain Protocol] Zeka bonusu {0}{1} değerine (en fazla {2}{3} kadar) yükselir.)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Yasal Uyarı: Gösterilen silah görünümü doğrudur, ancak görselin geri kalanı sadece yer tutucudur; kart üzerindeki istatistikler ve bilgiler doğru değildir."
     },
     "hero_data": {
         "h1_notes": "İyon rotasyonları için gereklidir. Muazzam iyileştirme ve takım çapında INT güçlendirmeleri.",

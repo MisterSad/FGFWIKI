@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "TPSスキル - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "チャンピオンが戦術スキルを使用時、すべてのチャンピオンの知力（INT）を {2}{3} 秒間 {0}{1} 上昇させる。（強化：知力上昇値を {0}{1} に増加。）",
         "celestial_transmission_july_2026_eva_slg_title": "SLGスキル - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "チャンピオンがスキルを使用時、部隊の移動速度を {0}{1} 上昇させ、{2}{3} 秒間「Pain Protocol」をトリガーする。「Pain Protocol」：スキル発動中、部隊が最大HP의 {4}{5} を失うごとに対象の知力を {6}{7} 上昇させる（最大 {8}{9} まで）。（強化：「Pain Protocol」の知力ボーナスを {0}{1} （最大 {2}{3} まで）に増加。）"
+        "celestial_transmission_july_2026_eva_slg_desc": "チャンピオンがスキルを使用時、部隊の移動速度を {0}{1} 上昇させ、{2}{3} 秒間「Pain Protocol」をトリガーする。「Pain Protocol」：スキル発動中、部隊が最大HP의 {4}{5} を失うごとに対象の知力を {6}{7} 上昇させる（最大 {8}{9} まで）。（強化：「Pain Protocol」の知力ボーナスを {0}{1} （最大 {2}{3} まで）に増加。）",
+        "celestial_transmission_july_2026_weapon_disclaimer": "免責事項：表示されている武器スキンは正確ですが、画像内のその他の部分はプレースホルダーです。カードに記載されているステータスや情報は正しくありません。"
     },
     "hero_data": {
         "h1_notes": "イオンローテーションに必須。膨大な回復とチーム全体の知力バフ。",

@@ -789,6 +789,7 @@ export const tips = [
         text: 'tips.celestial_transmission_july_2026_eva_txt',
         image: '/images/weapon_eva.png',
         imageMaxWidth: '500px',
+        disclaimer: 'tips.celestial_transmission_july_2026_weapon_disclaimer',
         methods: [
           {
             icon: 'Sparkles',
@@ -807,6 +808,7 @@ export const tips = [
         text: 'tips.celestial_transmission_july_2026_aliya_intro_txt',
         image: '/images/weapon_aliya.png',
         imageMaxWidth: '500px',
+        disclaimer: 'tips.celestial_transmission_july_2026_weapon_disclaimer',
         methods: [
           {
             icon: 'Sparkles',

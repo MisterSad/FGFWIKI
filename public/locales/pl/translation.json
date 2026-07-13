@@ -437,7 +437,8 @@
         "celestial_transmission_july_2026_eva_tps_title": "Umiejętność TPS - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "Kiedy bohater używa umiejętności taktycznej, zwiększa INT wszystkich bohaterów o {0}{1} na {2}{3} sek. (Ulepszenie: Zwiększa INT do {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "Umiejętność SLG - Pain Protocol",
-        "celestial_transmission_july_2026_eva_slg_desc": "Kiedy bohater używa umiejętności, zwiększa prędkość ruchu formacji o {0}{1} i aktywuje [Pain Protocol] na {2}{3} sek. [Pain Protocol]: Podczas działania umiejętności każda utrata {4}{5} maks. PŻ formacji zwiększa INT o {6}{7} (maks. do {8}{9}). (Ulepszenie: Premia INT z [Pain Protocol] wzrasta do {0}{1} (maks. do {2}{3}).)"
+        "celestial_transmission_july_2026_eva_slg_desc": "Kiedy bohater używa umiejętności, zwiększa prędkość ruchu formacji o {0}{1} i aktywuje [Pain Protocol] na {2}{3} sek. [Pain Protocol]: Podczas działania umiejętności każda utrata {4}{5} maks. PŻ formacji zwiększa INT o {6}{7} (maks. do {8}{9}). (Ulepszenie: Premia INT z [Pain Protocol] wzrasta do {0}{1} (maks. do {2}{3}).)",
+        "celestial_transmission_july_2026_weapon_disclaimer": "Zastrzeżenie: Przedstawiona skórka broni jest prawidłowa, ale reszta grafiki to tylko symbol zastępczy; statystyki i informacje na niej widoczne nie są poprawne."
     },
     "hero_data": {
         "h1_notes": "Niezbędna do rotacji Jonowych. Ogromne leczenie i premie INT dla całej drużyny.",
