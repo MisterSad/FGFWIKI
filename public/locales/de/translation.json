@@ -413,15 +413,14 @@
         "stella_leaks_ruins_desc": "Der Zeitplan für Gildenruinen und Boss-Rush bleibt sehr unbeständig, und es ist noch kein fester Termin bestätigt. Basierend auf den Leaks können sich diese Features stark ändern und werden höchstwahrscheinlich nach August erscheinen.",
         "stella_leaks_outro": "Das war's für diese Leak-Runde. Ich werde weitere Updates posten, sobald mehr verifizierte Informationen vorliegen. In der Zwischenzeit aktualisiere ich die Seite weiterhin mit neuen Guides und Tools!",
         "celestial_transmission_july_2026_title": "Himmlische Übertragung: Der Eidwahrer und das Stellare Edikt",
-        "celestial_transmission_july_2026_desc": "Serverwartung am 14. Juli 2026 bringt das heldenhafte Besatzungsmitglied Rue Corintha und eine Vorschau auf Evans und Aliyas legendäre Waffen!",
-        "celestial_transmission_july_2026_intro": "Hallo Leute! Ein brandneues Update steht uns morgen, am 14. Juli, bevor. Das Spiel wird für Wartungsarbeiten von 06:00 bis 09:00 Uhr UTC offline gehen. Ein neues heldenhaftes Besatzungsmitglied betritt die Bühne, es gibt Komfortanpassungen für Matchmaking und Rallies, und wir haben einen exklusiven Blick auf die kommenden legendären Waffen für Evan und Aliya. Lasst uns alles Wichtige in diesem Patch durchgehen!",
+        "celestial_transmission_july_2026_desc": "Serverwartung am 14. Juli 2026 bringt das heldenhafte Besatzungsmitglied Rue Corintha und eine Vorschau auf Evas und Aliyas legendäre Waffen!",
+        "celestial_transmission_july_2026_intro": "Hallo Leute! Ein brandneues Update steht uns morgen, am 14. Juli, bevor. Das Spiel wird für Wartungsarbeiten von 06:00 bis 09:00 Uhr UTC offline gehen. Ein neues heldenhaftes Besatzungsmitglied betritt die Bühne, es gibt Komfortanpassungen für Matchmaking und Rallies, und wir haben einen exklusiven Blick auf die kommenden legendären Waffen für Eva und Aliya. Lasst uns alles Wichtige in diesem Patch durchgehen!",
         "celestial_transmission_july_2026_rue_hdr": "Neues heldenhaftes Besatzungsmitglied: Rue Corintha",
         "celestial_transmission_july_2026_rue_txt": "Rue Corintha schließt sich als unser neuestes heldenhaftes Besatzungsmitglied an! Sie wird auf Servern verfügbar sein, die seit mindestens 27 Wochen aktiv sind. Hier ist ein erster Blick auf ihre offizielle Grafik:",
         "celestial_transmission_july_2026_updates_hdr": "Die wichtigsten Update-Highlights",
         "celestial_transmission_july_2026_aliya_hdr": "Aliyas legendäre Waffe: Glimmer Oathkeeper",
         "celestial_transmission_july_2026_outro_hdr": "Bereit für das Update?",
         "celestial_transmission_july_2026_outro_txt": "Das sind alle Neuigkeiten für heute. Bereitet euch auf die Wartungsarbeiten am 14. Juli vor und spart eure Ressourcen für diese coolen Waffen! Bis bald in der Galaktischen Grenze!",
-        "celestial_transmission_july_2026_evan_hdr": "Evans legendäre Waffe: Stellar Edict",
         "celestial_transmission_july_2026_update_sf_title": "Shadowfront-Anpassungen",
         "celestial_transmission_july_2026_update_sf_desc": "Die Entwickler optimieren die Matchmaking-Regeln für eine bessere Balance. Außerdem verschiebt sich die Zeit für das erste Match am Freitag von 04:00 Uhr UTC auf 12:00 Uhr UTC. Überprüft eure Zeiten, damit eure Gilde nichts verpasst!",
         "celestial_transmission_july_2026_update_rec_title": "Rekrutierungs- & Auflade-Upgrades",
@@ -437,7 +436,9 @@
         "celestial_transmission_july_2026_aliya_tps_title": "TPS-Fähigkeit - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Wenn der Champion eine taktische Fähigkeit einsetzt, erhöht sich die ATK aller Champions für {2}{3} Sekunden um {0}{1}. (Verbesserung: Erhöht ATK auf {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "SLG-Fähigkeit - Walk in the Light",
-        "celestial_transmission_july_2026_aliya_slg_desc": "Wenn der Champion eine Fähigkeit einsetzt, erhöht sich die erhaltene Heilung der Formation um {0}{1} und löst [Walk in the Light] für {2}{3} Sekunden aus. [Walk in the Light]: Nach Ablauf des Effekts wird ein Teil des erlittenen Schadens in einen Schild in Höhe von {4}{5} des erlittenen Gesamtschadens umgewandelt. (Verbesserung: Die Schildstärke von [Walk in the Light] erhöht sich auf Erlittenen Gesamtschaden ×{0}{1}, solange die Fähigkeit aktiv ist.)"
+        "celestial_transmission_july_2026_aliya_slg_desc": "Wenn der Champion eine Fähigkeit einsetzt, erhöht sich die erhaltene Heilung der Formation um {0}{1} und löst [Walk in the Light] für {2}{3} Sekunden aus. [Walk in the Light]: Nach Ablauf des Effekts wird ein Teil des erlittenen Schadens in einen Schild in Höhe von {4}{5} des erlittenen Gesamtschadens umgewandelt. (Verbesserung: Die Schildstärke von [Walk in the Light] erhöht sich auf Erlittenen Gesamtschaden ×{0}{1}, solange die Fähigkeit aktiv ist.)",
+        "celestial_transmission_july_2026_eva_hdr": "Evas legendäre Waffe: Stellar Edict",
+        "celestial_transmission_july_2026_eva_txt": "Eva erhält ihre Signaturpistole, die **Stellar Edict**! Sie bringt massive INT-Boosts mit sich, die perfekt zu ihrer Rolle als Debuffer und Supporter passen."
     },
     "hero_data": {
         "h1_notes": "Wesentlich für Ionen-Rotationen. Massive Heilung & teamweite INT-Buffs.",

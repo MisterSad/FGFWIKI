@@ -413,15 +413,14 @@
         "stella_leaks_ruins_desc": "Il calendario per le Rovine di Gilda e il Boss Rush rimane molto instabile e non ci sono date fisse confermate. Secondo i leak, arriveranno molto probabilmente dopo agosto.",
         "stella_leaks_outro": "Questo è tutto per questo round di leak. Pubblicherò ulteriori aggiornamenti non appena emergeranno informazioni più verificate. Nel frattempo, continuo ad aggiornare il sito con nuove guide e strumenti!",
         "celestial_transmission_july_2026_title": "Trasmissione Celeste: Il Custode del Giuramento e l'Editto Stellare",
-        "celestial_transmission_july_2026_desc": "Manutenzione del server il 14 luglio 2026, con l'arrivo della membra dell'equipaggio eroica Rue Corintha e l'anteprima delle armi leggendarie di Evan e Aliya!",
-        "celestial_transmission_july_2026_intro": "Ciao a tutti! Domani, 14 luglio, arriverà un nuovo aggiornamento. Il gioco andrà offline per manutenzione dalle 06:00 alle 09:00 UTC. C'è una nuova eroina dell'equipaggio in arrivo, miglioramenti per il matchmaking e i raduni, e un'anteprima esclusiva delle prossime armi leggendarie per Evan e Aliya. Vediamo tutti i dettagli di questa patch!",
+        "celestial_transmission_july_2026_desc": "Manutenzione del server il 14 luglio 2026, con l'arrivo della membra dell'equipaggio eroica Rue Corintha e l'anteprima delle armi leggendarie di Eva e Aliya!",
+        "celestial_transmission_july_2026_intro": "Ciao a tutti! Domani, 14 luglio, arriverà un nuovo aggiornamento. Il gioco andrà offline per manutenzione dalle 06:00 alle 09:00 UTC. C'è una nuova eroina dell'equipaggio in arrivo, miglioramenti per il matchmaking e i raduni, e un'anteprima esclusiva delle prossime armi leggendarie per Eva e Aliya. Vediamo tutti i dettagli di questa patch!",
         "celestial_transmission_july_2026_rue_hdr": "Nuovo Membro dell'Equipaggio Eroico: Rue Corintha",
         "celestial_transmission_july_2026_rue_txt": "Rue Corintha si unisce a noi como nuova membra dell'equipaggio eroica! Sarà disponibile sui server attivi da almeno 27 settimane. Ecco un'anteprima del suo ritratto ufficiale:",
         "celestial_transmission_july_2026_updates_hdr": "Principali Novità dell'Aggiornamento",
         "celestial_transmission_july_2026_aliya_hdr": "Arma Leggendaria di Aliya: Glimmer Oathkeeper",
         "celestial_transmission_july_2026_outro_hdr": "Pronti per l'Aggiornamento?",
         "celestial_transmission_july_2026_outro_txt": "Questo è tutto per ora! Preparatevi per la manutenzione del 14 luglio e organizzate le vostre risorse di conseguenza. Buona fortuna e ci vediamo nello spazio!",
-        "celestial_transmission_july_2026_evan_hdr": "Arma Leggendaria di Evan: Stellar Edict",
         "celestial_transmission_july_2026_update_sf_title": "Modifiche a Shadowfront",
         "celestial_transmission_july_2026_update_sf_desc": "Gli sviluppatori stanno ottimizzando le regole di matchmaking per un bilanciamento migliore. Inoltre, il primo scontro del venerdì si sposterà dalle 04:00 UTC alle 12:00 UTC. Verificate bene gli orari!",
         "celestial_transmission_july_2026_update_rec_title": "Reclutamento e Ricarica",
@@ -437,7 +436,9 @@
         "celestial_transmission_july_2026_aliya_tps_title": "Abilità TPS - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Quando il Campione usa un'abilità tattica, aumenta l'ATK di tutti i Campioni di {0}{1} per {2}{3} secondi. (Potenziamento: Aumenta l'ATK a {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Abilità SLG - Walk in the Light",
-        "celestial_transmission_july_2026_aliya_slg_desc": "Quando il Campione usa un'abilità, aumenta le cure ricevute dalla formazione di {0}{1} e attiva [Walk in the Light] per {2}{3} secondi. [Walk in the Light]: Quando l'effetto scade, parte del danno subito viene convertito in uno scudo pari al {4}{5} del danno totale. (Potenziamento: La potenza dello scudo aumenta al Danno Totale Subito ×{0}{1}.)"
+        "celestial_transmission_july_2026_aliya_slg_desc": "Quando il Campione usa un'abilità, aumenta le cure ricevute dalla formazione di {0}{1} e attiva [Walk in the Light] per {2}{3} secondi. [Walk in the Light]: Quando l'effetto scade, parte del danno subito viene convertito in uno scudo pari al {4}{5} del danno totale. (Potenziamento: La potenza dello scudo aumenta al Danno Totale Subito ×{0}{1}.)",
+        "celestial_transmission_july_2026_eva_hdr": "Arma Leggendaria di Eva: Stellar Edict",
+        "celestial_transmission_july_2026_eva_txt": "Eva riceve la sua pistola esclusiva, la **Stellar Edict**! Offre grandi potenziamenti di INT perfetti per il suo ruolo di supporto e indebolimento."
     },
     "hero_data": {
         "h1_notes": "Essenziale per le rotazioni Ioniche. Enorme cura e bonus INT a tutta la squadra.",

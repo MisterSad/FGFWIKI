@@ -415,15 +415,14 @@
         "stella_leaks_ruins_desc": "The timeline for Guild Ruins and Boss Rush remains highly volatile with no fixed schedule confirmed yet. Based on the leaks, these features are highly subject to change and will most likely arrive sometime after August.",
         "stella_leaks_outro": "That is all for this round of leaks. I will post more updates as soon as more verified information comes to light. In the meantime, I am continuing to update the site with new guides and tools!",
         "celestial_transmission_july_2026_title": "Celestial Transmission: The Oathkeeper and the Stellar Edict",
-        "celestial_transmission_july_2026_desc": "Server maintenance on July 14, 2026, bringing Heroic crew member Rue Corintha and a preview of Evan and Aliya's legendary weapons!",
-        "celestial_transmission_july_2026_intro": "Hey guys! A brand-new update is heading our way tomorrow, July 14th. The game will go offline for maintenance from 06:00 to 09:00 UTC. There's a new heroic crew member entering the scene, some quality-of-life adjustments to matchmaking and rallies, and we've got an exclusive look at the upcoming legendary weapons for Evan and Aliya. Let's break down everything coming in this patch!",
+        "celestial_transmission_july_2026_desc": "Server maintenance on July 14, 2026, bringing Heroic crew member Rue Corintha and a preview of Eva and Aliya's legendary weapons!",
+        "celestial_transmission_july_2026_intro": "Hey guys! A brand-new update is heading our way tomorrow, July 14th. The game will go offline for maintenance from 06:00 to 09:00 UTC. There's a new heroic crew member entering the scene, some quality-of-life adjustments to matchmaking and rallies, and we've got an exclusive look at the upcoming legendary weapons for Eva and Aliya. Let's break down everything coming in this patch!",
         "celestial_transmission_july_2026_rue_hdr": "New Heroic Crew: Rue Corintha",
         "celestial_transmission_july_2026_rue_txt": "Rue Corintha is joining the lineup as our newest Heroic Crew Member! She’ll be available on servers that have been active for at least 27 weeks. Here's a quick look at her official artwork:",
         "celestial_transmission_july_2026_updates_hdr": "Key Update Highlights",
         "celestial_transmission_july_2026_aliya_hdr": "Aliya's Legendary Weapon: Glimmer Oathkeeper",
         "celestial_transmission_july_2026_outro_hdr": "Ready for the Update?",
         "celestial_transmission_july_2026_outro_txt": "That's all the news for now! Make sure to prepare for the maintenance downtime on July 14th and plan your resources accordingly. Good luck out there, and see you in the void!",
-        "celestial_transmission_july_2026_evan_hdr": "Evan's Legendary Weapon: Stellar Edict",
         "celestial_transmission_july_2026_update_sf_title": "Shadowfront Adjustments",
         "celestial_transmission_july_2026_update_sf_desc": "The devs are optimizing matchmaking rules for better balance. Also, the first match time is moving from Fridays 04:00 UTC to 12:00 UTC. Double-check your times so your guild doesn't miss out!",
         "celestial_transmission_july_2026_update_rec_title": "Recruitment & Top-up Upgrades",
@@ -439,7 +438,9 @@
         "celestial_transmission_july_2026_aliya_tps_title": "TPS Skill - Beacon of Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "When the Champion uses a Tactical Ability, increases all Champions' ATK by {0}{1} for {2}{3} seconds. (Enhancement: Increases ATK to {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "SLG Skill - Walk in the Light",
-        "celestial_transmission_july_2026_aliya_slg_desc": "When the Champion uses an ability, increases the formation's healing received by {0}{1} and triggers [Walk in the Light] for {2}{3} seconds. [Walk in the Light]: When the effect expires, a portion of the damage taken during its duration is converted into a Shield equal to {4}{5} of the total damage taken during that time. (Enhancement: [Walk in the Light] Shield strength increases to Total Damage Taken ×{0}{1} while active.)"
+        "celestial_transmission_july_2026_aliya_slg_desc": "When the Champion uses an ability, increases the formation's healing received by {0}{1} and triggers [Walk in the Light] for {2}{3} seconds. [Walk in the Light]: When the effect expires, a portion of the damage taken during its duration is converted into a Shield equal to {4}{5} of the total damage taken during that time. (Enhancement: [Walk in the Light] Shield strength increases to Total Damage Taken ×{0}{1} while active.)",
+        "celestial_transmission_july_2026_eva_hdr": "Eva's Legendary Weapon: Stellar Edict",
+        "celestial_transmission_july_2026_eva_txt": "Eva is getting her own signature Pistol, the **Stellar Edict**! It comes with massive INT boosts that fit perfectly into her debuff/support role."
     },
     "hero_data": {
         "h1_notes": "Essential for Ion rotations. Huge healing & team-wide INT buffs.",

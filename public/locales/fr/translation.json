@@ -415,15 +415,14 @@
         "stella_leaks_ruins_desc": "En revanche, le calendrier pour les Ruines de Guilde et le mode Boss Rush reste très incertain. Aucune date fixe n'a été confirmée et ces fonctionnalités sont sujettes à modification. Selon les fuites, elles arriveront très probablement après le mois d'août.",
         "stella_leaks_outro": "C'est tout pour cette série de fuites. Je publierai d'autres mises à jour dès que des informations fiables feront surface. En attendant, je continue de mettre à jour le site avec de nouveaux guides et outils !",
         "celestial_transmission_july_2026_title": "Transmission Céleste : La Gardienne des Serments et l'Édit Stellaire",
-        "celestial_transmission_july_2026_desc": "Maintenance des serveurs le 14 juillet 2026, avec l'arrivée du membre d'équipage héroïque Rue Corintha et un aperçu des armes légendaires d'Evan et Aliya !",
-        "celestial_transmission_july_2026_intro": "Salut à tous ! Une nouvelle mise à jour arrive demain, le 14 juillet. Le jeu sera hors ligne pour maintenance de 06:00 à 09:00 UTC. Un nouveau membre d'équipage héroïque fait son entrée, des ajustements de confort arrivent pour le matchmaking et les ralliements, et nous avons un aperçu exclusif des prochaines armes légendaires pour Evan et Aliya. Voyons ce qui nous attend dans ce patch !",
+        "celestial_transmission_july_2026_desc": "Maintenance des serveurs le 14 juillet 2026, avec l'arrivée du membre d'équipage héroïque Rue Corintha et un aperçu des armes légendaires d'Eva et Aliya !",
+        "celestial_transmission_july_2026_intro": "Salut à tous ! Une nouvelle mise à jour arrive demain, le 14 juillet. Le jeu sera hors ligne pour maintenance de 06:00 à 09:00 UTC. Un nouveau membre d'équipage héroïque fait son entrée, des ajustements de confort arrivent pour le matchmaking et les ralliements, et nous avons un aperçu exclusif des prochaines armes légendaires pour Eva et Aliya. Voyons ce qui nous attend dans ce patch !",
         "celestial_transmission_july_2026_rue_hdr": "Nouveau membre d'équipage héroïque : Rue Corintha",
         "celestial_transmission_july_2026_rue_txt": "Rue Corintha rejoint les rangs en tant que nouveau membre d'équipage héroïque ! Elle sera disponible sur les serveurs actifs depuis au moins 27 semaines. Voici un premier aperçu de son illustration officielle :",
         "celestial_transmission_july_2026_updates_hdr": "Points clés de la mise à jour",
         "celestial_transmission_july_2026_aliya_hdr": "Arme légendaire d'Aliya : Serment Scintillant",
         "celestial_transmission_july_2026_outro_hdr": "Prêt pour la mise à jour ?",
         "celestial_transmission_july_2026_outro_txt": "C'est tout pour le moment ! Préparez-vous pour la maintenance du 14 juillet et gérez bien vos ressources. Bon jeu à tous, et à bientôt dans le vide spatial !",
-        "celestial_transmission_july_2026_evan_hdr": "Arme légendaire d'Evan : Édit Stellaire",
         "celestial_transmission_july_2026_update_sf_title": "Ajustements de Shadowfront",
         "celestial_transmission_july_2026_update_sf_desc": "Les développeurs optimisent les règles de matchmaking pour un meilleur équilibre. De plus, l'heure du premier match passe du vendredi à 04:00 UTC à 12:00 UTC. Vérifiez bien vos horaires pour ne pas manquer le créneau !",
         "celestial_transmission_july_2026_update_rec_title": "Recrutement & Recharge Cumulatifs",
@@ -439,7 +438,9 @@
         "celestial_transmission_july_2026_aliya_tps_title": "Compétence TPS - Balise de Courage",
         "celestial_transmission_july_2026_aliya_tps_desc": "Quand le champion utilise une capacité tactique, augmente l'ATQ de tous les champions de {0}{1} pendant {2}{3} secondes. (Amélioration : Augmente l'ATQ à {0}{1}.)",
         "celestial_transmission_july_2026_aliya_slg_title": "Compétence SLG - Marche dans la Lumière",
-        "celestial_transmission_july_2026_aliya_slg_desc": "Quand le champion utilise une capacité, augmente les soins reçus par la formation de {0}{1} et déclenche [Marche dans la Lumière] pendant {2}{3} secondes. [Marche dans la Lumière] : À l'expiration de l'effet, une partie des dégâts subis pendant sa durée est convertie en un bouclier égal à {4}{5} des dégâts totaux subis. (Amélioration : La force du bouclier de [Marche dans la Lumière] augmente à Dégâts Totaux Subis ×{0}{1} tant que la capacité est active.)"
+        "celestial_transmission_july_2026_aliya_slg_desc": "Quand le champion utilise une capacité, augmente les soins reçus par la formation de {0}{1} et déclenche [Marche dans la Lumière] pendant {2}{3} secondes. [Marche dans la Lumière] : À l'expiration de l'effet, une partie des dégâts subis pendant sa durée est convertie en un bouclier égal à {4}{5} des dégâts totaux subis. (Amélioration : La force du bouclier de [Marche dans la Lumière] augmente à Dégâts Totaux Subis ×{0}{1} tant que la capacité est active.)",
+        "celestial_transmission_july_2026_eva_hdr": "Arme légendaire d'Eva : Édit Stellaire",
+        "celestial_transmission_july_2026_eva_txt": "Eva reçoit son pistolet signature, l'**Édit Stellaire** ! Il apporte de gros boosts d'INT parfaits pour son rôle de debuff et de soutien."
     },
     "hero_data": {
         "h1_notes": "Essentiel pour les rotations Ion. Énormes soins & buffs INT pour toute l'équipe.",
