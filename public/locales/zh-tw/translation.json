@@ -433,7 +433,7 @@
         "celestial_transmission_july_2026_aliya_slg_title": "SLG技能 - Walk in the Light",
         "celestial_transmission_july_2026_aliya_slg_desc": "當英雄使用技能時，提升編隊受到的治療效果 {0}{1}，並觸發 [Walk in the Light]，持續 {2}{3} 秒。[Walk in the Light]：當效果結束時，期間所受的部分傷害將轉化為等同於總受創值 {4}{5} 的護盾。（強化：技能激活期間，[Walk in the Light] 的護盾強度增加至總受創傷害的 ×{0}{1}。）",
         "celestial_transmission_july_2026_eva_hdr": "艾娃專屬傳奇武器：Stellar Edict",
-        "celestial_transmission_july_2026_eva_txt": "艾娃即將獲得她的專屬手槍——**Stellar Edict**！它擁有極高的智力（INT）加成，非常契合艾娃的減益與輔助定位。",
+        "celestial_transmission_july_2026_eva_txt": "艾娃即將獲得她的專屬手槍——**Stellar Edict**！它擁有極高的智力（INT）加成，非常契合艾娃的減益與輔助定位。 這些全新的傳奇武器預計將於7月底正式上線！",
         "celestial_transmission_july_2026_eva_tps_title": "TPS技能 - Unbroken Edict",
         "celestial_transmission_july_2026_eva_tps_desc": "當英雄使用戰術技能時，提升所有英雄的智力（INT）{0}{1}，持續 {2}{3} 秒。（強化：智力提升數值增加至 {0}{1}。）",
         "celestial_transmission_july_2026_eva_slg_title": "SLG技能 - Pain Protocol",
