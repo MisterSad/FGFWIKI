@@ -749,7 +749,7 @@ export const tips = [
       }
     ]
   },
-{
+  {
     id: 'celestial-transmission-july-14-2026',
     category: 'news',
     title: 'tips.celestial_transmission_july_2026_title',
@@ -770,19 +770,59 @@ export const tips = [
       },
       {
         header: 'tips.celestial_transmission_july_2026_updates_hdr',
-        text: 'tips.celestial_transmission_july_2026_updates_txt'
+        methods: [
+          {
+            icon: 'Swords',
+            title: 'tips.celestial_transmission_july_2026_update_sf_title',
+            desc: 'tips.celestial_transmission_july_2026_update_sf_desc'
+          },
+          {
+            icon: 'Gift',
+            title: 'tips.celestial_transmission_july_2026_update_rec_title',
+            desc: 'tips.celestial_transmission_july_2026_update_rec_desc'
+          },
+          {
+            icon: 'CheckCircle',
+            title: 'tips.celestial_transmission_july_2026_update_rally_title',
+            desc: 'tips.celestial_transmission_july_2026_update_rally_desc'
+          }
+        ]
       },
       {
         header: 'tips.celestial_transmission_july_2026_evan_hdr',
-        text: 'tips.celestial_transmission_july_2026_evan_txt',
+        text: 'tips.celestial_transmission_july_2026_evan_intro_txt',
         image: '/images/weapon_eva.png',
-        imageMaxWidth: '500px'
+        imageMaxWidth: '500px',
+        methods: [
+          {
+            icon: 'Sparkles',
+            title: 'tips.celestial_transmission_july_2026_evan_tps_title',
+            desc: 'tips.celestial_transmission_july_2026_evan_tps_desc'
+          },
+          {
+            icon: 'Shield',
+            title: 'tips.celestial_transmission_july_2026_evan_slg_title',
+            desc: 'tips.celestial_transmission_july_2026_evan_slg_desc'
+          }
+        ]
       },
       {
         header: 'tips.celestial_transmission_july_2026_aliya_hdr',
-        text: 'tips.celestial_transmission_july_2026_aliya_txt',
+        text: 'tips.celestial_transmission_july_2026_aliya_intro_txt',
         image: '/images/weapon_aliya.png',
-        imageMaxWidth: '500px'
+        imageMaxWidth: '500px',
+        methods: [
+          {
+            icon: 'Sparkles',
+            title: 'tips.celestial_transmission_july_2026_aliya_tps_title',
+            desc: 'tips.celestial_transmission_july_2026_aliya_tps_desc'
+          },
+          {
+            icon: 'Shield',
+            title: 'tips.celestial_transmission_july_2026_aliya_slg_title',
+            desc: 'tips.celestial_transmission_july_2026_aliya_slg_desc'
+          }
+        ]
       },
       {
         header: 'tips.celestial_transmission_july_2026_outro_hdr',

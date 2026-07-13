@@ -383,7 +383,8 @@ export default function News() {
                                     {section.methods.map((method, mIdx) => {
                                         const IconComponent = {
                                             Shield, Home, Crown, Users,
-                                            Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare
+                                            Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare,
+                                            Swords, CheckCircle
                                         }[method.icon] || Shield;
                                         return (
                                             <div key={mIdx} className="method-card" style={{
