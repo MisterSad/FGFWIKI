@@ -79,13 +79,27 @@ export default function CreatorsCorner() {
         const fetchLatestVideos = async () => {
             setLoading(true);
             try {
-                // Fetch the channel's uploads RSS feed through a CORS proxy
+                // Fetch the channel's uploads RSS feed through a CORS proxy with fallbacks
                 const rssUrl = `https://www.youtube.com/feeds/videos.xml?playlist_id=${selectedCreator.playlistId}`;
-                const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(rssUrl)}`;
-                
-                const response = await fetch(proxyUrl);
-                if (!response.ok) throw new Error('Failed to fetch uploads RSS feed');
-                const text = await response.text();
+                const proxies = [
+                    `https://api.allorigins.win/raw?url=${encodeURIComponent(rssUrl)}`,
+                    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(rssUrl)}`
+                ];
+
+                let text = null;
+                for (const proxyUrl of proxies) {
+                    try {
+                        const response = await fetch(proxyUrl);
+                        if (response.ok) {
+                            text = await response.text();
+                            if (text && text.includes('<entry>')) break;
+                        }
+                    } catch (e) {
+                        console.warn(`Proxy ${proxyUrl} failed:`, e);
+                    }
+                }
+
+                if (!text) throw new Error('Failed to fetch uploads RSS feed from all proxies');
 
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString(text, 'text/xml');
