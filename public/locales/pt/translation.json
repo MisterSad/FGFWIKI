@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Conselhos para novos criadores",
         "interview_q5": "Como uma voz estabelecida no espaço de estratégia móvel, qual é o conselho mais importante que você daria a um jogador que deseja começar seu próprio canal de criação de conteúdo hoje?",
         "interview_a5": "Meu conselho número um é escolher um jogo que você genuinamente ame e goste de jogar. Quando você é apaixonado pelo jogo, criar conteúdo é divertido em vez de parecer um trabalho. Esse prazer se reflete nos seus vídeos e faz uma enorme diferença quando se trata de manter a consistência. Construir um canal de sucesso leva tempo e, se você realmente gostar do processo, é muito mais provável que persista o tempo suficiente para que seu canal cresça e alcance seu potencial."
+    },
+    "comments": {
+        "title": "COMENTÁRIOS",
+        "loading": "Carregando comentários…",
+        "empty": "Ainda não há comentários. Seja o primeiro!",
+        "login_prompt": "Entre com o Google para participar da discussão.",
+        "login_button": "Continuar com o Google",
+        "error_login": "Falha no login com o Google. Tente novamente.",
+        "setup_prompt": "Escolha um apelido e o número do seu servidor para comentar.",
+        "setup_button": "Configurar perfil",
+        "setup_title": "SEU PERFIL DE COMERCIANTE",
+        "setup_desc": "Escolha um apelido e o número do seu servidor. Eles aparecerão nos seus comentários.",
+        "placeholder": "Escreva um comentário…",
+        "post": "PUBLICAR",
+        "posting": "PUBLICANDO…",
+        "save": "SALVAR",
+        "saving": "SALVANDO…",
+        "nickname_label": "Apelido",
+        "nickname_placeholder": "ex.: HawkEye",
+        "server_label": "Número do servidor",
+        "server_placeholder": "ex.: 1058",
+        "error_nickname": "O apelido deve ter entre 2 e 24 caracteres.",
+        "error_server": "O número do servidor deve estar entre 1 e 99999.",
+        "error_save": "Não foi possível salvar seu perfil. Tente novamente.",
+        "delete": "Excluir",
+        "delete_confirm": "Excluir este comentário?"
     }
 }

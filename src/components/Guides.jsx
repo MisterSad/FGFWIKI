@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
+import CommentSection from './CommentSection';
 import DailyChecklist from './DailyChecklist';
 import { BookOpen, Swords, Coins, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Calendar, Trophy, Heart, Gift, Star, Sparkles, MessageSquare, AlertTriangle, CheckCircle, ArrowUpRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -713,6 +714,7 @@ export default function Guides() {
                         </div>
                     )}
                 </div>
+                <CommentSection key={String(selectedTip.id)} type="guide" itemId={String(selectedTip.id)} />
             </div>
         );
     }

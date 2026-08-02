@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Saran untuk Kreator Baru",
         "interview_q5": "Sebagai suara yang mapan di ruang strategi seluler, apa satu-satunya saran terpenting yang akan Anda berikan kepada seorang gamer yang ingin memulai saluran pembuatan konten mereka sendiri hari ini?",
         "interview_a5": "Saran nomor satu saya adalah memilih game yang benar-benar Anda sukai dan nikmati untuk dimainkan. Ketika Anda bersemangat tentang game tersebut, membuat konten akan terasa menyenangkan alih-alih terasa seperti pekerjaan. Kesenangan itu terlihat dalam video Anda, dan itu membuat perbedaan besar dalam hal konsistensi. Membangun saluran yang sukses membutuhkan waktu, dan jika Anda benar-benar menikmati prosesnya, Anda jauh lebih mungkin untuk bertahan cukup lama hingga saluran Anda berkembang dan mencapai potensinya."
+    },
+    "comments": {
+        "title": "KOMENTAR",
+        "loading": "Memuat komentar…",
+        "empty": "Belum ada komentar. Jadilah yang pertama!",
+        "login_prompt": "Masuk dengan Google untuk bergabung dalam diskusi.",
+        "login_button": "Lanjutkan dengan Google",
+        "error_login": "Masuk dengan Google gagal. Coba lagi.",
+        "setup_prompt": "Pilih nama panggilan dan nomor server untuk berkomentar.",
+        "setup_button": "Atur profil",
+        "setup_title": "PROFIL PEDAGANG ANDA",
+        "setup_desc": "Pilih nama panggilan dan nomor server. Keduanya akan tampil di komentar Anda.",
+        "placeholder": "Tulis komentar…",
+        "post": "KIRIM",
+        "posting": "MENGIRIM…",
+        "save": "SIMPAN",
+        "saving": "MENYIMPAN…",
+        "nickname_label": "Nama panggilan",
+        "nickname_placeholder": "mis. HawkEye",
+        "server_label": "Nomor server",
+        "server_placeholder": "mis. 1058",
+        "error_nickname": "Nama panggilan harus 2 hingga 24 karakter.",
+        "error_server": "Nomor server harus antara 1 dan 99999.",
+        "error_save": "Tidak dapat menyimpan profil. Coba lagi.",
+        "delete": "Hapus",
+        "delete_confirm": "Hapus komentar ini?"
     }
 }

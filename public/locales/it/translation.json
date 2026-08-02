@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Consigli per i nuovi creatori",
         "interview_q5": "In qualità di voce affermata nello spazio della strategia mobile, qual è il consiglio più importante che daresti a un giocatore che desidera avviare il proprio canale di creazione di contenuti oggi?",
         "interview_a5": "Il mio consiglio numero uno è scegliere un gioco che ami sinceramente e con cui ti diverti a giocare. Quando sei appassionato del gioco, creare contenuti è divertente e non sembra un lavoro. Questo divertimento si vede nei tuoi video e fa un'enorme differenza in termini di costanza. Costruire un canale di successo richiede tempo e, se ti piace davvero il processo, è molto più probabile che continuerai a farlo abbastanza a lungo da far crescere il tuo canale ed esprimere il suo potenziale."
+    },
+    "comments": {
+        "title": "COMMENTI",
+        "loading": "Caricamento commenti…",
+        "empty": "Nessun commento. Sii il primo!",
+        "login_prompt": "Accedi con Google per partecipare alla discussione.",
+        "login_button": "Continua con Google",
+        "error_login": "Accesso con Google non riuscito. Riprova.",
+        "setup_prompt": "Scegli un soprannome e il tuo numero di server per commentare.",
+        "setup_button": "Configura profilo",
+        "setup_title": "IL TUO PROFILO DA TRADER",
+        "setup_desc": "Scegli un soprannome e il tuo numero di server. Appariranno nei tuoi commenti.",
+        "placeholder": "Scrivi un commento…",
+        "post": "PUBBLICA",
+        "posting": "PUBBLICAZIONE…",
+        "save": "SALVA",
+        "saving": "SALVATAGGIO…",
+        "nickname_label": "Soprannome",
+        "nickname_placeholder": "es. HawkEye",
+        "server_label": "Numero di server",
+        "server_placeholder": "es. 1058",
+        "error_nickname": "Il soprannome deve avere tra 2 e 24 caratteri.",
+        "error_server": "Il numero di server deve essere tra 1 e 99999.",
+        "error_save": "Impossibile salvare il profilo. Riprova.",
+        "delete": "Elimina",
+        "delete_confirm": "Eliminare questo commento?"
     }
 }

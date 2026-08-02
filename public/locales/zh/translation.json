@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "给新创作者的建议",
         "interview_q5": "作为移动端策略游戏领域的资深创作者, 如果有人想在今天开创自己的内容制作频道, 你会给他什么最重要的建议？",
         "interview_a5": "我首要的建议是选择一款你真正热爱并享受其中的游戏。当你对游戏充满热情时, 制作内容就像在玩乐而不是在工作。这种乐趣会呈现在你的视频中, 对你是否能保持高频且长期更新至关重要。建立一个成功的频道需要时间, 如果你乐在其中, 你就更容易坚持足够长的时间以见证频道的成长与潜力爆发。"
+    },
+    "comments": {
+        "title": "评论",
+        "loading": "正在加载评论…",
+        "empty": "还没有评论。来抢沙发吧！",
+        "login_prompt": "使用 Google 登录即可参与讨论。",
+        "login_button": "继续使用 Google",
+        "error_login": "Google 登录失败，请重试。",
+        "setup_prompt": "设置昵称和服务器编号后即可发表评论。",
+        "setup_button": "设置个人资料",
+        "setup_title": "你的商人资料",
+        "setup_desc": "选择昵称和服务器编号，它们将显示在你的评论中。",
+        "placeholder": "写评论…",
+        "post": "发表",
+        "posting": "发表中…",
+        "save": "保存",
+        "saving": "保存中…",
+        "nickname_label": "昵称",
+        "nickname_placeholder": "例如：HawkEye",
+        "server_label": "服务器编号",
+        "server_placeholder": "例如：1058",
+        "error_nickname": "昵称长度须为 2 至 24 个字符。",
+        "error_server": "服务器编号须在 1 至 99999 之间。",
+        "error_save": "无法保存个人资料，请重试。",
+        "delete": "删除",
+        "delete_confirm": "删除这条评论？"
     }
 }

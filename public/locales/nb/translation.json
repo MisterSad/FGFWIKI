@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Råd til nye skapere",
         "interview_q5": "Som en veletablert stemme innen mobilstrategi, hva er det viktigste rådet du vil gi til en spiller som ønsker å starte sin egen innholdskanal i dag?",
         "interview_a5": "Mitt råd nummer én er å velge et spill du oppriktig elsker og liker å spille. Når du er lidenskapelig opptatt av spillet, føles innholdsproduksjon morsomt i stedet for å føles som en jobb. Den gleden vises i videoene dine, og det gjør en enorm forskjell når det gjelder å holde seg konsekvent. Å bygge en vellykket kanal tar tid, og hvis du faktisk liker prosessen, er det mye mer sannsynlig at du holder ut lenge nok til at kanalen din vokser og når sitt potensial."
+    },
+    "comments": {
+        "title": "KOMMENTARER",
+        "loading": "Laster inn kommentarer…",
+        "empty": "Ingen kommentarer ennå. Vær den første!",
+        "login_prompt": "Logg inn med Google for å delta i diskusjonen.",
+        "login_button": "Fortsett med Google",
+        "error_login": "Google-innlogging mislyktes. Prøv igjen.",
+        "setup_prompt": "Velg et kallenavn og servernummeret ditt for å kommentere.",
+        "setup_button": "Sett opp profil",
+        "setup_title": "HANDLERPROFILEN DIN",
+        "setup_desc": "Velg et kallenavn og servernummeret ditt. De vises i kommentarene dine.",
+        "placeholder": "Skriv en kommentar…",
+        "post": "PUBLISER",
+        "posting": "PUBLISERER…",
+        "save": "LAGRE",
+        "saving": "LAGRER…",
+        "nickname_label": "Kallenavn",
+        "nickname_placeholder": "f.eks. HawkEye",
+        "server_label": "Servernummer",
+        "server_placeholder": "f.eks. 1058",
+        "error_nickname": "Kallenavnet må være mellom 2 og 24 tegn.",
+        "error_server": "Servernummeret må være mellom 1 og 99999.",
+        "error_save": "Kunne ikke lagre profilen. Prøv igjen.",
+        "delete": "Slett",
+        "delete_confirm": "Slette denne kommentaren?"
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
+import CommentSection from './CommentSection';
 import { Newspaper, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Swords, Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare, AlertTriangle, CheckCircle, ArrowUpRight, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -857,6 +858,7 @@ export default function News() {
                         </div>
                     )}
                 </div>
+                <CommentSection key={String(selectedTip.id)} type="news" itemId={String(selectedTip.id)} />
             </div>
         );
     }

@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Porady dla nowych twórców",
         "interview_q5": "Jako uznany głos w przestrzeni strategii mobilnych, jaka jest najważniejsza rada, którą dałbyś graczowi chcącącemu dzisiaj założyć własny kanał?",
         "interview_a5": "Moją radą numer jeden jest wybór gry, którą szczerze kochasz i w którą lubisz grać. Kiedy pasjonujesz się grą, tworzenie treści jest zabawą, a nie pracą. Ta radość jest widoczna w Twoich filmach i robi ogromną różnicę, jeśli chodzi o zachowanie spójności. Budowanie udanego kanału wymaga czasu, a jeśli naprawdę lubisz ten proces, jest znacznie bardziej prawdopodobne, że będziesz to robić wystarczająco długo, aby Twój kanał urósł i osiągnął swój potencjał."
+    },
+    "comments": {
+        "title": "KOMENTARZE",
+        "loading": "Ładowanie komentarzy…",
+        "empty": "Brak komentarzy. Bądź pierwszy!",
+        "login_prompt": "Zaloguj się przez Google, aby dołączyć do dyskusji.",
+        "login_button": "Kontynuuj z Google",
+        "error_login": "Logowanie przez Google nie powiodło się. Spróbuj ponownie.",
+        "setup_prompt": "Wybierz pseudonim i numer serwera, aby komentować.",
+        "setup_button": "Skonfiguruj profil",
+        "setup_title": "TWÓJ PROFIL HANDLOWCA",
+        "setup_desc": "Wybierz pseudonim i numer serwera. Zostaną one wyświetlone przy Twoich komentarzach.",
+        "placeholder": "Napisz komentarz…",
+        "post": "OPUBLIKUJ",
+        "posting": "PUBLIKOWANIE…",
+        "save": "ZAPISZ",
+        "saving": "ZAPISYWANIE…",
+        "nickname_label": "Pseudonim",
+        "nickname_placeholder": "np. HawkEye",
+        "server_label": "Numer serwera",
+        "server_placeholder": "np. 1058",
+        "error_nickname": "Pseudonim musi mieć od 2 do 24 znaków.",
+        "error_server": "Numer serwera musi wynosić od 1 do 99999.",
+        "error_save": "Nie udało się zapisać profilu. Spróbuj ponownie.",
+        "delete": "Usuń",
+        "delete_confirm": "Usunąć ten komentarz?"
     }
 }

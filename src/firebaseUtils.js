@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, collection, addDoc, runTransaction } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, addDoc, runTransaction, query, orderBy, where, deleteDoc, onSnapshot, serverTimestamp } from "firebase/firestore";
 import { db } from "./firebase";
 
 /**
@@ -98,6 +98,123 @@ export const submitStellaAnomalyUid = async (gameUid, secretCode, firebaseUid = 
         return rank;
     } catch (error) {
         console.error("Error submitting Stella Anomaly UID and getting rank: ", error);
+        throw error;
+    }
+};
+
+/**
+ * Load the public profile (nickname + server number) of a user.
+ *
+ * @param {string} uid User ID
+ * @returns {Promise<{displayName: string, serverNumber: number}|null>}
+ */
+export const getUserProfile = async (uid) => {
+    if (!db || !uid) return null;
+    try {
+        const docRef = doc(db, "users", uid);
+        const docSnap = await getDoc(docRef);
+        const data = docSnap.exists() ? docSnap.data() : {};
+        if (typeof data.displayName !== 'string' || typeof data.serverNumber !== 'number') {
+            return null;
+        }
+        return { displayName: data.displayName, serverNumber: data.serverNumber };
+    } catch (error) {
+        console.error("Error loading user profile: ", error);
+        return null;
+    }
+};
+
+/**
+ * Save (or update) the public profile of a user.
+ *
+ * @param {string} uid User ID
+ * @param {{displayName: string, serverNumber: number}} profile
+ */
+export const saveUserProfile = async (uid, { displayName, serverNumber }) => {
+    if (!db || !uid) return;
+    try {
+        const docRef = doc(db, "users", uid);
+        await setDoc(docRef, {
+            displayName,
+            serverNumber,
+            updatedAt: new Date().toISOString()
+        }, { merge: true });
+    } catch (error) {
+        console.error("Error saving user profile: ", error);
+        throw error;
+    }
+};
+
+/**
+ * Subscribe to the comments of a news article or guide (live updates).
+ *
+ * @param {'news'|'guide'} type
+ * @param {string} itemId
+ * @param {(comments: Array) => void} onData Called with the list, newest last.
+ * @returns {() => void} Unsubscribe function.
+ */
+export const subscribeComments = (type, itemId, onData) => {
+    if (!db) {
+        // Local dev without Firebase: report an empty list asynchronously.
+        Promise.resolve().then(() => onData([]));
+        return () => {};
+    }
+    const q = query(
+        collection(db, "comments"),
+        where("type", "==", type),
+        where("itemId", "==", itemId),
+        orderBy("createdAt", "asc")
+    );
+    return onSnapshot(q, (snapshot) => {
+        const comments = snapshot.docs.map((docSnap) => ({
+            id: docSnap.id,
+            ...docSnap.data(),
+        }));
+        onData(comments);
+    }, (error) => {
+        console.error("Error subscribing to comments: ", error);
+        onData([]);
+    });
+};
+
+/**
+ * Post a comment on a news article or guide.
+ *
+ * @param {'news'|'guide'} type
+ * @param {string} itemId
+ * @param {string} content
+ * @param {{displayName: string, serverNumber: number}} profile
+ * @param {string} uid
+ */
+export const addComment = async (type, itemId, content, profile, uid) => {
+    if (!db || !uid || !profile) return;
+    try {
+        await addDoc(collection(db, "comments"), {
+            content,
+            authorUid: uid,
+            displayName: profile.displayName,
+            serverNumber: profile.serverNumber,
+            type,
+            itemId,
+            createdAt: serverTimestamp(),
+        });
+    } catch (error) {
+        console.error("Error posting comment: ", error);
+        throw error;
+    }
+};
+
+/**
+ * Delete one of the current user's comments.
+ *
+ * @param {string} commentId
+ */
+export const deleteComment = async (commentId) => {
+    if (!db) return;
+    try {
+        await deleteDoc(doc(db, "comments", commentId));
+    } catch (error) {
+        console.error("Error deleting comment: ", error);
         throw error;
     }
 };

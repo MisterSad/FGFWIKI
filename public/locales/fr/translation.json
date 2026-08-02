@@ -1617,5 +1617,31 @@
         "interview_q5_cat": "Conseils aux Nouveaux Créateurs",
         "interview_q5": "En tant que voix reconnue dans le domaine de la stratégie mobile, quel est le conseil le plus important que vous donneriez à un joueur qui souhaite lancer sa propre chaîne de création de contenu aujourd'hui ?",
         "interview_a5": "Mon conseil numéro un est de choisir un jeu que vous aimez sincèrement et auquel vous prenez plaisir à jouer. Quand vous êtes passionné par le jeu, créer du contenu est amusant au lieu de ressembler à un travail. Ce plaisir se ressent dans vos vidéos, et cela fait une énorme différence pour rester régulier. Construire une chaîne à succès prend du temps, et si vous appréciez réellement le processus, vous avez beaucoup plus de chances de persévérer suffisamment longtemps pour que votre chaîne grandisse et atteigne son potentiel."
+    },
+    "comments": {
+        "title": "COMMENTAIRES",
+        "loading": "Chargement des commentaires…",
+        "empty": "Aucun commentaire pour l’instant. Soyez le premier !",
+        "login_prompt": "Connectez-vous avec Google pour participer à la discussion.",
+        "login_button": "Continuer avec Google",
+        "error_login": "Échec de la connexion Google. Veuillez réessayer.",
+        "setup_prompt": "Choisissez un pseudo et votre numéro de serveur pour commenter.",
+        "setup_button": "Configurer le profil",
+        "setup_title": "VOTRE PROFIL DE TRADER",
+        "setup_desc": "Choisissez un pseudo et votre numéro de serveur. Ils apparaîtront sur vos commentaires.",
+        "placeholder": "Écrivez un commentaire…",
+        "post": "PUBLIER",
+        "posting": "PUBLICATION…",
+        "save": "ENREGISTRER",
+        "saving": "ENREGISTREMENT…",
+        "nickname_label": "Pseudo",
+        "nickname_placeholder": "ex. HawkEye",
+        "server_label": "Numéro de serveur",
+        "server_placeholder": "ex. 1058",
+        "error_nickname": "Le pseudo doit contenir entre 2 et 24 caractères.",
+        "error_server": "Le numéro de serveur doit être compris entre 1 et 99999.",
+        "error_save": "Impossible d’enregistrer votre profil. Veuillez réessayer.",
+        "delete": "Supprimer",
+        "delete_confirm": "Supprimer ce commentaire ?"
     }
 }

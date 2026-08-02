@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Advies voor nieuwe creators",
         "interview_q5": "Als gevestigde stem in het mobiele strategielandschap, wat is het allerbelangrijkste advies dat je zou geven aan een gamer die vandaag zijn eigen contentkanaal wil starten?",
         "interview_a5": "Mijn belangrijkste advies is om een game te kiezen waar je echt van houdt en die je graag speelt. Als je gepassioneerd bent over het spel, voelt het maken van content als plezier in plaats van als werk. Dat plezier straalt van je video's af, en dat maakt een enorm verschil om consistent te blijven. Het opbouwen van een succesvol kanaal kost tijd, en als je echt van het proces geniet, is de kans veel groter dat je het lang genoeg volhoudt om je kanaal te laten groeien."
+    },
+    "comments": {
+        "title": "REACTIES",
+        "loading": "Reacties laden…",
+        "empty": "Nog geen reacties. Wees de eerste!",
+        "login_prompt": "Log in met Google om deel te nemen aan de discussie.",
+        "login_button": "Doorgaan met Google",
+        "error_login": "Google-inloggen mislukt. Probeer het opnieuw.",
+        "setup_prompt": "Kies een bijnaam en je servernummer om te reageren.",
+        "setup_button": "Profiel instellen",
+        "setup_title": "JE HANDELAARSPROFIEL",
+        "setup_desc": "Kies een bijnaam en je servernummer. Ze verschijnen bij je reacties.",
+        "placeholder": "Schrijf een reactie…",
+        "post": "PLAATSEN",
+        "posting": "BEZIG MET PLAATSEN…",
+        "save": "OPSLAAN",
+        "saving": "BEZIG MET OPSLAAN…",
+        "nickname_label": "Bijnaam",
+        "nickname_placeholder": "bijv. HawkEye",
+        "server_label": "Servernummer",
+        "server_placeholder": "bijv. 1058",
+        "error_nickname": "De bijnaam moet 2 tot 24 tekens bevatten.",
+        "error_server": "Het servernummer moet tussen 1 en 99999 liggen.",
+        "error_save": "Profiel kon niet worden opgeslagen. Probeer het opnieuw.",
+        "delete": "Verwijderen",
+        "delete_confirm": "Deze reactie verwijderen?"
     }
 }

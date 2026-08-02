@@ -4,14 +4,27 @@ service cloud.firestore {
   match /databases/{database}/documents {
     // Per-user document: only the owner can read/write,
     // and only the expected top-level fields and tool keys are accepted.
+    // Profile fields (displayName + serverNumber) power the community comments.
     match /users/{userId} {
       allow read: if request.auth != null && request.auth.uid == userId;
 
       allow write: if request.auth != null
         && request.auth.uid == userId
-        && request.resource.data.keys().hasOnly(['tools', 'lastUpdated'])
+        && request.resource.data.keys().hasOnly([
+              'tools', 'lastUpdated', 'displayName', 'serverNumber', 'updatedAt'
+            ])
         && (!('lastUpdated' in request.resource.data) ||
             request.resource.data.lastUpdated is string)
+        && (!('displayName' in request.resource.data) ||
+            (request.resource.data.displayName is string
+              && request.resource.data.displayName.size() >= 2
+              && request.resource.data.displayName.size() <= 24))
+        && (!('serverNumber' in request.resource.data) ||
+            (request.resource.data.serverNumber is int
+              && request.resource.data.serverNumber >= 1
+              && request.resource.data.serverNumber <= 99999))
+        && (!('updatedAt' in request.resource.data) ||
+            request.resource.data.updatedAt is string)
         && (!('tools' in request.resource.data) ||
             request.resource.data.tools.keys().hasOnly([
               'dailyTasks',
@@ -21,6 +34,35 @@ service cloud.firestore {
               'championUpgrade',
               'nexus'
             ]));
+    }
+
+    // Community comments on news articles and guides.
+    // Read is public; create is validated server-side; users can only delete
+    // their own comments. Comments are immutable once created.
+    match /comments/{docId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly([
+              'content', 'authorUid', 'displayName', 'serverNumber', 'type', 'itemId', 'createdAt'
+            ])
+        && request.resource.data.content is string
+        && request.resource.data.content.size() >= 1
+        && request.resource.data.content.size() <= 2000
+        && request.resource.data.authorUid == request.auth.uid
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() >= 2
+        && request.resource.data.displayName.size() <= 24
+        && request.resource.data.serverNumber is int
+        && request.resource.data.serverNumber >= 1
+        && request.resource.data.serverNumber <= 99999
+        && (request.resource.data.type == 'news' || request.resource.data.type == 'guide')
+        && request.resource.data.itemId is string
+        && request.resource.data.itemId.size() >= 1
+        && request.resource.data.itemId.size() <= 64
+        && request.resource.data.createdAt == request.time;
+      allow update: if false;
+      allow delete: if request.auth != null
+        && resource.data.authorUid == request.auth.uid;
     }
 
     // Stella Anomaly event submissions (public leaderboard).

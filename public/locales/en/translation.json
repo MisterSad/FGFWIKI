@@ -1617,5 +1617,31 @@
         "interview_q5_cat": "Advising New Creators",
         "interview_q5": "As a well-established voice in the mobile strategy space, what is the single most important piece of advice you would give to a gamer looking to start their own content creation channel today?",
         "interview_a5": "My number one piece of advice is to choose a game you genuinely love and enjoy playing. When you're passionate about the game, creating content feels fun instead of feeling like a job. That enjoyment shows in your videos, and it makes a huge difference when it comes to staying consistent. Building a successful channel takes time, and if you actually enjoy the process, you're much more likely to stick with it long enough for your channel to grow and reach its potential."
+    },
+    "comments": {
+        "title": "COMMENTS",
+        "loading": "Loading comments…",
+        "empty": "No comments yet. Be the first!",
+        "login_prompt": "Log in with Google to join the discussion.",
+        "login_button": "Continue with Google",
+        "error_login": "Google sign-in failed. Please try again.",
+        "setup_prompt": "Choose a nickname and your server number to start commenting.",
+        "setup_button": "Set up profile",
+        "setup_title": "YOUR TRADER PROFILE",
+        "setup_desc": "Choose a nickname and your server number. They will appear on your comments.",
+        "placeholder": "Write a comment…",
+        "post": "POST",
+        "posting": "POSTING…",
+        "save": "SAVE",
+        "saving": "SAVING…",
+        "nickname_label": "Nickname",
+        "nickname_placeholder": "e.g. HawkEye",
+        "server_label": "Server number",
+        "server_placeholder": "e.g. 1058",
+        "error_nickname": "Nickname must be 2 to 24 characters.",
+        "error_server": "Server number must be between 1 and 99999.",
+        "error_save": "Could not save your profile. Please try again.",
+        "delete": "Delete",
+        "delete_confirm": "Delete this comment?"
     }
 }

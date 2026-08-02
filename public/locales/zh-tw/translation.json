@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "給新創作者的建議",
         "interview_q5": "作為移動端策略遊戲領域的資深創作者，如果有人想在今天開創自己的內容製作頻道，你會給他什麼最重要的建議？",
         "interview_a5": "我首要的建議是選擇一款你真正熱愛並享受其中的遊戲。當你對遊戲充滿熱情時，製作內容就像在玩樂而不是在工作。這種樂趣會呈現在你的影片中，對你是否能保持高頻且長期更新至關重要。建立一個成功的頻道需要時間，如果你樂在其中，你就更容易堅持足夠長的時間以見證頻道的成長與潛力爆發。"
+    },
+    "comments": {
+        "title": "留言",
+        "loading": "正在載入留言…",
+        "empty": "尚無留言。快來搶頭香！",
+        "login_prompt": "使用 Google 登入即可參與討論。",
+        "login_button": "繼續使用 Google",
+        "error_login": "Google 登入失敗，請重試。",
+        "setup_prompt": "設定暱稱和伺服器編號後即可發表留言。",
+        "setup_button": "設定個人資料",
+        "setup_title": "你的商人資料",
+        "setup_desc": "選擇暱稱和伺服器編號，它們會顯示在你的留言中。",
+        "placeholder": "寫留言…",
+        "post": "發表",
+        "posting": "發表中…",
+        "save": "儲存",
+        "saving": "儲存中…",
+        "nickname_label": "暱稱",
+        "nickname_placeholder": "例如：HawkEye",
+        "server_label": "伺服器編號",
+        "server_placeholder": "例如：1058",
+        "error_nickname": "暱稱長度須為 2 至 24 個字元。",
+        "error_server": "伺服器編號須介於 1 至 99999 之間。",
+        "error_save": "無法儲存個人資料，請重試。",
+        "delete": "刪除",
+        "delete_confirm": "刪除這則留言？"
     }
 }

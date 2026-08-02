@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Råd till nya skapare",
         "interview_q5": "Som en väletablerad röst inom mobilstrategi, vad är det enskilt viktigaste rådet du skulle ge till en spelare som vill starta sin egen innehållskanal idag?",
         "interview_a5": "Mitt främsta råd är att välja ett spel du genuint älskar och tycker om att spela. När du är passionerad för spelet känns det roligt att skapa innehåll istället för att känna dig som ett jobb. Den glädjen syns i dina videor, och det gör en enorm skillnad när det gäller att vara konsekvent. Att bygga en framgångsrik kanal tar tid, och om du faktiskt gillar processen är det mycket mer troligt att du håller fast vid det tillräckligt länge för att din kanal ska växa och nå sin potential."
+    },
+    "comments": {
+        "title": "KOMMENTARER",
+        "loading": "Läser in kommentarer…",
+        "empty": "Inga kommentarer än. Var den första!",
+        "login_prompt": "Logga in med Google för att delta i diskussionen.",
+        "login_button": "Fortsätt med Google",
+        "error_login": "Google-inloggning misslyckades. Försök igen.",
+        "setup_prompt": "Välj ett smeknamn och ditt servernummer för att kommentera.",
+        "setup_button": "Ställ in profil",
+        "setup_title": "DIN HANDLARPROFIL",
+        "setup_desc": "Välj ett smeknamn och ditt servernummer. De visas i dina kommentarer.",
+        "placeholder": "Skriv en kommentar…",
+        "post": "PUBLICERA",
+        "posting": "PUBLICERAR…",
+        "save": "SPARA",
+        "saving": "SPARAR…",
+        "nickname_label": "Smeknamn",
+        "nickname_placeholder": "t.ex. HawkEye",
+        "server_label": "Servernummer",
+        "server_placeholder": "t.ex. 1058",
+        "error_nickname": "Smeknamnet måste vara 2 till 24 tecken.",
+        "error_server": "Servernumret måste vara mellan 1 och 99999.",
+        "error_save": "Kunde inte spara profilen. Försök igen.",
+        "delete": "Ta bort",
+        "delete_confirm": "Ta bort den här kommentaren?"
     }
 }

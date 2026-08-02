@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Consejos para nuevos creadores",
         "interview_q5": "Como una voz consolidada en el espacio de la estrategia móvil, ¿cuál es el consejo más importante que le darías a un jugador que busca comenzar su propio canal de creación de contenido hoy?",
         "interview_a5": "Mi consejo número uno es elegir un juego que realmente ames y disfrutes jugar. Cuando te apasiona el juego, crear contenido se siente divertido en lugar de sentirse como un trabajo. Ese disfrute se nota en tus videos y marca una gran diferencia a la hora de mantener la constancia. Construir un canal exitoso lleva tiempo y, si realmente disfrutas el proceso, es mucho más probable que lo sigas intentando el tiempo suficiente para que tu canal crezca y alcance su potencial."
+    },
+    "comments": {
+        "title": "COMENTARIOS",
+        "loading": "Cargando comentarios…",
+        "empty": "Aún no hay comentarios. ¡Sé el primero!",
+        "login_prompt": "Inicia sesión con Google para unirte a la conversación.",
+        "login_button": "Continuar con Google",
+        "error_login": "Error al iniciar sesión con Google. Inténtalo de nuevo.",
+        "setup_prompt": "Elige un apodo y tu número de servidor para comentar.",
+        "setup_button": "Configurar perfil",
+        "setup_title": "TU PERFIL DE COMERCIANTE",
+        "setup_desc": "Elige un apodo y tu número de servidor. Aparecerán en tus comentarios.",
+        "placeholder": "Escribe un comentario…",
+        "post": "PUBLICAR",
+        "posting": "PUBLICANDO…",
+        "save": "GUARDAR",
+        "saving": "GUARDANDO…",
+        "nickname_label": "Apodo",
+        "nickname_placeholder": "p. ej. HawkEye",
+        "server_label": "Número de servidor",
+        "server_placeholder": "p. ej. 1058",
+        "error_nickname": "El apodo debe tener entre 2 y 24 caracteres.",
+        "error_server": "El número de servidor debe estar entre 1 y 99999.",
+        "error_save": "No se pudo guardar tu perfil. Inténtalo de nuevo.",
+        "delete": "Eliminar",
+        "delete_confirm": "¿Eliminar este comentario?"
     }
 }

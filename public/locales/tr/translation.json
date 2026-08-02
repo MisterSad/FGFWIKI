@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Yeni İçerik Üreticilerine Tavsiyeler",
         "interview_q5": "Mobil strateji alanında kendini kanıtlamış bir isim olarak, bugün kendi içerik üretim kanalını açmak isteyen bir oyuncuya vereceğiniz en önemli tavsiye nedir?",
         "interview_a5": "Bir numaralı tavsiyem, gerçekten sevdiğiniz ve oynamaktan keyif aldığınız bir oyunu seçmenizdir. Oyuna tutkuyla bağlı olduğunuzda, içerik oluşturmak bir iş gibi gelmek yerine eğlenceli hissettirir. Bu keyif videolarınıza da yansır ve istikrarlı olma konusunda büyük bir fark yaratır. Başarılı bir kanal inşa etmek zaman alır ve eğer süreçten gerçekten keyif alırsanız, kanalınız büyüyüp potansiyeline ulaşana kadar bu işi sürdürme olasılığınız çok daha yüksektir."
+    },
+    "comments": {
+        "title": "YORUMLAR",
+        "loading": "Yorumlar yükleniyor…",
+        "empty": "Henüz yorum yok. İlk yorumu sen yap!",
+        "login_prompt": "Tartışmaya katılmak için Google ile giriş yapın.",
+        "login_button": "Google ile devam et",
+        "error_login": "Google ile giriş başarısız. Lütfen tekrar deneyin.",
+        "setup_prompt": "Yorum yapmak için bir takma ad ve sunucu numarası seçin.",
+        "setup_button": "Profili ayarla",
+        "setup_title": "TÜCCAR PROFİLİN",
+        "setup_desc": "Bir takma ad ve sunucu numarası seçin. Yorumlarınızda görünecekler.",
+        "placeholder": "Yorum yaz…",
+        "post": "PAYLAŞ",
+        "posting": "PAYLAŞILIYOR…",
+        "save": "KAYDET",
+        "saving": "KAYDEDİLİYOR…",
+        "nickname_label": "Takma ad",
+        "nickname_placeholder": "örn. HawkEye",
+        "server_label": "Sunucu numarası",
+        "server_placeholder": "örn. 1058",
+        "error_nickname": "Takma ad 2 ile 24 karakter arasında olmalıdır.",
+        "error_server": "Sunucu numarası 1 ile 99999 arasında olmalıdır.",
+        "error_save": "Profil kaydedilemedi. Lütfen tekrar deneyin.",
+        "delete": "Sil",
+        "delete_confirm": "Bu yorum silinsin mi?"
     }
 }

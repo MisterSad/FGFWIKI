@@ -12,6 +12,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase";
 import i18n from "../i18n";
+import { getUserProfile, saveUserProfile } from "../firebaseUtils";
 
 const AuthContext = createContext();
 
@@ -24,6 +25,9 @@ export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState(null);
     // If Firebase isn't configured, there's nothing to load — render immediately.
     const [loading, setLoading] = useState(() => !auth);
+    // Community profile (nickname + server number), persisted in Firestore.
+    const [userProfile, setUserProfile] = useState(null);
+    const [profileLoaded, setProfileLoaded] = useState(false);
 
     function signup(email, password) {
         return createUserWithEmailAndPassword(auth, email, password);
@@ -51,6 +55,24 @@ export function AuthProvider({ children }) {
             window.localStorage.setItem('emailForSignIn', email);
         });
     }
+
+    async function saveProfile(displayName, serverNumber) {
+        if (!auth.currentUser) return;
+        await saveUserProfile(auth.currentUser.uid, { displayName, serverNumber });
+        setUserProfile({ displayName, serverNumber, uid: auth.currentUser.uid });
+    }
+
+    useEffect(() => {
+        if (!currentUser) return;
+        getUserProfile(currentUser.uid).then((profile) => {
+            if (!profile) {
+                setUserProfile(null);
+            } else {
+                setUserProfile({ ...profile, uid: currentUser.uid });
+            }
+            setProfileLoaded(true);
+        });
+    }, [currentUser]);
 
     useEffect(() => {
         if (!auth) {
@@ -85,6 +107,9 @@ export function AuthProvider({ children }) {
 
     const value = {
         currentUser,
+        userProfile,
+        profileLoaded,
+        saveProfile,
         login,
         signup,
         logout,

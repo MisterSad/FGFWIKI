@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Nasihat kepada Pencipta Kandungan Baru",
         "interview_q5": "Sebagai suara yang mantap dalam ruang strategi mudah alih, apakah satu-satunya nasihat paling penting yang akan anda berikan kepada pemain yang ingin memulakan saluran penciptaan kandungan mereka sendiri hari ini?",
         "interview_a5": "Nasihat nombor satu saya ialah memilih permainan yang anda benar-benar suka dan nikmati bermain. Apabila anda meminati permainan tersebut, mencipta kandungan terasa menyeronokkan dan bukannya terasa seperti kerja. Keriangan itu akan kelihatan dalam video anda, dan ia membuat perbezaan yang besar dalam mengekalkan konsistensi. Membina saluran yang berjaya memerlukan masa, dan jika anda benar-benar menikmati proses tersebut, anda lebih cenderung untuk bertahan cukup lama sehingga saluran anda berkembang dan mencapai potensinya."
+    },
+    "comments": {
+        "title": "KOMEN",
+        "loading": "Memuat komen…",
+        "empty": "Belum ada komen. Jadilah yang pertama!",
+        "login_prompt": "Log masuk dengan Google untuk menyertai perbincangan.",
+        "login_button": "Teruskan dengan Google",
+        "error_login": "Log masuk Google gagal. Cuba lagi.",
+        "setup_prompt": "Pilih nama panggilan dan nombor pelayan untuk berkomen.",
+        "setup_button": "Sediakan profil",
+        "setup_title": "PROFIL PEDAGANG ANDA",
+        "setup_desc": "Pilih nama panggilan dan nombor pelayan. Ia akan dipaparkan pada komen anda.",
+        "placeholder": "Tulis komen…",
+        "post": "TERBIT",
+        "posting": "MENERBIT…",
+        "save": "SIMPAN",
+        "saving": "MENYIMPAN…",
+        "nickname_label": "Nama panggilan",
+        "nickname_placeholder": "cth. HawkEye",
+        "server_label": "Nombor pelayan",
+        "server_placeholder": "cth. 1058",
+        "error_nickname": "Nama panggilan mesti 2 hingga 24 aksara.",
+        "error_server": "Nombor pelayan mesti antara 1 dan 99999.",
+        "error_save": "Gagal menyimpan profil. Cuba lagi.",
+        "delete": "Padam",
+        "delete_confirm": "Padam komen ini?"
     }
 }

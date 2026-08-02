@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Lời khuyên cho Người sáng tạo Mới",
         "interview_q5": "Là một tiếng nói uy tín trong không gian chiến thuật di động, lời khuyên quan trọng nhất bạn muốn dành cho một game thủ muốn bắt đầu kênh sáng tạo nội dung của riêng họ hôm nay là gì?",
         "interview_a5": "Lời khuyên số một của tôi là chọn một trò chơi bạn thực sự yêu thích và thích chơi. Khi bạn đam mê trò chơi, việc tạo nội dung sẽ mang lại cảm giác vui vẻ thay vì cảm giác như một công việc. Sự tận hưởng đó sẽ thể hiện trong các video của bạn, và nó tạo ra sự khác biệt lớn khi duy trì sự nhất quán. Xây dựng một kênh thành công cần có thời gian, và nếu bạn thực sự tận hưởng quá trình đó, bạn có nhiều khả năng sẽ gắn bó với nó đủ lâu để kênh của bạn phát triển và phát huy tiềm năng của nó."
+    },
+    "comments": {
+        "title": "BÌNH LUẬN",
+        "loading": "Đang tải bình luận…",
+        "empty": "Chưa có bình luận nào. Hãy là người đầu tiên!",
+        "login_prompt": "Đăng nhập bằng Google để tham gia thảo luận.",
+        "login_button": "Tiếp tục với Google",
+        "error_login": "Đăng nhập Google thất bại. Vui lòng thử lại.",
+        "setup_prompt": "Chọn biệt danh và số máy chủ để bình luận.",
+        "setup_button": "Thiết lập hồ sơ",
+        "setup_title": "HỒ SƠ THƯƠNG NHÂN CỦA BẠN",
+        "setup_desc": "Chọn biệt danh và số máy chủ. Chúng sẽ hiển thị trên bình luận của bạn.",
+        "placeholder": "Viết bình luận…",
+        "post": "ĐĂNG",
+        "posting": "ĐANG ĐĂNG…",
+        "save": "LƯU",
+        "saving": "ĐANG LƯU…",
+        "nickname_label": "Biệt danh",
+        "nickname_placeholder": "vd: HawkEye",
+        "server_label": "Số máy chủ",
+        "server_placeholder": "vd: 1058",
+        "error_nickname": "Biệt danh phải từ 2 đến 24 ký tự.",
+        "error_server": "Số máy chủ phải nằm trong khoảng 1 đến 99999.",
+        "error_save": "Không thể lưu hồ sơ. Vui lòng thử lại.",
+        "delete": "Xóa",
+        "delete_confirm": "Xóa bình luận này?"
     }
 }

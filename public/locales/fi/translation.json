@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Neuvoja uusille tuottajille",
         "interview_q5": "Mobiilistrategian vakiintuneena äänenä, mikä on tärkein neuvo, jonka antaisit pelaajalle, joka haluaa aloittaa oman sisällöntuotantokanavansa tänään?",
         "interview_a5": "Ykkösneuvoni on valita peli, jota todella rakastat ja josta nautit. Kun olet intohimoinen pelistä, sisällön luominen tuntuu hauskalta työn sijaan. Tämä nautinto näkyy videoillasi, ja sillä on valtava merkitys johdonmukaisuuden säilyttämisessä. Menestyvän kanavan rakentaminen vie aikaa, ja jos todella nautit prosessista, jatkat todennäköisemmin niin pitkään, että kanavasi kasvaa ja saavuttaa potentiaalinsa."
+    },
+    "comments": {
+        "title": "KOMMENTIT",
+        "loading": "Ladataan kommentteja…",
+        "empty": "Ei vielä kommentteja. Ole ensimmäinen!",
+        "login_prompt": "Kirjaudu sisään Googlella osallistuaksesi keskusteluun.",
+        "login_button": "Jatka Googlella",
+        "error_login": "Google-kirjautuminen epäonnistui. Yritä uudelleen.",
+        "setup_prompt": "Valitse lempinimi ja palvelinnumerosi kommentoidaksesi.",
+        "setup_button": "Määritä profiili",
+        "setup_title": "KAUPPIASPROFIILISI",
+        "setup_desc": "Valitse lempinimi ja palvelinnumerosi. Ne näkyvät kommenteissasi.",
+        "placeholder": "Kirjoita kommentti…",
+        "post": "JULKAISE",
+        "posting": "JULKAISTAAN…",
+        "save": "TALLENNA",
+        "saving": "TALLENNETAAN…",
+        "nickname_label": "Lempinimi",
+        "nickname_placeholder": "esim. HawkEye",
+        "server_label": "Palvelinnumero",
+        "server_placeholder": "esim. 1058",
+        "error_nickname": "Lempinimen on oltava 2–24 merkkiä.",
+        "error_server": "Palvelinnumeron on oltava 1–99999.",
+        "error_save": "Profiilia ei voitu tallentaa. Yritä uudelleen.",
+        "delete": "Poista",
+        "delete_confirm": "Poista tämä kommentti?"
     }
 }

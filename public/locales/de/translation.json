@@ -1615,5 +1615,31 @@
         "interview_q5_cat": "Ratschläge für neue Creator",
         "interview_q5": "Welchen wichtigsten Rat würden Sie als etablierte Stimme im Bereich der mobilen Strategie einem Spieler geben, der heute einen eigenen Content-Kanal starten möchte?",
         "interview_a5": "Mein wichtigster Rat ist, ein Spiel zu wählen, das man wirklich liebt und gerne spielt. Wenn man leidenschaftlich bei der Sache ist, fühlt sich das Erstellen von Inhalten wie Spaß an und nicht wie Arbeit. Diese Freude überträgt sich auf die Videos und macht einen riesigen Unterschied, um am Ball zu bleiben. Der Aufbau eines erfolgreichen Kanals braucht Zeit, und wenn man den Prozess genießt, ist die Wahrscheinlichkeit viel höher, dass man lange genug durchhält, bis der Kanal wächst und sein Potenzial entfaltet."
+    },
+    "comments": {
+        "title": "KOMMENTARE",
+        "loading": "Kommentare werden geladen…",
+        "empty": "Noch keine Kommentare. Sei der Erste!",
+        "login_prompt": "Melde dich mit Google an, um an der Diskussion teilzunehmen.",
+        "login_button": "Mit Google fortfahren",
+        "error_login": "Google-Anmeldung fehlgeschlagen. Bitte versuche es erneut.",
+        "setup_prompt": "Wähle einen Spitznamen und deine Servernummer, um zu kommentieren.",
+        "setup_button": "Profil einrichten",
+        "setup_title": "DEIN HÄNDLERPROFIL",
+        "setup_desc": "Wähle einen Spitznamen und deine Servernummer. Sie erscheinen auf deinen Kommentaren.",
+        "placeholder": "Schreibe einen Kommentar…",
+        "post": "VERÖFFENTLICHEN",
+        "posting": "WIRD VERÖFFENTLICHT…",
+        "save": "SPEICHERN",
+        "saving": "WIRD GESPEICHERT…",
+        "nickname_label": "Spitzname",
+        "nickname_placeholder": "z. B. HawkEye",
+        "server_label": "Servernummer",
+        "server_placeholder": "z. B. 1058",
+        "error_nickname": "Der Spitzname muss 2 bis 24 Zeichen lang sein.",
+        "error_server": "Die Servernummer muss zwischen 1 und 99999 liegen.",
+        "error_save": "Profil konnte nicht gespeichert werden. Bitte versuche es erneut.",
+        "delete": "Löschen",
+        "delete_confirm": "Diesen Kommentar löschen?"
     }
 }
