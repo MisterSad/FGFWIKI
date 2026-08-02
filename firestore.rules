@@ -55,7 +55,7 @@ service cloud.firestore {
         && request.resource.data.serverNumber is int
         && request.resource.data.serverNumber >= 1
         && request.resource.data.serverNumber <= 99999
-        && (request.resource.data.type == 'news' || request.resource.data.type == 'guide')
+        && (request.resource.data.type == 'news' || request.resource.data.type == 'guide' || request.resource.data.type == 'event')
         && request.resource.data.itemId is string
         && request.resource.data.itemId.size() >= 1
         && request.resource.data.itemId.size() <= 64

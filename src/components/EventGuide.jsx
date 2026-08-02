@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { eventsData } from '../data/gameData';
 import { Clock, AlertTriangle, Star, Lightbulb, BarChart2, Swords, Calendar, Trophy, ArrowLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import CommentSection from './CommentSection';
 
 export default function EventGuide() {
     const { t } = useTranslation();
@@ -810,6 +811,7 @@ export default function EventGuide() {
                         </div>
                     )}
                     </div>
+                    <CommentSection key={selectedEvent.id} type="event" itemId={selectedEvent.id} />
                 </div>
             )
             }
