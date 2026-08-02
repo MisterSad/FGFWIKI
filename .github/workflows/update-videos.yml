@@ -23,6 +23,8 @@ jobs:
 
       - name: Fetch and update videos
         run: node scripts/update-videos.js
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
       - name: Commit and push if there are changes
         run: |
