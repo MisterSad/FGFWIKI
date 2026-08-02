@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router';
 import { shipDecks } from '../data/gameData';
 import TeamDisplay from './TeamDisplay';
 import { Rocket, Shield, Crosshair, Zap, Star, Brain, Layers } from 'lucide-react';

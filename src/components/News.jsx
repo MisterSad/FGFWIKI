@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router';
 import { tips } from '../data/gameData';
 import TipCard from './TipCard';
 import CommentSection from './CommentSection';

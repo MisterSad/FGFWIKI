@@ -24,3 +24,14 @@ dist-ssr
 *.sw?
 .env
 .env.*
+
+# Firebase CLI
+.firebase/
+firebase-debug.log*
+firebase.json.log*
+
+# Generated at build time
+public/sitemap.xml
+
+# Vercel
+.vercel
