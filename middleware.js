@@ -1,5 +1,3 @@
-import { NextResponse } from '@vercel/edge';
-
 // Locale codes used in language-prefixed URLs (e.g. /fr/guides).
 const LANGS = [
     'en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt', 'fi', 'sv', 'nb',
@@ -41,9 +39,9 @@ export default function middleware(request) {
 
     // Unknown paths get a real 404 (previously they soft-redirected to /home).
     if (matched) {
-        return NextResponse.next();
+        return; // continue to the normal Vercel rewrite pipeline
     }
-    return new NextResponse('404 Not Found', {
+    return new Response('404 Not Found', {
         status: 404,
         headers: { 'content-type': 'text/plain; charset=utf-8' },
     });
