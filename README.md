@@ -78,6 +78,8 @@ Everyone is welcome, whether you write code, guides or translations:
 
 The wiki belongs to its players — if something is missing or wrong, it's yours to fix.
 
-## Disclaimer
+## License
 
-FGF Wiki is an unofficial, non-commercial fan project. *Foundation: Galactic Frontier* and all related names, assets and content are the property of **FunPlus**. This project is not affiliated with or endorsed by FunPlus.
+The code, documentation and tools in this repository are licensed under the [MIT License](LICENSE).
+
+*Foundation: Galactic Frontier* names, artwork, logos, images and screenshots are © **FunPlus** — used with permission under an official creator/content agreement, and remain the property of their respective owners.
