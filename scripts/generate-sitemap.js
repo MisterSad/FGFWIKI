@@ -37,9 +37,9 @@ const HREFLANG = {
   ms: 'ms',
   ar: 'ar',
 };
+const DEFAULT_LANG = 'en';
 
 const staticRoutes = [
-  { path: '', changefreq: 'weekly', priority: '1.0' },
   { path: '/home', changefreq: 'weekly', priority: '1.0' },
   { path: '/news', changefreq: 'weekly', priority: '0.9' },
   { path: '/guides', changefreq: 'weekly', priority: '0.9' },
@@ -52,25 +52,24 @@ const staticRoutes = [
   { path: '/creators/mirandus-plays', changefreq: 'weekly', priority: '0.8' },
 ];
 
-const urls = [];
-
-// Helper to generate alternate hreflangs
-function getAlternateLinks(routePath) {
+// Helper to generate alternate hreflangs for a given language-prefixed URL.
+// Each language has its own URL: /en/guides, /fr/guides, ... (x-default -> /en).
+function getAlternateLinks(loc) {
   let xml = '';
   LANGUAGES.forEach(lang => {
     const code = HREFLANG[lang] || lang;
-    xml += `    <xhtml:link rel="alternate" hreflang="${code}" href="${SITE_URL}${routePath}" />\n`;
+    xml += `    <xhtml:link rel="alternate" hreflang="${code}" href="${SITE_URL}/${lang}${loc}" />\n`;
   });
-  // x-default
-  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${routePath}" />`;
+  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/${DEFAULT_LANG}${loc}" />`;
   return xml;
 }
 
+const routeEntries = [];
+
 // 1. Static routes
 staticRoutes.forEach(route => {
-  urls.push({
-    loc: `${SITE_URL}${route.path}`,
-    alternates: getAlternateLinks(route.path),
+  routeEntries.push({
+    loc: route.path,
     changefreq: route.changefreq,
     priority: route.priority
   });
@@ -79,10 +78,8 @@ staticRoutes.forEach(route => {
 // 2. Guides & News routes (only those with hasDetails: true)
 tips.forEach(tip => {
   if (tip.hasDetails) {
-    const routePath = tip.category === 'news' ? `/news/${tip.id}` : `/guides/${tip.id}`;
-    urls.push({
-      loc: `${SITE_URL}${routePath}`,
-      alternates: getAlternateLinks(routePath),
+    routeEntries.push({
+      loc: tip.category === 'news' ? `/news/${tip.id}` : `/guides/${tip.id}`,
       changefreq: 'monthly',
       priority: '0.8'
     });
@@ -92,33 +89,34 @@ tips.forEach(tip => {
 // 3. Events routes
 eventsData.forEach(event => {
   if (event.id) {
-    const routePath = `/events/${event.id}`;
-    urls.push({
-      loc: `${SITE_URL}${routePath}`,
-      alternates: getAlternateLinks(routePath),
+    routeEntries.push({
+      loc: `/events/${event.id}`,
       changefreq: 'weekly',
       priority: '0.8'
     });
   }
 });
 
-// Generate sitemap XML content
+// Generate sitemap XML content: one <url> entry per language per route.
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
 xml += '<urlset\n';
 xml += '    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
 xml += '    xmlns:xhtml="http://www.w3.org/1999/xhtml">\n\n';
 
-urls.forEach(urlObj => {
-  xml += '  <url>\n';
-  xml += `    <loc>${urlObj.loc}</loc>\n`;
-  xml += `${urlObj.alternates}\n`;
-  xml += `    <changefreq>${urlObj.changefreq}</changefreq>\n`;
-  xml += `    <priority>${urlObj.priority}</priority>\n`;
-  xml += '  </url>\n';
+routeEntries.forEach(route => {
+  LANGUAGES.forEach(lang => {
+    const loc = `${SITE_URL}/${lang}${route.loc}`;
+    xml += '  <url>\n';
+    xml += `    <loc>${loc}</loc>\n`;
+    xml += `${getAlternateLinks(route.loc)}\n`;
+    xml += `    <changefreq>${route.changefreq}</changefreq>\n`;
+    xml += `    <priority>${route.priority}</priority>\n`;
+    xml += '  </url>\n';
+  });
 });
 
 xml += '</urlset>\n';
 
 const outputPath = path.resolve(__dirname, '../public/sitemap.xml');
 fs.writeFileSync(outputPath, xml, 'utf8');
-console.log(`Successfully generated sitemap.xml with ${urls.length} routes at ${outputPath}`);
+console.log(`Successfully generated sitemap.xml with ${routeEntries.length * LANGUAGES.length} routes at ${outputPath}`);

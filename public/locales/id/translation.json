@@ -77,7 +77,8 @@
         "read_news": "Baca berita",
         "phase": "Fase",
         "reset_data": "Reset / Hapus Data",
-        "preserved_data": "Data yang Diawetkan / Disimpan"
+        "preserved_data": "Data yang Diawetkan / Disimpan",
+        "close": "Tutup"
     },
     "hero": {
         "title_prefix": "Kuasai",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Email atau kata sandi tidak valid.",
         "error_weak_password": "Kata sandi minimal harus 6 karakter.",
         "error_auth_failed": "Gagal mengautentikasi. Silakan coba lagi.",
-        "error_google_failed": "Gagal masuk dengan Google."
+        "error_google_failed": "Gagal masuk dengan Google.",
+        "confirm_email": "Konfirmasi email Anda:"
     },
     "tools_ui": {
         "building_selection": "Seleksi Bangunan",

@@ -2,9 +2,15 @@ import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import { AuthProvider } from './context/AuthContext';
+import { getLanguageFromPath } from './i18n';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
 import LoginModal from './components/LoginModal';
+
+// Language-prefixed URLs (/fr/guides, /de/news/...) share a single SPA:
+// the prefix is detected at startup and used as the router basename.
+const LANG_PREFIX = getLanguageFromPath();
+const BASENAME = LANG_PREFIX ? `/${LANG_PREFIX}` : undefined;
 
 const Guides = lazy(() => import('./components/Guides'));
 const News = lazy(() => import('./components/News'));
@@ -15,13 +21,14 @@ const Builder = lazy(() => import('./components/Builder'));
 const GiftCodes = lazy(() => import('./components/GiftCodes'));
 const StellaAnomaly = lazy(() => import('./components/StellaAnomaly'));
 const CreatorsCorner = lazy(() => import('./components/CreatorsCorner'));
+const NotFound = lazy(() => import('./components/NotFound'));
 
 function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={BASENAME}>
         <Suspense fallback={
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', background: '#0a0a0c', color: 'var(--text-dim)', fontFamily: 'var(--font-label)', letterSpacing: '2px', textTransform: 'uppercase' }}>
             Loading FGF Wiki...
@@ -52,7 +59,7 @@ function App() {
                 <Route path="/stella-anomaly" element={<StellaAnomaly />} />
                 <Route path="/creators" element={<CreatorsCorner />} />
                 <Route path="/creators/:creatorId" element={<CreatorsCorner />} />
-                <Route path="*" element={<Navigate to="/home" replace />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
           </Layout>

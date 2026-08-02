@@ -77,7 +77,8 @@
         "read_news": "Read news",
         "phase": "Phase",
         "reset_data": "Reset / Cleared Data",
-        "preserved_data": "Preserved / Kept Data"
+        "preserved_data": "Preserved / Kept Data",
+        "close": "Close"
     },
     "hero": {
         "title_prefix": "Master the",
@@ -1260,7 +1261,8 @@
         "error_invalid_credential": "Invalid email or password.",
         "error_weak_password": "Password should be at least 6 characters.",
         "error_auth_failed": "Failed to authenticate. Please try again.",
-        "error_google_failed": "Failed to log in with Google."
+        "error_google_failed": "Failed to log in with Google.",
+        "confirm_email": "Please confirm your email:"
     },
     "tools_ui": {
         "building_selection": "Building Selection",

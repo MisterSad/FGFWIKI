@@ -76,6 +76,7 @@ export default function LoginModal({ isOpen, onClose }) {
             }}>
                 <button
                     onClick={onClose}
+                    aria-label={t('common.close', 'Close')}
                     style={{
                         position: 'absolute', top: '15px', right: '15px',
                         background: 'transparent', border: 'none', color: 'var(--text-dim)',

@@ -77,7 +77,8 @@
         "read_news": "อ่านข่าวสาร",
         "phase": "เฟส",
         "reset_data": "รีเซ็ต / ล้างข้อมูล",
-        "preserved_data": "เก็บรักษา / เก็บข้อมูล"
+        "preserved_data": "เก็บรักษา / เก็บข้อมูล",
+        "close": "ปิด"
     },
     "hero": {
         "title_prefix": "ปริญญาโท",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "อีเมลหรือรหัสผ่านไม่ถูกต้อง",
         "error_weak_password": "รหัสผ่านควรมีอย่างน้อย 6 ตัวอักษร",
         "error_auth_failed": "การตรวจสอบสิทธิ์ล้มเหลว โปรดลองอีกครั้ง",
-        "error_google_failed": "ไม่สามารถเข้าสู่ระบบด้วย Google"
+        "error_google_failed": "ไม่สามารถเข้าสู่ระบบด้วย Google",
+        "confirm_email": "กรุณายืนยันอีเมลของคุณ:"
     },
     "tools_ui": {
         "building_selection": "การเลือกอาคาร",

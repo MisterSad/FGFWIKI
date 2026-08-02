@@ -29,7 +29,7 @@ export const tips = [
         text: 'tips.fleet_power_energy_types_txt'
       },
       {
-        image: '/images/2.png'
+        image: '/images/2.webp'
       },
       {
         header: 'tips.fleet_power_beam_hdr',
@@ -71,14 +71,14 @@ export const tips = [
         text: 'tips.fleet_power_core_txt'
       },
       {
-        image: '/images/3.png'
+        image: '/images/3.webp'
       },
       {
         header: 'tips.fleet_power_components_hdr',
         text: 'tips.fleet_power_components_txt'
       },
       {
-        image: '/images/4.png',
+        image: '/images/4.webp',
         note: 'tips.fleet_power_components_tip'
       },
       {
@@ -86,7 +86,7 @@ export const tips = [
         text: 'tips.fleet_power_formation_txt'
       },
       {
-        image: '/images/5.png',
+        image: '/images/5.webp',
         note: 'tips.fleet_power_formation_tip'
       },
       {
@@ -318,20 +318,20 @@ export const tips = [
       {
         header: 'tips.season2_reveal_map_hdr',
         text: 'tips.season2_reveal_map_txt',
-        image: '/images/S2_complete_map.jpg',
+        image: '/images/S2_complete_map.webp',
         imageMaxWidth: '800px',
         disclaimer: 'tips.season2_reveal_map_credit'
       },
       {
         header: 'tips.season2_reveal_tower_hdr',
         text: 'tips.season2_reveal_tower_txt',
-        image: '/images/S2_electromagnectic_shield_tower.png',
+        image: '/images/S2_electromagnectic_shield_tower.webp',
         imageMaxWidth: '600px'
       },
       {
         header: 'tips.season2_reveal_refinery_hdr',
         text: 'tips.season2_reveal_refinery_txt',
-        image: '/images/S2_ore_refinery.png',
+        image: '/images/S2_ore_refinery.webp',
         imageMaxWidth: '600px'
       }
     ]
@@ -351,7 +351,7 @@ export const tips = [
       {
         header: 'tips.season2_map_hdr',
         text: 'tips.season2_map_txt',
-        image: '/images/Siwenna_MapSeason2.png',
+        image: '/images/Siwenna_MapSeason2.webp',
         imageMaxWidth: '600px'
       },
       {
@@ -433,7 +433,7 @@ export const tips = [
         text: 'tips.star_of_guild_intro'
       },
       {
-        image: '/images/SOTG_1.png',
+        image: '/images/SOTG_1.webp',
         imageMaxWidth: '320px'
       },
       {
@@ -761,7 +761,7 @@ export const tips = [
       {
         header: 'tips.celestial_transmission_july_2026_rue_hdr',
         text: 'tips.celestial_transmission_july_2026_rue_txt',
-        image: '/images/crew_member_Rue_Corintha.jpg',
+        image: '/images/crew_member_Rue_Corintha.webp',
         imageMaxWidth: '500px'
       },
       {
@@ -787,7 +787,7 @@ export const tips = [
       {
         header: 'tips.celestial_transmission_july_2026_eva_hdr',
         text: 'tips.celestial_transmission_july_2026_eva_txt',
-        image: '/images/weapon_eva.png',
+        image: '/images/weapon_eva.webp',
         imageMaxWidth: '500px',
         disclaimer: 'tips.celestial_transmission_july_2026_weapon_disclaimer',
         methods: [
@@ -806,7 +806,7 @@ export const tips = [
       {
         header: 'tips.celestial_transmission_july_2026_aliya_hdr',
         text: 'tips.celestial_transmission_july_2026_aliya_intro_txt',
-        image: '/images/weapon_aliya.png',
+        image: '/images/weapon_aliya.webp',
         imageMaxWidth: '500px',
         disclaimer: 'tips.celestial_transmission_july_2026_weapon_disclaimer',
         methods: [
@@ -1283,7 +1283,7 @@ export const eventsData = [
     type: 'events.dominion_war_zone_type',
     warning: 'events.dominion_war_zone_warning',
     description: 'events.dominion_war_zone_desc',
-    image: '/images/DominionWarzone1.png',
+    image: '/images/DominionWarzone1.webp',
     schedule: [
       { label: 'events.dominion_war_zone_schedule_d15', times: 'events.dominion_war_zone_schedule_d15_action' },
       { label: 'events.dominion_war_zone_schedule_d6', times: 'events.dominion_war_zone_schedule_d6_action' },
@@ -1291,13 +1291,13 @@ export const eventsData = [
     ],
     stages: [
       { title: 'events.dominion_war_zone_phase1_title', description: 'events.dominion_war_zone_phase1_desc' },
-      { title: 'events.dominion_war_zone_phase2_title', description: 'events.dominion_war_zone_phase2_desc', image: '/images/DominionWarzone2.png' },
+      { title: 'events.dominion_war_zone_phase2_title', description: 'events.dominion_war_zone_phase2_desc', image: '/images/DominionWarzone2.webp' },
       { title: 'events.dominion_war_zone_phase3_title', description: 'events.dominion_war_zone_phase3_desc' }
     ],
     tactics: [
-      { title: 'events.dominion_war_zone_garrison_overview_title', content: 'events.dominion_war_zone_garrison_overview_desc', image: '/images/DominionWarzone3.png' },
-      { title: 'events.dominion_war_zone_garrison_types_title', content: 'events.dominion_war_zone_garrison_types_desc', image: '/images/DominionWarzone4.png' },
-      { title: 'events.dominion_war_zone_garrison_rules_title', content: 'events.dominion_war_zone_garrison_rules_desc', image: '/images/DominionWarzone5.png' },
+      { title: 'events.dominion_war_zone_garrison_overview_title', content: 'events.dominion_war_zone_garrison_overview_desc', image: '/images/DominionWarzone3.webp' },
+      { title: 'events.dominion_war_zone_garrison_types_title', content: 'events.dominion_war_zone_garrison_types_desc', image: '/images/DominionWarzone4.webp' },
+      { title: 'events.dominion_war_zone_garrison_rules_title', content: 'events.dominion_war_zone_garrison_rules_desc', image: '/images/DominionWarzone5.webp' },
       { title: 'events.dominion_war_zone_anti_lag_title', content: 'events.dominion_war_zone_anti_lag_desc' },
       { title: 'events.dominion_war_zone_loss_comp_title', content: 'events.dominion_war_zone_loss_comp_desc' }
     ],
@@ -1329,7 +1329,7 @@ export const eventsData = [
     type: 'events.united_frontline_type',
     description: 'events.united_frontline_desc',
     publishDate: '2026-04-13T00:01:00+02:00',
-    image: '/images/EventPortal.png',
+    image: '/images/EventPortal.webp',
     infoGrid: {
       title: 'events.united_frontline_schedule_title',
       items: [
@@ -1343,11 +1343,11 @@ export const eventsData = [
       { label: 'events.united_frontline_reward_monthly_label', value: 'events.united_frontline_reward_monthly_value' },
       { label: 'events.united_frontline_reward_assist_label', value: 'events.united_frontline_reward_assist_value' }
     ],
-    stagesImage: '/images/ImmortalAscendencyShrineModel.png',
+    stagesImage: '/images/ImmortalAscendencyShrineModel.webp',
     stages: [
       { title: 'events.united_frontline_phase1', description: 'events.united_frontline_phase1_desc' },
-      { title: 'events.united_frontline_phase2', description: 'events.united_frontline_phase2_desc', image: '/images/PilgrimGuards.png' },
-      { title: 'events.united_frontline_phase3', description: 'events.united_frontline_phase3_desc', image: '/images/FaithBarrier.png' }
+      { title: 'events.united_frontline_phase2', description: 'events.united_frontline_phase2_desc', image: '/images/PilgrimGuards.webp' },
+      { title: 'events.united_frontline_phase3', description: 'events.united_frontline_phase3_desc', image: '/images/FaithBarrier.webp' }
     ],
     tactics: [
       { title: 'events.united_frontline_tactic_respawn', content: 'events.united_frontline_tactic_respawn_desc' },
@@ -1365,7 +1365,7 @@ export const eventsData = [
     cycle: 'events.mothers_day_cycle',
     type: 'events.mothers_day_type',
     description: 'events.mothers_day_desc',
-    image: '/images/MDE1.jpg',
+    image: '/images/MDE1.webp',
     infoGrid: {
       title: 'events.mothers_day_schedule_title',
       items: [
@@ -1375,7 +1375,7 @@ export const eventsData = [
       ]
     },
     stagesTitle: 'events.mothers_day_activities_title',
-    stagesImage: '/images/MDE2.png',
+    stagesImage: '/images/MDE2.webp',
     stages: [
       { title: 'events.mothers_day_activity_floral_title', description: 'events.mothers_day_activity_floral_desc' },
       { title: 'events.mothers_day_activity_exchange_title', description: 'events.mothers_day_activity_exchange_desc' },
@@ -1385,9 +1385,9 @@ export const eventsData = [
     ],
     tacticsTitle: 'events.mothers_day_cosmetics_title',
     tactics: [
-      { title: 'events.mothers_day_cosmetic_skin_title', content: 'events.mothers_day_cosmetic_skin_desc', image: '/images/MDE_flagship_skin.png' },
-      { title: 'events.mothers_day_cosmetic_kill_title', content: 'events.mothers_day_cosmetic_kill_desc', image: '/images/MDE_kill_effect.png' },
-      { title: 'events.mothers_day_cosmetic_frame_title', content: 'events.mothers_day_cosmetic_frame_desc', image: '/images/MDE_frame.png' }
+      { title: 'events.mothers_day_cosmetic_skin_title', content: 'events.mothers_day_cosmetic_skin_desc', image: '/images/MDE_flagship_skin.webp' },
+      { title: 'events.mothers_day_cosmetic_kill_title', content: 'events.mothers_day_cosmetic_kill_desc', image: '/images/MDE_kill_effect.webp' },
+      { title: 'events.mothers_day_cosmetic_frame_title', content: 'events.mothers_day_cosmetic_frame_desc', image: '/images/MDE_frame.webp' }
     ],
     rewardsRevealAt: '2026-05-05T00:00:00+02:00',
     rewards: [
@@ -1418,23 +1418,23 @@ export const eventsData = [
       ]
     },
     stagesTitle: 'events.childrens_day_activities_title',
-    stagesImage: '/images/CDE2.png',
+    stagesImage: '/images/CDE2.webp',
     stages: [
       { title: 'events.childrens_day_activity_checkin_title', description: 'events.childrens_day_activity_checkin_desc' },
       { title: 'events.childrens_day_activity_bingo_title', description: 'events.childrens_day_activity_bingo_desc' },
       { title: 'events.childrens_day_activity_battlepass_title', description: 'events.childrens_day_activity_battlepass_desc' },
       { title: 'events.childrens_day_activity_lottery_title', description: 'events.childrens_day_activity_lottery_desc' },
       { title: 'events.childrens_day_activity_chest_title', description: 'events.childrens_day_activity_chest_desc' },
-      { title: 'events.childrens_day_activity_shop_title', description: 'events.childrens_day_activity_shop_desc', image: '/images/CDE3.png' },
+      { title: 'events.childrens_day_activity_shop_title', description: 'events.childrens_day_activity_shop_desc', image: '/images/CDE3.webp' },
       { title: 'events.childrens_day_activity_defense_title', description: 'events.childrens_day_activity_defense_desc' }
     ],
     tacticsTitle: 'events.childrens_day_rewards_title',
     tactics: [
-      { title: 'events.childrens_day_reward_skin1_title', content: 'events.childrens_day_reward_skin1_desc', image: '/images/CDE_skin_fire.png' },
-      { title: 'events.childrens_day_reward_skin2_title', content: 'events.childrens_day_reward_skin2_desc', image: '/images/CDE_skin_star.png' },
-      { title: 'events.childrens_day_reward_frame_title', content: 'events.childrens_day_reward_frame_desc', image: '/images/CDE_frame.png' },
-      { title: 'events.childrens_day_reward_chat_title', content: 'events.childrens_day_reward_chat_desc', image: '/images/CDE_chat.png' },
-      { title: 'events.childrens_day_reward_nameplate_title', content: 'events.childrens_day_reward_nameplate_desc', image: '/images/CDE_nameplate.png' }
+      { title: 'events.childrens_day_reward_skin1_title', content: 'events.childrens_day_reward_skin1_desc', image: '/images/CDE_skin_fire.webp' },
+      { title: 'events.childrens_day_reward_skin2_title', content: 'events.childrens_day_reward_skin2_desc', image: '/images/CDE_skin_star.webp' },
+      { title: 'events.childrens_day_reward_frame_title', content: 'events.childrens_day_reward_frame_desc', image: '/images/CDE_frame.webp' },
+      { title: 'events.childrens_day_reward_chat_title', content: 'events.childrens_day_reward_chat_desc', image: '/images/CDE_chat.webp' },
+      { title: 'events.childrens_day_reward_nameplate_title', content: 'events.childrens_day_reward_nameplate_desc', image: '/images/CDE_nameplate.webp' }
     ],
     proTips: [
       { title: 'events.childrens_day_protip_pass_title', content: 'events.childrens_day_protip_pass_desc' },
@@ -1522,32 +1522,32 @@ export const eventsData = [
       {
         title: 'events.galaxy_cup_carnival_feature_wheel',
         content: 'events.galaxy_cup_carnival_feature_wheel_desc',
-        image: '/images/GC_carnivalwhistle.png'
+        image: '/images/GC_carnivalwhistle.webp'
       },
       {
         title: 'events.galaxy_cup_carnival_feature_shop',
         content: 'events.galaxy_cup_carnival_feature_shop_desc',
-        image: '/images/GC_goldenballcoin.png'
+        image: '/images/GC_goldenballcoin.webp'
       },
       {
         title: 'events.galaxy_cup_carnival_reward_skin',
         content: 'events.galaxy_cup_carnival_reward_skin_desc',
-        image: '/images/GC_verdantcosmos.png'
+        image: '/images/GC_verdantcosmos.webp'
       },
       {
         title: 'events.galaxy_cup_carnival_reward_frame',
         content: 'events.galaxy_cup_carnival_reward_frame_desc',
-        image: '/images/GC_frame.png'
+        image: '/images/GC_frame.webp'
       },
       {
         title: 'events.galaxy_cup_carnival_reward_kill',
         content: 'events.galaxy_cup_carnival_reward_kill_desc',
-        image: '/images/GC_killingeffect.png'
+        image: '/images/GC_killingeffect.webp'
       },
       {
         title: 'events.galaxy_cup_carnival_reward_chat',
         content: 'events.galaxy_cup_carnival_reward_chat_desc',
-        image: '/images/GC_chatframe.png'
+        image: '/images/GC_chatframe.webp'
       }
     ],
     proTips: [

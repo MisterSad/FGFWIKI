@@ -77,7 +77,8 @@
         "read_news": "Les nyhet",
         "phase": "Fase",
         "reset_data": "Tilbakestill / slettet data",
-        "preserved_data": "Bevart/bevart data"
+        "preserved_data": "Bevart/bevart data",
+        "close": "Lukk"
     },
     "hero": {
         "title_prefix": "Mestre",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Ugyldig e-post eller passord.",
         "error_weak_password": "Passordet skal være minst 6 tegn.",
         "error_auth_failed": "Autentisering mislyktes. Prøv igjen.",
-        "error_google_failed": "Mislyktes å logge inn med Google."
+        "error_google_failed": "Mislyktes å logge inn med Google.",
+        "confirm_email": "Vennligst bekreft e-postadressen din:"
     },
     "tools_ui": {
         "building_selection": "Valg av bygning",

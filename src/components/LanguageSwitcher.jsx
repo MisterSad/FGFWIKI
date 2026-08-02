@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, Check, ChevronDown } from 'lucide-react';
+import { SUPPORTED_LANGS } from '../i18n';
 
 // Language list (autonyms, each language displayed in its own script).
 // Order: English first (default), then Latin-script alphabetical, then Cyrillic, then CJK.
@@ -38,9 +39,9 @@ export default function LanguageSwitcher() {
     const containerRef = useRef(null);
     const triggerRef = useRef(null);
 
-    const current = (i18n.resolvedLanguage || i18n.language || DEFAULT_CODE)
-        .slice(0, 2)
-        .toLowerCase();
+    const raw = i18n.resolvedLanguage || i18n.language || DEFAULT_CODE;
+    // Match full locale codes first (e.g. "zh-tw"), then fall back to the 2-letter prefix.
+    const current = LANGS.some((l) => l.code === raw) ? raw : raw.slice(0, 2).toLowerCase();
     const currentLang = LANGS.find((l) => l.code === current) || LANGS[0];
 
     const change = useCallback(
@@ -53,6 +54,14 @@ export default function LanguageSwitcher() {
             } catch {
                 /* ignore (private mode, etc.) */
             }
+            // Update the URL to the language-prefixed equivalent so the chosen
+            // language is kept in shareable links. A full reload is required
+            // because the router basename depends on the language prefix.
+            const pathWithLang = window.location.pathname.replace(
+                new RegExp(`^/(${SUPPORTED_LANGS.join('|')})(?=/|$)`),
+                ''
+            );
+            window.location.href = `/${code}${pathWithLang || '/'}${window.location.search}`;
         },
         [current, i18n]
     );

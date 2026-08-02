@@ -77,7 +77,8 @@
         "read_news": "Haberi oku",
         "phase": "Aşama",
         "reset_data": "Verileri Sıfırla / Temizlendi",
-        "preserved_data": "Korunan / Saklanan Veriler"
+        "preserved_data": "Korunan / Saklanan Veriler",
+        "close": "Kapat"
     },
     "hero": {
         "title_prefix": "Ustalaşın",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Geçersiz e-posta veya şifre.",
         "error_weak_password": "Şifre en az 6 karakter olmalıdır.",
         "error_auth_failed": "Kimlik doğrulaması başarısız oldu. Lütfen tekrar deneyin.",
-        "error_google_failed": "Google ile oturum açılamadı."
+        "error_google_failed": "Google ile oturum açılamadı.",
+        "confirm_email": "Lütfen e-posta adresinizi doğrulayın:"
     },
     "tools_ui": {
         "building_selection": "Bina Seçimi",

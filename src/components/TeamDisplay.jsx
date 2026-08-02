@@ -61,8 +61,10 @@ const CyclingHeroSlot = ({ slot, idx, t }) => {
                 {!imageError ? (
                     <img
                         key={currentName}
-                        src={`/images/${currentName}.png`}
+                        src={`/images/${currentName}.webp`}
                         alt={currentName}
+                        loading="lazy"
+                        decoding="async"
                         onError={() => setImageError(true)}
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
@@ -92,6 +94,56 @@ const CyclingHeroSlot = ({ slot, idx, t }) => {
             </div>
             <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)', marginTop: '0.5rem', fontStyle: 'italic' }}>
                 "{t(slot.reason)}"
+            </div>
+        </div>
+    );
+};
+
+const GroundMemberCard = ({ member }) => {
+    const [imageError, setImageError] = useState(false);
+
+    return (
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            background: 'var(--bg-void)',
+            padding: '1rem',
+            borderRadius: '2px',
+            border: '1px solid var(--border)'
+        }}>
+            {/* Hero Image or SVG Fallback */}
+            <div style={{
+                width: '80px',
+                height: '80px',
+                background: 'var(--bg-surface)',
+                borderRadius: '50%',
+                marginBottom: '0.8rem',
+                border: '1px solid var(--gold)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '0.7rem',
+                color: 'var(--text-secondary)',
+                overflow: 'hidden'
+            }}>
+                {!imageError ? (
+                    <img
+                        src={`/images/${member}.webp`}
+                        loading="lazy"
+                        decoding="async"
+                        alt={member}
+                        onError={() => setImageError(true)}
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                ) : (
+                    <Users size={32} />
+                )}
+            </div>
+
+            <div style={{ fontWeight: 'bold', color: 'var(--text-primary)', fontSize: '1rem' }}>
+                {member}
             </div>
         </div>
     );
@@ -182,52 +234,9 @@ export default function TeamDisplay({ deck, isGround = false }) {
             {/* Ground Team Layout (Card Style with Images or SVG Fallback) */}
             {isGround && (
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(120px, 100%), 1fr))', gap: 'clamp(0.75rem, 2.5vw, 1.5rem)' }}>
-                    {deck.members.map((member, idx) => {
-                        const [imageError, setImageError] = React.useState(false);
-                        return (
-                            <div key={idx} style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                textAlign: 'center',
-                                background: 'var(--bg-void)',
-                                padding: '1rem',
-                                borderRadius: '2px',
-                                border: '1px solid var(--border)'
-                            }}>
-                                {/* Hero Image or SVG Fallback */}
-                                <div style={{
-                                    width: '80px',
-                                    height: '80px',
-                                    background: 'var(--bg-surface)',
-                                    borderRadius: '50%',
-                                    marginBottom: '0.8rem',
-                                    border: '1px solid var(--gold)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    fontSize: '0.7rem',
-                                    color: 'var(--text-secondary)',
-                                    overflow: 'hidden'
-                                }}>
-                                    {!imageError ? (
-                                        <img
-                                            src={`/images/${member}.png`}
-                                            alt={member}
-                                            onError={() => setImageError(true)}
-                                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                        />
-                                    ) : (
-                                        <Users size={32} />
-                                    )}
-                                </div>
-
-                                <div style={{ fontWeight: 'bold', color: 'var(--text-primary)', fontSize: '1rem' }}>
-                                    {member}
-                                </div>
-                            </div>
-                        );
-                    })}
+                    {deck.members.map((member, idx) => (
+                        <GroundMemberCard key={idx} member={member} />
+                    ))}
                 </div>
             )}
         </div>

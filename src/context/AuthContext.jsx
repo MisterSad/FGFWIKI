@@ -11,16 +11,19 @@ import {
     signInWithEmailLink
 } from "firebase/auth";
 import { auth } from "../firebase";
+import i18n from "../i18n";
 
 const AuthContext = createContext();
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useAuth() {
     return useContext(AuthContext);
 }
 
 export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState(null);
-    const [loading, setLoading] = useState(true);
+    // If Firebase isn't configured, there's nothing to load — render immediately.
+    const [loading, setLoading] = useState(() => !auth);
 
     function signup(email, password) {
         return createUserWithEmailAndPassword(auth, email, password);
@@ -51,7 +54,6 @@ export function AuthProvider({ children }) {
 
     useEffect(() => {
         if (!auth) {
-            setLoading(false);
             return;
         }
 
@@ -59,11 +61,11 @@ export function AuthProvider({ children }) {
         if (isSignInWithEmailLink(auth, window.location.href)) {
             let email = window.localStorage.getItem('emailForSignIn');
             if (!email) {
-                email = window.prompt('Veuillez confirmer votre email :');
+                email = window.prompt(i18n.t('login_modal.confirm_email', { defaultValue: 'Please confirm your email:' }));
             }
             if (email) {
                 signInWithEmailLink(auth, email, window.location.href)
-                    .then((result) => {
+                    .then(() => {
                         window.localStorage.removeItem('emailForSignIn');
                         window.history.replaceState(null, '', window.location.pathname);
                     })

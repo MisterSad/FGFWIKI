@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowUp } from 'lucide-react';
@@ -40,7 +40,7 @@ export default function Layout({ children, onLoginClick }) {
     const isGlitchActive = isEventActive || location.search.includes('debugPhase') || location.pathname.startsWith('/stella-anomaly');
 
     // Helper to count completed phases (0 to 4)
-    const getCompletedCount = () => {
+    const getCompletedCount = useCallback(() => {
         // Check URL debugParam first for easy testing of glitch levels
         const params = new URLSearchParams(location.search);
         const debugPhaseParam = params.get('debugPhase');
@@ -55,10 +55,10 @@ export default function Layout({ children, onLoginClick }) {
             if (!saved) return 0;
             const parsed = JSON.parse(saved);
             return Object.values(parsed).filter(Boolean).length;
-        } catch (e) {
+        } catch {
             return 0;
         }
-    };
+    }, [location.search]);
 
     const [completedCount, setCompletedCount] = useState(getCompletedCount());
 
@@ -73,7 +73,7 @@ export default function Layout({ children, onLoginClick }) {
         return () => {
             window.removeEventListener('stella-progress-update', handleUpdate);
         };
-    }, [location.pathname, location.search]);
+    }, [location.pathname, location.search, getCompletedCount]);
 
     useEffect(() => {
         const toggleVisibility = () => {

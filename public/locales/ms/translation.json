@@ -77,7 +77,8 @@
         "read_news": "Baca berita",
         "phase": "Fasa",
         "reset_data": "Tetapkan Semula / Data Dikosongkan",
-        "preserved_data": "Data Dipelihara / Disimpan"
+        "preserved_data": "Data Dipelihara / Disimpan",
+        "close": "Tutup"
     },
     "hero": {
         "title_prefix": "Kuasai",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "E-mel atau kata laluan tidak sah.",
         "error_weak_password": "Kata laluan hendaklah sekurang-kurangnya 6 aksara.",
         "error_auth_failed": "Gagal untuk mengesahkan. Sila cuba lagi.",
-        "error_google_failed": "Gagal log masuk dengan Google."
+        "error_google_failed": "Gagal log masuk dengan Google.",
+        "confirm_email": "Sila sahkan emel anda:"
     },
     "tools_ui": {
         "building_selection": "Pemilihan Bangunan",

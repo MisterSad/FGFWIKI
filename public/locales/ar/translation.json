@@ -77,7 +77,8 @@
         "read_news": "اقرأ الخبر",
         "phase": "طور",
         "reset_data": "إعادة تعيين / مسح البيانات",
-        "preserved_data": "البيانات المحفوظة / المحفوظة"
+        "preserved_data": "البيانات المحفوظة / المحفوظة",
+        "close": "إغلاق"
     },
     "hero": {
         "title_prefix": "إتقان",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "البريد الإلكتروني أو كلمة المرور غير صالحة.",
         "error_weak_password": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل.",
         "error_auth_failed": "فشلت المصادقة. يرجى المحاولة مرة أخرى.",
-        "error_google_failed": "فشل تسجيل الدخول مع جوجل."
+        "error_google_failed": "فشل تسجيل الدخول مع جوجل.",
+        "confirm_email": "يرجى تأكيد بريدك الإلكتروني:"
     },
     "tools_ui": {
         "building_selection": "اختيار البناء",

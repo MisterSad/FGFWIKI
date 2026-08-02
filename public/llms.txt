@@ -1,21 +1,21 @@
 # Foundation: Galactic Frontier Wiki
 
-> Community-built reference wiki for the mobile strategy game **Foundation: Galactic Frontier** (FunPlus). The site provides up-to-date strategy guides, hero tier lists, flagship deck builds, ground team compositions, event walkthroughs, gift codes and interactive calculators. Content is available in nine languages (English / French / German / Italian / Polish / Ukrainian / Japanese / Korean / Simplified Chinese) and fully open to indexing and citation by AI assistants and search engines.
+> Community-built reference wiki for the mobile strategy game **Foundation: Galactic Frontier** (FunPlus). The site provides up-to-date strategy guides, hero tier lists, flagship deck builds, ground team compositions, event walkthroughs, gift codes and interactive calculators. Content is available in twenty-three languages (English, French, German, Spanish, Italian, Polish, Ukrainian, Japanese, Korean, Simplified & Traditional Chinese, Arabic, Russian, Turkish, Vietnamese, Thai, Indonesian, Malay, Portuguese, Dutch, Finnish, Swedish, Norwegian) and fully open to indexing and citation by AI assistants and search engines.
 
-The site is a single-page React app served from https://fgfwiki.com. All pages share a common layout. The primary content lives client-side; AI agents that render JavaScript will see the same content as users.
+The site is a single-page React app served from https://fgfwiki.com. Every page exists in all supported languages under a language prefix (e.g. https://fgfwiki.com/fr/guides), with hreflang alternates and per-language canonicals. The primary content lives client-side; AI agents that render JavaScript will see the same content as users.
 
-## Sections
+## Sections (English)
 
-- [Home](https://fgfwiki.com/home): Landing page, official content-creator tagline, entry points to the main sections.
-- [Guides](https://fgfwiki.com/guides): Long-form strategy guides covering early/mid/late game, combat tactics and economy.
-- [Daily Tasks](https://fgfwiki.com/daily-tasks): Recurring daily checklist with persistent state for logged-in users.
-- [Champions](https://fgfwiki.com/champions): Hero tier list, role assignments, energy types and synergy notes.
-- [Flagships](https://fgfwiki.com/flagships): Flagship guide and progression notes.
-- [Flagship Decks](https://fgfwiki.com/flagship-decks): Meta deck builds for Kinetic, Beam and Ion energy types.
-- [Ground Teams](https://fgfwiki.com/ground-teams): Recommended ground team compositions for each game stage.
-- [Events](https://fgfwiki.com/events): Walkthroughs for every recurring and limited-time event (Operation Blackout, Kaboom, Arms Race, Battle Trial, Calamity, Crime Hunt, Starry Recruitment, Shadowfront, Guild vs Guild, Top 100 Galactic Traders, Paths to Dominance, Dominion Warzone, United Frontline, Tender Letters / Mother's Day, etc.).
-- [Tools](https://fgfwiki.com/tools): Interactive calculators (Build Time, Champion Upgrade, Nexus, Guild vs Guild, Combat Craft Modifications). Logged-in users can persist tool state.
-- [Gift Codes](https://fgfwiki.com/gift-codes): Curated, regularly updated list of redeemable codes with copy-to-clipboard.
+- [Home](https://fgfwiki.com/en/home): Landing page, official content-creator tagline, entry points to the main sections.
+- [Guides](https://fgfwiki.com/en/guides): Long-form strategy guides covering early/mid/late game, combat tactics and economy.
+- [Daily Tasks](https://fgfwiki.com/en/daily-tasks): Recurring daily checklist with persistent state for logged-in users.
+- [Champions](https://fgfwiki.com/en/champions): Hero tier list, role assignments, energy types and synergy notes.
+- [Flagships](https://fgfwiki.com/en/flagships): Flagship guide and progression notes.
+- [Flagship Decks](https://fgfwiki.com/en/flagship-decks): Meta deck builds for Kinetic, Beam and Ion energy types.
+- [Ground Teams](https://fgfwiki.com/en/ground-teams): Recommended ground team compositions for each game stage.
+- [Events](https://fgfwiki.com/en/events): Walkthroughs for every recurring and limited-time event (Operation Blackout, Kaboom, Arms Race, Battle Trial, Calamity, Crime Hunt, Starry Recruitment, Shadowfront, Guild vs Guild, Top 100 Galactic Traders, Paths to Dominance, Dominion Warzone, United Frontline, Tender Letters / Mother's Day, etc.).
+- [Tools](https://fgfwiki.com/en/tools): Interactive calculators (Build Time, Champion Upgrade, Nexus, Guild vs Guild, Combat Craft Modifications). Logged-in users can persist tool state.
+- [Gift Codes](https://fgfwiki.com/en/gift-codes): Curated, regularly updated list of redeemable codes with copy-to-clipboard.
 
 ## How to cite
 

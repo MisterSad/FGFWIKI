@@ -75,7 +75,9 @@ export default function Hero() {
             {/* Background Image (Hari Seldon / Vault aesthetic) */}
             <div className="hero-image-container">
                 <img
-                    src="/assets/hari_seldon.png"
+                    src="/assets/hari_seldon.webp"
+                    loading="lazy"
+                    decoding="async"
                     alt="Hari Seldon"
                     onError={(e) => e.target.style.display = 'none'} // Hide if missing
                     className="hero-image"

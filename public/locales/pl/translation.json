@@ -77,7 +77,8 @@
         "read_news": "Czytaj aktualności",
         "phase": "Faza",
         "reset_data": "Zresetuj / wyczyść dane",
-        "preserved_data": "Zachowane/przechowywane dane"
+        "preserved_data": "Zachowane/przechowywane dane",
+        "close": "Zamknij"
     },
     "hero": {
         "title_prefix": "Opanuj",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Nieprawidłowy email lub hasło.",
         "error_weak_password": "Hasło powinno mieć co najmniej 6 znaków.",
         "error_auth_failed": "Uwierzytelnienie nieudane. Spróbuj ponownie.",
-        "error_google_failed": "Nie udało się zalogować z Google."
+        "error_google_failed": "Nie udało się zalogować z Google.",
+        "confirm_email": "Potwierdź swój adres e-mail:"
     },
     "tools_ui": {
         "building_selection": "Wybór budynku",

@@ -77,7 +77,8 @@
         "read_news": "Nieuws lezen",
         "phase": "Fase",
         "reset_data": "Gegevens resetten/wissen",
-        "preserved_data": "Bewaarde/bewaarde gegevens"
+        "preserved_data": "Bewaarde/bewaarde gegevens",
+        "close": "Sluiten"
     },
     "hero": {
         "title_prefix": "Beheers de",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Ongeldig e-mailadres of wachtwoord.",
         "error_weak_password": "Het wachtwoord moet minimaal 6 tekens lang zijn.",
         "error_auth_failed": "Authenticatie mislukt. Probeer het opnieuw.",
-        "error_google_failed": "Inloggen met Google is niet gelukt."
+        "error_google_failed": "Inloggen met Google is niet gelukt.",
+        "confirm_email": "Bevestig je e-mailadres:"
     },
     "tools_ui": {
         "building_selection": "Gebouw selectie",

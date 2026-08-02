@@ -77,7 +77,8 @@
         "read_news": "Lue uutinen",
         "phase": "Vaihe",
         "reset_data": "Nollaa / tyhjennetty tiedot",
-        "preserved_data": "Säilytetyt / säilytettävät tiedot"
+        "preserved_data": "Säilytetyt / säilytettävät tiedot",
+        "close": "Sulje"
     },
     "hero": {
         "title_prefix": "Hallitse",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Virheellinen sähköposti tai salasana.",
         "error_weak_password": "Salasanan tulee olla vähintään 6 merkkiä.",
         "error_auth_failed": "Tunnistautuminen epäonnistui. Yritä uudelleen.",
-        "error_google_failed": "Googlella kirjautuminen epäonnistui."
+        "error_google_failed": "Googlella kirjautuminen epäonnistui.",
+        "confirm_email": "Vahvista sähköpostiosoitteesi:"
     },
     "tools_ui": {
         "building_selection": "Rakennuksen valinta",

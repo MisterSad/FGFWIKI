@@ -77,7 +77,8 @@
         "read_news": "Läs nyhet",
         "phase": "Fas",
         "reset_data": "Återställ / raderade data",
-        "preserved_data": "Bevarade/bevarade data"
+        "preserved_data": "Bevarade/bevarade data",
+        "close": "Stäng"
     },
     "hero": {
         "title_prefix": "Bemästra",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Ogiltig e-post eller lösenord.",
         "error_weak_password": "Lösenord ska vara minst 6 tecken.",
         "error_auth_failed": "Autentisering misslyckades. Försök igen.",
-        "error_google_failed": "Misslyckades att logga in med Google."
+        "error_google_failed": "Misslyckades att logga in med Google.",
+        "confirm_email": "Bekräfta din e-postadress:"
     },
     "tools_ui": {
         "building_selection": "Val av byggnad",

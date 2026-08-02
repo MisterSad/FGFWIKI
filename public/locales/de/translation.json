@@ -77,7 +77,8 @@
         "read_news": "News lesen",
         "phase": "Phase",
         "reset_data": "Daten zurücksetzen/löschen",
-        "preserved_data": "Konservierte/aufbewahrte Daten"
+        "preserved_data": "Konservierte/aufbewahrte Daten",
+        "close": "Schließen"
     },
     "hero": {
         "title_prefix": "Meistere die",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Ungültige E-Mail oder Passwort.",
         "error_weak_password": "Passwort sollte mindestens 6 Zeichen lang sein.",
         "error_auth_failed": "Authentifizierung fehlgeschlagen. Bitte erneut versuchen.",
-        "error_google_failed": "Anmeldung mit Google fehlgeschlagen."
+        "error_google_failed": "Anmeldung mit Google fehlgeschlagen.",
+        "confirm_email": "Bitte bestätige deine E-Mail-Adresse:"
     },
     "tools_ui": {
         "building_selection": "Gebäudeauswahl",

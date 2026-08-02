@@ -19,7 +19,7 @@ function loadEnv() {
         if (fs.existsSync(envPath)) {
             const content = fs.readFileSync(envPath, 'utf8');
             content.split('\n').forEach(line => {
-                const match = line.match(/^\s*([\w\.\-]+)\s*=\s*(.*)?\s*$/);
+                const match = line.match(/^\s*([\w.-]+)\s*=\s*(.*)?\s*$/);
                 if (match) {
                     const key = match[1];
                     let value = match[2] || '';
@@ -68,6 +68,9 @@ async function fetchWinners() {
             submissions.push({ id: doc.id, ...doc.data() });
         });
         
+        // Sort by the atomically-allocated rank (fallback to submission date)
+        submissions.sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity));
+        
         console.log(`\nFound ${submissions.length} total submissions.\n`);
         console.log("==================================================");
         console.log("             STELLA ANOMALY LEADERBOARD           ");
@@ -79,7 +82,7 @@ async function fetchWinners() {
         }
         
         submissions.forEach((sub, index) => {
-            const rank = index + 1;
+            const rank = sub.rank ?? index + 1;
             let badge = `[${rank}th]`;
             let reward = "Participation logged";
             

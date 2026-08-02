@@ -34,7 +34,6 @@ export default function Tabs() {
     const isNewsActive = location.pathname.startsWith('/news');
     const isGuidesActive = location.pathname.startsWith('/guides');
     const isChampionsActive = location.pathname.startsWith('/champions');
-    const isToolsActive = location.pathname.startsWith('/tools');
     
     const morePaths = ['/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly', '/creators'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));

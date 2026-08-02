@@ -38,7 +38,9 @@ const ChampionTierEntry = ({ champion }) => {
                 }}>
                     {!imageError ? (
                         <img
-                            src={`/images/${champion.name}.png`}
+                            src={`/images/${champion.name}.webp`}
+                            loading="lazy"
+                            decoding="async"
                             alt={champion.name}
                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             onError={() => setImageError(true)}

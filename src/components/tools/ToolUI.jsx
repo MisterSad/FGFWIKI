@@ -2,6 +2,7 @@ import React from 'react';
 import './tools.css';
 
 // ── Foundation Design System Tokens ──
+// eslint-disable-next-line react-refresh/only-export-components
 export const V = {
     bgVoid: "#060710", bgSurface: "#0D0E14", bgElev: "#1A1B26",
     gold: "#C9A84C", goldBr: "#E8C96A", goldDim: "#8A6F2F", bronze: "#A08240",

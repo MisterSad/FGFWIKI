@@ -536,6 +536,8 @@ export default function Guides() {
                                 <div style={{ margin: '2rem 0', textAlign: 'center' }}>
                                     <img
                                         src={section.image}
+                                        loading="lazy"
+                                        decoding="async"
                                         alt={section.header ? t(section.header) : "Guide Illustration"}
                                         style={{
                                             maxWidth: section.imageMaxWidth || (section.image.includes('MSR') ? '500px' : '100%'),

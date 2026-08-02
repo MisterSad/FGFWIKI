@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, collection, addDoc, query, where, getDocs } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, addDoc, runTransaction } from "firebase/firestore";
 import { db } from "./firebase";
 
 /**
@@ -74,22 +74,27 @@ export const submitStellaAnomalyUid = async (gameUid, secretCode, firebaseUid = 
     try {
         const submittedAt = new Date().toISOString();
         const colRef = collection(db, "stella_anomaly_submissions");
-        
-        // Save the submission
+        const counterRef = doc(db, "stella_anomaly_meta", "counter");
+
+        // Atomically allocate a rank and persist the submission.
+        // The transaction guarantees that two simultaneous submissions
+        // never receive the same rank (no client-side race condition).
+        const rank = await runTransaction(db, async (tx) => {
+            const counterSnap = await tx.get(counterRef);
+            const nextCount = (counterSnap.exists() ? counterSnap.data().count : 0) + 1;
+            await tx.set(counterRef, { count: nextCount });
+            return nextCount;
+        });
+
         await addDoc(colRef, {
             gameUid,
             secretCode,
             firebaseUid,
             lang,
-            submittedAt
+            submittedAt,
+            rank
         });
-        
-        // Query previous submissions
-        const q = query(colRef, where("submittedAt", "<", submittedAt));
-        const snap = await getDocs(q);
-        
-        // Rank is number of previous submissions + 1
-        const rank = snap.size + 1;
+
         return rank;
     } catch (error) {
         console.error("Error submitting Stella Anomaly UID and getting rank: ", error);

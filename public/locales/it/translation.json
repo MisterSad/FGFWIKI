@@ -77,7 +77,8 @@
         "read_news": "Leggi notizia",
         "phase": "Fase",
         "reset_data": "Reimposta/cancella dati",
-        "preserved_data": "Dati conservati/mantenuti"
+        "preserved_data": "Dati conservati/mantenuti",
+        "close": "Chiudi"
     },
     "hero": {
         "title_prefix": "Padroneggia la",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Email o password non validi.",
         "error_weak_password": "La password dovrebbe essere di almeno 6 caratteri.",
         "error_auth_failed": "Autenticazione fallita. Riprova.",
-        "error_google_failed": "Accesso con Google fallito."
+        "error_google_failed": "Accesso con Google fallito.",
+        "confirm_email": "Per favore conferma la tua email:"
     },
     "tools_ui": {
         "building_selection": "Selezione edificio",

@@ -77,7 +77,8 @@
         "read_news": "Lire l'actualité",
         "phase": "Phase",
         "reset_data": "Données réinitialisées",
-        "preserved_data": "Données préservées"
+        "preserved_data": "Données préservées",
+        "close": "Fermer"
     },
     "hero": {
         "title_prefix": "Maîtrisez la",
@@ -1334,7 +1335,8 @@
         "error_invalid_credential": "Email ou mot de passe invalide.",
         "error_weak_password": "Le mot de passe doit contenir au moins 6 caractères.",
         "error_auth_failed": "Échec de l'authentification. Veuillez réessayer.",
-        "error_google_failed": "Échec de la connexion avec Google."
+        "error_google_failed": "Échec de la connexion avec Google.",
+        "confirm_email": "Veuillez confirmer votre email :"
     },
     "gift_codes": {
         "title": "Codes cadeaux",

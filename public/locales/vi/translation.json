@@ -77,7 +77,8 @@
         "read_news": "Đọc tin tức",
         "phase": "Giai đoạn",
         "reset_data": "Đặt lại/Xóa dữ liệu",
-        "preserved_data": "Dữ liệu được bảo quản/giữ lại"
+        "preserved_data": "Dữ liệu được bảo quản/giữ lại",
+        "close": "Đóng"
     },
     "hero": {
         "title_prefix": "Làm chủ",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Email hoặc mật khẩu không hợp lệ.",
         "error_weak_password": "Mật khẩu phải có ít nhất 6 ký tự.",
         "error_auth_failed": "Không thể xác thực. Vui lòng thử lại.",
-        "error_google_failed": "Không thể đăng nhập bằng Google."
+        "error_google_failed": "Không thể đăng nhập bằng Google.",
+        "confirm_email": "Vui lòng xác nhận email của bạn:"
     },
     "tools_ui": {
         "building_selection": "Lựa chọn tòa nhà",

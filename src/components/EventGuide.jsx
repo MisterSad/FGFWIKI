@@ -330,7 +330,7 @@ export default function EventGuide() {
                             </p>
                             {selectedEvent.image && (
                                 <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
-                                    <img src={selectedEvent.image} alt={t(selectedEvent.title)} style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                     <img src={selectedEvent.image} alt={t(selectedEvent.title)} loading="lazy" decoding="async" style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
                                 </div>
                             )}
                         </div>
@@ -643,7 +643,7 @@ export default function EventGuide() {
                                 </h4>
                                 {selectedEvent.stagesImage && (
                                     <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
-                                        <img src={selectedEvent.stagesImage} alt="Stages Info" style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                        <img src={selectedEvent.stagesImage} alt="Stages Info" loading="lazy" decoding="async" style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
                                     </div>
                                 )}
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
@@ -653,7 +653,7 @@ export default function EventGuide() {
                                             <div style={{ color: 'var(--text-dim)', fontSize: '0.95rem', lineHeight: '1.5' }}>{t(stage.description)}</div>
                                             {stage.image && (
                                                 <div style={{ marginTop: '1rem', textAlign: 'center' }}>
-                                                    <img src={stage.image} alt={t(stage.title)} style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                                     <img src={stage.image} alt={t(stage.title)} loading="lazy" decoding="async" style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
                                                 </div>
                                             )}
                                         </div>
@@ -674,7 +674,7 @@ export default function EventGuide() {
                                         <div style={{ color: 'var(--text-dim)', fontSize: '0.95rem', lineHeight: '1.5' }}>{t(tactic.content)}</div>
                                         {tactic.image && (
                                             <div style={{ marginTop: '1rem', textAlign: 'center' }}>
-                                                <img src={tactic.image} alt={t(tactic.title)} style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
+                                                 <img src={tactic.image} alt={t(tactic.title)} loading="lazy" decoding="async" style={{ maxWidth: '100%', borderRadius: '4px', border: '1px solid var(--border)' }} />
                                             </div>
                                         )}
                                     </div>

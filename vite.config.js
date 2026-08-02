@@ -13,7 +13,16 @@ export default defineConfig({
             dropDebugger: true,
           },
         },
+        advancedChunks: {
+          groups: [
+            { name: 'firebase', test: /node_modules[\\/](@firebase|firebase)/ },
+          ],
+        },
       },
     },
+  },
+  test: {
+    environment: 'node',
+    include: ['tests/**/*.test.js'],
   },
 })

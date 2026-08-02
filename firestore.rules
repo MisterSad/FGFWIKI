@@ -23,6 +23,43 @@ service cloud.firestore {
             ]));
     }
 
+    // Stella Anomaly event submissions (public leaderboard).
+    // Create is validated server-side; submissions are immutable.
+    match /stella_anomaly_submissions/{docId} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly([
+            'gameUid', 'secretCode', 'firebaseUid', 'lang', 'submittedAt', 'rank'
+          ])
+        && request.resource.data.gameUid is string
+        && request.resource.data.gameUid.size() > 0
+        && request.resource.data.gameUid.size() <= 30
+        && request.resource.data.gameUid.matches('^[0-9]+$')
+        && request.resource.data.secretCode is string
+        && request.resource.data.secretCode.size() > 0
+        && (request.resource.data.firebaseUid == null ||
+            request.resource.data.firebaseUid is string)
+        && request.resource.data.lang is string
+        && request.resource.data.submittedAt is string
+        && request.resource.data.rank is int
+        && request.resource.data.rank >= 1;
+      allow update, delete: if false;
+    }
+
+    // Atomic rank counter for the Stella Anomaly leaderboard.
+    // It can only ever be incremented by exactly 1 (transactions only).
+    match /stella_anomaly_meta/{metaId} {
+      allow read: if true;
+      allow create: if metaId == 'counter'
+        && request.resource.data.keys().hasOnly(['count'])
+        && request.resource.data.count == 1;
+      allow update: if metaId == 'counter'
+        && request.resource.data.keys().hasOnly(['count'])
+        && request.resource.data.count is int
+        && resource.data.count is int
+        && request.resource.data.count == resource.data.count + 1;
+      allow delete: if false;
+    }
+
     // Default deny everything else.
     match /{document=**} {
       allow read, write: if false;

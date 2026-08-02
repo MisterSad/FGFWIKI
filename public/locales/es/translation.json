@@ -77,7 +77,8 @@
         "read_news": "Leer noticia",
         "phase": "Fase",
         "reset_data": "Restablecer/datos borrados",
-        "preserved_data": "Datos conservados/conservados"
+        "preserved_data": "Datos conservados/conservados",
+        "close": "Cerrar"
     },
     "hero": {
         "title_prefix": "Domina la",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Email o contraseña no válidos.",
         "error_weak_password": "La contraseña debe tener al menos 6 caracteres.",
         "error_auth_failed": "Error al autenticar. Por favor, inténtalo de nuevo.",
-        "error_google_failed": "Error al acceder con Google."
+        "error_google_failed": "Error al acceder con Google.",
+        "confirm_email": "Por favor, confirma tu correo electrónico:"
     },
     "tools_ui": {
         "building_selection": "Selección de edificio",

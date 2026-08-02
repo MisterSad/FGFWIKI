@@ -77,7 +77,8 @@
         "read_news": "Читати новину",
         "phase": "Фаза",
         "reset_data": "Скинути/Очистити дані",
-        "preserved_data": "Збережені дані"
+        "preserved_data": "Збережені дані",
+        "close": "Закрити"
     },
     "hero": {
         "title_prefix": "Опануйте",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Недійсний email або пароль.",
         "error_weak_password": "Пароль повинен містити принаймні 6 символів.",
         "error_auth_failed": "Аутентифікація не вдалася. Спробуйте ще раз.",
-        "error_google_failed": "Не вдалося увійти з Google."
+        "error_google_failed": "Не вдалося увійти з Google.",
+        "confirm_email": "Будь ласка, підтвердіть вашу електронну адресу:"
     },
     "tools_ui": {
         "building_selection": "Вибір будівлі",

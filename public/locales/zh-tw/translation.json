@@ -77,7 +77,8 @@
         "read_news": "閱讀新聞",
         "phase": "階段",
         "reset_data": "重置/清除數據",
-        "preserved_data": "保留/保存的數據"
+        "preserved_data": "保留/保存的數據",
+        "close": "關閉"
     },
     "hero": {
         "title_prefix": "掌握",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "電子郵件或密碼無效。",
         "error_weak_password": "密碼應至少包含 6 個字元。",
         "error_auth_failed": "身份驗證失敗。請再試一次。",
-        "error_google_failed": "無法使用 Google 登入。"
+        "error_google_failed": "無法使用 Google 登入。",
+        "confirm_email": "請確認您的電子郵件："
     },
     "tools_ui": {
         "building_selection": "建築選擇",

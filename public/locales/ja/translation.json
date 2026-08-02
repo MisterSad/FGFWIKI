@@ -77,7 +77,8 @@
         "read_news": "ニュースを読む",
         "phase": "フェーズ",
         "reset_data": "データのリセット/クリア",
-        "preserved_data": "保存/保持されるデータ"
+        "preserved_data": "保存/保持されるデータ",
+        "close": "閉じる"
     },
     "hero": {
         "title_prefix": "征服せよ",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "無効なメールまたはパスワード。",
         "error_weak_password": "パスワードは少なくとも6文字である必要があります。",
         "error_auth_failed": "認証に失敗しました。再試行してください。",
-        "error_google_failed": "Googleでのログインに失敗しました。"
+        "error_google_failed": "Googleでのログインに失敗しました。",
+        "confirm_email": "メールアドレスをご確認ください:"
     },
     "tools_ui": {
         "building_selection": "建物の選択",

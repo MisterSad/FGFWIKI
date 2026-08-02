@@ -77,7 +77,8 @@
         "read_news": "Ler notícia",
         "phase": "Fase",
         "reset_data": "Redefinir/apagar dados",
-        "preserved_data": "Dados preservados/mantidos"
+        "preserved_data": "Dados preservados/mantidos",
+        "close": "Fechar"
     },
     "hero": {
         "title_prefix": "Domina a",
@@ -1258,7 +1259,8 @@
         "error_invalid_credential": "Email ou palavra-passe inválidos.",
         "error_weak_password": "A palavra-passe deve ter pelo menos 6 caracteres.",
         "error_auth_failed": "Falha na autenticação. Tenta novamente.",
-        "error_google_failed": "Falha ao iniciar sessão com Google."
+        "error_google_failed": "Falha ao iniciar sessão com Google.",
+        "confirm_email": "Por favor, confirme o seu e-mail:"
     },
     "tools_ui": {
         "building_selection": "Seleção de Edifício",

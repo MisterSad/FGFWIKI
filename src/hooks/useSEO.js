@@ -17,6 +17,8 @@ const ROUTE_KEYS = {
     '/tools': 'tools',
     '/gift-codes': 'gift_codes',
     '/creators': 'creators',
+    '/stella-anomaly': 'stella_anomaly',
+    '*': 'not_found',
 };
 
 // Supported languages — keep in sync with src/i18n.js and the language switcher.
@@ -24,6 +26,10 @@ const SUPPORTED_LANGS = [
     'en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt', 'fi', 'sv', 'nb',
     'zh-tw', 'nl', 'id', 'tr', 'vi', 'ru', 'th', 'ms', 'ar'
 ];
+
+// Language codes used in URLs (locale codes, not hreflang codes).
+const LANG_URL_CODES = SUPPORTED_LANGS;
+const DEFAULT_LANG = 'en';
 const OG_LOCALES = {
     en: 'en_US',
     fr: 'fr_FR',
@@ -118,23 +124,23 @@ function setJsonLd(data) {
     el.textContent = JSON.stringify(data);
 }
 
-function syncHreflangs(url) {
+function syncHreflangs(url, lang) {
     document.head
         .querySelectorAll('link[rel="alternate"][data-managed-hreflang]')
         .forEach((el) => el.remove());
-    SUPPORTED_LANGS.forEach((code) => {
+    LANG_URL_CODES.forEach((code) => {
         const el = document.createElement('link');
         el.setAttribute('rel', 'alternate');
         el.setAttribute('hreflang', HREFLANG[code] || code);
-        el.setAttribute('href', url);
+        el.setAttribute('href', url.replace(`/${lang}/`, `/${code}/`));
         el.setAttribute('data-managed-hreflang', 'true');
         document.head.appendChild(el);
     });
-    // x-default for unmatched locales
+    // x-default points to the default-language URL of the current page
     const xd = document.createElement('link');
     xd.setAttribute('rel', 'alternate');
     xd.setAttribute('hreflang', 'x-default');
-    xd.setAttribute('href', url);
+    xd.setAttribute('href', url.replace(`/${lang}/`, `/${DEFAULT_LANG}/`));
     xd.setAttribute('data-managed-hreflang', 'true');
     document.head.appendChild(xd);
 }
@@ -159,10 +165,12 @@ export default function useSEO() {
 
     useEffect(() => {
         const path = location.pathname === '/' ? '/' : location.pathname;
-        const url = `${SITE_URL}${path}`;
+        const langPath = (i18n.language || DEFAULT_LANG).split('-')[0];
+        const langCode = LANG_URL_CODES.includes(langPath) ? langPath : DEFAULT_LANG;
+        const url = `${SITE_URL}/${langCode}${path}`;
 
-        let pageTitle = '';
-        let description = '';
+        let pageTitle;
+        let description;
         let tip = null;
         let event = null;
 
@@ -251,7 +259,7 @@ export default function useSEO() {
         setMetaByName('twitter:title', fullTitle);
         setMetaByName('twitter:description', description);
         setLinkByRel('canonical', url);
-        syncHreflangs(url);
+        syncHreflangs(url, langCode);
 
         // Generative AI Engine Optimization (AIO/GEO) using JSON-LD Structured Data
         let schemaData = {
@@ -306,5 +314,5 @@ export default function useSEO() {
         }
 
         setJsonLd(schemaData);
-    }, [t, lang, location.pathname, key]);
+    }, [t, lang, i18n.language, location.pathname, key]);
 }

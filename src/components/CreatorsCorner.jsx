@@ -10,7 +10,7 @@ const creators = [
         id: "mirandus-plays",
         name: "Mirandus Plays",
         youtubeUrl: "https://www.youtube.com/@mirandusplaysmobile",
-        avatar: "/images/Mirandus.jpg",
+        avatar: "/images/Mirandus.webp",
         descKey: "creators_page.mirandus_desc",
         isPartner: true,
         youtubeHandle: "@mirandusplaysmobile",
@@ -21,8 +21,7 @@ const creators = [
 ];
 
 export default function CreatorsCorner() {
-    const { t, i18n } = useTranslation();
-    const lang = (i18n.language || 'en').split('-')[0];
+    const { t } = useTranslation();
     const { creatorId } = useParams();
     const navigate = useNavigate();
 
@@ -53,8 +52,7 @@ export default function CreatorsCorner() {
     };
 
     // Collapse all questions
-    const collapseAll = (e) => {
-        e.stopPropagation(); // Avoid triggering main panel collapse
+    const collapseAll = () => {
         setOpenQuestions({});
     };
 
@@ -149,7 +147,7 @@ export default function CreatorsCorner() {
         };
 
         fetchLatestVideos();
-    }, [creatorId]);
+    }, [creatorId, selectedCreator]);
 
     // Filter videos by search query
     const filteredVideos = videos.filter(video => 
@@ -224,6 +222,8 @@ export default function CreatorsCorner() {
                     }}>
                         <img
                             src={selectedCreator.avatar}
+                            loading="lazy"
+                            decoding="async"
                             alt={selectedCreator.name}
                             style={{
                                 width: '100%',
@@ -643,6 +643,8 @@ export default function CreatorsCorner() {
                                                                     }}>
                                                                         <img
                                                                             src={selectedCreator.avatar}
+                                                                            loading="lazy"
+                                                                            decoding="async"
                                                                             alt="Mirandus Avatar"
                                                                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                                                             onError={(e) => {
@@ -981,6 +983,8 @@ export default function CreatorsCorner() {
                         }}>
                             <img
                                 src={creator.avatar}
+                                loading="lazy"
+                                decoding="async"
                                 alt={creator.name}
                                 className="creator-avatar"
                                 style={{

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { 
@@ -55,7 +55,7 @@ const playBeep = (type) => {
             osc.start(now);
             osc.stop(now + 0.5);
         }
-    } catch (e) {
+    } catch {
         // AudioContext blocked or not supported
     }
 };
@@ -70,7 +70,6 @@ export default function StellaAnomaly() {
     const debugPhase = debugPhaseParam ? parseInt(debugPhaseParam, 10) : null;
     
     // Phase unlocks based on date (UTC dates to ensure consistency)
-    const phase1Date = new Date('2026-07-01T00:00:00Z');
     const phase2Date = new Date('2026-07-16T00:00:00Z');
     const phase3Date = new Date('2026-08-01T00:00:00Z');
     const phase4Date = new Date('2026-08-16T00:00:00Z');
@@ -93,22 +92,17 @@ export default function StellaAnomaly() {
         return 1; // Phase 1 is open by default as teaser / starting phase
     };
 
-    const currentActivePhase = debugPhase && debugPhase >= 1 && debugPhase <= 4 ? debugPhase : getCalendarPhase();
-    
     // State of user's puzzles progress (stored in localStorage to persist page refreshes)
     const [completedPhases, setCompletedPhases] = useState(() => {
         const saved = localStorage.getItem('stella_anomaly_completed');
         return saved ? JSON.parse(saved) : { 1: false, 2: false, 3: false, 4: false };
     });
     
-    // Track currently viewed phase tab
-    const [selectedTab, setSelectedTab] = useState(1);
-    
-    useEffect(() => {
-        // Automatically select the highest unlocked phase on first load
-        const highestUnlocked = debugPhase && debugPhase >= 1 && debugPhase <= 4 ? debugPhase : getCalendarPhase();
-        setSelectedTab(Math.min(highestUnlocked, 4));
-    }, [debugPhase, currentTime]);
+    // Track currently viewed phase tab (auto-selects the highest unlocked phase on first load)
+    const [selectedTab, setSelectedTab] = useState(() => {
+        if (debugPhase && debugPhase >= 1 && debugPhase <= 4) return debugPhase;
+        return Math.min(getCalendarPhase(), 4);
+    });
 
     // Save completed phases
     const markPhaseComplete = (phaseNum) => {
@@ -309,7 +303,7 @@ export default function StellaAnomaly() {
             setRank(userRank);
             setSubmitSuccess(true);
             markPhaseComplete(4);
-        } catch (err) {
+        } catch {
             setSubmitError(t('stella_anomaly.submit_failed') || 'Database transmission error. Please try again.');
             playBeep('error');
         } finally {
