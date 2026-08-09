@@ -3,11 +3,17 @@ import { useTranslation } from 'react-i18next';
 import {
     CalendarCheck, ClipboardCheck, BarChart3, Smartphone, ShieldAlert, Bell,
     Trophy, CheckCircle2, Crown, Star, MessageCircle, Building2,
-    Zap, Globe, Clock, ChevronDown, Sparkles
+    Zap, Globe, Clock, ChevronDown, Sparkles, Shield, User, Play
 } from 'lucide-react';
 import './GuildTool.css';
 
+const TOOL_URL = 'https://guildmanagement.vercel.app/';
 const DISCORD_URL = 'https://discord.gg/6NNe6zUbt6';
+
+const DEMO_ACCOUNTS = [
+    { icon: Shield, nameKey: 'guild_tool.demo_admin_name', id: 'DemoAdmin', password: 'demo1234' },
+    { icon: User, nameKey: 'guild_tool.demo_player_name', id: 'DemoPlayer', password: 'demo1234' },
+];
 
 const FEATURES = [
     { icon: CalendarCheck, titleKey: 'guild_tool.f1_title', descKey: 'guild_tool.f1_desc' },
@@ -161,7 +167,44 @@ export default function GuildTool() {
                 </div>
             </section>
 
-            {/* ── 4. PRICING ── */}
+            {/* ── 4. DEMO ── */}
+            <section className="gt-section">
+                <div className="gt-container">
+                    <SectionLabel>Demo</SectionLabel>
+                    <SectionTitle titleKey="guild_tool.demo_title" subtitleKey="guild_tool.demo_subtitle" />
+                    <div className="gt-demo-wrap">
+                        <div className="gt-demo-grid">
+                            {DEMO_ACCOUNTS.map(acc => {
+                                const Icon = acc.icon;
+                                return (
+                                    <div key={acc.id} className="gt-demo-card">
+                                        <div className="gt-demo-head">
+                                            <div className="gt-demo-icon"><Icon size={18} /></div>
+                                            <h3 className="gt-demo-title">{t(acc.nameKey)}</h3>
+                                        </div>
+                                        <div className="gt-demo-row">
+                                            <span>{t('guild_tool.demo_id')}</span>
+                                            <code>{acc.id}</code>
+                                        </div>
+                                        <div className="gt-demo-row">
+                                            <span>{t('guild_tool.demo_password')}</span>
+                                            <code>{acc.password}</code>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                        <div className="gt-demo-cta">
+                            <a className="gt-btn gt-btn-primary" href={TOOL_URL} target="_blank" rel="noopener noreferrer">
+                                <Play size={18} />
+                                <span>{t('guild_tool.demo_cta')}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── 5. PRICING ── */}
             <section className="gt-section">
                 <div className="gt-container">
                     <SectionLabel>Pricing</SectionLabel>
@@ -204,7 +247,7 @@ export default function GuildTool() {
                 </div>
             </section>
 
-            {/* ── 5. TESTIMONIALS ── */}
+            {/* ── 6. TESTIMONIALS ── */}
             <section className="gt-section gt-section-alt">
                 <div className="gt-container">
                     <SectionLabel>Testimonials</SectionLabel>
@@ -226,7 +269,7 @@ export default function GuildTool() {
                 </div>
             </section>
 
-            {/* ── 6. FAQ ── */}
+            {/* ── 7. FAQ ── */}
             <section className="gt-section">
                 <div className="gt-container gt-container-narrow">
                     <SectionLabel>FAQ</SectionLabel>
@@ -239,7 +282,7 @@ export default function GuildTool() {
                 </div>
             </section>
 
-            {/* ── 7. FINAL CTA ── */}
+            {/* ── 8. FINAL CTA ── */}
             <section className="gt-final">
                 <div className="gt-final-glow" aria-hidden="true" />
                 <div className="gt-final-inner">

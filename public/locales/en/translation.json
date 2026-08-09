@@ -1714,6 +1714,13 @@
         "q4": "Can we cancel anytime?",
         "a4": "Yes, your plan stays active until the end of the paid period.",
         "cta_title": "Ready to take your guild to the next level?",
-        "cta_note": "Questions? Join our Discord."
+        "cta_note": "Questions? Join our Discord.",
+        "demo_title": "Try the live demo",
+        "demo_subtitle": "Two ready-to-use accounts — explore events, attendance and rankings right now.",
+        "demo_admin_name": "Admin demo",
+        "demo_player_name": "Player demo",
+        "demo_id": "ID",
+        "demo_password": "Password",
+        "demo_cta": "Open the demo"
     }
 }

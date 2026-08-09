@@ -1712,6 +1712,13 @@
         "q4": "İstediğimiz zaman iptal edebilir miyiz?",
         "a4": "Evet, planın ödenen sürenin sonuna kadar aktif kalır.",
         "cta_title": "Gildini bir sonraki seviyeye taşımaya hazır mısın?",
-        "cta_note": "Soruların mı var? Discord'umuza katıl."
+        "cta_note": "Soruların mı var? Discord'umuza katıl.",
+        "demo_title": "Canlı demoyu dene",
+        "demo_subtitle": "Kullanıma hazır iki hesap — etkinlikleri, katılımı ve sıralamaları hemen keşfet.",
+        "demo_admin_name": "Admin demosu",
+        "demo_player_name": "Oyuncu demosu",
+        "demo_id": "ID",
+        "demo_password": "Şifre",
+        "demo_cta": "Demoyu aç"
     }
 }

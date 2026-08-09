@@ -1712,6 +1712,13 @@
         "q4": "Bolehkah kami membatalkan pada bila-bila masa?",
         "a4": "Ya, pelan anda kekal aktif sehingga tamat tempoh yang dibayar.",
         "cta_title": "Bersedia membawa guild anda ke tahap seterusnya?",
-        "cta_note": "Ada soalan? Sertai Discord kami."
+        "cta_note": "Ada soalan? Sertai Discord kami.",
+        "demo_title": "Cuba demo langsung",
+        "demo_subtitle": "Dua akaun sedia guna — terokai acara, kehadiran dan kedudukan sekarang.",
+        "demo_admin_name": "Demo admin",
+        "demo_player_name": "Demo pemain",
+        "demo_id": "ID",
+        "demo_password": "Kata laluan",
+        "demo_cta": "Buka demo"
     }
 }

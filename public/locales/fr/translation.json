@@ -1714,6 +1714,13 @@
         "q4": "Peut-on annuler à tout moment ?",
         "a4": "Oui, votre plan reste actif jusqu'à la fin de la période payée.",
         "cta_title": "Prêt à faire passer votre guilde au niveau supérieur ?",
-        "cta_note": "Des questions ? Rejoignez notre Discord."
+        "cta_note": "Des questions ? Rejoignez notre Discord.",
+        "demo_title": "Essayez la démo en direct",
+        "demo_subtitle": "Deux comptes prêts à l'emploi — explorez événements, présence et classements dès maintenant.",
+        "demo_admin_name": "Démo admin",
+        "demo_player_name": "Démo joueur",
+        "demo_id": "ID",
+        "demo_password": "Mot de passe",
+        "demo_cta": "Ouvrir la démo"
     }
 }

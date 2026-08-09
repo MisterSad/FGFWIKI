@@ -392,7 +392,105 @@
     margin: 0;
 }
 
-/* ── 4. PRICING ── */
+/* ── 4. DEMO ── */
+.gt-demo-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.gt-demo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 640px) {
+    .gt-demo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gt-demo-card {
+    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.4rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gt-demo-card:hover {
+    border-color: rgba(201, 168, 76, 0.5);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(201, 168, 76, 0.25);
+}
+
+.gt-demo-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.gt-demo-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(201, 168, 76, 0.35);
+    border-radius: 8px;
+    background: var(--gt-gold-soft);
+    color: var(--gold-bright);
+    flex-shrink: 0;
+}
+
+.gt-demo-title {
+    font-family: var(--font-hero);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.gt-demo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gt-demo-row:first-of-type {
+    border-top: none;
+}
+
+.gt-demo-row span {
+    font-family: var(--font-label);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+.gt-demo-row code {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--gold-bright);
+    background: rgba(201, 168, 76, 0.08);
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.gt-demo-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* ── 5. PRICING ── */
 .gt-plans {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

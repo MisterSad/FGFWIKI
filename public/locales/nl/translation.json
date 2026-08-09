@@ -1712,6 +1712,13 @@
         "q4": "Kunnen we altijd opzeggen?",
         "a4": "Ja, je abonnement blijft actief tot het einde van de betaalde periode.",
         "cta_title": "Klaar om je guild naar het volgende niveau te tillen?",
-        "cta_note": "Vragen? Word lid van onze Discord."
+        "cta_note": "Vragen? Word lid van onze Discord.",
+        "demo_title": "Probeer de live demo",
+        "demo_subtitle": "Twee kant-en-klare accounts — verken nu events, aanwezigheid en ranglijsten.",
+        "demo_admin_name": "Admin-demo",
+        "demo_player_name": "Speler-demo",
+        "demo_id": "ID",
+        "demo_password": "Wachtwoord",
+        "demo_cta": "Demo openen"
     }
 }

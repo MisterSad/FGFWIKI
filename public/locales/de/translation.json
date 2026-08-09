@@ -1712,6 +1712,13 @@
         "q4": "Können wir jederzeit kündigen?",
         "a4": "Ja, dein Plan bleibt bis zum Ende des bezahlten Zeitraums aktiv.",
         "cta_title": "Bereit, deine Gilde auf die nächste Stufe zu heben?",
-        "cta_note": "Fragen? Tritt unserem Discord bei."
+        "cta_note": "Fragen? Tritt unserem Discord bei.",
+        "demo_title": "Teste die Live-Demo",
+        "demo_subtitle": "Zwei einsatzbereite Konten – erkunde Events, Anwesenheit und Ranglisten sofort.",
+        "demo_admin_name": "Admin-Demo",
+        "demo_player_name": "Spieler-Demo",
+        "demo_id": "ID",
+        "demo_password": "Passwort",
+        "demo_cta": "Demo öffnen"
     }
 }

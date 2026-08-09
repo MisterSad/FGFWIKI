@@ -1712,6 +1712,13 @@
         "q4": "Voimmeko peruuttaa milloin vain?",
         "a4": "Kyllä, suunnitelmasi pysyy aktiivisena maksetun jakson loppuun asti.",
         "cta_title": "Valmiina viemään kilttasi seuraavalle tasolle?",
-        "cta_note": "Kysymyksiä? Liity Discordiimme."
+        "cta_note": "Kysymyksiä? Liity Discordiimme.",
+        "demo_title": "Kokeile live-demoa",
+        "demo_subtitle": "Kaksi valmista tiliä — tutustu tapahtumiin, läsnäoloon ja sijoituksiin heti.",
+        "demo_admin_name": "Ylläpitäjän demo",
+        "demo_player_name": "Pelaajan demo",
+        "demo_id": "ID",
+        "demo_password": "Salasana",
+        "demo_cta": "Avaa demo"
     }
 }

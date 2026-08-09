@@ -1712,6 +1712,13 @@
         "q4": "Chúng tôi có thể hủy bất cứ lúc nào không?",
         "a4": "Có, gói của bạn vẫn hoạt động đến hết thời gian đã thanh toán.",
         "cta_title": "Sẵn sàng đưa guild của bạn lên một tầm cao mới?",
-        "cta_note": "Có câu hỏi? Tham gia Discord của chúng tôi."
+        "cta_note": "Có câu hỏi? Tham gia Discord của chúng tôi.",
+        "demo_title": "Dùng thử bản demo trực tiếp",
+        "demo_subtitle": "Hai tài khoản sẵn sàng dùng — khám phá sự kiện, điểm danh và bảng xếp hạng ngay.",
+        "demo_admin_name": "Bản demo admin",
+        "demo_player_name": "Bản demo người chơi",
+        "demo_id": "ID",
+        "demo_password": "Mật khẩu",
+        "demo_cta": "Mở bản demo"
     }
 }

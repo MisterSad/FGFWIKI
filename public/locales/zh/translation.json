@@ -1712,6 +1712,13 @@
         "q4": "可以随时取消吗？",
         "a4": "可以，你的方案在已付费期限结束前一直有效。",
         "cta_title": "准备好将你的公会提升到新的高度了吗？",
-        "cta_note": "有问题？加入我们的 Discord。"
+        "cta_note": "有问题？加入我们的 Discord。",
+        "demo_title": "试试实时演示",
+        "demo_subtitle": "两个现成的账号——立即体验活动、出勤和排名。",
+        "demo_admin_name": "管理演示",
+        "demo_player_name": "玩家演示",
+        "demo_id": "ID",
+        "demo_password": "密码",
+        "demo_cta": "打开演示"
     }
 }

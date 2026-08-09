@@ -1712,6 +1712,13 @@
         "q4": "Kan vi avbryta när som helst?",
         "a4": "Ja, din plan förblir aktiv till slutet av den betalda perioden.",
         "cta_title": "Redo att ta ditt guild till nästa nivå?",
-        "cta_note": "Frågor? Gå med i vår Discord."
+        "cta_note": "Frågor? Gå med i vår Discord.",
+        "demo_title": "Prova live-demon",
+        "demo_subtitle": "Två färdiga konton — utforska events, närvaro och rankningar direkt.",
+        "demo_admin_name": "Admin-demo",
+        "demo_player_name": "Spelar-demo",
+        "demo_id": "ID",
+        "demo_password": "Lösenord",
+        "demo_cta": "Öppna demon"
     }
 }

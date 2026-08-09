@@ -1712,6 +1712,13 @@
         "q4": "언제든 취소할 수 있나요?",
         "a4": "네, 플랜은 결제 기간이 끝날 때까지 유지됩니다.",
         "cta_title": "길드를 다음 단계로 끌어올릴 준비가 되셨나요?",
-        "cta_note": "질문이 있나요? Discord에 참여하세요."
+        "cta_note": "질문이 있나요? Discord에 참여하세요.",
+        "demo_title": "라이브 데모 체험하기",
+        "demo_subtitle": "바로 사용 가능한 두 계정. 지금 바로 이벤트, 출석, 랭킹을 둘러보세요.",
+        "demo_admin_name": "관리자 데모",
+        "demo_player_name": "플레이어 데모",
+        "demo_id": "ID",
+        "demo_password": "비밀번호",
+        "demo_cta": "데모 열기"
     }
 }

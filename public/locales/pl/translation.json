@@ -1712,6 +1712,13 @@
         "q4": "Czy można anulować w dowolnym momencie?",
         "a4": "Tak, twój plan pozostaje aktywny do końca opłaconego okresu.",
         "cta_title": "Gotowy, aby przenieść swoją gildię na wyższy poziom?",
-        "cta_note": "Pytania? Dołącz do naszego Discorda."
+        "cta_note": "Pytania? Dołącz do naszego Discorda.",
+        "demo_title": "Wypróbuj demo na żywo",
+        "demo_subtitle": "Dwa gotowe do użycia konta — poznaj wydarzenia, frekwencję i rankingi od razu.",
+        "demo_admin_name": "Demo admina",
+        "demo_player_name": "Demo gracza",
+        "demo_id": "ID",
+        "demo_password": "Hasło",
+        "demo_cta": "Otwórz demo"
     }
 }

@@ -1712,6 +1712,13 @@
         "q4": "Possiamo cancellare in qualsiasi momento?",
         "a4": "Sì, il tuo piano resta attivo fino alla fine del periodo pagato.",
         "cta_title": "Pronto a portare la tua gilda al livello successivo?",
-        "cta_note": "Domande? Unisciti al nostro Discord."
+        "cta_note": "Domande? Unisciti al nostro Discord.",
+        "demo_title": "Prova la demo dal vivo",
+        "demo_subtitle": "Due account pronti all'uso: esplora subito eventi, partecipazione e classifiche.",
+        "demo_admin_name": "Demo admin",
+        "demo_player_name": "Demo giocatore",
+        "demo_id": "ID",
+        "demo_password": "Password",
+        "demo_cta": "Apri la demo"
     }
 }

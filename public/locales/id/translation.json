@@ -1712,6 +1712,13 @@
         "q4": "Bisakah kami berhenti berlangganan kapan saja?",
         "a4": "Ya, paketmu tetap aktif hingga akhir periode berbayar.",
         "cta_title": "Siap membawa guild-mu ke level berikutnya?",
-        "cta_note": "Ada pertanyaan? Gabung ke Discord kami."
+        "cta_note": "Ada pertanyaan? Gabung ke Discord kami.",
+        "demo_title": "Coba demo langsung",
+        "demo_subtitle": "Dua akun siap pakai — jelajahi event, kehadiran, dan peringkat sekarang.",
+        "demo_admin_name": "Demo admin",
+        "demo_player_name": "Demo pemain",
+        "demo_id": "ID",
+        "demo_password": "Kata sandi",
+        "demo_cta": "Buka demo"
     }
 }
