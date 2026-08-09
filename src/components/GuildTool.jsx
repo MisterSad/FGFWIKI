@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
     CalendarCheck, ClipboardCheck, BarChart3, Smartphone, ShieldAlert, Bell,
-    Trophy, Rocket, Users, CheckCircle2, Crown, Star, MessageCircle,
-    Zap, Globe, Clock, KeyRound, ChevronDown, Sparkles, ArrowRight
+    Trophy, CheckCircle2, Crown, Star, MessageCircle, Building2,
+    Zap, Globe, Clock, ChevronDown, Sparkles
 } from 'lucide-react';
 import './GuildTool.css';
 
-const TOOL_URL = 'https://guildmanagement.vercel.app/';
 const DISCORD_URL = 'https://discord.gg/6NNe6zUbt6';
 
 const FEATURES = [
@@ -20,7 +19,7 @@ const FEATURES = [
 ];
 
 const STEPS = [
-    { icon: Users, titleKey: 'guild_tool.s1_title', descKey: 'guild_tool.s1_desc' },
+    { icon: Building2, titleKey: 'guild_tool.s1_title', descKey: 'guild_tool.s1_desc' },
     { icon: Zap, titleKey: 'guild_tool.s2_title', descKey: 'guild_tool.s2_desc' },
     { icon: Trophy, titleKey: 'guild_tool.s3_title', descKey: 'guild_tool.s3_desc' },
 ];
@@ -100,11 +99,6 @@ export default function GuildTool() {
                     </p>
 
                     <div className="gt-hero-cta-row">
-                        <a className="gt-btn gt-btn-primary" href={TOOL_URL} target="_blank" rel="noopener noreferrer">
-                            <KeyRound size={18} />
-                            <span>{t('guild_tool.hero_cta_primary')}</span>
-                            <ArrowRight size={16} />
-                        </a>
                         <a className="gt-btn gt-btn-discord" href={DISCORD_URL} target="_blank" rel="noopener noreferrer">
                             <MessageCircle size={18} />
                             <span>{t('guild_tool.hero_cta_secondary')}</span>
@@ -246,11 +240,6 @@ export default function GuildTool() {
                 <div className="gt-final-inner">
                     <h2 className="gt-final-title">{t('guild_tool.cta_title')}</h2>
                     <div className="gt-hero-cta-row">
-                        <a className="gt-btn gt-btn-primary" href={TOOL_URL} target="_blank" rel="noopener noreferrer">
-                            <Rocket size={18} />
-                            <span>{t('guild_tool.cta_button')}</span>
-                            <ArrowRight size={16} />
-                        </a>
                         <a className="gt-btn gt-btn-discord" href={DISCORD_URL} target="_blank" rel="noopener noreferrer">
                             <MessageCircle size={18} />
                             <span>{t('guild_tool.hero_cta_secondary')}</span>
