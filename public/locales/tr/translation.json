@@ -1650,7 +1650,7 @@
     },
     "guild_tool": {
         "hero_kicker": "Guild Management Tool",
-        "hero_title": "Gildini bir profesyonel gibi yönet",
+        "hero_title": "Gildini\nbir profesyonel gibi yönet",
         "hero_subtitle": "Etkinlikler, katılım, sıralamalar, Glory ve abonelikler tek araçta — Foundation: Galactic Frontier gildleri için üretildi.",
         "hero_cta_secondary": "Discord'umuza katıl",
         "badge_cloud": "%100 bulut",

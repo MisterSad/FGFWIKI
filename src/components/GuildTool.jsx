@@ -91,7 +91,12 @@ export default function GuildTool() {
                     </div>
 
                     <h1 className="gt-hero-title">
-                        {t('guild_tool.hero_title')}
+                        {t('guild_tool.hero_title').split('\n').map((line, i) => (
+                            <React.Fragment key={i}>
+                                {i > 0 && <br />}
+                                {line}
+                            </React.Fragment>
+                        ))}
                     </h1>
 
                     <p className="gt-hero-subtitle">
