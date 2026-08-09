@@ -620,6 +620,59 @@ p {
   color: var(--gold-bright);
 }
 
+/* Featured tab (Guild Management Tool) — extra visibility */
+.tab-item-featured {
+  color: var(--gold-bright);
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.22), rgba(201, 168, 76, 0.08));
+  border: 1px solid rgba(201, 168, 76, 0.45);
+  border-radius: 6px;
+  margin: 0.3rem 0.1rem;
+  padding: 0.6rem 0.85rem;
+  box-shadow: 0 0 16px rgba(201, 168, 76, 0.25), inset 0 0 12px rgba(201, 168, 76, 0.08);
+}
+
+.tab-item-featured:hover {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 24px rgba(232, 201, 106, 0.4), inset 0 0 14px rgba(201, 168, 76, 0.12);
+}
+
+.tab-item-featured .tab-icon svg {
+  color: var(--gold-bright);
+  filter: drop-shadow(0 0 6px rgba(232, 201, 106, 0.6));
+}
+
+.tab-item-featured.active {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+  color: #1a1405;
+  border-color: var(--gold-bright);
+}
+
+.tab-item-featured.active .tab-icon svg {
+  color: #1a1405;
+  filter: none;
+}
+
+.tab-item-featured .tab-indicator {
+  display: none;
+}
+
+.tab-badge-featured {
+  margin-left: 6px;
+  background: var(--gold-bright);
+  color: #1a1405;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(232, 201, 106, 0.6);
+}
+
+.tab-item-featured.active .tab-badge-featured {
+  background: #1a1405;
+  color: var(--gold-bright);
+}
+
 .sticky-tabs-wrapper {
   position: sticky;
   top: calc(var(--header-h) + var(--safe-top));
@@ -1923,6 +1976,23 @@ footer {
 
 .mobile-more-card.active .mobile-more-card__label {
   color: var(--gold-bright);
+}
+
+/* Featured card in the mobile "More" drawer (Guild Management Tool) */
+.mobile-more-card-featured {
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.18), rgba(201, 168, 76, 0.05));
+  border-color: rgba(201, 168, 76, 0.5);
+  box-shadow: 0 0 20px rgba(201, 168, 76, 0.2), inset 0 0 14px rgba(201, 168, 76, 0.06);
+}
+
+.mobile-more-card-featured:hover,
+.mobile-more-card-featured.active {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 26px rgba(232, 201, 106, 0.4), inset 0 0 14px rgba(201, 168, 76, 0.1);
+}
+
+.mobile-more-card-featured .mobile-more-card__icon {
+  filter: drop-shadow(0 0 6px rgba(232, 201, 106, 0.6));
 }
 
 @keyframes slideUp {

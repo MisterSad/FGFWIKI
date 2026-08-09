@@ -50,6 +50,7 @@ const staticRoutes = [
   { path: '/gift-codes', changefreq: 'daily', priority: '0.9' },
   { path: '/creators', changefreq: 'weekly', priority: '0.8' },
   { path: '/creators/mirandus-plays', changefreq: 'weekly', priority: '0.8' },
+  { path: '/guild-tool', changefreq: 'monthly', priority: '0.9' },
 ];
 
 // Helper to generate alternate hreflangs for a given language-prefixed URL.

@@ -18,6 +18,7 @@ const ROUTE_KEYS = {
     '/gift-codes': 'gift_codes',
     '/creators': 'creators',
     '/stella-anomaly': 'stella_anomaly',
+    '/guild-tool': 'guild_tool',
     '*': 'not_found',
 };
 

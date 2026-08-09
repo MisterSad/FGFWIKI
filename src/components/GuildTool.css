@@ -1,0 +1,696 @@
+/* ── Guild Management Tool — promotional landing page ── */
+
+.gt-page {
+    --gt-gold-soft: rgba(201, 168, 76, 0.12);
+    --gt-discord: #5865F2;
+    --gt-discord-hover: #6b78ff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sections */
+.gt-section {
+    padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 2rem);
+    position: relative;
+    z-index: 1;
+}
+
+.gt-section-alt {
+    background: linear-gradient(180deg, rgba(201, 168, 76, 0.035), rgba(6, 7, 16, 0) 60%);
+}
+
+.gt-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gt-container-narrow {
+    max-width: 760px;
+}
+
+/* Section headings */
+.gt-section-head {
+    text-align: center;
+    margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.gt-section-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.gt-section-label::before,
+.gt-section-label::after {
+    content: '';
+    height: 1px;
+    width: clamp(28px, 6vw, 56px);
+    background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.gt-section-label::after {
+    background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.gt-section-label span {
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--gold);
+}
+
+.gt-section-title {
+    font-family: var(--font-hero);
+    font-weight: 800;
+    font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 auto 0.75rem;
+    color: var(--gold-bright);
+    max-width: 720px;
+}
+
+.gt-section-subtitle {
+    color: var(--text-secondary);
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ── 1. HERO ── */
+.gt-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(4rem, 12vw, 8rem) clamp(1rem, 4vw, 2rem) clamp(3rem, 8vw, 6rem);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.gt-hero-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 60% 45% at 50% 0%, rgba(201, 168, 76, 0.14), transparent 70%),
+        radial-gradient(ellipse 40% 30% at 80% 80%, rgba(88, 101, 242, 0.08), transparent 70%);
+}
+
+.gt-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+}
+
+.gt-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(201, 168, 76, 0.15), rgba(201, 168, 76, 0.05));
+    color: var(--gold-bright);
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.75rem;
+}
+
+.gt-hero-title {
+    font-family: var(--font-hero);
+    font-weight: 900;
+    font-size: clamp(2.2rem, 7vw, 4.5rem);
+    line-height: 1.08;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+    background: linear-gradient(135deg, #fff 0%, var(--gold-bright) 45%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--gold-bright);
+}
+
+.gt-hero-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 0 auto 2.25rem;
+    line-height: 1.6;
+}
+
+.gt-hero-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+.gt-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.6rem;
+    border-radius: 6px;
+    font-family: var(--font-label);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.gt-btn:hover {
+    transform: translateY(-2px);
+}
+
+.gt-btn-primary {
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    color: #1a1405;
+    box-shadow: 0 6px 24px rgba(201, 168, 76, 0.35), 0 0 0 1px rgba(201, 168, 76, 0.6);
+}
+
+.gt-btn-primary:hover {
+    box-shadow: 0 10px 34px rgba(201, 168, 76, 0.5), 0 0 0 1px rgba(232, 201, 106, 0.9);
+}
+
+.gt-btn-discord {
+    background: var(--gt-discord);
+    color: #fff;
+    box-shadow: 0 6px 24px rgba(88, 101, 242, 0.35);
+}
+
+.gt-btn-discord:hover {
+    background: var(--gt-discord-hover);
+    box-shadow: 0 10px 34px rgba(88, 101, 242, 0.5);
+}
+
+.gt-btn-sm {
+    padding: 0.6rem 1.1rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+/* Trust badges */
+.gt-hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.gt-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: rgba(13, 14, 20, 0.7);
+    color: var(--text-primary);
+    font-family: var(--font-label);
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
+}
+
+.gt-badge svg {
+    color: var(--gold);
+}
+
+/* ── 2. FEATURES ── */
+.gt-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+    .gt-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gt-features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gt-feature-card {
+    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.6rem 1.4rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.gt-feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+.gt-feature-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(201, 168, 76, 0.2);
+    transform: translateY(-3px);
+}
+
+.gt-feature-card:hover::before {
+    opacity: 1;
+}
+
+.gt-feature-icon {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(201, 168, 76, 0.35);
+    border-radius: 8px;
+    background: var(--gt-gold-soft);
+    color: var(--gold-bright);
+    margin-bottom: 1rem;
+}
+
+.gt-feature-title {
+    font-family: var(--font-hero);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem;
+}
+
+.gt-feature-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ── 3. HOW IT WORKS ── */
+.gt-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    .gt-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gt-steps::before {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 16%;
+    right: 16%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.35;
+}
+
+@media (max-width: 700px) {
+    .gt-steps::before {
+        display: none;
+    }
+}
+
+.gt-step {
+    text-align: center;
+    padding: 0 0.75rem;
+    position: relative;
+}
+
+.gt-step-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.1rem;
+}
+
+.gt-step-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(201, 168, 76, 0.45);
+    background: var(--gt-gold-soft);
+    color: var(--gold-bright);
+    box-shadow: 0 0 22px rgba(201, 168, 76, 0.2);
+}
+
+.gt-step-num {
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    color: var(--gold);
+    opacity: 0.8;
+}
+
+.gt-step-title {
+    font-family: var(--font-hero);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem;
+}
+
+.gt-step-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ── 4. PRICING ── */
+.gt-plans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 820px) {
+    .gt-plans {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gt-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1.1rem 1.25rem;
+    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gt-plan:hover {
+    border-color: rgba(201, 168, 76, 0.5);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(201, 168, 76, 0.25);
+}
+
+.gt-plan-name {
+    font-family: var(--font-label);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+.gt-plan-price {
+    font-family: var(--font-hero);
+    font-weight: 800;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    color: var(--gold-bright);
+    white-space: nowrap;
+}
+
+.gt-plan-currency {
+    font-size: 0.6em;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+}
+
+.gt-plan-check {
+    color: var(--accent-teal);
+    display: flex;
+}
+
+.gt-pricing-note {
+    text-align: center;
+    padding: 1.1rem 1.25rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.gt-pricing-note p {
+    margin: 0 0 0.5rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.gt-payments {
+    color: var(--text-secondary);
+    font-family: var(--font-label);
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.gt-payments-label {
+    color: var(--gold);
+}
+
+.gt-tenant-card {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 1.4rem 1.5rem;
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.08), rgba(88, 101, 242, 0.02));
+    border: 1px solid rgba(88, 101, 242, 0.3);
+    border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+    .gt-tenant-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.gt-tenant-icon {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: rgba(88, 101, 242, 0.15);
+    color: #8b96ff;
+}
+
+.gt-tenant-text {
+    flex: 1;
+}
+
+.gt-tenant-title {
+    font-family: var(--font-hero);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 0.3rem;
+    color: var(--text-primary);
+}
+
+.gt-tenant-desc {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+/* ── 5. TESTIMONIALS ── */
+.gt-testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+@media (max-width: 800px) {
+    .gt-testimonials {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gt-testimonial {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gt-testimonial-quote {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    font-style: italic;
+}
+
+.gt-testimonial-foot {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+.gt-testimonial-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--gt-gold-soft);
+    border: 1px solid rgba(201, 168, 76, 0.35);
+    color: var(--gold-bright);
+    flex-shrink: 0;
+}
+
+.gt-testimonial-role {
+    font-family: var(--font-label);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+/* ── 6. FAQ ── */
+.gt-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.gt-faq-item {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-surface);
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.gt-faq-item.open {
+    border-color: rgba(201, 168, 76, 0.45);
+}
+
+.gt-faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.05rem 1.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-family: var(--font-label);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.gt-faq-question:hover {
+    color: var(--gold-bright);
+}
+
+.gt-faq-chevron {
+    flex-shrink: 0;
+    color: var(--gold);
+    transition: transform 0.25s ease;
+}
+
+.gt-faq-item.open .gt-faq-chevron {
+    transform: rotate(180deg);
+}
+
+.gt-faq-answer {
+    padding: 0 1.25rem 1.15rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    animation: gtFadeUp 0.25s ease-out;
+}
+
+@keyframes gtFadeUp {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 7. FINAL CTA ── */
+.gt-final {
+    position: relative;
+    text-align: center;
+    padding: clamp(3.5rem, 10vw, 7rem) clamp(1rem, 4vw, 2rem);
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+}
+
+.gt-final-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 55% 50% at 50% 100%, rgba(201, 168, 76, 0.16), transparent 70%),
+        radial-gradient(ellipse 35% 30% at 15% 10%, rgba(88, 101, 242, 0.08), transparent 70%);
+}
+
+.gt-final-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.gt-final-title {
+    font-family: var(--font-hero);
+    font-weight: 900;
+    font-size: clamp(1.6rem, 5vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #fff 0%, var(--gold-bright) 50%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--gold-bright);
+    margin: 0 0 2rem;
+}
+
+.gt-final-note {
+    margin: 1.5rem 0 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}

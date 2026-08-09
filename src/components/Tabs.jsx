@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles, Video } from 'lucide-react';
+import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles, Video, Crown } from 'lucide-react';
 
 // Map route paths to icons and translation labels
 const NAV_ITEMS = [
     { path: '/home', labelKey: 'navigation.home', icon: Home },
+    { path: '/guild-tool', labelKey: 'navigation.guild_tool', icon: Crown, featured: true },
     { path: '/news', labelKey: 'navigation.news', icon: Newspaper },
     { path: '/guides', labelKey: 'navigation.guides', icon: BookOpen },
     { path: '/champions', labelKey: 'navigation.champions', icon: Trophy },
@@ -52,7 +53,7 @@ export default function Tabs() {
                                 <NavLink
                                     key={item.path}
                                     to={item.path}
-                                    className={({ isActive }) => `tab-item ${isActive ? 'active' : ''}`}
+                                    className={({ isActive }) => `tab-item ${isActive ? 'active' : ''} ${item.featured ? 'tab-item-featured' : ''}`}
                                 >
                                     {({ isActive }) => (
                                         <>
@@ -75,6 +76,9 @@ export default function Tabs() {
                                                     }}>
                                                         {item.badge}
                                                     </span>
+                                                )}
+                                                {item.featured && (
+                                                    <span className="tab-badge-featured">NEW</span>
                                                 )}
                                             </span>
                                             {isActive && <div className="tab-indicator" />}
@@ -150,6 +154,31 @@ export default function Tabs() {
                         />
                         <div className="mobile-more-drawer">
                             <div className="mobile-more-grid">
+                                {/* Guild Management Tool — featured */}
+                                <NavLink
+                                    to="/guild-tool"
+                                    className={() => `mobile-more-card mobile-more-card-featured ${location.pathname.startsWith('/guild-tool') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                    style={{ position: 'relative', gridColumn: '1 / -1' }}
+                                >
+                                    <Crown className="mobile-more-card__icon" size={24} style={{ color: 'var(--gold-bright)' }} />
+                                    <span className="mobile-more-card__label">{t('navigation.guild_tool')}</span>
+                                    <span style={{
+                                        position: 'absolute',
+                                        top: '6px',
+                                        right: '6px',
+                                        background: 'var(--gold)',
+                                        color: 'var(--bg-void)',
+                                        fontSize: '8px',
+                                        fontWeight: 'bold',
+                                        padding: '1px 4px',
+                                        borderRadius: '2px',
+                                        letterSpacing: '0'
+                                    }}>
+                                        NEW
+                                    </span>
+                                </NavLink>
+
                                 {/* Stella Anomaly */}
                                 {isEventVisible && (
                                     <NavLink
