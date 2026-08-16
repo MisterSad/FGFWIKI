@@ -944,19 +944,38 @@ export default function StellaAnomaly() {
                                                         </div>
                                                     ) : (
                                                         <div>
-                                                            {/* Top 3 Podium Cards */}
+                                                            {/* Top 3 Podium Cards - Always 3 columns horizontal */}
                                                             <div style={{
                                                                 display: 'grid',
-                                                                gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
-                                                                gap: '1rem',
+                                                                gridTemplateColumns: 'repeat(3, 1fr)',
+                                                                gap: '0.75rem',
                                                                 marginBottom: '1.5rem'
                                                             }}>
                                                                 {[1, 2, 3].map((pos) => {
                                                                     const entry = leaderboard.find(e => e.rank === pos);
                                                                     const isUser = entry && (entry.gameUid === localStorage.getItem('stella_anomaly_submitted_uid'));
-                                                                    const borderColor = pos === 1 ? 'rgba(232, 201, 106, 0.6)' : pos === 2 ? 'rgba(192, 192, 192, 0.6)' : 'rgba(205, 127, 50, 0.6)';
-                                                                    const titleColor = pos === 1 ? 'var(--gold-bright)' : pos === 2 ? '#E0E0E0' : '#CD7F32';
-                                                                    const bgGlow = pos === 1 ? 'rgba(232, 201, 106, 0.08)' : pos === 2 ? 'rgba(192, 192, 192, 0.05)' : 'rgba(205, 127, 50, 0.05)';
+                                                                    
+                                                                    // Gold, Silver, Bronze specific styles
+                                                                    const borderColor = pos === 1 
+                                                                        ? 'rgba(232, 201, 106, 0.7)' 
+                                                                        : pos === 2 
+                                                                            ? 'rgba(200, 215, 225, 0.65)' 
+                                                                            : 'rgba(225, 140, 75, 0.65)';
+                                                                    const titleColor = pos === 1 
+                                                                        ? 'var(--gold-bright)' 
+                                                                        : pos === 2 
+                                                                            ? '#E2E8F0' 
+                                                                            : '#ED8936';
+                                                                    const bgGradient = pos === 1 
+                                                                        ? 'linear-gradient(180deg, rgba(232, 201, 106, 0.15) 0%, rgba(232, 201, 106, 0.03) 100%)' 
+                                                                        : pos === 2 
+                                                                            ? 'linear-gradient(180deg, rgba(200, 215, 225, 0.12) 0%, rgba(200, 215, 225, 0.02) 100%)' 
+                                                                            : 'linear-gradient(180deg, rgba(225, 140, 75, 0.12) 0%, rgba(225, 140, 75, 0.02) 100%)';
+                                                                    const glowShadow = pos === 1 
+                                                                        ? '0 0 16px rgba(232, 201, 106, 0.2), inset 0 0 10px rgba(232, 201, 106, 0.06)' 
+                                                                        : pos === 2 
+                                                                            ? '0 0 14px rgba(200, 215, 225, 0.15), inset 0 0 10px rgba(200, 215, 225, 0.04)' 
+                                                                            : '0 0 14px rgba(225, 140, 75, 0.15), inset 0 0 10px rgba(225, 140, 75, 0.04)';
                                                                     const rewardText = pos === 1 ? '1,000 Plat.' : pos === 2 ? '500 Plat.' : '250 Plat.';
                                                                     const badgeIcon = pos === 1 ? '🥇' : pos === 2 ? '🥈' : '🥉';
                                                                     const rankTitle = pos === 1 ? t('stella_anomaly.rank_1_title') || '1st PLACE' : pos === 2 ? t('stella_anomaly.rank_2_title') || '2nd PLACE' : t('stella_anomaly.rank_3_title') || '3rd PLACE';
@@ -965,51 +984,62 @@ export default function StellaAnomaly() {
                                                                         <div
                                                                             key={pos}
                                                                             style={{
-                                                                                background: isUser ? 'rgba(78, 205, 196, 0.12)' : bgGlow,
+                                                                                background: isUser ? 'rgba(78, 205, 196, 0.12)' : bgGradient,
                                                                                 border: isUser ? '1px solid var(--accent-teal)' : `1px solid ${borderColor}`,
                                                                                 borderRadius: '6px',
-                                                                                padding: '1rem',
+                                                                                padding: '1rem 0.5rem',
                                                                                 textAlign: 'center',
                                                                                 position: 'relative',
-                                                                                boxShadow: isUser ? '0 0 12px rgba(78, 205, 196, 0.2)' : 'none'
+                                                                                boxShadow: isUser ? '0 0 16px rgba(78, 205, 196, 0.35)' : glowShadow,
+                                                                                minWidth: 0,
+                                                                                display: 'flex',
+                                                                                flexDirection: 'column',
+                                                                                justifyContent: 'space-between'
                                                                             }}
                                                                         >
-                                                                            <div style={{ fontSize: '1.6rem', marginBottom: '0.3rem' }}>{badgeIcon}</div>
-                                                                            <div style={{ color: titleColor, fontWeight: 'bold', fontSize: '0.85rem' }}>
-                                                                                {rankTitle}
-                                                                            </div>
-                                                                            <div style={{
-                                                                                marginTop: '0.6rem',
-                                                                                color: '#FFFFFF',
-                                                                                fontWeight: 'bold',
-                                                                                fontSize: '0.95rem',
-                                                                                fontFamily: 'var(--font-mono)'
-                                                                            }}>
-                                                                                {entry ? `UID: ${entry.gameUid}` : <span style={{ opacity: 0.4, fontStyle: 'italic', fontSize: '0.8rem' }}>---</span>}
-                                                                            </div>
-                                                                            <div style={{
-                                                                                marginTop: '0.4rem',
-                                                                                fontSize: '0.7rem',
-                                                                                color: 'var(--accent-teal)',
-                                                                                fontWeight: 'bold'
-                                                                            }}>
-                                                                                {rewardText}
-                                                                            </div>
-                                                                            {entry && entry.submittedAt && (
-                                                                                <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginTop: '0.4rem', opacity: 0.7 }}>
-                                                                                    {new Date(entry.submittedAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
+                                                                            <div>
+                                                                                <div style={{ fontSize: '1.6rem', marginBottom: '0.2rem' }}>{badgeIcon}</div>
+                                                                                <div style={{ color: titleColor, fontWeight: 'bold', fontSize: '0.8rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                                                                                    {rankTitle}
                                                                                 </div>
-                                                                            )}
+                                                                                <div style={{
+                                                                                    marginTop: '0.5rem',
+                                                                                    color: '#FFFFFF',
+                                                                                    fontWeight: 'bold',
+                                                                                    fontSize: '0.85rem',
+                                                                                    fontFamily: 'var(--font-mono)',
+                                                                                    whiteSpace: 'nowrap',
+                                                                                    overflow: 'hidden',
+                                                                                    textOverflow: 'ellipsis'
+                                                                                }}>
+                                                                                    {entry ? `UID: ${entry.gameUid}` : <span style={{ opacity: 0.4, fontStyle: 'italic', fontSize: '0.75rem' }}>---</span>}
+                                                                                </div>
+                                                                            </div>
+                                                                            <div>
+                                                                                <div style={{
+                                                                                    marginTop: '0.4rem',
+                                                                                    fontSize: '0.7rem',
+                                                                                    color: 'var(--accent-teal)',
+                                                                                    fontWeight: 'bold'
+                                                                                }}>
+                                                                                    {rewardText}
+                                                                                </div>
+                                                                                {entry && entry.submittedAt && (
+                                                                                    <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginTop: '0.3rem', opacity: 0.7 }}>
+                                                                                        {new Date(entry.submittedAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
+                                                                                    </div>
+                                                                                )}
+                                                                            </div>
                                                                             {isUser && (
                                                                                 <div style={{
                                                                                     position: 'absolute',
                                                                                     top: '-8px',
-                                                                                    right: '8px',
+                                                                                    right: '6px',
                                                                                     background: 'var(--accent-teal)',
                                                                                     color: '#060710',
-                                                                                    fontSize: '0.6rem',
+                                                                                    fontSize: '0.55rem',
                                                                                     fontWeight: 'bold',
-                                                                                    padding: '0.1rem 0.4rem',
+                                                                                    padding: '0.1rem 0.35rem',
                                                                                     borderRadius: '3px'
                                                                                 }}>
                                                                                     {t('stella_anomaly.leaderboard_you') || 'YOU'}
