@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, collection, addDoc, runTransaction, query, orderBy, where, deleteDoc, onSnapshot, serverTimestamp } from "firebase/firestore";
+import { doc, getDoc, setDoc, collection, addDoc, runTransaction, query, orderBy, where, deleteDoc, onSnapshot, serverTimestamp, getDocs, limit } from "firebase/firestore";
 import { db } from "./firebase";
 
 /**
@@ -99,6 +99,49 @@ export const submitStellaAnomalyUid = async (gameUid, secretCode, firebaseUid = 
     } catch (error) {
         console.error("Error submitting Stella Anomaly UID and getting rank: ", error);
         throw error;
+    }
+};
+
+/**
+ * Fetch top submissions for the Stella Anomaly event leaderboard.
+ * 
+ * @param {number} maxEntries Maximum number of submissions to fetch (default 20)
+ * @returns {Promise<Array<{id: string, rank: number, gameUid: string, submittedAt: string}>>}
+ */
+export const getStellaAnomalyLeaderboard = async (maxEntries = 20) => {
+    if (!db) {
+        // Fallback for mock/local data
+        const localUid = localStorage.getItem('stella_anomaly_submitted_uid');
+        const localRank = localStorage.getItem('stella_anomaly_submitted_rank');
+        if (localUid && localRank) {
+            return [{
+                id: 'local-submission',
+                rank: parseInt(localRank, 10),
+                gameUid: localUid,
+                submittedAt: new Date().toISOString()
+            }];
+        }
+        return [];
+    }
+
+    try {
+        const colRef = collection(db, "stella_anomaly_submissions");
+        const q = query(colRef, orderBy("rank", "asc"), limit(maxEntries));
+        const querySnapshot = await getDocs(q);
+        const list = [];
+        querySnapshot.forEach((docSnap) => {
+            const data = docSnap.data();
+            list.push({
+                id: docSnap.id,
+                rank: data.rank,
+                gameUid: data.gameUid,
+                submittedAt: data.submittedAt
+            });
+        });
+        return list;
+    } catch (error) {
+        console.error("Error fetching Stella Anomaly leaderboard: ", error);
+        return [];
     }
 };
 

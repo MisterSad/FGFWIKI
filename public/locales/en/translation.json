@@ -1568,7 +1568,15 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "leaderboard_title": "COMMANDERS PODIUM & LEADERBOARD",
+        "leaderboard_refresh": "REFRESH",
+        "leaderboard_empty": "No transmissions logged yet.",
+        "leaderboard_col_rank": "RANK",
+        "leaderboard_col_uid": "COMMANDER UID",
+        "leaderboard_col_date": "TIME (UTC)",
+        "leaderboard_col_reward": "STATUS / REWARD",
+        "leaderboard_you": "YOU"
     },
     "creators_page": {
         "title": "CREATORS CORNER",

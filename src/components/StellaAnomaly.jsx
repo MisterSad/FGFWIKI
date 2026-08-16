@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { 
     Terminal, Cpu, ShieldAlert, CheckCircle2, AlertTriangle, 
     Play, RefreshCw, Lock, Unlock, Send, Sparkles, 
-    Swords, Coins, Zap, Shield, Database, Radio
+    Swords, Coins, Zap, Shield, Database, Radio, Trophy, Medal
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { submitStellaAnomalyUid } from '../firebaseUtils';
+import { submitStellaAnomalyUid, getStellaAnomalyLeaderboard } from '../firebaseUtils';
 
 // Helper for play synth beep sounds (self-contained Web Audio API)
 const playBeep = (type) => {
@@ -123,6 +123,7 @@ export default function StellaAnomaly() {
             localStorage.removeItem('stella_anomaly_submitted_rank');
             setRank(null);
             setSubmitSuccess(false);
+            setLeaderboard([]);
             setGameUid('');
             setFinalSecretCode('');
             playBeep('power');
@@ -260,6 +261,26 @@ export default function StellaAnomaly() {
         const saved = localStorage.getItem('stella_anomaly_submitted_rank');
         return saved ? parseInt(saved, 10) : null;
     });
+    const [leaderboard, setLeaderboard] = useState([]);
+    const [leaderboardLoading, setLeaderboardLoading] = useState(false);
+
+    const fetchLeaderboard = async () => {
+        setLeaderboardLoading(true);
+        try {
+            const list = await getStellaAnomalyLeaderboard(20);
+            setLeaderboard(list);
+        } catch (err) {
+            console.error("Error fetching leaderboard: ", err);
+        } finally {
+            setLeaderboardLoading(false);
+        }
+    };
+
+    useEffect(() => {
+        if (submitSuccess || completedPhases[4]) {
+            fetchLeaderboard();
+        }
+    }, [submitSuccess, completedPhases[4]]);
 
     const handleUidSubmit = async (e) => {
         e.preventDefault();
@@ -303,6 +324,7 @@ export default function StellaAnomaly() {
             setRank(userRank);
             setSubmitSuccess(true);
             markPhaseComplete(4);
+            fetchLeaderboard();
         } catch {
             setSubmitError(t('stella_anomaly.submit_failed') || 'Database transmission error. Please try again.');
             playBeep('error');
@@ -859,6 +881,199 @@ export default function StellaAnomaly() {
 
                                                 <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
                                                     {t('stella_anomaly.success_msg') || 'Verification complete. Rewards will be sent directly to your in-game mailbox before September 30, 2026.'}
+                                                </div>
+
+                                                {/* Leaderboard & Podium Section */}
+                                                <div style={{
+                                                    marginTop: '2rem',
+                                                    textAlign: 'left',
+                                                    background: 'rgba(6, 7, 16, 0.85)',
+                                                    border: '1px solid rgba(78, 205, 196, 0.25)',
+                                                    borderRadius: '8px',
+                                                    padding: '1.5rem',
+                                                    boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)'
+                                                }}>
+                                                    {/* Header */}
+                                                    <div style={{
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'space-between',
+                                                        borderBottom: '1px solid rgba(78, 205, 196, 0.2)',
+                                                        paddingBottom: '0.8rem',
+                                                        marginBottom: '1.5rem',
+                                                        flexWrap: 'wrap',
+                                                        gap: '0.5rem'
+                                                    }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                                                            <Trophy size={18} style={{ color: 'var(--gold-bright)' }} />
+                                                            <span style={{ fontWeight: 'bold', fontSize: '0.95rem', color: '#FFFFFF', letterSpacing: '1px' }}>
+                                                                {t('stella_anomaly.leaderboard_title') || 'COMMANDERS PODIUM & LEADERBOARD'}
+                                                            </span>
+                                                        </div>
+                                                        <button
+                                                            type="button"
+                                                            onClick={fetchLeaderboard}
+                                                            disabled={leaderboardLoading}
+                                                            style={{
+                                                                background: 'rgba(78, 205, 196, 0.1)',
+                                                                border: '1px solid rgba(78, 205, 196, 0.3)',
+                                                                color: 'var(--accent-teal)',
+                                                                padding: '0.35rem 0.75rem',
+                                                                borderRadius: '4px',
+                                                                cursor: leaderboardLoading ? 'not-allowed' : 'pointer',
+                                                                display: 'flex',
+                                                                alignItems: 'center',
+                                                                gap: '0.4rem',
+                                                                fontSize: '0.75rem',
+                                                                fontFamily: 'var(--font-mono)'
+                                                            }}
+                                                        >
+                                                            <RefreshCw size={12} className={leaderboardLoading ? "terminal-glow-pulse" : ""} style={{ animation: leaderboardLoading ? 'spin 1.5s infinite linear' : 'none' }} />
+                                                            <span>{t('stella_anomaly.leaderboard_refresh') || 'REFRESH'}</span>
+                                                        </button>
+                                                    </div>
+
+                                                    {leaderboardLoading && leaderboard.length === 0 ? (
+                                                        <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
+                                                            <RefreshCw size={20} style={{ animation: 'spin 1.5s infinite linear', margin: '0 auto 0.6rem' }} />
+                                                            <div>FETCHING SATELLITE TELEMETRY...</div>
+                                                        </div>
+                                                    ) : leaderboard.length === 0 ? (
+                                                        <div style={{ textAlign: 'center', padding: '1.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
+                                                            {t('stella_anomaly.leaderboard_empty') || 'No transmissions logged yet.'}
+                                                        </div>
+                                                    ) : (
+                                                        <div>
+                                                            {/* Top 3 Podium Cards */}
+                                                            <div style={{
+                                                                display: 'grid',
+                                                                gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+                                                                gap: '1rem',
+                                                                marginBottom: '1.5rem'
+                                                            }}>
+                                                                {[1, 2, 3].map((pos) => {
+                                                                    const entry = leaderboard.find(e => e.rank === pos);
+                                                                    const isUser = entry && (entry.gameUid === localStorage.getItem('stella_anomaly_submitted_uid'));
+                                                                    const borderColor = pos === 1 ? 'rgba(232, 201, 106, 0.6)' : pos === 2 ? 'rgba(192, 192, 192, 0.6)' : 'rgba(205, 127, 50, 0.6)';
+                                                                    const titleColor = pos === 1 ? 'var(--gold-bright)' : pos === 2 ? '#E0E0E0' : '#CD7F32';
+                                                                    const bgGlow = pos === 1 ? 'rgba(232, 201, 106, 0.08)' : pos === 2 ? 'rgba(192, 192, 192, 0.05)' : 'rgba(205, 127, 50, 0.05)';
+                                                                    const rewardText = pos === 1 ? '1,000 Plat.' : pos === 2 ? '500 Plat.' : '250 Plat.';
+                                                                    const badgeIcon = pos === 1 ? '🥇' : pos === 2 ? '🥈' : '🥉';
+                                                                    const rankTitle = pos === 1 ? t('stella_anomaly.rank_1_title') || '1st PLACE' : pos === 2 ? t('stella_anomaly.rank_2_title') || '2nd PLACE' : t('stella_anomaly.rank_3_title') || '3rd PLACE';
+
+                                                                    return (
+                                                                        <div
+                                                                            key={pos}
+                                                                            style={{
+                                                                                background: isUser ? 'rgba(78, 205, 196, 0.12)' : bgGlow,
+                                                                                border: isUser ? '1px solid var(--accent-teal)' : `1px solid ${borderColor}`,
+                                                                                borderRadius: '6px',
+                                                                                padding: '1rem',
+                                                                                textAlign: 'center',
+                                                                                position: 'relative',
+                                                                                boxShadow: isUser ? '0 0 12px rgba(78, 205, 196, 0.2)' : 'none'
+                                                                            }}
+                                                                        >
+                                                                            <div style={{ fontSize: '1.6rem', marginBottom: '0.3rem' }}>{badgeIcon}</div>
+                                                                            <div style={{ color: titleColor, fontWeight: 'bold', fontSize: '0.85rem' }}>
+                                                                                {rankTitle}
+                                                                            </div>
+                                                                            <div style={{
+                                                                                marginTop: '0.6rem',
+                                                                                color: '#FFFFFF',
+                                                                                fontWeight: 'bold',
+                                                                                fontSize: '0.95rem',
+                                                                                fontFamily: 'var(--font-mono)'
+                                                                            }}>
+                                                                                {entry ? `UID: ${entry.gameUid}` : <span style={{ opacity: 0.4, fontStyle: 'italic', fontSize: '0.8rem' }}>---</span>}
+                                                                            </div>
+                                                                            <div style={{
+                                                                                marginTop: '0.4rem',
+                                                                                fontSize: '0.7rem',
+                                                                                color: 'var(--accent-teal)',
+                                                                                fontWeight: 'bold'
+                                                                            }}>
+                                                                                {rewardText}
+                                                                            </div>
+                                                                            {entry && entry.submittedAt && (
+                                                                                <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginTop: '0.4rem', opacity: 0.7 }}>
+                                                                                    {new Date(entry.submittedAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
+                                                                                </div>
+                                                                            )}
+                                                                            {isUser && (
+                                                                                <div style={{
+                                                                                    position: 'absolute',
+                                                                                    top: '-8px',
+                                                                                    right: '8px',
+                                                                                    background: 'var(--accent-teal)',
+                                                                                    color: '#060710',
+                                                                                    fontSize: '0.6rem',
+                                                                                    fontWeight: 'bold',
+                                                                                    padding: '0.1rem 0.4rem',
+                                                                                    borderRadius: '3px'
+                                                                                }}>
+                                                                                    {t('stella_anomaly.leaderboard_you') || 'YOU'}
+                                                                                </div>
+                                                                            )}
+                                                                        </div>
+                                                                    );
+                                                                })}
+                                                            </div>
+
+                                                            {/* Other Ranks Table (Rank >= 4) */}
+                                                            {leaderboard.filter(e => e.rank > 3).length > 0 && (
+                                                                <div style={{
+                                                                    overflowX: 'auto',
+                                                                    borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                                                                    paddingTop: '1rem'
+                                                                }}>
+                                                                    <table style={{
+                                                                        width: '100%',
+                                                                        borderCollapse: 'collapse',
+                                                                        fontSize: '0.75rem',
+                                                                        fontFamily: 'var(--font-mono)'
+                                                                    }}>
+                                                                        <thead>
+                                                                            <tr style={{ color: 'var(--text-secondary)', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', textAlign: 'left' }}>
+                                                                                <th style={{ padding: '0.5rem' }}>{t('stella_anomaly.leaderboard_col_rank') || 'RANK'}</th>
+                                                                                <th style={{ padding: '0.5rem' }}>{t('stella_anomaly.leaderboard_col_uid') || 'COMMANDER UID'}</th>
+                                                                                <th style={{ padding: '0.5rem' }}>{t('stella_anomaly.leaderboard_col_date') || 'TIME (UTC)'}</th>
+                                                                                <th style={{ padding: '0.5rem', textAlign: 'right' }}>{t('stella_anomaly.leaderboard_col_reward') || 'STATUS'}</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            {leaderboard.filter(e => e.rank > 3).map((item) => {
+                                                                                const isUser = item.gameUid === localStorage.getItem('stella_anomaly_submitted_uid');
+                                                                                return (
+                                                                                    <tr
+                                                                                        key={item.id || item.rank}
+                                                                                        style={{
+                                                                                            borderBottom: '1px solid rgba(255, 255, 255, 0.04)',
+                                                                                            background: isUser ? 'rgba(78, 205, 196, 0.08)' : 'transparent',
+                                                                                            color: isUser ? 'var(--accent-teal)' : '#E8E4D9'
+                                                                                        }}
+                                                                                    >
+                                                                                        <td style={{ padding: '0.6rem 0.5rem', fontWeight: 'bold' }}>
+                                                                                            #{item.rank}
+                                                                                        </td>
+                                                                                        <td style={{ padding: '0.6rem 0.5rem', fontFamily: 'var(--font-mono)' }}>
+                                                                                            {item.gameUid} {isUser && <span style={{ fontSize: '0.65rem', marginLeft: '0.4rem', color: 'var(--accent-teal)' }}>({t('stella_anomaly.leaderboard_you') || 'YOU'})</span>}
+                                                                                        </td>
+                                                                                        <td style={{ padding: '0.6rem 0.5rem', color: 'var(--text-secondary)' }}>
+                                                                                            {item.submittedAt ? new Date(item.submittedAt).toLocaleString() : '---'}
+                                                                                        </td>
+                                                                                        <td style={{ padding: '0.6rem 0.5rem', textAlign: 'right', color: 'var(--text-secondary)' }}>
+                                                                                            Logged
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                );
+                                                                            })}
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </div>
                                         ) : (

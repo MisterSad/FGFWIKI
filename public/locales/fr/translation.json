@@ -1568,7 +1568,15 @@
         "secret_code_label": "CODE SECRET",
         "secret_code_placeholder": "Entrez le code décrypté de l'événement...",
         "uid_label": "IDENTIFIANT DE JOUEUR (UID)",
-        "code_invalid_error": "CODE SECRET INVALIDE. Veuillez entrer le code d'événement correct."
+        "code_invalid_error": "CODE SECRET INVALIDE. Veuillez entrer le code d'événement correct.",
+        "leaderboard_title": "PODIUM & CLASSEMENT GÉNÉRAL",
+        "leaderboard_refresh": "ACTUALISER",
+        "leaderboard_empty": "Aucune transmission enregistrée pour le moment.",
+        "leaderboard_col_rank": "RANG",
+        "leaderboard_col_uid": "UID DU COMMANDANT",
+        "leaderboard_col_date": "DATE & HEURE",
+        "leaderboard_col_reward": "STATUT / RÉCOMPENSE",
+        "leaderboard_you": "VOUS"
     },
     "creators_page": {
         "title": "ESPACE CRÉATEURS",
