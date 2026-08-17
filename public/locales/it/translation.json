@@ -1824,6 +1824,18 @@
         "cta_badge": "Level Up Your Alliance",
         "cta_title": "Ready to Revolutionize Your Guild Management?",
         "cta_subtitle": "Join the top alliances in Foundation: Galactic Frontier and start today with your 1st month 100% free.",
-        "cta_note": "Personalized onboarding and dedicated assistance on our Discord server."
+        "cta_note": "Personalized onboarding and dedicated assistance on our Discord server.",
+        "pricing_popular": "Più Popolare",
+        "testimonials_tag": "Testimonianze",
+        "demo_feat_admin_1": "Roster 7D",
+        "demo_feat_admin_2": "16 Scanner OCR",
+        "demo_feat_admin_3": "Fusi Orari 24/7",
+        "demo_feat_admin_4": "Shadowfront 20+10",
+        "demo_feat_admin_5": "Sanzioni e Assenze",
+        "demo_feat_player_1": "Curve vs Gilda",
+        "demo_feat_player_2": "Report Militare 7D",
+        "demo_feat_player_3": "Assenze in 1 Clic",
+        "demo_feat_player_4": "Monitoraggio Presenze",
+        "demo_feat_player_5": "KPI Personali"
     }
 }

@@ -21,7 +21,13 @@ const DEMO_ACCOUNTS = [
         badgeKey: 'guild_tool.demo_admin_badge',
         nameKey: 'guild_tool.demo_admin_name',
         descKey: 'guild_tool.demo_admin_desc',
-        features: ['Roster 7D', '16 Scanners OCR', 'Timezone 24/7', 'Shadowfront 20+10', 'Sanctions & Absences']
+        featureKeys: [
+            'guild_tool.demo_feat_admin_1',
+            'guild_tool.demo_feat_admin_2',
+            'guild_tool.demo_feat_admin_3',
+            'guild_tool.demo_feat_admin_4',
+            'guild_tool.demo_feat_admin_5'
+        ]
     },
     {
         id: 'DemoPlayer',
@@ -30,7 +36,13 @@ const DEMO_ACCOUNTS = [
         badgeKey: 'guild_tool.demo_player_badge',
         nameKey: 'guild_tool.demo_player_name',
         descKey: 'guild_tool.demo_player_desc',
-        features: ['Courbes vs Guilde', 'Bilan Militaire 7D', 'Absences 1-Clic', 'Suivi Assiduité', 'KPIs Personnels']
+        featureKeys: [
+            'guild_tool.demo_feat_player_1',
+            'guild_tool.demo_feat_player_2',
+            'guild_tool.demo_feat_player_3',
+            'guild_tool.demo_feat_player_4',
+            'guild_tool.demo_feat_player_5'
+        ]
     },
 ];
 
@@ -563,8 +575,8 @@ export default function GuildTool() {
                                         </div>
 
                                         <div className="gt-demo-feature-tags">
-                                            {acc.features.map((feat, i) => (
-                                                <span key={i} className="gt-demo-tag">{feat}</span>
+                                            {acc.featureKeys.map((featKey, i) => (
+                                                <span key={i} className="gt-demo-tag">{t(featKey)}</span>
                                             ))}
                                         </div>
                                     </div>
@@ -612,7 +624,7 @@ export default function GuildTool() {
                     <div className="gt-plans">
                         {PLANS.map(p => (
                             <div key={p.nameKey} className={`gt-plan ${p.popular ? 'popular' : ''}`}>
-                                {p.popular && <span className="gt-plan-popular-tag">Plus Populaire</span>}
+                                {p.popular && <span className="gt-plan-popular-tag">{t('guild_tool.pricing_popular')}</span>}
                                 <span className="gt-plan-name">{t(p.nameKey)}</span>
                                 <span className="gt-plan-price">
                                     {t(p.priceKey)} <span className="gt-plan-currency">{t('guild_tool.currency')}</span>
@@ -683,7 +695,7 @@ export default function GuildTool() {
             {/* ── 8. TESTIMONIALS ── */}
             <section className="gt-section">
                 <div className="gt-container">
-                    <SectionLabel>Témoignages</SectionLabel>
+                    <SectionLabel>{t('guild_tool.testimonials_tag')}</SectionLabel>
                     <SectionTitle titleKey="guild_tool.testimonials_title" />
                     <div className="gt-testimonials">
                         {TESTIMONIALS.map((test, idx) => {

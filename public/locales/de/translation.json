@@ -1824,6 +1824,18 @@
         "cta_badge": "Bereit durchzustarten?",
         "cta_title": "Revolutioniere jetzt das Management deiner Gilde",
         "cta_subtitle": "Schließe dich den Spitzen-Allianzen von Foundation: Galactic Frontier an und starte mit deinem 1. Gratismonat.",
-        "cta_note": "Persönlicher Support und Unterstützung auf unserem offiziellen Discord-Server."
+        "cta_note": "Persönlicher Support und Unterstützung auf unserem offiziellen Discord-Server.",
+        "pricing_popular": "Beliebteste Wahl",
+        "testimonials_tag": "Erfahrungsberichte",
+        "demo_feat_admin_1": "7D-Roster",
+        "demo_feat_admin_2": "16 KI-Scanner",
+        "demo_feat_admin_3": "24/7-Zeitzonen",
+        "demo_feat_admin_4": "Shadowfront 20+10",
+        "demo_feat_admin_5": "Sanktionen & Ausfälle",
+        "demo_feat_player_1": "Kurven vs. Gilde",
+        "demo_feat_player_2": "7D-Militärbericht",
+        "demo_feat_player_3": "1-Klick-Abmeldung",
+        "demo_feat_player_4": "Anwesenheitstracking",
+        "demo_feat_player_5": "Persönliche KPIs"
     }
 }

@@ -1824,6 +1824,18 @@
         "cta_badge": "Da el Siguiente Paso",
         "cta_title": "¿Listo para Revolucionar la Gestión de tu Gremio?",
         "cta_subtitle": "Únete a las mejores alianzas de Foundation: Galactic Frontier y empieza hoy con tu 1.er mes 100% gratis.",
-        "cta_note": "Soporte dedicado y asistencia personalizada en nuestro servidor de Discord."
+        "cta_note": "Soporte dedicado y asistencia personalizada en nuestro servidor de Discord.",
+        "pricing_popular": "Más Popular",
+        "testimonials_tag": "Testimonios",
+        "demo_feat_admin_1": "Roster 7D",
+        "demo_feat_admin_2": "16 Escáneres OCR",
+        "demo_feat_admin_3": "Horarios 24/7",
+        "demo_feat_admin_4": "Shadowfront 20+10",
+        "demo_feat_admin_5": "Sanciones y Ausencias",
+        "demo_feat_player_1": "Curvas vs Gremio",
+        "demo_feat_player_2": "Informe Militar 7D",
+        "demo_feat_player_3": "Ausencias en 1 Clic",
+        "demo_feat_player_4": "Seguimiento Asistencia",
+        "demo_feat_player_5": "KPIs Personales"
     }
 }

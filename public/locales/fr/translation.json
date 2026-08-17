@@ -1834,6 +1834,18 @@
         "cta_badge": "Passez à la Vitesse Supérieure",
         "cta_title": "Prêt à Révolutionner la Gestion de Votre Guilde ?",
         "cta_subtitle": "Rejoignez les meilleures alliances de Foundation: Galactic Frontier et commencez dès aujourd'hui avec votre premier mois 100% offert.",
-        "cta_note": "Accompagnement personnalisé et support dédié sur notre serveur Discord."
+        "cta_note": "Accompagnement personnalisé et support dédié sur notre serveur Discord.",
+        "pricing_popular": "Plus Populaire",
+        "testimonials_tag": "Témoignages",
+        "demo_feat_admin_1": "Roster 7D",
+        "demo_feat_admin_2": "16 Scanners OCR",
+        "demo_feat_admin_3": "Timezone 24/7",
+        "demo_feat_admin_4": "Shadowfront 20+10",
+        "demo_feat_admin_5": "Sanctions & Absences",
+        "demo_feat_player_1": "Courbes vs Guilde",
+        "demo_feat_player_2": "Bilan Militaire 7D",
+        "demo_feat_player_3": "Absences 1-Clic",
+        "demo_feat_player_4": "Suivi Assiduité",
+        "demo_feat_player_5": "KPIs Personnels"
     }
 }

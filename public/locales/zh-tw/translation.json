@@ -1824,6 +1824,18 @@
         "cta_badge": "Level Up Your Alliance",
         "cta_title": "Ready to Revolutionize Your Guild Management?",
         "cta_subtitle": "Join the top alliances in Foundation: Galactic Frontier and start today with your 1st month 100% free.",
-        "cta_note": "Personalized onboarding and dedicated assistance on our Discord server."
+        "cta_note": "Personalized onboarding and dedicated assistance on our Discord server.",
+        "pricing_popular": "最受歡迎",
+        "testimonials_tag": "用戶評價",
+        "demo_feat_admin_1": "7D成員花名冊",
+        "demo_feat_admin_2": "16款AI識圖掃描儀",
+        "demo_feat_admin_3": "24/7時區覆蓋",
+        "demo_feat_admin_4": "暗影前線 20+10排表",
+        "demo_feat_admin_5": "懲罰與請假系統",
+        "demo_feat_player_1": "個人對比公會平均曲線",
+        "demo_feat_player_2": "7大維度軍事戰力報告",
+        "demo_feat_player_3": "一鍵提交請假",
+        "demo_feat_player_4": "出勤率追蹤",
+        "demo_feat_player_5": "個人核心KPI"
     }
 }

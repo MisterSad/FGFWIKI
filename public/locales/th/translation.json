@@ -1824,6 +1824,18 @@
         "cta_badge": "Level Up Your Alliance",
         "cta_title": "Ready to Revolutionize Your Guild Management?",
         "cta_subtitle": "Join the top alliances in Foundation: Galactic Frontier and start today with your 1st month 100% free.",
-        "cta_note": "Personalized onboarding and dedicated assistance on our Discord server."
+        "cta_note": "Personalized onboarding and dedicated assistance on our Discord server.",
+        "pricing_popular": "ยอดนิยมที่สุด",
+        "testimonials_tag": "เสียงตอบรับจากผู้ใช้",
+        "demo_feat_admin_1": "บัญชีรายชื่อ 7 มิติ",
+        "demo_feat_admin_2": "16 สแกนเนอร์ OCR",
+        "demo_feat_admin_3": "ครอบคลุมโซนเวลา 24/7",
+        "demo_feat_admin_4": "Shadowfront 20+10",
+        "demo_feat_admin_5": "บทลงโทษและการลา",
+        "demo_feat_player_1": "กราฟเทียบค่าเฉลี่ยกิลด์",
+        "demo_feat_player_2": "รายงานกำลังรบ 7 มิติ",
+        "demo_feat_player_3": "แจ้งลาใน 1 คลิก",
+        "demo_feat_player_4": "ติดตามการเข้าร่วม",
+        "demo_feat_player_5": "KPI ส่วนตัว"
     }
 }
