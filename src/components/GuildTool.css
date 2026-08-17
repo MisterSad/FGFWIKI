@@ -1,15 +1,14 @@
 /* ── Guild Management Tool — AI-Powered ERP Landing Page ── */
 
 .gt-page {
-    --gt-gold-soft: rgba(201, 168, 76, 0.12);
-    --gt-cyan-soft: rgba(78, 205, 196, 0.12);
-    --gt-purple-soft: rgba(168, 85, 247, 0.12);
-    --gt-blue-soft: rgba(42, 106, 170, 0.12);
-    --gt-red-soft: rgba(196, 48, 48, 0.12);
+    --gt-gold-soft: rgba(201, 168, 76, 0.1);
+    --gt-cyan-soft: rgba(78, 205, 196, 0.1);
+    --gt-purple-soft: rgba(168, 85, 247, 0.1);
+    --gt-blue-soft: rgba(42, 106, 170, 0.1);
     --gt-discord: #5865F2;
     --gt-discord-hover: #6b78ff;
     position: relative;
-    overflow: hidden;
+    background: transparent;
 }
 
 /* Sections */
@@ -17,12 +16,13 @@
     padding: clamp(3.5rem, 8vw, 6rem) clamp(1rem, 4vw, 2rem);
     position: relative;
     z-index: 1;
+    background: transparent;
 }
 
 .gt-section-alt {
-    background: linear-gradient(180deg, rgba(201, 168, 76, 0.035), rgba(6, 7, 16, 0) 60%);
-    border-top: 1px solid rgba(201, 168, 76, 0.08);
-    border-bottom: 1px solid rgba(201, 168, 76, 0.08);
+    background: transparent;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .gt-container {
@@ -54,11 +54,7 @@
     content: '';
     height: 1px;
     width: clamp(28px, 6vw, 56px);
-    background: linear-gradient(90deg, transparent, var(--gold));
-}
-
-.gt-section-label::after {
-    background: linear-gradient(90deg, var(--gold), transparent);
+    background: var(--gold-dim);
 }
 
 .gt-section-label span {
@@ -99,17 +95,11 @@
     text-align: center;
     padding: clamp(4.5rem, 12vw, 8.5rem) clamp(1rem, 4vw, 2rem) clamp(3.5rem, 8vw, 6rem);
     border-bottom: 1px solid var(--border);
-    overflow: hidden;
+    background: transparent;
 }
 
 .gt-hero-glow {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(ellipse 65% 50% at 50% 0%, rgba(201, 168, 76, 0.16), transparent 75%),
-        radial-gradient(ellipse 45% 35% at 85% 85%, rgba(78, 205, 196, 0.08), transparent 70%),
-        radial-gradient(ellipse 45% 35% at 15% 75%, rgba(88, 101, 242, 0.08), transparent 70%);
+    display: none;
 }
 
 .gt-hero-inner {
@@ -125,7 +115,7 @@
     padding: 0.45rem 1.2rem;
     border: 1px solid rgba(201, 168, 76, 0.45);
     border-radius: 999px;
-    background: linear-gradient(90deg, rgba(201, 168, 76, 0.18), rgba(201, 168, 76, 0.06));
+    background: var(--bg-surface);
     color: var(--gold-bright);
     font-family: var(--font-label);
     font-size: 0.75rem;
@@ -133,31 +123,20 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 1.75rem;
-    box-shadow: 0 0 20px rgba(201, 168, 76, 0.15);
 }
 
 .gt-sparkle-icon {
     color: var(--gold-bright);
-    animation: gtPulse 2s infinite ease-in-out;
-}
-
-@keyframes gtPulse {
-    0%, 100% { opacity: 0.7; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.15); }
 }
 
 .gt-hero-title {
     font-family: var(--font-hero);
     font-weight: 900;
     font-size: clamp(2.3rem, 6.5vw, 4.4rem);
-    line-height: 1.08;
+    line-height: 1.1;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin: 0 0 1.5rem;
-    background: linear-gradient(135deg, #ffffff 0%, var(--gold-bright) 45%, var(--gold) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: var(--gold-bright);
 }
 
@@ -183,7 +162,7 @@
     align-items: center;
     gap: 0.65rem;
     padding: 0.9rem 1.8rem;
-    border-radius: 8px;
+    border-radius: 6px;
     font-family: var(--font-label);
     font-weight: 700;
     font-size: 0.88rem;
@@ -200,24 +179,25 @@
 }
 
 .gt-btn-primary {
-    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    background: var(--gold);
     color: #151004;
-    box-shadow: 0 6px 24px rgba(201, 168, 76, 0.35), 0 0 0 1px rgba(201, 168, 76, 0.6);
+    box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
 }
 
 .gt-btn-primary:hover {
-    box-shadow: 0 10px 34px rgba(201, 168, 76, 0.5), 0 0 0 1px rgba(232, 201, 106, 0.9);
+    background: var(--gold-bright);
+    box-shadow: 0 6px 26px rgba(201, 168, 76, 0.45);
 }
 
 .gt-btn-discord {
     background: var(--gt-discord);
     color: #fff;
-    box-shadow: 0 6px 24px rgba(88, 101, 242, 0.35);
+    box-shadow: 0 4px 20px rgba(88, 101, 242, 0.3);
 }
 
 .gt-btn-discord:hover {
     background: var(--gt-discord-hover);
-    box-shadow: 0 10px 34px rgba(88, 101, 242, 0.5);
+    box-shadow: 0 6px 26px rgba(88, 101, 242, 0.45);
 }
 
 .gt-btn-lg {
@@ -241,12 +221,11 @@
     padding: 0.45rem 1rem;
     border: 1px solid var(--border);
     border-radius: 999px;
-    background: rgba(13, 14, 20, 0.75);
+    background: var(--bg-surface);
     color: var(--text-primary);
     font-family: var(--font-label);
     font-size: 0.75rem;
     letter-spacing: 0.5px;
-    backdrop-filter: blur(8px);
 }
 
 .gt-badge svg {
@@ -255,9 +234,10 @@
 
 /* ── 2. KEY STATS & PROOF ── */
 .gt-stats-section {
-    padding: 2rem clamp(1rem, 4vw, 2rem) 3.5rem;
+    padding: 2.5rem clamp(1rem, 4vw, 2rem) 3.5rem;
     position: relative;
     z-index: 2;
+    background: transparent;
 }
 
 .gt-stats-grid {
@@ -279,9 +259,9 @@
 }
 
 .gt-stat-card {
-    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    background: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 1.6rem 1.4rem;
     text-align: center;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -290,12 +270,11 @@
 .gt-stat-card:hover {
     transform: translateY(-3px);
     border-color: var(--border-hover);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--imperial-shadow);
 }
 
 .gt-stat-card.highlight {
-    border-color: rgba(201, 168, 76, 0.4);
-    background: linear-gradient(180deg, rgba(201, 168, 76, 0.1), var(--bg-surface));
+    border-color: rgba(201, 168, 76, 0.45);
 }
 
 .gt-stat-val {
@@ -327,15 +306,15 @@
 .gt-comparison-wrap {
     background: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--imperial-shadow);
 }
 
 .gt-comparison-header {
     display: grid;
     grid-template-columns: 2fr 3fr 3.5fr;
-    background: rgba(26, 27, 38, 0.95);
+    background: var(--bg-elevated);
     padding: 1.1rem 1.5rem;
     border-bottom: 1px solid var(--border);
     font-family: var(--font-label);
@@ -458,9 +437,9 @@
 }
 
 .gt-bento-card {
-    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    background: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 2rem 1.8rem;
     position: relative;
     overflow: hidden;
@@ -471,7 +450,7 @@
 
 .gt-bento-card:hover {
     border-color: var(--border-hover);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+    box-shadow: var(--imperial-shadow);
     transform: translateY(-3px);
 }
 
@@ -503,26 +482,26 @@
 }
 
 .gt-bento-pill.ai {
-    background: rgba(147, 51, 234, 0.15);
-    border: 1px solid rgba(168, 85, 247, 0.4);
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.35);
     color: #c084fc;
 }
 
 .gt-bento-pill.gold {
     background: var(--gt-gold-soft);
-    border: 1px solid rgba(201, 168, 76, 0.4);
+    border: 1px solid rgba(201, 168, 76, 0.35);
     color: var(--gold-bright);
 }
 
 .gt-bento-pill.cyan {
     background: var(--gt-cyan-soft);
-    border: 1px solid rgba(78, 205, 196, 0.4);
+    border: 1px solid rgba(78, 205, 196, 0.35);
     color: var(--accent-teal);
 }
 
 .gt-bento-pill.purple {
-    background: rgba(88, 101, 242, 0.15);
-    border: 1px solid rgba(88, 101, 242, 0.4);
+    background: rgba(88, 101, 242, 0.12);
+    border: 1px solid rgba(88, 101, 242, 0.35);
     color: #a5b4fc;
 }
 
@@ -557,9 +536,9 @@
 }
 
 .gt-subfeature-card {
-    background: rgba(13, 14, 20, 0.65);
-    border: 1px solid rgba(201, 168, 76, 0.15);
-    border-radius: 8px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 6px;
     padding: 1.1rem;
 }
 
@@ -592,9 +571,9 @@
     align-items: flex-start;
     gap: 0.85rem;
     padding: 1rem 1.15rem;
-    background: rgba(13, 14, 20, 0.8);
+    background: var(--bg-elevated);
     border: 1px solid rgba(78, 205, 196, 0.25);
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .gt-bento-shield-box strong {
@@ -627,15 +606,14 @@
     align-items: flex-start;
     gap: 0.85rem;
     padding: 0.85rem;
-    background: rgba(13, 14, 20, 0.5);
+    background: var(--bg-elevated);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    transition: background 0.15s ease, border-color 0.15s ease;
+    border-radius: 6px;
+    transition: border-color 0.15s ease;
 }
 
 .gt-pillar-item:hover {
-    background: rgba(201, 168, 76, 0.04);
-    border-color: rgba(201, 168, 76, 0.2);
+    border-color: rgba(201, 168, 76, 0.3);
 }
 
 .gt-pillar-icon {
@@ -685,9 +663,9 @@
 }
 
 .gt-persona-card {
-    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    background: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 2rem 1.8rem;
 }
 
@@ -706,7 +684,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 8px;
     flex-shrink: 0;
 }
 
@@ -781,9 +759,9 @@
 }
 
 .gt-demo-card {
-    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    background: var(--bg-surface);
     border: 1px solid rgba(201, 168, 76, 0.3);
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 1.8rem 1.6rem;
     display: flex;
     flex-direction: column;
@@ -793,7 +771,7 @@
 .gt-demo-card:hover {
     transform: translateY(-3px);
     border-color: var(--gold-bright);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(201, 168, 76, 0.3);
+    box-shadow: var(--imperial-shadow);
 }
 
 .gt-demo-head {
@@ -810,7 +788,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(201, 168, 76, 0.4);
-    border-radius: 10px;
+    border-radius: 8px;
     background: var(--gt-gold-soft);
     color: var(--gold-bright);
     flex-shrink: 0;
@@ -843,9 +821,9 @@
 }
 
 .gt-demo-credentials {
-    background: rgba(6, 7, 16, 0.7);
-    border: 1px solid rgba(201, 168, 76, 0.18);
-    border-radius: 8px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 6px;
     padding: 0.75rem 1rem;
     margin-bottom: 1.25rem;
 }
@@ -875,9 +853,9 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(201, 168, 76, 0.08);
+    background: var(--gt-gold-soft);
     border: 1px solid rgba(201, 168, 76, 0.3);
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 0.3rem 0.65rem;
     cursor: pointer;
     transition: all 0.15s ease;
@@ -885,7 +863,6 @@
 }
 
 .gt-copy-btn:hover {
-    background: rgba(201, 168, 76, 0.18);
     border-color: var(--gold-bright);
 }
 
@@ -921,7 +898,6 @@
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
     white-space: nowrap;
-    animation: gtFadeUp 0.15s ease-out;
 }
 
 .gt-demo-feature-tags {
@@ -935,8 +911,8 @@
     font-size: 0.72rem;
     padding: 0.25rem 0.6rem;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
     color: var(--text-secondary);
 }
 
@@ -955,13 +931,13 @@
 
 /* ── 7. PRICING & TENANT REGISTRATION ── */
 .gt-free-month-card {
-    background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(78, 205, 196, 0.08));
-    border: 1px solid rgba(201, 168, 76, 0.5);
-    border-radius: 12px;
+    background: var(--bg-surface);
+    border: 1px solid rgba(201, 168, 76, 0.45);
+    border-radius: 8px;
     padding: 1.8rem 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    box-shadow: 0 8px 30px rgba(201, 168, 76, 0.1);
+    box-shadow: var(--imperial-shadow);
 }
 
 .gt-free-month-badge {
@@ -1022,29 +998,28 @@
     justify-content: space-between;
     gap: 0.75rem;
     padding: 1.5rem 1.25rem;
-    background: linear-gradient(180deg, var(--bg-elevated), var(--bg-surface));
+    background: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 8px;
     transition: all 0.2s ease;
     position: relative;
 }
 
 .gt-plan:hover {
     border-color: rgba(201, 168, 76, 0.5);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--imperial-shadow);
     transform: translateY(-2px);
 }
 
 .gt-plan.popular {
-    border-color: rgba(201, 168, 76, 0.6);
-    background: linear-gradient(180deg, rgba(201, 168, 76, 0.12), var(--bg-surface));
+    border-color: var(--gold);
 }
 
 .gt-plan-popular-tag {
     position: absolute;
     top: -10px;
     right: 12px;
-    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    background: var(--gold);
     color: #151004;
     font-family: var(--font-label);
     font-size: 0.62rem;
@@ -1088,7 +1063,7 @@
 .gt-included-box {
     background: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 1.6rem 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -1179,9 +1154,9 @@
     align-items: center;
     gap: 1.25rem;
     padding: 1.6rem 1.8rem;
-    background: linear-gradient(135deg, rgba(88, 101, 242, 0.1), rgba(88, 101, 242, 0.03));
+    background: var(--bg-surface);
     border: 1px solid rgba(88, 101, 242, 0.35);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 @media (max-width: 720px) {
@@ -1198,8 +1173,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    background: rgba(88, 101, 242, 0.18);
+    border-radius: 8px;
+    background: rgba(88, 101, 242, 0.15);
     color: #8b96ff;
 }
 
@@ -1239,7 +1214,7 @@
 .gt-testimonial {
     background: var(--bg-surface);
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 1.6rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -1291,7 +1266,7 @@
 
 .gt-faq-item {
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 8px;
     background: var(--bg-surface);
     overflow: hidden;
     transition: border-color 0.2s ease;
@@ -1338,7 +1313,6 @@
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.65;
-    animation: gtFadeUp 0.25s ease-out;
 }
 
 /* ── 10. FINAL CTA ── */
@@ -1348,15 +1322,11 @@
     padding: clamp(4rem, 10vw, 7.5rem) clamp(1rem, 4vw, 2rem);
     overflow: hidden;
     border-top: 1px solid var(--border);
+    background: transparent;
 }
 
 .gt-final-glow {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(ellipse 60% 50% at 50% 100%, rgba(201, 168, 76, 0.18), transparent 75%),
-        radial-gradient(ellipse 40% 30% at 15% 10%, rgba(88, 101, 242, 0.08), transparent 70%);
+    display: none;
 }
 
 .gt-final-inner {
@@ -1373,7 +1343,7 @@
     padding: 0.4rem 1.1rem;
     border: 1px solid rgba(201, 168, 76, 0.45);
     border-radius: 999px;
-    background: var(--gt-gold-soft);
+    background: var(--bg-surface);
     color: var(--gold-bright);
     font-family: var(--font-label);
     font-size: 0.72rem;
@@ -1389,10 +1359,6 @@
     font-size: clamp(1.8rem, 5vw, 3.2rem);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background: linear-gradient(135deg, #ffffff 0%, var(--gold-bright) 50%, var(--gold) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: var(--gold-bright);
     margin: 0 0 1rem;
     line-height: 1.15;
@@ -1411,4 +1377,5 @@
     color: var(--text-secondary);
     font-size: 0.88rem;
 }
+
 
