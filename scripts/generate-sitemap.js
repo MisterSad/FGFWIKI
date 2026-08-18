@@ -1,17 +1,19 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { tips, eventsData } from '../src/data/gameData.js';
+import { tips, eventsData, heroData } from '../src/data/gameData.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const SITE_URL = 'https://fgfwiki.com';
+const CURRENT_DATE = new Date().toISOString().split('T')[0]; // e.g. 2026-08-18
 
 const LANGUAGES = [
   'en', 'fr', 'ko', 'de', 'ja', 'zh', 'pl', 'it', 'uk', 'es', 'pt', 'fi', 'sv', 'nb',
   'zh-tw', 'nl', 'id', 'tr', 'vi', 'ru', 'th', 'ms', 'ar'
 ];
+
 const HREFLANG = {
   en: 'en',
   fr: 'fr',
@@ -37,24 +39,24 @@ const HREFLANG = {
   ms: 'ms',
   ar: 'ar',
 };
+
 const DEFAULT_LANG = 'en';
 
 const staticRoutes = [
-  { path: '/home', changefreq: 'weekly', priority: '1.0' },
-  { path: '/news', changefreq: 'weekly', priority: '0.9' },
-  { path: '/guides', changefreq: 'weekly', priority: '0.9' },
-  { path: '/champions', changefreq: 'weekly', priority: '0.9' },
-  { path: '/flagships', changefreq: 'weekly', priority: '0.9' },
-  { path: '/events', changefreq: 'weekly', priority: '1.0' },
-  { path: '/tools', changefreq: 'monthly', priority: '0.8' },
-  { path: '/gift-codes', changefreq: 'daily', priority: '0.9' },
-  { path: '/creators', changefreq: 'weekly', priority: '0.8' },
-  { path: '/creators/mirandus-plays', changefreq: 'weekly', priority: '0.8' },
-  { path: '/guild-tool', changefreq: 'monthly', priority: '0.9' },
+  { path: '/home', changefreq: 'weekly', priority: '1.0', images: ['/og-image.png'] },
+  { path: '/news', changefreq: 'weekly', priority: '0.9', images: ['/og-image.png'] },
+  { path: '/guides', changefreq: 'weekly', priority: '0.9', images: ['/images/2.webp', '/images/3.webp'] },
+  { path: '/champions', changefreq: 'weekly', priority: '0.9', images: ['/images/champions/douglas_rockwell.webp', '/images/champions/kama_moai.webp'] },
+  { path: '/flagships', changefreq: 'weekly', priority: '0.9', images: ['/images/flagships/ironclad.webp', '/images/4.webp'] },
+  { path: '/events', changefreq: 'weekly', priority: '1.0', images: ['/images/5.webp'] },
+  { path: '/tools', changefreq: 'monthly', priority: '0.8', images: ['/og-image.png'] },
+  { path: '/gift-codes', changefreq: 'daily', priority: '0.9', images: ['/og-image.png'] },
+  { path: '/stella-anomaly', changefreq: 'weekly', priority: '0.8', images: ['/og-image.png'] },
+  { path: '/creators', changefreq: 'weekly', priority: '0.8', images: ['/og-image.png'] },
+  { path: '/creators/mirandus-plays', changefreq: 'weekly', priority: '0.8', images: ['/og-image.png'] },
+  { path: '/guild-tool', changefreq: 'monthly', priority: '0.9', images: ['/og-image.png'] },
 ];
 
-// Helper to generate alternate hreflangs for a given language-prefixed URL.
-// Each language has its own URL: /en/guides, /fr/guides, ... (x-default -> /en).
 function getAlternateLinks(loc) {
   let xml = '';
   LANGUAGES.forEach(lang => {
@@ -72,17 +74,28 @@ staticRoutes.forEach(route => {
   routeEntries.push({
     loc: route.path,
     changefreq: route.changefreq,
-    priority: route.priority
+    priority: route.priority,
+    lastmod: CURRENT_DATE,
+    images: route.images || []
   });
 });
 
-// 2. Guides & News routes (only those with hasDetails: true)
+// 2. Guides & News routes
 tips.forEach(tip => {
   if (tip.hasDetails) {
+    const tipImages = [];
+    if (tip.sections) {
+      tip.sections.forEach(s => {
+        if (s.image) tipImages.push(s.image);
+      });
+    }
+    const pubDate = tip.publishDate ? tip.publishDate.split('T')[0] : CURRENT_DATE;
     routeEntries.push({
       loc: tip.category === 'news' ? `/news/${tip.id}` : `/guides/${tip.id}`,
       changefreq: 'monthly',
-      priority: '0.8'
+      priority: '0.8',
+      lastmod: pubDate,
+      images: tipImages
     });
   }
 });
@@ -93,25 +106,40 @@ eventsData.forEach(event => {
     routeEntries.push({
       loc: `/events/${event.id}`,
       changefreq: 'weekly',
-      priority: '0.8'
+      priority: '0.8',
+      lastmod: CURRENT_DATE,
+      images: event.image ? [event.image] : []
     });
   }
 });
 
-// Generate sitemap XML content: one <url> entry per language per route.
+// Generate Sitemap XML with Image extension
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
 xml += '<urlset\n';
 xml += '    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
-xml += '    xmlns:xhtml="http://www.w3.org/1999/xhtml">\n\n';
+xml += '    xmlns:xhtml="http://www.w3.org/1999/xhtml"\n';
+xml += '    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n';
 
 routeEntries.forEach(route => {
   LANGUAGES.forEach(lang => {
     const loc = `${SITE_URL}/${lang}${route.loc}`;
     xml += '  <url>\n';
     xml += `    <loc>${loc}</loc>\n`;
+    xml += `    <lastmod>${route.lastmod}</lastmod>\n`;
     xml += `${getAlternateLinks(route.loc)}\n`;
     xml += `    <changefreq>${route.changefreq}</changefreq>\n`;
     xml += `    <priority>${route.priority}</priority>\n`;
+
+    if (route.images && route.images.length > 0) {
+      route.images.forEach(img => {
+        const fullImg = img.startsWith('http') ? img : `${SITE_URL}${img}`;
+        xml += `    <image:image>\n`;
+        xml += `      <image:loc>${fullImg}</image:loc>\n`;
+        xml += `      <image:title>Foundation: Galactic Frontier - ${route.loc.replace('/', '')}</image:title>\n`;
+        xml += `    </image:image>\n`;
+      });
+    }
+
     xml += '  </url>\n';
   });
 });
@@ -120,4 +148,5 @@ xml += '</urlset>\n';
 
 const outputPath = path.resolve(__dirname, '../public/sitemap.xml');
 fs.writeFileSync(outputPath, xml, 'utf8');
-console.log(`Successfully generated sitemap.xml with ${routeEntries.length * LANGUAGES.length} routes at ${outputPath}`);
+console.log(`Successfully generated sitemap.xml with ${routeEntries.length * LANGUAGES.length} URLs at ${outputPath}`);
+

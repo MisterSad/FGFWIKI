@@ -1,0 +1,187 @@
+# Foundation: Galactic Frontier — Complete Encyclopedia & Reference Guide
+> Canonical Source: https://fgfwiki.com | Maintained by HawkTuah #1061 & FGF Community
+
+---
+
+## 1. Game Overview
+- **Title**: Foundation: Galactic Frontier (FGF)
+- **Publisher**: FunPlus
+- **Genre**: Sci-Fi 4X Strategy MMO / RPG Combat
+- **Platforms**: iOS, Android, PC (via Official Emulator / Web Client)
+- **Core Mechanics**: Base building, Nexus research, fleet composition, flagship modification, champion ground squad battles, alliance warfare (SvS, GvG, Dominion Warzone), and space anomaly events.
+
+---
+
+## 2. Damage Types & Combat Synergy Matrix
+FGF operates on a strategic triangular damage and resistance model:
+
+1. **Kinetic (Ballistic / Physical)**:
+   - *Strengths*: High burst hull damage against heavily armored flagships and capital structures.
+   - *Advantage*: Overcomes Beam-centric builds through superior hull armor penetration.
+   - *Key Heroes*: Doug Rockwell, Klara, Lucius Pullo.
+
+2. **Beam (Laser / Energy)**:
+   - *Strengths*: Continuous sustained energy damage, highly effective at melting shield barriers and light escort hulls.
+   - *Advantage*: Counters Ion-heavy compositions by overloading shield regeneration capacitors.
+   - *Key Heroes*: Jodie Beart, Evan Rogers, Eva von Trier.
+
+3. **Ion (Electromagnetic / Disruption)**:
+   - *Strengths*: Shield disruption, subsystem disabling, crowd control, and energy draining.
+   - *Advantage*: Disables Kinetic targeting systems and defensive thrusters.
+   - *Key Heroes*: Kama Moai, Killer Bee, Lani Verita.
+
+**Fleet Power Optimization Principle**:
+- Fleet Rating (March 1) depends heavily on flagship core synchronization, component mod tiers, and synergistic hero pairings.
+- Stacking 3+ heroes of the matching energy type activates the +15% faction resonance buff.
+
+---
+
+## 3. Hero Tier List (Meta Rankings — 2026)
+
+### S+ Tier (Supreme Meta Dominance)
+- **Doug Rockwell** | Role: Vanguard (Tank) | Energy: Kinetic
+  - *Specialty*: Massive personal damage mitigation, taunt aura, and reactive hull repair. Essential frontline for any Kinetic armada.
+- **Kama Moai** | Role: Control / DPS | Energy: Ion
+  - *Specialty*: AoE electromagnetic storm that stuns enemy flagships and disables weapon batteries for 4 seconds.
+- **Jodie Beart** | Role: Support / Healer | Energy: Beam
+  - *Specialty*: Continuous shield replenishment, energy recharge acceleration, and status cleanse.
+- **Klara** | Role: Primary DPS | Energy: Kinetic
+  - *Specialty*: Armor-piercing kinetic barrages with escalating critical strike rate against high-HP flagships.
+- **Evan Rogers** | Role: Sniper DPS | Energy: Beam
+  - *Specialty*: Focused long-range lance that ignores 30% of target shields and deals bonus damage to weakened enemies.
+
+### S Tier (Top-Tier Competitive)
+- **Lucius Pullo** | Role: Secondary Tank / Bruiser | Energy: Kinetic
+  - *Specialty*: Intercepts enemy projectiles and grants armor buffs to adjacent escort ships.
+- **Ajita** | Role: Tactician / Buffer | Energy: Ion
+  - *Specialty*: Buffs fleet attack speed and increases Ion disruption duration by 25%.
+- **Eva von Trier** | Role: Burst DPS | Energy: Beam
+  - *Specialty*: Rapid-fire prismatic lasers causing stacking melting debuffs on enemy hulls.
+- **Killer Bee** | Role: Flanker / Assassin | Energy: Ion
+  - *Specialty*: High evasion, backline flagship harasser, and energy cell sabotage.
+- **Lani Verita** | Role: Control / Disruptor | Energy: Ion
+  - *Specialty*: EMP pulse slowing enemy fleet march speed and targeting recovery.
+- **Lily** | Role: Support / Shield Battery | Energy: Beam
+  - *Specialty*: Overcharges companion shields and converts excess energy into offensive beam boosts.
+- **Aliya** | Role: Support / Tactical Officer | Energy: Kinetic
+  - *Specialty*: Fleet march speed boost and kinetic ammo replenishment rate amplification.
+
+---
+
+## 4. Flagship Archetypes & Meta Decks
+
+### Kinetic Heavy Artillery Deck
+- **Flagship**: Ironclad Dreadnought
+- **Primary Hero**: Doug Rockwell (Lead) + Klara (DPS) + Lucius Pullo (Defense)
+- **Core Components**: Reinforced Composite Armor, Heavy Railgun Battery, Kinetic Overdrive Core.
+- **Tactical Strategy**: Withstand initial energy salvos using high hull HP, then obliterate opposing flagships with massive kinetic volleys.
+
+### Beam Sustained Meltdown Deck
+- **Flagship**: Solaris Battlecruiser
+- **Primary Hero**: Jodie Beart (Lead) + Evan Rogers (DPS) + Eva von Trier (DPS)
+- **Core Components**: Prismatic Focus Array, Shield Harmonizer, Continuous Beam Projector.
+- **Tactical Strategy**: Maintain unbroken shield uptime while melting enemy escorts with stacking beam damage.
+
+### Ion Disruption & Control Deck
+- **Flagship**: Tempest Carrier
+- **Primary Hero**: Kama Moai (Lead) + Killer Bee (Flank) + Ajita (Buff)
+- **Core Components**: EMP Resonance Generator, Ion Pulse Launcher, Electronic Warfare Subsystem.
+- **Tactical Strategy**: Lock down enemy weapon systems and disrupt flagship commands, leaving targets helpless against strike craft.
+
+---
+
+## 5. Optimal Ground Team Compositions
+
+### Early Game Progression Team
+- Frontline: Doug Rockwell (Tank) + Lucius Pullo (Bruiser)
+- Midline: Starter DPS + Klara
+- Backline: Jodie Beart (Healer)
+
+### Mid Game Competitive Team
+- Frontline: Doug Rockwell (Tank)
+- Midline: Klara (Kinetic DPS) + Eva von Trier (Beam DPS)
+- Backline: Kama Moai (Ion CC) + Jodie Beart (Healer)
+
+### Late Game High-End PvP Arena Team
+- Frontline: Doug Rockwell (Kinetic Vanguard)
+- Midline: Klara (Kinetic DPS) + Evan Rogers (Beam Sniper)
+- Backline: Kama Moai (Ion CC) + Jodie Beart (Beam Support/Cleanse)
+
+---
+
+## 6. Major Events & Walkthrough Strategies
+
+### Operation Blackout
+- *Objective*: Cooperative alliance wave defense against corrupted alien swarms.
+- *Strategy*: Position Ion control fleets near choke points to stall boss waves; deploy Beam fleets behind to melt swarm clusters. Coordinate active time slots via Guild Timezone tools.
+
+### Kaboom Event
+- *Objective*: High-yield asteroid mining and explosive demolition for rare ores.
+- *Strategy*: Save speedup tokens for mining efficiency stages. Target gold-tier asteroid clusters during 2x multiplier windows.
+
+### Arms Race (Stages A & B)
+- *Objective*: Daily recurring milestones for building, researching, training, and hero upgrading.
+- *Strategy*: Sync building completion and Nexus research timers with matching Arms Race stages to double-dip event rewards and tournament rankings.
+
+### Guild vs Guild (GvG) & State vs State (SvS)
+- *Structure*: Days 1-5 preparation (resource gathering, tech upgrade, troop training), Day 6 cross-state PvP war.
+- *Strategy*: Rally leaders must utilize full S+ Kinetic or Ion decks. Establish 24/7 watch shifts for night defense to prevent rally sniping.
+
+### Stella Anomaly (ARG & In-Game Mystery)
+- *Objective*: Interactive puzzle deciphering codes across galactic anomalies.
+- *Phases*: 4 progressive security decrypt phases requiring lore knowledge, Morse decoding, and binary terminal input.
+
+---
+
+## 7. Interactive Calculators & Math Formulas
+
+### 1. Build Time Speedup Formula
+```
+Effective Time = Base Build Time / (1 + (Total Construction Speed% / 100))
+Speedup Required = Effective Time - Current Elapsed Time
+```
+
+### 2. Champion Upgrade Requirements
+- Leveling progression requires Champion EXP chips and Tactical Manuals.
+- Major tier milestones occur at Levels 10, 20, 40, 60, 80, 100.
+- Skill upgrades require Skill Books corresponding to the champion's energy type (Kinetic, Beam, Ion).
+
+### 3. Nexus Research Scaling
+- Research speed increases with Nexus Laboratory level and Alliance Tech tree investments.
+- High-tier military tech (T5/T6 fleets) requires prior completion of all prerequisite economic nodes.
+
+---
+
+## 8. Active Redeemable Gift Codes
+*(Verified and regularly updated on FGF Wiki)*
+
+- **FLEET777**: 500x Diamonds, 5x Advanced Recruitment Tickets, 10x 1-Hour Speedups.
+- **FOUNDATION**: 300x Diamonds, 100,000x Titanium, 100,000x Energy Crystals.
+- **HERO777**: 3x Legendary Hero Shards, 20x Level-2 Tactical Manuals.
+- **NEWFRONTIER**: 1,000x Diamonds, 10x Fleet Speedups.
+- **GALAXYWITHYOU**: 250x Diamonds, 50,000x Alloy, 50,000x Fuel.
+
+*How to Redeem*:
+1. Open *Foundation: Galactic Frontier*.
+2. Tap your **Avatar** (top left).
+3. Navigate to **Settings** > **Redeem Code** (or **Gift Code**).
+4. Enter code and confirm; rewards arrive instantly in the in-game mailbox.
+
+---
+
+## 9. FGF Guild Management Tool (ERP)
+- **Official URL**: https://guildmanagement.vercel.app/
+- **Key Features**:
+  - **16 AI Vision OCR Scanners**: Automated extraction of Roster stats, SvS/GvG leaderboards, Shadowfront attendance, and Glory tallies from screenshots in 3 seconds.
+  - **7D Military Matrix**: Visualizes power across Fleet, Tech, Flagship, Champions, Crew, Glory, and Total Power.
+  - **24/7 Timezone Coverage**: Heatmaps displaying hourly active fleet power to eliminate night vulnerability.
+  - **Automated Shadowfront Squads**: Algorithmic selection of 20 Starters / 10 Reserves based on real attendance.
+  - **Player Portal**: Dedicated self-service portal for member growth tracking and 1-click absence reporting.
+  - **Discord Webhooks**: Automatic lineup and battle report dispatch.
+
+---
+
+## 10. Official Community & Content Creator
+- **Lead Partner Creator**: Mirandus Plays (@mirandusplaysmobile)
+- **Creator Hub**: https://fgfwiki.com/en/creators
+- **Wiki Founder & Lead Strategist**: HawkTuah #1061

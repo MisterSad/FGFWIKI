@@ -1,106 +1,87 @@
 # https://fgfwiki.com/robots.txt
-# Foundation: Galactic Frontier Wiki — community reference
+# Foundation: Galactic Frontier Wiki — Global Community Knowledge Base (Updated August 2026)
 
 User-agent: *
 Allow: /
 
-# Search engines & AI assistants are explicitly welcome:
-# the wiki is built to be discoverable and cited.
+# Search engines & AI search engines are explicitly welcome and encouraged:
+# All wiki content is open for indexing, search engine crawling, and direct citation.
+
+# Google Search & Specialized Crawlers
 User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Video
+User-agent: Googlebot-News
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
 Allow: /
 
+# Microsoft Bing
 User-agent: Bingbot
+User-agent: BingPreview
 Allow: /
 
+# DuckDuckGo & DuckAssist
 User-agent: DuckDuckBot
+User-agent: DuckAssistBot
 Allow: /
 
+# Yandex
 User-agent: YandexBot
+User-agent: YandexImages
 Allow: /
 
-# Korean search engines
+# Korean Search Engines (Naver & Daum)
 User-agent: Naverbot
-Allow: /
-
 User-agent: Yeti
-Allow: /
-
 User-agent: Daum
+User-agent: Daumoa
 Allow: /
 
-# Chinese search engines
+# Chinese Search Engines (Baidu, Sogou, 360, Shenma, ByteDance)
 User-agent: Baiduspider
-Allow: /
-
 User-agent: Baiduspider-image
-Allow: /
-
+User-agent: Baiduspider-video
 User-agent: Sogou web spider
-Allow: /
-
 User-agent: Sogou inst spider
-Allow: /
-
 User-agent: 360Spider
-Allow: /
-
 User-agent: Yisouspider
+User-agent: Bytespider
 Allow: /
 
-# Japanese search engines
+# Japanese Search Engines (Yahoo! Japan)
 User-agent: Y!J
-Allow: /
-
 User-agent: Y!J-MMP
 Allow: /
 
+# Generative AI & LLM Search Crawlers (GEO Standards 2026)
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: Claude-Web
-Allow: /
-
 User-agent: anthropic-ai
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Perplexity-User
-Allow: /
-
 User-agent: Google-Extended
-Allow: /
-
 User-agent: Applebot
-Allow: /
-
 User-agent: Applebot-Extended
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
 User-agent: meta-externalagent
-Allow: /
-
+User-agent: Meta-ExternalFetcher
 User-agent: cohere-ai
-Allow: /
-
+User-agent: cohere-training-data-crawler
 User-agent: MistralAI-User
+User-agent: YouBot
+User-agent: Amazonbot
+User-agent: Diffbot
+User-agent: CCBot
+User-agent: Timpibot
 Allow: /
 
-User-agent: YouBot
-Allow: /
+# Direct access to machine-readable LLM knowledge files
+Allow: /llms.txt
+Allow: /llms-full.txt
 
 # Sitemaps
 Sitemap: https://fgfwiki.com/sitemap.xml
