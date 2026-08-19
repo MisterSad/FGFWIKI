@@ -3,20 +3,20 @@ import { NavLink, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles, Video, Crown, Flame } from 'lucide-react';
 
-// Map route paths to icons and translation labels
+// Map route paths to icons and translation labels in logical order
 const NAV_ITEMS = [
     { path: '/home', labelKey: 'navigation.home', icon: Home },
-    { path: '/guild-tool', labelKey: 'navigation.guild_tool', icon: Crown, featured: true },
-    { path: '/evolutions', labelKey: 'navigation.game_evolutions', icon: Flame },
     { path: '/news', labelKey: 'navigation.news', icon: Newspaper },
     { path: '/guides', labelKey: 'navigation.guides', icon: BookOpen },
     { path: '/champions', labelKey: 'navigation.champions', icon: Trophy },
     { path: '/flagships', labelKey: 'navigation.flagships', icon: Rocket },
     { path: '/events', labelKey: 'navigation.events', icon: Calendar },
     { path: '/tools', labelKey: 'navigation.builder', icon: Hammer },
+    { path: '/guild-tool', labelKey: 'navigation.guild_tool', icon: Crown, featured: true },
     { path: '/gift-codes', labelKey: 'navigation.gift_codes', icon: Gift },
-    { path: '/stella-anomaly', labelKey: 'navigation.stella_anomaly', icon: Sparkles, badge: 'EVENT' },
+    { path: '/evolutions', labelKey: 'navigation.game_evolutions', icon: Flame },
     { path: '/creators', labelKey: 'navigation.creators', icon: Video },
+    { path: '/stella-anomaly', labelKey: 'navigation.stella_anomaly', icon: Sparkles, badge: 'EVENT' },
 ];
 
 export default function Tabs() {
@@ -180,6 +180,66 @@ export default function Tabs() {
                                     </span>
                                 </NavLink>
 
+                                {/* Flagships */}
+                                <NavLink
+                                    to="/flagships"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/flagships') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Rocket className="mobile-more-card__icon" size={24} />
+                                    <span className="mobile-more-card__label">{t('navigation.flagships')}</span>
+                                </NavLink>
+
+                                {/* Events */}
+                                <NavLink
+                                    to="/events"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/events') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Calendar className="mobile-more-card__icon" size={24} />
+                                    <span className="mobile-more-card__label">{t('navigation.events')}</span>
+                                </NavLink>
+
+                                {/* Tools */}
+                                <NavLink
+                                    to="/tools"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/tools') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Hammer className="mobile-more-card__icon" size={24} />
+                                    <span className="mobile-more-card__label">{t('navigation.builder')}</span>
+                                </NavLink>
+
+                                {/* Gift Codes */}
+                                <NavLink
+                                    to="/gift-codes"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/gift-codes') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Gift className="mobile-more-card__icon" size={24} />
+                                    <span className="mobile-more-card__label">{t('navigation.gift_codes')}</span>
+                                </NavLink>
+
+                                {/* Game Evolutions */}
+                                <NavLink
+                                    to="/evolutions"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/evolutions') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Flame className="mobile-more-card__icon" size={24} style={{ color: '#ef4444' }} />
+                                    <span className="mobile-more-card__label">{t('navigation.game_evolutions')}</span>
+                                </NavLink>
+
+                                {/* Creators Corner */}
+                                <NavLink
+                                    to="/creators"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/creators') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Video className="mobile-more-card__icon" size={24} />
+                                    <span className="mobile-more-card__label">{t('navigation.creators')}</span>
+                                </NavLink>
+
                                 {/* Stella Anomaly */}
                                 {isEventVisible && (
                                     <NavLink
@@ -206,66 +266,6 @@ export default function Tabs() {
                                         </span>
                                     </NavLink>
                                 )}
-
-                                {/* Game Evolutions */}
-                                <NavLink
-                                    to="/evolutions"
-                                    className={() => `mobile-more-card ${location.pathname.startsWith('/evolutions') ? 'active' : ''}`}
-                                    onClick={() => setIsMoreOpen(false)}
-                                >
-                                    <Flame className="mobile-more-card__icon" size={24} style={{ color: '#ef4444' }} />
-                                    <span className="mobile-more-card__label">{t('navigation.game_evolutions')}</span>
-                                </NavLink>
-
-                                {/* Tools */}
-                                <NavLink
-                                    to="/tools"
-                                    className={() => `mobile-more-card ${location.pathname.startsWith('/tools') ? 'active' : ''}`}
-                                    onClick={() => setIsMoreOpen(false)}
-                                >
-                                    <Hammer className="mobile-more-card__icon" size={24} />
-                                    <span className="mobile-more-card__label">{t('navigation.builder')}</span>
-                                </NavLink>
-
-                                {/* Flagships */}
-                                <NavLink
-                                    to="/flagships"
-                                    className={() => `mobile-more-card ${location.pathname.startsWith('/flagships') ? 'active' : ''}`}
-                                    onClick={() => setIsMoreOpen(false)}
-                                >
-                                    <Rocket className="mobile-more-card__icon" size={24} />
-                                    <span className="mobile-more-card__label">{t('navigation.flagships')}</span>
-                                </NavLink>
-
-                                {/* Events */}
-                                <NavLink
-                                    to="/events"
-                                    className={() => `mobile-more-card ${location.pathname.startsWith('/events') ? 'active' : ''}`}
-                                    onClick={() => setIsMoreOpen(false)}
-                                >
-                                    <Calendar className="mobile-more-card__icon" size={24} />
-                                    <span className="mobile-more-card__label">{t('navigation.events')}</span>
-                                </NavLink>
-
-                                {/* Gift Codes */}
-                                <NavLink
-                                    to="/gift-codes"
-                                    className={() => `mobile-more-card ${location.pathname.startsWith('/gift-codes') ? 'active' : ''}`}
-                                    onClick={() => setIsMoreOpen(false)}
-                                >
-                                    <Gift className="mobile-more-card__icon" size={24} />
-                                    <span className="mobile-more-card__label">{t('navigation.gift_codes')}</span>
-                                </NavLink>
-
-                                {/* Creators Corner */}
-                                <NavLink
-                                    to="/creators"
-                                    className={() => `mobile-more-card ${location.pathname.startsWith('/creators') ? 'active' : ''}`}
-                                    onClick={() => setIsMoreOpen(false)}
-                                >
-                                    <Video className="mobile-more-card__icon" size={24} />
-                                    <span className="mobile-more-card__label">{t('navigation.creators')}</span>
-                                </NavLink>
                             </div>
                         </div>
                     </>
