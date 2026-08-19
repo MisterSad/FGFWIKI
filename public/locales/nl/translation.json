@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Verificatie voltooid. De 500 Platinum Credits worden vóór 30 september 2026 naar je in-game mailbox gestuurd.",
+        "rank_3_success_msg": "Verificatie voltooid. De 250 Platinum Credits worden vóór 30 september 2026 naar je in-game mailbox gestuurd.",
+        "participation_msg": "Verificatie voltooid. Bedankt voor je deelname! Blijf op de hoogte voor het volgende evenement."
     },
     "creators_page": {
         "title": "CREATORS CORNER",

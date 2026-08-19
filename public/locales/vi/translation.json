@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Xác minh hoàn tất. 500 Tín dụng Bạch kim sẽ được gửi tới hộp thư trong trò chơi của bạn trước ngày 30 tháng 9 năm 2026.",
+        "rank_3_success_msg": "Xác minh hoàn tất. 250 Tín dụng Bạch kim sẽ được gửi tới hộp thư trong trò chơi của bạn trước ngày 30 tháng 9 năm 2026.",
+        "participation_msg": "Xác minh hoàn tất. Cảm ơn bạn đã tham gia! Hãy chú ý đón chờ sự kiện tiếp theo."
     },
     "creators_page": {
         "title": "GÓC NHÀ SÁNG TẠO",

@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "اكتمل التحقق. سيتم إرسال 500 من الأرصدة البلاتينية إلى صندوق البريد داخل اللعبة قبل 30 سبتمبر 2026.",
+        "rank_3_success_msg": "اكتمل التحقق. سيتم إرسال 250 من الأرصدة البلاتينية إلى صندوق البريد داخل اللعبة قبل 30 سبتمبر 2026.",
+        "participation_msg": "اكتمل التحقق. شكراً لمشاركتك! ترقب الحدث القادم."
     },
     "creators_page": {
         "title": "ركن صناع المحتوى",

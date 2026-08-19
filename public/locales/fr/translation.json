@@ -1576,7 +1576,10 @@
         "leaderboard_col_uid": "UID DU COMMANDANT",
         "leaderboard_col_date": "DATE & HEURE",
         "leaderboard_col_reward": "STATUT / RÉCOMPENSE",
-        "leaderboard_you": "VOUS"
+        "leaderboard_you": "VOUS",
+        "rank_2_success_msg": "Vérification terminée. Les 500 Crédits Platine seront envoyés dans votre boîte de messagerie en jeu avant le 30 septembre 2026.",
+        "rank_3_success_msg": "Vérification terminée. Les 250 Crédits Platine seront envoyés dans votre boîte de messagerie en jeu avant le 30 septembre 2026.",
+        "participation_msg": "Vérification terminée. Merci pour votre participation ! Restez à l'affût pour le prochain événement."
     },
     "creators_page": {
         "title": "ESPACE CRÉATEURS",

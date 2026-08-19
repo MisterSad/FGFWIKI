@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Verificação concluída. Os 500 Créditos Platina serão enviados para a sua caixa de correio no jogo antes de 30 de setembro de 2026.",
+        "rank_3_success_msg": "Verificação concluída. Os 250 Créditos Platina serão enviados para a sua caixa de correio no jogo antes de 30 de setembro de 2026.",
+        "participation_msg": "Verificação concluída. Obrigado pela sua participação! Fique atento ao próximo evento."
     },
     "creators_page": {
         "title": "CANTINHO DOS CRIADORES",

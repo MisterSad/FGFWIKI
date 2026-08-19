@@ -263,6 +263,7 @@ export default function StellaAnomaly() {
     });
     const [leaderboard, setLeaderboard] = useState([]);
     const [leaderboardLoading, setLeaderboardLoading] = useState(false);
+    const effectiveRank = rank || (leaderboard.length > 0 && leaderboard.find(e => e.gameUid === localStorage.getItem('stella_anomaly_submitted_uid'))?.rank) || null;
 
     const fetchLeaderboard = async () => {
         setLeaderboardLoading(true);
@@ -837,7 +838,7 @@ export default function StellaAnomaly() {
                                                     border: '1px solid rgba(232, 201, 106, 0.2)',
                                                     borderRadius: '4px'
                                                 }}>
-                                                    {rank === 1 && (
+                                                    {effectiveRank === 1 && (
                                                         <>
                                                             <div style={{ color: 'var(--gold-bright)', fontWeight: 'bold', fontSize: '1rem' }}>
                                                                 🏆 {t('stella_anomaly.rank_1_title') || "1st PLACE"}
@@ -847,7 +848,7 @@ export default function StellaAnomaly() {
                                                             </div>
                                                         </>
                                                     )}
-                                                    {rank === 2 && (
+                                                    {effectiveRank === 2 && (
                                                         <>
                                                             <div style={{ color: '#C0C0C0', fontWeight: 'bold', fontSize: '1rem' }}>
                                                                 🥈 {t('stella_anomaly.rank_2_title') || "2nd PLACE"}
@@ -857,7 +858,7 @@ export default function StellaAnomaly() {
                                                             </div>
                                                         </>
                                                     )}
-                                                    {rank === 3 && (
+                                                    {effectiveRank === 3 && (
                                                         <>
                                                             <div style={{ color: '#CD7F32', fontWeight: 'bold', fontSize: '1rem' }}>
                                                                 🥉 {t('stella_anomaly.rank_3_title') || "3rd PLACE"}
@@ -867,10 +868,10 @@ export default function StellaAnomaly() {
                                                             </div>
                                                         </>
                                                     )}
-                                                    {rank && rank > 3 && (
+                                                    {effectiveRank && effectiveRank > 3 && (
                                                         <>
                                                             <div style={{ color: 'var(--text-secondary)', fontWeight: 'bold', fontSize: '0.95rem' }}>
-                                                                🏁 {t('stella_anomaly.rank_other_title', { rank }) || `RANK: ${rank}`}
+                                                                🏁 {t('stella_anomaly.rank_other_title', { rank: effectiveRank }) || `RANK: ${effectiveRank}`}
                                                             </div>
                                                             <div style={{ color: '#FFFFFF', fontSize: '0.8rem', marginTop: '0.4rem' }}>
                                                                 {t('stella_anomaly.rank_other_desc') || "The podium is full, but your time is logged. Thank you for participating!"}
@@ -879,9 +880,20 @@ export default function StellaAnomaly() {
                                                     )}
                                                 </div>
 
-                                                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                                                    {t('stella_anomaly.success_msg') || 'Verification complete. Rewards will be sent directly to your in-game mailbox before September 30, 2026.'}
-                                                </div>
+                                                {effectiveRank && effectiveRank > 3 ? (
+                                                    <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                                                        {t('stella_anomaly.participation_msg') || 'Verification complete. Thank you for participating! Stay tuned for upcoming events.'}
+                                                    </div>
+                                                ) : (
+                                                    <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                                                        {effectiveRank === 2
+                                                            ? (t('stella_anomaly.rank_2_success_msg') || t('stella_anomaly.success_msg') || 'Verification complete. The 500 Platinum Credits will be sent to your in-game mailbox before September 30, 2026.')
+                                                            : effectiveRank === 3
+                                                                ? (t('stella_anomaly.rank_3_success_msg') || t('stella_anomaly.success_msg') || 'Verification complete. The 250 Platinum Credits will be sent to your in-game mailbox before September 30, 2026.')
+                                                                : (t('stella_anomaly.success_msg') || 'Verification complete. The 1,000 Platinum Credits will be sent to your in-game mailbox before September 30, 2026.')
+                                                        }
+                                                    </div>
+                                                )}
 
                                                 {/* Leaderboard & Podium Section */}
                                                 <div style={{

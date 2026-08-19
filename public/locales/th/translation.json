@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "การยืนยันเสร็จสมบูรณ์ เครดิตแพลทินัม 500 จะถูกส่งไปยังกล่องจดหมายในเกมของคุณก่อนวันที่ 30 กันยายน 2026",
+        "rank_3_success_msg": "การยืนยันเสร็จสมบูรณ์ เครดิตแพลทินัม 250 จะถูกส่งไปยังกล่องจดหมายในเกมของคุณก่อนวันที่ 30 กันยายน 2026",
+        "participation_msg": "การยืนยันเสร็จสมบูรณ์ ขอบคุณที่เข้าร่วม! โปรดติดตามกิจกรรมต่อไป"
     },
     "creators_page": {
         "title": "มุมครีเอเตอร์",

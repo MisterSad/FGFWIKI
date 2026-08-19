@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Verifica completata. I 500 Crediti Platino saranno inviati alla tua casella di posta in gioco entro il 30 settembre 2026.",
+        "rank_3_success_msg": "Verifica completata. I 250 Crediti Platino saranno inviati alla tua casella di posta in gioco entro il 30 settembre 2026.",
+        "participation_msg": "Verifica completata. Grazie per aver partecipato! Resta sintonizzato per il prossimo evento."
     },
     "creators_page": {
         "title": "ANGOLO DEI CREATORI",

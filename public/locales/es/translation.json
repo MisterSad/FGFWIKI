@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Verificación completada. Los 500 Créditos Platino se enviarán a su buzón del juego antes del 30 de septiembre de 2026.",
+        "rank_3_success_msg": "Verificación completada. Los 250 Créditos Platino se enviarán a su buzón del juego antes del 30 de septiembre de 2026.",
+        "participation_msg": "Verificación completada. ¡Gracias por participar! Estén atentos al próximo evento."
     },
     "creators_page": {
         "title": "RINCÓN DE CREADORES",

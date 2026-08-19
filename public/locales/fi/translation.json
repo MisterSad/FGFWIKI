@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Vahvistus valmis. 500 platinakrediittiä lähetetään pelinsisäiseen postilaatikkoosi ennen 30. syyskuuta 2026.",
+        "rank_3_success_msg": "Vahvistus valmis. 250 platinakrediittiä lähetetään pelinsisäiseen postilaatikkoosi ennen 30. syyskuuta 2026.",
+        "participation_msg": "Vahvistus valmis. Kiitos osallistumisestasi! Pysy kuulolla seuraavaa tapahtumaa varten."
     },
     "creators_page": {
         "title": "SISÄLLÖNTUOTTAJIEN NURKKA",

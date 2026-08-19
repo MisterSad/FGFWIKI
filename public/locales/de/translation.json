@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Überprüfung abgeschlossen. Die 500 Platin-Credits werden vor dem 30. September 2026 an dein Postfach im Spiel gesendet.",
+        "rank_3_success_msg": "Überprüfung abgeschlossen. Die 250 Platin-Credits werden vor dem 30. September 2026 an dein Postfach im Spiel gesendet.",
+        "participation_msg": "Überprüfung abgeschlossen. Vielen Dank für deine Teilnahme! Halte Ausschau nach dem nächsten Event."
     },
     "creators_page": {
         "title": "CREATORS CORNER",

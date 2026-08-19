@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Pengesahan selesai. 500 Kredit Platinum akan dihantar ke peti surat dalam permainan anda sebelum 30 September 2026.",
+        "rank_3_success_msg": "Pengesahan selesai. 250 Kredit Platinum akan dihantar ke peti surat dalam permainan anda sebelum 30 September 2026.",
+        "participation_msg": "Pengesahan selesai. Terima kasih kerana mengambil bahagian! Nantikan acara seterusnya."
     },
     "creators_page": {
         "title": "SUDUT PENCIPTA",

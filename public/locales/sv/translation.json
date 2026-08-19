@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Verifiering slutförd. 500 Platina-krediter skickas till din brevlåda i spelet före 30 september 2026.",
+        "rank_3_success_msg": "Verifiering slutförd. 250 Platina-krediter skickas till din brevlåda i spelet före 30 september 2026.",
+        "participation_msg": "Verifiering slutförd. Tack för ditt deltagande! Håll utkik efter nästa evenemang."
     },
     "creators_page": {
         "title": "SKAPARHÖRNAN",

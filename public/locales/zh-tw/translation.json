@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "驗證完成。500白金點券將於2026年9月30日前發放至您的遊戲內郵箱。",
+        "rank_3_success_msg": "驗證完成。250白金點券將於2026年9月30日前發放至您的遊戲內郵箱。",
+        "participation_msg": "驗證完成。感謝您的參與！敬請期待下一次活動。"
     },
     "creators_page": {
         "title": "創作者專區",

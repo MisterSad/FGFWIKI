@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Doğrulama tamamlandı. 500 Platin Kredi, 30 Eylül 2026 tarihinden önce oyun içi posta kutunuza gönderilecektir.",
+        "rank_3_success_msg": "Doğrulama tamamlandı. 250 Platin Kredi, 30 Eylül 2026 tarihinden önce oyun içi posta kutunuza gönderilecektir.",
+        "participation_msg": "Doğrulama tamamlandı. Katıldığınız için teşekkür ederiz! Bir sonraki etkinlik için takipte kalın."
     },
     "creators_page": {
         "title": "İÇERIK ÜRETICI KÖŞESI",

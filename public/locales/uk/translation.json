@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Перевірку завершено. 500 платинових кредитів буде надіслано на вашу внутрішньоігрову скриньку до 30 вересня 2026 року.",
+        "rank_3_success_msg": "Перевірку завершено. 250 платинових кредитів буде надіслано на вашу внутрішньоігрову скриньку до 30 вересня 2026 року.",
+        "participation_msg": "Перевірку завершено. Дякуємо за участь! Слідкуйте за наступними подіями."
     },
     "creators_page": {
         "title": "КУТОЧОК АВТОРІВ",

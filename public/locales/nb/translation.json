@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Bekreftelse fullført. 500 platinakreditter sendes til postkassen din i spillet før 30. september 2026.",
+        "rank_3_success_msg": "Bekreftelse fullført. 250 platinakreditter sendes til postkassen din i spillet før 30. september 2026.",
+        "participation_msg": "Bekreftelse fullført. Takk for din deltakelse! Følg med for neste arrangement."
     },
     "creators_page": {
         "title": "SKAPERHJØRNET",

@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Weryfikacja zakończona. 500 Platynowych Kredytów zostanie wysłanych do Twojej skrzynki pocztowej w grze przed 30 września 2026 roku.",
+        "rank_3_success_msg": "Weryfikacja zakończona. 250 Platynowych Kredytów zostanie wysłanych do Twojej skrzynki pocztowej w grze przed 30 września 2026 roku.",
+        "participation_msg": "Weryfikacja zakończona. Dziękujemy za udział! Bądź na bieżąco z kolejnymi wydarzeniami."
     },
     "creators_page": {
         "title": "KĄCIK TWÓRCÓW",

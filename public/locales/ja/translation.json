@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "認証が完了しました。500プラチナクレジットは2026年9月30日までにゲーム内のメールボックスに送信されます。",
+        "rank_3_success_msg": "認証が完了しました。250プラチナクレジットは2026年9月30日までにゲーム内のメールボックスに送信されます。",
+        "participation_msg": "認証が完了しました。ご参加いただきありがとうございました！次回イベントをお楽しみに。"
     },
     "creators_page": {
         "title": "クリエイターズコーナー",

@@ -1566,7 +1566,10 @@
         "secret_code_label": "SECRET CODE",
         "secret_code_placeholder": "Enter the decrypted event code...",
         "uid_label": "GAME USER ID (UID)",
-        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code."
+        "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
+        "rank_2_success_msg": "Проверка завершена. 500 платиновых кредитов будут отправлены на вашу внутриигровую почту до 30 сентября 2026 года.",
+        "rank_3_success_msg": "Проверка завершена. 250 платиновых кредитов будут отправлены на вашу внутриигровую почту до 30 сентября 2026 года.",
+        "participation_msg": "Проверка завершена. Спасибо за участие! Следите за новостями о следующем событии."
     },
     "creators_page": {
         "title": "УГОЛОК АВТОРОВ",

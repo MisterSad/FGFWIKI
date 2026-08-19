@@ -1576,7 +1576,10 @@
         "leaderboard_col_uid": "COMMANDER UID",
         "leaderboard_col_date": "TIME (UTC)",
         "leaderboard_col_reward": "STATUS / REWARD",
-        "leaderboard_you": "YOU"
+        "leaderboard_you": "YOU",
+        "rank_2_success_msg": "Verification complete. The 500 Platinum Credits will be sent to your in-game mailbox before September 30, 2026.",
+        "rank_3_success_msg": "Verification complete. The 250 Platinum Credits will be sent to your in-game mailbox before September 30, 2026.",
+        "participation_msg": "Verification complete. Thank you for participating! Stay tuned for upcoming events."
     },
     "creators_page": {
         "title": "CREATORS CORNER",
