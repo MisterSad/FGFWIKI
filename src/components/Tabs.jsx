@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles, Video, Crown } from 'lucide-react';
+import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles, Video, Crown, Flame } from 'lucide-react';
 
 // Map route paths to icons and translation labels
 const NAV_ITEMS = [
     { path: '/home', labelKey: 'navigation.home', icon: Home },
     { path: '/guild-tool', labelKey: 'navigation.guild_tool', icon: Crown, featured: true },
+    { path: '/evolutions', labelKey: 'navigation.game_evolutions', icon: Flame },
     { path: '/news', labelKey: 'navigation.news', icon: Newspaper },
     { path: '/guides', labelKey: 'navigation.guides', icon: BookOpen },
     { path: '/champions', labelKey: 'navigation.champions', icon: Trophy },
@@ -36,7 +37,7 @@ export default function Tabs() {
     const isGuidesActive = location.pathname.startsWith('/guides');
     const isChampionsActive = location.pathname.startsWith('/champions');
     
-    const morePaths = ['/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly', '/creators'];
+    const morePaths = ['/evolutions', '/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly', '/creators'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));
 
     return (
@@ -205,6 +206,16 @@ export default function Tabs() {
                                         </span>
                                     </NavLink>
                                 )}
+
+                                {/* Game Evolutions */}
+                                <NavLink
+                                    to="/evolutions"
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/evolutions') ? 'active' : ''}`}
+                                    onClick={() => setIsMoreOpen(false)}
+                                >
+                                    <Flame className="mobile-more-card__icon" size={24} style={{ color: '#ef4444' }} />
+                                    <span className="mobile-more-card__label">{t('navigation.game_evolutions')}</span>
+                                </NavLink>
 
                                 {/* Tools */}
                                 <NavLink

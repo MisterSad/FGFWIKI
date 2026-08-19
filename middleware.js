@@ -17,6 +17,7 @@ const SPA_ROUTES = [
     '/stella-anomaly',
     '/creators',
     '/guild-tool',
+    '/evolutions',
     '/daily-tasks',
     '/flagship-decks',
     '/ground-teams',

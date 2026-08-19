@@ -22,6 +22,7 @@ const GiftCodes = lazy(() => import('./components/GiftCodes'));
 const StellaAnomaly = lazy(() => import('./components/StellaAnomaly'));
 const CreatorsCorner = lazy(() => import('./components/CreatorsCorner'));
 const GuildTool = lazy(() => import('./components/GuildTool'));
+const GameEvolutions = lazy(() => import('./components/GameEvolutions'));
 const NotFound = lazy(() => import('./components/NotFound'));
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
                 <Route path="/creators" element={<CreatorsCorner />} />
                 <Route path="/creators/:creatorId" element={<CreatorsCorner />} />
                 <Route path="/guild-tool" element={<GuildTool />} />
+                <Route path="/evolutions" element={<GameEvolutions />} />
+                <Route path="/evolutions/:threadId" element={<GameEvolutions />} />
+                <Route path="/game-evolutions" element={<Navigate to="/evolutions" replace />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

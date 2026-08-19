@@ -21,6 +21,8 @@ const ROUTE_KEYS = {
     '/creators': 'creators',
     '/stella-anomaly': 'stella_anomaly',
     '/guild-tool': 'guild_tool',
+    '/evolutions': 'game_evolutions',
+    '/game-evolutions': 'game_evolutions',
     '/daily-tasks': 'guides',
     '/flagship-decks': 'flagships',
     '/ground-teams': 'champions',

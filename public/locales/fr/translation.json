@@ -52,10 +52,16 @@
             "title": "Guild Management Tool — Gérez votre guilde FGF comme un pro",
             "description": "Événements, présence, classements, Glory et abonnements dans un seul outil pour les guildes de Foundation: Galactic Frontier.",
             "keywords": "Guild Management Tool, outil de guilde FGF, événements de guilde, suivi de présence, Glory, Foundation Galactic Frontier"
+        },
+        "game_evolutions": {
+            "title": "Évolutions du Jeu & Retours Joueurs — Foundation: Galactic Frontier Wiki",
+            "description": "Proposez des évolutions de jeu, signalez des problèmes, votez sur la frise de priorité et débattez avec la communauté de Foundation: Galactic Frontier.",
+            "keywords": "Évolutions jeu FGF, retours joueurs, suggestions, frise de priorité, FGF wiki, Foundation Galactic Frontier"
         }
     },
     "navigation": {
         "home": "Accueil",
+        "game_evolutions": "Évolutions du Jeu",
         "news": "Actualités",
         "guides": "Guides",
         "daily_tasks": "Tâches quotidiennes",
@@ -1850,5 +1856,96 @@
         "demo_feat_player_3": "Absences 1-Clic",
         "demo_feat_player_4": "Suivi Assiduité",
         "demo_feat_player_5": "KPIs Personnels"
+    },
+    "evolutions": {
+        "title": "Évolutions du Jeu",
+        "subtitle": "Espace de suggestions et retours communautaires pour Foundation: Galactic Frontier. Proposez vos idées, votez sur la frise de priorité et participez aux futures évolutions du jeu.",
+        "propose_btn": "Proposer une évolution",
+        "search_placeholder": "Rechercher une évolution, mot-clé, problème ou idée...",
+        "sort_by": "Trier par",
+        "sort_votes": "🔥 Plus de votes (Plus attendus)",
+        "sort_newest": "🆕 Plus récents",
+        "sort_discussed": "💬 Plus commentés",
+        "sort_status": "🎯 Par statut",
+        "filter_all": "Tous",
+        "filter_category": "Catégorie",
+        "filter_tier": "Niveau de Demande",
+        "categories": {
+            "all": "Toutes catégories",
+            "gameplay": "Gameplay & Mécaniques",
+            "qol": "QoL & Ergonomie",
+            "balance": "Équilibrage & Méta",
+            "ships": "Flottes & Vaisseaux",
+            "heroes": "Héros & Équipage",
+            "economy": "Économie & Marché",
+            "pvp": "PvP, GvG & SvS",
+            "bugs": "Bugs & Problèmes",
+            "general": "Général"
+        },
+        "timeline": {
+            "title": "Frise de Demande & Priorité",
+            "tier_low": "Faible demande",
+            "tier_low_desc": "Suggestion émergente (1-4 votes)",
+            "tier_moderate": "Modéré",
+            "tier_moderate_desc": "Intérêt notable (5-14 votes)",
+            "tier_high": "Important",
+            "tier_high_desc": "Forte attente (15-29 votes)",
+            "tier_critical": "Très Important / Prioritaire",
+            "tier_critical_desc": "Priorité critique de la communauté (30+ votes)",
+            "votes_count_one": "{{count}} vote",
+            "votes_count_other": "{{count}} votes",
+            "vote_btn": "Je soutiens cette idée",
+            "voted_btn": "Voté (+1)",
+            "login_to_vote": "Connectez-vous pour voter"
+        },
+        "statuses": {
+            "pending": "En attente de validation fgfwiki",
+            "approved": "Validé par la communauté",
+            "in_progress": "En cours d'étude",
+            "implemented": "Intégré en jeu 🎉",
+            "rejected": "Non retenu"
+        },
+        "modal": {
+            "create_title": "PROPOSER UNE ÉVOLUTION DU JEU",
+            "title_label": "Titre / Résumé de la proposition",
+            "title_placeholder": "ex : Ajouter un bouton 'Tout collecter' dans les courriers...",
+            "category_label": "Catégorie",
+            "description_label": "Description détaillée (Problème constaté + Solution suggérée)",
+            "description_placeholder": "Expliquez clairement ce qui pose problème ou manque en jeu, et quel changement précis vous souhaitez voir...",
+            "duplicate_warning": "Des propositions similaires existent déjà — soutenez-les pour regrouper les votes :",
+            "duplicate_empty": "Aucun doublon détecté. Votre idée semble unique !",
+            "moderation_notice": "Chaque proposition est relue et validée par l'administrateur 'fgfwiki' avant d'apparaître publiquement pour garantir des retours clairs et pertinents.",
+            "submit_btn": "Soumettre la proposition",
+            "submitting": "Envoi en cours...",
+            "cancel": "Annuler",
+            "login_required_title": "CONNEXION REQUISE",
+            "login_required_desc": "Vous devez être connecté avec un profil Trader pour proposer des évolutions, voter sur la frise et participer aux discussions.",
+            "sign_in_btn": "Se connecter avec Google / Email",
+            "success_msg": "Votre proposition d'évolution a été soumise ! Elle apparaîtra publiquement dès validation par fgfwiki."
+        },
+        "admin": {
+            "title": "Panneau de Modération Admin (fgfwiki)",
+            "pending_badge": "{{count}} en attente de validation",
+            "view_pending": "File de Modération",
+            "view_all": "Tout le public",
+            "approve": "Valider",
+            "reject": "Refuser",
+            "set_in_progress": "Passer En Cours",
+            "set_implemented": "Marquer Intégré",
+            "delete": "Supprimer",
+            "delete_confirm": "Êtes-vous sûr de vouloir supprimer cette proposition ?"
+        },
+        "details": {
+            "proposed_by": "Proposé par",
+            "server": "Serveur",
+            "comments_title": "Discussions & Avis",
+            "comment_placeholder": "Donnez votre avis constructif sur cette proposition...",
+            "post_comment": "Publier le commentaire",
+            "no_comments": "Aucun commentaire pour l'instant. Soyez le premier à donner votre avis !",
+            "delete_comment": "Supprimer",
+            "delete_comment_confirm": "Supprimer ce commentaire ?",
+            "empty_results": "Aucune évolution trouvée avec ces filtres.",
+            "empty_cta": "Soyez le premier à en proposer une !"
+        }
     }
 }
