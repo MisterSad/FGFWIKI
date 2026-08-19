@@ -378,10 +378,14 @@ export const subscribeEvolutionThreads = (onData) => {
                 commentCount: typeof data.commentCount === 'number' ? data.commentCount : 0,
             };
         });
-        onData(list);
+        if (list.length === 0) {
+            onData(SEED_EVOLUTIONS);
+        } else {
+            onData(list);
+        }
     }, (error) => {
         console.error("Error subscribing to evolutions: ", error);
-        onData([]);
+        onData(SEED_EVOLUTIONS);
     });
 };
 
