@@ -315,23 +315,26 @@ export const subscribeEvolutionThreads = (onData) => {
 };
 
 /**
- * Add a new evolution thread. Always created with status 'pending' (requires fgfwiki approval).
+ * Add a new evolution thread.
  *
- * @param {{title: string, category: string, description: string}} threadData
- * @param {{displayName: string, serverNumber: number}} profile
+ * @param {{title: string, category: string, description: string, displayName?: string, serverNumber?: number|string}} threadData
  * @param {string} uid
+ * @param {boolean} isAdmin
  * @returns {Promise<string>} Created thread ID
  */
-export const addEvolutionThread = async ({ title, category, description }, profile, uid) => {
-    if (!uid || !profile) throw new Error("Authentication required");
+export const addEvolutionThread = async ({ title, category, description, displayName, serverNumber }, uid, isAdmin = false) => {
+    if (!uid) throw new Error("Authentication required");
+    const authorName = (displayName || '').trim() || 'Commander';
+    const serverNum = parseInt(serverNumber, 10) || 1;
+
     const newThread = {
         title: title.trim(),
         category: category || 'general',
         description: description.trim(),
-        status: 'pending', // Requires validation by admin fgfwiki
+        status: isAdmin ? 'approved' : 'pending',
         authorUid: uid,
-        displayName: profile.displayName || 'Commander',
-        serverNumber: profile.serverNumber || 1,
+        displayName: authorName,
+        serverNumber: serverNum,
         votes: [uid],
         votesCount: 1,
         commentCount: 0,
@@ -340,7 +343,7 @@ export const addEvolutionThread = async ({ title, category, description }, profi
 
     if (!db) {
         const stored = localStorage.getItem('fgf_evolutions_list');
-        const list = stored ? JSON.parse(stored) : [...SEED_EVOLUTIONS];
+        const list = stored ? JSON.parse(stored) : [];
         const threadWithId = { ...newThread, id: `local-evo-${Date.now()}` };
         list.unshift(threadWithId);
         localStorage.setItem('fgf_evolutions_list', JSON.stringify(list));

@@ -4,7 +4,7 @@ import {
     Flame, Star, Zap, Lightbulb, Search, Plus, MessageSquare, 
     CheckCircle2, Clock, AlertTriangle, Trash2, 
     ArrowUpDown, ShieldCheck, X, ChevronRight, Share2, Check,
-    Sparkles, Layers, CheckCircle
+    Sparkles, Layers, CheckCircle, User, Server, LogIn
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { 
@@ -317,7 +317,7 @@ function DemandTimeline({ thread, allThreads = [], isCompact = false }) {
 export default function GameEvolutions() {
     useSEO();
     const { threadId: routeThreadId } = useParams();
-    const { currentUser, userProfile } = useAuth();
+    const { currentUser, userProfile, saveProfile, signInWithGoogle } = useAuth();
 
     // Admin detection: user named 'fgfwiki' or known admin email
     const isAdmin = useMemo(() => {
@@ -342,12 +342,25 @@ export default function GameEvolutions() {
     const [selectedThread, setSelectedThread] = useState(null);
     const [copiedLink, setCopiedLink] = useState(false);
 
-    // Creation Form state
+    // Creation Form state (Username & Server mandatory)
+    const [authorName, setAuthorName] = useState('');
+    const [serverNumber, setServerNumber] = useState('');
     const [newTitle, setNewTitle] = useState('');
     const [newCategory, setNewCategory] = useState('gameplay');
     const [newDescription, setNewDescription] = useState('');
     const [submitting, setSubmitting] = useState(false);
     const [formSuccess, setFormSuccess] = useState(false);
+    const [formError, setFormError] = useState('');
+
+    // Pre-fill profile info into creation form when profile loads
+    useEffect(() => {
+        if (userProfile) {
+            if (userProfile.displayName && !authorName) setAuthorName(userProfile.displayName);
+            if (userProfile.serverNumber && !serverNumber) setServerNumber(String(userProfile.serverNumber));
+        } else if (currentUser && !authorName) {
+            if (currentUser.displayName) setAuthorName(currentUser.displayName);
+        }
+    }, [userProfile, currentUser]);
 
     // Comments State for selected thread
     const [threadComments, setThreadComments] = useState([]);
@@ -420,7 +433,7 @@ export default function GameEvolutions() {
             if (adminViewQueue) {
                 if (thread.status !== 'pending') return false;
             } else {
-                // Public list: only show approved, in_progress, implemented
+                // Public list: show approved, in_progress, implemented, and current user's own pending threads
                 const isAuthor = currentUser && thread.authorUid === currentUser.uid;
                 if (thread.status === 'pending' && !isAuthor && !isAdmin) {
                     return false;
@@ -518,23 +531,49 @@ export default function GameEvolutions() {
         }
     }, [currentUser]);
 
-    // Handle Create Submission
+    // Handle Create Submission (Mandatory Username & Server Number)
     const handleCreateSubmit = async (e) => {
         e.preventDefault();
-        if (!newTitle.trim() || !newDescription.trim() || submitting) return;
-        if (!currentUser) return;
-        if (!userProfile) {
-            setIsProfileSetupOpen(true);
+        setFormError('');
+
+        if (!currentUser) {
+            setFormError('You must be signed in to submit a proposal.');
             return;
         }
 
+        const trimmedAuthor = authorName.trim();
+        const parsedServer = parseInt(serverNumber, 10);
+
+        if (!trimmedAuthor) {
+            setFormError('In-game Commander Name is required.');
+            return;
+        }
+
+        if (!parsedServer || parsedServer <= 0 || parsedServer > 99999) {
+            setFormError('Please provide a valid Server Number (e.g. 1061).');
+            return;
+        }
+
+        if (!newTitle.trim() || !newDescription.trim() || submitting) return;
+
         setSubmitting(true);
         try {
+            // Save/Update user profile in Firestore so it persists
+            if (saveProfile) {
+                try {
+                    await saveProfile(trimmedAuthor, parsedServer);
+                } catch (saveErr) {
+                    console.warn("Could not persist profile update:", saveErr);
+                }
+            }
+
             await addEvolutionThread({
                 title: newTitle,
                 category: newCategory,
                 description: newDescription,
-            }, userProfile, currentUser.uid);
+                displayName: trimmedAuthor,
+                serverNumber: parsedServer,
+            }, currentUser.uid, isAdmin);
             
             setFormSuccess(true);
             setTimeout(() => {
@@ -545,6 +584,7 @@ export default function GameEvolutions() {
             }, 1800);
         } catch (err) {
             console.error("Error creating thread:", err);
+            setFormError(err.message || 'Failed to submit proposal. Please try again.');
         }
         setSubmitting(false);
     };
@@ -580,11 +620,16 @@ export default function GameEvolutions() {
     const handlePostComment = async (e) => {
         e.preventDefault();
         const content = commentDraft.trim();
-        if (!content || !selectedThread || postingComment || !currentUser || !userProfile) return;
+        if (!content || !selectedThread || postingComment || !currentUser) return;
+
+        const profileData = userProfile || {
+            displayName: authorName.trim() || currentUser.displayName || 'Commander',
+            serverNumber: parseInt(serverNumber, 10) || 1
+        };
 
         setPostingComment(true);
         try {
-            await addEvolutionComment(selectedThread.id, content, userProfile, currentUser.uid, isAdmin);
+            await addEvolutionComment(selectedThread.id, content, profileData, currentUser.uid, isAdmin);
             setCommentDraft('');
         } catch (err) {
             console.error("Comment post error:", err);
@@ -686,14 +731,7 @@ export default function GameEvolutions() {
                 <div>
                     <button
                         onClick={() => {
-                            if (!currentUser) {
-                                window.alert('You must be logged in to propose an evolution.');
-                                return;
-                            }
-                            if (!userProfile) {
-                                setIsProfileSetupOpen(true);
-                                return;
-                            }
+                            setFormError('');
                             setIsCreateOpen(true);
                         }}
                         style={{
@@ -1018,14 +1056,7 @@ export default function GameEvolutions() {
                     {threads.length === 0 ? (
                         <button
                             onClick={() => {
-                                if (!currentUser) {
-                                    window.alert('You must be logged in to propose an evolution.');
-                                    return;
-                                }
-                                if (!userProfile) {
-                                    setIsProfileSetupOpen(true);
-                                    return;
-                                }
+                                setFormError('');
                                 setIsCreateOpen(true);
                             }}
                             style={{
@@ -1343,7 +1374,7 @@ export default function GameEvolutions() {
                     <div className="glass-panel" style={{
                         position: 'relative',
                         width: '100%',
-                        maxWidth: '620px',
+                        maxWidth: '640px',
                         padding: 'clamp(1.25rem, 5vw, 2rem)',
                         border: '1px solid var(--gold)',
                         boxShadow: '0 0 50px rgba(0, 0, 0, 0.6)',
@@ -1380,6 +1411,56 @@ export default function GameEvolutions() {
                             All proposals must be written in English so they can be forwarded directly to the game developers. Submissions will be reviewed by the fgfwiki moderation team before appearing publicly.
                         </p>
 
+                        {/* Sign in prompt banner if user is not authenticated */}
+                        {!currentUser && (
+                            <div style={{
+                                padding: '1rem',
+                                background: 'rgba(234, 179, 8, 0.12)',
+                                border: '1px solid rgba(234, 179, 8, 0.35)',
+                                borderRadius: '8px',
+                                marginBottom: '1.25rem',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '0.6rem',
+                                alignItems: 'center',
+                                textAlign: 'center'
+                            }}>
+                                <div style={{ color: '#eab308', fontSize: '0.88rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                                    <LogIn size={16} />
+                                    Authentication Required
+                                </div>
+                                <p style={{ margin: 0, color: 'var(--text-primary)', fontSize: '0.82rem' }}>
+                                    Please sign in with your account to propose an evolution.
+                                </p>
+                                <button
+                                    type="button"
+                                    onClick={async () => {
+                                        try {
+                                            if (signInWithGoogle) await signInWithGoogle();
+                                        } catch (e) {
+                                            console.error("Google sign in failed:", e);
+                                        }
+                                    }}
+                                    style={{
+                                        padding: '6px 14px',
+                                        background: 'var(--gold)',
+                                        color: '#000',
+                                        fontWeight: 'bold',
+                                        border: 'none',
+                                        borderRadius: '6px',
+                                        cursor: 'pointer',
+                                        fontSize: '0.82rem',
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: '6px'
+                                    }}
+                                >
+                                    Sign In with Google
+                                </button>
+                            </div>
+                        )}
+
+                        {/* Success Banner */}
                         {formSuccess && (
                             <div style={{
                                 padding: '0.85rem',
@@ -1391,11 +1472,91 @@ export default function GameEvolutions() {
                                 textAlign: 'center',
                                 fontSize: '0.9rem'
                             }}>
-                                Your proposal has been submitted successfully and is pending review!
+                                {isAdmin ? '🎉 Evolution posted live successfully!' : '🎉 Proposal submitted successfully! It is now pending review.'}
+                            </div>
+                        )}
+
+                        {/* Error Banner */}
+                        {formError && (
+                            <div style={{
+                                padding: '0.85rem',
+                                background: 'rgba(239, 68, 68, 0.15)',
+                                border: '1px solid #ef4444',
+                                color: '#ef4444',
+                                borderRadius: '8px',
+                                marginBottom: '1.25rem',
+                                textAlign: 'center',
+                                fontSize: '0.88rem'
+                            }}>
+                                {formError}
                             </div>
                         )}
 
                         <form onSubmit={handleCreateSubmit}>
+                            {/* Player Info Row: Username & Server Number (MANDATORY) */}
+                            <div style={{
+                                display: 'grid',
+                                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                                gap: '0.85rem',
+                                marginBottom: '1rem'
+                            }}>
+                                <div>
+                                    <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>
+                                        Commander / In-Game Username *
+                                    </label>
+                                    <div style={{ position: 'relative' }}>
+                                        <User size={15} style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
+                                        <input
+                                            type="text"
+                                            required
+                                            value={authorName}
+                                            onChange={(e) => setAuthorName(e.target.value)}
+                                            placeholder="e.g. HawkTuah"
+                                            style={{
+                                                width: '100%',
+                                                padding: '0.65rem 0.8rem 0.65rem 2.1rem',
+                                                background: 'var(--bg-void)',
+                                                border: '1px solid var(--border)',
+                                                borderRadius: '8px',
+                                                color: '#fff',
+                                                fontSize: '0.9rem',
+                                                outline: 'none',
+                                                boxSizing: 'border-box'
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>
+                                        Server Number (e.g. 1061) *
+                                    </label>
+                                    <div style={{ position: 'relative' }}>
+                                        <Server size={15} style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
+                                        <input
+                                            type="number"
+                                            required
+                                            min="1"
+                                            max="99999"
+                                            value={serverNumber}
+                                            onChange={(e) => setServerNumber(e.target.value)}
+                                            placeholder="e.g. 1061"
+                                            style={{
+                                                width: '100%',
+                                                padding: '0.65rem 0.8rem 0.65rem 2.1rem',
+                                                background: 'var(--bg-void)',
+                                                border: '1px solid var(--border)',
+                                                borderRadius: '8px',
+                                                color: '#fff',
+                                                fontSize: '0.9rem',
+                                                outline: 'none',
+                                                boxSizing: 'border-box'
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
                             {/* Title Field */}
                             <div style={{ marginBottom: '1rem' }}>
                                 <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>
@@ -1546,7 +1707,7 @@ export default function GameEvolutions() {
                                 </button>
                                 <button
                                     type="submit"
-                                    disabled={submitting}
+                                    disabled={submitting || !currentUser}
                                     style={{
                                         padding: '0.65rem 1.4rem',
                                         background: 'var(--gold)',
@@ -1555,8 +1716,8 @@ export default function GameEvolutions() {
                                         borderRadius: '6px',
                                         fontWeight: 'bold',
                                         fontSize: '0.88rem',
-                                        cursor: submitting ? 'not-allowed' : 'pointer',
-                                        opacity: submitting ? 0.7 : 1
+                                        cursor: (submitting || !currentUser) ? 'not-allowed' : 'pointer',
+                                        opacity: (submitting || !currentUser) ? 0.6 : 1
                                     }}
                                 >
                                     {submitting ? 'Submitting...' : 'Submit for Review'}
@@ -1910,7 +2071,7 @@ export default function GameEvolutions() {
                 </div>
             )}
 
-            {/* Profile Setup Modal if user hasn't configured a nickname / server number */}
+            {/* Profile Setup Modal fallback */}
             {isProfileSetupOpen && (
                 <ProfileSetupModal onClose={() => setIsProfileSetupOpen(false)} />
             )}
