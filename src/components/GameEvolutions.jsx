@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useParams, useNavigate } from 'react-router';
+import { useParams } from 'react-router';
 import { 
     Flame, Star, Zap, Lightbulb, Search, Plus, MessageSquare, 
     CheckCircle2, Clock, AlertTriangle, Trash2, 
     ArrowUpDown, ShieldCheck, X, ChevronRight, Share2, Check,
-    Send, Sparkles, Filter, Layers, CheckCircle
+    Sparkles, Layers, CheckCircle
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { 
@@ -21,71 +20,63 @@ import {
 import ProfileSetupModal from './ProfileSetupModal';
 import useSEO from '../hooks/useSEO';
 
-// Category metadata
+// Category metadata (100% English)
 const CATEGORIES = [
-    { id: 'all', color: '#c9a84c' },
-    { id: 'gameplay', color: '#38bdf8' },
-    { id: 'qol', color: '#4ade80' },
-    { id: 'balance', color: '#f59e0b' },
-    { id: 'ships', color: '#a855f7' },
-    { id: 'heroes', color: '#ec4899' },
-    { id: 'economy', color: '#eab308' },
-    { id: 'pvp', color: '#ef4444' },
-    { id: 'bugs', color: '#f43f5e' },
-    { id: 'general', color: '#94a3b8' },
+    { id: 'all', label: 'All Categories', color: '#c9a84c' },
+    { id: 'gameplay', label: 'Gameplay & Mechanics', color: '#38bdf8' },
+    { id: 'qol', label: 'Quality of Life (QoL)', color: '#4ade80' },
+    { id: 'balance', label: 'Balance & Meta', color: '#f59e0b' },
+    { id: 'ships', label: 'Fleets & Flagships', color: '#a855f7' },
+    { id: 'heroes', label: 'Heroes & Crew', color: '#ec4899' },
+    { id: 'economy', label: 'Economy & Trade', color: '#eab308' },
+    { id: 'pvp', label: 'PvP & GvG', color: '#ef4444' },
+    { id: 'bugs', label: 'Bugs & Issues', color: '#f43f5e' },
+    { id: 'general', label: 'General', color: '#94a3b8' },
 ];
 
-// Priority / Demand Tiers along the timeline
+// Priority / Demand Tiers along the timeline (100% English)
 export function getDemandTier(votesCount = 0) {
     if (votesCount >= 30) {
         return {
             id: 'critical',
             level: 4,
-            key: 'tier_critical',
+            label: 'Critical / Top Priority',
             color: '#ef4444',
             gradient: 'linear-gradient(135deg, #ef4444, #f97316)',
             icon: Flame,
             glow: 'rgba(239, 68, 68, 0.45)',
-            labelEn: 'Critical / Top Priority',
-            labelFr: 'Très Important / Prioritaire'
         };
     }
     if (votesCount >= 15) {
         return {
             id: 'high',
             level: 3,
-            key: 'tier_high',
+            label: 'Important',
             color: '#eab308',
             gradient: 'linear-gradient(135deg, #eab308, #ca8a04)',
             icon: Star,
             glow: 'rgba(234, 179, 8, 0.35)',
-            labelEn: 'Important',
-            labelFr: 'Important'
         };
     }
     if (votesCount >= 5) {
         return {
             id: 'moderate',
             level: 2,
-            key: 'tier_moderate',
+            label: 'Moderate',
             color: '#06b6d4',
             gradient: 'linear-gradient(135deg, #06b6d4, #0891b2)',
             icon: Zap,
             glow: 'rgba(6, 182, 212, 0.35)',
-            labelEn: 'Moderate',
-            labelFr: 'Modéré'
         };
     }
     return {
         id: 'low',
         level: 1,
-        key: 'tier_low',
+        label: 'Low Demand',
         color: '#64748b',
         gradient: 'linear-gradient(135deg, #64748b, #475569)',
         icon: Lightbulb,
         glow: 'rgba(100, 116, 139, 0.25)',
-        labelEn: 'Low Demand',
-        labelFr: 'Faible demande'
     };
 }
 
@@ -104,17 +95,16 @@ function getTimelineProgress(votesCount = 0) {
     return Math.min(100, 75 + ((votesCount - 30) / 30) * 25); // 75% -> 100%
 }
 
-// Visual Demand Timeline Component (Frise de Demande)
+// Visual Demand Timeline Component (Frise de Demande) - 100% English
 function DemandTimeline({ votesCount = 0, isCompact = false }) {
-    const { t } = useTranslation();
     const tier = getDemandTier(votesCount);
     const progress = getTimelineProgress(votesCount);
 
     const tiersList = [
-        { id: 'low', min: 1, label: t('evolutions.timeline.tier_low', 'Faible'), icon: Lightbulb, color: '#64748b' },
-        { id: 'moderate', min: 5, label: t('evolutions.timeline.tier_moderate', 'Modéré'), icon: Zap, color: '#06b6d4' },
-        { id: 'high', min: 15, label: t('evolutions.timeline.tier_high', 'Important'), icon: Star, color: '#eab308' },
-        { id: 'critical', min: 30, label: t('evolutions.timeline.tier_critical', 'Très Important'), icon: Flame, color: '#ef4444' },
+        { id: 'low', min: 1, label: 'Low Demand', icon: Lightbulb, color: '#64748b' },
+        { id: 'moderate', min: 5, label: 'Moderate', icon: Zap, color: '#06b6d4' },
+        { id: 'high', min: 15, label: 'Important', icon: Star, color: '#eab308' },
+        { id: 'critical', min: 30, label: 'Critical Priority', icon: Flame, color: '#ef4444' },
     ];
 
     return (
@@ -214,7 +204,6 @@ function DemandTimeline({ votesCount = 0, isCompact = false }) {
 
 export default function GameEvolutions() {
     useSEO();
-    const { t } = useTranslation();
     const { threadId: routeThreadId } = useParams();
     const { currentUser, userProfile } = useAuth();
 
@@ -259,7 +248,7 @@ export default function GameEvolutions() {
         let active = true;
         const unsubscribe = subscribeEvolutionThreads((data) => {
             if (!active) return;
-            setThreads(data);
+            setThreads(data || []);
             setLoading(false);
         });
         return () => {
@@ -284,7 +273,7 @@ export default function GameEvolutions() {
         }
         setLoadingComments(true);
         const unsubscribe = subscribeEvolutionComments(selectedThread.id, (commentsList) => {
-            setThreadComments(commentsList);
+            setThreadComments(commentsList || []);
             setLoadingComments(false);
         });
         return () => unsubscribe();
@@ -397,7 +386,7 @@ export default function GameEvolutions() {
     const handleVote = useCallback(async (e, thread) => {
         e.stopPropagation();
         if (!currentUser) {
-            window.alert(t('evolutions.timeline.login_to_vote', 'Veuillez vous connecter pour voter.'));
+            window.alert('Please sign in to vote for this evolution proposal.');
             return;
         }
         try {
@@ -405,7 +394,7 @@ export default function GameEvolutions() {
         } catch (err) {
             console.error("Vote failed:", err);
         }
-    }, [currentUser, t]);
+    }, [currentUser]);
 
     // Handle Create Submission
     const handleCreateSubmit = async (e) => {
@@ -454,7 +443,7 @@ export default function GameEvolutions() {
     // Handle Delete Thread
     const handleDeleteThread = async (e, threadId) => {
         e.stopPropagation();
-        if (!window.confirm(t('evolutions.admin.delete_confirm', 'Supprimer définitivement ce sujet ?'))) return;
+        if (!window.confirm('Are you sure you want to permanently delete this evolution thread?')) return;
         try {
             await deleteEvolutionThread(threadId);
             if (selectedThread && selectedThread.id === threadId) {
@@ -489,6 +478,12 @@ export default function GameEvolutions() {
         setTimeout(() => setCopiedLink(false), 2000);
     };
 
+    // Helper for category label
+    const getCategoryLabel = (catId) => {
+        const found = CATEGORIES.find(c => c.id === catId);
+        return found ? found.label : 'General';
+    };
+
     return (
         <div className="container" style={{ maxWidth: '1050px', margin: '0 auto', padding: '1.5rem 1rem 6rem' }}>
             
@@ -519,7 +514,7 @@ export default function GameEvolutions() {
                 </div>
 
                 <h1 className="guide-title text-gradient" style={{ margin: '0 0 0.75rem', fontSize: 'clamp(1.8rem, 5vw, 2.6rem)' }}>
-                    {t('evolutions.title', 'Game Evolutions')}
+                    GAME EVOLUTIONS
                 </h1>
 
                 {/* Subtitle / Monthly Extraction Notice */}
@@ -534,7 +529,7 @@ export default function GameEvolutions() {
                     fontSize: '0.92rem',
                     lineHeight: '1.6'
                 }}>
-                    {t('evolutions.subtitle')}
+                    Community feedback & feature request hub for Foundation: Galactic Frontier. Propose ideas and vote on the priority timeline: a monthly digest of top community requests is sent directly to the Content Creator relations team to be forwarded to the game developers.
                 </div>
 
                 {/* Quick Statistics Row */}
@@ -553,15 +548,15 @@ export default function GameEvolutions() {
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#ef4444' }}>
                         <Flame size={14} />
-                        <span><strong>{stats.topRequested}</strong> prioritaires</span>
+                        <span><strong>{stats.topRequested}</strong> critical priority</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#38bdf8' }}>
                         <Zap size={14} />
-                        <span><strong>{stats.inProgress}</strong> à l'étude</span>
+                        <span><strong>{stats.inProgress}</strong> under review</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#4ade80' }}>
                         <CheckCircle size={14} />
-                        <span><strong>{stats.implemented}</strong> intégrées 🎉</span>
+                        <span><strong>{stats.implemented}</strong> implemented 🎉</span>
                     </div>
                 </div>
 
@@ -570,7 +565,7 @@ export default function GameEvolutions() {
                     <button
                         onClick={() => {
                             if (!currentUser) {
-                                window.alert(t('evolutions.modal.login_required_desc'));
+                                window.alert('You must be logged in to propose an evolution.');
                                 return;
                             }
                             if (!userProfile) {
@@ -597,7 +592,7 @@ export default function GameEvolutions() {
                         }}
                     >
                         <Plus size={18} />
-                        {t('evolutions.propose_btn', 'Proposer une évolution')}
+                        Propose an Evolution
                     </button>
                 </div>
             </div>
@@ -642,7 +637,7 @@ export default function GameEvolutions() {
                             type="text"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            placeholder={t('evolutions.search_placeholder', 'Rechercher une idée, problème...')}
+                            placeholder="Search evolutions, keywords, problems or ideas..."
                             style={{
                                 width: '100%',
                                 padding: '0.65rem 2.2rem 0.65rem 2.4rem',
@@ -678,7 +673,7 @@ export default function GameEvolutions() {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                         <span style={{ color: 'var(--text-dim)', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
                             <ArrowUpDown size={13} />
-                            {t('evolutions.sort_by', 'Trier')}:
+                            Sort by:
                         </span>
                         <div style={{
                             display: 'flex',
@@ -689,10 +684,10 @@ export default function GameEvolutions() {
                             overflow: 'hidden'
                         }}>
                             {[
-                                { id: 'votes', label: '🔥 ' + t('evolutions.sort_votes', 'Votes') },
-                                { id: 'newest', label: '🆕 ' + t('evolutions.sort_newest', 'Récents') },
-                                { id: 'comments', label: '💬 ' + t('evolutions.sort_discussed', 'Commentés') },
-                                { id: 'status', label: '🎯 ' + t('evolutions.sort_status', 'Statut') },
+                                { id: 'votes', label: '🔥 Most Voted' },
+                                { id: 'newest', label: '🆕 Newest' },
+                                { id: 'comments', label: '💬 Most Discussed' },
+                                { id: 'status', label: '🎯 Status' },
                             ].map(sOption => (
                                 <button
                                     key={sOption.id}
@@ -735,7 +730,7 @@ export default function GameEvolutions() {
                             }}
                         >
                             <ShieldCheck size={14} color={adminViewQueue ? '#ef4444' : 'var(--text-dim)'} />
-                            <span>File Admin</span>
+                            <span>Admin Queue</span>
                             {pendingCount > 0 && (
                                 <span style={{
                                     background: '#ef4444',
@@ -751,7 +746,7 @@ export default function GameEvolutions() {
                     )}
                 </div>
 
-                {/* Categories & Frise Tier Filter Row */}
+                {/* Categories Filter Row */}
                 <div style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -760,7 +755,6 @@ export default function GameEvolutions() {
                     paddingTop: '0.5rem',
                     borderTop: '1px solid rgba(255, 255, 255, 0.05)'
                 }}>
-                    {/* Category Dropdown / Quick Select */}
                     <div style={{ display: 'flex', gap: '0.4rem', overflowX: 'auto', paddingBottom: '2px', scrollbarWidth: 'none' }}>
                         {CATEGORIES.map(cat => {
                             const isSelected = selectedCategory === cat.id;
@@ -781,7 +775,7 @@ export default function GameEvolutions() {
                                         transition: 'all 0.15s ease'
                                     }}
                                 >
-                                    {t(`evolutions.categories.${cat.id}`, cat.id)}
+                                    {cat.label}
                                 </button>
                             );
                         })}
@@ -797,7 +791,7 @@ export default function GameEvolutions() {
                     fontSize: '0.76rem'
                 }}>
                     <span style={{ color: 'var(--text-dim)', fontSize: '0.72rem', marginRight: '4px' }}>
-                        {t('evolutions.filter_tier', 'Frise')}:
+                        Priority Tier:
                     </span>
                     <button
                         onClick={() => setSelectedTier('all')}
@@ -811,13 +805,13 @@ export default function GameEvolutions() {
                             cursor: 'pointer'
                         }}
                     >
-                        {t('evolutions.filter_all', 'Tous')}
+                        All Tiers
                     </button>
                     {[
-                        { id: 'critical', color: '#ef4444', label: '🔥 ' + t('evolutions.timeline.tier_critical', 'Très Important') },
-                        { id: 'high', color: '#eab308', label: '⭐ ' + t('evolutions.timeline.tier_high', 'Important') },
-                        { id: 'moderate', color: '#06b6d4', label: '⚡ ' + t('evolutions.timeline.tier_moderate', 'Modéré') },
-                        { id: 'low', color: '#64748b', label: '💡 ' + t('evolutions.timeline.tier_low', 'Faible') },
+                        { id: 'critical', color: '#ef4444', label: '🔥 Critical Priority (30+)' },
+                        { id: 'high', color: '#eab308', label: '⭐ Important (15-29)' },
+                        { id: 'moderate', color: '#06b6d4', label: '⚡ Moderate (5-14)' },
+                        { id: 'low', color: '#64748b', label: '💡 Low Demand (1-4)' },
                     ].map(tierOption => (
                         <button
                             key={tierOption.id}
@@ -851,7 +845,7 @@ export default function GameEvolutions() {
                     fontSize: '0.82rem'
                 }}>
                     <span>
-                        {sortedThreads.length} {sortedThreads.length === 1 ? 'suggestion trouvée' : 'suggestions trouvées'}
+                        {sortedThreads.length} {sortedThreads.length === 1 ? 'suggestion found' : 'suggestions found'}
                     </span>
                     <button
                         onClick={() => {
@@ -869,7 +863,7 @@ export default function GameEvolutions() {
                             textDecoration: 'underline'
                         }}
                     >
-                        Réinitialiser la recherche
+                        Reset search filters
                     </button>
                 </div>
             )}
@@ -880,42 +874,72 @@ export default function GameEvolutions() {
             {loading ? (
                 <div style={{ textAlign: 'center', padding: '4rem 1rem', color: 'var(--text-dim)' }}>
                     <div style={{ fontFamily: 'var(--font-mono)', letterSpacing: '1px' }}>
-                        Chargement des propositions communautaires...
+                        Loading community proposals...
                     </div>
                 </div>
             ) : sortedThreads.length === 0 ? (
                 <div className="glass-panel" style={{
-                    padding: '3rem 1.5rem',
+                    padding: '3.5rem 1.5rem',
                     textAlign: 'center',
                     borderRadius: '12px',
                     border: '1px dashed var(--border)'
                 }}>
-                    <Lightbulb size={32} style={{ color: 'var(--gold)', marginBottom: '0.75rem', opacity: 0.7 }} />
-                    <h3 style={{ color: 'var(--text-primary)', margin: '0 0 0.4rem', fontSize: '1.1rem' }}>
-                        {t('evolutions.details.empty_results', 'Aucune évolution trouvée.')}
+                    <Lightbulb size={36} style={{ color: 'var(--gold)', marginBottom: '0.75rem', opacity: 0.7 }} />
+                    <h3 style={{ color: 'var(--text-primary)', margin: '0 0 0.4rem', fontSize: '1.2rem' }}>
+                        {threads.length === 0 ? 'No Evolutions Submitted Yet' : 'No Results Found'}
                     </h3>
-                    <p style={{ color: 'var(--text-dim)', margin: '0 0 1rem', fontSize: '0.9rem' }}>
-                        Modifiez vos critères de recherche ou réinitialisez les filtres.
+                    <p style={{ color: 'var(--text-dim)', margin: '0 0 1.25rem', fontSize: '0.9rem', maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto' }}>
+                        {threads.length === 0 
+                            ? 'Be the first commander to submit a game feature request or improvement for the development team!' 
+                            : 'No proposals match your search or filters. Try adjusting your search query.'}
                     </p>
-                    <button
-                        onClick={() => {
-                            setSearchQuery('');
-                            setSelectedCategory('all');
-                            setSelectedTier('all');
-                            setAdminViewQueue(false);
-                        }}
-                        style={{
-                            background: 'transparent',
-                            border: '1px solid var(--gold)',
-                            color: 'var(--gold)',
-                            padding: '6px 14px',
-                            borderRadius: '6px',
-                            cursor: 'pointer',
-                            fontSize: '0.82rem'
-                        }}
-                    >
-                        Voir toutes les suggestions
-                    </button>
+                    {threads.length === 0 ? (
+                        <button
+                            onClick={() => {
+                                if (!currentUser) {
+                                    window.alert('You must be logged in to propose an evolution.');
+                                    return;
+                                }
+                                if (!userProfile) {
+                                    setIsProfileSetupOpen(true);
+                                    return;
+                                }
+                                setIsCreateOpen(true);
+                            }}
+                            style={{
+                                background: 'var(--gold)',
+                                color: '#000',
+                                fontWeight: 'bold',
+                                padding: '8px 18px',
+                                borderRadius: '6px',
+                                border: 'none',
+                                cursor: 'pointer',
+                                fontSize: '0.88rem'
+                            }}
+                        >
+                            + Propose the First Evolution
+                        </button>
+                    ) : (
+                        <button
+                            onClick={() => {
+                                setSearchQuery('');
+                                setSelectedCategory('all');
+                                setSelectedTier('all');
+                                setAdminViewQueue(false);
+                            }}
+                            style={{
+                                background: 'transparent',
+                                border: '1px solid var(--gold)',
+                                color: 'var(--gold)',
+                                padding: '6px 14px',
+                                borderRadius: '6px',
+                                cursor: 'pointer',
+                                fontSize: '0.82rem'
+                            }}
+                        >
+                            View All Suggestions
+                        </button>
+                    )}
                 </div>
             ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
@@ -962,7 +986,7 @@ export default function GameEvolutions() {
                                             fontFamily: 'var(--font-mono)',
                                             border: '1px solid var(--border)'
                                         }}>
-                                            {t(`evolutions.categories.${thread.category || 'general'}`)}
+                                            {getCategoryLabel(thread.category)}
                                         </span>
 
                                         {/* Status Badge */}
@@ -979,7 +1003,7 @@ export default function GameEvolutions() {
                                                 gap: '3px'
                                             }}>
                                                 <Clock size={11} />
-                                                {t('evolutions.statuses.pending', 'En attente')}
+                                                Pending Review
                                             </span>
                                         )}
                                         {isInProgress && (
@@ -995,7 +1019,7 @@ export default function GameEvolutions() {
                                                 gap: '3px'
                                             }}>
                                                 <Zap size={11} />
-                                                {t('evolutions.statuses.in_progress', 'À l\'étude')}
+                                                Under Review
                                             </span>
                                         )}
                                         {isImplemented && (
@@ -1011,7 +1035,7 @@ export default function GameEvolutions() {
                                                 gap: '3px'
                                             }}>
                                                 <CheckCircle2 size={11} />
-                                                {t('evolutions.statuses.implemented', 'Intégré 🎉')}
+                                                Implemented 🎉
                                             </span>
                                         )}
                                     </div>
@@ -1048,7 +1072,7 @@ export default function GameEvolutions() {
                                             transition: 'all 0.2s ease',
                                             flexShrink: 0
                                         }}
-                                        title={hasVoted ? t('evolutions.timeline.voted_btn') : t('evolutions.timeline.vote_btn')}
+                                        title={hasVoted ? 'You upvoted this proposal' : 'Upvote this proposal'}
                                     >
                                         <Flame size={17} fill={hasVoted ? '#ef4444' : 'none'} />
                                         <span style={{ fontSize: '0.9rem', fontWeight: 'bold', fontFamily: 'var(--font-mono)' }}>
@@ -1097,10 +1121,10 @@ export default function GameEvolutions() {
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                                         <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                                             <MessageSquare size={13} />
-                                            {thread.commentCount || 0} avis
+                                            {thread.commentCount || 0} comments
                                         </span>
                                         <span style={{ display: 'flex', alignItems: 'center', gap: '2px', color: 'var(--gold)' }}>
-                                            Participer à la discussion <ChevronRight size={13} />
+                                            Join Discussion <ChevronRight size={13} />
                                         </span>
                                     </div>
 
@@ -1121,7 +1145,7 @@ export default function GameEvolutions() {
                                                         cursor: 'pointer'
                                                     }}
                                                 >
-                                                    Valider
+                                                    Approve
                                                 </button>
                                             )}
                                             {thread.status !== 'in_progress' && (
@@ -1137,7 +1161,7 @@ export default function GameEvolutions() {
                                                         cursor: 'pointer'
                                                     }}
                                                 >
-                                                    À l'étude
+                                                    Under Review
                                                 </button>
                                             )}
                                             {thread.status !== 'implemented' && (
@@ -1153,7 +1177,7 @@ export default function GameEvolutions() {
                                                         cursor: 'pointer'
                                                     }}
                                                 >
-                                                    Intégré 🎉
+                                                    Implemented 🎉
                                                 </button>
                                             )}
                                             <button
@@ -1165,7 +1189,7 @@ export default function GameEvolutions() {
                                                     border: 'none',
                                                     cursor: 'pointer'
                                                 }}
-                                                title={t('evolutions.admin.delete')}
+                                                title="Delete Thread"
                                             >
                                                 <Trash2 size={13} />
                                             </button>
@@ -1228,10 +1252,10 @@ export default function GameEvolutions() {
                             letterSpacing: '1.2px',
                             fontSize: '1.25rem'
                         }}>
-                            {t('evolutions.modal.create_title', 'PROPOSER UNE ÉVOLUTION DU JEU')}
+                            PROPOSE A GAME EVOLUTION
                         </h2>
                         <p style={{ color: 'var(--text-dim)', margin: '0 0 1.25rem', fontSize: '0.88rem', lineHeight: '1.5' }}>
-                            {t('evolutions.modal.moderation_notice')}
+                            All proposals must be written in English so they can be forwarded directly to the game developers. Submissions will be reviewed by the fgfwiki moderation team before appearing publicly.
                         </p>
 
                         {formSuccess && (
@@ -1245,7 +1269,7 @@ export default function GameEvolutions() {
                                 textAlign: 'center',
                                 fontSize: '0.9rem'
                             }}>
-                                {t('evolutions.modal.success_msg')}
+                                Your proposal has been submitted successfully and is pending review!
                             </div>
                         )}
 
@@ -1253,14 +1277,14 @@ export default function GameEvolutions() {
                             {/* Title Field */}
                             <div style={{ marginBottom: '1rem' }}>
                                 <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>
-                                    {t('evolutions.modal.title_label', 'Titre de l\'évolution')} *
+                                    Evolution Title *
                                 </label>
                                 <input
                                     type="text"
                                     required
                                     value={newTitle}
                                     onChange={(e) => setNewTitle(e.target.value)}
-                                    placeholder={t('evolutions.modal.title_placeholder')}
+                                    placeholder='e.g. Add a "Claim All" button for mailbox rewards'
                                     style={{
                                         width: '100%',
                                         padding: '0.7rem 0.9rem',
@@ -1294,7 +1318,7 @@ export default function GameEvolutions() {
                                         gap: '0.35rem'
                                     }}>
                                         <AlertTriangle size={14} />
-                                        {t('evolutions.modal.duplicate_warning')}
+                                        Similar ideas already exist! Consider voting for them instead:
                                     </div>
                                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
                                         {duplicateMatches.map(dm => (
@@ -1329,7 +1353,7 @@ export default function GameEvolutions() {
                             {/* Category Field */}
                             <div style={{ marginBottom: '1rem' }}>
                                 <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>
-                                    {t('evolutions.modal.category_label', 'Catégorie')} *
+                                    Category *
                                 </label>
                                 <select
                                     value={newCategory}
@@ -1348,7 +1372,7 @@ export default function GameEvolutions() {
                                 >
                                     {CATEGORIES.filter(c => c.id !== 'all').map(c => (
                                         <option key={c.id} value={c.id}>
-                                            {t(`evolutions.categories.${c.id}`, c.id)}
+                                            {c.label}
                                         </option>
                                     ))}
                                 </select>
@@ -1357,14 +1381,14 @@ export default function GameEvolutions() {
                             {/* Detailed Description */}
                             <div style={{ marginBottom: '1.25rem' }}>
                                 <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', color: 'var(--text-primary)', fontWeight: 'bold' }}>
-                                    {t('evolutions.modal.description_label')} *
+                                    Detailed Problem & Proposed Solution *
                                 </label>
                                 <textarea
                                     required
                                     rows={4}
                                     value={newDescription}
                                     onChange={(e) => setNewDescription(e.target.value)}
-                                    placeholder={t('evolutions.modal.description_placeholder')}
+                                    placeholder="Describe the current issue in detail and how you suggest resolving or improving it..."
                                     style={{
                                         width: '100%',
                                         padding: '0.7rem 0.9rem',
@@ -1396,7 +1420,7 @@ export default function GameEvolutions() {
                                         fontSize: '0.88rem'
                                     }}
                                 >
-                                    {t('evolutions.modal.cancel', 'Annuler')}
+                                    Cancel
                                 </button>
                                 <button
                                     type="submit"
@@ -1413,7 +1437,7 @@ export default function GameEvolutions() {
                                         opacity: submitting ? 0.7 : 1
                                     }}
                                 >
-                                    {submitting ? t('evolutions.modal.submitting') : t('evolutions.modal.submit_btn')}
+                                    {submitting ? 'Submitting...' : 'Submit for Review'}
                                 </button>
                             </div>
                         </form>
@@ -1484,7 +1508,7 @@ export default function GameEvolutions() {
                                     fontFamily: 'var(--font-mono)',
                                     border: '1px solid var(--border)'
                                 }}>
-                                    {t(`evolutions.categories.${selectedThread.category || 'general'}`)}
+                                    {getCategoryLabel(selectedThread.category)}
                                 </span>
                                 {selectedThread.status === 'pending' && (
                                     <span style={{
@@ -1495,7 +1519,7 @@ export default function GameEvolutions() {
                                         color: '#eab308',
                                         border: '1px solid #eab308'
                                     }}>
-                                        {t('evolutions.statuses.pending')}
+                                        Pending Review
                                     </span>
                                 )}
                             </div>
@@ -1516,7 +1540,7 @@ export default function GameEvolutions() {
                                 }}
                             >
                                 {copiedLink ? <Check size={13} /> : <Share2 size={13} />}
-                                {copiedLink ? 'Lien copié !' : 'Partager'}
+                                {copiedLink ? 'Link Copied!' : 'Share'}
                             </button>
                         </div>
 
@@ -1542,7 +1566,7 @@ export default function GameEvolutions() {
                             paddingBottom: '0.75rem',
                             borderBottom: '1px solid var(--border)'
                         }}>
-                            <span>{t('evolutions.details.proposed_by')}: <strong>{selectedThread.displayName || 'Commander'}</strong> (Serveur {selectedThread.serverNumber || 1})</span>
+                            <span>Proposed by: <strong>{selectedThread.displayName || 'Commander'}</strong> (Server {selectedThread.serverNumber || 1})</span>
                         </div>
 
                         {/* Description Body */}
@@ -1569,7 +1593,7 @@ export default function GameEvolutions() {
                             marginBottom: '1.75rem'
                         }}>
                             <h4 style={{ margin: '0 0 0.4rem', color: 'var(--gold-bright)', fontSize: '0.9rem' }}>
-                                {t('evolutions.timeline.title', 'Frise de Demande & Priorité')}
+                                Demand & Priority Timeline
                             </h4>
                             <DemandTimeline votesCount={selectedThread.votesCount || 0} isCompact={false} />
                             
@@ -1596,8 +1620,8 @@ export default function GameEvolutions() {
                                 >
                                     <Flame size={18} />
                                     {(currentUser && Array.isArray(selectedThread.votes) && selectedThread.votes.includes(currentUser.uid))
-                                        ? t('evolutions.timeline.voted_btn', 'Voté (+1)')
-                                        : t('evolutions.timeline.vote_btn', 'Je soutiens cette idée')}
+                                        ? 'Voted (+1)'
+                                        : 'I Support this Feature'}
                                 </button>
                             </div>
                         </div>
@@ -1607,7 +1631,7 @@ export default function GameEvolutions() {
                             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                                 <MessageSquare size={18} color="var(--gold)" />
                                 <h3 style={{ margin: 0, color: 'var(--gold)', fontSize: '1.1rem' }}>
-                                    {t('evolutions.details.comments_title')} ({threadComments.length})
+                                    Discussions & Comments ({threadComments.length})
                                 </h3>
                             </div>
 
@@ -1618,7 +1642,7 @@ export default function GameEvolutions() {
                                         rows={3}
                                         value={commentDraft}
                                         onChange={(e) => setCommentDraft(e.target.value)}
-                                        placeholder={t('evolutions.details.comment_placeholder')}
+                                        placeholder="Write a constructive comment or additional feedback (in English)..."
                                         style={{
                                             width: '100%',
                                             padding: '0.7rem 0.9rem',
@@ -1650,7 +1674,7 @@ export default function GameEvolutions() {
                                                 opacity: postingComment || !commentDraft.trim() ? 0.6 : 1
                                             }}
                                         >
-                                            {postingComment ? 'Envoi...' : t('evolutions.details.post_comment', 'Publier le commentaire')}
+                                            {postingComment ? 'Posting...' : 'Post Comment'}
                                         </button>
                                     </div>
                                 </form>
@@ -1665,18 +1689,18 @@ export default function GameEvolutions() {
                                     marginBottom: '1.25rem',
                                     fontSize: '0.85rem'
                                 }}>
-                                    {t('evolutions.modal.login_required_desc')}
+                                    Please sign in to join the discussion and post comments.
                                 </div>
                             )}
 
                             {/* Comments List */}
                             {loadingComments ? (
                                 <div style={{ color: 'var(--text-dim)', fontStyle: 'italic', textAlign: 'center' }}>
-                                    Chargement des discussions...
+                                    Loading discussion comments...
                                 </div>
                             ) : threadComments.length === 0 ? (
                                 <div style={{ color: 'var(--text-dim)', fontStyle: 'italic', textAlign: 'center', padding: '1.25rem 0' }}>
-                                    {t('evolutions.details.no_comments')}
+                                    No comments yet. Be the first to share your thoughts!
                                 </div>
                             ) : (
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
@@ -1725,7 +1749,7 @@ export default function GameEvolutions() {
                                                     {(isCommAuthor || isAdmin) && (
                                                         <button
                                                             onClick={async () => {
-                                                                if (!window.confirm(t('evolutions.details.delete_comment_confirm', 'Supprimer ce commentaire ?'))) return;
+                                                                if (!window.confirm('Delete this comment permanently?')) return;
                                                                 try {
                                                                     await deleteEvolutionComment(selectedThread.id, comm.id);
                                                                 } catch (err) {
@@ -1739,7 +1763,7 @@ export default function GameEvolutions() {
                                                                 cursor: 'pointer',
                                                                 padding: '2px'
                                                             }}
-                                                            title={t('evolutions.details.delete_comment')}
+                                                            title="Delete Comment"
                                                         >
                                                             <Trash2 size={12} />
                                                         </button>

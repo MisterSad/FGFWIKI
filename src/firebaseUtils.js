@@ -266,78 +266,7 @@ export const deleteComment = async (commentId) => {
 // GAME EVOLUTIONS & FEEDBACK SYSTEM
 // ==========================================
 
-const SEED_EVOLUTIONS = [
-    {
-        id: 'seed-evo-1',
-        title: 'Ajouter un bouton "Collecter Tout" pour les récompenses de courrier',
-        category: 'qol',
-        description: 'Actuellement, ouvrir 50 rapports de guerre et courriers quotidiens un par un prend plusieurs minutes. Un simple bouton "Tout collecter" et "Tout marquer comme lu" dans la boîte de réception améliorerait grandement le confort de jeu au quotidien.',
-        status: 'approved',
-        authorUid: 'user-admin',
-        displayName: 'HawkTuah',
-        serverNumber: 1061,
-        votes: ['user-1', 'user-2', 'user-3', 'user-4', 'user-5', 'user-6', 'user-7', 'user-8', 'user-9', 'user-10', 'user-11', 'user-12', 'user-13', 'user-14', 'user-15', 'user-16', 'user-17', 'user-18', 'user-19', 'user-20', 'user-21', 'user-22', 'user-23', 'user-24', 'user-25', 'user-26', 'user-27', 'user-28', 'user-29', 'user-30', 'user-31', 'user-32', 'user-33', 'user-34'],
-        votesCount: 34,
-        commentCount: 8,
-        createdAt: new Date(Date.now() - 86400000 * 5).toISOString(),
-    },
-    {
-        id: 'seed-evo-2',
-        title: 'Système de présélection de composition de flotte pour les ralliements SvS',
-        category: 'gameplay',
-        description: 'Pendant les guerres d\'état (SvS), devoir sélectionner manuellement chaque vaisseau et héros lors de chaque ralliement rapide fait perdre de précieuses secondes. Permettre de sauvegarder 3 presets d\'armada pour rejoindre un ralliement en 1 clic.',
-        status: 'in_progress',
-        authorUid: 'user-2',
-        displayName: 'AegisCommander',
-        serverNumber: 1042,
-        votes: ['user-1', 'user-2', 'user-3', 'user-4', 'user-5', 'user-6', 'user-7', 'user-8', 'user-9', 'user-10', 'user-11', 'user-12', 'user-13', 'user-14', 'user-15', 'user-16', 'user-17', 'user-18', 'user-19', 'user-20'],
-        votesCount: 20,
-        commentCount: 5,
-        createdAt: new Date(Date.now() - 86400000 * 3).toISOString(),
-    },
-    {
-        id: 'seed-evo-3',
-        title: 'Revalorisation de l\'énergie Ion en PvP contre les compositions Cinétiques',
-        category: 'balance',
-        description: 'La méta actuelle est trop dominée par les tanks cinétiques (Doug Rockwell / Ironclad). Les compositions Ioniques devraient bénéficier d\'une perforation de blindage énergétique accrue ou d\'un ralentissement plus marqué pour diversifier les affrontements.',
-        status: 'approved',
-        authorUid: 'user-3',
-        displayName: 'IonStorm',
-        serverNumber: 1088,
-        votes: ['user-1', 'user-2', 'user-3', 'user-4', 'user-5', 'user-6', 'user-7', 'user-8', 'user-9', 'user-10', 'user-11'],
-        votesCount: 11,
-        commentCount: 3,
-        createdAt: new Date(Date.now() - 86400000 * 2).toISOString(),
-    },
-    {
-        id: 'seed-evo-4',
-        title: 'Indicateur de temps de rechargement des compétences de héros dans l\'arène',
-        category: 'qol',
-        description: 'Avoir un compte à rebours numérique précis au lieu d\'une simple jauge circulaire pour anticiper les ultimes de Kama Moai et Jodie Beart.',
-        status: 'approved',
-        authorUid: 'user-4',
-        displayName: 'NovaSniper',
-        serverNumber: 1015,
-        votes: ['user-1', 'user-2', 'user-3'],
-        votesCount: 3,
-        commentCount: 1,
-        createdAt: new Date(Date.now() - 86400000 * 1).toISOString(),
-    },
-    {
-        id: 'seed-evo-5',
-        title: 'Correction de la désynchronisation des chronos lors de l\'attaque des stations de guilde',
-        category: 'bugs',
-        description: 'Sur certains appareils Android, le compte à rebours de fin de bouclier des stations a un décalage de 3 secondes avec le serveur.',
-        status: 'implemented',
-        authorUid: 'user-5',
-        displayName: 'TechOfficer',
-        serverNumber: 1061,
-        votes: ['user-1', 'user-2', 'user-3', 'user-4', 'user-5', 'user-6', 'user-7', 'user-8', 'user-9', 'user-10', 'user-11', 'user-12', 'user-13', 'user-14', 'user-15', 'user-16', 'user-17', 'user-18', 'user-19', 'user-20', 'user-21', 'user-22', 'user-23', 'user-24', 'user-25', 'user-26', 'user-27', 'user-28'],
-        votesCount: 28,
-        commentCount: 12,
-        createdAt: new Date(Date.now() - 86400000 * 10).toISOString(),
-    }
-];
+const SEED_EVOLUTIONS = [];
 
 /**
  * Subscribe to all evolution threads (live updates).
@@ -350,13 +279,13 @@ export const subscribeEvolutionThreads = (onData) => {
         const loadLocal = () => {
             const stored = localStorage.getItem('fgf_evolutions_list');
             if (!stored) {
-                localStorage.setItem('fgf_evolutions_list', JSON.stringify(SEED_EVOLUTIONS));
-                onData(SEED_EVOLUTIONS);
+                localStorage.setItem('fgf_evolutions_list', JSON.stringify([]));
+                onData([]);
             } else {
                 try {
                     onData(JSON.parse(stored));
                 } catch {
-                    onData(SEED_EVOLUTIONS);
+                    onData([]);
                 }
             }
         };
@@ -378,14 +307,10 @@ export const subscribeEvolutionThreads = (onData) => {
                 commentCount: typeof data.commentCount === 'number' ? data.commentCount : 0,
             };
         });
-        if (list.length === 0) {
-            onData(SEED_EVOLUTIONS);
-        } else {
-            onData(list);
-        }
+        onData(list);
     }, (error) => {
         console.error("Error subscribing to evolutions: ", error);
-        onData(SEED_EVOLUTIONS);
+        onData([]);
     });
 };
 
