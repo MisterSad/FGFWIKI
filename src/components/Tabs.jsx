@@ -12,7 +12,7 @@ const NAV_ITEMS = [
     { path: '/flagships', labelKey: 'navigation.flagships', icon: Rocket },
     { path: '/events', labelKey: 'navigation.events', icon: Calendar },
     { path: '/tools', labelKey: 'navigation.builder', icon: Hammer },
-    { path: '/guild-tool', labelKey: 'navigation.guild_tool', icon: Crown, featured: true },
+    { path: '/guild-tool', labelKey: 'navigation.guild_tool', icon: Crown },
     { path: '/gift-codes', labelKey: 'navigation.gift_codes', icon: Gift },
     { path: '/evolutions', labelKey: 'navigation.game_evolutions', icon: Flame },
     { path: '/creators', labelKey: 'navigation.creators', icon: Video },
@@ -37,7 +37,7 @@ export default function Tabs() {
     const isGuidesActive = location.pathname.startsWith('/guides');
     const isChampionsActive = location.pathname.startsWith('/champions');
     
-    const morePaths = ['/evolutions', '/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly', '/creators'];
+    const morePaths = ['/guild-tool', '/evolutions', '/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly', '/creators'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));
 
     return (
@@ -155,29 +155,14 @@ export default function Tabs() {
                         />
                         <div className="mobile-more-drawer">
                             <div className="mobile-more-grid">
-                                {/* Guild Management Tool — featured */}
+                                {/* Guild Management Tool */}
                                 <NavLink
                                     to="/guild-tool"
-                                    className={() => `mobile-more-card mobile-more-card-featured ${location.pathname.startsWith('/guild-tool') ? 'active' : ''}`}
+                                    className={() => `mobile-more-card ${location.pathname.startsWith('/guild-tool') ? 'active' : ''}`}
                                     onClick={() => setIsMoreOpen(false)}
-                                    style={{ position: 'relative', gridColumn: '1 / -1' }}
                                 >
-                                    <Crown className="mobile-more-card__icon" size={24} style={{ color: 'var(--gold-bright)' }} />
+                                    <Crown className="mobile-more-card__icon" size={24} />
                                     <span className="mobile-more-card__label">{t('navigation.guild_tool')}</span>
-                                    <span style={{
-                                        position: 'absolute',
-                                        top: '6px',
-                                        right: '6px',
-                                        background: 'var(--gold)',
-                                        color: 'var(--bg-void)',
-                                        fontSize: '8px',
-                                        fontWeight: 'bold',
-                                        padding: '1px 4px',
-                                        borderRadius: '2px',
-                                        letterSpacing: '0'
-                                    }}>
-                                        NEW
-                                    </span>
                                 </NavLink>
 
                                 {/* Flagships */}
