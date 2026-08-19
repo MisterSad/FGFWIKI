@@ -77,6 +77,7 @@ const giftCodes = [
     { code: 'mizuyuno' },
     { code: 'niu0716' },
     { code: 'GALAXYWITHYOU' },
+    { code: 'S2SupplyDrop' },
 ];
 
 const now = new Date();
