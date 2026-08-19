@@ -34,9 +34,95 @@ const CATEGORIES = [
     { id: 'general', label: 'General', color: '#94a3b8' },
 ];
 
-// Priority / Demand Tiers along the timeline (100% English)
-export function getDemandTier(votesCount = 0) {
-    if (votesCount >= 30) {
+/**
+ * Calculate dynamic composite engagement score for a proposal.
+ * Weighted by votes and constructive community discussion activity.
+ */
+export function calculateCommunityScore(votesCount = 0, commentCount = 0) {
+    const v = typeof votesCount === 'number' ? votesCount : 0;
+    const c = typeof commentCount === 'number' ? commentCount : 0;
+    return (v * 1.0) + (c * 0.5);
+}
+
+/**
+ * Dynamic, evolutive priority tier calculation.
+ * Adapts organically to the active ecosystem of feedback without fixed arbitrary cutoffs.
+ */
+export function getDynamicDemandTier(threadOrVotes, allThreads = []) {
+    let votes = 0;
+    let comments = 0;
+
+    if (typeof threadOrVotes === 'object' && threadOrVotes !== null) {
+        votes = threadOrVotes.votesCount || (Array.isArray(threadOrVotes.votes) ? threadOrVotes.votes.length : 0);
+        comments = threadOrVotes.commentCount || 0;
+    } else if (typeof threadOrVotes === 'number') {
+        votes = threadOrVotes;
+    }
+
+    const currentScore = calculateCommunityScore(votes, comments);
+
+    // If no context pool provided, evaluate dynamically against baseline scale
+    if (!allThreads || allThreads.length === 0) {
+        if (currentScore >= 25 || votes >= 25) {
+            return {
+                id: 'critical',
+                level: 4,
+                label: 'Critical / Top Priority',
+                color: '#ef4444',
+                gradient: 'linear-gradient(135deg, #ef4444, #f97316)',
+                icon: Flame,
+                glow: 'rgba(239, 68, 68, 0.45)',
+            };
+        }
+        if (currentScore >= 12 || votes >= 12) {
+            return {
+                id: 'high',
+                level: 3,
+                label: 'Important',
+                color: '#eab308',
+                gradient: 'linear-gradient(135deg, #eab308, #ca8a04)',
+                icon: Star,
+                glow: 'rgba(234, 179, 8, 0.35)',
+            };
+        }
+        if (currentScore >= 4 || votes >= 4) {
+            return {
+                id: 'moderate',
+                level: 2,
+                label: 'Moderate',
+                color: '#06b6d4',
+                gradient: 'linear-gradient(135deg, #06b6d4, #0891b2)',
+                icon: Zap,
+                glow: 'rgba(6, 182, 212, 0.35)',
+            };
+        }
+        return {
+            id: 'low',
+            level: 1,
+            label: 'Emerging / Low Demand',
+            color: '#64748b',
+            gradient: 'linear-gradient(135deg, #64748b, #475569)',
+            icon: Lightbulb,
+            glow: 'rgba(100, 116, 139, 0.25)',
+        };
+    }
+
+    // Relative calculation across the distribution of all active proposals
+    const allScores = allThreads.map(t => calculateCommunityScore(t.votesCount, t.commentCount));
+    const maxScore = Math.max(...allScores, 5); // baseline minimum to avoid division by zero
+    const relativeRatio = currentScore / maxScore;
+
+    // Percentile rank
+    const lowerCount = allScores.filter(s => s < currentScore).length;
+    const sameCount = allScores.filter(s => s === currentScore).length;
+    const percentile = (lowerCount + (0.5 * sameCount)) / allScores.length;
+
+    // Dynamic Composite Index between 0 and 1
+    const dynamicIndex = allThreads.length <= 3 
+        ? relativeRatio 
+        : (0.55 * relativeRatio + 0.45 * percentile);
+
+    if (currentScore > 0 && dynamicIndex >= 0.70) {
         return {
             id: 'critical',
             level: 4,
@@ -47,7 +133,7 @@ export function getDemandTier(votesCount = 0) {
             glow: 'rgba(239, 68, 68, 0.45)',
         };
     }
-    if (votesCount >= 15) {
+    if (currentScore > 0 && dynamicIndex >= 0.45) {
         return {
             id: 'high',
             level: 3,
@@ -58,7 +144,7 @@ export function getDemandTier(votesCount = 0) {
             glow: 'rgba(234, 179, 8, 0.35)',
         };
     }
-    if (votesCount >= 5) {
+    if (currentScore > 0 && dynamicIndex >= 0.20) {
         return {
             id: 'moderate',
             level: 2,
@@ -72,7 +158,7 @@ export function getDemandTier(votesCount = 0) {
     return {
         id: 'low',
         level: 1,
-        label: 'Low Demand',
+        label: 'Emerging / Low Demand',
         color: '#64748b',
         gradient: 'linear-gradient(135deg, #64748b, #475569)',
         icon: Lightbulb,
@@ -80,31 +166,58 @@ export function getDemandTier(votesCount = 0) {
     };
 }
 
-// Calculate progress percentage on the timeline (0% to 100%)
-function getTimelineProgress(votesCount = 0) {
-    if (votesCount <= 0) return 4;
-    if (votesCount < 5) {
-        return 4 + (votesCount / 4) * 21; // 4% -> 25%
-    }
-    if (votesCount < 15) {
-        return 25 + ((votesCount - 5) / 10) * 25; // 25% -> 50%
-    }
-    if (votesCount < 30) {
-        return 50 + ((votesCount - 15) / 15) * 25; // 50% -> 75%
-    }
-    return Math.min(100, 75 + ((votesCount - 30) / 30) * 25); // 75% -> 100%
+// Backward-compatible getDemandTier export
+export function getDemandTier(votesCount = 0, allThreads = []) {
+    return getDynamicDemandTier(votesCount, allThreads);
 }
 
-// Visual Demand Timeline Component (Frise de Demande) - 100% English
-function DemandTimeline({ votesCount = 0, isCompact = false }) {
-    const tier = getDemandTier(votesCount);
-    const progress = getTimelineProgress(votesCount);
+// Calculate dynamic progress percentage on the timeline (4% to 100%)
+function getDynamicTimelineProgress(threadOrVotes, allThreads = []) {
+    let votes = 0;
+    let comments = 0;
 
-    const tiersList = [
-        { id: 'low', min: 1, label: 'Low Demand', icon: Lightbulb, color: '#64748b' },
-        { id: 'moderate', min: 5, label: 'Moderate', icon: Zap, color: '#06b6d4' },
-        { id: 'high', min: 15, label: 'Important', icon: Star, color: '#eab308' },
-        { id: 'critical', min: 30, label: 'Critical Priority', icon: Flame, color: '#ef4444' },
+    if (typeof threadOrVotes === 'object' && threadOrVotes !== null) {
+        votes = threadOrVotes.votesCount || (Array.isArray(threadOrVotes.votes) ? threadOrVotes.votes.length : 0);
+        comments = threadOrVotes.commentCount || 0;
+    } else if (typeof threadOrVotes === 'number') {
+        votes = threadOrVotes;
+    }
+
+    const currentScore = calculateCommunityScore(votes, comments);
+    if (currentScore <= 0) return 4;
+
+    if (!allThreads || allThreads.length === 0) {
+        if (currentScore < 4) return 4 + (currentScore / 4) * 21;
+        if (currentScore < 12) return 25 + ((currentScore - 4) / 8) * 25;
+        if (currentScore < 25) return 50 + ((currentScore - 12) / 13) * 25;
+        return Math.min(100, 75 + ((currentScore - 25) / 25) * 25);
+    }
+
+    const allScores = allThreads.map(t => calculateCommunityScore(t.votesCount, t.commentCount));
+    const maxScore = Math.max(...allScores, 5);
+    const relativeRatio = Math.min(1, currentScore / maxScore);
+
+    const lowerCount = allScores.filter(s => s < currentScore).length;
+    const sameCount = allScores.filter(s => s === currentScore).length;
+    const percentile = (lowerCount + (0.5 * sameCount)) / allScores.length;
+
+    const dynamicIndex = allThreads.length <= 3 
+        ? relativeRatio 
+        : (0.55 * relativeRatio + 0.45 * percentile);
+
+    return Math.max(5, Math.min(98, dynamicIndex * 100));
+}
+
+// Visual Dynamic Demand Timeline Component (Frise de Demande Évolutive)
+function DemandTimeline({ thread, allThreads = [], isCompact = false }) {
+    const tier = getDynamicDemandTier(thread, allThreads);
+    const progress = getDynamicTimelineProgress(thread, allThreads);
+
+    const milestones = [
+        { id: 'low', label: 'Emerging', icon: Lightbulb, color: '#64748b' },
+        { id: 'moderate', label: 'Moderate', icon: Zap, color: '#06b6d4' },
+        { id: 'high', label: 'High Priority', icon: Star, color: '#eab308' },
+        { id: 'critical', label: 'Top Demand', icon: Flame, color: '#ef4444' },
     ];
 
     return (
@@ -118,7 +231,7 @@ function DemandTimeline({ votesCount = 0, isCompact = false }) {
                 border: '1px solid rgba(255, 255, 255, 0.08)',
                 boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.6)'
             }}>
-                {/* Gradient Fill */}
+                {/* Dynamic Gradient Fill */}
                 <div style={{
                     position: 'absolute',
                     left: 0,
@@ -148,7 +261,7 @@ function DemandTimeline({ votesCount = 0, isCompact = false }) {
                     />
                 ))}
 
-                {/* Cursor Indicator */}
+                {/* Dynamic Cursor Indicator */}
                 <div style={{
                     position: 'absolute',
                     left: `${progress}%`,
@@ -165,35 +278,34 @@ function DemandTimeline({ votesCount = 0, isCompact = false }) {
                 }} />
             </div>
 
-            {/* Scale Labels below */}
+            {/* Evolutive Scale Labels */}
             <div style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(4, 1fr)',
                 marginTop: '0.35rem',
-                fontSize: isCompact ? '0.65rem' : '0.72rem',
+                fontSize: isCompact ? '0.65rem' : '0.74rem',
                 color: 'var(--text-dim)',
                 textAlign: 'center',
                 fontFamily: 'var(--font-mono)'
             }}>
-                {tiersList.map((tItem) => {
-                    const isActive = tier.id === tItem.id;
+                {milestones.map((m) => {
+                    const isActive = tier.id === m.id;
+                    const IconComponent = m.icon;
                     return (
                         <div 
-                            key={tItem.id}
+                            key={m.id}
                             style={{
-                                color: isActive ? tItem.color : 'var(--text-dim)',
+                                color: isActive ? m.color : 'var(--text-dim)',
                                 fontWeight: isActive ? 'bold' : 'normal',
-                                opacity: isActive ? 1 : 0.6,
+                                opacity: isActive ? 1 : 0.65,
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 gap: '3px'
                             }}
                         >
-                            <span>{tItem.label}</span>
-                            {!isCompact && (
-                                <span style={{ fontSize: '0.6rem', opacity: 0.8 }}>({tItem.min}+)</span>
-                            )}
+                            <IconComponent size={isCompact ? 10 : 12} />
+                            <span>{m.label}</span>
                         </div>
                     );
                 })}
@@ -279,12 +391,18 @@ export default function GameEvolutions() {
         return () => unsubscribe();
     }, [selectedThread?.id]);
 
-    // Statistics counts
+    // Statistics counts calculated dynamically
     const stats = useMemo(() => {
         const publicThreads = threads.filter(t => t.status !== 'pending' && t.status !== 'rejected');
         const inProgressCount = publicThreads.filter(t => t.status === 'in_progress').length;
         const implementedCount = publicThreads.filter(t => t.status === 'implemented').length;
-        const topRequested = publicThreads.filter(t => (t.votesCount || 0) >= 15).length;
+        
+        // Count threads in top dynamic demand tiers
+        const topRequested = publicThreads.filter(t => {
+            const tier = getDynamicDemandTier(t, publicThreads);
+            return tier.id === 'critical' || tier.id === 'high';
+        }).length;
+
         return {
             total: publicThreads.length,
             inProgress: inProgressCount,
@@ -293,8 +411,10 @@ export default function GameEvolutions() {
         };
     }, [threads]);
 
-    // Filter threads based on search, category, tier, status, and admin queue
+    // Filter threads based on search, category, dynamic tier, status, and admin queue
     const filteredThreads = useMemo(() => {
+        const publicPool = threads.filter(t => t.status !== 'pending' && t.status !== 'rejected');
+
         return threads.filter(thread => {
             // Admin moderation queue filter
             if (adminViewQueue) {
@@ -317,9 +437,9 @@ export default function GameEvolutions() {
                 return false;
             }
 
-            // Tier filter
+            // Dynamic Tier filter
             if (selectedTier !== 'all') {
-                const tier = getDemandTier(thread.votesCount || 0);
+                const tier = getDynamicDemandTier(thread, publicPool);
                 if (tier.id !== selectedTier) return false;
             }
 
@@ -340,7 +460,9 @@ export default function GameEvolutions() {
     const sortedThreads = useMemo(() => {
         return [...filteredThreads].sort((a, b) => {
             if (sortBy === 'votes') {
-                const diff = (b.votesCount || 0) - (a.votesCount || 0);
+                const scoreB = calculateCommunityScore(b.votesCount, b.commentCount);
+                const scoreA = calculateCommunityScore(a.votesCount, a.commentCount);
+                const diff = scoreB - scoreA;
                 if (diff !== 0) return diff;
                 return new Date(b.createdAt || 0) - new Date(a.createdAt || 0);
             }
@@ -548,7 +670,7 @@ export default function GameEvolutions() {
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#ef4444' }}>
                         <Flame size={14} />
-                        <span><strong>{stats.topRequested}</strong> critical priority</span>
+                        <span><strong>{stats.topRequested}</strong> high demand</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#38bdf8' }}>
                         <Zap size={14} />
@@ -669,7 +791,7 @@ export default function GameEvolutions() {
                         )}
                     </div>
 
-                    {/* Sort Selector: Votes (default), Newest, Comments, Status */}
+                    {/* Sort Selector: Dynamic Score (default), Newest, Comments, Status */}
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                         <span style={{ color: 'var(--text-dim)', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
                             <ArrowUpDown size={13} />
@@ -684,7 +806,7 @@ export default function GameEvolutions() {
                             overflow: 'hidden'
                         }}>
                             {[
-                                { id: 'votes', label: '🔥 Most Voted' },
+                                { id: 'votes', label: '🔥 Top Priority' },
                                 { id: 'newest', label: '🆕 Newest' },
                                 { id: 'comments', label: '💬 Most Discussed' },
                                 { id: 'status', label: '🎯 Status' },
@@ -710,7 +832,7 @@ export default function GameEvolutions() {
                         </div>
                     </div>
 
-                    {/* Admin Moderation Queue Switch (Discreet & Sleek) */}
+                    {/* Admin Moderation Queue Switch */}
                     {isAdmin && (
                         <button
                             onClick={() => setAdminViewQueue(!adminViewQueue)}
@@ -782,7 +904,7 @@ export default function GameEvolutions() {
                     </div>
                 </div>
 
-                {/* Frise Tier Quick Filters */}
+                {/* Dynamic Demand Tier Filter */}
                 <div style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -791,7 +913,7 @@ export default function GameEvolutions() {
                     fontSize: '0.76rem'
                 }}>
                     <span style={{ color: 'var(--text-dim)', fontSize: '0.72rem', marginRight: '4px' }}>
-                        Priority Tier:
+                        Demand Tier:
                     </span>
                     <button
                         onClick={() => setSelectedTier('all')}
@@ -808,10 +930,10 @@ export default function GameEvolutions() {
                         All Tiers
                     </button>
                     {[
-                        { id: 'critical', color: '#ef4444', label: '🔥 Critical Priority (30+)' },
-                        { id: 'high', color: '#eab308', label: '⭐ Important (15-29)' },
-                        { id: 'moderate', color: '#06b6d4', label: '⚡ Moderate (5-14)' },
-                        { id: 'low', color: '#64748b', label: '💡 Low Demand (1-4)' },
+                        { id: 'critical', color: '#ef4444', label: '🔥 Top Demand' },
+                        { id: 'high', color: '#eab308', label: '⭐ High Priority' },
+                        { id: 'moderate', color: '#06b6d4', label: '⚡ Moderate' },
+                        { id: 'low', color: '#64748b', label: '💡 Emerging' },
                     ].map(tierOption => (
                         <button
                             key={tierOption.id}
@@ -1105,8 +1227,8 @@ export default function GameEvolutions() {
                                     </div>
                                 </div>
 
-                                {/* Dynamic Demand Timeline (Frise de Demande) */}
-                                <DemandTimeline votesCount={thread.votesCount || 0} isCompact={true} />
+                                {/* Dynamic Demand Timeline (Frise de Demande Évolutive) */}
+                                <DemandTimeline thread={thread} allThreads={threads} isCompact={true} />
 
                                 {/* Bottom Info Row */}
                                 <div style={{
@@ -1593,9 +1715,9 @@ export default function GameEvolutions() {
                             marginBottom: '1.75rem'
                         }}>
                             <h4 style={{ margin: '0 0 0.4rem', color: 'var(--gold-bright)', fontSize: '0.9rem' }}>
-                                Demand & Priority Timeline
+                                Dynamic Demand & Priority Timeline
                             </h4>
-                            <DemandTimeline votesCount={selectedThread.votesCount || 0} isCompact={false} />
+                            <DemandTimeline thread={selectedThread} allThreads={threads} isCompact={false} />
                             
                             <div style={{ marginTop: '0.75rem', display: 'flex', justifyContent: 'center' }}>
                                 <button
