@@ -102,6 +102,35 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // Game Evolutions & Feature Requests.
+    // Public read; authenticated users can propose and vote; admin/author can moderate.
+    match /evolutions/{evolutionId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.authorUid == request.auth.uid
+        && request.resource.data.title is string
+        && request.resource.data.title.size() >= 3
+        && request.resource.data.description is string
+        && request.resource.data.description.size() >= 5;
+      allow update: if request.auth != null;
+      allow delete: if request.auth != null
+        && (resource.data.authorUid == request.auth.uid
+            || (request.auth.token.email != null && (request.auth.token.email == 'vieira.andre@proton.me' || request.auth.token.email.matches('.*fgfwiki.*'))));
+    }
+
+    // Discussion comments on evolution threads.
+    match /evolution_comments/{commentId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.authorUid == request.auth.uid
+        && request.resource.data.content is string
+        && request.resource.data.content.size() >= 1;
+      allow update: if false;
+      allow delete: if request.auth != null
+        && (resource.data.authorUid == request.auth.uid
+            || (request.auth.token.email != null && (request.auth.token.email == 'vieira.andre@proton.me' || request.auth.token.email.matches('.*fgfwiki.*'))));
+    }
+
     // Default deny everything else.
     match /{document=**} {
       allow read, write: if false;
