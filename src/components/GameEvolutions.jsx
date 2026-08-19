@@ -407,7 +407,6 @@ export default function GameEvolutions() {
     // Statistics counts calculated dynamically
     const stats = useMemo(() => {
         const publicThreads = threads.filter(t => t.status !== 'pending' && t.status !== 'rejected');
-        const inProgressCount = publicThreads.filter(t => t.status === 'in_progress').length;
         const implementedCount = publicThreads.filter(t => t.status === 'implemented').length;
         
         // Count threads in top dynamic demand tiers
@@ -418,7 +417,6 @@ export default function GameEvolutions() {
 
         return {
             total: publicThreads.length,
-            inProgress: inProgressCount,
             implemented: implementedCount,
             topRequested
         };
@@ -484,10 +482,6 @@ export default function GameEvolutions() {
             }
             if (sortBy === 'comments') {
                 return (b.commentCount || 0) - (a.commentCount || 0);
-            }
-            if (sortBy === 'status') {
-                const order = { 'implemented': 1, 'in_progress': 2, 'approved': 3, 'pending': 4, 'rejected': 5 };
-                return (order[a.status] || 99) - (order[b.status] || 99);
             }
             return 0;
         });
@@ -717,14 +711,12 @@ export default function GameEvolutions() {
                         <Flame size={14} />
                         <span><strong>{stats.topRequested}</strong> high demand</span>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#38bdf8' }}>
-                        <Zap size={14} />
-                        <span><strong>{stats.inProgress}</strong> under review</span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#4ade80' }}>
-                        <CheckCircle size={14} />
-                        <span><strong>{stats.implemented}</strong> implemented 🎉</span>
-                    </div>
+                    {stats.implemented > 0 && (
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#4ade80' }}>
+                            <CheckCircle size={14} />
+                            <span><strong>{stats.implemented}</strong> implemented in-game 🎉</span>
+                        </div>
+                    )}
                 </div>
 
                 {/* Single Primary Action Button */}
@@ -829,7 +821,7 @@ export default function GameEvolutions() {
                         )}
                     </div>
 
-                    {/* Sort Selector: Dynamic Score (default), Newest, Comments, Status */}
+                    {/* Sort Selector: Dynamic Score (default), Newest, Comments */}
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                         <span style={{ color: 'var(--text-dim)', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
                             <ArrowUpDown size={13} />
@@ -847,7 +839,6 @@ export default function GameEvolutions() {
                                 { id: 'votes', label: '🔥 Top Priority' },
                                 { id: 'newest', label: '🆕 Newest' },
                                 { id: 'comments', label: '💬 Most Discussed' },
-                                { id: 'status', label: '🎯 Status' },
                             ].map(sOption => (
                                 <button
                                     key={sOption.id}
@@ -1142,7 +1133,7 @@ export default function GameEvolutions() {
                                             {getCategoryLabel(thread.category)}
                                         </span>
 
-                                        {/* Status Badge */}
+                                        {/* Status Badges */}
                                         {isPending && (
                                             <span style={{
                                                 fontSize: '0.72rem',
@@ -1159,22 +1150,6 @@ export default function GameEvolutions() {
                                                 Pending Review
                                             </span>
                                         )}
-                                        {isInProgress && (
-                                            <span style={{
-                                                fontSize: '0.72rem',
-                                                padding: '2px 7px',
-                                                borderRadius: '4px',
-                                                background: 'rgba(56, 189, 248, 0.15)',
-                                                color: '#38bdf8',
-                                                border: '1px solid #38bdf8',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: '3px'
-                                            }}>
-                                                <Zap size={11} />
-                                                Under Review
-                                            </span>
-                                        )}
                                         {isImplemented && (
                                             <span style={{
                                                 fontSize: '0.72rem',
@@ -1188,7 +1163,7 @@ export default function GameEvolutions() {
                                                 gap: '3px'
                                             }}>
                                                 <CheckCircle2 size={11} />
-                                                Implemented 🎉
+                                                Implemented in-game 🎉
                                             </span>
                                         )}
                                     </div>
@@ -1301,23 +1276,22 @@ export default function GameEvolutions() {
                                                     Approve
                                                 </button>
                                             )}
-                                            {thread.status !== 'in_progress' && (
+                                            {thread.status === 'implemented' ? (
                                                 <button
-                                                    onClick={(e) => handleStatusChange(e, thread.id, 'in_progress')}
+                                                    onClick={(e) => handleStatusChange(e, thread.id, 'approved')}
                                                     style={{
                                                         padding: '2px 7px',
-                                                        background: 'rgba(56, 189, 248, 0.2)',
-                                                        color: '#38bdf8',
-                                                        border: '1px solid #38bdf8',
+                                                        background: 'rgba(255, 255, 255, 0.1)',
+                                                        color: 'var(--text-dim)',
+                                                        border: '1px solid var(--border)',
                                                         borderRadius: '4px',
                                                         fontSize: '0.72rem',
                                                         cursor: 'pointer'
                                                     }}
                                                 >
-                                                    Under Review
+                                                    Revert to Approved
                                                 </button>
-                                            )}
-                                            {thread.status !== 'implemented' && (
+                                            ) : (
                                                 <button
                                                     onClick={(e) => handleStatusChange(e, thread.id, 'implemented')}
                                                     style={{
@@ -1330,7 +1304,7 @@ export default function GameEvolutions() {
                                                         cursor: 'pointer'
                                                     }}
                                                 >
-                                                    Implemented 🎉
+                                                    Mark Implemented 🎉
                                                 </button>
                                             )}
                                             <button
@@ -1803,6 +1777,22 @@ export default function GameEvolutions() {
                                         border: '1px solid #eab308'
                                     }}>
                                         Pending Review
+                                    </span>
+                                )}
+                                {selectedThread.status === 'implemented' && (
+                                    <span style={{
+                                        fontSize: '0.75rem',
+                                        padding: '2px 8px',
+                                        borderRadius: '4px',
+                                        background: 'rgba(74, 222, 128, 0.15)',
+                                        color: '#4ade80',
+                                        border: '1px solid #4ade80',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '3px'
+                                    }}>
+                                        <CheckCircle2 size={12} />
+                                        Implemented in-game 🎉
                                     </span>
                                 )}
                             </div>
