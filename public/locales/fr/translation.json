@@ -1859,7 +1859,7 @@
     },
     "evolutions": {
         "title": "Évolutions du Jeu",
-        "subtitle": "Espace de suggestions et retours communautaires pour Foundation: Galactic Frontier. Proposez vos idées, votez sur la frise de priorité et participez aux futures évolutions du jeu.",
+        "subtitle": "Espace de suggestions et retours communautaires pour Foundation: Galactic Frontier. Proposez vos idées et votez sur la frise de priorité : une extraction mensuelle des demandes les plus plébiscitées est transmise aux équipes en charge des créateurs de contenu afin d'être envoyée directement aux développeurs du jeu.",
         "propose_btn": "Proposer une évolution",
         "search_placeholder": "Rechercher une évolution, mot-clé, problème ou idée...",
         "sort_by": "Trier par",

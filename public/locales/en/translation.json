@@ -1859,7 +1859,7 @@
     },
     "evolutions": {
         "title": "Game Evolutions",
-        "subtitle": "Community feedback & feature request hub for Foundation: Galactic Frontier. Propose ideas, vote on the priority timeline, and help shape future game updates.",
+        "subtitle": "Community feedback & feature request hub for Foundation: Galactic Frontier. Propose ideas and vote on the priority timeline: a monthly digest of top community requests is sent directly to the Content Creator relations team to be forwarded to the game developers.",
         "propose_btn": "Propose an Evolution",
         "search_placeholder": "Search evolutions, keywords, problems or ideas...",
         "sort_by": "Sort by",
