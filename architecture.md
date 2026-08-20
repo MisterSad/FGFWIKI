@@ -110,7 +110,8 @@ FGF WIKI/
 │   │   │
 │   │   ├── modals/           # Fenêtres modales accessibles
 │   │   │   ├── LoginModal.jsx        # Connexion Google / Magic Link / Email
-│   │   │   └── ProfileSetupModal.jsx # Configuration du pseudonyme et serveur
+│   │   │   ├── ProfileSetupModal.jsx # Configuration du pseudonyme et serveur
+│   │   │   └── SearchModal.jsx       # Recherche Spotlight universelle (Cmd+K)
 │   │   │
 │   │   └── common/           # Composants atomiques réutilisables
 │   │       ├── TipCard.jsx          # Carte de présentation d'un guide ou d'une actualité
@@ -124,6 +125,7 @@ FGF WIKI/
 │   │
 │   ├── hooks/                # Custom React Hooks
 │   │   ├── useSEO.js         # Injection dynamique des métadonnées, OpenGraph & JSON-LD
+│   │   ├── useFavorites.js   # Gestion des favoris joueurs (champions, guides, decks)
 │   │   └── useAmbientSignal.js # Gestion de l'audio synthétisé
 │   │
 │   ├── lib/                  # Logique pure de calcul (sans JSX ni dépendance DOM)
