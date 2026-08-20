@@ -54,20 +54,12 @@ function App() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isAnnouncementOpen, setIsAnnouncementOpen] = useState(() => {
-    try {
-      return !localStorage.getItem('fgf_announcement_seen_v1');
-    } catch {
-      return true;
-    }
+    const announcementDeadline = new Date('2026-08-30T00:00:00Z');
+    return new Date() < announcementDeadline;
   });
 
   const handleCloseAnnouncement = () => {
     setIsAnnouncementOpen(false);
-    try {
-      localStorage.setItem('fgf_announcement_seen_v1', 'true');
-    } catch {
-      // ignore
-    }
   };
 
   // Global keyboard shortcut for Spotlight Search (Cmd+K, Ctrl+K)
