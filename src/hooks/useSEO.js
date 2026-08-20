@@ -248,6 +248,10 @@ export default function useSEO() {
             pageTitle = t('seo.flagships.title', { defaultValue: 'Flagships & Meta Decks' });
             description = t('seo.flagships.description', { defaultValue: 'Complete flagship guide, core upgrades, component mods and meta decks (Kinetic, Beam, Ion) for Foundation: Galactic Frontier.' });
             breadcrumbs.push({ name: t('navigation.flagships', { defaultValue: 'Flagships & Decks' }), url: canonicalUrl });
+        } else if (location.pathname.startsWith('/evolutions')) {
+            pageTitle = t('seo.game_evolutions.title', { defaultValue: 'Game Evolutions & Roadmap' });
+            description = t('seo.game_evolutions.description', { defaultValue: 'Community feature proposals, roadmap tracking, and demand scoring for Foundation: Galactic Frontier.' });
+            breadcrumbs.push({ name: t('navigation.game_evolutions', { defaultValue: 'Game Evolutions' }), url: canonicalUrl });
         } else if (location.pathname === '/tools') {
             pageTitle = t('seo.tools.title', { defaultValue: 'Interactive Calculators & Tools' });
             description = t('seo.tools.description', { defaultValue: 'Speedup calculator, Nexus resource estimator, Champion upgrade calculator and GvG combat simulation tools.' });
@@ -348,7 +352,7 @@ export default function useSEO() {
                 "url": canonicalUrl,
                 "inLanguage": langCode,
                 "datePublished": tip.publishDate || '2026-05-10T12:00:00Z',
-                "dateModified": '2026-08-18T00:00:00Z',
+                "dateModified": '2026-08-20T00:00:00Z',
                 "author": {
                     "@type": "Person",
                     "name": AUTHOR_NAME
@@ -402,6 +406,28 @@ export default function useSEO() {
                     "description": `${hero.tier} Tier ${hero.role} - ${hero.energyType} Damage`
                 }))
             });
+            graphEntities.push({
+                "@type": "FAQPage",
+                "@id": `${canonicalUrl}#faq`,
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Who is the best hero in Foundation: Galactic Frontier?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Top S+ tier heroes include Doug Rockwell (Kinetic Vanguard), Kama Moai (Ion Control), Jodie Beart (Beam Support), Klara (Kinetic Primary DPS), and Evan Rogers (Beam Sniper DPS)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How does energy damage synergy work in ground teams?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Deploying 3 or more heroes of the same energy archetype (Kinetic, Beam, or Ion) grants a +15% resonance bonus to fleet and squad attack power."
+                        }
+                    }
+                ]
+            });
         } else if (location.pathname === '/flagships' || location.pathname === '/flagship-decks') {
             graphEntities.push({
                 "@type": "ItemList",
@@ -415,6 +441,29 @@ export default function useSEO() {
                     "name": t(deck.title, { defaultValue: deck.title }),
                     "description": t(deck.description, { defaultValue: deck.description })
                 }))
+            });
+            graphEntities.push({
+                "@type": "FAQPage",
+                "@id": `${canonicalUrl}#faq`,
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is the best flagship deck in FGF?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The Kinetic Armor-Crusher Deck (Ironclad Dreadnought + Doug Rockwell & Klara) and Beam Solar-Melt Deck (Sol Invictus + Eva von Trier & Evan Rogers) dominate the competitive meta."
+                        }
+                    }
+                ]
+            });
+        } else if (location.pathname.startsWith('/evolutions')) {
+            graphEntities.push({
+                "@type": "CollectionPage",
+                "@id": `${canonicalUrl}#collection`,
+                "name": "Foundation: Galactic Frontier Game Evolutions & Community Roadmap",
+                "description": "Community-driven feature proposals, player voting, and developer roadmap tracking.",
+                "url": canonicalUrl,
+                "isPartOf": { "@id": `${SITE_URL}/#website` }
             });
         } else if (location.pathname === '/tools') {
             graphEntities.push({

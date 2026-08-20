@@ -55,7 +55,7 @@ User-agent: Y!J
 User-agent: Y!J-MMP
 Allow: /
 
-# Generative AI & LLM Search Crawlers (GEO Standards 2026)
+# Generative AI, LLM Search Crawlers & Retrieval Agents (GEO Standards August 2026)
 User-agent: GPTBot
 User-agent: ChatGPT-User
 User-agent: OAI-SearchBot
@@ -67,6 +67,9 @@ User-agent: Perplexity-User
 User-agent: Google-Extended
 User-agent: Applebot
 User-agent: Applebot-Extended
+User-agent: GrokBot
+User-agent: xAI-Search
+User-agent: DeepSeekBot
 User-agent: meta-externalagent
 User-agent: Meta-ExternalFetcher
 User-agent: cohere-ai
@@ -77,11 +80,14 @@ User-agent: Amazonbot
 User-agent: Diffbot
 User-agent: CCBot
 User-agent: Timpibot
+User-agent: KagiBot
+User-agent: BraveBot
 Allow: /
 
-# Direct access to machine-readable LLM knowledge files
+# Direct access to machine-readable LLM knowledge files (llmstxt.org)
 Allow: /llms.txt
 Allow: /llms-full.txt
 
-# Sitemaps
+# Sitemaps & Knowledge Feeds
 Sitemap: https://fgfwiki.com/sitemap.xml
+
