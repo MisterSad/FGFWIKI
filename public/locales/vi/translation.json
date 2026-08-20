@@ -1641,7 +1641,9 @@
         "error_server": "Số máy chủ phải nằm trong khoảng 1 đến 99999.",
         "error_save": "Không thể lưu hồ sơ. Vui lòng thử lại.",
         "delete": "Xóa",
-        "delete_confirm": "Xóa bình luận này?"
+        "delete_confirm": "Xóa bình luận này?",
+        "edit_profile_tooltip": "Chỉnh sửa hồ sơ chỉ huy (Biệt danh & Máy chủ)",
+        "profile_title": "HỒ SƠ CHỈ HUY"
     },
     "guild_tool": {
         "hero_kicker": "Hệ Thống ERP Quản Lý Guild Ứng Dụng AI",

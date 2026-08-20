@@ -1641,7 +1641,9 @@
         "error_server": "Sunucu numarası 1 ile 99999 arasında olmalıdır.",
         "error_save": "Profil kaydedilemedi. Lütfen tekrar deneyin.",
         "delete": "Sil",
-        "delete_confirm": "Bu yorum silinsin mi?"
+        "delete_confirm": "Bu yorum silinsin mi?",
+        "edit_profile_tooltip": "Komutan profilini düzenle (Takma ad ve sunucu)",
+        "profile_title": "KOMUTAN PROFİLİ"
     },
     "guild_tool": {
         "hero_kicker": "Yapay Zekâ Destekli Guild Yönetim ERP'si",

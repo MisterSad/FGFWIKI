@@ -1641,7 +1641,9 @@
         "error_server": "服务器编号须在 1 至 99999 之间。",
         "error_save": "无法保存个人资料，请重试。",
         "delete": "删除",
-        "delete_confirm": "删除这条评论？"
+        "delete_confirm": "删除这条评论？",
+        "edit_profile_tooltip": "编辑指挥官资料（昵称与服务器）",
+        "profile_title": "指挥官资料"
     },
     "guild_tool": {
         "hero_kicker": "AI 驱动的公会管理 ERP",

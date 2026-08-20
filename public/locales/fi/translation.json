@@ -1641,7 +1641,9 @@
         "error_server": "Palvelinnumeron on oltava 1–99999.",
         "error_save": "Profiilia ei voitu tallentaa. Yritä uudelleen.",
         "delete": "Poista",
-        "delete_confirm": "Poista tämä kommentti?"
+        "delete_confirm": "Poista tämä kommentti?",
+        "edit_profile_tooltip": "Muokkaa komentajaprofiilia (nimimerkki ja palvelin)",
+        "profile_title": "KOMENTAJAPROFIILI"
     },
     "guild_tool": {
         "hero_kicker": "Tekoälyohjattu Killanhallinnan ERP",

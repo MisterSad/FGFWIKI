@@ -1641,7 +1641,9 @@
         "error_server": "サーバー番号は1〜99999の範囲で入力してください。",
         "error_save": "プロフィールを保存できませんでした。もう一度お試しください。",
         "delete": "削除",
-        "delete_confirm": "このコメントを削除しますか？"
+        "delete_confirm": "このコメントを削除しますか？",
+        "edit_profile_tooltip": "司令官プロフィールを編集（ニックネーム＆サーバー）",
+        "profile_title": "司令官プロフィール"
     },
     "guild_tool": {
         "hero_kicker": "AI搭載ギルド管理ERP",

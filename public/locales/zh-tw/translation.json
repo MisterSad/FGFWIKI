@@ -1641,7 +1641,9 @@
         "error_server": "伺服器編號須介於 1 至 99999 之間。",
         "error_save": "無法儲存個人資料，請重試。",
         "delete": "刪除",
-        "delete_confirm": "刪除這則留言？"
+        "delete_confirm": "刪除這則留言？",
+        "edit_profile_tooltip": "編輯指揮官資料（暱稱與伺服器）",
+        "profile_title": "指揮官資料"
     },
     "guild_tool": {
         "hero_kicker": "AI 驅動的公會管理 ERP",

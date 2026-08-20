@@ -1641,7 +1641,9 @@
         "error_server": "Het servernummer moet tussen 1 en 99999 liggen.",
         "error_save": "Profiel kon niet worden opgeslagen. Probeer het opnieuw.",
         "delete": "Verwijderen",
-        "delete_confirm": "Deze reactie verwijderen?"
+        "delete_confirm": "Deze reactie verwijderen?",
+        "edit_profile_tooltip": "Bewerk commandantenprofiel (bijnaam & server)",
+        "profile_title": "COMMANDANTENPROFIEL"
     },
     "guild_tool": {
         "hero_kicker": "AI-Gedreven Guildbeheer ERP",

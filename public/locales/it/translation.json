@@ -1641,7 +1641,9 @@
         "error_server": "Il numero di server deve essere tra 1 e 99999.",
         "error_save": "Impossibile salvare il profilo. Riprova.",
         "delete": "Elimina",
-        "delete_confirm": "Eliminare questo commento?"
+        "delete_confirm": "Eliminare questo commento?",
+        "edit_profile_tooltip": "Modifica profilo comandante (soprannome e server)",
+        "profile_title": "PROFILO COMANDANTE"
     },
     "guild_tool": {
         "hero_kicker": "ERP di Gestione Gilda Potenziato da IA",

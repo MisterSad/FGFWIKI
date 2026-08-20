@@ -1639,7 +1639,9 @@
         "error_server": "Le numéro de serveur doit être compris entre 1 et 99999.",
         "error_save": "Impossible d’enregistrer votre profil. Veuillez réessayer.",
         "delete": "Supprimer",
-        "delete_confirm": "Supprimer ce commentaire ?"
+        "delete_confirm": "Supprimer ce commentaire ?",
+        "edit_profile_tooltip": "Modifier votre profil de Commandant (Pseudo & Serveur)",
+        "profile_title": "PROFIL DE COMMANDANT"
     },
     "guild_tool": {
         "hero_kicker": "ERP de Guilde propulsé par l'IA",

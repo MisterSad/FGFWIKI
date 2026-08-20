@@ -1641,7 +1641,9 @@
         "error_server": "Servernumret måste vara mellan 1 och 99999.",
         "error_save": "Kunde inte spara profilen. Försök igen.",
         "delete": "Ta bort",
-        "delete_confirm": "Ta bort den här kommentaren?"
+        "delete_confirm": "Ta bort den här kommentaren?",
+        "edit_profile_tooltip": "Redigera befälhavarprofil (smeknamn & server)",
+        "profile_title": "BEFÄLHAVARPROFIL"
     },
     "guild_tool": {
         "hero_kicker": "AI-Drivet Guild Management ERP",

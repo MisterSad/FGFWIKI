@@ -1641,7 +1641,9 @@
         "error_server": "Nombor pelayan mesti antara 1 dan 99999.",
         "error_save": "Gagal menyimpan profil. Cuba lagi.",
         "delete": "Padam",
-        "delete_confirm": "Padam komen ini?"
+        "delete_confirm": "Padam komen ini?",
+        "edit_profile_tooltip": "Edit profil komander (Nama panggilan & Pelayan)",
+        "profile_title": "PROFIL KOMANDER"
     },
     "guild_tool": {
         "hero_kicker": "ERP Pengurusan Guild Berkuasakan AI",

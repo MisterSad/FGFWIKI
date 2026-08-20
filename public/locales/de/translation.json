@@ -1641,7 +1641,9 @@
         "error_server": "Die Servernummer muss zwischen 1 und 99999 liegen.",
         "error_save": "Profil konnte nicht gespeichert werden. Bitte versuche es erneut.",
         "delete": "Löschen",
-        "delete_confirm": "Diesen Kommentar löschen?"
+        "delete_confirm": "Diesen Kommentar löschen?",
+        "edit_profile_tooltip": "Kommandantenprofil bearbeiten (Spitzname & Server)",
+        "profile_title": "KOMMANDANTENPROFIL"
     },
     "guild_tool": {
         "hero_kicker": "KI-gestütztes Gilden-Management-ERP",

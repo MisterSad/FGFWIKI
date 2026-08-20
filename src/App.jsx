@@ -7,6 +7,7 @@ import Layout from './components/layout/Layout';
 import Hero from './components/pages/Hero';
 import LoginModal from './components/modals/LoginModal';
 import SearchModal from './components/modals/SearchModal';
+import ProfileSetupModal from './components/modals/ProfileSetupModal';
 
 // Language-prefixed URLs (/fr/guides, /de/news/...) share a single SPA:
 // the prefix is detected at startup and used as the router basename.
@@ -51,6 +52,7 @@ const NotFound = lazyWithRetry(() => import('./components/pages/NotFound'));
 function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   // Global keyboard shortcut for Spotlight Search (Cmd+K, Ctrl+K)
   useEffect(() => {
@@ -75,6 +77,7 @@ function App() {
           <Layout 
             onLoginClick={() => setIsLoginModalOpen(true)}
             onSearchClick={() => setIsSearchOpen(true)}
+            onProfileClick={() => setIsProfileOpen(true)}
           >
             <Suspense fallback={
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh', color: 'var(--text-dim)', fontFamily: 'var(--font-label)', letterSpacing: '2px', textTransform: 'uppercase' }}>
@@ -117,6 +120,11 @@ function App() {
           isOpen={isSearchOpen}
           onClose={() => setIsSearchOpen(false)}
         />
+        {isProfileOpen && (
+          <ProfileSetupModal
+            onClose={() => setIsProfileOpen(false)}
+          />
+        )}
       </BrowserRouter>
     </AuthProvider>
   );

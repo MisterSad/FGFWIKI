@@ -1641,7 +1641,9 @@
         "error_server": "Numer serwera musi wynosić od 1 do 99999.",
         "error_save": "Nie udało się zapisać profilu. Spróbuj ponownie.",
         "delete": "Usuń",
-        "delete_confirm": "Usunąć ten komentarz?"
+        "delete_confirm": "Usunąć ten komentarz?",
+        "edit_profile_tooltip": "Edytuj profil dowódcy (pseudonim i serwer)",
+        "profile_title": "PROFIL DOWÓDCY"
     },
     "guild_tool": {
         "hero_kicker": "ERP do Zarządzania Gildią oparte na AI",

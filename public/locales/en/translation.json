@@ -1639,7 +1639,9 @@
         "error_server": "Server number must be between 1 and 99999.",
         "error_save": "Could not save your profile. Please try again.",
         "delete": "Delete",
-        "delete_confirm": "Delete this comment?"
+        "delete_confirm": "Delete this comment?",
+        "edit_profile_tooltip": "Edit Commander Profile (Nickname & Server)",
+        "profile_title": "COMMANDER PROFILE"
     },
     "guild_tool": {
         "hero_kicker": "AI-Powered Guild Management ERP",

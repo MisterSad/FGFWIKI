@@ -5,8 +5,8 @@ import { Link } from 'react-router';
 import { useAuth } from '../../context/AuthContext';
 import LanguageSwitcher from './LanguageSwitcher';
 
-export default function Header({ onLoginClick, onSearchClick }) {
-    const { currentUser, logout } = useAuth();
+export default function Header({ onLoginClick, onSearchClick, onProfileClick }) {
+    const { currentUser, userProfile, logout } = useAuth();
     const { t } = useTranslation();
 
     const isAdmin = React.useMemo(() => {
@@ -20,6 +20,17 @@ export default function Header({ onLoginClick, onSearchClick }) {
         ];
         return adminList.includes(email);
     }, [currentUser]);
+
+    // Format user display name with server number if configured
+    const userDisplayName = React.useMemo(() => {
+        if (!currentUser) return '';
+        if (userProfile?.displayName) {
+            return `${userProfile.displayName}${userProfile.serverNumber ? ` (S${userProfile.serverNumber})` : ''}`;
+        }
+        if (currentUser.displayName) return currentUser.displayName;
+        if (currentUser.email) return currentUser.email.split('@')[0];
+        return 'Commander';
+    }, [currentUser, userProfile]);
 
     return (
         <header className="sticky-nav header-container">
@@ -70,12 +81,30 @@ export default function Header({ onLoginClick, onSearchClick }) {
                 {currentUser ? (
                     <>
                         <div className="header-user-info" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                            <span 
-                                className="header-user-email"
-                                title={currentUser.email || currentUser.displayName || 'Commander'}
+                            <button
+                                type="button"
+                                onClick={onProfileClick}
+                                className="header-user-btn"
+                                title={t('comments.edit_profile_tooltip', { defaultValue: 'Edit Commander Profile (Nickname & Server)' })}
+                                aria-label={t('comments.edit_profile_tooltip', { defaultValue: 'Edit Commander Profile' })}
+                                style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '6px',
+                                    background: 'rgba(255, 255, 255, 0.04)',
+                                    border: '1px solid rgba(255, 255, 255, 0.12)',
+                                    borderRadius: '20px',
+                                    padding: '4px 10px',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.15s ease',
+                                    color: 'var(--gold, #C9A84C)'
+                                }}
                             >
-                                {currentUser.email ? currentUser.email.split('@')[0] : (currentUser.displayName || 'Commander')}
-                            </span>
+                                <User size={13} color="var(--gold, #C9A84C)" />
+                                <span className="header-user-email" style={{ maxWidth: '140px' }}>
+                                    {userDisplayName}
+                                </span>
+                            </button>
                             {isAdmin && (
                                 <span style={{
                                     padding: '2px 6px',

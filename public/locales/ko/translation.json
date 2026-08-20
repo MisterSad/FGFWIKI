@@ -1641,7 +1641,9 @@
         "error_server": "서버 번호는 1~99999 사이여야 합니다.",
         "error_save": "프로필을 저장하지 못했습니다. 다시 시도해 주세요.",
         "delete": "삭제",
-        "delete_confirm": "이 댓글을 삭제하시겠습니까?"
+        "delete_confirm": "이 댓글을 삭제하시겠습니까?",
+        "edit_profile_tooltip": "지휘관 프로필 편집 (닉네임 및 서버)",
+        "profile_title": "지휘관 프로필"
     },
     "guild_tool": {
         "hero_kicker": "AI 기반 길드 관리 ERP",

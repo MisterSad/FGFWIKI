@@ -1641,7 +1641,9 @@
         "error_server": "O número do servidor deve estar entre 1 e 99999.",
         "error_save": "Não foi possível salvar seu perfil. Tente novamente.",
         "delete": "Excluir",
-        "delete_confirm": "Excluir este comentário?"
+        "delete_confirm": "Excluir este comentário?",
+        "edit_profile_tooltip": "Editar perfil de comandante (apelido e servidor)",
+        "profile_title": "PERFIL DE COMANDANTE"
     },
     "guild_tool": {
         "hero_kicker": "ERP de Gestão de Guilds com Tecnologia IA",
