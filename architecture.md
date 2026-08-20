@@ -132,7 +132,8 @@ FGF WIKI/
 │   │
 │   ├── lib/                  # Logique pure de calcul (sans JSX ni dépendance DOM)
 │   │   ├── evolutions.js     # Algorithme de scoring d'engagement & tiers de priorité
-│   │   └── championCost.js   # Tables et formules d'expérience des champions
+│   │   ├── championCost.js   # Tables et formules d'expérience des champions
+│   │   └── pdfExport.js      # Générateur de rapport PDF paysage A4 exécutif avec synthèse IA
 │   │
 │   └── data/                 # Données statiques encyclopédiques
 │       ├── gameData.js       # Données des guides, actualités, tiers et decks

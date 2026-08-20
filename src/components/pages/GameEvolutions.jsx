@@ -4,7 +4,7 @@ import {
     Flame, Star, Zap, Lightbulb, Search, Plus, MessageSquare, 
     CheckCircle2, Clock, AlertTriangle, Trash2, 
     ArrowUpDown, ShieldCheck, X, ChevronRight, Share2, Check,
-    Sparkles, Layers, CheckCircle, User, Server, LogIn
+    Sparkles, Layers, CheckCircle, User, Server, LogIn, Download, FileText
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { 
@@ -15,7 +15,8 @@ import {
     deleteEvolutionThread,
     subscribeEvolutionComments,
     addEvolutionComment,
-    deleteEvolutionComment
+    deleteEvolutionComment,
+    fetchEvolutionComments
 } from '../../services/firebaseUtils';
 import ProfileSetupModal from '../modals/ProfileSetupModal';
 import TranslatableText from '../common/TranslatableText';
@@ -24,6 +25,7 @@ import {
     getDynamicDemandTier, 
     getDynamicTimelineProgress 
 } from '../../lib/evolutions';
+import { exportEvolutionsToPDF } from '../../lib/pdfExport';
 
 // Category metadata (100% English)
 const CATEGORIES = [
@@ -176,6 +178,8 @@ export default function GameEvolutions() {
     const [isProfileSetupOpen, setIsProfileSetupOpen] = useState(false);
     const [selectedThreadId, setSelectedThreadId] = useState(routeThreadId || null);
     const [copiedLink, setCopiedLink] = useState(false);
+    const [isExportingPDF, setIsExportingPDF] = useState(false);
+    const [exportProgress, setExportProgress] = useState({ current: 0, total: 0 });
 
     // Derived active thread
     const selectedThread = useMemo(() => {
@@ -495,6 +499,25 @@ export default function GameEvolutions() {
         return found ? found.label : 'General';
     };
 
+    const handleExportPDF = async () => {
+        if (isExportingPDF || threads.length === 0) return;
+        setIsExportingPDF(true);
+        setExportProgress({ current: 1, total: threads.length });
+        try {
+            const targetThreads = sortedThreads.length > 0 ? sortedThreads : threads;
+            await exportEvolutionsToPDF(
+                targetThreads,
+                (threadId) => fetchEvolutionComments(threadId),
+                (current, total) => setExportProgress({ current, total })
+            );
+        } catch (error) {
+            console.error('Error exporting PDF:', error);
+            alert('Failed to generate PDF report: ' + (error.message || 'Unknown error'));
+        } finally {
+            setIsExportingPDF(false);
+        }
+    };
+
     return (
         <div className="container" style={{ maxWidth: '1050px', margin: '0 auto', padding: '1.5rem 1rem 6rem' }}>
             
@@ -740,6 +763,37 @@ export default function GameEvolutions() {
                                     {pendingCount}
                                 </span>
                             )}
+                        </button>
+                    )}
+
+                    {/* Admin PDF Export Button */}
+                    {isAdmin && (
+                        <button
+                            onClick={handleExportPDF}
+                            disabled={isExportingPDF || threads.length === 0}
+                            style={{
+                                padding: '5px 12px',
+                                background: isExportingPDF ? 'rgba(201, 168, 76, 0.25)' : 'rgba(201, 168, 76, 0.1)',
+                                color: 'var(--gold, #C9A84C)',
+                                border: '1px solid var(--gold, #C9A84C)',
+                                borderRadius: '8px',
+                                cursor: isExportingPDF ? 'wait' : 'pointer',
+                                fontSize: '0.8rem',
+                                fontWeight: 'bold',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '6px',
+                                transition: 'all 0.15s ease'
+                            }}
+                            title="Export Executive PDF Report in English (Landscape A4)"
+                            aria-label="Export Executive PDF Report in English"
+                        >
+                            <Download size={14} className={isExportingPDF ? 'spin' : ''} />
+                            <span>
+                                {isExportingPDF 
+                                    ? `Exporting (${exportProgress.current}/${exportProgress.total})...` 
+                                    : 'Export PDF (EN)'}
+                            </span>
                         </button>
                     )}
                 </div>

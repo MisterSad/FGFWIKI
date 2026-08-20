@@ -507,6 +507,36 @@ export const subscribeEvolutionComments = (threadId, onData) => {
 };
 
 /**
+ * Fetch comments once for an evolution thread (useful for report exports).
+ * 
+ * @param {string} threadId
+ * @returns {Promise<Array>}
+ */
+export const fetchEvolutionComments = async (threadId) => {
+    if (!db) {
+        const key = `fgf_evo_comments_${threadId}`;
+        const stored = localStorage.getItem(key);
+        return stored ? JSON.parse(stored) : [];
+    }
+
+    try {
+        const q = query(
+            collection(db, "evolution_comments"),
+            where("threadId", "==", threadId),
+            orderBy("createdAt", "asc")
+        );
+        const snapshot = await getDocs(q);
+        return snapshot.docs.map((docSnap) => ({
+            id: docSnap.id,
+            ...docSnap.data(),
+        }));
+    } catch (error) {
+        console.error("Error fetching evolution comments:", error);
+        return [];
+    }
+};
+
+/**
  * Add a comment to an evolution thread.
  *
  * @param {string} threadId
