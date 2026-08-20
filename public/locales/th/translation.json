@@ -76,7 +76,8 @@
         "creators": "ครีเอเตอร์",
         "guild_tool": "Guild Management Tool",
         "more": "เพิ่มเติม",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "ค้นหา"
     },
     "common": {
         "kinetic": "คิเนติก",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "ค้นหาสารานุกรม",
+        "placeholder": "ค้นหาคู่มือ ฮีโร่ เด็คเรือธง เครื่องคำนวณ...",
+        "no_results": "ไม่พบรายการที่ตรงกัน",
+        "try_another": "ลองค้นหาด้วยชื่อฮีโร่ ประเภทพลังงาน หรือระบบของเกม",
+        "filter_all": "ทั้งหมด",
+        "hint_navigate": "นำทาง",
+        "hint_select": "เปิด"
     }
 }

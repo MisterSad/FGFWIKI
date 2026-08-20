@@ -76,7 +76,8 @@
         "creators": "Creators",
         "guild_tool": "Guild Management Tool",
         "more": "Meer",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Zoeken"
     },
     "common": {
         "kinetic": "Kinetisch",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Zoek in encyclopedie",
+        "placeholder": "Zoek handleidingen, helden, vlaggenschip-decks, rekenmachines...",
+        "no_results": "Geen overeenkomstige items gevonden.",
+        "try_another": "Probeer te zoeken op heldennaam, energietype of spelmechaniek.",
+        "filter_all": "Alles",
+        "hint_navigate": "Navigeren",
+        "hint_select": "Openen"
     }
 }

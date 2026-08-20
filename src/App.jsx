@@ -1,4 +1,4 @@
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
 import { Analytics } from '@vercel/analytics/react';
 import { AuthProvider } from './context/AuthContext';
@@ -6,6 +6,7 @@ import { getLanguageFromPath } from './i18n';
 import Layout from './components/layout/Layout';
 import Hero from './components/pages/Hero';
 import LoginModal from './components/modals/LoginModal';
+import SearchModal from './components/modals/SearchModal';
 
 // Language-prefixed URLs (/fr/guides, /de/news/...) share a single SPA:
 // the prefix is detected at startup and used as the router basename.
@@ -27,6 +28,19 @@ const NotFound = lazy(() => import('./components/pages/NotFound'));
 
 function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  // Global keyboard shortcut for Spotlight Search (Cmd+K, Ctrl+K)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setIsSearchOpen((prev) => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   return (
     <AuthProvider>
@@ -36,7 +50,10 @@ function App() {
             Loading FGF Wiki...
           </div>
         }>
-          <Layout onLoginClick={() => setIsLoginModalOpen(true)}>
+          <Layout 
+            onLoginClick={() => setIsLoginModalOpen(true)}
+            onSearchClick={() => setIsSearchOpen(true)}
+          >
             <Suspense fallback={
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh', color: 'var(--text-dim)', fontFamily: 'var(--font-label)', letterSpacing: '2px', textTransform: 'uppercase' }}>
                 Loading Data...
@@ -73,6 +90,10 @@ function App() {
         <LoginModal
           isOpen={isLoginModalOpen}
           onClose={() => setIsLoginModalOpen(false)}
+        />
+        <SearchModal
+          isOpen={isSearchOpen}
+          onClose={() => setIsSearchOpen(false)}
         />
       </BrowserRouter>
     </AuthProvider>

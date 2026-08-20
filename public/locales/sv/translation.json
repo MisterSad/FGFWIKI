@@ -76,7 +76,8 @@
         "creators": "Skapare",
         "guild_tool": "Guild Management Tool",
         "more": "Mer",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Sök"
     },
     "common": {
         "kinetic": "Kinetisk",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Sök i encyklopedin",
+        "placeholder": "Sök guider, hjältar, flaggskeppsdäck, kalkylatorer...",
+        "no_results": "Inga matchande poster hittades.",
+        "try_another": "Prova att söka på ett hjältenamn, energityp eller spelmekanik.",
+        "filter_all": "Alla",
+        "hint_navigate": "Navigera",
+        "hint_select": "Öppna"
     }
 }

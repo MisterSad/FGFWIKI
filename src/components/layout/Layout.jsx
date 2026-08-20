@@ -25,7 +25,7 @@ const CODES = [
     "CONNECTING_TO_FGF_DATABASE..."
 ];
 
-export default function Layout({ children, onLoginClick }) {
+export default function Layout({ children, onLoginClick, onSearchClick }) {
     const location = useLocation();
     const { t, i18n } = useTranslation();
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -166,7 +166,7 @@ export default function Layout({ children, onLoginClick }) {
                     {renderCodeColumn('column-right')}
                 </>
             )}
-            <Header onLoginClick={onLoginClick} />
+            <Header onLoginClick={onLoginClick} onSearchClick={onSearchClick} />
 
             <div className="sticky-tabs-wrapper">
                 <Tabs />

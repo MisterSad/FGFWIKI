@@ -76,7 +76,8 @@
         "creators": "Автори",
         "guild_tool": "Guild Management Tool",
         "more": "Більше",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Пошук"
     },
     "common": {
         "kinetic": "Кінетичний",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Пошук по енциклопедії",
+        "placeholder": "Пошук посібників, героїв, колод флагманів, калькуляторів...",
+        "no_results": "Нічого не знайдено.",
+        "try_another": "Спробуйте пошукати за ім'ям героя, типом енергії або механікою.",
+        "filter_all": "Всі",
+        "hint_navigate": "Навігація",
+        "hint_select": "Відкрити"
     }
 }

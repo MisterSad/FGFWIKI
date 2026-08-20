@@ -76,7 +76,8 @@
         "creators": "創作者",
         "guild_tool": "Guild Management Tool",
         "more": "更多",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "搜尋"
     },
     "common": {
         "kinetic": "動能",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "搜尋百科全書",
+        "placeholder": "搜尋指南、英雄、旗艦卡組、計算器...",
+        "no_results": "未找到相符項目。",
+        "try_another": "嘗試使用英雄名稱、能量類型或遊戲機制進行搜尋。",
+        "filter_all": "全部",
+        "hint_navigate": "導覽",
+        "hint_select": "開啟"
     }
 }

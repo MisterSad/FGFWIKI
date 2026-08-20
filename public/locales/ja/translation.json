@@ -76,7 +76,8 @@
         "creators": "クリエイター",
         "guild_tool": "Guild Management Tool",
         "more": "その他",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "検索"
     },
     "common": {
         "kinetic": "実弾",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "百科事典を検索",
+        "placeholder": "ガイド、英雄、旗艦デッキ、計算機を検索...",
+        "no_results": "一致するエントリが見つかりません。",
+        "try_another": "英雄の名前、エネルギータイプ、またはゲームシステムで検索してみてください。",
+        "filter_all": "すべて",
+        "hint_navigate": "移動",
+        "hint_select": "開く"
     }
 }

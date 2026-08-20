@@ -76,7 +76,8 @@
         "creators": "صناع المحتوى",
         "guild_tool": "Guild Management Tool",
         "more": "المزيد",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "بحث"
     },
     "common": {
         "kinetic": "حركي",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "البحث في الموسوعة",
+        "placeholder": "البحث في الأدلة، الأبطال، طوابق السفن الرئيسية، الحاسبات...",
+        "no_results": "لم يتم العثور على نتائج مطابقة.",
+        "try_another": "جرب البحث باسم البطل، نوع الطاقة، أو آليات اللعبة.",
+        "filter_all": "الكل",
+        "hint_navigate": "التنقل",
+        "hint_select": "فتح"
     }
 }

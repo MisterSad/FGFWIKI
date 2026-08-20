@@ -76,7 +76,8 @@
         "stella_anomaly": "Stella Anomaly",
         "creators": "Creators",
         "guild_tool": "Guild Management Tool",
-        "more": "More"
+        "more": "More",
+        "search": "Search"
     },
     "common": {
         "kinetic": "Kinetic",
@@ -1920,5 +1921,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Search Encyclopedia",
+        "placeholder": "Search guides, heroes, flagship decks, calculators...",
+        "no_results": "No matching entries found.",
+        "try_another": "Try searching with a hero name, energy type, or game mechanic.",
+        "filter_all": "All",
+        "hint_navigate": "Navigate",
+        "hint_select": "Open"
     }
 }

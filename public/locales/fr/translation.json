@@ -76,7 +76,8 @@
         "stella_anomaly": "L'Anomalie Stella",
         "creators": "Créateurs",
         "guild_tool": "Guild Management Tool",
-        "more": "Plus"
+        "more": "Plus",
+        "search": "Rechercher"
     },
     "common": {
         "kinetic": "Cinétique",
@@ -1920,5 +1921,14 @@
             "empty_results": "Aucune évolution trouvée avec ces filtres.",
             "empty_cta": "Soyez le premier à en proposer une !"
         }
+    },
+    "search_modal": {
+        "title": "Rechercher dans l'encyclopédie",
+        "placeholder": "Rechercher des guides, héros, decks de vaisseaux, calculateurs...",
+        "no_results": "Aucun résultat trouvé.",
+        "try_another": "Essayez de rechercher avec un nom de héros, type d'énergie ou mécanique.",
+        "filter_all": "Tous",
+        "hint_navigate": "Naviguer",
+        "hint_select": "Ouvrir"
     }
 }

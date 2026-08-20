@@ -76,7 +76,8 @@
         "creators": "İçerik Üreticileri",
         "guild_tool": "Guild Management Tool",
         "more": "Daha Fazla",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Ara"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Ansiklopedide Ara",
+        "placeholder": "Rehberleri, kahramanları, sancak gemisi destelerini, hesaplayıcıları ara...",
+        "no_results": "Eşleşen giriş bulunamadı.",
+        "try_another": "Bir kahraman adı, enerji türü veya oyun mekaniği ile aramayı deneyin.",
+        "filter_all": "Tümü",
+        "hint_navigate": "Gezin",
+        "hint_select": "Aç"
     }
 }

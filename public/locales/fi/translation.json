@@ -76,7 +76,8 @@
         "creators": "Sisällöntuottajat",
         "guild_tool": "Guild Management Tool",
         "more": "Lisää",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Haku"
     },
     "common": {
         "kinetic": "Kineettinen",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Etsi tietosanakirjasta",
+        "placeholder": "Etsi oppaita, sankareita, lippulaivapakkoja, laskimia...",
+        "no_results": "Vastaavia kohteita ei löytynyt.",
+        "try_another": "Kokeile hakea sankarin nimellä, energiatyypillä tai pelimekaniikalla.",
+        "filter_all": "Kaikki",
+        "hint_navigate": "Siirry",
+        "hint_select": "Avaa"
     }
 }

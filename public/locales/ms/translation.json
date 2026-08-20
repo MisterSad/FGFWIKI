@@ -76,7 +76,8 @@
         "creators": "Pencipta",
         "guild_tool": "Guild Management Tool",
         "more": "Lagi",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Cari"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Cari di Ensiklopedia",
+        "placeholder": "Cari panduan, wira, dek kapal utama, kalkulator...",
+        "no_results": "Tiada entri yang sepadan dijumpai.",
+        "try_another": "Cuba cari dengan nama wira, jenis tenaga, atau mekanik permainan.",
+        "filter_all": "Semua",
+        "hint_navigate": "Navigasi",
+        "hint_select": "Buka"
     }
 }

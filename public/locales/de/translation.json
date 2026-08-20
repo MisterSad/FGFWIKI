@@ -76,7 +76,8 @@
         "creators": "Creators",
         "guild_tool": "Guild Management Tool",
         "more": "Mehr",
-        "game_evolutions": "Spiel-Evolutionen"
+        "game_evolutions": "Spiel-Evolutionen",
+        "search": "Suche"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -1922,5 +1923,14 @@
             "empty_results": "Keine Evolutionen gefunden.",
             "empty_cta": "Schlagen Sie die erste vor!"
         }
+    },
+    "search_modal": {
+        "title": "Enzyklopädie durchsuchen",
+        "placeholder": "Anleitungen, Helden, Flaggschiff-Decks, Rechner durchsuchen...",
+        "no_results": "Keine passenden Einträge gefunden.",
+        "try_another": "Versuchen Sie die Suche nach einem Heldennamen, Energietyp oder Spielmechanik.",
+        "filter_all": "Alle",
+        "hint_navigate": "Navigieren",
+        "hint_select": "Öffnen"
     }
 }

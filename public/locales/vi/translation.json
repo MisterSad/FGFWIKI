@@ -76,7 +76,8 @@
         "creators": "Nhà sáng tạo",
         "guild_tool": "Guild Management Tool",
         "more": "Thêm",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Tìm kiếm"
     },
     "common": {
         "kinetic": "Động Năng",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Tìm kiếm bách khoa toàn thư",
+        "placeholder": "Tìm kiếm hướng dẫn, tướng, bộ bài soái hạm, máy tính...",
+        "no_results": "Không tìm thấy mục phù hợp.",
+        "try_another": "Hãy thử tìm kiếm bằng tên tướng, loại năng lượng hoặc cơ chế trò chơi.",
+        "filter_all": "Tất cả",
+        "hint_navigate": "Điều hướng",
+        "hint_select": "Mở"
     }
 }

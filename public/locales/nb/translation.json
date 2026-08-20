@@ -76,7 +76,8 @@
         "creators": "Skapere",
         "guild_tool": "Guild Management Tool",
         "more": "Mer",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "Søk"
     },
     "common": {
         "kinetic": "Kinetisk",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "Søk i leksikonet",
+        "placeholder": "Søk guider, helter, flaggskipdekk, kalkulatorer...",
+        "no_results": "Ingen matchende oppføringer funnet.",
+        "try_another": "Prøv å søke etter et heltenavn, energitype eller spillmekanikk.",
+        "filter_all": "Alle",
+        "hint_navigate": "Naviger",
+        "hint_select": "Åpne"
     }
 }

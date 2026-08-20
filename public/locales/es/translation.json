@@ -76,7 +76,8 @@
         "creators": "Creadores",
         "guild_tool": "Guild Management Tool",
         "more": "Más",
-        "game_evolutions": "Evoluciones del Juego"
+        "game_evolutions": "Evoluciones del Juego",
+        "search": "Buscar"
     },
     "common": {
         "kinetic": "Cinética",
@@ -1922,5 +1923,14 @@
             "empty_results": "No se encontraron evoluciones con estos filtros.",
             "empty_cta": "¡Sé el primero en proponer una!"
         }
+    },
+    "search_modal": {
+        "title": "Buscar en la enciclopedia",
+        "placeholder": "Buscar guías, héroes, mazos de naves, calculadoras...",
+        "no_results": "No se encontraron resultados coincidentes.",
+        "try_another": "Intenta buscar con el nombre de un héroe, tipo de energía o mecánica.",
+        "filter_all": "Todos",
+        "hint_navigate": "Navegar",
+        "hint_select": "Abrir"
     }
 }

@@ -76,7 +76,8 @@
         "creators": "크리에이터",
         "guild_tool": "Guild Management Tool",
         "more": "더보기",
-        "game_evolutions": "Game Evolutions"
+        "game_evolutions": "Game Evolutions",
+        "search": "검색"
     },
     "common": {
         "kinetic": "키네틱",
@@ -1922,5 +1923,14 @@
             "empty_results": "No evolutions found matching your search or filters.",
             "empty_cta": "Propose the first one!"
         }
+    },
+    "search_modal": {
+        "title": "백과사전 검색",
+        "placeholder": "가이드, 영웅, 기함 덱, 계산기 검색...",
+        "no_results": "일치하는 항목을 찾을 수 없습니다.",
+        "try_another": "영웅 이름, 에너지 유형 또는 게임 메커니즘으로 검색해 보세요.",
+        "filter_all": "전체",
+        "hint_navigate": "탐색",
+        "hint_select": "열기"
     }
 }
