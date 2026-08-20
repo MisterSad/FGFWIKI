@@ -81,7 +81,8 @@ npm run build     # 3. Compilation Vite propre sans erreur d'import
 ```
 
 ### 11. 📢 Maintenance Systématique du `DISCORD_CHANGELOG.md`
-- Toute mise à jour ou évolution du site doit **obligatoirement s'accompagner de la mise à jour du fichier [`DISCORD_CHANGELOG.md`](file:///Users/andrevieira/Documents/GitHub/FGF%20WIKI/DISCORD_CHANGELOG.md)**.
+- Toute mise à jour ou évolution du site doit **obligatoirement s'accompagner de la réécriture intégrale du fichier [`DISCORD_CHANGELOG.md`](file:///Users/andrevieira/Documents/GitHub/FGF%20WIKI/DISCORD_CHANGELOG.md)**.
+- **Règle de Remplacement Exclusif (Zéro Accumulation d'Historique)** : L'ancien changelog doit être **systématiquement effacé** lors de chaque nouvelle mise à jour. Le fichier ne doit contenir **que l'annonce unique la plus récente**, afin de permettre à l'utilisateur de faire un simple `Cmd+A` ➔ `Cmd+C` ➔ `Cmd+V` dans ses salons Discord d'annonces.
 - **Langue & Ton** : Anglais naturel, humain et authentique (style développeur/joueur passionné, sans aucun biais d'écriture ou tournure robotique d'IA).
 - **Formatage Discord Prêt au Partage** : Structure pensée pour un simple copier/coller dans Discord (titres `##`, listes à puces claires, emojis pertinents, mise en avant immédiate des bénéfices pour les joueurs).
 
