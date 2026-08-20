@@ -3,27 +3,27 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
 import { Analytics } from '@vercel/analytics/react';
 import { AuthProvider } from './context/AuthContext';
 import { getLanguageFromPath } from './i18n';
-import Layout from './components/Layout';
-import Hero from './components/Hero';
-import LoginModal from './components/LoginModal';
+import Layout from './components/layout/Layout';
+import Hero from './components/pages/Hero';
+import LoginModal from './components/modals/LoginModal';
 
 // Language-prefixed URLs (/fr/guides, /de/news/...) share a single SPA:
 // the prefix is detected at startup and used as the router basename.
 const LANG_PREFIX = getLanguageFromPath();
 const BASENAME = LANG_PREFIX ? `/${LANG_PREFIX}` : undefined;
 
-const Guides = lazy(() => import('./components/Guides'));
-const News = lazy(() => import('./components/News'));
-const FlagshipGuide = lazy(() => import('./components/FlagshipGuide'));
-const HeroTierList = lazy(() => import('./components/HeroTierList'));
-const EventGuide = lazy(() => import('./components/EventGuide'));
-const Builder = lazy(() => import('./components/Builder'));
-const GiftCodes = lazy(() => import('./components/GiftCodes'));
-const StellaAnomaly = lazy(() => import('./components/StellaAnomaly'));
-const CreatorsCorner = lazy(() => import('./components/CreatorsCorner'));
-const GuildTool = lazy(() => import('./components/GuildTool'));
-const GameEvolutions = lazy(() => import('./components/GameEvolutions'));
-const NotFound = lazy(() => import('./components/NotFound'));
+const Guides = lazy(() => import('./components/pages/Guides'));
+const News = lazy(() => import('./components/pages/News'));
+const FlagshipGuide = lazy(() => import('./components/pages/FlagshipGuide'));
+const HeroTierList = lazy(() => import('./components/pages/HeroTierList'));
+const EventGuide = lazy(() => import('./components/pages/EventGuide'));
+const Builder = lazy(() => import('./components/pages/Builder'));
+const GiftCodes = lazy(() => import('./components/pages/GiftCodes'));
+const StellaAnomaly = lazy(() => import('./components/pages/StellaAnomaly'));
+const CreatorsCorner = lazy(() => import('./components/pages/CreatorsCorner'));
+const GuildTool = lazy(() => import('./components/pages/GuildTool'));
+const GameEvolutions = lazy(() => import('./components/pages/GameEvolutions'));
+const NotFound = lazy(() => import('./components/pages/NotFound'));
 
 function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);

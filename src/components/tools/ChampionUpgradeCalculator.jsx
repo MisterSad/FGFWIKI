@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
-import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
+import { saveUserToolData, loadUserToolData } from '../../services/firebaseUtils';
 import { MAX_LEVEL, MILESTONES, COST_TABLE, getTotalCost } from '../../lib/championCost';
 
 const fmt = (n) => n.toLocaleString("en-US");

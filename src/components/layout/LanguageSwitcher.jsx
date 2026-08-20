@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, Check, ChevronDown } from 'lucide-react';
-import { SUPPORTED_LANGS } from '../i18n';
+import { SUPPORTED_LANGS } from '../../i18n';
 
 // Language list (autonyms, each language displayed in its own script).
 // Order: English first (default), then Latin-script alphabetical, then Cyrillic, then CJK.

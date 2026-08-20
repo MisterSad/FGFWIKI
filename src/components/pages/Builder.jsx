@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import BuildTimeCalculator from "./tools/BuildTimeCalculator";
-import NexusCalculator from "./tools/NexusCalculator";
-import GvGCalculator from "./tools/GvGCalculator";
-import CombatCraftCalculator from "./tools/CombatCraftCalculator";
-import ChampionUpgradeCalculator from "./tools/ChampionUpgradeCalculator";
+import BuildTimeCalculator from "../tools/BuildTimeCalculator";
+import NexusCalculator from "../tools/NexusCalculator";
+import GvGCalculator from "../tools/GvGCalculator";
+import CombatCraftCalculator from "../tools/CombatCraftCalculator";
+import ChampionUpgradeCalculator from "../tools/ChampionUpgradeCalculator";
 
 // ── Tile icons (inline SVG, gold stroke, line-art) ──
 const ICONS = {

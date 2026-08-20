@@ -1,19 +1,28 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router';
-import { tips } from '../data/gameData';
-import TipCard from './TipCard';
-import CommentSection from './CommentSection';
-import { Newspaper, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Swords, Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare, AlertTriangle, CheckCircle, ArrowUpRight, Globe } from 'lucide-react';
+import { useParams, useNavigate, useSearchParams } from 'react-router';
+import { tips } from '../../data/gameData';
+import TipCard from '../common/TipCard';
+import CommentSection from '../common/CommentSection';
+import DailyChecklist from './DailyChecklist';
+import { BookOpen, Swords, Coins, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Calendar, Trophy, Heart, Gift, Star, Sparkles, MessageSquare, AlertTriangle, CheckCircle, ArrowUpRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-export default function News() {
+export default function Guides() {
     const { t } = useTranslation();
-    const { newsId } = useParams();
+    const { guideId } = useParams();
     const navigate = useNavigate();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const activeTab = searchParams.get('tab') === 'daily-tasks' ? 'daily-tasks' : 'list';
 
-    const selectedTip = newsId ? tips.find(tip => String(tip.id) === newsId && tip.category === 'news') : null;
+    const setActiveTab = (tab) => {
+        const newParams = new URLSearchParams(searchParams);
+        newParams.set('tab', tab);
+        setSearchParams(newParams);
+    };
 
-    const closeModal = () => navigate('/news');
+    const selectedTip = guideId ? tips.find(tip => String(tip.id) === guideId && tip.category !== 'news') : null;
+
+    const closeModal = () => navigate('/guides');
 
     if (selectedTip && selectedTip.hasDetails) {
         return (
@@ -60,7 +69,7 @@ export default function News() {
                     {/* Header */}
                     <div style={{ borderBottom: '1px solid var(--border)', paddingBottom: '1.5rem', marginBottom: '2rem' }}>
                         <h1 style={{ fontFamily: 'var(--font-hero)', textTransform: 'uppercase', margin: '0 0 0.5rem', fontSize: 'clamp(1.4rem, 5vw, 2.5rem)', color: 'var(--gold-bright)' }}>{t(selectedTip.title)}</h1>
-                        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                             <span className="label-text" style={{
                                 background: 'var(--bg-void)',
                                 color: 'var(--accent-teal)',
@@ -71,19 +80,6 @@ export default function News() {
                             }}>
                                 {t(`categories.${selectedTip.category}`)}
                             </span>
-                            {selectedTip.id === 'dev-roadmap-mid-2026' && (
-                                <span className="label-text" style={{
-                                    background: 'rgba(212, 175, 55, 0.1)',
-                                    color: 'var(--gold)',
-                                    border: '1px solid var(--gold)',
-                                    padding: '6px 16px',
-                                    borderRadius: '2px',
-                                    fontSize: '1.1rem',
-                                    fontFamily: 'var(--font-mono)'
-                                }}>
-                                    {t('tips.roadmap_mid_2026_period')}
-                                </span>
-                            )}
                         </div>
                     </div>
 
@@ -104,121 +100,15 @@ export default function News() {
                             )}
 
                             {section.text && (
-                                section.text === 'tips.roadmap_mid_2026_horizon_txt' ? (
-                                    <div style={{
-                                        display: 'grid',
-                                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                                        gap: '1.5rem',
-                                        marginTop: '1.5rem',
-                                        marginBottom: '2rem'
-                                    }}>
-                                        {(() => {
-                                            const text = t(section.text);
-                                            const lines = text.split('\n').filter(l => l.trim().length > 0);
-                                            return lines.map((line, idx) => {
-                                                const cleanLine = line.trim().replace(/^•\s*/, '');
-                                                const colonIndex = cleanLine.indexOf(':');
-                                                let title = '';
-                                                let desc = cleanLine;
-                                                if (colonIndex !== -1) {
-                                                    title = cleanLine.substring(0, colonIndex).trim();
-                                                    desc = cleanLine.substring(colonIndex + 1).trim();
-                                                }
-
-                                                const icons = [Sparkles, Globe, Swords, Trophy];
-                                                const IconComponent = icons[idx % icons.length] || Sparkles;
-
-                                                return (
-                                                    <div 
-                                                        key={idx} 
-                                                        className="glass-panel" 
-                                                        style={{
-                                                            padding: '1.5rem',
-                                                            border: '1px solid var(--border)',
-                                                            borderRadius: '6px',
-                                                            background: 'rgba(255, 255, 255, 0.01)',
-                                                            transition: 'all 0.3s ease',
-                                                            display: 'flex',
-                                                            flexDirection: 'column',
-                                                            gap: '1rem',
-                                                            position: 'relative',
-                                                            overflow: 'hidden'
-                                                        }}
-                                                        onMouseEnter={(e) => {
-                                                            e.currentTarget.style.borderColor = 'var(--accent-teal)';
-                                                            e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 242, 254, 0.1)';
-                                                            e.currentTarget.style.transform = 'translateY(-4px)';
-                                                            e.currentTarget.style.background = 'rgba(0, 242, 254, 0.02)';
-                                                        }}
-                                                        onMouseLeave={(e) => {
-                                                            e.currentTarget.style.borderColor = 'var(--border)';
-                                                            e.currentTarget.style.boxShadow = 'none';
-                                                            e.currentTarget.style.transform = 'none';
-                                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.01)';
-                                                        }}
-                                                    >
-                                                        <div style={{
-                                                            position: 'absolute',
-                                                            bottom: '-20px',
-                                                            right: '-20px',
-                                                            fontSize: '8rem',
-                                                            color: 'var(--accent-teal)',
-                                                            opacity: 0.03,
-                                                            fontWeight: 'bold',
-                                                            pointerEvents: 'none',
-                                                            lineHeight: 1
-                                                        }}>
-                                                            {idx + 1}
-                                                        </div>
-                                                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
-                                                            <div style={{
-                                                                background: 'rgba(0, 242, 254, 0.1)',
-                                                                border: '1px solid var(--accent-teal)',
-                                                                padding: '10px',
-                                                                borderRadius: '4px',
-                                                                color: 'var(--accent-teal)',
-                                                                display: 'flex',
-                                                                alignItems: 'center',
-                                                                justifyContent: 'center'
-                                                            }}>
-                                                                <IconComponent size={24} />
-                                                            </div>
-                                                            {title && (
-                                                                <h4 style={{
-                                                                    margin: 0,
-                                                                    fontSize: '1.25rem',
-                                                                    fontFamily: 'var(--font-label)',
-                                                                    color: 'var(--text-primary)',
-                                                                    letterSpacing: '0.5px'
-                                                                }}>
-                                                                    {title}
-                                                                </h4>
-                                                            )}
-                                                        </div>
-                                                        <p style={{
-                                                            margin: 0,
-                                                            fontSize: '1rem',
-                                                            lineHeight: '1.6',
-                                                            color: 'var(--text-secondary)'
-                                                        }}>
-                                                            {desc}
-                                                        </p>
-                                                    </div>
-                                                );
-                                            });
-                                        })()}
-                                    </div>
-                                ) : (
-                                    <p style={{
-                                        color: 'var(--text-main)',
-                                        lineHeight: '1.8',
-                                        fontSize: '1.1rem',
-                                        whiteSpace: 'pre-line',
-                                        marginBottom: '1.5rem'
-                                    }}>
-                                        {t(section.text)}
-                                    </p>
-                                )
+                                <p style={{
+                                    color: 'var(--text-main)',
+                                    lineHeight: '1.8',
+                                    fontSize: '1.1rem',
+                                    whiteSpace: 'pre-line',
+                                    marginBottom: '1.5rem'
+                                }}>
+                                    {t(section.text)}
+                                </p>
                             )}
 
                             {section.quotas && (
@@ -384,8 +274,7 @@ export default function News() {
                                     {section.methods.map((method, mIdx) => {
                                         const IconComponent = {
                                             Shield, Home, Crown, Users,
-                                            Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare,
-                                            Swords, CheckCircle
+                                            Calendar, Trophy, Heart, Coins, Gift, Star, Sparkles, MessageSquare
                                         }[method.icon] || Shield;
                                         return (
                                             <div key={mIdx} className="method-card" style={{
@@ -674,39 +563,6 @@ export default function News() {
                                 </div>
                             )}
 
-                            {section.internalLink && (
-                                 <div style={{ marginTop: '1rem', marginBottom: '2rem' }}>
-                                     <button
-                                         onClick={() => navigate(section.internalLink.path)}
-                                         className="label-text"
-                                         style={{
-                                             display: 'inline-flex',
-                                             alignItems: 'center',
-                                             gap: '0.6rem',
-                                             background: 'transparent',
-                                             border: '1px solid var(--gold)',
-                                             color: 'var(--gold)',
-                                             padding: '0.8rem 1.5rem',
-                                             cursor: 'pointer',
-                                             fontSize: '0.95rem',
-                                             transition: 'all 0.3s ease',
-                                             textTransform: 'uppercase',
-                                             letterSpacing: '1px'
-                                         }}
-                                         onMouseEnter={(e) => {
-                                             e.currentTarget.style.background = 'var(--gold)';
-                                             e.currentTarget.style.color = 'var(--bg-void)';
-                                         }}
-                                         onMouseLeave={(e) => {
-                                             e.currentTarget.style.background = 'transparent';
-                                             e.currentTarget.style.color = 'var(--gold)';
-                                         }}
-                                     >
-                                         {t(section.internalLink.text)} <ArrowUpRight size={18} />
-                                     </button>
-                                 </div>
-                             )}
-
                             {section.grid && (
                                 <div style={{ marginBottom: '2.5rem', overflowX: 'auto' }}>
                                     <table style={{ fontFamily: 'var(--font-mono)', width: '100%', borderCollapse: 'collapse', fontSize: '1rem' }}>
@@ -858,7 +714,7 @@ export default function News() {
                         </div>
                     )}
                 </div>
-                <CommentSection key={String(selectedTip.id)} type="news" itemId={String(selectedTip.id)} />
+                <CommentSection key={String(selectedTip.id)} type="guide" itemId={String(selectedTip.id)} />
             </div>
         );
     }
@@ -866,7 +722,7 @@ export default function News() {
     return (
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', paddingBottom: '4rem', paddingTop: '2rem' }}>
             {/* Header */}
-            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                 <h2 style={{
                     fontFamily: 'var(--font-hero)',
                     fontSize: 'clamp(1.5rem, 5vw, 2.5rem)',
@@ -876,32 +732,60 @@ export default function News() {
                     marginBottom: '0.5rem',
                     display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap'
                 }}>
-                    <Newspaper size={40} /> {t('navigation.news')}
+                    <BookOpen size={40} /> {t('navigation.guides')}
                 </h2>
                 <p style={{ color: 'var(--text-dim)', fontSize: 'clamp(0.9rem, 2.4vw, 1.1rem)' }}>
-                    {t('seo.news.description')}
+                    {t('seo.guides.description')}
                 </p>
             </div>
 
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                gap: '1.5rem',
-                alignItems: 'stretch'
-            }}>
-                {[...tips]
-                    .filter(tip => tip.category === 'news')
-                    .sort((a, b) => new Date(b.publishDate || 0) - new Date(a.publishDate || 0))
-                    .map(tip => (
-                        <TipCard
-                            key={tip.id}
-                            tip={{
-                                ...tip,
-                                onClick: () => tip.hasDetails && navigate(`/news/${tip.id}`)
-                            }}
-                        />
-                    ))}
+            {/* Sub-tab switcher */}
+            <div className="sub-tabs-container">
+                <button
+                    className={`sub-tab-button ${activeTab === 'list' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('list')}
+                >
+                    {t('navigation.guides')}
+                </button>
+                <button
+                    className={`sub-tab-button ${activeTab === 'daily-tasks' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('daily-tasks')}
+                >
+                    {t('daily_checklist.title')}
+                </button>
             </div>
+
+            {activeTab === 'list' ? (
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                    gap: '1.5rem',
+                    alignItems: 'stretch'
+                }}>
+                    {[...tips]
+                        .filter(tip => tip.hasDetails && tip.category !== 'news')
+                        .sort((a, b) => {
+                            if (a.id === 'vip-program') return -1;
+                            if (b.id === 'vip-program') return 1;
+                            if (a.id === 'migration') return -1;
+                            if (b.id === 'migration') return 1;
+                            return new Date(b.publishDate || 0) - new Date(a.publishDate || 0);
+                        })
+                        .map(tip => (
+                            <TipCard
+                                key={tip.id}
+                                tip={{
+                                    ...tip,
+                                    onClick: () => tip.hasDetails && navigate(`/guides/${tip.id}`)
+                                }}
+                            />
+                        ))}
+                </div>
+            ) : (
+                <div className="fade-in">
+                    <DailyChecklist />
+                </div>
+            )}
         </div>
     );
 }

@@ -76,7 +76,8 @@ export default function Hero() {
             <div className="hero-image-container">
                 <img
                     src="/assets/hari_seldon.webp"
-                    loading="lazy"
+                    loading="eager"
+                    fetchPriority="high"
                     decoding="async"
                     alt="Hari Seldon"
                     onError={(e) => e.target.style.display = 'none'} // Hide if missing

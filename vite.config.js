@@ -13,7 +13,7 @@ export default defineConfig({
             dropDebugger: true,
           },
         },
-        advancedChunks: {
+        codeSplitting: {
           groups: [
             { name: 'firebase', test: /node_modules[\\/](@firebase|firebase)/ },
           ],

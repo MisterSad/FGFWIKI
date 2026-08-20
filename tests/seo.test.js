@@ -1,10 +1,46 @@
 import { describe, it, expect } from 'vitest';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
 
 describe('SEO & GEO Verification Suite (2026 World-Class Standards)', () => {
+    it('should have all 23 languages with 100% complete key parity across all sections', () => {
+        const localesDir = path.join(ROOT, 'public/locales');
+        const langs = fs.readdirSync(localesDir).filter(f => fs.statSync(path.join(localesDir, f)).isDirectory());
+        
+        function getFlatKeys(obj, prefix = "") {
+            let keys = {};
+            for (const [k, v] of Object.entries(obj)) {
+                const fullKey = prefix ? `${prefix}.${k}` : k;
+                if (typeof v === "object" && v !== null && !Array.isArray(v)) {
+                    Object.assign(keys, getFlatKeys(v, fullKey));
+                } else {
+                    keys[fullKey] = v;
+                }
+            }
+            return keys;
+        }
+
+        const enData = JSON.parse(fs.readFileSync(path.join(localesDir, 'en/translation.json'), 'utf8'));
+        const enKeys = Object.keys(getFlatKeys(enData));
+
+        expect(langs.length).toBeGreaterThanOrEqual(23);
+        expect(enKeys.length).toBeGreaterThanOrEqual(1820);
+
+        langs.forEach(lang => {
+            const file = path.join(localesDir, lang, 'translation.json');
+            expect(fs.existsSync(file)).toBe(true);
+            const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+            const langKeys = getFlatKeys(data);
+            const missing = enKeys.filter(k => !(k in langKeys));
+            expect(missing).toEqual([]);
+        });
+    });
+
     it('should have all 23 languages with 100% complete guild_tool translations', () => {
         const localesDir = path.join(ROOT, 'public/locales');
         const langs = fs.readdirSync(localesDir);

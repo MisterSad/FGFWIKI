@@ -3,7 +3,7 @@ import {
     DAILY_TASKS, TOTAL_TARGET, getUtcDateKey, msUntilNextUtcMidnight,
     createInitialState, isLegacyState, normalizeState, clampCounter,
     computeProgress, isTaskComplete,
-} from '../src/lib/daily-tasks/tasks.js';
+} from '../src/lib/tasks.js';
 
 afterEach(() => {
     vi.useRealTimers();

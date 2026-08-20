@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSearchParams } from 'react-router';
-import { groundTeams } from '../data/gameData';
-import TeamDisplay from './TeamDisplay';
+import { groundTeams } from '../../data/gameData';
+import TeamDisplay from '../common/TeamDisplay';
 import { Trophy, Star, Shield, Zap, Crosshair, Heart, AlertTriangle, Gem, Info, BarChart2, Users } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 

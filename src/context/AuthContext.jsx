@@ -10,9 +10,9 @@ import {
     isSignInWithEmailLink,
     signInWithEmailLink
 } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "../services/firebase";
 import i18n from "../i18n";
-import { getUserProfile, saveUserProfile } from "../firebaseUtils";
+import { getUserProfile, saveUserProfile } from "../services/firebaseUtils";
 
 const AuthContext = createContext();
 

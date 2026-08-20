@@ -3,7 +3,7 @@ import {
     calculateCommunityScore, 
     getDynamicDemandTier,
     getDemandTier
-} from '../src/components/GameEvolutions.jsx';
+} from '../src/lib/evolutions.js';
 
 describe('Game Evolutions & Dynamic Scoring System', () => {
     it('should calculate weighted engagement score correctly from votes and discussion', () => {

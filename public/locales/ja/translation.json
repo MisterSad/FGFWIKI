@@ -52,6 +52,11 @@
             "title": "Guild Management Tool — FGFギルドをプロのように運営",
             "description": "イベント、出席、ランキング、Glory、サブスクリプションを1つのツールに。Foundation: Galactic Frontier のギルド向け。",
             "keywords": "Guild Management Tool, FGFギルドツール, ギルドイベント, 出席追跡, Glory, Foundation Galactic Frontier"
+        },
+        "game_evolutions": {
+            "title": "Game Evolutions & Player Feedback — Foundation: Galactic Frontier Wiki",
+            "description": "Submit game evolutions, report issues, vote on priority demand timelines and discuss feature requests with the community for Foundation: Galactic Frontier.",
+            "keywords": "FGF Game Evolutions, Foundation Galactic Frontier feedback, feature requests, game suggestions, FGF wiki"
         }
     },
     "navigation": {
@@ -69,7 +74,9 @@
         "gift_codes": "ギフトコード",
         "stella_anomaly": "Stella Anomaly",
         "creators": "クリエイター",
-        "guild_tool": "Guild Management Tool"
+        "guild_tool": "Guild Management Tool",
+        "more": "その他",
+        "game_evolutions": "Game Evolutions"
     },
     "common": {
         "kinetic": "実弾",
@@ -445,7 +452,11 @@
         "celestial_transmission_july_2026_eva_tps_desc": "チャンピオンが戦術スキルを使用時、すべてのチャンピオンの知力（INT）を {2}{3} 秒間 {0}{1} 上昇させる。（強化：知力上昇値を {0}{1} に増加。）",
         "celestial_transmission_july_2026_eva_slg_title": "SLGスキル - Pain Protocol",
         "celestial_transmission_july_2026_eva_slg_desc": "チャンピオンがスキルを使用時、部隊の移動速度を {0}{1} 上昇させ、{2}{3} 秒間「Pain Protocol」をトリガーする。「Pain Protocol」：スキル発動中、部隊が最大HP의 {4}{5} を失うごとに対象の知力を {6}{7} 上昇させる（最大 {8}{9} まで）。（強化：「Pain Protocol」の知力ボーナスを {0}{1} （最大 {2}{3} まで）に増加。）",
-        "celestial_transmission_july_2026_weapon_disclaimer": "免責事項：表示されている武器スキンは正確ですが、画像内のその他の部分はプレースホルダーです。カードに記載されているステータスや情報は正しくありません。"
+        "celestial_transmission_july_2026_weapon_disclaimer": "免責事項：表示されている武器スキンは正確ですが、画像内のその他の部分はプレースホルダーです。カードに記載されているステータスや情報は正しくありません。",
+        "common": {
+            "reset_data": "Reset / Cleared Data",
+            "preserved_data": "Preserved / Kept Data"
+        }
     },
     "hero_data": {
         "h1_notes": "イオンローテーションに必須。膨大な回復とチーム全体の知力バフ。",
@@ -1569,7 +1580,15 @@
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
         "rank_2_success_msg": "認証が完了しました。500プラチナクレジットは2026年9月30日までにゲーム内のメールボックスに送信されます。",
         "rank_3_success_msg": "認証が完了しました。250プラチナクレジットは2026年9月30日までにゲーム内のメールボックスに送信されます。",
-        "participation_msg": "認証が完了しました。ご参加いただきありがとうございました！次回イベントをお楽しみに。"
+        "participation_msg": "認証が完了しました。ご参加いただきありがとうございました！次回イベントをお楽しみに。",
+        "leaderboard_title": "COMMANDERS PODIUM & LEADERBOARD",
+        "leaderboard_refresh": "REFRESH",
+        "leaderboard_empty": "No transmissions logged yet.",
+        "leaderboard_col_rank": "RANK",
+        "leaderboard_col_uid": "COMMANDER UID",
+        "leaderboard_col_date": "TIME (UTC)",
+        "leaderboard_col_reward": "STATUS / REWARD",
+        "leaderboard_you": "YOU"
     },
     "creators_page": {
         "title": "クリエイターズコーナー",
@@ -1840,5 +1859,96 @@
         "demo_feat_player_3": "1タップ不在連絡",
         "demo_feat_player_4": "出席率トラッキング",
         "demo_feat_player_5": "個人別KPI"
+    },
+    "evolutions": {
+        "title": "Game Evolutions",
+        "subtitle": "Community feedback & feature request hub for Foundation: Galactic Frontier. Propose ideas and vote on the priority timeline: a monthly digest of top community requests is sent directly to the Content Creator relations team to be forwarded to the game developers.",
+        "propose_btn": "Propose an Evolution",
+        "search_placeholder": "Search evolutions, keywords, problems or ideas...",
+        "sort_by": "Sort by",
+        "sort_votes": "🔥 Most Voted (Top Priority)",
+        "sort_newest": "🆕 Newest",
+        "sort_discussed": "💬 Most Discussed",
+        "sort_status": "🎯 Status",
+        "filter_all": "All",
+        "filter_category": "Category",
+        "filter_tier": "Demand Level",
+        "categories": {
+            "all": "All Categories",
+            "gameplay": "Gameplay & Mechanics",
+            "qol": "Quality of Life (QoL)",
+            "balance": "Balance & Meta",
+            "ships": "Fleets & Flagships",
+            "heroes": "Heroes & Crew",
+            "economy": "Economy & Trade",
+            "pvp": "PvP, GvG & SvS",
+            "bugs": "Bugs & Issues",
+            "general": "General"
+        },
+        "timeline": {
+            "title": "Community Demand Timeline",
+            "tier_low": "Low Demand",
+            "tier_low_desc": "Emerging suggestion (1-4 votes)",
+            "tier_moderate": "Moderate",
+            "tier_moderate_desc": "Notable community interest (5-14 votes)",
+            "tier_high": "Important",
+            "tier_high_desc": "High demand (15-29 votes)",
+            "tier_critical": "Critical / Top Priority",
+            "tier_critical_desc": "Major community expectation (30+ votes)",
+            "votes_count_one": "{{count}} vote",
+            "votes_count_other": "{{count}} votes",
+            "vote_btn": "I want this evolution",
+            "voted_btn": "Voted (+1)",
+            "login_to_vote": "Sign in to vote"
+        },
+        "statuses": {
+            "pending": "Pending fgfwiki Approval",
+            "approved": "Community Approved",
+            "in_progress": "Under Investigation / In Progress",
+            "implemented": "Implemented in Game 🎉",
+            "rejected": "Declined"
+        },
+        "modal": {
+            "create_title": "PROPOSE A GAME EVOLUTION",
+            "title_label": "Title / Summary",
+            "title_placeholder": "e.g. Add a 'Collect All' button for mail rewards...",
+            "category_label": "Category",
+            "description_label": "Detailed Explanation (Problem & Suggested Solution)",
+            "description_placeholder": "Clearly describe what feels frustrating or missing in-game, and what concrete evolution you would like to see...",
+            "duplicate_warning": "Similar suggestions already exist — consider upvoting them instead:",
+            "duplicate_empty": "No similar proposals found. Your idea appears unique!",
+            "moderation_notice": "Every proposal is reviewed by the administrator 'fgfwiki' before appearing publicly to keep suggestions clean and relevant.",
+            "submit_btn": "Submit Evolution",
+            "submitting": "Submitting...",
+            "cancel": "Cancel",
+            "login_required_title": "AUTHENTICATION REQUIRED",
+            "login_required_desc": "You must be signed in with a Trader Profile to propose evolutions, cast votes, and participate in discussions.",
+            "sign_in_btn": "Sign in with Google / Email",
+            "success_msg": "Your evolution proposal has been submitted! It will appear publicly once approved by fgfwiki."
+        },
+        "admin": {
+            "title": "Admin Moderation Panel (fgfwiki)",
+            "pending_badge": "{{count}} pending approval",
+            "view_pending": "Pending Moderation",
+            "view_all": "All Public",
+            "approve": "Approve",
+            "reject": "Reject",
+            "set_in_progress": "Mark In Progress",
+            "set_implemented": "Mark Implemented",
+            "delete": "Delete",
+            "delete_confirm": "Are you sure you want to delete this evolution thread?"
+        },
+        "details": {
+            "proposed_by": "Proposed by",
+            "server": "Server",
+            "comments_title": "Discussions & Feedback",
+            "comment_placeholder": "Share your constructive thoughts on this evolution...",
+            "post_comment": "Post Comment",
+            "no_comments": "No comments yet. Be the first to share your thoughts!",
+            "delete_comment": "Delete",
+            "delete_comment_confirm": "Delete this comment?",
+            "empty_results": "No evolutions found matching your search or filters.",
+            "empty_cta": "Propose the first one!"
+        }
     }
 }

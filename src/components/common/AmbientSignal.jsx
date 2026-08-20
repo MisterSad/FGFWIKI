@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import useAmbientSignal from '../hooks/useAmbientSignal';
+import useAmbientSignal from '../../hooks/useAmbientSignal';
 
 const K = 'sk7pq2vRm9X4tH8dN3Jc6BfL1WzY';
 

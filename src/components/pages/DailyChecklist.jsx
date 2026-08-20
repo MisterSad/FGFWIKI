@@ -11,8 +11,8 @@ import {
     Ship,
     Shield,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { saveUserToolData, loadUserToolData } from '../firebaseUtils';
+import { useAuth } from '../../context/AuthContext';
+import { saveUserToolData, loadUserToolData } from '../../services/firebaseUtils';
 import {
     DAILY_TASKS,
     clampCounter,
@@ -23,7 +23,7 @@ import {
     isTaskComplete,
     msUntilNextUtcMidnight,
     normalizeState,
-} from '../lib/daily-tasks/tasks';
+} from '../../lib/tasks';
 
 const TOOL_ID = 'dailyTasks';
 const STORAGE_KEY = 'dailyChecklist';

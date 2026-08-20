@@ -6,7 +6,7 @@ import {
     ArrowUpDown, ShieldCheck, X, ChevronRight, Share2, Check,
     Sparkles, Layers, CheckCircle, User, Server, LogIn
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 import { 
     subscribeEvolutionThreads, 
     addEvolutionThread, 
@@ -16,9 +16,13 @@ import {
     subscribeEvolutionComments,
     addEvolutionComment,
     deleteEvolutionComment
-} from '../firebaseUtils';
-import ProfileSetupModal from './ProfileSetupModal';
-import useSEO from '../hooks/useSEO';
+} from '../../services/firebaseUtils';
+import ProfileSetupModal from '../modals/ProfileSetupModal';
+import { 
+    calculateCommunityScore, 
+    getDynamicDemandTier, 
+    getDynamicTimelineProgress 
+} from '../../lib/evolutions';
 
 // Category metadata (100% English)
 const CATEGORIES = [
@@ -33,180 +37,6 @@ const CATEGORIES = [
     { id: 'bugs', label: 'Bugs & Issues', color: '#f43f5e' },
     { id: 'general', label: 'General', color: '#94a3b8' },
 ];
-
-/**
- * Calculate dynamic composite engagement score for a proposal.
- * Weighted by votes and constructive community discussion activity.
- */
-export function calculateCommunityScore(votesCount = 0, commentCount = 0) {
-    const v = typeof votesCount === 'number' ? votesCount : 0;
-    const c = typeof commentCount === 'number' ? commentCount : 0;
-    return (v * 1.0) + (c * 0.5);
-}
-
-/**
- * Dynamic, evolutive priority tier calculation.
- * Adapts organically to the active ecosystem of feedback without fixed arbitrary cutoffs.
- */
-export function getDynamicDemandTier(threadOrVotes, allThreads = []) {
-    let votes = 0;
-    let comments = 0;
-
-    if (typeof threadOrVotes === 'object' && threadOrVotes !== null) {
-        votes = threadOrVotes.votesCount || (Array.isArray(threadOrVotes.votes) ? threadOrVotes.votes.length : 0);
-        comments = threadOrVotes.commentCount || 0;
-    } else if (typeof threadOrVotes === 'number') {
-        votes = threadOrVotes;
-    }
-
-    const currentScore = calculateCommunityScore(votes, comments);
-
-    // If no context pool provided, evaluate dynamically against baseline scale
-    if (!allThreads || allThreads.length === 0) {
-        if (currentScore >= 25 || votes >= 25) {
-            return {
-                id: 'critical',
-                level: 4,
-                label: 'Critical / Top Priority',
-                color: '#ef4444',
-                gradient: 'linear-gradient(135deg, #ef4444, #f97316)',
-                icon: Flame,
-                glow: 'rgba(239, 68, 68, 0.45)',
-            };
-        }
-        if (currentScore >= 12 || votes >= 12) {
-            return {
-                id: 'high',
-                level: 3,
-                label: 'Important',
-                color: '#eab308',
-                gradient: 'linear-gradient(135deg, #eab308, #ca8a04)',
-                icon: Star,
-                glow: 'rgba(234, 179, 8, 0.35)',
-            };
-        }
-        if (currentScore >= 4 || votes >= 4) {
-            return {
-                id: 'moderate',
-                level: 2,
-                label: 'Moderate',
-                color: '#06b6d4',
-                gradient: 'linear-gradient(135deg, #06b6d4, #0891b2)',
-                icon: Zap,
-                glow: 'rgba(6, 182, 212, 0.35)',
-            };
-        }
-        return {
-            id: 'low',
-            level: 1,
-            label: 'Emerging / Low Demand',
-            color: '#64748b',
-            gradient: 'linear-gradient(135deg, #64748b, #475569)',
-            icon: Lightbulb,
-            glow: 'rgba(100, 116, 139, 0.25)',
-        };
-    }
-
-    // Relative calculation across the distribution of all active proposals
-    const allScores = allThreads.map(t => calculateCommunityScore(t.votesCount, t.commentCount));
-    const maxScore = Math.max(...allScores, 5); // baseline minimum to avoid division by zero
-    const relativeRatio = currentScore / maxScore;
-
-    // Percentile rank
-    const lowerCount = allScores.filter(s => s < currentScore).length;
-    const sameCount = allScores.filter(s => s === currentScore).length;
-    const percentile = (lowerCount + (0.5 * sameCount)) / allScores.length;
-
-    // Dynamic Composite Index between 0 and 1
-    const dynamicIndex = allThreads.length <= 3 
-        ? relativeRatio 
-        : (0.55 * relativeRatio + 0.45 * percentile);
-
-    if (currentScore > 0 && dynamicIndex >= 0.70) {
-        return {
-            id: 'critical',
-            level: 4,
-            label: 'Critical / Top Priority',
-            color: '#ef4444',
-            gradient: 'linear-gradient(135deg, #ef4444, #f97316)',
-            icon: Flame,
-            glow: 'rgba(239, 68, 68, 0.45)',
-        };
-    }
-    if (currentScore > 0 && dynamicIndex >= 0.45) {
-        return {
-            id: 'high',
-            level: 3,
-            label: 'Important',
-            color: '#eab308',
-            gradient: 'linear-gradient(135deg, #eab308, #ca8a04)',
-            icon: Star,
-            glow: 'rgba(234, 179, 8, 0.35)',
-        };
-    }
-    if (currentScore > 0 && dynamicIndex >= 0.20) {
-        return {
-            id: 'moderate',
-            level: 2,
-            label: 'Moderate',
-            color: '#06b6d4',
-            gradient: 'linear-gradient(135deg, #06b6d4, #0891b2)',
-            icon: Zap,
-            glow: 'rgba(6, 182, 212, 0.35)',
-        };
-    }
-    return {
-        id: 'low',
-        level: 1,
-        label: 'Emerging / Low Demand',
-        color: '#64748b',
-        gradient: 'linear-gradient(135deg, #64748b, #475569)',
-        icon: Lightbulb,
-        glow: 'rgba(100, 116, 139, 0.25)',
-    };
-}
-
-// Backward-compatible getDemandTier export
-export function getDemandTier(votesCount = 0, allThreads = []) {
-    return getDynamicDemandTier(votesCount, allThreads);
-}
-
-// Calculate dynamic progress percentage on the timeline (4% to 100%)
-function getDynamicTimelineProgress(threadOrVotes, allThreads = []) {
-    let votes = 0;
-    let comments = 0;
-
-    if (typeof threadOrVotes === 'object' && threadOrVotes !== null) {
-        votes = threadOrVotes.votesCount || (Array.isArray(threadOrVotes.votes) ? threadOrVotes.votes.length : 0);
-        comments = threadOrVotes.commentCount || 0;
-    } else if (typeof threadOrVotes === 'number') {
-        votes = threadOrVotes;
-    }
-
-    const currentScore = calculateCommunityScore(votes, comments);
-    if (currentScore <= 0) return 4;
-
-    if (!allThreads || allThreads.length === 0) {
-        if (currentScore < 4) return 4 + (currentScore / 4) * 21;
-        if (currentScore < 12) return 25 + ((currentScore - 4) / 8) * 25;
-        if (currentScore < 25) return 50 + ((currentScore - 12) / 13) * 25;
-        return Math.min(100, 75 + ((currentScore - 25) / 25) * 25);
-    }
-
-    const allScores = allThreads.map(t => calculateCommunityScore(t.votesCount, t.commentCount));
-    const maxScore = Math.max(...allScores, 5);
-    const relativeRatio = Math.min(1, currentScore / maxScore);
-
-    const lowerCount = allScores.filter(s => s < currentScore).length;
-    const sameCount = allScores.filter(s => s === currentScore).length;
-    const percentile = (lowerCount + (0.5 * sameCount)) / allScores.length;
-
-    const dynamicIndex = allThreads.length <= 3 
-        ? relativeRatio 
-        : (0.55 * relativeRatio + 0.45 * percentile);
-
-    return Math.max(5, Math.min(98, dynamicIndex * 100));
-}
 
 // Visual Dynamic Demand Timeline Component (Frise de Demande Évolutive)
 function DemandTimeline({ thread, allThreads = [], isCompact = false }) {
@@ -315,36 +145,60 @@ function DemandTimeline({ thread, allThreads = [], isCompact = false }) {
 }
 
 export default function GameEvolutions() {
-    useSEO();
     const { threadId: routeThreadId } = useParams();
     const { currentUser, userProfile, saveProfile, signInWithGoogle } = useAuth();
 
-    // Admin detection: user named 'fgfwiki' or known admin email
+    // Admin detection: strictly authenticated admin email
     const isAdmin = useMemo(() => {
         if (!currentUser) return false;
-        const name = (userProfile?.displayName || '').trim().toLowerCase();
         const email = (currentUser.email || '').trim().toLowerCase();
-        return name === 'fgfwiki' || email.includes('fgfwiki') || email === 'vieira.andre@proton.me';
-    }, [currentUser, userProfile]);
+        return email === 'fgfwiwi@gmail.com' || email === 'vieira.andre@proton.me';
+    }, [currentUser]);
 
     const [threads, setThreads] = useState([]);
     const [loading, setLoading] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [selectedTier, setSelectedTier] = useState('all');
-    const [selectedStatus, setSelectedStatus] = useState('all');
+    const [selectedStatus] = useState('all');
     const [sortBy, setSortBy] = useState('votes'); // 'votes' | 'newest' | 'comments' | 'status'
     const [adminViewQueue, setAdminViewQueue] = useState(false);
 
-    // Modals
+    // Modals & Selected Thread
     const [isCreateOpen, setIsCreateOpen] = useState(false);
     const [isProfileSetupOpen, setIsProfileSetupOpen] = useState(false);
-    const [selectedThread, setSelectedThread] = useState(null);
+    const [selectedThreadId, setSelectedThreadId] = useState(routeThreadId || null);
     const [copiedLink, setCopiedLink] = useState(false);
 
+    // Derived active thread
+    const selectedThread = useMemo(() => {
+        const targetId = selectedThreadId || routeThreadId;
+        if (!targetId || threads.length === 0) return null;
+        return threads.find(t => t.id === targetId) || null;
+    }, [selectedThreadId, routeThreadId, threads]);
+
+    // Comments State for selected thread
+    const [threadComments, setThreadComments] = useState([]);
+    const [loadingComments, setLoadingComments] = useState(false);
+    const [commentDraft, setCommentDraft] = useState('');
+    const [postingComment, setPostingComment] = useState(false);
+
+    const setSelectedThread = useCallback((threadOrId) => {
+        if (!threadOrId) {
+            setSelectedThreadId(null);
+            setLoadingComments(false);
+        } else if (typeof threadOrId === 'string') {
+            setSelectedThreadId(threadOrId);
+            setLoadingComments(true);
+        } else {
+            setSelectedThreadId(threadOrId.id);
+            setLoadingComments(true);
+        }
+    }, []);
+
     // Creation Form state (Username & Server mandatory)
-    const [authorName, setAuthorName] = useState('');
-    const [serverNumber, setServerNumber] = useState('');
+    const [authorName, setAuthorName] = useState(() => userProfile?.displayName || currentUser?.displayName || '');
+    const [serverNumber, setServerNumber] = useState(() => (userProfile?.serverNumber ? String(userProfile.serverNumber) : ''));
     const [newTitle, setNewTitle] = useState('');
     const [newCategory, setNewCategory] = useState('gameplay');
     const [newDescription, setNewDescription] = useState('');
@@ -352,21 +206,14 @@ export default function GameEvolutions() {
     const [formSuccess, setFormSuccess] = useState(false);
     const [formError, setFormError] = useState('');
 
-    // Pre-fill profile info into creation form when profile loads
-    useEffect(() => {
-        if (userProfile) {
-            if (userProfile.displayName && !authorName) setAuthorName(userProfile.displayName);
-            if (userProfile.serverNumber && !serverNumber) setServerNumber(String(userProfile.serverNumber));
-        } else if (currentUser && !authorName) {
-            if (currentUser.displayName) setAuthorName(currentUser.displayName);
-        }
+    const openCreateModal = useCallback(() => {
+        if (userProfile?.displayName) setAuthorName(userProfile.displayName);
+        else if (currentUser?.displayName) setAuthorName(currentUser.displayName);
+        if (userProfile?.serverNumber) setServerNumber(String(userProfile.serverNumber));
+        setFormError('');
+        setFormSuccess(false);
+        setIsCreateOpen(true);
     }, [userProfile, currentUser]);
-
-    // Comments State for selected thread
-    const [threadComments, setThreadComments] = useState([]);
-    const [loadingComments, setLoadingComments] = useState(false);
-    const [commentDraft, setCommentDraft] = useState('');
-    const [postingComment, setPostingComment] = useState(false);
 
     // 1. Subscribe to threads
     useEffect(() => {
@@ -382,26 +229,22 @@ export default function GameEvolutions() {
         };
     }, []);
 
-    // 2. Open thread from URL param or deep link
+    // 2. Subscribe to comments when a thread is selected
     useEffect(() => {
-        if (routeThreadId && threads.length > 0) {
-            const found = threads.find(t => t.id === routeThreadId);
-            if (found) setSelectedThread(found);
-        }
-    }, [routeThreadId, threads]);
-
-    // 3. Subscribe to comments when a thread is selected
-    useEffect(() => {
-        if (!selectedThread?.id) {
-            setThreadComments([]);
-            return;
-        }
-        setLoadingComments(true);
-        const unsubscribe = subscribeEvolutionComments(selectedThread.id, (commentsList) => {
-            setThreadComments(commentsList || []);
-            setLoadingComments(false);
+        const activeId = selectedThread?.id;
+        if (!activeId) return;
+        let isCurrent = true;
+        const unsubscribe = subscribeEvolutionComments(activeId, (commentsList) => {
+            if (isCurrent) {
+                setThreadComments(commentsList || []);
+                setLoadingComments(false);
+            }
         });
-        return () => unsubscribe();
+        return () => {
+            isCurrent = false;
+            unsubscribe();
+            setThreadComments([]);
+        };
     }, [selectedThread?.id]);
 
     // Statistics counts calculated dynamically
@@ -722,10 +565,7 @@ export default function GameEvolutions() {
                 {/* Single Primary Action Button */}
                 <div>
                     <button
-                        onClick={() => {
-                            setFormError('');
-                            setIsCreateOpen(true);
-                        }}
+                        onClick={openCreateModal}
                         style={{
                             padding: '0.75rem 1.75rem',
                             background: 'linear-gradient(135deg, var(--gold), #b38b2d)',
@@ -1046,10 +886,7 @@ export default function GameEvolutions() {
                     </p>
                     {threads.length === 0 ? (
                         <button
-                            onClick={() => {
-                                setFormError('');
-                                setIsCreateOpen(true);
-                            }}
+                            onClick={openCreateModal}
                             style={{
                                 background: 'var(--gold)',
                                 color: '#000',
@@ -1091,7 +928,6 @@ export default function GameEvolutions() {
                         const hasVoted = currentUser && Array.isArray(thread.votes) && thread.votes.includes(currentUser.uid);
                         const isPending = thread.status === 'pending';
                         const isImplemented = thread.status === 'implemented';
-                        const isInProgress = thread.status === 'in_progress';
 
                         return (
                             <div
@@ -1979,7 +1815,7 @@ export default function GameEvolutions() {
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
                                     {threadComments.map((comm) => {
                                         const isCommAuthor = currentUser && comm.authorUid === currentUser.uid;
-                                        const isCommAdmin = comm.isAdmin || (comm.displayName || '').toLowerCase() === 'fgfwiki';
+                                        const isCommAdmin = Boolean(comm.isAdmin);
 
                                         return (
                                             <div

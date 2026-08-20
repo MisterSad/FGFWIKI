@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useAuth } from '../context/AuthContext';
-import { subscribeComments, addComment, deleteComment } from '../firebaseUtils';
+import { useAuth } from '../../context/AuthContext';
+import { subscribeComments, addComment, deleteComment } from '../../services/firebaseUtils';
 import { MessageSquare, Trash2 } from 'lucide-react';
-import ProfileSetupModal from './ProfileSetupModal';
+import ProfileSetupModal from '../modals/ProfileSetupModal';
 
 const CONTENT_MAX = 2000;
 

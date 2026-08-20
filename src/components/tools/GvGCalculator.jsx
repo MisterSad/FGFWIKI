@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
-import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
+import { saveUserToolData, loadUserToolData } from '../../services/firebaseUtils';
 
 const TIER1_LEVELS = [
   { gc: 80000, cc: 50, bonus: 10 }, { gc: 110000, cc: 50, bonus: 10 }, { gc: 150000, cc: 100, bonus: 10 },

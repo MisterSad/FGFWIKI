@@ -142,7 +142,7 @@ export default function Tabs() {
                         onClick={() => setIsMoreOpen(!isMoreOpen)}
                     >
                         {isMoreOpen ? <X size={20} /> : <MoreHorizontal size={20} />}
-                        <span className="mobile-label">Plus</span>
+                        <span className="mobile-label">{t('navigation.more', { defaultValue: 'More' })}</span>
                     </button>
                 </nav>
 

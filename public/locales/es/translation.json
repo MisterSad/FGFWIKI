@@ -52,6 +52,11 @@
             "title": "Guild Management Tool — Dirige tu guild FGF como un profesional",
             "description": "Eventos, asistencia, clasificaciones, Glory y suscripciones en una sola herramienta para guilds de Foundation: Galactic Frontier.",
             "keywords": "Guild Management Tool, herramienta de guild FGF, eventos de guild, control de asistencia, Glory, Foundation Galactic Frontier"
+        },
+        "game_evolutions": {
+            "title": "Evoluciones del Juego y Sugerencias | FGF Wiki",
+            "description": "Propón mejoras y vota en la lista de prioridades comunitarias de Foundation: Galactic Frontier. Transmisión regular al equipo de desarrollo.",
+            "keywords": "evoluciones del juego, sugerencias, roadmap, Foundation Galactic Frontier, feedback"
         }
     },
     "navigation": {
@@ -69,7 +74,9 @@
         "gift_codes": "Códigos de regalo",
         "stella_anomaly": "Stella Anomaly",
         "creators": "Creadores",
-        "guild_tool": "Guild Management Tool"
+        "guild_tool": "Guild Management Tool",
+        "more": "Más",
+        "game_evolutions": "Evoluciones del Juego"
     },
     "common": {
         "kinetic": "Cinética",
@@ -445,7 +452,11 @@
         "celestial_transmission_july_2026_eva_tps_desc": "Cuando el campeón usa una habilidad táctica, aumenta la INT de todos los campeones en {0}{1} durante {2}{3} segundos. (Mejora: Aumenta la INT a {0}{1}.)",
         "celestial_transmission_july_2026_eva_slg_title": "Habilidad SLG - Pain Protocol",
         "celestial_transmission_july_2026_eva_slg_desc": "Cuando el campeón usa una habilidad, aumenta la velocidad de movimiento de la formación en {0}{1} y activa [Pain Protocol] durante {2}{3} segundos. [Pain Protocol]: Mientras está activa, cada pérdida de {4}{5} de los PS máximos de la formación aumenta la INT en {6}{7} (hasta {8}{9}). (Mejora: El beneficio de INT de [Pain Protocol] aumenta a {0}{1} (hasta {2}{3}).)",
-        "celestial_transmission_july_2026_weapon_disclaimer": "Descargo de responsabilidad: El diseño de arma mostrado es correcto, pero el resto de la imagen es un marcador de posición; las estadísticas e información mostradas no son correctas."
+        "celestial_transmission_july_2026_weapon_disclaimer": "Descargo de responsabilidad: El diseño de arma mostrado es correcto, pero el resto de la imagen es un marcador de posición; las estadísticas e información mostradas no son correctas.",
+        "common": {
+            "reset_data": "Datos Restablecidos / Eliminados",
+            "preserved_data": "Datos Conservados / Guardados"
+        }
     },
     "hero_data": {
         "h1_notes": "Esencial para las rotaciones de Ión. Curación enorme y bonus de INT a todo el equipo.",
@@ -1569,7 +1580,15 @@
         "code_invalid_error": "INVALID SECRET CODE. Please enter the correct event code.",
         "rank_2_success_msg": "Verificación completada. Los 500 Créditos Platino se enviarán a su buzón del juego antes del 30 de septiembre de 2026.",
         "rank_3_success_msg": "Verificación completada. Los 250 Créditos Platino se enviarán a su buzón del juego antes del 30 de septiembre de 2026.",
-        "participation_msg": "Verificación completada. ¡Gracias por participar! Estén atentos al próximo evento."
+        "participation_msg": "Verificación completada. ¡Gracias por participar! Estén atentos al próximo evento.",
+        "leaderboard_title": "PÓDIO DE COMANDANTES Y CLASIFICACIÓN",
+        "leaderboard_refresh": "ACTUALIZAR",
+        "leaderboard_empty": "No hay transmisiones registradas todavía.",
+        "leaderboard_col_rank": "RANGO",
+        "leaderboard_col_uid": "UID DEL COMANDANTE",
+        "leaderboard_col_date": "HORA (UTC)",
+        "leaderboard_col_reward": "ESTADO / RECOMPENSA",
+        "leaderboard_you": "TÚ"
     },
     "creators_page": {
         "title": "RINCÓN DE CREADORES",
@@ -1840,5 +1859,96 @@
         "demo_feat_player_3": "Bajas en 1 Clic",
         "demo_feat_player_4": "Control de Asistencia",
         "demo_feat_player_5": "KPIs Personales"
+    },
+    "evolutions": {
+        "title": "Evoluciones del Juego y Sugerencias",
+        "subtitle": "Espacio comunitario para proponer ideas y votar las prioridades de desarrollo en Foundation: Galactic Frontier. Los informes mensuales se envían directamente a los desarrolladores.",
+        "propose_btn": "Proponer una evolución",
+        "search_placeholder": "Buscar propuestas, palabras clave o ideas...",
+        "sort_by": "Ordenar por",
+        "sort_votes": "🔥 Más votados (Prioridad máxima)",
+        "sort_newest": "🆕 Más recientes",
+        "sort_discussed": "💬 Más comentados",
+        "sort_status": "🎯 Estado",
+        "filter_all": "Todos",
+        "filter_category": "Categoría",
+        "filter_tier": "Nivel de Demanda",
+        "categories": {
+            "all": "Todas las categorías",
+            "gameplay": "Jugabilidad y Mecánicas",
+            "qol": "Calidad de Vida (QoL)",
+            "balance": "Equilibrio y Meta",
+            "ships": "Flotas y Naves Insignia",
+            "heroes": "Héroes y Tripulación",
+            "economy": "Economía y Comercio",
+            "pvp": "PvP, GvG y SvS",
+            "bugs": "Bugs y Errores",
+            "general": "General"
+        },
+        "timeline": {
+            "title": "Línea de Demanda Comunitaria",
+            "tier_low": "Baja demanda",
+            "tier_low_desc": "Propuesta emergente (1-4 votos)",
+            "tier_moderate": "Moderado",
+            "tier_moderate_desc": "Interés apreciable (5-14 votos)",
+            "tier_high": "Importante",
+            "tier_high_desc": "Gran demanda (15-29 votos)",
+            "tier_critical": "Crítico / Máxima Prioridad",
+            "tier_critical_desc": "Prioridad fundamental de la comunidad (30+ votos)",
+            "votes_count_one": "{{count}} voto",
+            "votes_count_other": "{{count}} votos",
+            "vote_btn": "Apoyo esta evolución",
+            "voted_btn": "Votado (+1)",
+            "login_to_vote": "Inicia sesión para votar"
+        },
+        "statuses": {
+            "pending": "Pendiente de moderación",
+            "approved": "Aprobado por la comunidad",
+            "in_progress": "En investigación / En curso",
+            "implemented": "Implementado en el juego 🎉",
+            "rejected": "No seleccionado"
+        },
+        "modal": {
+            "create_title": "PROPONER UNA EVOLUCIÓN DEL JUEGO",
+            "title_label": "Título / Resumen",
+            "title_placeholder": "ej. Botón de 'Recoger todo' en el correo...",
+            "category_label": "Categoría",
+            "description_label": "Explicación detallada (Problema y solución sugerida)",
+            "description_placeholder": "Describe claramente la dificultad encontrada y la mejora concreta que te gustaría ver...",
+            "duplicate_warning": "Ya existen sugerencias similares — considera apoyarlas:",
+            "duplicate_empty": "No se encontraron duplicados. ¡Tu idea parece única!",
+            "moderation_notice": "Cada propuesta es revisada por el equipo de moderación antes de ser publicada.",
+            "submit_btn": "Enviar evolución",
+            "submitting": "Enviando...",
+            "cancel": "Cancelar",
+            "login_required_title": "AUTENTICACIÓN REQUERIDA",
+            "login_required_desc": "Debes iniciar sesión con un perfil de Trader para proponer evoluciones y votar.",
+            "sign_in_btn": "Iniciar sesión con Google / Email",
+            "success_msg": "¡Tu propuesta ha sido enviada! Aparecerá públicamente tras ser aprobada."
+        },
+        "admin": {
+            "title": "Panel de Moderación Admin (fgfwiki)",
+            "pending_badge": "{{count}} pendientes de aprobación",
+            "view_pending": "Cola de moderación",
+            "view_all": "Todos los públicos",
+            "approve": "Aprobar",
+            "reject": "Rechazar",
+            "set_in_progress": "Marcar En Curso",
+            "set_implemented": "Marcar Implementado",
+            "delete": "Eliminar",
+            "delete_confirm": "¿Seguro que deseas eliminar este hilo de evolución?"
+        },
+        "details": {
+            "proposed_by": "Propuesto por",
+            "server": "Servidor",
+            "comments_title": "Debates y Opiniones",
+            "comment_placeholder": "Comparte tu opinión constructiva...",
+            "post_comment": "Publicar comentario",
+            "no_comments": "Aún no hay comentarios. ¡Sé el primero en opinar!",
+            "delete_comment": "Eliminar",
+            "delete_comment_confirm": "¿Eliminar este comentario?",
+            "empty_results": "No se encontraron evoluciones con estos filtros.",
+            "empty_cta": "¡Sé el primero en proponer una!"
+        }
     }
 }

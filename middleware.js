@@ -51,6 +51,6 @@ export default function middleware(request) {
 
 export const config = {
     matcher: [
-        '/((?!assets|images|locales|favicon\\.png|apple-touch-icon\\.png|icon-512\\.png|robots\\.txt|sitemap\\.xml|manifest\\.webmanifest|llms\\.txt|llms-full\\.txt|og-image\\.png).*)',
+        '/((?!assets|images|locales|favicon\\.png|apple-touch-icon\\.png|icon-512\\.png|robots\\.txt|sitemap\\.xml|manifest\\.webmanifest|llms\\.txt|llms-full\\.txt|og-image\\.png|sw\\.js).*)',
     ],
 };

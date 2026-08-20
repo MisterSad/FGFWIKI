@@ -2,7 +2,7 @@ import React from 'react';
 import { User, LogOut } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header({ onLoginClick }) {
@@ -27,7 +27,7 @@ export default function Header({ onLoginClick }) {
                 {currentUser ? (
                     <>
                         <span className="header-user-email">
-                            {currentUser.email.split('@')[0]}
+                            {currentUser.email ? currentUser.email.split('@')[0] : (currentUser.displayName || 'Commander')}
                         </span>
                         <button
                             type="button"

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router';
-import { eventsData } from '../data/gameData';
+import { eventsData } from '../../data/gameData';
 import { Clock, AlertTriangle, Star, Lightbulb, BarChart2, Swords, Calendar, Trophy, ArrowLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import CommentSection from './CommentSection';
+import CommentSection from '../common/CommentSection';
 
 export default function EventGuide() {
     const { t } = useTranslation();
@@ -58,7 +58,16 @@ export default function EventGuide() {
                                     cursor: 'pointer',
                                     overflow: 'hidden'
                                 }}
+                                role="button"
+                                tabIndex={0}
+                                aria-label={t(event.title)}
                                 onClick={() => navigate(`/events/${event.id}`)}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                        e.preventDefault();
+                                        navigate(`/events/${event.id}`);
+                                    }
+                                }}
                             >
                                 <div className="scan-line"></div>
                                 <div className="corner-tl"></div>
@@ -217,7 +226,7 @@ export default function EventGuide() {
                             gap: '0.8rem',
                             background: 'transparent',
                             border: '1px solid var(--gold)',
-                            color: "#FFFFFF",
+                            color: 'var(--text-primary)',
                             padding: '0.8rem 1.5rem',
                             cursor: 'pointer',
                             fontSize: '1rem',

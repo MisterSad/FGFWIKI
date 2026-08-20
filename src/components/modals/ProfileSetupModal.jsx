@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 import { X } from 'lucide-react';
 
 const NICKNAME_MAX = 24;
@@ -13,6 +13,14 @@ export default function ProfileSetupModal({ onClose }) {
     const [serverNumber, setServerNumber] = useState(() => (userProfile ? String(userProfile.serverNumber) : ''));
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') onClose();
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [onClose]);
 
     function validate() {
         const name = displayName.trim();
@@ -45,7 +53,11 @@ export default function ProfileSetupModal({ onClose }) {
     }
 
     return (
-        <div style={{
+        <div 
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="profile-modal-title"
+            style={{
             position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
             background: 'rgba(0,0,0,0.8)', zIndex: 9999,
             display: 'flex', justifyContent: 'center', alignItems: 'center',
@@ -74,11 +86,11 @@ export default function ProfileSetupModal({ onClose }) {
                     <X size={24} />
                 </button>
 
-                <h2 style={{
+                <h2 id="profile-modal-title" style={{
                     fontFamily: 'var(--font-hero)', color: 'var(--gold)',
-                    textAlign: 'center', margin: '0 0 0.5rem', letterSpacing: '2px'
+                    textAlign: 'center', margin: '0 0 1.5rem', letterSpacing: '2px'
                 }}>
-                    {t('comments.setup_title', 'YOUR TRADER PROFILE')}
+                    {t('comments.profile_title', 'COMMANDER PROFILE')}
                 </h2>
                 <p style={{ textAlign: 'center', color: 'var(--text-dim)', margin: '0 0 1.5rem', fontSize: '0.95rem' }}>
                     {t('comments.setup_desc', 'Choose a nickname and your server number. They will appear on your comments.')}

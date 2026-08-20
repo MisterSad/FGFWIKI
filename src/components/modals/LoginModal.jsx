@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
+import React, { useState, useEffect } from 'react';
+import { useAuth } from '../../context/AuthContext';
 import { useTranslation } from 'react-i18next';
 import { X } from 'lucide-react';
 
@@ -13,6 +13,15 @@ export default function LoginModal({ isOpen, onClose }) {
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (!isOpen) return;
+        const handleKeyDown = (e) => {
+            if (e.key === 'Escape') onClose();
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [isOpen, onClose]);
 
     if (!isOpen) return null;
 
@@ -57,7 +66,11 @@ export default function LoginModal({ isOpen, onClose }) {
     }
 
     return (
-        <div style={{
+        <div 
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="login-modal-title"
+            style={{
             position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
             background: 'rgba(0,0,0,0.8)', zIndex: 9999,
             display: 'flex', justifyContent: 'center', alignItems: 'center',
@@ -86,7 +99,7 @@ export default function LoginModal({ isOpen, onClose }) {
                     <X size={24} />
                 </button>
 
-                <h2 style={{
+                <h2 id="login-modal-title" style={{
                     fontFamily: 'var(--font-hero)', color: 'var(--gold)',
                     textAlign: 'center', margin: '0 0 1.5rem', letterSpacing: '2px'
                 }}>

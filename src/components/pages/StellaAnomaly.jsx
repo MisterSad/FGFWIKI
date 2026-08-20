@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { 
@@ -6,8 +6,8 @@ import {
     Play, RefreshCw, Lock, Unlock, Send, Sparkles, 
     Swords, Coins, Zap, Shield, Database, Radio, Trophy, Medal
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { submitStellaAnomalyUid, getStellaAnomalyLeaderboard } from '../firebaseUtils';
+import { useAuth } from '../../context/AuthContext';
+import { submitStellaAnomalyUid, getStellaAnomalyLeaderboard } from '../../services/firebaseUtils';
 
 // Helper for play synth beep sounds (self-contained Web Audio API)
 const playBeep = (type) => {
@@ -265,7 +265,7 @@ export default function StellaAnomaly() {
     const [leaderboardLoading, setLeaderboardLoading] = useState(false);
     const effectiveRank = rank || (leaderboard.length > 0 && leaderboard.find(e => e.gameUid === localStorage.getItem('stella_anomaly_submitted_uid'))?.rank) || null;
 
-    const fetchLeaderboard = async () => {
+    const fetchLeaderboard = useCallback(async () => {
         setLeaderboardLoading(true);
         try {
             const list = await getStellaAnomalyLeaderboard(20);
@@ -275,13 +275,29 @@ export default function StellaAnomaly() {
         } finally {
             setLeaderboardLoading(false);
         }
-    };
+    }, []);
+
+    const isPhase4Complete = Boolean(completedPhases[4]);
 
     useEffect(() => {
-        if (submitSuccess || completedPhases[4]) {
-            fetchLeaderboard();
+        let isSubscribed = true;
+        if (submitSuccess || isPhase4Complete) {
+            getStellaAnomalyLeaderboard(20)
+                .then((list) => {
+                    if (isSubscribed) {
+                        setLeaderboard(list);
+                        setLeaderboardLoading(false);
+                    }
+                })
+                .catch((err) => {
+                    console.error("Error fetching leaderboard: ", err);
+                    if (isSubscribed) setLeaderboardLoading(false);
+                });
         }
-    }, [submitSuccess, completedPhases[4]]);
+        return () => {
+            isSubscribed = false;
+        };
+    }, [submitSuccess, isPhase4Complete]);
 
     const handleUidSubmit = async (e) => {
         e.preventDefault();

@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { ArrowUp } from 'lucide-react';
 import Header from './Header';
 import Tabs from './Tabs';
-import AmbientSignal from './AmbientSignal';
-import useSEO from '../hooks/useSEO';
+import AmbientSignal from '../common/AmbientSignal';
+import useSEO from '../../hooks/useSEO';
 
 const CODES = [
     "STELLA_ANOMALY_CORE_ERR",

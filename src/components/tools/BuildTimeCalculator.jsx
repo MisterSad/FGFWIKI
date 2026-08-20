@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { BUILDING_CATEGORIES, BUILDING_LABEL_KEYS, BUILD_SPEED_MODIFIERS, BUILD_TIME_DATA, ESTIMATED_FLAGS } from '../../data/builderData';
 import { V, Card, SectionTitle, Label } from './ToolUI';
 import { useAuth } from '../../context/AuthContext';
-import { saveUserToolData, loadUserToolData } from '../../firebaseUtils';
+import { saveUserToolData, loadUserToolData } from '../../services/firebaseUtils';
 
 // ── Helpers ──
 function fmtTime(s) { if (!s || s <= 0) return "0s"; s = Math.round(s); const d = Math.floor(s / 86400); s %= 86400; const h = Math.floor(s / 3600); s %= 3600; const m = Math.floor(s / 60); s %= 60; let p = []; if (d) p.push(`${d}d`); if (h || d) p.push(`${h}h`); p.push(`${String(m).padStart(2, "0")}m`); p.push(`${String(s).padStart(2, "0")}s`); return p.join(" ") }
@@ -18,14 +18,14 @@ function ModRow({ mod, value, onChange }) {
         <div style={{ padding: "10px 0", borderBottom: "1px solid rgba(201,168,76,0.06)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8, gap: 8 }}>
                 <span style={{ fontFamily: "var(--font-body)", fontSize: 14, fontWeight: 500, color: V.txPri, letterSpacing: 0.3, flex: 1, minWidth: 0 }}>{t(mod.labelKey)}</span>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "#FFFFFF", letterSpacing: 1, flexShrink: 0 }}>{mod.type === "custom" ? `${value}%` : `${pct.toFixed(1)}%`}</span>
+                <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: V.txPri, letterSpacing: 1, flexShrink: 0 }}>{mod.type === "custom" ? `${value}%` : `${pct.toFixed(1)}%`}</span>
             </div>
             {mod.type === "level" && <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <input type="range" className="tool-range" min={0} max={mod.max} value={value} onChange={e => onChange(+e.target.value)} />
                 <span style={{ fontFamily: "var(--font-label)", fontSize: 9, fontWeight: 500, color: V.txSec, letterSpacing: 2, background: "rgba(201,168,76,0.08)", padding: "4px 8px", borderRadius: 2, minWidth: 44, textAlign: "center", flexShrink: 0 }}>LV.{value}</span>
             </div>}
             {mod.type === "toggle" && <div className="tool-toggle-row">
-                {mod.opts.map((o, i) => <button key={i} className="tool-toggle-btn" onClick={() => onChange(i)} style={{ border: `1px solid ${value === i ? V.borderHov : V.border}`, background: value === i ? "rgba(201,168,76,0.12)" : "transparent", color: value === i ? "#FFFFFF" : V.txDim }}>{t(o.lKey)}</button>)}
+                {mod.opts.map((o, i) => <button key={i} className="tool-toggle-btn" onClick={() => onChange(i)} style={{ border: `1px solid ${value === i ? V.borderHov : V.border}`, background: value === i ? "rgba(201,168,76,0.12)" : "transparent", color: value === i ? V.txPri : V.txDim }}>{t(o.lKey)}</button>)}
             </div>}
             {mod.type === "custom" && <input type="number" className="tool-input-num" min={0} max={100} step={0.5} value={value} onChange={e => onChange(+e.target.value || 0)} />}
         </div>
@@ -38,7 +38,7 @@ function ResBlock({ label, time, sub, highlight }) {
             {highlight && <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg,transparent,${V.gold},transparent)` }} />}
             <div style={{ fontFamily: "var(--font-label)", fontSize: 9, fontWeight: 500, letterSpacing: 2, color: V.txDim, marginBottom: 8, textTransform: "uppercase" }}>{label}</div>
             <div className="tool-resblock-time">{fmtDDHHMMSS(time)}</div>
-            <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#FFFFFF", marginBottom: 6, wordBreak: "break-word" }}>{fmtTime(time)}</div>
+            <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: V.txPri, marginBottom: 6, wordBreak: "break-word" }}>{fmtTime(time)}</div>
             {sub && <div style={{ fontSize: 12, color: V.txDim, fontFamily: "var(--font-body)", letterSpacing: 0.3, lineHeight: 1.4 }}>{sub}</div>}
         </div>
     );

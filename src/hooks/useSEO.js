@@ -180,10 +180,9 @@ export default function useSEO() {
         const path = location.pathname === '/' ? '/' : location.pathname;
         const canonicalUrl = `${SITE_URL}/${langCode}${path === '/' ? '' : path}`;
 
-        let pageTitle = '';
-        let description = '';
+        let pageTitle;
+        let description;
         let ogImage = DEFAULT_OG_IMAGE;
-        let keywords = '';
         let breadcrumbs = [
             { name: t('navigation.home', { defaultValue: 'Home' }), url: `${SITE_URL}/${langCode}/home` }
         ];
@@ -288,7 +287,7 @@ export default function useSEO() {
 
         // Meta tags
         setMetaByName('description', description);
-        keywords = `${pageTitle}, Foundation Galactic Frontier, FGF, FGF Wiki, guide, tier list, FunPlus, sci-fi strategy`;
+        const keywords = `${pageTitle}, Foundation Galactic Frontier, FGF, FGF Wiki, guide, tier list, FunPlus, sci-fi strategy`;
         setMetaByName('keywords', keywords);
         setMetaByName('applicable-device', 'pc,mobile');
         setMetaByName('renderer', 'webkit');

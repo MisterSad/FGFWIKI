@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSearchParams } from 'react-router';
-import { shipDecks } from '../data/gameData';
-import TeamDisplay from './TeamDisplay';
+import { shipDecks } from '../../data/gameData';
+import TeamDisplay from '../common/TeamDisplay';
 import { Rocket, Shield, Crosshair, Zap, Star, Brain, Layers } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 

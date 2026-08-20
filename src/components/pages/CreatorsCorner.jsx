@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams, useNavigate } from 'react-router';
 import { Video, ArrowLeft, ArrowUpRight, Search, ChevronDown, MessageSquare } from 'lucide-react';
-import staticVideos from '../data/mirandusVideos.json';
+import staticVideos from '../../data/mirandusVideos.json';
 
 // Creators data list static configuration
 const creators = [
