@@ -6,7 +6,7 @@ Toute intervention sur ce dépôt doit se conformer strictement aux 10 règles f
 
 ---
 
-## ⚡ Les 10 Commandements du Vibecoding sur FGF WIKI
+## ⚡ Les 11 Commandements du Vibecoding sur FGF WIKI
 
 ```mermaid
 flowchart TD
@@ -14,7 +14,8 @@ flowchart TD
     Step2 --> Step3[3. Attente du Code 3112]
     Step3 --> Step4[4. Implémentation Respectueuse de l'Architecture]
     Step4 --> Step5[5. Validation : Tests + Lint + Build]
-    Step5 --> Step6[6. Commit Sémantique & Push sur origin/main]
+    Step5 --> Step6[6. Mise à Jour DISCORD_CHANGELOG.md]
+    Step6 --> Step7[7. Commit Sémantique & Push sur origin/main]
 ```
 
 ### 1. 🧠 Toujours Brainstormer d'Abord (Ne Rien Coder Immédiatement)
@@ -79,6 +80,11 @@ npm run lint      # 2. 0 erreur et 0 warning ESLint
 npm run build     # 3. Compilation Vite propre sans erreur d'import
 ```
 
+### 11. 📢 Maintenance Systématique du `DISCORD_CHANGELOG.md`
+- Toute mise à jour ou évolution du site doit **obligatoirement s'accompagner de la mise à jour du fichier [`DISCORD_CHANGELOG.md`](file:///Users/andrevieira/Documents/GitHub/FGF%20WIKI/DISCORD_CHANGELOG.md)**.
+- **Langue & Ton** : Anglais naturel, humain et authentique (style développeur/joueur passionné, sans aucun biais d'écriture ou tournure robotique d'IA).
+- **Formatage Discord Prêt au Partage** : Structure pensée pour un simple copier/coller dans Discord (titres `##`, listes à puces claires, emojis pertinents, mise en avant immédiate des bénéfices pour les joueurs).
+
 ---
 
 ## 📋 Checklist d'Auto-Évaluation pour l'Agent avant de Conclure
@@ -88,6 +94,7 @@ npm run build     # 3. Compilation Vite propre sans erreur d'import
 - [ ] Les fonctions pures sont-elles dans `src/lib/` sans violer Fast Refresh ?
 - [ ] Toutes les nouvelles clés de traduction sont-elles présentes dans les 23 fichiers de langue ?
 - [ ] Les règles Firestore sont-elles à jour et sécurisées pour `fgfwiwi@gmail.com` ?
+- [ ] Le fichier `DISCORD_CHANGELOG.md` a-t-il été actualisé en anglais humain et prêt pour Discord ?
 - [ ] La commande `npm test` passe-t-elle avec 100% de succès ?
 - [ ] La commande `npm run lint` affiche-t-elle 0 erreur et 0 warning ?
 - [ ] La commande `npm run build` compile-t-elle sans warning ?
