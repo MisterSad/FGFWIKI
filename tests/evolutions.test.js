@@ -55,4 +55,18 @@ describe('Game Evolutions & Dynamic Scoring System', () => {
         expect(getDemandTier(5).id).toBe('moderate');
         expect(getDemandTier(1).id).toBe('low');
     });
+
+    it('should correctly format community comments summary', async () => {
+        const { summarizeComments } = await import('../src/lib/pdfExport.js');
+        const empty = await summarizeComments([]);
+        expect(empty[0]).toContain('No community feedback');
+
+        const mockComments = [
+            { displayName: 'Commander Alpha', serverNumber: 1058, content: 'Great idea, please add this!' }
+        ];
+        const res = await summarizeComments(mockComments);
+        expect(res.length).toBeGreaterThan(1);
+        expect(res[0]).toContain('Total Community Contributions: 1 comment');
+        expect(res[1]).toContain('Commander Alpha (S1058)');
+    });
 });

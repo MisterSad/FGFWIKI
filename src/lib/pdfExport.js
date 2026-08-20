@@ -174,10 +174,13 @@ export async function exportEvolutionsToPDF(threads, fetchCommentsFn, onProgress
         const metricsY = startY + 18 + titleHeight;
 
         // 5. Demand Score & Priority Gauge Matrix
-        const demandScore = calculateCommunityScore(thread, threads);
-        const demandTier = getDynamicDemandTier(demandScore);
+        const votesCount = Array.isArray(thread.votes) ? thread.votes.length : (thread.voteCount || thread.votesCount || 0);
+        const commentsCount = thread.commentCount || (Array.isArray(thread.comments) ? thread.comments.length : 0);
+        const demandScore = Math.round(calculateCommunityScore(votesCount, commentsCount));
+        const demandTier = getDynamicDemandTier(thread, threads);
         const progressVal = getDynamicTimelineProgress(thread, threads);
-        const tierColor = TIER_COLORS[demandTier.id] || [201, 168, 76];
+        const tierColor = TIER_COLORS[demandTier?.id] || [201, 168, 76];
+        const tierLabel = String(demandTier?.label || demandTier?.name || 'Emerging').toUpperCase();
 
         // Metrics Background Box
         doc.setFillColor(18, 22, 33);
@@ -187,7 +190,6 @@ export async function exportEvolutionsToPDF(threads, fetchCommentsFn, onProgress
         doc.roundedRect(margin + 6, metricsY, contentWidth - 12, 26, 3, 3, 'S');
 
         // Metric Left: Votes & Demand Score
-        const votesCount = Array.isArray(thread.votes) ? thread.votes.length : (thread.voteCount || 0);
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(10);
         doc.setTextColor(255, 255, 255);
@@ -202,7 +204,7 @@ export async function exportEvolutionsToPDF(threads, fetchCommentsFn, onProgress
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(10.5);
         doc.setTextColor(tierColor[0], tierColor[1], tierColor[2]);
-        doc.text(`PRIORITY TIER: ${demandTier.name.toUpperCase()}`, margin + contentWidth - 12, metricsY + 8, { align: 'right' });
+        doc.text(`PRIORITY TIER: ${tierLabel}`, margin + contentWidth - 12, metricsY + 8, { align: 'right' });
 
         // Graphical Progress Bar
         const barX = margin + 12;
