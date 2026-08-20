@@ -1,4 +1,4 @@
-const CACHE = 'fgf-wiki-v1';
+const CACHE = 'fgf-wiki-v2';
 
 self.addEventListener('install', (event) => {
     event.waitUntil(

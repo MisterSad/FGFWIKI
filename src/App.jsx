@@ -13,18 +13,40 @@ import SearchModal from './components/modals/SearchModal';
 const LANG_PREFIX = getLanguageFromPath();
 const BASENAME = LANG_PREFIX ? `/${LANG_PREFIX}` : undefined;
 
-const Guides = lazy(() => import('./components/pages/Guides'));
-const News = lazy(() => import('./components/pages/News'));
-const FlagshipGuide = lazy(() => import('./components/pages/FlagshipGuide'));
-const HeroTierList = lazy(() => import('./components/pages/HeroTierList'));
-const EventGuide = lazy(() => import('./components/pages/EventGuide'));
-const Builder = lazy(() => import('./components/pages/Builder'));
-const GiftCodes = lazy(() => import('./components/pages/GiftCodes'));
-const StellaAnomaly = lazy(() => import('./components/pages/StellaAnomaly'));
-const CreatorsCorner = lazy(() => import('./components/pages/CreatorsCorner'));
-const GuildTool = lazy(() => import('./components/pages/GuildTool'));
-const GameEvolutions = lazy(() => import('./components/pages/GameEvolutions'));
-const NotFound = lazy(() => import('./components/pages/NotFound'));
+// Resilient lazy import that automatically refreshes the page if a new build invalidated chunks
+function lazyWithRetry(componentImport) {
+  return lazy(async () => {
+    const pageHasBeenForceRefreshed = JSON.parse(
+      window.sessionStorage.getItem('fgf_page_reloaded_for_chunk') || 'false'
+    );
+
+    try {
+      const component = await componentImport();
+      window.sessionStorage.setItem('fgf_page_reloaded_for_chunk', 'false');
+      return component;
+    } catch (error) {
+      if (!pageHasBeenForceRefreshed) {
+        window.sessionStorage.setItem('fgf_page_reloaded_for_chunk', 'true');
+        window.location.reload();
+        return { default: () => null };
+      }
+      throw error;
+    }
+  });
+}
+
+const Guides = lazyWithRetry(() => import('./components/pages/Guides'));
+const News = lazyWithRetry(() => import('./components/pages/News'));
+const FlagshipGuide = lazyWithRetry(() => import('./components/pages/FlagshipGuide'));
+const HeroTierList = lazyWithRetry(() => import('./components/pages/HeroTierList'));
+const EventGuide = lazyWithRetry(() => import('./components/pages/EventGuide'));
+const Builder = lazyWithRetry(() => import('./components/pages/Builder'));
+const GiftCodes = lazyWithRetry(() => import('./components/pages/GiftCodes'));
+const StellaAnomaly = lazyWithRetry(() => import('./components/pages/StellaAnomaly'));
+const CreatorsCorner = lazyWithRetry(() => import('./components/pages/CreatorsCorner'));
+const GuildTool = lazyWithRetry(() => import('./components/pages/GuildTool'));
+const GameEvolutions = lazyWithRetry(() => import('./components/pages/GameEvolutions'));
+const NotFound = lazyWithRetry(() => import('./components/pages/NotFound'));
 
 function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
