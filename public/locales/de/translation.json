@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Kontaktinformationen",
         "sec9_p1": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte unter:",
         "sec9_email": "E-Mail: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "Offizieller Partner",
+        "title": "Instant Gaming",
+        "subtitle": "Holen Sie sich PC- und Konsolenspiele, Guthabenkarten und Abonnements mit bis zu -70% Rabatt und unterstützen Sie FGF WIKI.",
+        "cta": "Angebote ansehen",
+        "disclaimer": "Affiliate-Partner. Einkäufe über diesen Link unterstützen das Hosting des Wikis ohne zusätzliche Kosten für Sie."
     }
 }

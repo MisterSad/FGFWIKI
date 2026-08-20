@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Contact information",
         "sec9_p1": "If you have any questions, inquiries, or copyright-related requests regarding these Terms and Conditions, please contact us at:",
         "sec9_email": "Email: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "Resmi Ortak",
+        "title": "Instant Gaming",
+        "subtitle": "PC ve konsol oyunlarını, hediye kartlarını ve abonelikleri %70'e varan indirimlerle satın alın ve FGF WIKI'yi destekleyin.",
+        "cta": "Fırsatları İncele",
+        "disclaimer": "Ortaklık bağlantısı. Bu bağlantı üzerinden yapılan alışverişler, size ekstra ücret yansıtmadan wiki barındırmasını destekler."
     }
 }

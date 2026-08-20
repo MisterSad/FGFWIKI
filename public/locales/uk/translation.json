@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Contact information",
         "sec9_p1": "If you have any questions, inquiries, or copyright-related requests regarding these Terms and Conditions, please contact us at:",
         "sec9_email": "Email: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "Офіційний партнер",
+        "title": "Instant Gaming",
+        "subtitle": "Купуйте ігри для ПК та консолей, подарункові картки та підписки зі знижкою до -70% та підтримуйте FGF WIKI.",
+        "cta": "Переглянути пропозиції",
+        "disclaimer": "Партнерське посилання. Ваші покупки допомагають фінансувати хостинг вікі без додаткових витрат для вас."
     }
 }

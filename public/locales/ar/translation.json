@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Contact information",
         "sec9_p1": "If you have any questions, inquiries, or copyright-related requests regarding these Terms and Conditions, please contact us at:",
         "sec9_email": "Email: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "الشريك الرسمي",
+        "title": "Instant Gaming",
+        "subtitle": "احصل على ألعاب الكمبيوتر والأجهزة المنزلية وبطاقات الهدايا والاشتراكات بخصم يصل إلى -70% مع دعم FGF WIKI.",
+        "cta": "استكشف العروض",
+        "disclaimer": "رابط شريك تابع. تساعد مشترياتك في تمويل استضافة الويكي دون أي تكلفة إضافية عليك."
     }
 }

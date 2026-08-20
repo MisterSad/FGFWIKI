@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Contact information",
         "sec9_p1": "If you have any questions, inquiries, or copyright-related requests regarding these Terms and Conditions, please contact us at:",
         "sec9_email": "Email: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "พันธมิตรอย่างเป็นทางการ",
+        "title": "Instant Gaming",
+        "subtitle": "ซื้อเกม PC และคอนโซล บัตรของขวัญ และสมาชิกรายเดือนลดสูงสุด -70% พร้อมสนับสนุน FGF WIKI",
+        "cta": "ดูข้อเสนอ",
+        "disclaimer": "ลิงก์พันธมิตร การสั่งซื้อของคุณช่วยสนับสนุนการดูแลเซิร์ฟเวอร์วิกิโดยไม่มีค่าใช้จ่ายเพิ่มเติม"
     }
 }

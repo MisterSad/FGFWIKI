@@ -1984,5 +1984,12 @@
         "sec9_title": "9. Informations de contact",
         "sec9_p1": "Pour toute question ou demande relative aux présentes Conditions Générales d'Utilisation, veuillez nous contacter à l'adresse suivante :",
         "sec9_email": "Courriel : fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "Partenaire Officiel",
+        "title": "Instant Gaming",
+        "subtitle": "Achetez vos jeux PC/Consoles, cartes cadeaux et abonnements jusqu'à -70% tout en soutenant FGF WIKI.",
+        "cta": "Voir les offres",
+        "disclaimer": "Lien partenaire affilié. Vos achats permettent de financer l'hébergement du wiki sans aucun surcoût pour vous."
     }
 }

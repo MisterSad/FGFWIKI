@@ -1,19 +1,18 @@
-## ⚖️ Official Terms and Conditions & Legal Framework Update
+## 🎮 Official Partnership with Instant Gaming is Live!
 
-Hey everyone,
+Hey commanders,
 
-To provide full clarity, transparency, and independence for our entire community, we've just rolled out a dedicated **Terms and Conditions** page on FGF WIKI, accessible directly from the footer of every page across the platform.
+We’re super excited to announce our official partnership with **Instant Gaming**! 
 
-### 🛡️ What’s in the Terms and Conditions
-- **Independent community platform**: Reaffirming FGF WIKI's status as an independent, community-driven database and strategy hub.
-- **Fair Use & intellectual property**: Clear guidelines on game asset Fair Use for educational and analytical purposes, alongside protections for FGF WIKI's custom calculation engines and open tools.
-- **Accuracy & crowdsourcing disclaimer**: Clear outline of our crowdsourced data model and in-game decisions disclaimer.
-- **Acceptable use & security**: Protecting the platform, server performance, and user privacy against unauthorized commercial scraping.
-- **Full 23-language support**: The legal framework and terms page are natively available across all 23 supported languages on the site.
+Starting today, you'll find a clean, non-intrusive partner hub at the bottom of FGF WIKI pages where you can grab your favourite PC & Console games, Steam/PlayStation/Xbox gift cards, and subscriptions with **up to 70% off**.
 
-### 📄 Official A4 PDF Export (Admin Tools)
-- Added an official press release A4 portrait PDF generator with full typography and executive layout for easy sharing and community archiving.
+### 🌟 Why this matters for the community
+- **Up to 70% off games & gift cards**: Instant digital delivery for PC, Steam, PlayStation, Xbox, and Nintendo.
+- **Support FGF WIKI for free**: Every purchase made through our official partner link directly helps fund our database hosting and server costs at zero additional charge to you.
+- **Sleek & Non-intrusive**: Zero annoying popups or intrusive overlays. Integrated seamlessly into our dark Imperial Asimov-Gold theme.
+- **Full 23-Language Support**: The partner hub automatically adapts to your preferred language on the wiki.
 
-Thank you for your continuous support as we keep building and maintaining the best free tools for all commanders.
+Check out the deals and support the wiki on your next game purchase:
+👉 https://www.instant-gaming.com/?igr=gamer-3167b41
 
-**Explore the new page:** https://fgfwiki.com/terms
+Thank you so much for your ongoing love and support! Let’s keep conquering the Galactic Frontier together. 🚀

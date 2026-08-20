@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Información de contacto",
         "sec9_p1": "Si tiene alguna pregunta respecto a estos Términos, contáctenos en:",
         "sec9_email": "Correo electrónico: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "Socio Oficial",
+        "title": "Instant Gaming",
+        "subtitle": "Consigue juegos de PC y consolas, tarjetas de regalo y suscripciones con hasta un 70% de descuento mientras apoyas a FGF WIKI.",
+        "cta": "Ver ofertas",
+        "disclaimer": "Enlace de afiliado. Tus compras ayudan a financiar el alojamiento de la wiki sin coste adicional para ti."
     }
 }

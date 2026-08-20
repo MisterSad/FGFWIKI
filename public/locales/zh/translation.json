@@ -1986,5 +1986,12 @@
         "sec9_title": "9. 联系方式",
         "sec9_p1": "如对本条款有任何疑问，请通过以下方式联系我们：",
         "sec9_email": "电子邮箱：fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "官方合作伙伴",
+        "title": "Instant Gaming",
+        "subtitle": "以最高-70%的折扣购买PC和主机游戏、礼品卡及订阅服务，同时支持FGF WIKI。",
+        "cta": "查看优惠",
+        "disclaimer": "推广联盟链接。您通过此链接购买可支持Wiki服务器运营，无需承担任何额外费用。"
     }
 }

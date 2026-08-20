@@ -5,7 +5,9 @@ import { ArrowUp } from 'lucide-react';
 import Header from './Header';
 import Tabs from './Tabs';
 import AmbientSignal from '../common/AmbientSignal';
+import InstantGamingBanner from '../common/InstantGamingBanner';
 import useSEO from '../../hooks/useSEO';
+import { getInstantGamingAffiliateUrl } from '../../lib/partnerUtils';
 
 export default function Layout({ children, onLoginClick, onSearchClick, onProfileClick }) {
     const location = useLocation();
@@ -89,6 +91,10 @@ export default function Layout({ children, onLoginClick, onSearchClick, onProfil
                 {children}
             </main>
 
+            <div className="container" style={{ padding: '0 clamp(1rem, 3vw, 2rem)' }}>
+                <InstantGamingBanner />
+            </div>
+
             <footer style={{
                 textAlign: 'center',
                 padding: 'clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem) clamp(1.5rem, 4vw, 2rem)',
@@ -115,7 +121,13 @@ export default function Layout({ children, onLoginClick, onSearchClick, onProfil
                     gap: '0.6rem'
                 }}>
                     <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkEye #1058</span></p>
-                    <div>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexWrap: 'wrap',
+                        gap: '0.75rem clamp(0.5rem, 1.5vw, 1.25rem)'
+                    }}>
                         <Link
                             to="/terms"
                             style={{
@@ -139,6 +151,32 @@ export default function Layout({ children, onLoginClick, onSearchClick, onProfil
                         >
                             {t('navigation.terms', 'Terms & conditions')}
                         </Link>
+                        <span style={{ opacity: 0.3 }}>•</span>
+                        <a
+                            href={getInstantGamingAffiliateUrl()}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                color: 'var(--text-dim)',
+                                textDecoration: 'none',
+                                transition: 'all 0.2s ease',
+                                borderBottom: '1px dashed rgba(212, 175, 55, 0.3)',
+                                paddingBottom: '2px',
+                                textTransform: 'uppercase',
+                                fontSize: 'clamp(0.62rem, 1.4vw, 0.72rem)',
+                                letterSpacing: '1px'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.color = 'var(--gold)';
+                                e.currentTarget.style.borderBottomColor = 'var(--gold)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.color = 'var(--text-dim)';
+                                e.currentTarget.style.borderBottomColor = 'rgba(212, 175, 55, 0.3)';
+                            }}
+                        >
+                            {t('partner.badge', 'Official Partner')} : Instant Gaming
+                        </a>
                     </div>
                 </div>
             </footer>

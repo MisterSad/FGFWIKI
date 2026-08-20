@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Contact information",
         "sec9_p1": "If you have any questions, inquiries, or copyright-related requests regarding these Terms and Conditions, please contact us at:",
         "sec9_email": "Email: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "Partner Ufficiale",
+        "title": "Instant Gaming",
+        "subtitle": "Acquista giochi per PC e console, carte regalo e abbonamenti con sconti fino al -70% sostenendo FGF WIKI.",
+        "cta": "Scopri le offerte",
+        "disclaimer": "Link di affiliazione. I tuoi acquisti supportano l'hosting della wiki senza alcun costo aggiuntivo per te."
     }
 }

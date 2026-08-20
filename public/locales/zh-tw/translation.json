@@ -1986,5 +1986,12 @@
         "sec9_title": "9. Contact information",
         "sec9_p1": "If you have any questions, inquiries, or copyright-related requests regarding these Terms and Conditions, please contact us at:",
         "sec9_email": "Email: fgfwiki@gmail.com"
+    },
+    "partner": {
+        "badge": "官方合作夥伴",
+        "title": "Instant Gaming",
+        "subtitle": "以最高-70%的折扣購買PC與主機遊戲、禮品卡及訂閱服務，同時支持FGF WIKI。",
+        "cta": "查看優惠",
+        "disclaimer": "推廣聯盟鏈接。您通過此鏈接購買可支持Wiki服務器運營，無需承擔任何額外費用。"
     }
 }
