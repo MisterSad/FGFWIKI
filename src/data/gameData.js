@@ -325,7 +325,6 @@ export const tips = [
     content: 'tips.stella_leaks_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-07-12T22:45:00Z',
     sections: [
       {
@@ -348,7 +347,6 @@ export const tips = [
     content: 'tips.season2_reveal_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-07-11T23:18:15Z',
     sections: [
       {
@@ -791,7 +789,6 @@ export const tips = [
     content: 'tips.celestial_transmission_july_2026_desc',
     highlight: true,
     hasDetails: true,
-    isNew: true,
     publishDate: '2026-07-13T18:30:00Z',
     sections: [
       {
