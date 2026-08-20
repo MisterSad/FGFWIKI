@@ -9,7 +9,6 @@ import Terms from './components/pages/Terms';
 import LoginModal from './components/modals/LoginModal';
 import SearchModal from './components/modals/SearchModal';
 import ProfileSetupModal from './components/modals/ProfileSetupModal';
-import AnnouncementModal from './components/modals/AnnouncementModal';
 
 // Language-prefixed URLs (/fr/guides, /de/news/...) share a single SPA:
 // the prefix is detected at startup and used as the router basename.
@@ -54,14 +53,6 @@ function App() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
-  const [isAnnouncementOpen, setIsAnnouncementOpen] = useState(() => {
-    const announcementDeadline = new Date('2026-08-30T00:00:00Z');
-    return new Date() < announcementDeadline;
-  });
-
-  const handleCloseAnnouncement = () => {
-    setIsAnnouncementOpen(false);
-  };
 
   // Global keyboard shortcut for Spotlight Search (Cmd+K, Ctrl+K)
   useEffect(() => {
@@ -135,10 +126,6 @@ function App() {
             onClose={() => setIsProfileOpen(false)}
           />
         )}
-        <AnnouncementModal
-          isOpen={isAnnouncementOpen}
-          onClose={handleCloseAnnouncement}
-        />
       </BrowserRouter>
     </AuthProvider>
   );
