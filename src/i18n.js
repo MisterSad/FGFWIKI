@@ -35,7 +35,7 @@ i18n
             caches: ['localStorage']
         },
         backend: {
-            loadPath: '/locales/{{lng}}/translation.json',
+            loadPath: '/locales/{{lng}}/translation.json?v=20260821-3',
         },
         interpolation: {
             escapeValue: false, // React already safes from xss
