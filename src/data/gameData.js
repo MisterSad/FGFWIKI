@@ -280,6 +280,45 @@ export const tips = [
     ]
   },
   {
+    id: 'creator-program-departure',
+    category: 'news',
+    title: 'announcement_modal.title',
+    content: 'announcement_modal.intro_p1',
+    highlight: true,
+    hasDetails: true,
+    isNew: true,
+    publishDate: '2026-08-21T00:00:00Z',
+    sections: [
+      {
+        text: 'announcement_modal.intro_p1'
+      },
+      {
+        header: 'announcement_modal.sec1_title',
+        text: 'announcement_modal.sec1_p2',
+        note: 'announcement_modal.sec1_p3'
+      },
+      {
+        header: 'announcement_modal.sec2_title',
+        text: 'announcement_modal.sec2_p2',
+        note: 'announcement_modal.sec2_p4'
+      },
+      {
+        header: 'announcement_modal.sec3_title',
+        text: 'announcement_modal.sec3_intro',
+        methods: [
+          { title: 'announcement_modal.sec3_bullet1_title', desc: 'announcement_modal.sec3_bullet1_desc', icon: 'Shield' },
+          { title: 'announcement_modal.sec3_bullet2_title', desc: 'announcement_modal.sec3_bullet2_desc', icon: 'FileText' },
+          { title: 'announcement_modal.sec3_bullet3_title', desc: 'announcement_modal.sec3_bullet3_desc', icon: 'AlertTriangle' }
+        ]
+      },
+      {
+        header: 'announcement_modal.sec4_title',
+        text: 'announcement_modal.sec4_p3',
+        note: 'announcement_modal.sec4_thanks'
+      }
+    ]
+  },
+  {
     id: 'stella-exclusive-leaks',
     category: 'news',
     title: 'tips.stella_leaks_title',
