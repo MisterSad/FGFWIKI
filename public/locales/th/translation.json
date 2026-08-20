@@ -1932,5 +1932,14 @@
         "filter_all": "ทั้งหมด",
         "hint_navigate": "นำทาง",
         "hint_select": "เปิด"
+    },
+    "translate_action": {
+        "translate": "แปลภาษา",
+        "translating": "กำลังแปล…",
+        "translated": "แปลแล้ว",
+        "original": "ต้นฉบับ",
+        "show_original": "แสดงต้นฉบับ",
+        "show_translation": "แสดงคำแปล",
+        "error": "ไม่สามารถแปลภาษาได้"
     }
 }

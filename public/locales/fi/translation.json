@@ -1932,5 +1932,14 @@
         "filter_all": "Kaikki",
         "hint_navigate": "Siirry",
         "hint_select": "Avaa"
+    },
+    "translate_action": {
+        "translate": "Käännä",
+        "translating": "Käännetään…",
+        "translated": "Käännetty",
+        "original": "Alkuperäinen",
+        "show_original": "Näytä alkuperäinen",
+        "show_translation": "Näytä käännös",
+        "error": "Käännös ei saatavilla"
     }
 }

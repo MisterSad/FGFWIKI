@@ -1932,5 +1932,14 @@
         "filter_all": "Semua",
         "hint_navigate": "Navigasi",
         "hint_select": "Buka"
+    },
+    "translate_action": {
+        "translate": "Terjemahkan",
+        "translating": "Menerjemahkan…",
+        "translated": "Diterjemahkan",
+        "original": "Asli",
+        "show_original": "Tampilkan asli",
+        "show_translation": "Tampilkan terjemahan",
+        "error": "Terjemahan tidak tersedia"
     }
 }

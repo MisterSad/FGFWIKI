@@ -1932,5 +1932,14 @@
         "filter_all": "Todos",
         "hint_navigate": "Navegar",
         "hint_select": "Abrir"
+    },
+    "translate_action": {
+        "translate": "Traducir",
+        "translating": "Traduciendo…",
+        "translated": "Traducido",
+        "original": "Original",
+        "show_original": "Ver original",
+        "show_translation": "Ver traducción",
+        "error": "Traducción no disponible"
     }
 }

@@ -1932,5 +1932,14 @@
         "filter_all": "Всі",
         "hint_navigate": "Навігація",
         "hint_select": "Відкрити"
+    },
+    "translate_action": {
+        "translate": "Перекласти",
+        "translating": "Переклад…",
+        "translated": "Перекладено",
+        "original": "Оригінал",
+        "show_original": "Показати оригінал",
+        "show_translation": "Показати переклад",
+        "error": "Переклад недоступний"
     }
 }

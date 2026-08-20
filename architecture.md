@@ -117,11 +117,13 @@ FGF WIKI/
 │   │       ├── TipCard.jsx          # Carte de présentation d'un guide ou d'une actualité
 │   │       ├── TeamDisplay.jsx      # Affichage graphique d'une escouade de héros
 │   │       ├── CommentSection.jsx   # Espace commentaires temps réel Firestore
+│   │       ├── TranslatableText.jsx # Composant de traduction automatique (Google Cloud)
 │   │       └── AmbientSignal.jsx    # Effet sonore d'ambiance et signal radio
 │   │
 │   ├── services/             # Couche d'accès aux données & API
 │   │   ├── firebase.js       # Initialisation des instances Firebase App, Auth & Firestore
-│   │   └── firebaseUtils.js  # Requêtes Firestore optimisées & abonnements temps réel
+│   │   ├── firebaseUtils.js  # Requêtes Firestore optimisées & abonnements temps réel
+│   │   └── translate.js      # Service de traduction Google Cloud avec cache local
 │   │
 │   ├── hooks/                # Custom React Hooks
 │   │   ├── useSEO.js         # Injection dynamique des métadonnées, OpenGraph & JSON-LD

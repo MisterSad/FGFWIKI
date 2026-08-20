@@ -1932,5 +1932,14 @@
         "filter_all": "Alla",
         "hint_navigate": "Navigera",
         "hint_select": "Öppna"
+    },
+    "translate_action": {
+        "translate": "Översätt",
+        "translating": "Översätter…",
+        "translated": "Översatt",
+        "original": "Original",
+        "show_original": "Visa original",
+        "show_translation": "Visa översättning",
+        "error": "Översättning ej tillgänglig"
     }
 }

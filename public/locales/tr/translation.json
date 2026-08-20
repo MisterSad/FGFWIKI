@@ -1932,5 +1932,14 @@
         "filter_all": "Tümü",
         "hint_navigate": "Gezin",
         "hint_select": "Aç"
+    },
+    "translate_action": {
+        "translate": "Çevir",
+        "translating": "Çevriliyor…",
+        "translated": "Çevrildi",
+        "original": "Orijinal",
+        "show_original": "Orijinali göster",
+        "show_translation": "Çeviriyi göster",
+        "error": "Çeviri kullanılamıyor"
     }
 }

@@ -3,6 +3,29 @@
 
 ---
 
+## 📢 [UPDATE] August 20, 2026 — One-Click Auto-Translation for Game Evolutions & Comments!
+
+Hey Commanders! 🌍
+
+With players joining **FGF WIKI** from all over the world, language should never stop great game ideas and feedback from being heard!
+
+We just launched **One-Click Auto-Translation** powered by Google Cloud & local smart caching:
+
+---
+
+### 🌐 1. Instant Auto-Translation on Player Proposals & Comments
+- Whenever someone posts an evolution idea or leaves a comment in French, Korean, Russian, Japanese, Spanish, German, or Chinese... you’ll now see a clean **`🌐 Translate`** button!
+- One click translates the whole proposal or comment into your selected site language in real time.
+- Want to double-check the original wording? Just click **`Show original`** anytime!
+
+### ⚡ 2. Zero-Lag Smart Cache
+- Translated posts are saved locally in your browser memory, so when you re-open them, they load instantly in 0 milliseconds with zero network lag.
+
+👉 **Share your game ideas & vote here:** https://fgfwiki.com/evolutions
+💬 *Keep the suggestions coming — let’s build the future of the game together!*
+
+---
+
 ## 📢 [UPDATE] August 20, 2026 — Universal Spotlight Search (Cmd+K), Streamlined UI & 23 Languages!
 
 Hey Commanders! 👋

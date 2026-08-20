@@ -4,6 +4,7 @@ import { useAuth } from '../../context/AuthContext';
 import { subscribeComments, addComment, deleteComment } from '../../services/firebaseUtils';
 import { MessageSquare, Trash2 } from 'lucide-react';
 import ProfileSetupModal from '../modals/ProfileSetupModal';
+import TranslatableText from './TranslatableText';
 
 const CONTENT_MAX = 2000;
 
@@ -130,9 +131,11 @@ export default function CommentSection({ type, itemId }) {
                                         {formatDate(comment.createdAt)}
                                     </span>
                                 </div>
-                                <p style={{ margin: '0.75rem 0 0', color: '#FFFFFF', lineHeight: '1.6', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-                                    {comment.content}
-                                </p>
+                                <TranslatableText
+                                    text={comment.content}
+                                    as="p"
+                                    style={{ margin: '0.75rem 0 0', color: '#FFFFFF', lineHeight: '1.6', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}
+                                />
                                 {isOwn && (
                                     <button
                                         type="button"

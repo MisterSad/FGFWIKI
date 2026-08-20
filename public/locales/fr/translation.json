@@ -1930,5 +1930,14 @@
         "filter_all": "Tous",
         "hint_navigate": "Naviguer",
         "hint_select": "Ouvrir"
+    },
+    "translate_action": {
+        "translate": "Traduire",
+        "translating": "Traduction en cours…",
+        "translated": "Traduit",
+        "original": "Original",
+        "show_original": "Voir l'original",
+        "show_translation": "Voir la traduction",
+        "error": "Traduction indisponible"
     }
 }

@@ -1932,5 +1932,14 @@
         "filter_all": "Alles",
         "hint_navigate": "Navigeren",
         "hint_select": "Openen"
+    },
+    "translate_action": {
+        "translate": "Vertalen",
+        "translating": "Vertalen…",
+        "translated": "Vertaald",
+        "original": "Origineel",
+        "show_original": "Toon origineel",
+        "show_translation": "Toon vertaling",
+        "error": "Vertaling niet beschikbaar"
     }
 }

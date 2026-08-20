@@ -1932,5 +1932,14 @@
         "filter_all": "Tất cả",
         "hint_navigate": "Điều hướng",
         "hint_select": "Mở"
+    },
+    "translate_action": {
+        "translate": "Dịch",
+        "translating": "Đang dịch…",
+        "translated": "Đã dịch",
+        "original": "Bản gốc",
+        "show_original": "Xem bản gốc",
+        "show_translation": "Xem bản dịch",
+        "error": "Bản dịch không khả dụng"
     }
 }

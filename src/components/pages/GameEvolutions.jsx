@@ -18,6 +18,7 @@ import {
     deleteEvolutionComment
 } from '../../services/firebaseUtils';
 import ProfileSetupModal from '../modals/ProfileSetupModal';
+import TranslatableText from '../common/TranslatableText';
 import { 
     calculateCommunityScore, 
     getDynamicDemandTier, 
@@ -1679,18 +1680,21 @@ export default function GameEvolutions() {
                         </div>
 
                         {/* Description Body */}
-                        <div style={{
-                            color: 'var(--text-primary)',
-                            fontSize: '0.95rem',
-                            lineHeight: '1.65',
-                            whiteSpace: 'pre-wrap',
-                            marginBottom: '1.5rem',
-                            background: 'rgba(0,0,0,0.25)',
-                            padding: '1.1rem',
-                            borderRadius: '8px',
-                            border: '1px solid rgba(255,255,255,0.05)'
-                        }}>
-                            {selectedThread.description}
+                        <div style={{ marginBottom: '1.5rem' }}>
+                            <TranslatableText
+                                text={selectedThread.description}
+                                as="div"
+                                style={{
+                                    color: 'var(--text-primary)',
+                                    fontSize: '0.95rem',
+                                    lineHeight: '1.65',
+                                    whiteSpace: 'pre-wrap',
+                                    background: 'rgba(0,0,0,0.25)',
+                                    padding: '1.1rem',
+                                    borderRadius: '8px',
+                                    border: '1px solid rgba(255,255,255,0.05)'
+                                }}
+                            />
                         </div>
 
                         {/* Large Interactive Demand Timeline */}
@@ -1878,15 +1882,17 @@ export default function GameEvolutions() {
                                                         </button>
                                                     )}
                                                 </div>
-                                                <p style={{
-                                                    margin: 0,
-                                                    color: 'var(--text-primary)',
-                                                    fontSize: '0.88rem',
-                                                    lineHeight: '1.45',
-                                                    whiteSpace: 'pre-wrap'
-                                                }}>
-                                                    {comm.content}
-                                                </p>
+                                                <TranslatableText
+                                                    text={comm.content}
+                                                    as="p"
+                                                    style={{
+                                                        margin: 0,
+                                                        color: 'var(--text-primary)',
+                                                        fontSize: '0.88rem',
+                                                        lineHeight: '1.45',
+                                                        whiteSpace: 'pre-wrap'
+                                                    }}
+                                                />
                                             </div>
                                         );
                                     })}

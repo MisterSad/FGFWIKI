@@ -1932,5 +1932,14 @@
         "filter_all": "全部",
         "hint_navigate": "導覽",
         "hint_select": "開啟"
+    },
+    "translate_action": {
+        "translate": "翻譯",
+        "translating": "翻譯中…",
+        "translated": "已翻譯",
+        "original": "原文",
+        "show_original": "顯示原文",
+        "show_translation": "顯示翻譯",
+        "error": "翻譯不可用"
     }
 }

@@ -1932,5 +1932,14 @@
         "filter_all": "전체",
         "hint_navigate": "탐색",
         "hint_select": "열기"
+    },
+    "translate_action": {
+        "translate": "번역",
+        "translating": "번역 중…",
+        "translated": "번역됨",
+        "original": "원문",
+        "show_original": "원문 보기",
+        "show_translation": "번역 보기",
+        "error": "번역을 사용할 수 없음"
     }
 }

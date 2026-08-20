@@ -1932,5 +1932,14 @@
         "filter_all": "全部",
         "hint_navigate": "导航",
         "hint_select": "打开"
+    },
+    "translate_action": {
+        "translate": "翻译",
+        "translating": "翻译中…",
+        "translated": "已翻译",
+        "original": "原文",
+        "show_original": "显示原文",
+        "show_translation": "显示翻译",
+        "error": "翻译不可用"
     }
 }

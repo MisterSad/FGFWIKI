@@ -1930,5 +1930,14 @@
         "filter_all": "All",
         "hint_navigate": "Navigate",
         "hint_select": "Open"
+    },
+    "translate_action": {
+        "translate": "Translate",
+        "translating": "Translating…",
+        "translated": "Translated",
+        "original": "Original",
+        "show_original": "Show original",
+        "show_translation": "Show translation",
+        "error": "Translation unavailable"
     }
 }

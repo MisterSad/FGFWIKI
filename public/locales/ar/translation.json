@@ -1932,5 +1932,14 @@
         "filter_all": "الكل",
         "hint_navigate": "التنقل",
         "hint_select": "فتح"
+    },
+    "translate_action": {
+        "translate": "ترجمة",
+        "translating": "جارٍ الترجمة…",
+        "translated": "مترجم",
+        "original": "النص الأصلي",
+        "show_original": "عرض النص الأصلي",
+        "show_translation": "عرض الترجمة",
+        "error": "الترجمة غير متوفرة"
     }
 }
