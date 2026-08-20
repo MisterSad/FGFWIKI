@@ -69,11 +69,15 @@ export default function Header({ onLoginClick, onSearchClick }) {
                 <LanguageSwitcher />
                 {currentUser ? (
                     <>
-                        <span className="header-user-email">
-                            {currentUser.email ? currentUser.email.split('@')[0] : (currentUser.displayName || 'Commander')}
+                        <div className="header-user-info" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                            <span 
+                                className="header-user-email"
+                                title={currentUser.email || currentUser.displayName || 'Commander'}
+                            >
+                                {currentUser.email ? currentUser.email.split('@')[0] : (currentUser.displayName || 'Commander')}
+                            </span>
                             {isAdmin && (
                                 <span style={{
-                                    marginLeft: '6px',
                                     padding: '2px 6px',
                                     background: 'rgba(201, 168, 76, 0.2)',
                                     border: '1px solid var(--gold, #C9A84C)',
@@ -81,12 +85,14 @@ export default function Header({ onLoginClick, onSearchClick }) {
                                     color: 'var(--gold, #C9A84C)',
                                     fontSize: '0.65rem',
                                     fontWeight: 'bold',
-                                    letterSpacing: '0.5px'
+                                    letterSpacing: '0.5px',
+                                    flexShrink: 0,
+                                    whiteSpace: 'nowrap'
                                 }}>
                                     ADMIN
                                 </span>
                             )}
-                        </span>
+                        </div>
                         <button
                             type="button"
                             onClick={logout}
