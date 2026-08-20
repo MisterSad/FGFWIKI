@@ -1216,34 +1216,6 @@
         "how_it_works": "Comment ça marche",
         "how_it_works_desc": "Le jeu calcule les temps de construction selon cette formule : <br /> <1>(Base - Fixe) / (1 + Bonus%)</1> <br /><br /> Les réductions fixes (Cabines d'équipage) sont appliquées <4>avant</4> les multiplicateurs en pourcentage, les rendant extrêmement précieuses pour les courtes constructions mais moins impactantes pour les améliorations d'une semaine."
     },
-    "daily_checklist": {
-        "title": "Tâches quotidiennes",
-        "subtitle": "Suivez vos objectifs du jour. Tout est réinitialisé à 00:00 UTC.",
-        "progress_label": "Progression",
-        "reset_in": "Réinit. dans {{time}}",
-        "reset_all": "Tout réinitialiser",
-        "reset_confirm": "Êtes-vous sûr de vouloir réinitialiser toutes vos tâches quotidiennes ?",
-        "completed": "Toutes les tâches terminées !",
-        "group": {
-            "combat": "Combat",
-            "economy": "Commerce & Ressources",
-            "fleet": "Flotte",
-            "arena": "Arène"
-        },
-        "task": {
-            "shrine_170": "Attaquer le Sanctuaire 170",
-            "shrine_120": "Attaquer le Sanctuaire 120",
-            "tribute_vessels": "Attaquer 10 Vaisseaux de Tribut",
-            "sacred_tribute_vessels": "Attaquer 10 Vaisseaux de Tribut Sacré",
-            "ark_of_deliverance": "Attaquer l'Arche de Délivrance",
-            "send_legendary_cargo": "Envoyer des cargaisons légendaires",
-            "mine_legendary": "Miner des ressources légendaires",
-            "plunder_legendary_mines": "Piller des mines légendaires",
-            "hack_legendary_cargo": "Pirater des cargaisons légendaires",
-            "auto_join_fleets": "Activer le mode auto-rejoint des flottes",
-            "arena": "Attaquer dans l'arène"
-        }
-    },
     "header_ui": {
         "subtitle": "Encyclopédie galactique",
         "login": "CONNEXION",

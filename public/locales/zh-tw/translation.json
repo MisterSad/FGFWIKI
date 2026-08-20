@@ -1218,34 +1218,6 @@
         "how_it_works": "它是如何運作的",
         "how_it_works_desc": "遊戲使用以下公式計算構建時間：<br /> <1>（基礎 - 平坦）/（1 + 獎勵%）</1> <br /><br /> 平坦減少（乘員艙）<4>在</4>百分比乘數之前應用，這使得它們對於短期構建非常有價值，但對於為期一周的升級影響較小。"
     },
-    "daily_checklist": {
-        "title": "日常任務",
-        "subtitle": "追蹤您的每日目標。所有進度均於 00:00 UTC 重設。",
-        "progress_label": "進步",
-        "reset_in": "在{{time}}中重置",
-        "reset_all": "全部重置",
-        "reset_confirm": "您確定要重置所有日常任務嗎？",
-        "completed": "所有任務完成！",
-        "group": {
-            "combat": "戰鬥",
-            "economy": "貿易與資源",
-            "fleet": "艦隊",
-            "arena": "競技場"
-        },
-        "task": {
-            "shrine_170": "攻擊神殿 170",
-            "shrine_120": "攻擊神殿120",
-            "tribute_vessels": "攻擊貢船 10",
-            "sacred_tribute_vessels": "攻擊聖器 10",
-            "ark_of_deliverance": "攻擊拯救方舟",
-            "send_legendary_cargo": "發送傳奇品質的貨物",
-            "mine_legendary": "我的傳奇品質",
-            "plunder_legendary_mines": "掠奪傳奇礦山",
-            "hack_legendary_cargo": "破解傳奇貨物",
-            "auto_join_fleets": "將車隊設定為自動加入模式",
-            "arena": "競技場中的攻擊"
-        }
-    },
     "header_ui": {
         "subtitle": "銀河百科全書",
         "login": "登入",

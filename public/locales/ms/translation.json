@@ -1218,34 +1218,6 @@
         "how_it_works": "Bagaimana ia berfungsi",
         "how_it_works_desc": "Permainan mengira masa binaan menggunakan formula ini: <br /> <1>(Asas - Rata) / (1 + Bonus%)</1> <br /><br /> Pengurangan rata (Kabin Krew) digunakan <4>sebelum</4> pengganda peratusan, menjadikannya sangat berharga untuk binaan pendek tetapi kurang memberi kesan untuk peningkatan selama seminggu."
     },
-    "daily_checklist": {
-        "title": "Tugasan Harian",
-        "subtitle": "Jejaki objektif harian anda. Semua kemajuan ditetapkan semula pada 00:00 UTC.",
-        "progress_label": "Kemajuan",
-        "reset_in": "Ditetapkan semula dalam{{time}}",
-        "reset_all": "Tetapkan semula semua",
-        "reset_confirm": "Adakah anda pasti mahu menetapkan semula semua tugas harian anda?",
-        "completed": "Semua tugas selesai!",
-        "group": {
-            "combat": "Pertempuran",
-            "economy": "Perdagangan & Sumber",
-            "fleet": "Armada",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Kuil Serang 170",
-            "shrine_120": "Kuil Serang 120",
-            "tribute_vessels": "Kapal Penghormatan Serangan 10",
-            "sacred_tribute_vessels": "Menyerang Kapal Penghormatan Suci 10",
-            "ark_of_deliverance": "Serang Tabut Pembebasan",
-            "send_legendary_cargo": "Hantar kargo berkualiti legenda",
-            "mine_legendary": "Kualiti legenda saya",
-            "plunder_legendary_mines": "Merompak lombong legenda",
-            "hack_legendary_cargo": "Menggodam kargo legenda",
-            "auto_join_fleets": "Tetapkan armada kepada mod auto-serta",
-            "arena": "Serangan di arena"
-        }
-    },
     "header_ui": {
         "subtitle": "Ensiklopedia Galactica",
         "login": "LOG MASUK",

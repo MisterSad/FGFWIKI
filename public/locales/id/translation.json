@@ -1218,34 +1218,6 @@
         "how_it_works": "Bagaimana cara kerjanya",
         "how_it_works_desc": "Game ini menghitung waktu pembangunan menggunakan rumus ini: <br /> <1>(Dasar - Datar) / (1 + Bonus%)</1> <br /><br /> Pengurangan tetap (Kabin Kru) diterapkan <4>sebelum</4> pengganda persentase, menjadikannya sangat berharga untuk pembangunan jangka pendek namun kurang berdampak untuk peningkatan selama seminggu."
     },
-    "daily_checklist": {
-        "title": "Tugas Harian",
-        "subtitle": "Lacak tujuan harian Anda. Semua kemajuan diatur ulang pada 00:00 UTC.",
-        "progress_label": "Kemajuan",
-        "reset_in": "Direset dalam{{time}}",
-        "reset_all": "Setel ulang semua",
-        "reset_confirm": "Apakah Anda yakin ingin mengatur ulang semua tugas harian Anda?",
-        "completed": "Semua tugas selesai!",
-        "group": {
-            "combat": "Tempur",
-            "economy": "Perdagangan & Sumber Daya",
-            "fleet": "Armada",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Serang Kuil 170",
-            "shrine_120": "Serang Kuil 120",
-            "tribute_vessels": "Menyerang Kapal Upeti 10",
-            "sacred_tribute_vessels": "Menyerang Kapal Penghormatan Suci 10",
-            "ark_of_deliverance": "Serang Tabut Pembebasan",
-            "send_legendary_cargo": "Kirim kargo berkualitas legendaris",
-            "mine_legendary": "Kualitas saya yang legendaris",
-            "plunder_legendary_mines": "Penjarahan tambang legendaris",
-            "hack_legendary_cargo": "Retas kargo legendaris",
-            "auto_join_fleets": "Atur armada ke mode gabung otomatis",
-            "arena": "Serang di arena"
-        }
-    },
     "header_ui": {
         "subtitle": "Ensiklopedia Galactica",
         "login": "LOGIN",

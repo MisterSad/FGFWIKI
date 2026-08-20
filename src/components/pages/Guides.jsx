@@ -1,9 +1,8 @@
 import React from 'react';
-import { useParams, useNavigate, useSearchParams } from 'react-router';
+import { useParams, useNavigate } from 'react-router';
 import { tips } from '../../data/gameData';
 import TipCard from '../common/TipCard';
 import CommentSection from '../common/CommentSection';
-import DailyChecklist from './DailyChecklist';
 import { BookOpen, Swords, Coins, Lightbulb, ArrowLeft, Shield, Home, Crown, Users, Calendar, Trophy, Heart, Gift, Star, Sparkles, MessageSquare, AlertTriangle, CheckCircle, ArrowUpRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -11,14 +10,6 @@ export default function Guides() {
     const { t } = useTranslation();
     const { guideId } = useParams();
     const navigate = useNavigate();
-    const [searchParams, setSearchParams] = useSearchParams();
-    const activeTab = searchParams.get('tab') === 'daily-tasks' ? 'daily-tasks' : 'list';
-
-    const setActiveTab = (tab) => {
-        const newParams = new URLSearchParams(searchParams);
-        newParams.set('tab', tab);
-        setSearchParams(newParams);
-    };
 
     const selectedTip = guideId ? tips.find(tip => String(tip.id) === guideId && tip.category !== 'news') : null;
 
@@ -739,53 +730,31 @@ export default function Guides() {
                 </p>
             </div>
 
-            {/* Sub-tab switcher */}
-            <div className="sub-tabs-container">
-                <button
-                    className={`sub-tab-button ${activeTab === 'list' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('list')}
-                >
-                    {t('navigation.guides')}
-                </button>
-                <button
-                    className={`sub-tab-button ${activeTab === 'daily-tasks' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('daily-tasks')}
-                >
-                    {t('daily_checklist.title')}
-                </button>
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gap: '1.5rem',
+                alignItems: 'stretch'
+            }}>
+                {[...tips]
+                    .filter(tip => tip.hasDetails && tip.category !== 'news')
+                    .sort((a, b) => {
+                        if (a.id === 'vip-program') return -1;
+                        if (b.id === 'vip-program') return 1;
+                        if (a.id === 'migration') return -1;
+                        if (b.id === 'migration') return 1;
+                        return new Date(b.publishDate || 0) - new Date(a.publishDate || 0);
+                    })
+                    .map(tip => (
+                        <TipCard
+                            key={tip.id}
+                            tip={{
+                                ...tip,
+                                onClick: () => tip.hasDetails && navigate(`/guides/${tip.id}`)
+                            }}
+                        />
+                    ))}
             </div>
-
-            {activeTab === 'list' ? (
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-                    gap: '1.5rem',
-                    alignItems: 'stretch'
-                }}>
-                    {[...tips]
-                        .filter(tip => tip.hasDetails && tip.category !== 'news')
-                        .sort((a, b) => {
-                            if (a.id === 'vip-program') return -1;
-                            if (b.id === 'vip-program') return 1;
-                            if (a.id === 'migration') return -1;
-                            if (b.id === 'migration') return 1;
-                            return new Date(b.publishDate || 0) - new Date(a.publishDate || 0);
-                        })
-                        .map(tip => (
-                            <TipCard
-                                key={tip.id}
-                                tip={{
-                                    ...tip,
-                                    onClick: () => tip.hasDetails && navigate(`/guides/${tip.id}`)
-                                }}
-                            />
-                        ))}
-                </div>
-            ) : (
-                <div className="fade-in">
-                    <DailyChecklist />
-                </div>
-            )}
         </div>
     );
 }

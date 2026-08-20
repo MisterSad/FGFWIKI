@@ -1218,34 +1218,6 @@
         "how_it_works": "Como funciona",
         "how_it_works_desc": "O jogo calcula os tempos de construção com esta fórmula: <br /> <1>(Base - Fixo) / (1 + Bónus%)</1> <br /><br /> As reduções fixas (Cabines de Tripulação) são aplicadas <4>antes</4> dos multiplicadores percentuais, tornando-as extremamente valiosas para construções curtas, mas com menos impacto em melhorias de uma semana."
     },
-    "daily_checklist": {
-        "title": "Tarefas diárias",
-        "subtitle": "Acompanhe os seus objetivos diários. Tudo reinicia às 00:00 UTC.",
-        "progress_label": "Progresso",
-        "reset_in": "Reinicia em {{time}}",
-        "reset_all": "Reiniciar tudo",
-        "reset_confirm": "Tem a certeza de que pretende reiniciar todas as suas tarefas diárias?",
-        "completed": "Todas as tarefas concluídas!",
-        "group": {
-            "combat": "Combate",
-            "economy": "Comércio e Recursos",
-            "fleet": "Frota",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Atacar o Santuário 170",
-            "shrine_120": "Atacar o Santuário 120",
-            "tribute_vessels": "Atacar 10 Naves de Tributo",
-            "sacred_tribute_vessels": "Atacar 10 Naves de Tributo Sagrado",
-            "ark_of_deliverance": "Atacar a Arca da Libertação",
-            "send_legendary_cargo": "Enviar carga de qualidade lendária",
-            "mine_legendary": "Minerar qualidade lendária",
-            "plunder_legendary_mines": "Saquear minas lendárias",
-            "hack_legendary_cargo": "Piratear carga lendária",
-            "auto_join_fleets": "Colocar as frotas em modo de adesão automática",
-            "arena": "Atacar na arena"
-        }
-    },
     "header_ui": {
         "subtitle": "Enciclopédia Galáctica",
         "login": "ENTRAR",

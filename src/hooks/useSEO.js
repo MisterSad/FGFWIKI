@@ -23,7 +23,6 @@ const ROUTE_KEYS = {
     '/guild-tool': 'guild_tool',
     '/evolutions': 'game_evolutions',
     '/game-evolutions': 'game_evolutions',
-    '/daily-tasks': 'guides',
     '/flagship-decks': 'flagships',
     '/ground-teams': 'champions',
     '*': 'not_found',

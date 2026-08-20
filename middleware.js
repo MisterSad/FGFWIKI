@@ -18,7 +18,6 @@ const SPA_ROUTES = [
     '/creators',
     '/guild-tool',
     '/evolutions',
-    '/daily-tasks',
     '/flagship-decks',
     '/ground-teams',
 ];

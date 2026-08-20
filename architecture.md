@@ -92,7 +92,6 @@ FGF WIKI/
 │   │   │   ├── HeroTierList.jsx     # Tier list des champions & compositions au sol
 │   │   │   ├── FlagshipGuide.jsx    # Guide des vaisseaux amiraux & decks méta
 │   │   │   ├── EventGuide.jsx       # Calendrier et guides des événements
-│   │   │   ├── DailyChecklist.jsx   # Checklist interactive des corvées quotidiennes
 │   │   │   ├── StellaAnomaly.jsx    # Événement interactif de décryptage & podium
 │   │   │   ├── CreatorsCorner.jsx   # Espace créateurs de contenu & vidéos
 │   │   │   ├── GiftCodes.jsx        # Codes cadeaux actifs & archivés
@@ -129,8 +128,7 @@ FGF WIKI/
 │   │
 │   ├── lib/                  # Logique pure de calcul (sans JSX ni dépendance DOM)
 │   │   ├── evolutions.js     # Algorithme de scoring d'engagement & tiers de priorité
-│   │   ├── championCost.js   # Tables et formules d'expérience des champions
-│   │   └── tasks.js          # Moteur de réinitialisation UTC et normalisation des tâches
+│   │   └── championCost.js   # Tables et formules d'expérience des champions
 │   │
 │   └── data/                 # Données statiques encyclopédiques
 │       ├── gameData.js       # Données des guides, actualités, tiers et decks
@@ -142,8 +140,7 @@ FGF WIKI/
 │   ├── calculators.test.js   # Validation des formules mathématiques des outils
 │   ├── championCost.test.js  # Validation des paliers de coût des héros
 │   ├── evolutions.test.js    # Validation de l'algorithme de scoring communautaire
-│   ├── seo.test.js           # Validation de la parité 100% des 23 langues & SEO
-│   └── tasks.test.js         # Validation de la gestion du temps UTC des tâches
+│   └── seo.test.js           # Validation de la parité 100% des 23 langues & SEO
 │
 └── scripts/                  # Scripts de maintenance & pipelines de build
     ├── generate-sitemap.js       # Générateur automatique de sitemap.xml

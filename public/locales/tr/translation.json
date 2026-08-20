@@ -1218,34 +1218,6 @@
         "how_it_works": "Nasıl çalışır?",
         "how_it_works_desc": "Oyun, yapım sürelerini şu formülü kullanarak hesaplar: <br /> <1>(Temel - Düz) / (1 + Bonus %)</1> <br /><br /> Düz indirimler (Mürettebat Kabinleri), yüzde çarpanlarından <4>önce</4> uygulanır, bu da onları kısa yapılar için son derece değerli, ancak bir hafta süren yükseltmeler için daha az etkili kılar."
     },
-    "daily_checklist": {
-        "title": "Günlük Görevler",
-        "subtitle": "Günlük hedeflerinizi takip edin. Tüm ilerlemeler 00:00 UTC'de sıfırlanır.",
-        "progress_label": "İlerlemek",
-        "reset_in": "{{time}}içinde sıfırlanır",
-        "reset_all": "Tümünü sıfırla",
-        "reset_confirm": "Tüm günlük görevlerinizi sıfırlamak istediğinizden emin misiniz?",
-        "completed": "Tüm görevler tamamlandı!",
-        "group": {
-            "combat": "Dövüş",
-            "economy": "Ticaret ve Kaynaklar",
-            "fleet": "Filo",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Saldırı Tapınağı 170",
-            "shrine_120": "Saldırı Tapınağı 120",
-            "tribute_vessels": "Saldırı Haraç Gemileri 10",
-            "sacred_tribute_vessels": "Kutsal Haraç Gemilerine Saldırı 10",
-            "ark_of_deliverance": "Kurtuluş Gemisine Saldırın",
-            "send_legendary_cargo": "Efsanevi kalitede kargo gönderin",
-            "mine_legendary": "Benimki efsanevi kalite",
-            "plunder_legendary_mines": "Efsanevi madenleri yağmalayın",
-            "hack_legendary_cargo": "Efsanevi kargoyu hackle",
-            "auto_join_fleets": "Filoları otomatik katılma moduna ayarlayın",
-            "arena": "Arenada saldırı"
-        }
-    },
     "header_ui": {
         "subtitle": "Ansiklopedi",
         "login": "GİRİŞ YAPMAK",

@@ -1218,34 +1218,6 @@
         "how_it_works": "Hoe het werkt",
         "how_it_works_desc": "Het spel berekent de bouwtijden met behulp van deze formule: <br /> <1>(Base - Flat) / (1 + Bonus%)</1> <br /><br /> Flatreducties (Crew Cabins) worden toegepast <4>vóór</4> procentuele vermenigvuldigers, waardoor ze uiterst waardevol zijn voor korte builds, maar minder impactvol voor upgrades van een week."
     },
-    "daily_checklist": {
-        "title": "Dagelijkse taken",
-        "subtitle": "Volg uw dagelijkse doelstellingen. Alle voortgang wordt gereset om 00:00 UTC.",
-        "progress_label": "Voortgang",
-        "reset_in": "Wordt gereset over{{time}}",
-        "reset_all": "Alles resetten",
-        "reset_confirm": "Weet u zeker dat u al uw dagelijkse taken wilt resetten?",
-        "completed": "Alle taken voltooid!",
-        "group": {
-            "combat": "Gevecht",
-            "economy": "Handel en hulpbronnen",
-            "fleet": "Vloot",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Aanvalsheiligdom 170",
-            "shrine_120": "Aanvalsheiligdom 120",
-            "tribute_vessels": "Aanvalshuldevaartuigen 10",
-            "sacred_tribute_vessels": "Val heilige eerbetoonvaartuigen aan 10",
-            "ark_of_deliverance": "Val de Ark van Bevrijding aan",
-            "send_legendary_cargo": "Verzend legendarische kwaliteitsvracht",
-            "mine_legendary": "Mijn legendarische kwaliteit",
-            "plunder_legendary_mines": "Plunder legendarische mijnen",
-            "hack_legendary_cargo": "Hack legendarische lading",
-            "auto_join_fleets": "Stel wagenparken in op automatische deelnamemodus",
-            "arena": "Aanval in de arena"
-        }
-    },
     "header_ui": {
         "subtitle": "Galactische encyclopedie",
         "login": "LOGIN",

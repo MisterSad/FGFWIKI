@@ -1218,34 +1218,6 @@
         "how_it_works": "Så fungerar det",
         "how_it_works_desc": "Spelet beräknar byggtider med denna formel: <br /> <1>(Bas - Fast) / (1 + Bonus%)</1> <br /><br /> Fasta minskningar (Crew Cabins) tillämpas <4>före</4> procentmultiplikatorer, vilket gör dem extremt värdefulla för korta byggen men mindre påverkande för veckolånga uppgraderingar."
     },
-    "daily_checklist": {
-        "title": "Dagliga uppdrag",
-        "subtitle": "Följ dina dagliga mål. Allt återställs vid 00:00 UTC.",
-        "progress_label": "Framsteg",
-        "reset_in": "Återställs om {{time}}",
-        "reset_all": "Återställ allt",
-        "reset_confirm": "Är du säker på att du vill återställa alla dina dagliga uppdrag?",
-        "completed": "Alla uppdrag slutförda!",
-        "group": {
-            "combat": "Strid",
-            "economy": "Handel och resurser",
-            "fleet": "Flotta",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Attackera Helgedomen 170",
-            "shrine_120": "Attackera Helgedomen 120",
-            "tribute_vessels": "Attackera 10 Tributskepp",
-            "sacred_tribute_vessels": "Attackera 10 Heliga Tributskepp",
-            "ark_of_deliverance": "Attackera Befrielsens Ark",
-            "send_legendary_cargo": "Skicka legendarisk last",
-            "mine_legendary": "Bryt legendarisk kvalitet",
-            "plunder_legendary_mines": "Plundra legendariska gruvor",
-            "hack_legendary_cargo": "Hacka legendarisk last",
-            "auto_join_fleets": "Sätt flottor i auto-anslutningsläge",
-            "arena": "Attackera i arenan"
-        }
-    },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",
         "login": "LOGGA IN",

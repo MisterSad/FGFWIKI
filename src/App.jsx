@@ -49,7 +49,6 @@ function App() {
                 <Route path="/news/:newsId" element={<News />} />
                 <Route path="/guides" element={<Guides />} />
                 <Route path="/guides/:guideId" element={<Guides />} />
-                <Route path="/daily-tasks" element={<Navigate to="/guides?tab=daily-tasks" replace />} />
                 <Route path="/champions" element={<HeroTierList />} />
                 <Route path="/flagships" element={<FlagshipGuide />} />
                 <Route path="/flagship-decks" element={<Navigate to="/flagships?tab=decks" replace />} />

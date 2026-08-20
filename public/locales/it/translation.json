@@ -1218,34 +1218,6 @@
         "how_it_works": "Come funziona",
         "how_it_works_desc": "Il gioco calcola i tempi di costruzione usando questa formula: <br /> <1>(Base - Fisso) / (1 + Bonus%)</1> <br /><br /> Le riduzioni fisse (Cabine equipaggio) sono applicate <4>prima</4> dei moltiplicatori percentuali, rendendole estremamente preziose per le costruzioni brevi ma meno influenti per i miglioramenti settimanali."
     },
-    "daily_checklist": {
-        "title": "Attività quotidiane",
-        "subtitle": "Tieni traccia dei tuoi obiettivi giornalieri. Tutto si reimposta alle 00:00 UTC.",
-        "progress_label": "Progresso",
-        "reset_in": "Reset tra {{time}}",
-        "reset_all": "Reimposta tutto",
-        "reset_confirm": "Sei sicuro di voler reimpostare tutte le tue attività quotidiane?",
-        "completed": "Tutte le attività completate!",
-        "group": {
-            "combat": "Combattimento",
-            "economy": "Commercio e Risorse",
-            "fleet": "Flotta",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Attacca il Santuario 170",
-            "shrine_120": "Attacca il Santuario 120",
-            "tribute_vessels": "Attacca 10 Vascelli del Tributo",
-            "sacred_tribute_vessels": "Attacca 10 Vascelli del Tributo Sacro",
-            "ark_of_deliverance": "Attacca l'Arca della Liberazione",
-            "send_legendary_cargo": "Invia carichi di qualità leggendaria",
-            "mine_legendary": "Estrai qualità leggendaria",
-            "plunder_legendary_mines": "Saccheggia miniere leggendarie",
-            "hack_legendary_cargo": "Hackera carichi leggendari",
-            "auto_join_fleets": "Imposta le flotte in modalità auto-unione",
-            "arena": "Attacca nell'arena"
-        }
-    },
     "header_ui": {
         "subtitle": "Enciclopedia Galattica",
         "login": "ACCEDI",

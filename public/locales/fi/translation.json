@@ -1218,34 +1218,6 @@
         "how_it_works": "Miten se toimii",
         "how_it_works_desc": "Peli laskee rakennusajat tällä kaavalla: <br /> <1>(Perus - Kiinteä) / (1 + Bonus%)</1> <br /><br /> Kiinteät vähennykset (Crew Cabinit) sovelletaan <4>ennen</4> prosenttikertoimia, mikä tekee niistä erittäin arvokkaita lyhyille rakennuksille mutta vähemmän vaikuttavia viikon mittaisille päivityksille."
     },
-    "daily_checklist": {
-        "title": "Päivittäiset tehtävät",
-        "subtitle": "Seuraa päivittäisiä tavoitteitasi. Kaikki nollautuu klo 00:00 UTC.",
-        "progress_label": "Edistyminen",
-        "reset_in": "Nollaus {{time}} kuluttua",
-        "reset_all": "Nollaa kaikki",
-        "reset_confirm": "Haluatko varmasti nollata kaikki päivittäiset tehtäväsi?",
-        "completed": "Kaikki tehtävät suoritettu!",
-        "group": {
-            "combat": "Taistelu",
-            "economy": "Kauppa ja resurssit",
-            "fleet": "Laivasto",
-            "arena": "Areena"
-        },
-        "task": {
-            "shrine_170": "Hyökkää Pyhäkköön 170",
-            "shrine_120": "Hyökkää Pyhäkköön 120",
-            "tribute_vessels": "Hyökkää 10 Veroalukseen",
-            "sacred_tribute_vessels": "Hyökkää 10 Pyhään Veroalukseen",
-            "ark_of_deliverance": "Hyökkää Pelastuksen Arkkiin",
-            "send_legendary_cargo": "Lähetä legendaarista rahtia",
-            "mine_legendary": "Louhi legendaarista laatua",
-            "plunder_legendary_mines": "Ryöstä legendaarisia kaivoksia",
-            "hack_legendary_cargo": "Hakkeroi legendaarista rahtia",
-            "auto_join_fleets": "Aseta laivastot automaattiliittymistilaan",
-            "arena": "Hyökkää areenalla"
-        }
-    },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",
         "login": "KIRJAUDU",

@@ -1216,34 +1216,6 @@
         "how_it_works": "How it works",
         "how_it_works_desc": "The game calculates build times using this formula: <br /> <1>(Base - Flat) / (1 + Bonus%)</1> <br /><br /> Flat reductions (Crew Cabins) are applied <4>before</4> percentage multipliers, making them extremely valuable for short builds but less impactful for week-long upgrades."
     },
-    "daily_checklist": {
-        "title": "Daily Tasks",
-        "subtitle": "Track your daily objectives. All progress resets at 00:00 UTC.",
-        "progress_label": "Progress",
-        "reset_in": "Resets in {{time}}",
-        "reset_all": "Reset all",
-        "reset_confirm": "Are you sure you want to reset all your daily tasks?",
-        "completed": "All tasks complete!",
-        "group": {
-            "combat": "Combat",
-            "economy": "Trade & Resources",
-            "fleet": "Fleet",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Attack Shrine 170",
-            "shrine_120": "Attack Shrine 120",
-            "tribute_vessels": "Attack Tribute Vessels 10",
-            "sacred_tribute_vessels": "Attack Sacred Tribute Vessels 10",
-            "ark_of_deliverance": "Attack the Ark of Deliverance",
-            "send_legendary_cargo": "Send legendary quality cargo",
-            "mine_legendary": "Mine legendary quality",
-            "plunder_legendary_mines": "Plunder legendary mines",
-            "hack_legendary_cargo": "Hack legendary cargo",
-            "auto_join_fleets": "Set fleets to auto-join mode",
-            "arena": "Attack in the arena"
-        }
-    },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",
         "login": "LOGIN",

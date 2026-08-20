@@ -1218,34 +1218,6 @@
         "how_it_works": "Nó hoạt động như thế nào",
         "how_it_works_desc": "Trò chơi tính toán thời gian xây dựng bằng công thức sau: <br /> <1>(Cơ sở - Căn hộ) / (1 + Phần thưởng%)</1> <br /><br /> Mức giảm cố định (Khoan Phi hành đoàn) được áp dụng <4>trước</4> hệ số phần trăm, khiến chúng cực kỳ có giá trị đối với các công trình xây dựng ngắn nhưng ít tác động hơn đối với các nâng cấp kéo dài một tuần."
     },
-    "daily_checklist": {
-        "title": "Nhiệm vụ hàng ngày",
-        "subtitle": "Theo dõi mục tiêu hàng ngày của bạn. Tất cả tiến trình được đặt lại vào lúc 00:00 UTC.",
-        "progress_label": "Tiến triển",
-        "reset_in": "Đặt lại sau{{time}}",
-        "reset_all": "Đặt lại tất cả",
-        "reset_confirm": "Bạn có chắc chắn muốn đặt lại tất cả công việc hàng ngày của mình không?",
-        "completed": "Mọi nhiệm vụ đều hoàn thành!",
-        "group": {
-            "combat": "chiến đấu",
-            "economy": "Thương mại & Tài nguyên",
-            "fleet": "Hạm Đội",
-            "arena": "đấu trường"
-        },
-        "task": {
-            "shrine_170": "Tấn công đền 170",
-            "shrine_120": "Tấn công đền 120",
-            "tribute_vessels": "Tấn công tàu cống nạp 10",
-            "sacred_tribute_vessels": "Tấn công các tàu Cống Nạp thiêng liêng 10",
-            "ark_of_deliverance": "Tấn công tàu giải thoát",
-            "send_legendary_cargo": "Gửi hàng hóa chất lượng huyền thoại",
-            "mine_legendary": "Chất lượng huyền thoại của tôi",
-            "plunder_legendary_mines": "Cướp bóc những mỏ huyền thoại",
-            "hack_legendary_cargo": "Hack hàng hóa huyền thoại",
-            "auto_join_fleets": "Đặt nhóm sang chế độ tự động tham gia",
-            "arena": "Tấn công vào đấu trường"
-        }
-    },
     "header_ui": {
         "subtitle": "Bách Khoa Toàn Thư Thiên Hà",
         "login": "ĐĂNG NHẬP",

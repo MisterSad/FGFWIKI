@@ -1218,34 +1218,6 @@
         "how_it_works": "Wie es funktioniert",
         "how_it_works_desc": "Das Spiel berechnet Bauzeiten mit dieser Formel: <br /> <1>(Grund - Pauschal) / (1 + Bonus%)</1> <br /><br /> Pauschale Reduktionen (Crew-Kabinen) werden <4>vor</4> prozentualen Multiplikatoren angewendet, was sie für kurze Builds extrem wertvoll macht, aber für wochenlange Upgrades weniger wirkungsvoll."
     },
-    "daily_checklist": {
-        "title": "Tägliche Aufgaben",
-        "subtitle": "Verfolge deine täglichen Ziele. Alles wird um 00:00 UTC zurückgesetzt.",
-        "progress_label": "Fortschritt",
-        "reset_in": "Reset in {{time}}",
-        "reset_all": "Alle zurücksetzen",
-        "reset_confirm": "Bist du sicher, dass du alle deine täglichen Aufgaben zurücksetzen möchtest?",
-        "completed": "Alle Aufgaben abgeschlossen!",
-        "group": {
-            "combat": "Kampf",
-            "economy": "Handel & Ressourcen",
-            "fleet": "Flotte",
-            "arena": "Arena"
-        },
-        "task": {
-            "shrine_170": "Schrein 170 angreifen",
-            "shrine_120": "Schrein 120 angreifen",
-            "tribute_vessels": "10 Tributschiffe angreifen",
-            "sacred_tribute_vessels": "10 Heilige Tributschiffe angreifen",
-            "ark_of_deliverance": "Die Arche der Erlösung angreifen",
-            "send_legendary_cargo": "Legendäre Fracht versenden",
-            "mine_legendary": "Legendäre Qualität abbauen",
-            "plunder_legendary_mines": "Legendäre Minen plündern",
-            "hack_legendary_cargo": "Legendäre Fracht hacken",
-            "auto_join_fleets": "Flotten in Auto-Beitritt-Modus stellen",
-            "arena": "In der Arena angreifen"
-        }
-    },
     "header_ui": {
         "subtitle": "Encyclopedia Galactica",
         "login": "ANMELDEN",
