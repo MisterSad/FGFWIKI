@@ -1934,6 +1934,7 @@
         "sec4_cm": "Ai nostri Community Manager: grazie per averci provato.",
         "sec4_studio": "Alla dirigenza dello studio: i giocatori ricordano chi costruisce gli strumenti e chi nasconde i numeri.",
         "sec4_thanks": "Grazie a tutta la community per il vostro incrollabile supporto.",
-        "acknowledge_btn": "Continua su FGF WIKI"
+        "acknowledge_btn": "Continua su FGF WIKI",
+        "export_pdf_btn": "Esporta PDF ufficiale (A4)"
     }
 }

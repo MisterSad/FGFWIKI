@@ -1932,6 +1932,7 @@
         "sec4_cm": "À nos Community Managers : merci pour vos efforts.",
         "sec4_studio": "À la direction du studio : les joueurs se souviennent de ceux qui créent les outils, et de ceux qui confisquent les chiffres.",
         "sec4_thanks": "Merci à chacun d'entre vous dans la communauté pour votre soutien indéfectible.",
-        "acknowledge_btn": "Continuer vers FGF WIKI"
+        "acknowledge_btn": "Continuer vers FGF WIKI",
+        "export_pdf_btn": "Exporter le PDF officiel (A4)"
     }
 }

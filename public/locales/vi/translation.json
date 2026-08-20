@@ -1934,6 +1934,7 @@
         "sec4_cm": "Gửi các Quản lý cộng đồng: cảm ơn các bạn vì đã luôn cố gắng.",
         "sec4_studio": "Gửi ban lãnh đạo studio: người chơi luôn nhớ ai là người tạo ra công cụ và ai là người che giấu con số.",
         "sec4_thanks": "Cảm ơn toàn thể cộng đồng đã luôn ủng hộ không ngừng.",
-        "acknowledge_btn": "Tiếp tục vào FGF WIKI"
+        "acknowledge_btn": "Tiếp tục vào FGF WIKI",
+        "export_pdf_btn": "Xuất bản PDF chính thức (A4)"
     }
 }

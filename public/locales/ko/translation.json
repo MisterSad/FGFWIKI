@@ -1934,6 +1934,7 @@
         "sec4_cm": "커뮤니티 매니저분들께: 노력해 주셔서 감사했습니다.",
         "sec4_studio": "스튜디오 리더십에게: 유저들은 툴을 만드는 자와 데이터를 숨긴 자를 기억할 것입니다.",
         "sec4_thanks": "변함없는 지지를 보내주시는 커뮤니티 모든 분께 진심으로 감사드립니다.",
-        "acknowledge_btn": "FGF WIKI로 이동"
+        "acknowledge_btn": "FGF WIKI로 이동",
+        "export_pdf_btn": "공식 PDF 내보내기 (A4)"
     }
 }

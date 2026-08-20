@@ -1934,6 +1934,7 @@
         "sec4_cm": "Yhteisöpäälliköillemme: kiitos kaikista yrityksistänne.",
         "sec4_studio": "Studion johdolle: pelaajat muistavat aina, kuka rakentaa työkalut ja kuka pimittää numerot.",
         "sec4_thanks": "Kiitos koko yhteisölle horjumattomasta tuestanne.",
-        "acknowledge_btn": "Jatka FGF WIKIin"
+        "acknowledge_btn": "Jatka FGF WIKIin",
+        "export_pdf_btn": "Vie virallinen PDF (A4)"
     }
 }

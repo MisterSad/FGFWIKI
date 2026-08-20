@@ -1,10 +1,25 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { X, ShieldAlert, Heart, Terminal, FileText, CheckCircle2, ArrowRight } from 'lucide-react';
+import { X, ShieldAlert, Heart, Terminal, FileText, CheckCircle2, ArrowRight, FileDown, Loader2 } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
 
 export default function AnnouncementModal({ isOpen, onClose }) {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const { currentUser } = useAuth();
+    const [isExporting, setIsExporting] = useState(false);
     const closeBtnRef = useRef(null);
+
+    const isAdmin = useMemo(() => {
+        if (!currentUser) return false;
+        const email = (currentUser.email || '').trim().toLowerCase();
+        const adminList = [
+            'fgfwiki@gmail.com',
+            'fgfwiki@google.com',
+            'fgfwiwi@gmail.com',
+            'vieira.andre@proton.me'
+        ];
+        return adminList.includes(email);
+    }, [currentUser]);
 
     useEffect(() => {
         if (!isOpen) return;
@@ -320,10 +335,58 @@ export default function AnnouncementModal({ isOpen, onClose }) {
                     borderTop: '1px solid rgba(212, 175, 55, 0.2)',
                     background: 'rgba(6, 7, 12, 0.8)',
                     display: 'flex',
-                    justifyContent: 'flex-end',
+                    justifyContent: 'space-between',
                     alignItems: 'center',
-                    gap: '1rem'
+                    gap: '1rem',
+                    flexWrap: 'wrap'
                 }}>
+                    {isAdmin ? (
+                        <button
+                            onClick={async () => {
+                                if (isExporting) return;
+                                setIsExporting(true);
+                                try {
+                                    const { exportAnnouncementToPDF } = await import('../../lib/announcementPdf');
+                                    exportAnnouncementToPDF(t, i18n.language || 'en');
+                                } catch (err) {
+                                    console.error('Failed to export announcement PDF:', err);
+                                } finally {
+                                    setIsExporting(false);
+                                }
+                            }}
+                            disabled={isExporting}
+                            style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '0.5rem',
+                                background: 'rgba(212, 175, 55, 0.12)',
+                                border: '1px solid rgba(212, 175, 55, 0.4)',
+                                color: 'var(--gold-bright)',
+                                borderRadius: '4px',
+                                padding: '0.65rem 1.1rem',
+                                fontFamily: 'var(--font-label)',
+                                fontSize: '0.82rem',
+                                fontWeight: 'bold',
+                                cursor: isExporting ? 'wait' : 'pointer',
+                                opacity: isExporting ? 0.7 : 1,
+                                transition: 'all 0.2s ease'
+                            }}
+                            onMouseEnter={(e) => {
+                                if (!isExporting) {
+                                    e.currentTarget.style.background = 'rgba(212, 175, 55, 0.25)';
+                                    e.currentTarget.style.borderColor = 'var(--gold)';
+                                }
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.background = 'rgba(212, 175, 55, 0.12)';
+                                e.currentTarget.style.borderColor = 'rgba(212, 175, 55, 0.4)';
+                            }}
+                        >
+                            {isExporting ? <Loader2 size={16} className="animate-spin" /> : <FileDown size={16} />}
+                            <span>{t('announcement_modal.export_pdf_btn', 'Export official PDF (A4)')}</span>
+                        </button>
+                    ) : <div />}
+
                     <button
                         onClick={onClose}
                         style={{

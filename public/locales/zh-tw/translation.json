@@ -1934,6 +1934,7 @@
         "sec4_cm": "致社群經理們：感謝你們的努力嘗試。",
         "sec4_studio": "致工作室領導層：玩家會永遠記得是誰在打造工具，又是誰在扣留數據。",
         "sec4_thanks": "感謝社群中每一位玩家始終如一的堅定支持。",
-        "acknowledge_btn": "前往 FGF WIKI"
+        "acknowledge_btn": "前往 FGF WIKI",
+        "export_pdf_btn": "匯出官方 PDF (A4)"
     }
 }

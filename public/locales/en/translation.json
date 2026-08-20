@@ -1932,6 +1932,7 @@
         "sec4_cm": "To our Community Managers: thank you for trying.",
         "sec4_studio": "To the studio leadership: players remember who builds the tools, and who withholds the numbers.",
         "sec4_thanks": "Thank you to everyone in the community for your unwavering support.",
-        "acknowledge_btn": "Continue to FGF WIKI"
+        "acknowledge_btn": "Continue to FGF WIKI",
+        "export_pdf_btn": "Export official PDF (A4)"
     }
 }

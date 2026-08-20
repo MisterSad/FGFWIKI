@@ -1934,6 +1934,7 @@
         "sec4_cm": "Till våra Community Managers: tack för att ni försökte.",
         "sec4_studio": "Till studioledningen: spelare minns vem som bygger verktygen och vem som döljer siffrorna.",
         "sec4_thanks": "Tack till alla i gemenskapen för ert orubbliga stöd.",
-        "acknowledge_btn": "Fortsätt till FGF WIKI"
+        "acknowledge_btn": "Fortsätt till FGF WIKI",
+        "export_pdf_btn": "Exportera officiell PDF (A4)"
     }
 }

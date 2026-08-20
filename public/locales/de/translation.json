@@ -1934,6 +1934,7 @@
         "sec4_cm": "An unsere Community-Manager: Danke für euren Einsatz.",
         "sec4_studio": "An die Studioleitung: Spieler erinnern sich daran, wer die Werkzeuge baut und wer die Daten vorenthält.",
         "sec4_thanks": "Vielen Dank an alle in der Community für eure unerschütterliche Unterstützung.",
-        "acknowledge_btn": "Weiter zu FGF WIKI"
+        "acknowledge_btn": "Weiter zu FGF WIKI",
+        "export_pdf_btn": "Offizielles PDF exportieren (A4)"
     }
 }

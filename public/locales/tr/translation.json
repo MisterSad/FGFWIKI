@@ -1934,6 +1934,7 @@
         "sec4_cm": "Topluluk Yöneticilerimize: çabalarınız için teşekkür ederiz.",
         "sec4_studio": "Stüdyo yönetimine: oyuncular araçları kimin geliştirdiğini ve verileri kimin sakladığını asla unutmaz.",
         "sec4_thanks": "Sarsılmaz desteğiniz için tüm topluluğa teşekkür ederim.",
-        "acknowledge_btn": "FGF WIKI'ye Devam Et"
+        "acknowledge_btn": "FGF WIKI'ye Devam Et",
+        "export_pdf_btn": "Resmi PDF'i dışa aktar (A4)"
     }
 }
