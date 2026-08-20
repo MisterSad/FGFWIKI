@@ -32,7 +32,12 @@ class ErrorBoundary extends React.Component {
               A new update was just released. Please refresh your browser to load the latest features and optimizations.
             </p>
             <button 
-              onClick={() => { window.location.reload(); }}
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.sessionStorage) {
+                  window.sessionStorage.removeItem('fgf_page_reloaded_for_chunk');
+                }
+                window.location.reload();
+              }}
               style={{ background: 'var(--gold, #C9A84C)', color: '#000', border: 'none', padding: '0.8rem 2rem', cursor: 'pointer', fontWeight: 'bold', borderRadius: '8px', textTransform: 'uppercase', fontFamily: 'var(--font-label, sans-serif)', letterSpacing: '1px', boxShadow: '0 0 20px rgba(201, 168, 76, 0.4)' }}
             >
               🔄 Refresh Now

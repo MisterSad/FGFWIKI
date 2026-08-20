@@ -5,6 +5,7 @@ import { AuthProvider } from './context/AuthContext';
 import { getLanguageFromPath } from './i18n';
 import Layout from './components/layout/Layout';
 import Hero from './components/pages/Hero';
+import Terms from './components/pages/Terms';
 import LoginModal from './components/modals/LoginModal';
 import SearchModal from './components/modals/SearchModal';
 import ProfileSetupModal from './components/modals/ProfileSetupModal';
@@ -18,20 +19,20 @@ const BASENAME = LANG_PREFIX ? `/${LANG_PREFIX}` : undefined;
 // Resilient lazy import that automatically refreshes the page if a new build invalidated chunks
 function lazyWithRetry(componentImport) {
   return lazy(async () => {
-    const pageHasBeenForceRefreshed = JSON.parse(
-      window.sessionStorage.getItem('fgf_page_reloaded_for_chunk') || 'false'
-    );
-
     try {
       const component = await componentImport();
       window.sessionStorage.setItem('fgf_page_reloaded_for_chunk', 'false');
       return component;
     } catch (error) {
+      const pageHasBeenForceRefreshed = JSON.parse(
+        window.sessionStorage.getItem('fgf_page_reloaded_for_chunk') || 'false'
+      );
       if (!pageHasBeenForceRefreshed) {
         window.sessionStorage.setItem('fgf_page_reloaded_for_chunk', 'true');
         window.location.reload();
         return { default: () => null };
       }
+      window.sessionStorage.removeItem('fgf_page_reloaded_for_chunk');
       throw error;
     }
   });
@@ -47,7 +48,6 @@ const GiftCodes = lazyWithRetry(() => import('./components/pages/GiftCodes'));
 const CreatorsCorner = lazyWithRetry(() => import('./components/pages/CreatorsCorner'));
 const GuildTool = lazyWithRetry(() => import('./components/pages/GuildTool'));
 const GameEvolutions = lazyWithRetry(() => import('./components/pages/GameEvolutions'));
-const Terms = lazyWithRetry(() => import('./components/pages/Terms'));
 const NotFound = lazyWithRetry(() => import('./components/pages/NotFound'));
 
 function App() {
