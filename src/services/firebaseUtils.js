@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, updateDoc, collection, addDoc, runTransaction, query, orderBy, where, deleteDoc, onSnapshot, serverTimestamp, getDocs, limit, arrayUnion, arrayRemove, increment } from "firebase/firestore";
+import { doc, getDoc, setDoc, updateDoc, collection, addDoc, runTransaction, query, orderBy, where, deleteDoc, onSnapshot, serverTimestamp, getDocs, arrayUnion, arrayRemove, increment } from "firebase/firestore";
 import { db } from "./firebase";
 
 /**
@@ -51,97 +51,6 @@ export const loadUserToolData = async (uid, toolId) => {
     } catch (error) {
         console.error("Error loading tool data: ", error);
         return null;
-    }
-};
-
-/**
- * Submit game UID for the Stella Anomaly event and return the user's rank.
- * 
- * @param {string} gameUid In-game User ID
- * @param {string} secretCode Secret event passkey code
- * @param {string|null} firebaseUid Logged in user's ID
- * @param {string} lang Current language code
- * @returns {Promise<number>} User's rank (1 for 1st place, 2 for 2nd, etc.)
- */
-export const submitStellaAnomalyUid = async (gameUid, secretCode, firebaseUid = null, lang = 'en') => {
-    if (!db) {
-        // Fallback for local testing: increment a counter in localStorage
-        const mockCount = parseInt(localStorage.getItem('stella_anomaly_mock_count') || '0', 10) + 1;
-        localStorage.setItem('stella_anomaly_mock_count', mockCount.toString());
-        return mockCount;
-    }
-    
-    try {
-        const submittedAt = new Date().toISOString();
-        const colRef = collection(db, "stella_anomaly_submissions");
-        const counterRef = doc(db, "stella_anomaly_meta", "counter");
-
-        // Atomically allocate a rank and persist the submission.
-        // The transaction guarantees that two simultaneous submissions
-        // never receive the same rank (no client-side race condition).
-        const rank = await runTransaction(db, async (tx) => {
-            const counterSnap = await tx.get(counterRef);
-            const nextCount = (counterSnap.exists() ? counterSnap.data().count : 0) + 1;
-            await tx.set(counterRef, { count: nextCount });
-            return nextCount;
-        });
-
-        await addDoc(colRef, {
-            gameUid,
-            secretCode,
-            firebaseUid,
-            lang,
-            submittedAt,
-            rank
-        });
-
-        return rank;
-    } catch (error) {
-        console.error("Error submitting Stella Anomaly UID and getting rank: ", error);
-        throw error;
-    }
-};
-
-/**
- * Fetch top submissions for the Stella Anomaly event leaderboard.
- * 
- * @param {number} maxEntries Maximum number of submissions to fetch (default 20)
- * @returns {Promise<Array<{id: string, rank: number, gameUid: string, submittedAt: string}>>}
- */
-export const getStellaAnomalyLeaderboard = async (maxEntries = 20) => {
-    if (!db) {
-        // Fallback for mock/local data
-        const localUid = localStorage.getItem('stella_anomaly_submitted_uid');
-        const localRank = localStorage.getItem('stella_anomaly_submitted_rank');
-        if (localUid && localRank) {
-            return [{
-                id: 'local-submission',
-                rank: parseInt(localRank, 10),
-                gameUid: localUid,
-                submittedAt: new Date().toISOString()
-            }];
-        }
-        return [];
-    }
-
-    try {
-        const colRef = collection(db, "stella_anomaly_submissions");
-        const q = query(colRef, orderBy("rank", "asc"), limit(maxEntries));
-        const querySnapshot = await getDocs(q);
-        const list = [];
-        querySnapshot.forEach((docSnap) => {
-            const data = docSnap.data();
-            list.push({
-                id: docSnap.id,
-                rank: data.rank,
-                gameUid: data.gameUid,
-                submittedAt: data.submittedAt
-            });
-        });
-        return list;
-    } catch (error) {
-        console.error("Error fetching Stella Anomaly leaderboard: ", error);
-        return [];
     }
 };
 

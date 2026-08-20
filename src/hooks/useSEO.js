@@ -19,7 +19,6 @@ const ROUTE_KEYS = {
     '/tools': 'tools',
     '/gift-codes': 'gift_codes',
     '/creators': 'creators',
-    '/stella-anomaly': 'stella_anomaly',
     '/guild-tool': 'guild_tool',
     '/evolutions': 'game_evolutions',
     '/game-evolutions': 'game_evolutions',
@@ -263,10 +262,6 @@ export default function useSEO() {
             pageTitle = t('guild_tool.hero_title', { defaultValue: 'AI Guild Management ERP & Roster OCR' }).replace('\n', ' - ');
             description = t('guild_tool.hero_subtitle', { defaultValue: 'Next-gen ERP for Foundation: Galactic Frontier alliances. 16 AI Vision OCR scanners, 7D military matrix, 24/7 timezone coverage and player portal.' });
             breadcrumbs.push({ name: t('navigation.guild_tool', { defaultValue: 'Guild ERP Tool' }), url: canonicalUrl });
-        } else if (location.pathname === '/stella-anomaly') {
-            pageTitle = t('seo.stella_anomaly.title', { defaultValue: 'Stella Anomaly Puzzle Terminal' });
-            description = t('seo.stella_anomaly.description', { defaultValue: 'Interactive anomaly decoder, cipher terminal and secret ARG lore database for Foundation: Galactic Frontier.' });
-            breadcrumbs.push({ name: t('navigation.stella_anomaly', { defaultValue: 'Stella Anomaly' }), url: canonicalUrl });
         } else if (location.pathname === '/creators' || creatorMatch) {
             pageTitle = t('seo.creators.title', { defaultValue: 'Creators Corner' });
             description = t('seo.creators.description', { defaultValue: 'Official creator partnerships, YouTube guides and video strategies by Mirandus Plays for Foundation: Galactic Frontier.' });

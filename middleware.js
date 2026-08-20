@@ -14,7 +14,6 @@ const SPA_ROUTES = [
     '/events',
     '/tools',
     '/gift-codes',
-    '/stella-anomaly',
     '/creators',
     '/guild-tool',
     '/evolutions',

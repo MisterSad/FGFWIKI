@@ -29,7 +29,7 @@ describe('SEO & GEO Verification Suite (2026 World-Class Standards)', () => {
         const enKeys = Object.keys(getFlatKeys(enData));
 
         expect(langs.length).toBeGreaterThanOrEqual(23);
-        expect(enKeys.length).toBeGreaterThanOrEqual(1790);
+        expect(enKeys.length).toBeGreaterThanOrEqual(1770);
 
         langs.forEach(lang => {
             const file = path.join(localesDir, lang, 'translation.json');

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Sparkles, Video, Crown, Flame } from 'lucide-react';
+import { Home, BookOpen, Rocket, Calendar, Trophy, Hammer, Gift, Menu, X, MoreHorizontal, Newspaper, Video, Crown, Flame } from 'lucide-react';
 
 // Map route paths to icons and translation labels in logical order
 const NAV_ITEMS = [
@@ -16,7 +16,6 @@ const NAV_ITEMS = [
     { path: '/gift-codes', labelKey: 'navigation.gift_codes', icon: Gift },
     { path: '/evolutions', labelKey: 'navigation.game_evolutions', icon: Flame },
     { path: '/creators', labelKey: 'navigation.creators', icon: Video },
-    { path: '/stella-anomaly', labelKey: 'navigation.stella_anomaly', icon: Sparkles, badge: 'EVENT' },
 ];
 
 export default function Tabs() {
@@ -24,20 +23,13 @@ export default function Tabs() {
     const location = useLocation();
     const [isMoreOpen, setIsMoreOpen] = useState(false);
 
-    // Event visibility checker (starts July 1st, 2026, ends August 31st, 2026)
-    const now = new Date();
-    const eventStartDate = new Date('2026-07-01T00:00:00Z');
-    const eventEndDate = new Date('2026-08-31T23:59:59Z');
-    const isEventActive = now >= eventStartDate && now <= eventEndDate;
-    const isEventVisible = isEventActive || location.search.includes('debugPhase') || location.pathname.startsWith('/stella-anomaly');
-
     // Active state checkers for mobile bottom nav
     const isHomeActive = location.pathname.startsWith('/home') || location.pathname === '/';
     const isNewsActive = location.pathname.startsWith('/news');
     const isGuidesActive = location.pathname.startsWith('/guides');
     const isChampionsActive = location.pathname.startsWith('/champions');
     
-    const morePaths = ['/guild-tool', '/evolutions', '/tools', '/flagships', '/events', '/gift-codes', '/stella-anomaly', '/creators'];
+    const morePaths = ['/guild-tool', '/evolutions', '/tools', '/flagships', '/events', '/gift-codes', '/creators'];
     const isMoreActive = morePaths.some(p => location.pathname.startsWith(p));
 
     return (
@@ -47,7 +39,6 @@ export default function Tabs() {
                 <div className="tabs-container">
                     <div className="tabs-scroll-area">
                         {NAV_ITEMS
-                            .filter(item => item.path !== '/stella-anomaly' || isEventVisible)
                             .map(item => {
                                 const IconComponent = item.icon;
                             return (
@@ -224,33 +215,6 @@ export default function Tabs() {
                                     <Video className="mobile-more-card__icon" size={24} />
                                     <span className="mobile-more-card__label">{t('navigation.creators')}</span>
                                 </NavLink>
-
-                                {/* Stella Anomaly */}
-                                {isEventVisible && (
-                                    <NavLink
-                                        to="/stella-anomaly"
-                                        className={() => `mobile-more-card ${location.pathname.startsWith('/stella-anomaly') ? 'active' : ''}`}
-                                        onClick={() => setIsMoreOpen(false)}
-                                        style={{ position: 'relative' }}
-                                    >
-                                        <Sparkles className="mobile-more-card__icon" size={24} style={{ color: 'var(--accent-teal)' }} />
-                                        <span className="mobile-more-card__label">{t('navigation.stella_anomaly')}</span>
-                                        <span style={{
-                                            position: 'absolute',
-                                            top: '6px',
-                                            right: '6px',
-                                            background: 'var(--accent-teal)',
-                                            color: 'var(--bg-void)',
-                                            fontSize: '8px',
-                                            fontWeight: 'bold',
-                                            padding: '1px 4px',
-                                            borderRadius: '2px',
-                                            boxShadow: '0 0 6px rgba(78, 205, 196, 0.4)'
-                                        }}>
-                                            EVENT
-                                        </span>
-                                    </NavLink>
-                                )}
                             </div>
                         </div>
                     </>

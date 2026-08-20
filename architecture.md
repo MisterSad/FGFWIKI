@@ -92,7 +92,6 @@ FGF WIKI/
 │   │   │   ├── HeroTierList.jsx     # Tier list des champions & compositions au sol
 │   │   │   ├── FlagshipGuide.jsx    # Guide des vaisseaux amiraux & decks méta
 │   │   │   ├── EventGuide.jsx       # Calendrier et guides des événements
-│   │   │   ├── StellaAnomaly.jsx    # Événement interactif de décryptage & podium
 │   │   │   ├── CreatorsCorner.jsx   # Espace créateurs de contenu & vidéos
 │   │   │   ├── GiftCodes.jsx        # Codes cadeaux actifs & archivés
 │   │   │   ├── GuildTool.jsx        # Outil de gestion de guilde
@@ -181,8 +180,6 @@ Cloud Firestore est utilisé en mode temps réel (avec listeners `onSnapshot`).
 | `/comments/{commentId}` | Commentaires sur les guides et actualités | Utilisateur authentifié (`authorUid == auth.uid`) ; suppression par l'auteur |
 | `/evolutions/{evolutionId}` | Suggestions communautaires de fonctionnalités | Création : Authentifié ; Update : Votes seuls (ou Admin) ; Suppression : Auteur ou Admin |
 | `/evolution_comments/{commentId}` | Commentaires sur les propositions d'évolution | Création : Authentifié ; Suppression : Auteur ou Admin |
-| `/stella_anomaly_submissions/{id}` | Soumissions du code secret de l'événement | Authentifié (avec vérification de code) |
-| `/stella_anomaly_leaderboard/{id}` | Podium public de l'événement | Écriture serveur / Admin uniquement |
 
 ---
 

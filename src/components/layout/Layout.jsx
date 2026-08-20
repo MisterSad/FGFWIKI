@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { ArrowUp } from 'lucide-react';
@@ -7,73 +7,11 @@ import Tabs from './Tabs';
 import AmbientSignal from '../common/AmbientSignal';
 import useSEO from '../../hooks/useSEO';
 
-const CODES = [
-    "STELLA_ANOMALY_CORE_ERR",
-    "01001100 01001111 01010110 01000101",
-    "DECRYPT_STATUS: FAIL",
-    "MEM_SECTOR_CORRUPTED: 0x4f3e",
-    "ORUN_SYSTEM_LEVEL_12",
-    "RE-ALIGNING_ENERGY_NODES...",
-    "KINETIC_BEAM_ION_REPAIR",
-    "PASSCODE: I LOVE FGF WIKI",
-    "GTC_PLATINUM_REWARDS_PENDING",
-    "SYS_RESET_CONFIRM_0",
-    "WARN: MEMORY_MATRIX_OFFLINE",
-    "TRIVIA_LORE_RECONSTRUCT",
-    "MORSE_SIGNAL: ... - . .-.. .-.. .-",
-    "SYS_STATUS: CORRUPTED_ANOMALY",
-    "CONNECTING_TO_FGF_DATABASE..."
-];
-
 export default function Layout({ children, onLoginClick, onSearchClick, onProfileClick }) {
     const location = useLocation();
     const { t, i18n } = useTranslation();
     const [showScrollTop, setShowScrollTop] = useState(false);
     useSEO();
-
-    // Event calendar check: Teaser glitches start June 22nd, 2026; event runs to August 31st, 2026
-    const now = new Date();
-    const eventStartDate = new Date('2026-06-22T00:00:00Z');
-    const eventEndDate = new Date('2026-08-31T23:59:59Z');
-    const isEventActive = now >= eventStartDate && now <= eventEndDate;
-    // Glitch is active if event is active, or if we have a debug phase param, or if we are on the stella anomaly page
-    const isGlitchActive = isEventActive || location.search.includes('debugPhase') || location.pathname.startsWith('/stella-anomaly');
-
-    // Helper to count completed phases (0 to 4)
-    const getCompletedCount = useCallback(() => {
-        // Check URL debugParam first for easy testing of glitch levels
-        const params = new URLSearchParams(location.search);
-        const debugPhaseParam = params.get('debugPhase');
-        if (debugPhaseParam) {
-            const dp = parseInt(debugPhaseParam, 10);
-            if (dp >= 1 && dp <= 4) {
-                return dp - 1; // debugPhase=1 -> 0 completed, debugPhase=4 -> 3 completed
-            }
-        }
-        try {
-            const saved = localStorage.getItem('stella_anomaly_completed');
-            if (!saved) return 0;
-            const parsed = JSON.parse(saved);
-            return Object.values(parsed).filter(Boolean).length;
-        } catch {
-            return 0;
-        }
-    }, [location.search]);
-
-    const [completedCount, setCompletedCount] = useState(getCompletedCount());
-
-    useEffect(() => {
-        const handleUpdate = () => {
-            setCompletedCount(getCompletedCount());
-        };
-        // Listen to custom updates from StellaAnomaly terminal
-        window.addEventListener('stella-progress-update', handleUpdate);
-        // Sync on route / search query updates
-        handleUpdate();
-        return () => {
-            window.removeEventListener('stella-progress-update', handleUpdate);
-        };
-    }, [location.pathname, location.search, getCompletedCount]);
 
     useEffect(() => {
         const toggleVisibility = () => {
@@ -137,35 +75,10 @@ export default function Layout({ children, onLoginClick, onSearchClick, onProfil
         window.scrollTo({ top: 0, behavior: 'instant' });
     }, [location.pathname]);
 
-    const glitchIntensityClass = isGlitchActive
-        ? `glitch-intensity-${['high', 'medium', 'low', 'subtle', 'none'][Math.min(completedCount, 4)]}`
-        : 'glitch-intensity-none';
-
-    // Helper to render background scrolling code columns
-    const renderCodeColumn = (directionClass) => {
-        const doubleCodes = [...CODES, ...CODES]; // double list for seamless loop
-        return (
-            <div className={`anomaly-code-column ${directionClass}`} aria-hidden="true">
-                <div className="code-column-inner">
-                    {doubleCodes.map((code, idx) => (
-                        <div key={idx} className="code-line">{code}</div>
-                    ))}
-                </div>
-            </div>
-        );
-    };
-
     const isHomePage = location.pathname === '/home' || location.pathname === '/';
 
     return (
-        <div className={`app-layout ${glitchIntensityClass} ${isHomePage ? 'is-home-page' : ''}`}>
-            {isGlitchActive && completedCount < 4 && (
-                <>
-                    <div className="anomaly-scanlines" aria-hidden="true" />
-                    {renderCodeColumn('column-left')}
-                    {renderCodeColumn('column-right')}
-                </>
-            )}
+        <div className={`app-layout ${isHomePage ? 'is-home-page' : ''}`}>
             <Header onLoginClick={onLoginClick} onSearchClick={onSearchClick} onProfileClick={onProfileClick} />
 
             <div className="sticky-tabs-wrapper">

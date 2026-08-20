@@ -10,7 +10,7 @@
 - **Setting**: Isaac Asimov-inspired futuristic galaxy (Galactic Empire, Trantor, Terminus, Siwenna)
 - **Platforms**: iOS, Android, PC (Official Web Client & Direct Launcher)
 - **Official Creator Partner**: Mirandus Plays (@mirandusplaysmobile)
-- **Key Systems**: Headquarters (HQ) Progression, Nexus Energy Tech Tree, Flagship Customization, 5-Hero Ground Squads, Guild ERP System, Cross-Server Warfare (SvS), Stella Anomaly Decoding.
+- **Key Systems**: Headquarters (HQ) Progression, Nexus Energy Tech Tree, Flagship Customization, 5-Hero Ground Squads, Guild ERP System, Cross-Server Warfare (SvS).
 
 ---
 

@@ -3,32 +3,29 @@
 
 ---
 
-## 📢 [UPDATE] August 20, 2026 — Clean Hero Redesign & UI Streamlining!
+## 📢 [UPDATE] August 20, 2026 — UI Optimization & Seasonal Clean-Up!
 
 Hey Commanders! 👋
 
-We just pushed a sleek visual polish update to **FGF WIKI**!
+We just pushed a performance and UI maintenance update to **FGF WIKI**!
 
-Here is what is new:
+Here is what was refreshed:
 
 ---
 
-### ✨ 1. Streamlined Home Header
-- We streamlined the main landing page hero section, removing clutter for an even cleaner, high-impact aesthetic focused directly on game guides, tier lists, and strategic tools.
-- Faster visual scanning and improved focus on core navigation for both desktop and mobile devices.
+### 🧹 1. Seasonal Event Wrap-Up & Clean Navigation
+- The temporary **Stella Anomaly** event terminal and background glitch effects have concluded and been cleanly removed from the navigation bar.
+- Enjoy faster page load times, lighter bundles, and a crisper visual experience across all 23 supported languages.
 
 ### ⚡ 2. Universal Spotlight Search (`⌘K` / `Ctrl+K`)
-- Don't forget: press **`Cmd + K`** (Mac) or **`Ctrl + K`** (Windows/Mobile) anywhere on the site to find any hero, fleet comp, gift code, or calculator instantly across 23 languages!
+- Don't forget: hit **`Cmd + K`** (Mac) or **`Ctrl + K`** (Windows/Mobile) anywhere on the wiki to jump instantly to any Hero, Flagship deck, Guild ERP tool, or active Gift Code!
 
-### 🎖️ 3. Commander Profile & Community Hub
-- Link your **In-Game Nickname** & **Server Number** right from the top bar to share ideas and vote on game evolution proposals!
+### 🎖️ 3. Game Evolutions & Community Feedback
+- Make sure to check out our **Game Evolutions** tab to submit your ideas, report balance tweaks, and upvote high-priority community feature requests!
 
 ---
 
-### 🔮 Coming Next in S2 2026:
-- 🛠️ **Visual Fleet & Squad Synergy Builder** with live +15% synergy calculation and exportable Discord cards!
-- ⚔️ **Combat Sandbox & Fleet Clash Simulator**
+👉 **Explore the wiki:** https://fgfwiki.com
+💬 *Got feedback or want to discuss fleet strategies? Drop your thoughts right here in the channel!*
 
-👉 **Explore the clean interface:** https://fgfwiki.com
-💬 *As always, share your feedback with us in the Discord channels!*
 

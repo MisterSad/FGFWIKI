@@ -33,7 +33,7 @@ Our goal is simple: **make the game's deepest systems approachable for every pla
 
 **Community-driven**
 - Community comments on news, guides and events (Google sign-in)
-- Stella Anomaly event submissions with fair, time-based ranking
+- Game evolutions & feature voting roadmap
 - Mirandus video feed, refreshed automatically
 
 **Global by design**

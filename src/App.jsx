@@ -43,7 +43,6 @@ const HeroTierList = lazyWithRetry(() => import('./components/pages/HeroTierList
 const EventGuide = lazyWithRetry(() => import('./components/pages/EventGuide'));
 const Builder = lazyWithRetry(() => import('./components/pages/Builder'));
 const GiftCodes = lazyWithRetry(() => import('./components/pages/GiftCodes'));
-const StellaAnomaly = lazyWithRetry(() => import('./components/pages/StellaAnomaly'));
 const CreatorsCorner = lazyWithRetry(() => import('./components/pages/CreatorsCorner'));
 const GuildTool = lazyWithRetry(() => import('./components/pages/GuildTool'));
 const GameEvolutions = lazyWithRetry(() => import('./components/pages/GameEvolutions'));
@@ -99,7 +98,6 @@ function App() {
                 <Route path="/events/:eventId" element={<EventGuide />} />
                 <Route path="/tools" element={<Builder />} />
                 <Route path="/gift-codes" element={<GiftCodes />} />
-                <Route path="/stella-anomaly" element={<StellaAnomaly />} />
                 <Route path="/creators" element={<CreatorsCorner />} />
                 <Route path="/creators/:creatorId" element={<CreatorsCorner />} />
                 <Route path="/guild-tool" element={<GuildTool />} />

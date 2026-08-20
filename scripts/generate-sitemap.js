@@ -51,7 +51,6 @@ const staticRoutes = [
   { path: '/events', changefreq: 'weekly', priority: '1.0', images: ['/images/5.webp'] },
   { path: '/tools', changefreq: 'monthly', priority: '0.8', images: ['/og-image.png'] },
   { path: '/gift-codes', changefreq: 'daily', priority: '0.9', images: ['/og-image.png'] },
-  { path: '/stella-anomaly', changefreq: 'weekly', priority: '0.8', images: ['/og-image.png'] },
   { path: '/creators', changefreq: 'weekly', priority: '0.8', images: ['/og-image.png'] },
   { path: '/creators/mirandus-plays', changefreq: 'weekly', priority: '0.8', images: ['/og-image.png'] },
   { path: '/guild-tool', changefreq: 'monthly', priority: '0.9', images: ['/og-image.png'] },

@@ -16,7 +16,6 @@ const STATIC_TOOLS = [
     { id: 'combat-craft', path: '/tools', titleKey: 'tools_menu.combat_craft_title', icon: Rocket, category: 'tools' },
     { id: 'guild-tool', path: '/guild-tool', titleKey: 'navigation.guild_tool', icon: Crown, category: 'tools' },
     { id: 'gift-codes', path: '/gift-codes', titleKey: 'navigation.gift_codes', icon: Gift, category: 'codes' },
-    { id: 'stella-anomaly', path: '/stella-anomaly', titleKey: 'navigation.stella_anomaly', icon: Sparkles, category: 'events' },
     { id: 'evolutions', path: '/evolutions', titleKey: 'navigation.game_evolutions', icon: Flame, category: 'guides' },
     { id: 'creators', path: '/creators', titleKey: 'navigation.creators', icon: Video, category: 'guides' }
 ];

@@ -21,10 +21,9 @@
 - [Ground Teams](https://fgfwiki.com/en/ground-teams): Synergy-optimized 5-hero squads for PvE Campaign, PvP Arena, Guild Wars, and World Boss raids.
 
 ### 3. Events & Game Systems
-- [Event Walkthroughs](https://fgfwiki.com/en/events): In-depth strategy guides for Operation Blackout, Kaboom, Arms Race, Calamity, Crime Hunt, Stella Anomaly, Dominion Warzone, and Guild vs Guild (GvG).
+- [Event Walkthroughs](https://fgfwiki.com/en/events): In-depth strategy guides for Operation Blackout, Kaboom, Arms Race, Calamity, Crime Hunt, Dominion Warzone, and Guild vs Guild (GvG).
 - [Interactive Calculators](https://fgfwiki.com/en/tools): Precise simulators for Building Time Speedups (with VIP, Alliance, and Research modifiers), Champion Promotion & Upgrade costs, Nexus Energy Tree unlock paths, and GvG Battle Scoring.
 - [Active Gift Codes](https://fgfwiki.com/en/gift-codes): Constantly verified, 1-click copy promo codes for Diamonds, Speedups, Advanced Recruit Tickets, and Hero Shards.
-- [Stella Anomaly Decoder](https://fgfwiki.com/en/stella-anomaly): Interactive puzzle deciphering terminal, ARG lore logs, and verified solver leaderboard.
 - [Game Evolutions & Roadmap](https://fgfwiki.com/en/evolutions): Community feature voting portal, player demand scoring engine, and official developer tracking.
 - [Creators Corner](https://fgfwiki.com/en/creators): Official creator partnership hub with video strategy guides from Mirandus Plays.
 - [Guild Management Tool (ERP)](https://fgfwiki.com/en/guild-tool): Alliance ERP platform featuring 16 AI Vision OCR scanners, 7D military matrix, and 24/7 global timezone coordination.
