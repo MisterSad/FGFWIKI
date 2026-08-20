@@ -91,9 +91,11 @@ export default function Layout({ children, onLoginClick, onSearchClick, onProfil
                 {children}
             </main>
 
-            <div className="container" style={{ padding: '0 clamp(1rem, 3vw, 2rem)' }}>
-                <InstantGamingBanner />
-            </div>
+            {!isHomePage && (
+                <div className="container" style={{ padding: '0 clamp(1rem, 3vw, 2rem)' }}>
+                    <InstantGamingBanner />
+                </div>
+            )}
 
             <footer style={{
                 textAlign: 'center',
