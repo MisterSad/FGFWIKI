@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
     const { t } = useTranslation();
@@ -17,14 +17,6 @@ export default function Hero() {
         }}>
 
             <div style={{ textAlign: 'center', zIndex: 1, position: 'relative' }}>
-                <div className="hero-official-tag">
-                    <span>
-                        <Trans
-                            i18nKey="hero.creator_badge"
-                            components={{ 1: <strong />, 3: <strong /> }}
-                        />
-                    </span>
-                </div>
                 {/* Small top label */}
                 <div style={{
                     fontFamily: 'var(--font-label)',

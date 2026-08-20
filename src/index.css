@@ -1112,39 +1112,6 @@ table {
   text-transform: uppercase;
 }
 
-.hero-official-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 1.5rem;
-  padding: 6px 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 4px;
-  backdrop-filter: blur(10px);
-  animation: fadeUp 1s ease-out forwards 0.5s;
-  opacity: 0;
-}
-
-.hero-official-tag .official-logo {
-  width: 20px;
-  height: 20px;
-}
-
-.hero-official-tag span {
-  font-family: var(--font-label);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.hero-official-tag strong {
-  color: var(--funplus-orange);
-  font-weight: 800;
-}
-
 @media (max-width: 600px) {
   .official-creator-badge {
     padding: 3px 8px;
@@ -1153,11 +1120,6 @@ table {
 
   .official-text {
     font-size: 0.55rem;
-  }
-
-  .hero-official-tag {
-    padding: 4px 12px;
-    font-size: 0.65rem;
   }
 }
 

@@ -3,38 +3,32 @@
 
 ---
 
-## 📢 [UPDATE] August 20, 2026 — Commander Profile Customization, Executive PDF Roadmap Export & Universal Search!
+## 📢 [UPDATE] August 20, 2026 — Clean Hero Redesign & UI Streamlining!
 
 Hey Commanders! 👋
 
-We just rolled out a fresh suite of community and leader tools on **FGF WIKI**!
+We just pushed a sleek visual polish update to **FGF WIKI**!
 
-Here is everything you can check out right now:
+Here is what is new:
 
 ---
 
-### 🎖️ 1. Interactive Commander Profile (Nickname & Server)
-- Click your **Commander profile pill** in the top-right header at any time!
-- Set or update your **In-Game Nickname** and **Server Number** (e.g. `HawkEye (S1058)`).
-- Your identity is automatically linked to all your comments, feedback, and game evolution proposals across the wiki.
+### ✨ 1. Streamlined Home Header
+- We streamlined the main landing page hero section, removing clutter for an even cleaner, high-impact aesthetic focused directly on game guides, tier lists, and strategic tools.
+- Faster visual scanning and improved focus on core navigation for both desktop and mobile devices.
 
-### 📥 2. Admin Executive PDF Roadmap Export (Landscape A4)
-To help us present top player ideas directly to the game development team:
-- Dedicated **`📥 Export PDF (EN)`** generator for administrators.
-- **1 Proposal Per Page**: Beautiful executive slides with priority gauges (*Critical, High Demand, Active Interest*), vote scores, and structured community comment takeaways.
+### ⚡ 2. Universal Spotlight Search (`⌘K` / `Ctrl+K`)
+- Don't forget: press **`Cmd + K`** (Mac) or **`Ctrl + K`** (Windows/Mobile) anywhere on the site to find any hero, fleet comp, gift code, or calculator instantly across 23 languages!
 
-### 🌐 3. One-Click Auto-Translation on Proposals & Comments
-- Language is no longer a barrier! Hit **`🌐 Translate`** on any player comment or proposal in French, Korean, Japanese, Russian, Spanish, German, or Chinese to read it in your native language instantly.
-- Toggle back to original wording anytime with **`Show original`**.
-
-### ⚡ 4. Universal Spotlight Search (`⌘K` / `Ctrl+K`)
-- Press **`Cmd + K`** (Mac) or **`Ctrl + K`** (Windows/Mobile) to find any champion, flagship deck, gift code, or calculator instantly across all 23 languages.
+### 🎖️ 3. Commander Profile & Community Hub
+- Link your **In-Game Nickname** & **Server Number** right from the top bar to share ideas and vote on game evolution proposals!
 
 ---
 
 ### 🔮 Coming Next in S2 2026:
-- 🛠️ **Interactive Visual Fleet & Squad Builder** with automatic synergy calculations (+15%) and Discord export cards!
-- ⚔️ **Fleet Clash Simulator & Combat Sandbox**
+- 🛠️ **Visual Fleet & Squad Synergy Builder** with live +15% synergy calculation and exportable Discord cards!
+- ⚔️ **Combat Sandbox & Fleet Clash Simulator**
 
-👉 **Customize your profile & explore the tools:** https://fgfwiki.com/evolutions
-💬 *Thank you for building the best galactic community with us!*
+👉 **Explore the clean interface:** https://fgfwiki.com
+💬 *As always, share your feedback with us in the Discord channels!*
+
