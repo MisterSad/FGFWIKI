@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router';
+import { useLocation, Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { ArrowUp } from 'lucide-react';
 import Header from './Header';
@@ -108,7 +108,39 @@ export default function Layout({ children, onLoginClick, onSearchClick, onProfil
                     <div style={{ background: 'var(--gold-dim)' }}></div>
                 </div>
 
-                <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkEye #1058</span></p>
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: '0.6rem'
+                }}>
+                    <p style={{ opacity: 0.5, margin: 0 }}>&copy; {new Date().getFullYear()} {t('footer_ui.copyright')} <span style={{ color: "#FFFFFF" }}>HawkEye #1058</span></p>
+                    <div>
+                        <Link
+                            to="/terms"
+                            style={{
+                                color: 'var(--text-dim)',
+                                textDecoration: 'none',
+                                transition: 'all 0.2s ease',
+                                borderBottom: '1px dashed rgba(212, 175, 55, 0.3)',
+                                paddingBottom: '2px',
+                                textTransform: 'uppercase',
+                                fontSize: 'clamp(0.62rem, 1.4vw, 0.72rem)',
+                                letterSpacing: '1px'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.color = 'var(--gold)';
+                                e.currentTarget.style.borderBottomColor = 'var(--gold)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.color = 'var(--text-dim)';
+                                e.currentTarget.style.borderBottomColor = 'rgba(212, 175, 55, 0.3)';
+                            }}
+                        >
+                            {t('navigation.terms', 'Terms & conditions')}
+                        </Link>
+                    </div>
+                </div>
             </footer>
 
             {showScrollTop && (

@@ -57,7 +57,9 @@
             "title": "Game Evolutions & Player Feedback — Foundation: Galactic Frontier Wiki",
             "description": "Submit game evolutions, report issues, vote on priority demand timelines and discuss feature requests with the community for Foundation: Galactic Frontier.",
             "keywords": "FGF Game Evolutions, Foundation Galactic Frontier feedback, feature requests, game suggestions, FGF wiki"
-        }
+        },
+        "terms_title": "Terms and Conditions | FGF WIKI",
+        "terms_desc": "Read the official Terms and Conditions of FGF WIKI, detailing disclaimer of endorsement, fair use of game assets, intellectual property, and acceptable use policies."
     },
     "navigation": {
         "home": "Etusivu",
@@ -76,7 +78,8 @@
         "guild_tool": "Guild Management Tool",
         "more": "Lisää",
         "game_evolutions": "Game Evolutions",
-        "search": "Haku"
+        "search": "Haku",
+        "terms": "Käyttöehdot"
     },
     "common": {
         "kinetic": "Kineettinen",
@@ -1936,5 +1939,52 @@
         "sec4_thanks": "Kiitos koko yhteisölle horjumattomasta tuestanne.",
         "acknowledge_btn": "Jatka FGF WIKIin",
         "export_pdf_btn": "Vie virallinen PDF (A4)"
+    },
+    "terms_page": {
+        "badge": "Legal & compliance",
+        "title": "Terms and conditions",
+        "last_updated": "Last updated: August 21, 2026",
+        "back_btn": "Back to guides",
+        "intro_p1": "Please read these Terms and Conditions (\"Terms\", \"Terms and Conditions\") carefully before using the FGF WIKI website (the \"Service\") operated by FGF WIKI (\"us\", \"we\", or \"our\").",
+        "intro_p2": "Your access to and use of the Service is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who wish to access or use the Service. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, you do not have permission to access the Service.",
+        "sec1_title": "1. Non-affiliation and disclaimer of endorsement",
+        "sec1_bullet1_title": "Independent platform",
+        "sec1_bullet1_desc": "FGF WIKI is an independent, community-driven database and information hub.",
+        "sec1_bullet2_title": "No official association",
+        "sec1_bullet2_desc": "FGF WIKI is not affiliated with, endorsed, sponsored, or specifically approved by FunPlus International AG, Skydance Production, LLC, or any of their affiliates or subsidiaries.",
+        "sec1_bullet3_title": "Trademarks & copyrights",
+        "sec1_bullet3_desc": "Foundation: Galactic Frontier and all associated logos, characters, artwork, audio, game mechanics, and trademarks are the exclusive property of their respective owners and copyright holders. All game imagery, statistics, and related content displayed on this website are used under Fair Use principles for educational, informational, and analytical purposes only.",
+        "sec2_title": "2. Nature of the content and accuracy of data",
+        "sec2_bullet1_title": "Informational purposes only",
+        "sec2_bullet1_desc": "The information, tools, calculators, and database entries provided on FGF WIKI are for general informational and entertainment purposes only.",
+        "sec2_bullet2_title": "Estimation & crowdsourcing",
+        "sec2_bullet2_desc": "While we strive to ensure that all data, calculators, timers, and upgrade formulas are accurate and up to date, game mechanics and balance patches may change without notice. All calculations, estimates, and data sets are provided on an \"as-is\" and \"as-available\" basis without warranties of any kind, whether express or implied.",
+        "sec2_bullet3_title": "No in-game responsibility",
+        "sec2_bullet3_desc": "We accept no responsibility or liability for in-game decisions, resource allocation, progression choices, or financial expenditures made by users based on the information or tools provided on this website.",
+        "sec3_title": "3. Intellectual property of original website content",
+        "sec3_bullet1_title": "Platform assets & source code",
+        "sec3_bullet1_desc": "Excluding third-party game assets and trademarks, the structure, layout, custom source code, calculation algorithms, database design, user interface (UI), and original written documentation of FGF WIKI are the exclusive intellectual property of the site owner and are protected by applicable copyright, database, and intellectual property laws.",
+        "sec3_bullet2_title": "Restrictions on scraping & mirroring",
+        "sec3_bullet2_desc": "You may not copy, reproduce, scrape, mirror, redistribute, or reverse-engineer the site's database structures, calculation engines, or custom scripts for commercial purposes without prior express written permission.",
+        "sec4_title": "4. Acceptable use policy",
+        "sec4_intro": "You agree not to use the Service:",
+        "sec4_bullet1": "In any way that violates any applicable local, national, or international law or regulation.",
+        "sec4_bullet2": "To transmit or procure the sending of any advertising or promotional material (spam).",
+        "sec4_bullet3": "To engage in any conduct that restricts, inhibits, or impairs anyone's use or enjoyment of the Service, or which may expose FGF WIKI or its users to damage, liability, or denial of service.",
+        "sec4_bullet4": "To attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Service, the server on which the Service is hosted, or any database connected to the Service.",
+        "sec5_title": "5. Third-party links and external services",
+        "sec5_p1": "Our Service may contain links to third-party websites or services (such as Discord, official game portals, or external hosting tools) that are not owned or controlled by FGF WIKI.",
+        "sec5_p2": "We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that FGF WIKI shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites.",
+        "sec6_title": "6. Limitation of liability",
+        "sec6_intro": "To the fullest extent permitted by applicable law:",
+        "sec6_p1": "In no event shall FGF WIKI, its owner, contributors, or service providers be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of (or inability to access or use) the Service; (ii) any content obtained from the Service; or (iii) unauthorized access, use, or alteration of your transmissions or content.",
+        "sec7_title": "7. Modifications and termination",
+        "sec7_p1": "We reserve the right, at our sole discretion, to modify, update, suspend, or discontinue these Terms or any part of the Service at any time without prior notice.",
+        "sec7_p2": "What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Service after revisions become effective, you agree to be bound by the revised terms.",
+        "sec8_title": "8. Governing law and jurisdiction",
+        "sec8_p1": "These Terms shall be governed and construed in accordance with the laws of France, without regard to its conflict of law provisions. Any dispute arising out of or in connection with these Terms or the use of the Service shall be subject to the exclusive jurisdiction of the competent courts of France.",
+        "sec9_title": "9. Contact information",
+        "sec9_p1": "If you have any questions, inquiries, or copyright-related requests regarding these Terms and Conditions, please contact us at:",
+        "sec9_email": "Email: fgfwiki@gmail.com"
     }
 }

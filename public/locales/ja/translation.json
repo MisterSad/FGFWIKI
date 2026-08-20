@@ -57,7 +57,9 @@
             "title": "Game Evolutions & Player Feedback — Foundation: Galactic Frontier Wiki",
             "description": "Submit game evolutions, report issues, vote on priority demand timelines and discuss feature requests with the community for Foundation: Galactic Frontier.",
             "keywords": "FGF Game Evolutions, Foundation Galactic Frontier feedback, feature requests, game suggestions, FGF wiki"
-        }
+        },
+        "terms_title": "Terms and Conditions | FGF WIKI",
+        "terms_desc": "Read the official Terms and Conditions of FGF WIKI, detailing disclaimer of endorsement, fair use of game assets, intellectual property, and acceptable use policies."
     },
     "navigation": {
         "home": "ホーム",
@@ -76,7 +78,8 @@
         "guild_tool": "Guild Management Tool",
         "more": "その他",
         "game_evolutions": "Game Evolutions",
-        "search": "検索"
+        "search": "検索",
+        "terms": "利用規約"
     },
     "common": {
         "kinetic": "実弾",
@@ -1936,5 +1939,52 @@
         "sec4_thanks": "揺るぎないサポートを寄せてくださるコミュニティの皆様に心より感謝申し上げます。",
         "acknowledge_btn": "FGF WIKIへ進む",
         "export_pdf_btn": "公式PDFをエクスポート (A4)"
+    },
+    "terms_page": {
+        "badge": "法的情報と規約",
+        "title": "利用規約",
+        "last_updated": "最終更新日：2026年8月21日",
+        "back_btn": "ガイド一覧に戻る",
+        "intro_p1": "FGF WIKI（以下「本サービス」）をご利用いただく前に、本利用規約（以下「本規約」）をよくお読みください。",
+        "intro_p2": "本サービスへのアクセスおよび利用は、本規約への同意および遵守を条件とします。同意されない場合は本サービスをご利用いただけません。",
+        "sec1_title": "1. 公式非提携および免責事項",
+        "sec1_bullet1_title": "独立したコミュニティプラットフォーム",
+        "sec1_bullet1_desc": "FGF WIKIは、コミュニティによって運営される独立したデータベースおよび情報ハブです。",
+        "sec1_bullet2_title": "公式な提携関係の不存在",
+        "sec1_bullet2_desc": "FGF WIKIは、FunPlus International AG、Skydance Production, LLC、またはその関連会社と提携、後援、または公式承認されたものではありません。",
+        "sec1_bullet3_title": "商標および著作権",
+        "sec1_bullet3_desc": "「Foundation: Galactic Frontier」および関連するすべてのロゴ、キャラクター、ゲーム仕様は、各権利者の独占的財産です。すべてのゲーム画像は教育および分析を目的としてフェアユースに基づき使用されています。",
+        "sec2_title": "2. コンテンツの性質およびデータの正確性",
+        "sec2_bullet1_title": "情報提供のみを目的とする",
+        "sec2_bullet1_desc": "FGF WIKIで提供されるツール、計算機、データは一般的な情報提供および娯楽のみを目的としています。",
+        "sec2_bullet2_title": "推計値およびコミュニティデータ",
+        "sec2_bullet2_desc": "すべての計算およびデータは「現状有姿」で提供されます。ゲームバランス調整により数値が変更される場合があります。",
+        "sec2_bullet3_title": "ゲーム内決定に対する非責任",
+        "sec2_bullet3_desc": "当サイトの情報を元に行われたゲーム内の育成選択や課金等の決定に関して、当サイトは一切の責任を負いません。",
+        "sec3_title": "3. 独自コンテンツの知的財産権",
+        "sec3_bullet1_title": "プラットフォームの独自アセットとソースコード",
+        "sec3_bullet1_desc": "第三者のゲームアセットを除き、FGF WIKIのソースコード、計算アルゴリズム、データベース構造、UIデザインはサイト作成者の独占的知的財産です。",
+        "sec3_bullet2_title": "スクレイピングおよび無断転載の禁止",
+        "sec3_bullet2_desc": "書面による事前の明示的な許可なしに、当サイトのデータベースや計算エンジンを商用目的でスクレイピングまたは複製することを禁じます。",
+        "sec4_title": "4. 利用規定",
+        "sec4_intro": "ユーザーは以下の目的で本サービスを利用しないことに同意します：",
+        "sec4_bullet1": "適用される法令に違反する行為。",
+        "sec4_bullet2": "迷惑メール（スパム）や広告を送信する行為。",
+        "sec4_bullet3": "他のユーザーによる本サービスの利用を妨害する行為。",
+        "sec4_bullet4": "本サービスのサーバーやデータベースへ不正アクセスを試みる行為。",
+        "sec5_title": "5. サードパーティへのリンク",
+        "sec5_p1": "本サービスには、FGF WIKIが管理していない第三者のウェブサイト（Discordなど）へのリンクが含まれる場合があります。",
+        "sec5_p2": "外部サイトのコンテンツやプライバシーポリシーについて、当サイトは責任を負いません。",
+        "sec6_title": "6. 責任の制限",
+        "sec6_intro": "適用法令で認められる最大限の範囲において：",
+        "sec6_p1": "FGF WIKIおよびその管理者は、本サービスの利用により生じた直接的または間接的な損害について一切の責任を負いません。",
+        "sec7_title": "7. 規約の変更",
+        "sec7_p1": "当サイトは、事前の通知なしに本規約をいつでも変更または更新する権利を留保します。",
+        "sec7_p2": "変更後も本サービスの利用を継続することにより、改定された規約に同意したものとみなされます。",
+        "sec8_title": "8. 準拠法および管轄裁判所",
+        "sec8_p1": "本規約はフランス法に準拠します。すべての紛争はフランスの管轄裁判所を専属的合意管轄とします。",
+        "sec9_title": "9. お問い合わせ先",
+        "sec9_p1": "本規約に関するお問い合わせは、以下までご連絡ください：",
+        "sec9_email": "メールアドレス：fgfwiki@gmail.com"
     }
 }

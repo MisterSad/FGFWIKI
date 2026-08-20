@@ -57,7 +57,9 @@
             "title": "Game Evolutions & Player Feedback — Foundation: Galactic Frontier Wiki",
             "description": "Submit game evolutions, report issues, vote on priority demand timelines and discuss feature requests with the community for Foundation: Galactic Frontier.",
             "keywords": "FGF Game Evolutions, Foundation Galactic Frontier feedback, feature requests, game suggestions, FGF wiki"
-        }
+        },
+        "terms_title": "Terms and Conditions | FGF WIKI",
+        "terms_desc": "Read the official Terms and Conditions of FGF WIKI, detailing disclaimer of endorsement, fair use of game assets, intellectual property, and acceptable use policies."
     },
     "navigation": {
         "home": "首页",
@@ -76,7 +78,8 @@
         "guild_tool": "Guild Management Tool",
         "more": "更多",
         "game_evolutions": "Game Evolutions",
-        "search": "搜索"
+        "search": "搜索",
+        "terms": "服务条款"
     },
     "common": {
         "kinetic": "动能",
@@ -1936,5 +1939,52 @@
         "sec4_thanks": "感谢社区每一位玩家长久以来的坚定支持。",
         "acknowledge_btn": "进入 FGF WIKI",
         "export_pdf_btn": "导出官方 PDF (A4)"
+    },
+    "terms_page": {
+        "badge": "法律条款与合规",
+        "title": "服务条款与使用条件",
+        "last_updated": "最后更新日期：2026年8月21日",
+        "back_btn": "返回攻略列表",
+        "intro_p1": "在使用由 FGF WIKI 运营的本网站（“服务”）之前，请仔细阅读这些条款与条件（“条款”）。",
+        "intro_p2": "您访问和使用本服务的前提是您接受并遵守这些条款。如果您不同意这些条款的任何部分，您无权访问或使用本服务。",
+        "sec1_title": "1. 非官方附属声明与免责声明",
+        "sec1_bullet1_title": "独立社区平台",
+        "sec1_bullet1_desc": "FGF WIKI 是一个由玩家社区独立维护的非官方数据库与信息中心。",
+        "sec1_bullet2_title": "无官方关联",
+        "sec1_bullet2_desc": "FGF WIKI 与 FunPlus International AG、Skydance Production, LLC 及其任何附属公司均无任何隶属、赞助或官方认可关系。",
+        "sec1_bullet3_title": "商标与知识产权",
+        "sec1_bullet3_desc": "《Foundation: Galactic Frontier》及其相关标志、角色、艺术素材和游戏机制均为其合法所有者的专有财产。本网站显示的游戏数据和图片仅依据合理使用（Fair Use）原则用于教育、研究与分析目的。",
+        "sec2_title": "2. 内容性质与数据准确性",
+        "sec2_bullet1_title": "仅供参考与娱乐",
+        "sec2_bullet1_desc": "FGF WIKI 提供的工具、计算器及数据库条目仅供一般参考和娱乐用途。",
+        "sec2_bullet2_title": "估算值与社区众包",
+        "sec2_bullet2_desc": "所有计算、预估和数据集均按“现状”提供，不包含任何明示或暗示的保证。游戏机制可能会因版本更新而变动。",
+        "sec2_bullet3_title": "对游戏内决策不承担责任",
+        "sec2_bullet3_desc": "对于用户根据本网站信息作出的游戏内升级、资源分配或充值决定，我们不承担任何直接或间接责任。",
+        "sec3_title": "3. 本站原创内容的知识产权",
+        "sec3_bullet1_title": "平台原创代码与架构",
+        "sec3_bullet1_desc": "除第三方游戏素材外，FGF WIKI 的源代码、计算引擎算法、数据库架构及界面设计均为本站作者的专有知识产权。",
+        "sec3_bullet2_title": "禁止商业爬取与镜像",
+        "sec3_bullet2_desc": "未经事先书面明确许可，严禁出于商业目的复制、爬取或逆向工程本站的数据库结构与计算脚本。",
+        "sec4_title": "4. 合理使用准则",
+        "sec4_intro": "您同意不会将本服务用于：",
+        "sec4_bullet1": "任何违反适用法律法规的行为。",
+        "sec4_bullet2": "发送未经请求的广告或垃圾信息（Spam）。",
+        "sec4_bullet3": "干扰或破坏其他用户对本服务的正常使用。",
+        "sec4_bullet4": "试图未经授权访问本服务的服务器或数据库。",
+        "sec5_title": "5. 第三方链接与外部服务",
+        "sec5_p1": "本服务可能包含指向第三方网站（如 Discord）的链接，这些网站并非由 FGF WIKI 拥有或控制。",
+        "sec5_p2": "我们对第三方网站的内容或隐私政策不承担任何责任。",
+        "sec6_title": "6. 责任限制",
+        "sec6_intro": "在适用法律允许的最大范围内：",
+        "sec6_p1": "FGF WIKI 及其运营者在任何情况下均不对因使用本服务而引起的任何直接、间接或附带损害承担责任。",
+        "sec7_title": "7. 条款修改与终止",
+        "sec7_p1": "我们保留随时修改或更新这些条款的权利，恕不另行通知。",
+        "sec7_p2": "在修订生效后继续使用本服务，即表示您同意接受修订后的条款约束。",
+        "sec8_title": "8. 适用法律与司法管辖",
+        "sec8_p1": "本条款受法国法律管辖并依其解释。因本条款产生的任何争议均应提交法国有管辖权的法院专属管辖。",
+        "sec9_title": "9. 联系方式",
+        "sec9_p1": "如对本条款有任何疑问，请通过以下方式联系我们：",
+        "sec9_email": "电子邮箱：fgfwiki@gmail.com"
     }
 }

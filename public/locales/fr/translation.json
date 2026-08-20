@@ -57,7 +57,9 @@
             "title": "Évolutions du Jeu & Retours Joueurs — Foundation: Galactic Frontier Wiki",
             "description": "Proposez des évolutions de jeu, signalez des problèmes, votez sur la frise de priorité et débattez avec la communauté de Foundation: Galactic Frontier.",
             "keywords": "Évolutions jeu FGF, retours joueurs, suggestions, frise de priorité, FGF wiki, Foundation Galactic Frontier"
-        }
+        },
+        "terms_title": "Conditions Générales d'Utilisation | FGF WIKI",
+        "terms_desc": "Consultez les Conditions Générales d'Utilisation officielles de FGF WIKI : non-affiliation, usage équitable des données de jeu, propriété intellectuelle et politique d'utilisation."
     },
     "navigation": {
         "home": "Accueil",
@@ -76,7 +78,8 @@
         "creators": "Créateurs",
         "guild_tool": "Guild Management Tool",
         "more": "Plus",
-        "search": "Rechercher"
+        "search": "Rechercher",
+        "terms": "Conditions générales"
     },
     "common": {
         "kinetic": "Cinétique",
@@ -1934,5 +1937,52 @@
         "sec4_thanks": "Merci à chacun d'entre vous dans la communauté pour votre soutien indéfectible.",
         "acknowledge_btn": "Continuer vers FGF WIKI",
         "export_pdf_btn": "Exporter le PDF officiel (A4)"
+    },
+    "terms_page": {
+        "badge": "Mentions légales & conformité",
+        "title": "Conditions générales d'utilisation",
+        "last_updated": "Dernière mise à jour : 21 août 2026",
+        "back_btn": "Retour aux guides",
+        "intro_p1": "Veuillez lire attentivement les présentes Conditions Générales d'Utilisation (« Conditions », « Conditions Générales ») avant d'utiliser le site FGF WIKI (le « Service ») opéré par FGF WIKI (« nous », « notre » ou « nos »).",
+        "intro_p2": "Votre accès et votre utilisation du Service sont conditionnés par votre acceptation et votre respect des présentes Conditions. Ces Conditions s'appliquent à tous les visiteurs, utilisateurs et autres personnes souhaitant accéder ou utiliser le Service. En accédant ou en utilisant le Service, vous acceptez d'être lié par ces Conditions. Si vous êtes en désaccord avec une partie des termes, vous n'êtes pas autorisé à accéder au Service.",
+        "sec1_title": "1. Non-affiliation et décharge de responsabilité",
+        "sec1_bullet1_title": "Plateforme indépendante",
+        "sec1_bullet1_desc": "FGF WIKI est une base de données et un centre d'informations indépendant et communautaire.",
+        "sec1_bullet2_title": "Aucune association officielle",
+        "sec1_bullet2_desc": "FGF WIKI n'est pas affilié, soutenu, sponsorisé ni approuvé spécifiquement par FunPlus International AG, Skydance Production, LLC, ou l'une de leurs filiales.",
+        "sec1_bullet3_title": "Marques déposées et droits d'auteur",
+        "sec1_bullet3_desc": "Foundation: Galactic Frontier et tous les logos, personnages, illustrations, bandes sonores, mécaniques de jeu et marques associés sont la propriété exclusive de leurs propriétaires et ayants droit respectifs. Toutes les images, statistiques et contenus de jeu affichés sur ce site sont utilisés en vertu des principes d'usage équitable (Fair Use) à des fins strictement éducatives, informatives et analytiques.",
+        "sec2_title": "2. Nature du contenu et exactitude des données",
+        "sec2_bullet1_title": "Fins informatives exclusives",
+        "sec2_bullet1_desc": "Les informations, outils, calculateurs et données fournis sur FGF WIKI sont destinés à des fins d'information générale et de divertissement uniquement.",
+        "sec2_bullet2_title": "Estimations et données participatives",
+        "sec2_bullet2_desc": "Bien que nous nous efforcions de veiller à ce que toutes les données, calculateurs, minuteurs et formules soient exacts et à jour, les mécaniques de jeu et mises à jour d'équilibrage peuvent changer sans préavis. Tous les calculs et jeux de données sont fournis « en l'état » et « selon disponibilité » sans garantie d'aucune sorte.",
+        "sec2_bullet3_title": "Absence de responsabilité en jeu",
+        "sec2_bullet3_desc": "Nous déclinons toute responsabilité quant aux décisions prises en jeu, à l'allocation des ressources, aux choix de progression ou aux dépenses financières effectuées par les utilisateurs sur la base des informations ou outils de ce site.",
+        "sec3_title": "3. Propriété intellectuelle du contenu original du site",
+        "sec3_bullet1_title": "Ressources et code source de la plateforme",
+        "sec3_bullet1_desc": "À l'exclusion des ressources graphiques tierces et marques du jeu, la structure, la mise en page, le code source personnalisé, les algorithmes de calcul, l'architecture de base de données, l'interface utilisateur (UI) et la documentation originale de FGF WIKI sont la propriété intellectuelle exclusive du créateur du site et sont protégés par les lois en vigueur.",
+        "sec3_bullet2_title": "Restrictions de scraping et de clonage",
+        "sec3_bullet2_desc": "Vous ne pouvez pas copier, reproduire, scraper, répliquer, redistribuer ou procéder à l'ingénierie inverse des structures de données, moteurs de calcul ou scripts personnalisés à des fins commerciales sans autorisation écrite préalable et expresse.",
+        "sec4_title": "4. Politique d'utilisation acceptable",
+        "sec4_intro": "Vous vous engagez à ne pas utiliser le Service :",
+        "sec4_bullet1": "D'une manière qui enfreint une loi ou réglementation locale, nationale ou internationale en vigueur.",
+        "sec4_bullet2": "Pour transmettre ou susciter l'envoi de tout matériel publicitaire ou promotionnel (spam).",
+        "sec4_bullet3": "Pour adopter un comportement qui restreint, inhibe ou altère l'utilisation ou la jouissance du Service par quiconque, ou susceptible d'exposer FGF WIKI ou ses utilisateurs à un préjudice.",
+        "sec4_bullet4": "Pour tenter d'accéder sans autorisation, d'interférer, d'endommager ou de perturber toute partie du Service, le serveur d'hébergement ou toute base de données connectée.",
+        "sec5_title": "5. Liens tiers et services externes",
+        "sec5_p1": "Notre Service peut contenir des liens vers des sites web ou services tiers (tels que Discord, des portails officiels du jeu ou des hébergeurs externes) qui ne sont ni détenus ni contrôlés par FGF WIKI.",
+        "sec5_p2": "Nous n'exerçons aucun contrôle et n'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques de tout site tiers. Vous reconnaissez que FGF WIKI ne saurait être tenu responsable, directement ou indirectement, de tout dommage ou perte causé par l'utilisation de ces services.",
+        "sec6_title": "6. Limitation de responsabilité",
+        "sec6_intro": "Dans toute la mesure permise par la législation applicable :",
+        "sec6_p1": "En aucun cas FGF WIKI, son propriétaire, ses contributeurs ou ses prestataires ne pourront être tenus responsables de tout dommage direct, indirect, accessoire, spécial ou consécutif (y compris perte de profits, de données, d'usage ou de réputation) résultant de l'accès ou de l'impossibilité d'accéder au Service.",
+        "sec7_title": "7. Modifications et résiliation",
+        "sec7_p1": "Nous nous réservons le droit, à notre seule discrétion, de modifier, mettre à jour, suspendre ou interrompre les présentes Conditions ou toute partie du Service à tout moment sans préavis.",
+        "sec7_p2": "En continuant d'accéder ou d'utiliser le Service après l'entrée en vigueur des révisions, vous acceptez d'être lié par les conditions modifiées.",
+        "sec8_title": "8. Droit applicable et juridiction compétente",
+        "sec8_p1": "Les présentes Conditions sont régies et interprétées conformément au droit français. Tout litige découlant des présentes Conditions ou de l'utilisation du Service sera soumis à la compétence exclusive des tribunaux compétents de France.",
+        "sec9_title": "9. Informations de contact",
+        "sec9_p1": "Pour toute question ou demande relative aux présentes Conditions Générales d'Utilisation, veuillez nous contacter à l'adresse suivante :",
+        "sec9_email": "Courriel : fgfwiki@gmail.com"
     }
 }

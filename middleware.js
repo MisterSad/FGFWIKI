@@ -19,6 +19,8 @@ const SPA_ROUTES = [
     '/evolutions',
     '/flagship-decks',
     '/ground-teams',
+    '/terms',
+    '/terms-and-conditions',
 ];
 
 export default function middleware(request) {

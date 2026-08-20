@@ -47,6 +47,7 @@ const GiftCodes = lazyWithRetry(() => import('./components/pages/GiftCodes'));
 const CreatorsCorner = lazyWithRetry(() => import('./components/pages/CreatorsCorner'));
 const GuildTool = lazyWithRetry(() => import('./components/pages/GuildTool'));
 const GameEvolutions = lazyWithRetry(() => import('./components/pages/GameEvolutions'));
+const Terms = lazyWithRetry(() => import('./components/pages/Terms'));
 const NotFound = lazyWithRetry(() => import('./components/pages/NotFound'));
 
 function App() {
@@ -113,6 +114,8 @@ function App() {
                 <Route path="/evolutions" element={<GameEvolutions />} />
                 <Route path="/evolutions/:threadId" element={<GameEvolutions />} />
                 <Route path="/game-evolutions" element={<Navigate to="/evolutions" replace />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/terms-and-conditions" element={<Navigate to="/terms" replace />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

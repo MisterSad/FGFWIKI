@@ -1,34 +1,19 @@
-# 🚀 FGF WIKI - Discord community announcement
-> *Select All (Ctrl+A / Cmd+A), Copy & Paste directly into your Discord channel!*
+## ⚖️ Official Terms and Conditions & Legal Framework Update
 
----
+Hey everyone,
 
-## 📢 [IMPORTANT STATEMENT] August 21, 2026 - Why FGF WIKI is leaving the official program: defending the community, exposing the silence
+To provide full clarity, transparency, and independence for our entire community, we've just rolled out a dedicated **Terms and Conditions** page on FGF WIKI, accessible directly from the footer of every page across the platform.
 
-Hey Commanders,
+### 🛡️ What’s in the Terms and Conditions
+- **Independent community platform**: Reaffirming FGF WIKI's status as an independent, community-driven database and strategy hub.
+- **Fair Use & intellectual property**: Clear guidelines on game asset Fair Use for educational and analytical purposes, alongside protections for FGF WIKI's custom calculation engines and open tools.
+- **Accuracy & crowdsourcing disclaimer**: Clear outline of our crowdsourced data model and in-game decisions disclaimer.
+- **Acceptable use & security**: Protecting the platform, server performance, and user privacy against unauthorized commercial scraping.
+- **Full 23-language support**: The legal framework and terms page are natively available across all 23 supported languages on the site.
 
-An important update regarding the future and operational sovereignty of **FGF WIKI**:
+### 📄 Official A4 PDF Export (Admin Tools)
+- Added an official press release A4 portrait PDF generator with full typography and executive layout for easy sharing and community archiving.
 
-I have officially terminated my Content Creator Agreement with FunPlus for Foundation: Galactic Frontier. This decision is not a retreat - it is an act of clarity to lay out the plain truth for the entire community, without corporate sugarcoating.
+Thank you for your continuous support as we keep building and maintaining the best free tools for all commanders.
 
----
-
-### 🛡️ 1. Unconditional respect for the Community Managers
-- Before addressing the core failure, I want to draw a crystal-clear line: the Community Managers in charge of creators are genuine, dedicated allies.
-- They worked tirelessly caught between an ambitious community and a rigid corporate machine, fighting internally to find workarounds. The failure does not lie with community management - it lies entirely at the feet of the studio and development leadership.
-
-### 📊 2. The studio's failure: refusing to support the engine of player retention
-- When FGF WIKI serves 10,000 to 11,000 monthly active players and exceeds 40,000 page views, it is doing the studio's job: calculating upgrade costs, mapping progression curves, and keeping players invested.
-- What was asked in return? Not money, not recognition, only raw data (structured sheets / JSON exports). The studio's response has been persistent, total silence.
-
-### ✊ 3. Regaining full sovereignty for the community
-- Operating under a restrictive contract with legal liabilities while the studio refuses to provide basic gameplay statistics is an unacceptable compromise.
-- **FGF WIKI was built for the players, not corporate metrics.** All tools, calculators, and guides remain 100% free, independent, accessible, and community-driven.
-
----
-
-👉 **Read the full statement on the wiki:** https://fgfwiki.com/news/creator-program-departure
-💬 *Thank you to everyone in the community for your unwavering support.*
-
-
-
+**Explore the new page:** https://fgfwiki.com/terms

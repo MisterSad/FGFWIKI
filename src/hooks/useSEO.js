@@ -24,6 +24,8 @@ const ROUTE_KEYS = {
     '/game-evolutions': 'game_evolutions',
     '/flagship-decks': 'flagships',
     '/ground-teams': 'champions',
+    '/terms': 'terms',
+    '/terms-and-conditions': 'terms',
     '*': 'not_found',
 };
 
@@ -266,6 +268,10 @@ export default function useSEO() {
             pageTitle = t('seo.creators.title', { defaultValue: 'Creators Corner' });
             description = t('seo.creators.description', { defaultValue: 'Official creator partnerships, YouTube guides and video strategies by Mirandus Plays for Foundation: Galactic Frontier.' });
             breadcrumbs.push({ name: t('navigation.creators', { defaultValue: 'Creators Corner' }), url: canonicalUrl });
+        } else if (location.pathname === '/terms' || location.pathname === '/terms-and-conditions') {
+            pageTitle = t('terms_page.title', { defaultValue: 'Terms and Conditions' });
+            description = t('seo.terms_desc', { defaultValue: 'Official Terms and Conditions of FGF WIKI: disclaimer of endorsement, fair use, intellectual property, and acceptable use policies.' });
+            breadcrumbs.push({ name: t('navigation.terms', { defaultValue: 'Terms & Conditions' }), url: canonicalUrl });
         } else {
             pageTitle = t(`seo.${baseRouteKey}.title`, { defaultValue: SITE_NAME });
             description = t(`seo.${baseRouteKey}.description`, {

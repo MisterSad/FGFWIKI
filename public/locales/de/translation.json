@@ -57,7 +57,9 @@
             "title": "Spiel-Evolutionen & Feedback | Community Roadmap",
             "description": "Schlagen Sie Spielverbesserungen vor und stimmen Sie über die Community-Prioritätenliste für Foundation: Galactic Frontier ab. Regelmäßige Weiterleitung an die Entwickler.",
             "keywords": "Spiel-Evolutionen, Community Feedback, Roadmap, Foundation Galactic Frontier, Vorschläge"
-        }
+        },
+        "terms_title": "Terms and Conditions | FGF WIKI",
+        "terms_desc": "Read the official Terms and Conditions of FGF WIKI, detailing disclaimer of endorsement, fair use of game assets, intellectual property, and acceptable use policies."
     },
     "navigation": {
         "home": "Startseite",
@@ -76,7 +78,8 @@
         "guild_tool": "Guild Management Tool",
         "more": "Mehr",
         "game_evolutions": "Spiel-Evolutionen",
-        "search": "Suche"
+        "search": "Suche",
+        "terms": "Nutzungsbedingungen"
     },
     "common": {
         "kinetic": "Kinetik",
@@ -1936,5 +1939,52 @@
         "sec4_thanks": "Vielen Dank an alle in der Community für eure unerschütterliche Unterstützung.",
         "acknowledge_btn": "Weiter zu FGF WIKI",
         "export_pdf_btn": "Offizielles PDF exportieren (A4)"
+    },
+    "terms_page": {
+        "badge": "Rechtliches & Konformität",
+        "title": "Nutzungsbedingungen",
+        "last_updated": "Zuletzt aktualisiert: 21. August 2026",
+        "back_btn": "Zurück zu den Guides",
+        "intro_p1": "Bitte lesen Sie diese Nutzungsbedingungen («Bedingungen», «Nutzungsbedingungen») sorgfältig durch, bevor Sie die Website FGF WIKI (den «Dienst») nutzen.",
+        "intro_p2": "Ihr Zugriff auf den Dienst und dessen Nutzung hängen von Ihrer Zustimmung zu diesen Bedingungen und deren Einhaltung ab. Wenn Sie mit Teilen nicht einverstanden sind, haben Sie keine Berechtigung für den Dienst.",
+        "sec1_title": "1. Keine Verbindung und Haftungsausschluss",
+        "sec1_bullet1_title": "Unabhängige Plattform",
+        "sec1_bullet1_desc": "FGF WIKI ist eine unabhängige, von der Community betriebene Datenbank und Informationsplattform.",
+        "sec1_bullet2_title": "Keine offizielle Verbindung",
+        "sec1_bullet2_desc": "FGF WIKI ist nicht mit FunPlus International AG, Skydance Production, LLC oder deren Tochtergesellschaften verbunden oder genehmigt.",
+        "sec1_bullet3_title": "Marken & Urheberrechte",
+        "sec1_bullet3_desc": "Foundation: Galactic Frontier sowie alle zugehörigen Logos und Charaktere sind das ausschließliche Eigentum der jeweiligen Rechteinhaber. Alle Spielinhalte werden im Rahmen der Fair-Use-Prinzipien für Bildungszwecke verwendet.",
+        "sec2_title": "2. Art der Inhalte und Richtigkeit der Daten",
+        "sec2_bullet1_title": "Nur zu Informationszwecken",
+        "sec2_bullet1_desc": "Die auf FGF WIKI bereitgestellten Rechner, Werkzeuge und Datenbankeinträge dienen ausschließlich allgemeinen Informations- und Unterhaltungszwecken.",
+        "sec2_bullet2_title": "Schätzungen & Community-Daten",
+        "sec2_bullet2_desc": "Alle Berechnungen, Schätzungen und Datensätze werden ohne Mängelgewähr bereitgestellt. Spielmechaniken können sich ohne Vorankündigung ändern.",
+        "sec2_bullet3_title": "Keine Haftung für Entscheidungen im Spiel",
+        "sec2_bullet3_desc": "Wir übernehmen keine Haftung für Entscheidungen im Spiel, Ressourcenzuweisungen oder finanzielle Ausgaben, die auf Grundlage dieser Website getroffen werden.",
+        "sec3_title": "3. Geistiges Eigentum an Originalinhalten",
+        "sec3_bullet1_title": "Plattform-Assets & Quellcode",
+        "sec3_bullet1_desc": "Mit Ausnahme von Drittanbieter-Assets sind Struktur, Quellcode, Berechnungsalgorithmen, Datenbankdesigns und UI von FGF WIKI das ausschließliche geistige Eigentum des Betreibers.",
+        "sec3_bullet2_title": "Einschränkungen für Scraping & Spiegelung",
+        "sec3_bullet2_desc": "Das Kopieren, Scrapen oder Reverse-Engineering der Datenbankstrukturen zu kommerziellen Zwecken ist ohne ausdrückliche schriftliche Genehmigung untersagt.",
+        "sec4_title": "4. Richtlinie zur zulässigen Nutzung",
+        "sec4_intro": "Sie verpflichten sich, den Dienst nicht wie folgt zu nutzen:",
+        "sec4_bullet1": "In einer Weise, die gegen geltende Gesetze verstößt.",
+        "sec4_bullet2": "Zur Übertragung oder Veranlassung von Werbematerialien (Spam).",
+        "sec4_bullet3": "Um das Nutzungserlebnis anderer zu beeinträchtigen oder FGF WIKI Schäden auszusetzen.",
+        "sec4_bullet4": "Um unbefugten Zugriff auf Server, Netzwerke oder Datenbanken des Dienstes zu erlangen.",
+        "sec5_title": "5. Externe Links & Drittanbieter-Dienste",
+        "sec5_p1": "Unser Dienst kann Links zu Websites oder Diensten Dritter enthalten (wie Discord), die nicht FGF WIKI gehören.",
+        "sec5_p2": "Wir haben keine Kontrolle über Inhalte oder Datenschutzrichtlinien von Drittanbietern und übernehmen dafür keine Verantwortung.",
+        "sec6_title": "6. Haftungsbeschränkung",
+        "sec6_intro": "Soweit gesetzlich zulässig:",
+        "sec6_p1": "In keinem Fall haftet FGF WIKI oder dessen Betreiber für direkte, indirekte oder Folgeschäden, die sich aus der Nutzung des Dienstes ergeben.",
+        "sec7_title": "7. Änderungen und Kündigung",
+        "sec7_p1": "Wir behalten uns das Recht vor, diese Bedingungen oder Teile des Dienstes jederzeit ohne Vorankündigung zu ändern.",
+        "sec7_p2": "Durch die fortgesetzte Nutzung des Dienstes nach Inkrafttreten von Änderungen erklären Sie sich mit den geänderten Bedingungen einverstanden.",
+        "sec8_title": "8. Anwendbares Recht und Gerichtsstand",
+        "sec8_p1": "Diese Bedingungen unterliegen dem Recht Frankreichs. Ausschließlicher Gerichtsstand für alle Streitigkeiten sind die zuständigen Gerichte in Frankreich.",
+        "sec9_title": "9. Kontaktinformationen",
+        "sec9_p1": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte unter:",
+        "sec9_email": "E-Mail: fgfwiki@gmail.com"
     }
 }

@@ -55,6 +55,7 @@ const staticRoutes = [
   { path: '/creators/mirandus-plays', changefreq: 'weekly', priority: '0.8', images: ['/og-image.png'] },
   { path: '/guild-tool', changefreq: 'monthly', priority: '0.9', images: ['/og-image.png'] },
   { path: '/evolutions', changefreq: 'daily', priority: '0.9', images: ['/og-image.png'] },
+  { path: '/terms', changefreq: 'monthly', priority: '0.5', images: ['/og-image.png'] },
 ];
 
 function getAlternateLinks(loc) {
