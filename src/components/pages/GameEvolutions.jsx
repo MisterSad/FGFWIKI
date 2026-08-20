@@ -153,7 +153,13 @@ export default function GameEvolutions() {
     const isAdmin = useMemo(() => {
         if (!currentUser) return false;
         const email = (currentUser.email || '').trim().toLowerCase();
-        return email === 'fgfwiwi@gmail.com' || email === 'vieira.andre@proton.me';
+        const adminList = [
+            'fgfwiki@gmail.com',
+            'fgfwiki@google.com',
+            'fgfwiwi@gmail.com',
+            'vieira.andre@proton.me'
+        ];
+        return adminList.includes(email);
     }, [currentUser]);
 
     const [threads, setThreads] = useState([]);

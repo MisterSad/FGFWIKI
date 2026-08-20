@@ -58,7 +58,7 @@ Tout nouveau fichier doit être placé dans le bon sous-dossier selon sa respons
 - **Hooks & Effets** : Interdiction formelle d'appeler `setState` de manière synchrone dans le corps direct d'un `useEffect`. Utiliser la dérivation d'état, les callbacks d'événements, ou des promesses asynchrones avec guard d'annulation (`isSubscribed = false`).
 
 ### 7. 🔒 Sécurité Firestore & Authentification Admin
-- **Compte Administrateur Officiel** : L'email administrateur strict est **`fgfwiwi@gmail.com`**.
+- **Compte Administrateur Officiel** : Les emails administrateurs stricts sont **`fgfwiki@gmail.com`**, **`fgfwiki@google.com`**, **`fgfwiwi@gmail.com`**, et **`vieira.andre@proton.me`**.
 - Ne jamais utiliser le pseudonyme (`displayName`) pour octroyer des privilèges administrateur (faille d'usurpation).
 - Toute modification des structures de données Firestore doit s'accompagner de la mise à jour des règles dans `firestore.rules`.
 

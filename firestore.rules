@@ -104,7 +104,12 @@ service cloud.firestore {
     function isAdmin() {
       return request.auth != null
         && request.auth.token.email != null
-        && (request.auth.token.email == 'fgfwiwi@gmail.com' || request.auth.token.email == 'vieira.andre@proton.me');
+        && (
+          request.auth.token.email == 'fgfwiki@gmail.com'
+          || request.auth.token.email == 'fgfwiki@google.com'
+          || request.auth.token.email == 'fgfwiwi@gmail.com'
+          || request.auth.token.email == 'vieira.andre@proton.me'
+        );
     }
 
     // Game Evolutions & Feature Requests.

@@ -9,6 +9,18 @@ export default function Header({ onLoginClick, onSearchClick }) {
     const { currentUser, logout } = useAuth();
     const { t } = useTranslation();
 
+    const isAdmin = React.useMemo(() => {
+        if (!currentUser) return false;
+        const email = (currentUser.email || '').trim().toLowerCase();
+        const adminList = [
+            'fgfwiki@gmail.com',
+            'fgfwiki@google.com',
+            'fgfwiwi@gmail.com',
+            'vieira.andre@proton.me'
+        ];
+        return adminList.includes(email);
+    }, [currentUser]);
+
     return (
         <header className="sticky-nav header-container">
             <div className="header-spacer" aria-hidden="true" />
@@ -59,6 +71,21 @@ export default function Header({ onLoginClick, onSearchClick }) {
                     <>
                         <span className="header-user-email">
                             {currentUser.email ? currentUser.email.split('@')[0] : (currentUser.displayName || 'Commander')}
+                            {isAdmin && (
+                                <span style={{
+                                    marginLeft: '6px',
+                                    padding: '2px 6px',
+                                    background: 'rgba(201, 168, 76, 0.2)',
+                                    border: '1px solid var(--gold, #C9A84C)',
+                                    borderRadius: '4px',
+                                    color: 'var(--gold, #C9A84C)',
+                                    fontSize: '0.65rem',
+                                    fontWeight: 'bold',
+                                    letterSpacing: '0.5px'
+                                }}>
+                                    ADMIN
+                                </span>
+                            )}
                         </span>
                         <button
                             type="button"

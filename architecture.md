@@ -188,9 +188,9 @@ Cloud Firestore est utilisé en mode temps réel (avec listeners `onSnapshot`).
 ## 5. Système de Sécurité & Rôles
 
 ### Rôle Administrateur Strict
-- Le compte administrateur officiel est le compte Google : **`fgfwiwi@gmail.com`** (avec `vieira.andre@proton.me` comme secours).
+- Le compte administrateur officiel est le compte Google : **`fgfwiki@gmail.com`** / **`fgfwiki@google.com`** (avec `fgfwiwi@gmail.com` et `vieira.andre@proton.me` en liste blanche).
 - **Règles Firestore** : La fonction serveur `isAdmin()` valide strictement l'email du token d'authentification (`request.auth.token.email`).
-- **Client React** : La variable `isAdmin` dans `GameEvolutions.jsx` se base exclusivement sur l'adresse email vérifiée. Aucune vérification par nom d'affichage (`displayName`) n'est autorisée.
+- **Client React** : La variable `isAdmin` dans `GameEvolutions.jsx` et `Header.jsx` se base exclusivement sur l'adresse email vérifiée. Aucune vérification par nom d'affichage (`displayName`) n'est autorisée.
 
 ---
 
