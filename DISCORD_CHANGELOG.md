@@ -1,14 +1,15 @@
-## ✨ UI Polish: Game Evolutions Hub Refresh!
+## 🚀 Community Pulse: Arms Race Scaling Climbs to Top Priority!
 
 Hey commanders,
 
-We just rolled out a clean visual tweak to the **Game Evolutions** tab to keep the interface sleek and modern.
+The community has spoken! Following your recent feedback regarding high-density servers and fast-clearing event targets, the suggestion **"Scale Arms Race ship HP based on server population and average power"** has surged with fresh community upvotes!
 
-### 🛠️ What's Changed
-- **Cleaner Header Layout**: Streamlined the top of the Game Evolutions page by removing redundant badge elements, giving more immediate spotlight to community proposals and discussions.
-- **Enhanced Readability**: Quicker access to trending features, community scoring, and monthly digest stats without visual clutter.
+### 📈 What's Trending in Game Evolutions
+- **Arms Race Event Balance**: Growing support to dynamically scale ship HP and defense pools so all commanders—regardless of fleet power or server age—get a fair shot at dealing damage and claiming their milestone crates.
+- **Dynamic Demand Tier**: With this boost, the proposal is now ranked alongside top community priorities on our live demand tracker.
 
-Jump in to share your suggestions, vote for upcoming game improvements, and check out current requests:
+Have your own ideas or want to back the issues that matter to your alliance? Cast your vote and join the discussion:
 👉 https://fgfwiki.com
 
-Keep building the future of Galactic Frontier! 🚀
+Fly safe and see you on the battlefield! 🌌
+
