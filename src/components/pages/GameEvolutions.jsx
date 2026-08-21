@@ -4,7 +4,7 @@ import {
     Flame, Star, Zap, Lightbulb, Search, Plus, MessageSquare, 
     CheckCircle2, Clock, AlertTriangle, Trash2, 
     ArrowUpDown, ShieldCheck, X, ChevronRight, Share2, Check,
-    Sparkles, Layers, CheckCircle, User, Server, LogIn, Download, FileText
+    Layers, CheckCircle, User, Server, LogIn, Download, FileText
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { 
@@ -521,32 +521,11 @@ export default function GameEvolutions() {
     return (
         <div className="container" style={{ maxWidth: '1050px', margin: '0 auto', padding: '1.5rem 1rem 6rem' }}>
             
-            {/* ========================================== */}
-            {/* HERO HEADER: DIRECT DEVELOPER PIPELINE    */}
-            {/* ========================================== */}
             <div style={{
                 textAlign: 'center',
                 marginBottom: '2rem',
                 position: 'relative'
             }}>
-                <div style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.4rem',
-                    padding: '4px 12px',
-                    background: 'rgba(201, 168, 76, 0.1)',
-                    border: '1px solid var(--gold)',
-                    borderRadius: '20px',
-                    color: 'var(--gold-bright)',
-                    fontSize: '0.75rem',
-                    fontFamily: 'var(--font-mono)',
-                    marginBottom: '0.75rem',
-                    letterSpacing: '1px'
-                }}>
-                    <Sparkles size={13} />
-                    <span>DIRECT DEVELOPER PIPELINE</span>
-                </div>
-
                 <h1 className="guide-title text-gradient" style={{ margin: '0 0 0.75rem', fontSize: 'clamp(1.8rem, 5vw, 2.6rem)' }}>
                     GAME EVOLUTIONS
                 </h1>
